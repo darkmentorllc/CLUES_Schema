@@ -18,7 +18,7 @@ The `CLUES_data.json` file is the crowdsourced data which is currently captured 
 
 The `CLUES_schema.json` is a schema which defines how the data in a CLUES file should be structured. The purpose of this file is to both allow for automatic verification, and automatic documentation creation.
 
-The [automatically generated documentation](https) can be generated via the below commands.
+The [automatically generated documentation](https://darkmentor.com/CLUES_Schema/CLUES.html) can be generated via the below commands.
 
 ```
 python3 -m venv ./venv
