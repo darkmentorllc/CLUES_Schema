@@ -12,11 +12,11 @@ One interesting class of UUIDs are the UUID16s which are defined in [https://bit
 
 ## Shared data
 
-The `CLUES_data.json` file is the crowdsourced data which is currently captured in CLUES format (i.e. conforming to the `CLUES_base.json` schema). It describes what is currently known/captured about custom UUIDs. This data is shared under a [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) license. It can be incorporated into other projects with an attribution of *"From the CLUES project - https://github.com/darkmentorllc/CLUES_Schema"*.
+The `CLUES_data.json` file is the crowdsourced data which is currently captured in CLUES format (i.e. conforming to the `CLUES_schema.json` schema). It describes what is currently known/captured about custom UUIDs. This data is shared under a [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) license. It can be incorporated into other projects with an attribution of *"From the CLUES project - https://github.com/darkmentorllc/CLUES_Schema"*.
 
 ## Schema
 
-The `CLUES_base.json` is a schema which defines how the data in a CLUES file should be structured. The purpose of this file is to both allow for automatic verification, and automatic documentation creation.
+The `CLUES_schema.json` is a schema which defines how the data in a CLUES file should be structured. The purpose of this file is to both allow for automatic verification, and automatic documentation creation.
 
 The [automatically generated documentation](https) can be generated via the below commands.
 
@@ -27,13 +27,13 @@ pip3 install json-schema-for-humans
 ```
 
 Documentation using online Javascript:  
-`generate-schema-doc CLUES_base.json CLUES.html`  
+`generate-schema-doc CLUES_schema.json CLUES.html`  
 
 Documentation using offline/local Javascript:  
-`generate-schema-doc CLUES_base.json --config  template_name=js_offline CLUES.html`  
+`generate-schema-doc CLUES_schema.json --config  template_name=js_offline CLUES.html`  
 
 Documentation using Markdown:  
-`generate-schema-doc CLUES_base.json --config  template_name=md CLUES.md`
+`generate-schema-doc CLUES_schema.json --config  template_name=md CLUES.md`
 
 We prefer the collapsible HTML/JS formatting, therefore the latest copy of that documentation will always be mirroed to [https://darkmentor.com/CLUES_Schema/CLUES.html](https://darkmentor.com/CLUES_Schema/CLUES.html).
 
@@ -50,7 +50,7 @@ We are seeking contributions of more UUIDs. To add an entry perform the followin
  * `python3 -m venv ./venv`
  * `source ./venv/bin/activate`
  * `pip3 install check-jsonschema`
- * `check-jsonschema --verbose --base-uri . --schemafile ./CLUES_base.json ./CLUES_data.json`
+ * `check-jsonschema --verbose --base-uri . --schemafile ./CLUES_schema.json ./CLUES_data.json`
 
 4) Re-sort the `CLUES_data.json` by running:
 
