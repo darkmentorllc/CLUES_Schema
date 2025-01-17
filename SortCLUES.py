@@ -8,6 +8,10 @@ from itertools import groupby
 from collections import defaultdict
 
 def merge_entries(entry1, entry2):
+    # Check if UUID_usage_array fields are the same
+    if entry1.get('UUID_usage_array') != entry2.get('UUID_usage_array'):
+        return entry1  # Skip merge if UUID_usage_array fields are not the same
+
     merged_entry = {}
     for key in entry1:
         if isinstance(entry1[key], list) and isinstance(entry2[key], list):
@@ -47,55 +51,29 @@ def sort_custom_uuids(file_path):
         else:
             uuid_groups[uuid] = entry
 
-    # Create company groups with parent-child relationships
-    company_groups = defaultdict(lambda: {'services': [], 'orphan_chars': [], 'orphans': []})
-    for entry in uuid_groups.values():
-        company = entry['company'] if entry['company'] is not None else ''
-        if "GATT Service" in entry['UUID_usage_array']:
-            company_groups[company]['services'].append(entry)
-        elif "GATT Characteristic" in entry['UUID_usage_array']:
-            if 'parent_UUID' in entry:
-                if entry['parent_UUID'] in uuid_groups:
-                    company_groups[company].setdefault(entry['parent_UUID'], []).append(entry)
-                else:
-                    company_groups[company]['orphans'].append(entry)
-            else:
-                company_groups[company]['orphan_chars'].append(entry)
+    # Sort the entries
+    sorted_entries = sorted(uuid_groups.values(), key=sort_key)
 
-    result = []
-    seen_uuids = set()
+    # Group entries by parent_UUID
+    parent_uuid_map = defaultdict(list)
+    for entry in sorted_entries:
+        parent_uuid = entry.get('parent_UUID')
+        if parent_uuid:
+            parent_uuid_map[parent_uuid].append(entry)
+        else:
+            parent_uuid_map[entry['UUID']].append(entry)
 
-    # Sort companies and process each group
-    for company, group in sorted(company_groups.items()):
-        services = sorted(group['services'], key=lambda x: x['UUID'])
-        for service in services:
-            if service['UUID'] not in seen_uuids:
-                result.append(service)
-                seen_uuids.add(service['UUID'])
+    # Flatten the grouped entries
+    final_sorted_entries = []
+    for uuid, entries in parent_uuid_map.items():
+        final_sorted_entries.extend(entries)
 
-            # Add related characteristics
-            related_characteristics = sorted(group.get(service['UUID'], []), key=lambda x: x['UUID'])
-            for char in related_characteristics:
-                if char['UUID'] not in seen_uuids:
-                    result.append(char)
-                    seen_uuids.add(char['UUID'])
-
-        # Add orphan characteristics
-        orphan_chars = sorted(group['orphan_chars'], key=lambda x: x['UUID'])
-        for char in orphan_chars:
-            if char['UUID'] not in seen_uuids:
-                result.append(char)
-                seen_uuids.add(char['UUID'])
-
-        # Add orphaned entries whose parent_UUID was not found
-        orphans = sorted(group['orphans'], key=lambda x: x['UUID'])
-        for orphan in orphans:
-            if orphan['UUID'] not in seen_uuids:
-                result.append(orphan)
-                seen_uuids.add(orphan['UUID'])
-
+    # Write the sorted entries back to the file
     with open(file_path, 'w') as f:
-        json.dump(result, f, indent=2)
+        json.dump(final_sorted_entries, f, indent=4)
+
+# Example usage
+# sort_custom_uuids('/path/to/your/file.json')
 
 if __name__ == "__main__":
     sort_custom_uuids('CLUES_data.json')
