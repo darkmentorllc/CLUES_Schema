@@ -3081,22 +3081,6 @@
         "parent_UUID": "331a36f5-2459-45ea-9d95-6142f0c4b307"
     },
     {
-        "UUID": "00010203-0405-0607-0809-0a0b0c0d1920",
-        "company": "Telink Semiconductor Co. Ltd",
-        "UUID_purpose": "MERGED: (Mesh), (Mesh Lighting?)",
-        "UUID_name": "MERGED: (Mesh), (Mesh LT)",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250117012825/https://raw.githubusercontent.com/telink-semi/telink_b91m_btble_dual_mode_general_sdk/98b6453c5859b51feca6ec7a61b271fcb5538b8b/sdk/tlkstk/ble/service/uuid.h",
-                "description": "1st party open source code defining this UUID",
-                "submitter": "Xeno Kovah"
-            }
-        ]
-    },
-    {
         "UUID": "00010203-0405-0607-0809-0a0b0c0d1912",
         "company": "Telink Semiconductor Co. Ltd",
         "UUID_purpose": "Mesh Light Command",
@@ -3225,6 +3209,39 @@
         ]
     },
     {
+        "UUID": "00010203-0405-0607-0809-0a0b0c0d1921",
+        "company": "Telink Semiconductor Co. Ltd",
+        "UUID_purpose": "Mesh Lighting?",
+        "UUID_name": "Mesh LT",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250117012825/https://raw.githubusercontent.com/telink-semi/telink_b91m_btble_dual_mode_general_sdk/98b6453c5859b51feca6ec7a61b271fcb5538b8b/sdk/tlkstk/ble/service/uuid.h",
+                "description": "1st party open source code defining this UUID",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+      "UUID": "00010203-0405-0607-0809-0a0b0c0d1912",
+      "company": "Telink Semiconductor Co. Ltd",
+      "UUID_purpose": "Mesh Light Command",
+      "UUID_name": "Mesh Light Command",
+      "UUID_usage_array": [
+        "GATT Characteristic"
+      ],
+      "evidence_array": [
+        {
+          "URL": "https://web.archive.org/web/20250117021209/https://wiki.telink-semi.cn//tools_and_sdk/BLE_Mesh/Telink_Mesh/telink_mesh_sdk.zip",
+          "description": "Note: auto-downloading zip. Unfortunate UUID reuse! Evidence that this UUID can also be interpreted as a Mesh Light Command is in the 'E3_Communication Protocol for Telink BLE Mesh Light APP.pdf' inside this zip.",
+          "submitter": "Xeno Kovah"
+        }
+      ],
+      "parent_UUID": "00010203-0405-0607-0809-0a0b0c0d1910"
+    },
+    {
         "UUID": "00010203-0405-0607-0809-0a0b0c0d2b12",
         "company": "Telink Semiconductor Co. Ltd",
         "UUID_purpose": "Over-The-Air (OTA) Firmware Update",
@@ -3240,6 +3257,22 @@
             }
         ],
         "parent_UUID": "00010203-0405-0607-0809-0a0b0c0d1912"
+    },
+    {
+        "UUID": "00010203-0405-0607-0809-0a0b0c0d1920",
+        "company": "Telink Semiconductor Co. Ltd",
+        "UUID_purpose": "TeLink (proprietary?) Mesh",
+        "UUID_name": "Mesh",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250117012825/https://raw.githubusercontent.com/telink-semi/telink_b91m_btble_dual_mode_general_sdk/98b6453c5859b51feca6ec7a61b271fcb5538b8b/sdk/tlkstk/ble/service/uuid.h",
+                "description": "1st party open source code defining this UUID",
+                "submitter": "Xeno Kovah"
+            }
+        ]
     },
     {
         "UUID": "00010203-0405-0607-0809-0a0b0c0dxxxx",
