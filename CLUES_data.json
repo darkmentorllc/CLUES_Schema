@@ -1661,6 +1661,26 @@
         "regex": true
     },
     {
+        "UUID": "bf3fbd80-063f-11e5-9e69-0002a5d5c50x",
+        "company": "Microchip Technology Inc.",
+        "UUID_purpose": "Firmware update",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250119135523/https://www.mouser.com/datasheet/2/268/50002547A-1150192.pdf",
+                "description": "Characteristics with X = 1-5 are defined in multiple datasheets like this.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20220119231548/https://ww1.microchip.com/downloads/en/DeviceDoc/50002661A.pdf",
+                "description": "Characteristics with X = 1-5 are defined in multiple datasheets like this.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "49535343-fe7d-4ae5-8fa9-9fafd205e455",
         "company": "Microchip Technology Inc.",
         "UUID_purpose": "UART serial communications with Microchip chips",
@@ -1722,6 +1742,48 @@
             {
                 "URL": "https://web.archive.org/web/20221225142328/https://ww1.microchip.com/downloads/en/DeviceDoc/50002639A.pdf",
                 "description": "Associated with Microchip RN4871 BLE module.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "77880001-d229-11e4-8689-0002a5d5c51b",
+        "company": "Microchip Technology Inc. (formerly Atmel)",
+        "UUID_purpose": "Wi-Fi Connect Service",
+        "UUID_name": "Wi-Fi Connect/Provisioning",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250119140358/https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/UserGuides/Atmel-42683-ATWINC3400-BLE-WiFi-Scan-and-Connect-Services-Guide_UserGuide.pdf",
+                "description": "This is the pre-aquisition Atmel documentation.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20230601130318/https://ww1.microchip.com/downloads/en/DeviceDoc/ATWILC3000-BlueKitchen-BTstack-User-Guide-DS50002795A.pdf",
+                "description": "This is the post-aquisition Microchip documentation.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "fb8c0001-d224-11e4-85a1-0002a5d5c51b",
+        "company": "Microchip Technology Inc. (formerly Atmel)",
+        "UUID_purpose": "Wi-Fi Scan Service",
+        "UUID_name": "Wi-Fi Scan",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250119140358/https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/UserGuides/Atmel-42683-ATWINC3400-BLE-WiFi-Scan-and-Connect-Services-Guide_UserGuide.pdf",
+                "description": "This is the pre-aquisition Atmel documentation.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20230601130318/https://ww1.microchip.com/downloads/en/DeviceDoc/ATWILC3000-BlueKitchen-BTstack-User-Guide-DS50002795A.pdf",
+                "description": "This is the post-aquisition Microchip documentation.",
                 "submitter": "Xeno Kovah"
             }
         ]
