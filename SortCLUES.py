@@ -68,6 +68,12 @@ def sort_custom_uuids(file_path):
     # Flatten the grouped entries
     final_sorted_entries = []
     for uuid, entries in parent_uuid_map.items():
+        # Add the parent entry first
+        parent_entry = next((e for e in entries if e['UUID'] == uuid), None)
+        if parent_entry:
+            final_sorted_entries.append(parent_entry)
+            entries.remove(parent_entry)
+        # Add the child entries
         final_sorted_entries.extend(entries)
 
     # Write the sorted entries back to the file
