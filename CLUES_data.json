@@ -1661,6 +1661,72 @@
         "regex": true
     },
     {
+        "UUID": "49535343-fe7d-4ae5-8fa9-9fafd205e455",
+        "company": "Microchip Technology Inc.",
+        "UUID_purpose": "UART serial communications with Microchip chips",
+        "UUID_name": "Transparent UART",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240718111653/https://developerhelp.microchip.com/xwiki/bin/view/products/wireless-connectivity/ble/bm70/bm70-compact-demo-board-users-guide/transparent-uart/",
+                "description": "Associated with Microchip Serial.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "49535343-1e4d-4bd9-ba61-23c647249616",
+        "company": "Microchip Technology Inc.",
+        "UUID_purpose": "UART serial communications with Microchip chips",
+        "UUID_name": "Transparent UART Transmit (TX)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240718111653/https://developerhelp.microchip.com/xwiki/bin/view/products/wireless-connectivity/ble/bm70/bm70-compact-demo-board-users-guide/transparent-uart/",
+                "description": "Associated with Microchip Serial.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "49535343-fe7d-4ae5-8fa9-9fafd205e455"
+    },
+    {
+        "UUID": "49535343-8841-43f4-a8d4-ecbe34729bb3",
+        "company": "Microchip Technology Inc.",
+        "UUID_purpose": "UART serial communications with Microchip chips",
+        "UUID_name": "Transparent UART Receive (RX)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240718111653/https://developerhelp.microchip.com/xwiki/bin/view/products/wireless-connectivity/ble/bm70/bm70-compact-demo-board-users-guide/transparent-uart/",
+                "description": "Associated with Microchip Serial.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "49535343-fe7d-4ae5-8fa9-9fafd205e455"
+    },
+    {
+        "UUID": "f05axxxx-3936-11e5-87a6-0002a5d5c51b",
+        "company": "Microchip Technology Inc.",
+        "UUID_purpose": "Unknown",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20221225142328/https://ww1.microchip.com/downloads/en/DeviceDoc/50002639A.pdf",
+                "description": "Associated with Microchip RN4871 BLE module.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c",
         "company": "Nest",
         "UUID_purpose": "Unknown",
@@ -3923,5 +3989,48 @@
             }
         ],
         "parent_UUID": "5052494d-2dab-0341-6972-6f6861424c45"
+    },
+    {
+        "UUID": "e7810a71-73ae-499d-8c15-faa9aef0c3f2",
+        "company": "White Label",
+        "UUID_purpose": "Thermal printing",
+        "UUID_name": "Printing",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240911194733/http://blog.tovganesh.in/2016/02/printing-on-white-label-ble-thermal.html",
+                "description": "White label BLE printer",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250119134226/https://raw.githubusercontent.com/tovganesh/bleprinter-ios/refs/heads/master/BLEPrinterService.swift",
+                "description": "White label BLE printer",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "bef8d6c9-9c21-4c9e-b632-bd58c1009f9f",
+        "company": "White Label",
+        "UUID_purpose": "Thermal printing",
+        "UUID_name": "Printing",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240911194733/http://blog.tovganesh.in/2016/02/printing-on-white-label-ble-thermal.html",
+                "description": "White label BLE printer",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250119134226/https://raw.githubusercontent.com/tovganesh/bleprinter-ios/refs/heads/master/BLEPrinterService.swift",
+                "description": "White label BLE printer",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "e7810a71-73ae-499d-8c15-faa9aef0c3f2"
     }
 ]
