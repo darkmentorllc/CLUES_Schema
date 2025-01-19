@@ -39,17 +39,19 @@ def sort_custom_uuids(file_path):
         company = entry['company'] if entry['company'] is not None else ''
         return company, entry['UUID_purpose'], entry['UUID']
 
-    # Convert UUID and parent_UUID to lowercase and group entries by UUID
+    # Convert UUID and parent_UUID to lowercase and group entries by concatenated key
     uuid_groups = {}
     for entry in data:
         entry['UUID'] = entry['UUID'].lower()
         if 'parent_UUID' in entry:
             entry['parent_UUID'] = entry['parent_UUID'].lower()
-        uuid = entry['UUID']
-        if uuid in uuid_groups:
-            uuid_groups[uuid] = merge_entries(uuid_groups[uuid], entry)
+        company = entry['company'] if entry['company'] is not None else ''
+        uuid_usage_array = json.dumps(entry.get('UUID_usage_array', []))
+        key = f"{company}-{entry['UUID']}-{uuid_usage_array}"
+        if key in uuid_groups:
+            uuid_groups[key] = merge_entries(uuid_groups[key], entry)
         else:
-            uuid_groups[uuid] = entry
+            uuid_groups[key] = entry
 
     # Sort the entries
     sorted_entries = sorted(uuid_groups.values(), key=sort_key)
