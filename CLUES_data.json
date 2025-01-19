@@ -1794,7 +1794,7 @@
         "UUID": "95665a00-8704-11e5-960c-0002a5d5c51b",
         "company": "Ministerstwo Cyfryzacji (Ministry of Digital Affairs of Poland)",
         "UUID_purpose": "Polish home quarantine application",
-        "UUID_name": "BlueST SDK Debug",
+        "UUID_name": "Polish Home Quarantine (Kwarantanna domowa) application",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -2295,7 +2295,8 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "parent_UUID": "d343bfc0-5a21-4f05-bc7d-af01f617b664"
+        "parent_UUID": "d343bfc0-5a21-4f05-bc7d-af01f617b664",
+        "regex": true
     },
     {
         "UUID": "fd92",
@@ -2357,6 +2358,56 @@
         "parent_UUID": "fd92"
     },
     {
+        "UUID": "00000000-000f-11e1-9ab4-0002a5d5c51b",
+        "company": "ST Microelectronics (STMicro)",
+        "UUID_purpose": "BlueST SDK",
+        "UUID_name": "BlueST SDK Configuration",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240620192541/https://www.st.com/resource/en/user_manual/dm00550659-getting-started-with-the-bluest-protocol-and-sdk-stmicroelectronics.pdf",
+                "description": "BlueST SDK",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "00000001-000f-11e1-ac36-0002a5d5c51b",
+        "company": "ST Microelectronics (STMicro)",
+        "UUID_purpose": "'if available, it is used to access the board configuration register that can be modified using the ConfigControl class'",
+        "UUID_name": "Feature board configuration register",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240620192541/https://www.st.com/resource/en/user_manual/dm00550659-getting-started-with-the-bluest-protocol-and-sdk-stmicroelectronics.pdf",
+                "description": "BlueST SDK",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00000000-000f-11e1-9ab4-0002a5d5c51b"
+    },
+    {
+        "UUID": "00000002-000f-11e1-ac36-0002a5d5c51b",
+        "company": "ST Microelectronics (STMicro)",
+        "UUID_purpose": "'used to send commands/data to a specific feature'",
+        "UUID_name": "Feature configuration",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240620192541/https://www.st.com/resource/en/user_manual/dm00550659-getting-started-with-the-bluest-protocol-and-sdk-stmicroelectronics.pdf",
+                "description": "BlueST SDK",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00000000-000f-11e1-9ab4-0002a5d5c51b"
+    },
+    {
         "UUID": "00000000-000e-11e1-9ab4-0002a5d5c51b",
         "company": "ST Microelectronics (STMicro)",
         "UUID_purpose": "BlueST SDK",
@@ -2407,10 +2458,10 @@
         "parent_UUID": "00000000-000e-11e1-9ab4-0002a5d5c51b"
     },
     {
-        "UUID": "xxxxxxxx-0001-11e1-ac36-0002a5d5c51b",
+        "UUID": "xxxxxxxx-000x-11e1-xxxx-0002a5d5c51b",
         "company": "ST Microelectronics (STMicro)",
         "UUID_purpose": "BlueST SDK",
-        "UUID_name": "BlueST SDK regex",
+        "UUID_name": "BlueST SDK BASE UUID regex",
         "UUID_usage_array": [
             "GATT Service",
             "GATT Characteristic"
