@@ -1678,7 +1678,8 @@
                 "description": "Characteristics with X = 1-5 are defined in multiple datasheets like this.",
                 "submitter": "Xeno Kovah"
             }
-        ]
+        ],
+        "regex": true
     },
     {
         "UUID": "49535343-fe7d-4ae5-8fa9-9fafd205e455",
@@ -1744,12 +1745,13 @@
                 "description": "Associated with Microchip RN4871 BLE module.",
                 "submitter": "Xeno Kovah"
             }
-        ]
+        ],
+        "regex": true
     },
     {
         "UUID": "77880001-d229-11e4-8689-0002a5d5c51b",
         "company": "Microchip Technology Inc. (formerly Atmel)",
-        "UUID_purpose": "Wi-Fi Connect Service",
+        "UUID_purpose": "Wi-Fi Connect Service 'allows a BLE peripheral to configure the ATWINC3400's Wi-Fi radio to connect to an access point by providing information such network name, security type, and passphrase to the ATWINC3400 over a BLE connection'",
         "UUID_name": "Wi-Fi Connect/Provisioning",
         "UUID_usage_array": [
             "GATT Service"
@@ -1770,7 +1772,7 @@
     {
         "UUID": "fb8c0001-d224-11e4-85a1-0002a5d5c51b",
         "company": "Microchip Technology Inc. (formerly Atmel)",
-        "UUID_purpose": "Wi-Fi Scan Service",
+        "UUID_purpose": "Wi-Fi Scan Service 'allows a BLE peripheral to retrieve a list of Wi-Fi networks (access points) that are in range of the ATWINC3400'",
         "UUID_name": "Wi-Fi Scan",
         "UUID_usage_array": [
             "GATT Service"
@@ -1785,6 +1787,35 @@
                 "URL": "https://web.archive.org/web/20230601130318/https://ww1.microchip.com/downloads/en/DeviceDoc/ATWILC3000-BlueKitchen-BTstack-User-Guide-DS50002795A.pdf",
                 "description": "This is the post-aquisition Microchip documentation.",
                 "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "95665a00-8704-11e5-960c-0002a5d5c51b",
+        "company": "Ministerstwo Cyfryzacji (Ministry of Digital Affairs of Poland)",
+        "UUID_purpose": "Polish home quarantine application",
+        "UUID_name": "BlueST SDK Debug",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250119144610/https://www.hybrid-analysis.com/sample/c7c8e928e99222dc7b5b1741b1436d18aa06cf2b336371741ed88c0d0a68baee/5fe1fb2db54c35537d7edd66",
+                "description": "UUID found in kwarantannadomowa.apk strings per this URL, and that app was for Polish COVID home quarantine per next URL",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://archive.org/details/pl.nask.droid.kwarantannadomowa.apk",
+                "description": "App copy. Not sure if it will show the same as the above URL.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "pl.nask.droid.kwarantannadomowa",
+                "version_code": 1,
+                "version_name": "1.0",
+                "description": "Polish Home Quarantine (Kwarantanna domowa), not automated extraction."
             }
         ]
     },
@@ -2324,6 +2355,74 @@
             }
         ],
         "parent_UUID": "fd92"
+    },
+    {
+        "UUID": "00000000-000e-11e1-9ab4-0002a5d5c51b",
+        "company": "ST Microelectronics (STMicro)",
+        "UUID_purpose": "BlueST SDK",
+        "UUID_name": "BlueST SDK Debug",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240620192541/https://www.st.com/resource/en/user_manual/dm00550659-getting-started-with-the-bluest-protocol-and-sdk-stmicroelectronics.pdf",
+                "description": "BlueST SDK",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "00000002-000e-11e1-9ab4-0002a5d5c51b",
+        "company": "ST Microelectronics (STMicro)",
+        "UUID_purpose": "'used by the board to notify the user about an error message'",
+        "UUID_name": "Debug notify user error message",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240620192541/https://www.st.com/resource/en/user_manual/dm00550659-getting-started-with-the-bluest-protocol-and-sdk-stmicroelectronics.pdf",
+                "description": "BlueST SDK",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00000000-000e-11e1-9ab4-0002a5d5c51b"
+    },
+    {
+        "UUID": "00000001-000e-11e1-9ab4-0002a5d5c51b",
+        "company": "ST Microelectronics (STMicro)",
+        "UUID_purpose": "'used to send string commands to the board and notify the user about the result'",
+        "UUID_name": "Debug notify user message",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240620192541/https://www.st.com/resource/en/user_manual/dm00550659-getting-started-with-the-bluest-protocol-and-sdk-stmicroelectronics.pdf",
+                "description": "BlueST SDK",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00000000-000e-11e1-9ab4-0002a5d5c51b"
+    },
+    {
+        "UUID": "xxxxxxxx-0001-11e1-ac36-0002a5d5c51b",
+        "company": "ST Microelectronics (STMicro)",
+        "UUID_purpose": "BlueST SDK",
+        "UUID_name": "BlueST SDK regex",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240620192541/https://www.st.com/resource/en/user_manual/dm00550659-getting-started-with-the-bluest-protocol-and-sdk-stmicroelectronics.pdf",
+                "description": "There's more information in here that can be used to outline more specific services and characteristics in the future",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "regex": true
     },
     {
         "UUID": "fd69",
