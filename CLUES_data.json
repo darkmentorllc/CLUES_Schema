@@ -102,8 +102,8 @@
     {
         "UUID": "fe03",
         "company": "Amazon",
-        "UUID_purpose": "Alexa Gadgets allows devices to connect to Amazon Echo devices. 'The BLE GATT Alexa Gadgets Service is a custom service that manages Alexa Gadgets stream transactions.'",
-        "UUID_name": "Alexa Gadgets",
+        "UUID_purpose": "Alexa Gadgets (older) or Amazon Sidewalk (newer) allows devices to connect to Amazon Echo devices. 'The BLE GATT Alexa Gadgets Service is a custom service that manages Alexa Gadgets stream transactions.'",
+        "UUID_name": "Alexa Mobile Accessories (AMA)",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -115,7 +115,12 @@
             },
             {
                 "URL": "https://web.archive.org/web/20241203170334/https://developer.amazon.com/en-US/alexa/devices/connected-devices/development-resources/alexa-gadgets",
-                "description": "Amazon 'paused' (seeminglu discontinued and took down pages for) Alexa Gadets December 31, 2021",
+                "description": "Amazon 'paused' (seemingly discontinued and took down pages for) Alexa Gadets December 31, 2021",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250129220855/https://github.com/nrfconnect/sdk-sidewalk/blob/c1fe9d20ef279d53a8a13ef24f3597b96f36e2e0/doc/sid_ble_advertising_format.md?plain=1#L23",
+                "description": "Amazon may have repurposed this UUID for Amazon Sidewalk?",
                 "submitter": "Xeno Kovah"
             }
         ]
@@ -149,6 +154,46 @@
             {
                 "URL": "https://web.archive.org/web/20250106131313/https://docs.nordicsemi.com/bundle/ncs-1.4.1/page/nrf/include/bluetooth/services/gadgets.html",
                 "description": "The original citation on amazon.com was never archived before it was taken down, so using a 3rd party source.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fe03"
+    },
+    {
+        "UUID": "b32e83c0-fece-47c1-9015-53b7e7f0d2fe",
+        "company": "Amazon",
+        "UUID_purpose": "Unknown AMA (Sidewalk) related, notify-only",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250129224000/https://github.com/nrfconnect/sdk-sidewalk/blob/c1fe9d20ef279d53a8a13ef24f3597b96f36e2e0/subsys/sal/sid_pal/include/sid_ble_uuid.h#L20",
+                "description": "Amazon Sidewalk related support w/ UUIDs from Nordic.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "description": "Seen in actual data nested under Service UUID fe03.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fe03"
+    },
+    {
+        "UUID": "74f996c9-7d6c-4d58-9232-0427ab61c53c",
+        "company": "Amazon",
+        "UUID_purpose": "Unknown AMA (Sidewalk) related, writable-only",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250129224000/https://github.com/nrfconnect/sdk-sidewalk/blob/c1fe9d20ef279d53a8a13ef24f3597b96f36e2e0/subsys/sal/sid_pal/include/sid_ble_uuid.h#L16",
+                "description": "Amazon Sidewalk related support w/ UUIDs from Nordic.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "description": "Seen in actual data nested under Service UUID fe03.",
                 "submitter": "Xeno Kovah"
             }
         ],
