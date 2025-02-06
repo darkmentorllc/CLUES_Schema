@@ -2404,6 +2404,22 @@
         "parent_UUID": "fd92"
     },
     {
+        "UUID": "fef5",
+        "company": "Renesas",
+        "UUID_purpose": "Software Update Over-The-Air (OTA) Renesas (SUOTAR))",
+        "UUID_name": "SUOTA",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250206121802/https://github.com/byteman/da14585/blob/286060d1b264caf25da11c75517b9454b699257c/sdk/app_modules/api/app_adv_data.h#L109",
+                "description": "Downloading the official Renesas SDK with the definition of the 'ADV_UUID_SUOTAR_SERVICE' macro is behind an account-wall, so just using a 3rd party reference",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "00000000-000f-11e1-9ab4-0002a5d5c51b",
         "company": "ST Microelectronics (STMicro)",
         "UUID_purpose": "BlueST SDK",
