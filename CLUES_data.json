@@ -274,6 +274,191 @@
         ]
     },
     {
+        "UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b",
+        "company": "Apple",
+        "UUID_purpose": "Provides information about Find My network compatible accessories.",
+        "UUID_name": "Find My Accessory Information",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "6aa5000a-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'0 = Full, 1 = Medium, 2 = Low, 3 = Critically low'",
+        "UUID_name": "BatteryLevel",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50009-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'0 = Powered, 1 = Non-rechargeable battery, 2 = Rechargeable battery'",
+        "UUID_name": "BatteryType",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50008-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The Find My network version characteristic indicates the Find My network specification version the product complies with.'",
+        "UUID_name": "FindMyVersion",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50007-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The Firmware version characteristic describes the current firmware version on the product.'",
+        "UUID_name": "FirmwareVersion",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50001-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The ProductData characteristic represents the 8 byte product data value assigned to each Product Plan in the MFi Portal upon Product Plan approval.'",
+        "UUID_name": "ProductData",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50006-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The accessory capability characteristic describes the various Find My network protocol capabilities supported on the accessory.'",
+        "UUID_name": "AccessoryCapabilities ",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50005-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The accessory category characteristic describes the category the accessory most closely resembles.'",
+        "UUID_name": "AccessoryCategory",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50002-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The manufacturer name characteristic contains the name of the company whose brand will appear on the accessory.'",
+        "UUID_name": "ManufacturerName",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50003-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The model name characteristic contains the manufacturer specific model of the accessory.'",
+        "UUID_name": "ModelName",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa5000x-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "Find My Accessory Information",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Regex match for possibly newer Find-my-related Characteristics, based on UUID value near other apparent Find My values",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b",
+        "regex": true
+    },
+    {
         "UUID": "d0611e78-bbb4-4591-a5f8-487910ae4366",
         "company": "Apple",
         "UUID_purpose": "'Continuity' is a mechanism for sharing data between Apple devices. It includes features like Airdrop, Handoff, Instant Hotspot, and Universal Clipboard.",
@@ -512,84 +697,6 @@
                 "submitter": "Xeno Kovah"
             }
         ]
-    },
-    {
-        "UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b",
-        "company": "Apple",
-        "UUID_purpose": "Find My allows locating Apple devices ",
-        "UUID_name": "Find My",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "ASSUMED based on containing the known 6aa5000163524d57a7b4003a416fbb0b Find My characteristic underneath it",
-                "submitter": "Xeno Kovah"
-            }
-        ]
-    },
-    {
-        "UUID": "6aa50002-6352-4d57-a7b4-003a416fbb0b",
-        "company": "Apple",
-        "UUID_purpose": "Store company name.",
-        "UUID_name": "Company name?",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "ASSUMED Based on observed values of 'Apple' & 'Anker Innovations Limited' from some devices.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
-    },
-    {
-        "UUID": "6aa50003-6352-4d57-a7b4-003a416fbb0b",
-        "company": "Apple",
-        "UUID_purpose": "Store model name.",
-        "UUID_name": "Model name?",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "ASSUMED Based on observed values of 'AirPods Pro' & 'eufy Security Smart Finder' from some devices.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
-    },
-    {
-        "UUID": "6aa50001-6352-4d57-a7b4-003a416fbb0b",
-        "company": "Apple",
-        "UUID_purpose": "Unknown",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "ASSUMED Based on UUID value near other apparent Find My values",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
-    },
-    {
-        "UUID": "6aa5000x-6352-4d57-a7b4-003a416fbb0b",
-        "company": "Apple",
-        "UUID_purpose": "Unknown",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Regex match for ASSUMED Find-my-related Characteristics, based on UUID value near other apparent Find My values",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b",
-        "regex": true
     },
     {
         "UUID": "00000000-deca-fade-deca-deafdecacafe",
