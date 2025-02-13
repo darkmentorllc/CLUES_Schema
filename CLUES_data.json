@@ -378,7 +378,7 @@
         "UUID": "6aa50006-6352-4d57-a7b4-003a416fbb0b",
         "company": "Apple",
         "UUID_purpose": "'The accessory capability characteristic describes the various Find My network protocol capabilities supported on the accessory.'",
-        "UUID_name": "AccessoryCapabilities ",
+        "UUID_name": "AccessoryCapabilities",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -553,6 +553,142 @@
             }
         ],
         "parent_UUID": "89d3502b-0f36-433a-8ef4-c502ad55f8dc"
+    },
+    {
+        "UUID": "fd44",
+        "company": "Apple",
+        "UUID_purpose": "Find My network service",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "This document attests that Apple is using 0xFD44 for the 'Find My network service'",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "4f860002-943b-49ef-bed4-2f730304427a",
+        "company": "Apple",
+        "UUID_purpose": "'The configuration control point enables you to configure Find My network functionality on the accessory and enable Find My network interactions.'",
+        "UUID_name": "Configuration Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Description from this document.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd44",
+        "regex": true
+    },
+    {
+        "UUID": "4f860005-943b-49ef-bed4-2f730304427a",
+        "company": "Apple",
+        "UUID_purpose": "'The debug control point enables you to debug the accessory during development. This control point shall not be enabled in shipping firmware.'",
+        "UUID_name": "Debug Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Description from this document.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd44",
+        "regex": true
+    },
+    {
+        "UUID": "4f860003-943b-49ef-bed4-2f730304427a",
+        "company": "Apple",
+        "UUID_purpose": "'The non-owner control point enables a non-owner device to locate the accessory by playing a sound.'",
+        "UUID_name": "Non-Owner Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Description from this document.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd44",
+        "regex": true
+    },
+    {
+        "UUID": "4f860004-943b-49ef-bed4-2f730304427a",
+        "company": "Apple",
+        "UUID_purpose": "'The pairing status control point enables an Apple device to read the Find My network pairing status of the accessory.'",
+        "UUID_name": "Paired owner Information Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Description from this document.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd44",
+        "regex": true
+    },
+    {
+        "UUID": "4f86000x-943b-49ef-bed4-2f730304427a",
+        "company": "Apple",
+        "UUID_purpose": "Unknown",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Seen under fd44 Apple Member UUID Service on 3rd party products like 'eufy Security Smart Finder'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd44",
+        "regex": true
+    },
+    {
+        "UUID": "94110001-6d9b-4225-a4f1-6a4a7f01b0de",
+        "company": "Apple",
+        "UUID_purpose": "Unknown",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Seen under fd44 Apple Member UUID Service on 3rd party products like 'eufy Security Smart Finder'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd44"
+    },
+    {
+        "UUID": "4f860001-943b-49ef-bed4-2f730304427a",
+        "company": "Apple",
+        "UUID_purpose": "Used for pairing to the Find My network. 'The pairing control point enables you to pair an accessory with an owner device.'",
+        "UUID_name": "Pairing Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Description from this document.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd44",
+        "regex": true
     },
     {
         "UUID": "7905f431-b5ce-4e99-a40f-4b1e122d00d0",
@@ -802,51 +938,6 @@
             }
         ],
         "parent_UUID": "9fa480e0-4967-4542-9390-d343dc5d04ae"
-    },
-    {
-        "UUID": "fd44",
-        "company": "Apple",
-        "UUID_purpose": "Unknown",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "fd44 is assigned to Apple in BT SIG member_uuids.yaml",
-                "submitter": "Xeno Kovah"
-            }
-        ]
-    },
-    {
-        "UUID": "4f86000x-943b-49ef-bed4-2f730304427a",
-        "company": "Apple",
-        "UUID_purpose": "Unknown",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Seen under fd44 Apple Member UUID Service on 3rd party products like 'eufy Security Smart Finder'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd44",
-        "regex": true
-    },
-    {
-        "UUID": "94110001-6d9b-4225-a4f1-6a4a7f01b0de",
-        "company": "Apple",
-        "UUID_purpose": "Unknown",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Seen under fd44 Apple Member UUID Service on 3rd party products like 'eufy Security Smart Finder'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd44"
     },
     {
         "UUID": "da2b84f1-6279-48de-bdc0-afbea0226079",
@@ -1475,6 +1566,23 @@
         "evidence_array": [
             {
                 "URL": "https://web.archive.org/web/20241231213832/https://developers.google.com/nearby/fast-pair/specifications/characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fe2c"
+    },
+    {
+        "UUID": "fe2c1238-8366-4814-8eb0-01de32100bea",
+        "company": "Google",
+        "UUID_purpose": "'The Find My Device Network (FMDN) accessory specification defines an end-to-end encrypted approach for tracking beaconing Bluetooth Low Energy (BLE) devices. '",
+        "UUID_name": "Beacon actions",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250212073846/https://developers.google.com/nearby/fast-pair/specifications/extensions/fmdn",
+                "description": "'This page describes FMDN as an extension to the Fast Pair specification.'",
                 "submitter": "Xeno Kovah"
             }
         ],
