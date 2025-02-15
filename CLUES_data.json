@@ -1977,7 +1977,7 @@
     {
         "UUID": "569a110x-b87f-490c-92cb-11ba5ea5167c",
         "company": "Laird",
-        "UUID_purpose": "Unknown",
+        "UUID_purpose": "Unknown related-UUID regex match",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -3006,6 +3006,56 @@
             }
         ],
         "regex": true
+    },
+    {
+        "UUID": "d973f2e0-b19e-11e2-9e96-0800200c9a66",
+        "company": "ST Microelectronics (STMicro)",
+        "UUID_purpose": "This UUID is used in examples in STM documentation and sample code.",
+        "UUID_name": "ST Micro programming example service",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20210726163623/https://www.st.com/resource/en/programming_manual/pm0237-bluenrg-bluenrgms-stacks-programming-guidelines-stmicroelectronics.pdf",
+                "description": "BlueNRG, BlueNRG-MS stacks programming guidelines",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "d973f2e1-b19e-11e2-9e96-0800200c9a66",
+        "company": "ST Microelectronics (STMicro)",
+        "UUID_purpose": "This UUID is used in examples in STM documentation and sample code as a notify characteristic (sometimes for virtual serial ports TX).",
+        "UUID_name": "ST Micro programming example service",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240620192541/https://www.st.com/resource/en/user_manual/dm00550659-getting-started-with-the-bluest-protocol-and-sdk-stmicroelectronics.pdf",
+                "description": "BlueNRG, BlueNRG-MS stacks programming guidelines",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "d973f2e0-b19e-11e2-9e96-0800200c9a66"
+    },
+    {
+        "UUID": "d973f2e2-b19e-11e2-9e96-0800200c9a66",
+        "company": "ST Microelectronics (STMicro)",
+        "UUID_purpose": "This UUID is used in examples in STM documentation and sample code as a writable characteristic (sometimes for virtual serial ports RX)",
+        "UUID_name": "ST Micro programming example service",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240620192541/https://www.st.com/resource/en/user_manual/dm00550659-getting-started-with-the-bluest-protocol-and-sdk-stmicroelectronics.pdf",
+                "description": "BlueNRG, BlueNRG-MS stacks programming guidelines",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "d973f2e0-b19e-11e2-9e96-0800200c9a66"
     },
     {
         "UUID": "fd69",
