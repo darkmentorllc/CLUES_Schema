@@ -3027,7 +3027,7 @@
         "UUID": "d973f2e1-b19e-11e2-9e96-0800200c9a66",
         "company": "ST Microelectronics (STMicro)",
         "UUID_purpose": "This UUID is used in examples in STM documentation and sample code as a notify characteristic (sometimes for virtual serial ports TX).",
-        "UUID_name": "ST Micro programming example service",
+        "UUID_name": "ST Micro programming example characteristic (notify)",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3044,7 +3044,7 @@
         "UUID": "d973f2e2-b19e-11e2-9e96-0800200c9a66",
         "company": "ST Microelectronics (STMicro)",
         "UUID_purpose": "This UUID is used in examples in STM documentation and sample code as a writable characteristic (sometimes for virtual serial ports RX)",
-        "UUID_name": "ST Micro programming example service",
+        "UUID_name": "ST Micro programming example characteristic (writable)",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -5550,5 +5550,73 @@
             }
         ],
         "parent_UUID": "e7810a71-73ae-499d-8c15-faa9aef0c3f2"
+    },
+    {
+        "UUID": "38eb4a80-c570-11e3-9507-0002a5d5c51b",
+        "company": "Zebra Technologies",
+        "UUID_purpose": "Thermal printing",
+        "UUID_name": "Printing",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240901112306/https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/application-notes/AppNote-BlueToothLE-v4.pdf",
+                "description": "Zebra printers app note w/ UUID attestation",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "38eb4a81-c570-11e3-9507-0002a5d5c51b",
+        "company": "Zebra Technologies",
+        "UUID_purpose": "From Printer Data",
+        "UUID_name": "From Printer Data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240901112306/https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/application-notes/AppNote-BlueToothLE-v4.pdf",
+                "description": "Zebra printers app note w/ UUID attestation",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "38eb4a80-c570-11e3-9507-0002a5d5c51b"
+    },
+    {
+        "UUID": "38eb4a8x-c570-11e3-9507-0002a5d5c51b",
+        "company": "Zebra Technologies",
+        "UUID_purpose": "Printing unknown",
+        "UUID_name": "Printing unknown",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240901112306/https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/application-notes/AppNote-BlueToothLE-v4.pdf",
+                "description": "Values of x == 3 to 8 for this UUID have been seen in the wild, but are not attested in this document which attests x == 0 to 2.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "38eb4a80-c570-11e3-9507-0002a5d5c51b",
+        "regex": true
+    },
+    {
+        "UUID": "38eb4a82-c570-11e3-9507-0002a5d5c51b",
+        "company": "Zebra Technologies",
+        "UUID_purpose": "To Printer Data",
+        "UUID_name": "To Printer Data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240901112306/https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/application-notes/AppNote-BlueToothLE-v4.pdf",
+                "description": "Zebra printers app note w/ UUID attestation",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "38eb4a80-c570-11e3-9507-0002a5d5c51b"
     }
 ]
