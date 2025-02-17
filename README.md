@@ -55,6 +55,6 @@ We are seeking contributions of more UUIDs. To add an entry perform the followin
 4) Re-sort the `CLUES_data.json` by running:
 
  *  `python3 SortCLUES.py` from within your fork.
- *  Search for any entries marked "MERGED", and correct them (e.g. if they should legitimatly be merged, merge their descriptions. If not, correct the UUID conflict which caused them to be merged.)
+ *  Search for any entries marked "MERGED", and correct them (e.g. if they should legitimately be merged, merge their descriptions. If not, correct the UUID conflict which caused them to be merged.)
 
 5) Commit your changes and make a pull request.
