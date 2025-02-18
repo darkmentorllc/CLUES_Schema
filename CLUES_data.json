@@ -2024,6 +2024,167 @@
         "regex": true
     },
     {
+        "UUID": "54220000-f6a5-4007-a371-722f4ebd8436",
+        "company": "Memfault",
+        "UUID_purpose": "'The Bluetooth\u00ae Low Energy (LE) GATT Memfault Diagnostic Service is a custom service that forwards diagnostic data collected by firmware through a Bluetooth gateway.'",
+        "UUID_name": "Memfault Diagnostic Service (MDS)",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250218234410/https://memfault.notion.site/Memfault-Diagnostic-GATT-Service-MDS-ffd5a430062649cd9bf6edbf64e2563b",
+                "description": "Definition for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250117091426/https://docs.memfault.com/docs/mcu/mds",
+                "description": "Further documentation/definition/confirmation for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250218234518/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/mds.html",
+                "description": "Nordic SDK description of MDS.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "54220001-f6a5-4007-a371-722f4ebd8436",
+        "company": "Memfault",
+        "UUID_purpose": "'Bitmask of features that have been added to MDS Profile. At the moment, returns 0x0 since this is the first version of the profile.'",
+        "UUID_name": "MDS Supported Features",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250218234410/https://memfault.notion.site/Memfault-Diagnostic-GATT-Service-MDS-ffd5a430062649cd9bf6edbf64e2563b",
+                "description": "Definition for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250117091426/https://docs.memfault.com/docs/mcu/mds",
+                "description": "Further documentation/definition/confirmation for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250218234518/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/mds.html",
+                "description": "Nordic SDK description of MDS.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
+    },
+    {
+        "UUID": "54220003-f6a5-4007-a371-722f4ebd8436",
+        "company": "Memfault",
+        "UUID_purpose": "'Returns the URI diagnostic data should be forwarded to.'",
+        "UUID_name": "MDS Data URI",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250218234410/https://memfault.notion.site/Memfault-Diagnostic-GATT-Service-MDS-ffd5a430062649cd9bf6edbf64e2563b",
+                "description": "Definition for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250117091426/https://docs.memfault.com/docs/mcu/mds",
+                "description": "Further documentation/definition/confirmation for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250218234518/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/mds.html",
+                "description": "Nordic SDK description of MDS.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
+    },
+    {
+        "UUID": "54220004-f6a5-4007-a371-722f4ebd8436",
+        "company": "Memfault",
+        "UUID_purpose": "'Returns the configured authorization to use such as \"Memfault-Project-Key:YOUR_PROJECT_KEY\"'",
+        "UUID_name": "MDS Authorization",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250218234410/https://memfault.notion.site/Memfault-Diagnostic-GATT-Service-MDS-ffd5a430062649cd9bf6edbf64e2563b",
+                "description": "Definition for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250117091426/https://docs.memfault.com/docs/mcu/mds",
+                "description": "Further documentation/definition/confirmation for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250218234518/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/mds.html",
+                "description": "Nordic SDK description of MDS.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
+    },
+    {
+        "UUID": "54220002-f6a5-4007-a371-722f4ebd8436",
+        "company": "Memfault",
+        "UUID_purpose": "'Returns the device identifier populated in the memfault_platform_get_device_info() dependency function.'",
+        "UUID_name": "MDS Device Identifier",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250218234410/https://memfault.notion.site/Memfault-Diagnostic-GATT-Service-MDS-ffd5a430062649cd9bf6edbf64e2563b",
+                "description": "Definition for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250117091426/https://docs.memfault.com/docs/mcu/mds",
+                "description": "Further documentation/definition/confirmation for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250218234518/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/mds.html",
+                "description": "Nordic SDK description of MDS.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
+    },
+    {
+        "UUID": "54220005-f6a5-4007-a371-722f4ebd8436",
+        "company": "Memfault",
+        "UUID_purpose": "'Streams any collected SDK data to listener as opaque packets.'",
+        "UUID_name": "MDS Data Export",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250218234410/https://memfault.notion.site/Memfault-Diagnostic-GATT-Service-MDS-ffd5a430062649cd9bf6edbf64e2563b",
+                "description": "Definition for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250117091426/https://docs.memfault.com/docs/mcu/mds",
+                "description": "Further documentation/definition/confirmation for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250218234518/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/mds.html",
+                "description": "Nordic SDK description of MDS.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
+    },
+    {
         "UUID": "bf3fbd80-063f-11e5-9e69-0002a5d5c50x",
         "company": "Microchip Technology Inc.",
         "UUID_purpose": "Firmware update",
