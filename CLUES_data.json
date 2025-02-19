@@ -2636,6 +2636,73 @@
         "parent_UUID": "57a70000-9350-11ed-a1eb-0242ac120002"
     },
     {
+        "UUID": "14387800-130c-49e7-b877-2881c89cb258",
+        "company": "Nordic",
+        "UUID_purpose": "Provision a Wi-Fi device that lacks input or output capability",
+        "UUID_name": "Wi-Fi Provisioning",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
+                "description": "Nordic SDK description of Wi-Fi Provisioning.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "14387802-130c-49e7-b877-2881c89cb258",
+        "company": "Nordic",
+        "UUID_purpose": "'For client to send Request message to server, and server to send Response message to client.' + Note: permissions listed as 'Encryption required'.",
+        "UUID_name": "Operation Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
+                "description": "Nordic SDK description of Wi-Fi Provisioning.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "14387800-130c-49e7-b877-2881c89cb258"
+    },
+    {
+        "UUID": "14387803-130c-49e7-b877-2881c89cb258",
+        "company": "Nordic",
+        "UUID_purpose": "'For server to send Result message to the client.' + Note: permissions listed as 'Encryption required'.",
+        "UUID_name": "Data Out",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
+                "description": "Nordic SDK description of Wi-Fi Provisioning.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "14387800-130c-49e7-b877-2881c89cb258"
+    },
+    {
+        "UUID": "14387801-130c-49e7-b877-2881c89cb258",
+        "company": "Nordic",
+        "UUID_purpose": "'For client to get Info message from server.' + Note: permissions listed as 'No security required'.",
+        "UUID_name": "Information",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
+                "description": "Nordic SDK description of Wi-Fi Provisioning.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "14387800-130c-49e7-b877-2881c89cb258"
+    },
+    {
         "UUID": "ab5e0001-5a21-4f05-bc7d-af01f617b664",
         "company": "Ohsung Electronics",
         "UUID_purpose": "C009 remote control interface",
