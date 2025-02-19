@@ -73,8 +73,10 @@ def sort_custom_uuids(file_path):
         if parent_entry:
             final_sorted_entries.append(parent_entry)
             entries.remove(parent_entry)
+        # Sort the child entries by UUID
+        sorted_children = sorted(entries, key=lambda e: e['UUID'])
         # Add the child entries
-        final_sorted_entries.extend(entries)
+        final_sorted_entries.extend(sorted_children)
 
     # Write the sorted entries back to the file
     with open(file_path, 'w') as f:

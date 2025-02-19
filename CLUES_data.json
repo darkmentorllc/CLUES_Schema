@@ -32,40 +32,6 @@
         ]
     },
     {
-        "UUID": "db450003-8e9a-4818-add7-6ed94a328ab4",
-        "company": "ATMOTECH INC.",
-        "UUID_purpose": "Bosch Humidity sensor BME280",
-        "UUID_name": "BME280",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250104003833/https://atmotube.com/atmotube-support/bluetooth-api",
-                "description": "Bluetooth API documentation for Atmotube PRO",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "db450001-8e9a-4818-add7-6ed94a328ab4"
-    },
-    {
-        "UUID": "db450005-8e9a-4818-add7-6ed94a328ab4",
-        "company": "ATMOTECH INC.",
-        "UUID_purpose": "Honeywell particulat matter (PM) sensor. Measured in ug/m^3. Presence of this characteristic separates the Pro from the Plus (only the Pro has it).",
-        "UUID_name": "PM",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250104003833/https://atmotube.com/atmotube-support/bluetooth-api",
-                "description": "Bluetooth API documentation for Atmotube PRO",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "db450001-8e9a-4818-add7-6ed94a328ab4"
-    },
-    {
         "UUID": "db450002-8e9a-4818-add7-6ed94a328ab4",
         "company": "ATMOTECH INC.",
         "UUID_purpose": "Sensirion SGPC3 sensor.",
@@ -83,10 +49,44 @@
         "parent_UUID": "db450001-8e9a-4818-add7-6ed94a328ab4"
     },
     {
+        "UUID": "db450003-8e9a-4818-add7-6ed94a328ab4",
+        "company": "ATMOTECH INC.",
+        "UUID_purpose": "Bosch Humidity sensor BME280",
+        "UUID_name": "BME280",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250104003833/https://atmotube.com/atmotube-support/bluetooth-api",
+                "description": "Bluetooth API documentation for Atmotube PRO",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "db450001-8e9a-4818-add7-6ed94a328ab4"
+    },
+    {
         "UUID": "db450004-8e9a-4818-add7-6ed94a328ab4",
         "company": "ATMOTECH INC.",
         "UUID_purpose": "Status",
         "UUID_name": "Status",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250104003833/https://atmotube.com/atmotube-support/bluetooth-api",
+                "description": "Bluetooth API documentation for Atmotube PRO",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "db450001-8e9a-4818-add7-6ed94a328ab4"
+    },
+    {
+        "UUID": "db450005-8e9a-4818-add7-6ed94a328ab4",
+        "company": "ATMOTECH INC.",
+        "UUID_purpose": "Honeywell particulat matter (PM) sensor. Measured in ug/m^3. Presence of this characteristic separates the Pro from the Plus (only the Pro has it).",
+        "UUID_name": "PM",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -143,17 +143,20 @@
         "parent_UUID": "fe03"
     },
     {
-        "UUID": "f04eb177-3005-43a7-ac61-a390ddf83076",
+        "UUID": "74f996c9-7d6c-4d58-9232-0427ab61c53c",
         "company": "Amazon",
-        "UUID_purpose": "'Write or Write Without Response: Commands and directives are received as Write Without Response.'",
-        "UUID_name": "Transmit (TX)",
+        "UUID_purpose": "Unknown AMA (Sidewalk) related, writable-only",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "URL": "https://web.archive.org/web/20250106131313/https://docs.nordicsemi.com/bundle/ncs-1.4.1/page/nrf/include/bluetooth/services/gadgets.html",
-                "description": "The original citation on amazon.com was never archived before it was taken down, so using a 3rd party source.",
+                "URL": "https://web.archive.org/web/20250129224000/https://github.com/nrfconnect/sdk-sidewalk/blob/c1fe9d20ef279d53a8a13ef24f3597b96f36e2e0/subsys/sal/sid_pal/include/sid_ble_uuid.h#L16",
+                "description": "Amazon Sidewalk related support w/ UUIDs from Nordic.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "description": "Seen in actual data nested under Service UUID fe03.",
                 "submitter": "Xeno Kovah"
             }
         ],
@@ -180,20 +183,17 @@
         "parent_UUID": "fe03"
     },
     {
-        "UUID": "74f996c9-7d6c-4d58-9232-0427ab61c53c",
+        "UUID": "f04eb177-3005-43a7-ac61-a390ddf83076",
         "company": "Amazon",
-        "UUID_purpose": "Unknown AMA (Sidewalk) related, writable-only",
+        "UUID_purpose": "'Write or Write Without Response: Commands and directives are received as Write Without Response.'",
+        "UUID_name": "Transmit (TX)",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "URL": "https://web.archive.org/web/20250129224000/https://github.com/nrfconnect/sdk-sidewalk/blob/c1fe9d20ef279d53a8a13ef24f3597b96f36e2e0/subsys/sal/sid_pal/include/sid_ble_uuid.h#L16",
-                "description": "Amazon Sidewalk related support w/ UUIDs from Nordic.",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "description": "Seen in actual data nested under Service UUID fe03.",
+                "URL": "https://web.archive.org/web/20250106131313/https://docs.nordicsemi.com/bundle/ncs-1.4.1/page/nrf/include/bluetooth/services/gadgets.html",
+                "description": "The original citation on amazon.com was never archived before it was taken down, so using a 3rd party source.",
                 "submitter": "Xeno Kovah"
             }
         ],
@@ -290,112 +290,10 @@
         ]
     },
     {
-        "UUID": "6aa5000a-6352-4d57-a7b4-003a416fbb0b",
-        "company": "Apple",
-        "UUID_purpose": "'0 = Full, 1 = Medium, 2 = Low, 3 = Critically low'",
-        "UUID_name": "BatteryLevel",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
-                "description": "Finally found an authoritative source for this service and characteristics",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
-    },
-    {
-        "UUID": "6aa50009-6352-4d57-a7b4-003a416fbb0b",
-        "company": "Apple",
-        "UUID_purpose": "'0 = Powered, 1 = Non-rechargeable battery, 2 = Rechargeable battery'",
-        "UUID_name": "BatteryType",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
-                "description": "Finally found an authoritative source for this service and characteristics",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
-    },
-    {
-        "UUID": "6aa50008-6352-4d57-a7b4-003a416fbb0b",
-        "company": "Apple",
-        "UUID_purpose": "'The Find My network version characteristic indicates the Find My network specification version the product complies with.'",
-        "UUID_name": "FindMyVersion",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
-                "description": "Finally found an authoritative source for this service and characteristics",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
-    },
-    {
-        "UUID": "6aa50007-6352-4d57-a7b4-003a416fbb0b",
-        "company": "Apple",
-        "UUID_purpose": "'The Firmware version characteristic describes the current firmware version on the product.'",
-        "UUID_name": "FirmwareVersion",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
-                "description": "Finally found an authoritative source for this service and characteristics",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
-    },
-    {
         "UUID": "6aa50001-6352-4d57-a7b4-003a416fbb0b",
         "company": "Apple",
         "UUID_purpose": "'The ProductData characteristic represents the 8 byte product data value assigned to each Product Plan in the MFi Portal upon Product Plan approval.'",
         "UUID_name": "ProductData",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
-                "description": "Finally found an authoritative source for this service and characteristics",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
-    },
-    {
-        "UUID": "6aa50006-6352-4d57-a7b4-003a416fbb0b",
-        "company": "Apple",
-        "UUID_purpose": "'The accessory capability characteristic describes the various Find My network protocol capabilities supported on the accessory.'",
-        "UUID_name": "AccessoryCapabilities",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
-                "description": "Finally found an authoritative source for this service and characteristics",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
-    },
-    {
-        "UUID": "6aa50005-6352-4d57-a7b4-003a416fbb0b",
-        "company": "Apple",
-        "UUID_purpose": "'The accessory category characteristic describes the category the accessory most closely resembles.'",
-        "UUID_name": "AccessoryCategory",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -430,6 +328,108 @@
         "company": "Apple",
         "UUID_purpose": "'The model name characteristic contains the manufacturer specific model of the accessory.'",
         "UUID_name": "ModelName",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50005-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The accessory category characteristic describes the category the accessory most closely resembles.'",
+        "UUID_name": "AccessoryCategory",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50006-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The accessory capability characteristic describes the various Find My network protocol capabilities supported on the accessory.'",
+        "UUID_name": "AccessoryCapabilities",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50007-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The Firmware version characteristic describes the current firmware version on the product.'",
+        "UUID_name": "FirmwareVersion",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50008-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'The Find My network version characteristic indicates the Find My network specification version the product complies with.'",
+        "UUID_name": "FindMyVersion",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa50009-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'0 = Powered, 1 = Non-rechargeable battery, 2 = Rechargeable battery'",
+        "UUID_name": "BatteryType",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Finally found an authoritative source for this service and characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "87290102-3c51-43b1-a1a9-11b9dc38478b"
+    },
+    {
+        "UUID": "6aa5000a-6352-4d57-a7b4-003a416fbb0b",
+        "company": "Apple",
+        "UUID_purpose": "'0 = Full, 1 = Medium, 2 = Low, 3 = Critically low'",
+        "UUID_name": "BatteryLevel",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -507,22 +507,6 @@
         ]
     },
     {
-        "UUID": "c6b2f38c-23ab-46d8-a6ab-a3a870bbd5d7",
-        "company": "Apple",
-        "UUID_purpose": "'The Entity Attribute characteristic is the characteristic by which an MR can retrieve the extended value of an attribute.'",
-        "UUID_name": "Entity Attribute",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20230821013001/https://developer.apple.com/library/archive/documentation/CoreBluetooth/Reference/AppleMediaService_Reference/Specification/Specification.html",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "89d3502b-0f36-433a-8ef4-c502ad55f8dc"
-    },
-    {
         "UUID": "2f7cabce-808d-411f-9a0c-bb92ba96c102",
         "company": "Apple",
         "UUID_purpose": "'The Entity Update characteristic is the characteristic by which an MR can inform the MS which entity/attribute pairs it is interested in, and be informed about changes on these whenever they occur. For example, the MR can be informed about the title of the currently loaded track, or the name of the active media app.'",
@@ -555,6 +539,22 @@
         "parent_UUID": "89d3502b-0f36-433a-8ef4-c502ad55f8dc"
     },
     {
+        "UUID": "c6b2f38c-23ab-46d8-a6ab-a3a870bbd5d7",
+        "company": "Apple",
+        "UUID_purpose": "'The Entity Attribute characteristic is the characteristic by which an MR can retrieve the extended value of an attribute.'",
+        "UUID_name": "Entity Attribute",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20230821013001/https://developer.apple.com/library/archive/documentation/CoreBluetooth/Reference/AppleMediaService_Reference/Specification/Specification.html",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "89d3502b-0f36-433a-8ef4-c502ad55f8dc"
+    },
+    {
         "UUID": "fd44",
         "company": "Apple",
         "UUID_purpose": "Find My network service",
@@ -570,10 +570,10 @@
         ]
     },
     {
-        "UUID": "4f860002-943b-49ef-bed4-2f730304427a",
+        "UUID": "4f860001-943b-49ef-bed4-2f730304427a",
         "company": "Apple",
-        "UUID_purpose": "'The configuration control point enables you to configure Find My network functionality on the accessory and enable Find My network interactions.'",
-        "UUID_name": "Configuration Control Point",
+        "UUID_purpose": "Used for pairing to the Find My network. 'The pairing control point enables you to pair an accessory with an owner device.'",
+        "UUID_name": "Pairing Control Point",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -588,10 +588,10 @@
         "regex": true
     },
     {
-        "UUID": "4f860005-943b-49ef-bed4-2f730304427a",
+        "UUID": "4f860002-943b-49ef-bed4-2f730304427a",
         "company": "Apple",
-        "UUID_purpose": "'The debug control point enables you to debug the accessory during development. This control point shall not be enabled in shipping firmware.'",
-        "UUID_name": "Debug Control Point",
+        "UUID_purpose": "'The configuration control point enables you to configure Find My network functionality on the accessory and enable Find My network interactions.'",
+        "UUID_name": "Configuration Control Point",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -642,6 +642,24 @@
         "regex": true
     },
     {
+        "UUID": "4f860005-943b-49ef-bed4-2f730304427a",
+        "company": "Apple",
+        "UUID_purpose": "'The debug control point enables you to debug the accessory during development. This control point shall not be enabled in shipping firmware.'",
+        "UUID_name": "Debug Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
+                "description": "Description from this document.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd44",
+        "regex": true
+    },
+    {
         "UUID": "4f86000x-943b-49ef-bed4-2f730304427a",
         "company": "Apple",
         "UUID_purpose": "Unknown",
@@ -671,24 +689,6 @@
             }
         ],
         "parent_UUID": "fd44"
-    },
-    {
-        "UUID": "4f860001-943b-49ef-bed4-2f730304427a",
-        "company": "Apple",
-        "UUID_purpose": "Used for pairing to the Find My network. 'The pairing control point enables you to pair an accessory with an owner device.'",
-        "UUID_name": "Pairing Control Point",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://archive.org/details/find-my-network-accessory-specification-developer-preview-r-3",
-                "description": "Description from this document.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd44",
-        "regex": true
     },
     {
         "UUID": "7905f431-b5ce-4e99-a40f-4b1e122d00d0",
@@ -1117,6 +1117,21 @@
         "parent_UUID": "00001100-d102-11e1-9b23-00025b00a5a5"
     },
     {
+        "UUID": "00001102-d102-11e1-9b23-00025b00a5a5",
+        "company": "CSR",
+        "UUID_purpose": "GAIA (Over The Air update protocol) Response Endpoint (Over The Air update protocol",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20220612094151/https://developer.qualcomm.com/qfile/34081/csr102x_otau_overview.pdf",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00001100-d102-11e1-9b23-00025b00a5a5"
+    },
+    {
         "UUID": "00001103-d102-11e1-9b23-00025b00a5a5",
         "company": "CSR",
         "UUID_purpose": "GAIA (Over The Air update protocol) Data Endpoint (Over The Air update protocol, not included in  found at",
@@ -1130,21 +1145,6 @@
             },
             {
                 "URL": "https://github.com/Hypfer/fiiobta30protocol",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "00001100-d102-11e1-9b23-00025b00a5a5"
-    },
-    {
-        "UUID": "00001102-d102-11e1-9b23-00025b00a5a5",
-        "company": "CSR",
-        "UUID_purpose": "GAIA (Over The Air update protocol) Response Endpoint (Over The Air update protocol",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20220612094151/https://developer.qualcomm.com/qfile/34081/csr102x_otau_overview.pdf",
                 "submitter": "Xeno Kovah"
             }
         ],
@@ -1556,55 +1556,6 @@
         ]
     },
     {
-        "UUID": "fe2c1236-8366-4814-8eb0-01de32100bea",
-        "company": "Google",
-        "UUID_purpose": "'After pairing, the Fast Pair Seeker will write an Account Key to the Fast Pair Provider.'",
-        "UUID_name": "Account Key",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241231213832/https://developers.google.com/nearby/fast-pair/specifications/characteristics",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fe2c"
-    },
-    {
-        "UUID": "fe2c1238-8366-4814-8eb0-01de32100bea",
-        "company": "Google",
-        "UUID_purpose": "'The Find My Device Network (FMDN) accessory specification defines an end-to-end encrypted approach for tracking beaconing Bluetooth Low Energy (BLE) devices. '",
-        "UUID_name": "Beacon actions",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250212073846/https://developers.google.com/nearby/fast-pair/specifications/extensions/fmdn",
-                "description": "'This page describes FMDN as an extension to the Fast Pair specification.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fe2c"
-    },
-    {
-        "UUID": "fe2c1237-8366-4814-8eb0-01de32100bea",
-        "company": "Google",
-        "UUID_purpose": "'The Seeker can write a personalized name to the Provider during the first pairing and when the user edits the name on the Seeker side. The Provider shall allocate space, at least 64 bytes, to store the personalized name. Writes to Additional Data characteristic with personalized name may happen in 2 flows.'",
-        "UUID_name": "Personalized Name",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241231213832/https://developers.google.com/nearby/fast-pair/specifications/characteristics",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fe2c"
-    },
-    {
         "UUID": "fe2c1233-8366-4814-8eb0-01de32100bea",
         "company": "Google",
         "UUID_purpose": "'This characteristic allows the Seeker to read the model ID as needed, outside of when the device is advertising in discoverable mode.'",
@@ -1647,6 +1598,55 @@
         "evidence_array": [
             {
                 "URL": "https://web.archive.org/web/20241231213832/https://developers.google.com/nearby/fast-pair/specifications/characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fe2c"
+    },
+    {
+        "UUID": "fe2c1236-8366-4814-8eb0-01de32100bea",
+        "company": "Google",
+        "UUID_purpose": "'After pairing, the Fast Pair Seeker will write an Account Key to the Fast Pair Provider.'",
+        "UUID_name": "Account Key",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241231213832/https://developers.google.com/nearby/fast-pair/specifications/characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fe2c"
+    },
+    {
+        "UUID": "fe2c1237-8366-4814-8eb0-01de32100bea",
+        "company": "Google",
+        "UUID_purpose": "'The Seeker can write a personalized name to the Provider during the first pairing and when the user edits the name on the Seeker side. The Provider shall allocate space, at least 64 bytes, to store the personalized name. Writes to Additional Data characteristic with personalized name may happen in 2 flows.'",
+        "UUID_name": "Personalized Name",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241231213832/https://developers.google.com/nearby/fast-pair/specifications/characteristics",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fe2c"
+    },
+    {
+        "UUID": "fe2c1238-8366-4814-8eb0-01de32100bea",
+        "company": "Google",
+        "UUID_purpose": "'The Find My Device Network (FMDN) accessory specification defines an end-to-end encrypted approach for tracking beaconing Bluetooth Low Energy (BLE) devices. '",
+        "UUID_name": "Beacon actions",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250212073846/https://developers.google.com/nearby/fast-pair/specifications/extensions/fmdn",
+                "description": "'This page describes FMDN as an extension to the Fast Pair specification.'",
                 "submitter": "Xeno Kovah"
             }
         ],
@@ -1907,27 +1907,27 @@
         ]
     },
     {
-        "UUID": "569a2003-b87f-490c-92cb-11ba5ea5167c",
+        "UUID": "569a110x-b87f-490c-92cb-11ba5ea5167c",
         "company": "Laird",
-        "UUID_purpose": "Model (AT commands?) input",
-        "UUID_name": "MODEM_IN",
+        "UUID_purpose": "Unknown related-UUID regex match",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
                 "URL": "https://web.archive.org/web/20240702193309/https://connectivity-staging.s3.us-east-2.amazonaws.com/s3fs-public/2019-01/Application%20Note%20-%20Laird%20BLE%20Serial%20Port%20Service%20v1_0_0.pdf",
-                "description": "'Laird Custom BLE Serial Port Service' Application Note",
+                "description": "Similar to Laird virtual serial port 569a1101-b87f-490c-92cb-11ba5ea5167c. Not actually mentioned in but observed in wild with X = 2, 3, and 4.",
                 "submitter": "Xeno Kovah"
             }
         ],
-        "parent_UUID": "569a1101-b87f-490c-92cb-11ba5ea5167c"
+        "parent_UUID": "569a1101-b87f-490c-92cb-11ba5ea5167c",
+        "regex": true
     },
     {
-        "UUID": "569a2002-b87f-490c-92cb-11ba5ea5167c",
+        "UUID": "569a2000-b87f-490c-92cb-11ba5ea5167c",
         "company": "Laird",
-        "UUID_purpose": "Model (AT commands?) output",
-        "UUID_name": "MODEM_OUT",
+        "UUID_purpose": "Serial port transmit (TX)",
+        "UUID_name": "TX_FIFO",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -1958,10 +1958,10 @@
         "parent_UUID": "569a1101-b87f-490c-92cb-11ba5ea5167c"
     },
     {
-        "UUID": "569a2000-b87f-490c-92cb-11ba5ea5167c",
+        "UUID": "569a2002-b87f-490c-92cb-11ba5ea5167c",
         "company": "Laird",
-        "UUID_purpose": "Serial port transmit (TX)",
-        "UUID_name": "TX_FIFO",
+        "UUID_purpose": "Model (AT commands?) output",
+        "UUID_name": "MODEM_OUT",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -1975,21 +1975,21 @@
         "parent_UUID": "569a1101-b87f-490c-92cb-11ba5ea5167c"
     },
     {
-        "UUID": "569a110x-b87f-490c-92cb-11ba5ea5167c",
+        "UUID": "569a2003-b87f-490c-92cb-11ba5ea5167c",
         "company": "Laird",
-        "UUID_purpose": "Unknown related-UUID regex match",
+        "UUID_purpose": "Model (AT commands?) input",
+        "UUID_name": "MODEM_IN",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
                 "URL": "https://web.archive.org/web/20240702193309/https://connectivity-staging.s3.us-east-2.amazonaws.com/s3fs-public/2019-01/Application%20Note%20-%20Laird%20BLE%20Serial%20Port%20Service%20v1_0_0.pdf",
-                "description": "Similar to Laird virtual serial port 569a1101-b87f-490c-92cb-11ba5ea5167c. Not actually mentioned in but observed in wild with X = 2, 3, and 4.",
+                "description": "'Laird Custom BLE Serial Port Service' Application Note",
                 "submitter": "Xeno Kovah"
             }
         ],
-        "parent_UUID": "569a1101-b87f-490c-92cb-11ba5ea5167c",
-        "regex": true
+        "parent_UUID": "569a1101-b87f-490c-92cb-11ba5ea5167c"
     },
     {
         "UUID": "569a300x-b87f-490c-92cb-11ba5ea5167c",
@@ -2077,6 +2077,33 @@
         "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
     },
     {
+        "UUID": "54220002-f6a5-4007-a371-722f4ebd8436",
+        "company": "Memfault",
+        "UUID_purpose": "'Returns the device identifier populated in the memfault_platform_get_device_info() dependency function.'",
+        "UUID_name": "MDS Device Identifier",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250218234410/https://memfault.notion.site/Memfault-Diagnostic-GATT-Service-MDS-ffd5a430062649cd9bf6edbf64e2563b",
+                "description": "Definition for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250117091426/https://docs.memfault.com/docs/mcu/mds",
+                "description": "Further documentation/definition/confirmation for Service & Characteristic UUIDs.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250218234518/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/mds.html",
+                "description": "Nordic SDK description of MDS.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
+    },
+    {
         "UUID": "54220003-f6a5-4007-a371-722f4ebd8436",
         "company": "Memfault",
         "UUID_purpose": "'Returns the URI diagnostic data should be forwarded to.'",
@@ -2108,33 +2135,6 @@
         "company": "Memfault",
         "UUID_purpose": "'Returns the configured authorization to use such as \"Memfault-Project-Key:YOUR_PROJECT_KEY\"'",
         "UUID_name": "MDS Authorization",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250218234410/https://memfault.notion.site/Memfault-Diagnostic-GATT-Service-MDS-ffd5a430062649cd9bf6edbf64e2563b",
-                "description": "Definition for Service & Characteristic UUIDs.",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20250117091426/https://docs.memfault.com/docs/mcu/mds",
-                "description": "Further documentation/definition/confirmation for Service & Characteristic UUIDs.",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20250218234518/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/mds.html",
-                "description": "Nordic SDK description of MDS.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
-    },
-    {
-        "UUID": "54220002-f6a5-4007-a371-722f4ebd8436",
-        "company": "Memfault",
-        "UUID_purpose": "'Returns the device identifier populated in the memfault_platform_get_device_info() dependency function.'",
-        "UUID_name": "MDS Device Identifier",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -2391,6 +2391,73 @@
         "parent_UUID": "d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c"
     },
     {
+        "UUID": "14387800-130c-49e7-b877-2881c89cb258",
+        "company": "Nordic",
+        "UUID_purpose": "Provision a Wi-Fi device that lacks input or output capability",
+        "UUID_name": "Wi-Fi Provisioning",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
+                "description": "Nordic SDK description of Wi-Fi Provisioning.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "14387801-130c-49e7-b877-2881c89cb258",
+        "company": "Nordic",
+        "UUID_purpose": "'For client to get Info message from server.' + Note: permissions listed as 'No security required'.",
+        "UUID_name": "Information",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
+                "description": "Nordic SDK description of Wi-Fi Provisioning.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "14387800-130c-49e7-b877-2881c89cb258"
+    },
+    {
+        "UUID": "14387802-130c-49e7-b877-2881c89cb258",
+        "company": "Nordic",
+        "UUID_purpose": "'For client to send Request message to server, and server to send Response message to client.' + Note: permissions listed as 'Encryption required'.",
+        "UUID_name": "Operation Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
+                "description": "Nordic SDK description of Wi-Fi Provisioning.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "14387800-130c-49e7-b877-2881c89cb258"
+    },
+    {
+        "UUID": "14387803-130c-49e7-b877-2881c89cb258",
+        "company": "Nordic",
+        "UUID_purpose": "'For server to send Result message to the client.' + Note: permissions listed as 'Encryption required'.",
+        "UUID_name": "Data Out",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
+                "description": "Nordic SDK description of Wi-Fi Provisioning.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "14387800-130c-49e7-b877-2881c89cb258"
+    },
+    {
         "UUID": "6e400001-b5a3-f393-e0a9-e50e24dcca9e",
         "company": "Nordic",
         "UUID_purpose": "Serial communications (UART) over BLE",
@@ -2406,10 +2473,10 @@
         ]
     },
     {
-        "UUID": "6e400003-b5a3-f393-e0a9-e50e24dcca9e",
+        "UUID": "6e400002-b5a3-f393-e0a9-e50e24dcca9e",
         "company": "Nordic",
-        "UUID_purpose": "'Notify: Enable notifications for the TX Characteristic to receive data from the application. The application transmits all data that is received over UART as notifications.'",
-        "UUID_name": "Transmit (TX)",
+        "UUID_purpose": "'Write or Write Without Response: Write data to the RX Characteristic to send it on to the UART interface.'",
+        "UUID_name": "Receive (RX)",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -2422,10 +2489,10 @@
         "parent_UUID": "6e400001-b5a3-f393-e0a9-e50e24dcca9e"
     },
     {
-        "UUID": "6e400002-b5a3-f393-e0a9-e50e24dcca9e",
+        "UUID": "6e400003-b5a3-f393-e0a9-e50e24dcca9e",
         "company": "Nordic",
-        "UUID_purpose": "'Write or Write Without Response: Write data to the RX Characteristic to send it on to the UART interface.'",
-        "UUID_name": "Receive (RX)",
+        "UUID_purpose": "'Notify: Enable notifications for the TX Characteristic to receive data from the application. The application transmits all data that is received over UART as notifications.'",
+        "UUID_name": "Transmit (TX)",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -2634,73 +2701,6 @@
             }
         ],
         "parent_UUID": "57a70000-9350-11ed-a1eb-0242ac120002"
-    },
-    {
-        "UUID": "14387800-130c-49e7-b877-2881c89cb258",
-        "company": "Nordic",
-        "UUID_purpose": "Provision a Wi-Fi device that lacks input or output capability",
-        "UUID_name": "Wi-Fi Provisioning",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
-                "description": "Nordic SDK description of Wi-Fi Provisioning.",
-                "submitter": "Xeno Kovah"
-            }
-        ]
-    },
-    {
-        "UUID": "14387802-130c-49e7-b877-2881c89cb258",
-        "company": "Nordic",
-        "UUID_purpose": "'For client to send Request message to server, and server to send Response message to client.' + Note: permissions listed as 'Encryption required'.",
-        "UUID_name": "Operation Control Point",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
-                "description": "Nordic SDK description of Wi-Fi Provisioning.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "14387800-130c-49e7-b877-2881c89cb258"
-    },
-    {
-        "UUID": "14387803-130c-49e7-b877-2881c89cb258",
-        "company": "Nordic",
-        "UUID_purpose": "'For server to send Result message to the client.' + Note: permissions listed as 'Encryption required'.",
-        "UUID_name": "Data Out",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
-                "description": "Nordic SDK description of Wi-Fi Provisioning.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "14387800-130c-49e7-b877-2881c89cb258"
-    },
-    {
-        "UUID": "14387801-130c-49e7-b877-2881c89cb258",
-        "company": "Nordic",
-        "UUID_purpose": "'For client to get Info message from server.' + Note: permissions listed as 'No security required'.",
-        "UUID_name": "Information",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/save/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/wifi_prov.html",
-                "description": "Nordic SDK description of Wi-Fi Provisioning.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "14387800-130c-49e7-b877-2881c89cb258"
     },
     {
         "UUID": "ab5e0001-5a21-4f05-bc7d-af01f617b664",
@@ -2965,23 +2965,6 @@
         ]
     },
     {
-        "UUID": "b7de1eea-823d-43bb-a3af-c4903dfce23c",
-        "company": "Renesas",
-        "UUID_purpose": "(Only present on SUOTA versions > 1.3) Something to do with SUOTA Maximum Transmission Unit (MTU)?",
-        "UUID_name": "SUOTA_MTU_UUID",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250206123901/https://github.com/byteman/da14585/blob/286060d1b264caf25da11c75517b9454b699257c/sdk/ble_stack/profiles/suota/suotar/src/suotar.c#L42",
-                "description": "Downloading the official Renesas SDK with the definition of the macro is behind an account-wall, so just using a 3rd party reference which seems to have mirrored it",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fef5"
-    },
-    {
         "UUID": "42c3dfdd-77be-4d9c-8454-8f875267fb3b",
         "company": "Renesas",
         "UUID_purpose": "(Only present on SUOTA versions > 1.3) Something to do with SUOTA patch data characteristic size?",
@@ -2999,10 +2982,61 @@
         "parent_UUID": "fef5"
     },
     {
+        "UUID": "457871e8-d516-4ca1-9116-57d0b17b9cb2",
+        "company": "Renesas",
+        "UUID_purpose": "Something to do with memory patching for OTA update: 'New patch len: 16 bits'",
+        "UUID_name": "SUOTA_PATCH_DATA_UUID",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250206123901/https://github.com/byteman/da14585/blob/286060d1b264caf25da11c75517b9454b699257c/sdk/ble_stack/profiles/suota/suotar/src/suotar.c#L42",
+                "description": "Downloading the official Renesas SDK with the definition of the macro is behind an account-wall, so just using a 3rd party reference which seems to have mirrored it",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fef5"
+    },
+    {
+        "UUID": "5f78df94-798c-46f5-990a-b3eb6a065c88",
+        "company": "Renesas",
+        "UUID_purpose": "Something to do with service status for OTA update: 'SUOTA serv status: 8 bits'",
+        "UUID_name": "SUOTA_SERV_STATUS_UUID",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250206123901/https://github.com/byteman/da14585/blob/286060d1b264caf25da11c75517b9454b699257c/sdk/ble_stack/profiles/suota/suotar/src/suotar.c#L42",
+                "description": "Downloading the official Renesas SDK with the definition of the macro is behind an account-wall, so just using a 3rd party reference which seems to have mirrored it",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fef5"
+    },
+    {
         "UUID": "64b4e8b5-0de5-401b-a21d-acc8db3b913a",
         "company": "Renesas",
         "UUID_purpose": "(Only present on SUOTA versions > 1.3) Something to do with SUOTA service version?",
         "UUID_name": "SUOTA_VERSION_UUID",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250206123901/https://github.com/byteman/da14585/blob/286060d1b264caf25da11c75517b9454b699257c/sdk/ble_stack/profiles/suota/suotar/src/suotar.c#L42",
+                "description": "Downloading the official Renesas SDK with the definition of the macro is behind an account-wall, so just using a 3rd party reference which seems to have mirrored it",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fef5"
+    },
+    {
+        "UUID": "6c53db25-47a1-45fe-a022-7c92fb334fd4",
+        "company": "Renesas",
+        "UUID_purpose": "Something to do with memory info access for OTA update: 'Mem Info: B[3:2]=#Patches, B[1:0]=Entire_Length'",
+        "UUID_name": "SUOTA_MEM_INFO_UUID",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3050,40 +3084,6 @@
         "parent_UUID": "fef5"
     },
     {
-        "UUID": "6c53db25-47a1-45fe-a022-7c92fb334fd4",
-        "company": "Renesas",
-        "UUID_purpose": "Something to do with memory info access for OTA update: 'Mem Info: B[3:2]=#Patches, B[1:0]=Entire_Length'",
-        "UUID_name": "SUOTA_MEM_INFO_UUID",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250206123901/https://github.com/byteman/da14585/blob/286060d1b264caf25da11c75517b9454b699257c/sdk/ble_stack/profiles/suota/suotar/src/suotar.c#L42",
-                "description": "Downloading the official Renesas SDK with the definition of the macro is behind an account-wall, so just using a 3rd party reference which seems to have mirrored it",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fef5"
-    },
-    {
-        "UUID": "457871e8-d516-4ca1-9116-57d0b17b9cb2",
-        "company": "Renesas",
-        "UUID_purpose": "Something to do with memory patching for OTA update: 'New patch len: 16 bits'",
-        "UUID_name": "SUOTA_PATCH_DATA_UUID",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250206123901/https://github.com/byteman/da14585/blob/286060d1b264caf25da11c75517b9454b699257c/sdk/ble_stack/profiles/suota/suotar/src/suotar.c#L42",
-                "description": "Downloading the official Renesas SDK with the definition of the macro is behind an account-wall, so just using a 3rd party reference which seems to have mirrored it",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fef5"
-    },
-    {
         "UUID": "9d84b9a3-000c-49d8-9183-855b673fda31",
         "company": "Renesas",
         "UUID_purpose": "Something to do with memory patching for OTA update: 'Patch Data: 20 bytes'",
@@ -3101,10 +3101,10 @@
         "parent_UUID": "fef5"
     },
     {
-        "UUID": "5f78df94-798c-46f5-990a-b3eb6a065c88",
+        "UUID": "b7de1eea-823d-43bb-a3af-c4903dfce23c",
         "company": "Renesas",
-        "UUID_purpose": "Something to do with service status for OTA update: 'SUOTA serv status: 8 bits'",
-        "UUID_name": "SUOTA_SERV_STATUS_UUID",
+        "UUID_purpose": "(Only present on SUOTA versions > 1.3) Something to do with SUOTA Maximum Transmission Unit (MTU)?",
+        "UUID_name": "SUOTA_MTU_UUID",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3184,10 +3184,10 @@
         ]
     },
     {
-        "UUID": "00000002-000e-11e1-9ab4-0002a5d5c51b",
+        "UUID": "00000001-000e-11e1-9ab4-0002a5d5c51b",
         "company": "ST Microelectronics (STMicro)",
-        "UUID_purpose": "'used by the board to notify the user about an error message'",
-        "UUID_name": "Debug notify user error message",
+        "UUID_purpose": "'used to send string commands to the board and notify the user about the result'",
+        "UUID_name": "Debug notify user message",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3201,10 +3201,10 @@
         "parent_UUID": "00000000-000e-11e1-9ab4-0002a5d5c51b"
     },
     {
-        "UUID": "00000001-000e-11e1-9ab4-0002a5d5c51b",
+        "UUID": "00000002-000e-11e1-9ab4-0002a5d5c51b",
         "company": "ST Microelectronics (STMicro)",
-        "UUID_purpose": "'used to send string commands to the board and notify the user about the result'",
-        "UUID_name": "Debug notify user message",
+        "UUID_purpose": "'used by the board to notify the user about an error message'",
+        "UUID_name": "Debug notify user error message",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3308,32 +3308,10 @@
         ]
     },
     {
-        "UUID": "d19ddd83-bbe1-4144-bb18-f3ceb57c480a",
+        "UUID": "0487d871-d55e-44aa-8318-4faa721278e5",
         "company": "Samsung",
-        "UUID_purpose": "'12-byte, varies'",
-        "UUID_name": "Privacy ID Seed",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
-                "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
-                "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd69"
-    },
-    {
-        "UUID": "abd6e6ba-3843-4786-b9b2-b69548eed881",
-        "company": "Samsung",
-        "UUID_purpose": "'16-byte, varies'",
-        "UUID_name": "Privacy ID IV",
+        "UUID_purpose": "Multi-Community Finding",
+        "UUID_name": "MCF",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3396,32 +3374,10 @@
         "parent_UUID": "fd69"
     },
     {
-        "UUID": "bebfaa51-dcb8-44de-a4b8-fc8c9c7ef46d",
+        "UUID": "abd6e6ba-3843-4786-b9b2-b69548eed881",
         "company": "Samsung",
-        "UUID_purpose": "'a valid region code, e.g. 12 for AU'",
-        "UUID_name": "REGION",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
-                "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
-                "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd69"
-    },
-    {
-        "UUID": "0487d871-d55e-44aa-8318-4faa721278e5",
-        "company": "Samsung",
-        "UUID_purpose": "Multi-Community Finding",
-        "UUID_name": "MCF",
+        "UUID_purpose": "'16-byte, varies'",
+        "UUID_name": "Privacy ID IV",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3462,6 +3418,50 @@
         "parent_UUID": "fd69"
     },
     {
+        "UUID": "bebfaa51-dcb8-44de-a4b8-fc8c9c7ef46d",
+        "company": "Samsung",
+        "UUID_purpose": "'a valid region code, e.g. 12 for AU'",
+        "UUID_name": "REGION",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
+                "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
+                "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd69"
+    },
+    {
+        "UUID": "d19ddd83-bbe1-4144-bb18-f3ceb57c480a",
+        "company": "Samsung",
+        "UUID_purpose": "'12-byte, varies'",
+        "UUID_name": "Privacy ID Seed",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
+                "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
+                "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd69"
+    },
+    {
         "UUID": "fd5a",
         "company": "Samsung",
         "UUID_purpose": "'for registered tags' + 'Service UUID FD5A is primarily used for performing more complicated interactions between the owner device and a tag, such as executing a supported command (e.g., alarm, changing ringtone) on the tag.'",
@@ -3481,6 +3481,116 @@
                 "submitter": "Xeno Kovah"
             }
         ]
+    },
+    {
+        "UUID": "dee30001-182d-5496-b1ad-14f216324184",
+        "company": "Samsung",
+        "UUID_purpose": "'The GATT characteristic OWNER_ALARM_CHAR (UUID DEE30001-182D-5496-B1AD-14F216324184) is used to configure the alarm on a tag. A phone can make a SmartTag ring by sending a command packet, with the command opcode 0x01, through this characteristic. The opcode for turning off the alarm is 0x00.'",
+        "UUID_name": "OWNER_ALARM",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
+                "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
+                "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd5a"
+    },
+    {
+        "UUID": "dee30002-182d-5496-b1ad-14f216324184",
+        "company": "Samsung",
+        "UUID_purpose": "Audio Volume",
+        "UUID_name": "Audio Volume",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
+                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd5a"
+    },
+    {
+        "UUID": "dee30003-182d-5496-b1ad-14f216324184",
+        "company": "Samsung",
+        "UUID_purpose": "'The Remote Ring feature allows a tag to make its owner device ring by pressing the tag button. This feature is not enabled by default and needs to be explicitly enabled by the owner through the SmartThings app. The owner device can receive this command through subscribing to the indication of the remoteRing GATT characteristic (UUID DEE30003-182D-5496-B1AD-14F216324184) of the tag.'",
+        "UUID_name": "Tag Button",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
+                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
+                "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
+                "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd5a"
+    },
+    {
+        "UUID": "dee30004-182d-5496-b1ad-14f216324184",
+        "company": "Samsung",
+        "UUID_purpose": "Battery",
+        "UUID_name": "Battery",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
+                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd5a"
+    },
+    {
+        "UUID": "dee30005-182d-5496-b1ad-14f216324184",
+        "company": "Samsung",
+        "UUID_purpose": "'Will be set to the current UTC Time' + 'Finally, the phone will perform time synchronization with the tag through the TIME_SYNC characteristic, then write a value to the SETUP_COMPLETE characteristic to indicate the completion of the registration process'",
+        "UUID_name": "Time",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
+                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
+                "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
+                "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd5a"
     },
     {
         "UUID": "dee30006-182d-5496-b1ad-14f216324184",
@@ -3504,6 +3614,74 @@
             {
                 "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
                 "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd5a"
+    },
+    {
+        "UUID": "dee30007-182d-5496-b1ad-14f216324184",
+        "company": "Samsung",
+        "UUID_purpose": "E2E Encryption flag",
+        "UUID_name": "E2E Encryption flag",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
+                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd5a"
+    },
+    {
+        "UUID": "dee30008-182d-5496-b1ad-14f216324184",
+        "company": "Samsung",
+        "UUID_purpose": "UWB Ranging flag",
+        "UUID_name": "UWB Ranging flag",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
+                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd5a"
+    },
+    {
+        "UUID": "dee30009-182d-5496-b1ad-14f216324184",
+        "company": "Samsung",
+        "UUID_purpose": "UWB Parameter",
+        "UUID_name": "UWB Parameter",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
+                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd5a"
+    },
+    {
+        "UUID": "dee3000a-182d-5496-b1ad-14f216324184",
+        "company": "Samsung",
+        "UUID_purpose": "Ringtone",
+        "UUID_name": "Ringtone",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
+                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
                 "submitter": "Xeno Kovah"
             }
         ],
@@ -3564,137 +3742,27 @@
         "parent_UUID": "fd5a"
     },
     {
-        "UUID": "dee30001-182d-5496-b1ad-14f216324184",
-        "company": "Samsung",
-        "UUID_purpose": "'The GATT characteristic OWNER_ALARM_CHAR (UUID DEE30001-182D-5496-B1AD-14F216324184) is used to configure the alarm on a tag. A phone can make a SmartTag ring by sending a command packet, with the command opcode 0x01, through this characteristic. The opcode for turning off the alarm is 0x00.'",
-        "UUID_name": "OWNER_ALARM",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
-                "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
-                "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd5a"
-    },
-    {
-        "UUID": "dee30003-182d-5496-b1ad-14f216324184",
-        "company": "Samsung",
-        "UUID_purpose": "'The Remote Ring feature allows a tag to make its owner device ring by pressing the tag button. This feature is not enabled by default and needs to be explicitly enabled by the owner through the SmartThings app. The owner device can receive this command through subscribing to the indication of the remoteRing GATT characteristic (UUID DEE30003-182D-5496-B1AD-14F216324184) of the tag.'",
-        "UUID_name": "Tag Button",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
-                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
-                "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
-                "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd5a"
-    },
-    {
-        "UUID": "dee30005-182d-5496-b1ad-14f216324184",
-        "company": "Samsung",
-        "UUID_purpose": "'Will be set to the current UTC Time' + 'Finally, the phone will perform time synchronization with the tag through the TIME_SYNC characteristic, then write a value to the SETUP_COMPLETE characteristic to indicate the completion of the registration process'",
-        "UUID_name": "Time",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
-                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
-                "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20221028085349/https://arxiv.org/pdf/2210.14702.pdf",
-                "description": "From talk 'Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2022",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd5a"
-    },
-    {
-        "UUID": "dee3001d-182d-5496-b1ad-14f216324184",
-        "company": "Samsung",
-        "UUID_purpose": "Activity Tracker",
-        "UUID_name": "Activity Tracker",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
-                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd5a"
-    },
-    {
-        "UUID": "dee30002-182d-5496-b1ad-14f216324184",
-        "company": "Samsung",
-        "UUID_purpose": "Audio Volume",
-        "UUID_name": "Audio Volume",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
-                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd5a"
-    },
-    {
-        "UUID": "dee30004-182d-5496-b1ad-14f216324184",
-        "company": "Samsung",
-        "UUID_purpose": "Battery",
-        "UUID_name": "Battery",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
-                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd5a"
-    },
-    {
         "UUID": "dee3000d-182d-5496-b1ad-14f216324184",
         "company": "Samsung",
         "UUID_purpose": "Bond",
         "UUID_name": "Bond",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
+                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fd5a"
+    },
+    {
+        "UUID": "dee3000e-182d-5496-b1ad-14f216324184",
+        "company": "Samsung",
+        "UUID_purpose": "Spec Version",
+        "UUID_name": "Spec Version",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3725,44 +3793,10 @@
         "parent_UUID": "fd5a"
     },
     {
-        "UUID": "dee3001f-182d-5496-b1ad-14f216324184",
+        "UUID": "dee3001a-182d-5496-b1ad-14f216324184",
         "company": "Samsung",
-        "UUID_purpose": "Button Sound Volume",
-        "UUID_name": "Button Sound Volume",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
-                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd5a"
-    },
-    {
-        "UUID": "dee30030-182d-5496-b1ad-14f216324184",
-        "company": "Samsung",
-        "UUID_purpose": "Debug Flag",
-        "UUID_name": "Debug Flag",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
-                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd5a"
-    },
-    {
-        "UUID": "dee30007-182d-5496-b1ad-14f216324184",
-        "company": "Samsung",
-        "UUID_purpose": "E2E Encryption flag",
-        "UUID_name": "E2E Encryption flag",
+        "UUID_purpose": "Private ID Pool Size",
+        "UUID_name": "Private ID Pool Size",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3810,10 +3844,10 @@
         "parent_UUID": "fd5a"
     },
     {
-        "UUID": "dee30041-182d-5496-b1ad-14f216324184",
+        "UUID": "dee3001d-182d-5496-b1ad-14f216324184",
         "company": "Samsung",
-        "UUID_purpose": "Pet Activity",
-        "UUID_name": "Pet Activity",
+        "UUID_purpose": "Activity Tracker",
+        "UUID_name": "Activity Tracker",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3827,44 +3861,10 @@
         "parent_UUID": "fd5a"
     },
     {
-        "UUID": "dee3001a-182d-5496-b1ad-14f216324184",
+        "UUID": "dee3001f-182d-5496-b1ad-14f216324184",
         "company": "Samsung",
-        "UUID_purpose": "Private ID Pool Size",
-        "UUID_name": "Private ID Pool Size",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
-                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd5a"
-    },
-    {
-        "UUID": "dee3000a-182d-5496-b1ad-14f216324184",
-        "company": "Samsung",
-        "UUID_purpose": "Ringtone",
-        "UUID_name": "Ringtone",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241225145702/https://github.com/biemster/FindMy/issues/65",
-                "description": "Per KieronQuinn github user, 'Here's the full list of characteristics for a SmartTag2 from the https://client.smartthings.com/miniature/configure?profileId=*removed* endpoint: characteristics.json. And my own table of them that was built before I found that endpoint, based on what they were used for in the APK.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "fd5a"
-    },
-    {
-        "UUID": "dee3000e-182d-5496-b1ad-14f216324184",
-        "company": "Samsung",
-        "UUID_purpose": "Spec Version",
-        "UUID_name": "Spec Version",
+        "UUID_purpose": "Button Sound Volume",
+        "UUID_name": "Button Sound Volume",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3895,10 +3895,10 @@
         "parent_UUID": "fd5a"
     },
     {
-        "UUID": "dee30009-182d-5496-b1ad-14f216324184",
+        "UUID": "dee30030-182d-5496-b1ad-14f216324184",
         "company": "Samsung",
-        "UUID_purpose": "UWB Parameter",
-        "UUID_name": "UWB Parameter",
+        "UUID_purpose": "Debug Flag",
+        "UUID_name": "Debug Flag",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3912,10 +3912,10 @@
         "parent_UUID": "fd5a"
     },
     {
-        "UUID": "dee30008-182d-5496-b1ad-14f216324184",
+        "UUID": "dee30041-182d-5496-b1ad-14f216324184",
         "company": "Samsung",
-        "UUID_purpose": "UWB Ranging flag",
-        "UUID_name": "UWB Ranging flag",
+        "UUID_purpose": "Pet Activity",
+        "UUID_name": "Pet Activity",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3950,10 +3950,10 @@
         ]
     },
     {
-        "UUID": "6ac16db1-f442-4bf4-b804-04c32356465d",
+        "UUID": "08a11e38-1c6d-4929-9c32-4f32a64985ce",
         "company": "Samsung",
-        "UUID_purpose": "'Among this registration data is a hashed serial number (hashed_sn) unique to the tag, which corresponds to the SHA256 digest of the BLE identity address of the tag.'",
-        "UUID_name": "HASHED_SN",
+        "UUID_purpose": "'This data contains a rotating identifier, called the privacy ID, which is unique to the lost device and which, in theory, can only be linked to its owner by Samsung and the owner device.'",
+        "UUID_name": "IDENTIFIER",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3972,10 +3972,10 @@
         "parent_UUID": "fd59"
     },
     {
-        "UUID": "08a11e38-1c6d-4929-9c32-4f32a64985ce",
+        "UUID": "6ac16db1-f442-4bf4-b804-04c32356465d",
         "company": "Samsung",
-        "UUID_purpose": "'This data contains a rotating identifier, called the privacy ID, which is unique to the lost device and which, in theory, can only be linked to its owner by Samsung and the owner device.'",
-        "UUID_name": "IDENTIFIER",
+        "UUID_purpose": "'Among this registration data is a hashed serial number (hashed_sn) unique to the tag, which corresponds to the SHA256 digest of the BLE identity address of the tag.'",
+        "UUID_name": "HASHED_SN",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4015,10 +4015,10 @@
         ]
     },
     {
-        "UUID": "a12be31c-5b38-4773-9b9d-3d5735233a7c",
+        "UUID": "50f98bfd-158c-4efa-add4-0a70c2f5df5d",
         "company": "Samsung",
-        "UUID_purpose": "'The NONCE characteristic is readable and returns an IV to be used during encryption.'",
-        "UUID_name": "NONCE",
+        "UUID_purpose": "'The SUPPORTED_CIPHER characteristic is readable and contains information about the cipher to be used, which is AES/CBC/PKCS7.'",
+        "UUID_name": "SUPPORTED_CIPHER",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4037,10 +4037,10 @@
         "parent_UUID": "eedd5e73-6aa8-4673-8219-398a489da87c"
     },
     {
-        "UUID": "50f98bfd-158c-4efa-add4-0a70c2f5df5d",
+        "UUID": "a12be31c-5b38-4773-9b9d-3d5735233a7c",
         "company": "Samsung",
-        "UUID_purpose": "'The SUPPORTED_CIPHER characteristic is readable and contains information about the cipher to be used, which is AES/CBC/PKCS7.'",
-        "UUID_name": "SUPPORTED_CIPHER",
+        "UUID_purpose": "'The NONCE characteristic is readable and returns an IV to be used during encryption.'",
+        "UUID_name": "NONCE",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4092,23 +4092,6 @@
         "parent_UUID": "ede3469c-f706-11e7-8c3f-9a214cf093ae"
     },
     {
-        "UUID": "d1371d4a-f709-11e7-8c3f-9a214cf093ae",
-        "company": "Sensata",
-        "UUID_purpose": "Device ID",
-        "UUID_name": "Device ID",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "ede3469c-f706-11e7-8c3f-9a214cf093ae"
-    },
-    {
         "UUID": "60fd30d2-f709-11e7-8c3f-9a214cf093ae",
         "company": "Sensata",
         "UUID_purpose": "Generic Config Value (GCV) gcv[0] value",
@@ -4130,6 +4113,23 @@
         "company": "Sensata",
         "UUID_purpose": "Main firmware version",
         "UUID_name": "Main firmware version",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "ede3469c-f706-11e7-8c3f-9a214cf093ae"
+    },
+    {
+        "UUID": "d1371d4a-f709-11e7-8c3f-9a214cf093ae",
+        "company": "Sensata",
+        "UUID_purpose": "Device ID",
+        "UUID_name": "Device ID",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4209,129 +4209,10 @@
         ]
     },
     {
-        "UUID": "5eed6719-0390-11e5-8418-1697f925ec7b",
-        "company": "Sensata",
-        "UUID_purpose": "Derived odometer",
-        "UUID_name": "Derived odometer",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "66aa658a-0003-4cee-86f0-4c775bbe5a54",
-        "company": "Sensata",
-        "UUID_purpose": "Driver ID",
-        "UUID_name": "Driver ID",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "5eed70e6-0390-11e5-8418-1697f925ec7b",
-        "company": "Sensata",
-        "UUID_purpose": "ECM (Electronic Control Module) / ECU (Electronic Control Unit) Status",
-        "UUID_name": "ECM/ECU Status",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
         "UUID": "0d407e4c-39c9-11e8-b467-0ed5f89f718b",
         "company": "Sensata",
         "UUID_purpose": "ECU Engine Hours in Seconds",
         "UUID_name": "ECU Engine Hours Seconds",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "95dbace5-fcee-467f-bbe9-fe42e195bb04",
-        "company": "Sensata",
-        "UUID_purpose": "Engine Hours",
-        "UUID_name": "Engine Hours",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "87e22dd2-e27b-4094-968a-03e1537e7eb7",
-        "company": "Sensata",
-        "UUID_purpose": "Engine Hours in Seconds",
-        "UUID_name": "EngineHours Seconds",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "b71eb3aa-4ed7-4990-ab22-ced09cf58f34",
-        "company": "Sensata",
-        "UUID_purpose": "Engine Run Time",
-        "UUID_name": "Engine Run Time",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "5eed665c-0390-11e5-8418-1697f925ec7b",
-        "company": "Sensata",
-        "UUID_purpose": "Engine/Ignition",
-        "UUID_name": "Engine/Ignition",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4362,61 +4243,27 @@
         "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
     },
     {
+        "UUID": "0f834728-39d5-11e8-b467-0ed5f89f718b",
+        "company": "Sensata",
+        "UUID_purpose": "Start Trip System Unix Time",
+        "UUID_name": "Start Trip System Unix Time",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
         "UUID": "1c3917a6-7d33-4152-9a33-858b6f1fc99b",
         "company": "Sensata",
         "UUID_purpose": "Fuel Level",
         "UUID_name": "Fuel Level",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "e7737830-1018-11e6-a148-3e1d05defe78",
-        "company": "Sensata",
-        "UUID_purpose": "GPS Info",
-        "UUID_name": "GPS Info",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "5eed659a-0390-11e5-8418-1697f925ec7b",
-        "company": "Sensata",
-        "UUID_purpose": "Moving",
-        "UUID_name": "Moving",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "5eed6477-0390-11e5-8418-1697f925ec7b",
-        "company": "Sensata",
-        "UUID_purpose": "Protocol",
-        "UUID_name": "Protocol",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4447,112 +4294,10 @@
         "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
     },
     {
-        "UUID": "5eed6ea2-0390-11e5-8418-1697f925ec7b",
-        "company": "Sensata",
-        "UUID_purpose": "Speed",
-        "UUID_name": "Speed",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "5ceb24b2-c273-40b4-b84b-f499e14c3f09",
-        "company": "Sensata",
-        "UUID_purpose": "Start Trip Derived Odometer",
-        "UUID_name": "Start Trip Derived Odometer",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "d4fb1556-39d2-11e8-b467-0ed5f89f718b",
-        "company": "Sensata",
-        "UUID_purpose": "Start Trip ECU Engine Hours in Seconds",
-        "UUID_name": "Start Trip ECU EngineHours Seconds",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
         "UUID": "40418a44-9b8d-49f8-8ef2-afcea1643786",
         "company": "Sensata",
         "UUID_purpose": "Start Trip Engine Hours in Seconds",
         "UUID_name": "Start Trip Engine Hours Seconds",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "d7b083dd-bf65-44e5-9fa1-959bddf2af0b",
-        "company": "Sensata",
-        "UUID_purpose": "Start Trip GPS Info",
-        "UUID_name": "Start Trip GPS info",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "0f834728-39d5-11e8-b467-0ed5f89f718b",
-        "company": "Sensata",
-        "UUID_purpose": "Start Trip System Unix Time",
-        "UUID_name": "Start Trip System Unix Time",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
-                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
-    },
-    {
-        "UUID": "ba4ac777-52ec-4133-9f18-adad8b98f142",
-        "company": "Sensata",
-        "UUID_purpose": "Start Trip True Odometer",
-        "UUID_name": "Start Trip True Odometer",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4583,6 +4328,91 @@
         "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
     },
     {
+        "UUID": "5ceb24b2-c273-40b4-b84b-f499e14c3f09",
+        "company": "Sensata",
+        "UUID_purpose": "Start Trip Derived Odometer",
+        "UUID_name": "Start Trip Derived Odometer",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "5eed6477-0390-11e5-8418-1697f925ec7b",
+        "company": "Sensata",
+        "UUID_purpose": "Protocol",
+        "UUID_name": "Protocol",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "5eed659a-0390-11e5-8418-1697f925ec7b",
+        "company": "Sensata",
+        "UUID_purpose": "Moving",
+        "UUID_name": "Moving",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "5eed665c-0390-11e5-8418-1697f925ec7b",
+        "company": "Sensata",
+        "UUID_purpose": "Engine/Ignition",
+        "UUID_name": "Engine/Ignition",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "5eed6719-0390-11e5-8418-1697f925ec7b",
+        "company": "Sensata",
+        "UUID_purpose": "Derived odometer",
+        "UUID_name": "Derived odometer",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
         "UUID": "5eed6d4e-0390-11e5-8418-1697f925ec7b",
         "company": "Sensata",
         "UUID_purpose": "True odometer",
@@ -4600,10 +4430,180 @@
         "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
     },
     {
+        "UUID": "5eed6ea2-0390-11e5-8418-1697f925ec7b",
+        "company": "Sensata",
+        "UUID_purpose": "Speed",
+        "UUID_name": "Speed",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "5eed70e6-0390-11e5-8418-1697f925ec7b",
+        "company": "Sensata",
+        "UUID_purpose": "ECM (Electronic Control Module) / ECU (Electronic Control Unit) Status",
+        "UUID_name": "ECM/ECU Status",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "66aa658a-0003-4cee-86f0-4c775bbe5a54",
+        "company": "Sensata",
+        "UUID_purpose": "Driver ID",
+        "UUID_name": "Driver ID",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "87e22dd2-e27b-4094-968a-03e1537e7eb7",
+        "company": "Sensata",
+        "UUID_purpose": "Engine Hours in Seconds",
+        "UUID_name": "EngineHours Seconds",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "95dbace5-fcee-467f-bbe9-fe42e195bb04",
+        "company": "Sensata",
+        "UUID_purpose": "Engine Hours",
+        "UUID_name": "Engine Hours",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
         "UUID": "a9b9f487-5e60-43d5-a249-4d1d3f317d7e",
         "company": "Sensata",
         "UUID_purpose": "VIN",
         "UUID_name": "VIN",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "b71eb3aa-4ed7-4990-ab22-ced09cf58f34",
+        "company": "Sensata",
+        "UUID_purpose": "Engine Run Time",
+        "UUID_name": "Engine Run Time",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "ba4ac777-52ec-4133-9f18-adad8b98f142",
+        "company": "Sensata",
+        "UUID_purpose": "Start Trip True Odometer",
+        "UUID_name": "Start Trip True Odometer",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "d4fb1556-39d2-11e8-b467-0ed5f89f718b",
+        "company": "Sensata",
+        "UUID_purpose": "Start Trip ECU Engine Hours in Seconds",
+        "UUID_name": "Start Trip ECU EngineHours Seconds",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "d7b083dd-bf65-44e5-9fa1-959bddf2af0b",
+        "company": "Sensata",
+        "UUID_purpose": "Start Trip GPS Info",
+        "UUID_name": "Start Trip GPS info",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250126231727/https://gvzcomp.it/component/djcatalog2/?format=raw&task=download&fid=2500",
+                "description": "Sensata model XT6300 or XT2400 Electronic Logging Device (ELD). 'XT6300 uses Bluetopia provided by StoneStreet one'. Advertising name given as 'HarpBT_<serial>' or 'Link2_<serial>' or Configurable.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "a59611ba-78b7-4fd2-96fb-9b0f66d2311e"
+    },
+    {
+        "UUID": "e7737830-1018-11e6-a148-3e1d05defe78",
+        "company": "Sensata",
+        "UUID_purpose": "GPS Info",
+        "UUID_name": "GPS Info",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4749,10 +4749,10 @@
         "parent_UUID": "decc0000-dc4f-4376-9df9-8de1f845b254"
     },
     {
-        "UUID": "decc0003-dc4f-4376-9df9-8de1f845b254",
+        "UUID": "decc0002-dc4f-4376-9df9-8de1f845b254",
         "company": "Sensata",
-        "UUID_purpose": "Provides Interface Version information about the device.",
-        "UUID_name": "Interface Version",
+        "UUID_purpose": "Provides Product ID information about the device.",
+        "UUID_name": "Product ID",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4766,10 +4766,10 @@
         "parent_UUID": "decc0000-dc4f-4376-9df9-8de1f845b254"
     },
     {
-        "UUID": "decc0002-dc4f-4376-9df9-8de1f845b254",
+        "UUID": "decc0003-dc4f-4376-9df9-8de1f845b254",
         "company": "Sensata",
-        "UUID_purpose": "Provides Product ID information about the device.",
-        "UUID_name": "Product ID",
+        "UUID_purpose": "Provides Interface Version information about the device.",
+        "UUID_name": "Interface Version",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4845,6 +4845,22 @@
         ]
     },
     {
+        "UUID": "75a9f022-af03-4e41-b4bc-9de90a47d50b",
+        "company": "Silicon Labs",
+        "UUID_purpose": "Stream Mode (Mode)",
+        "UUID_name": "Stream Mode (Mode)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240518104416/https://docs.silabs.com/gecko-os/1/bgx/latest/ble-services",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "331a36f5-2459-45ea-9d95-6142f0c4b307"
+    },
+    {
         "UUID": "a73e9a10-628f-4494-a099-12efaf72258f",
         "company": "Silicon Labs",
         "UUID_purpose": "'The Rx (receive) and Tx (transmit) Characteristics are named from the point of view of the Peripheral BGX device. To read a string transmitted from the Peripheral serial interface, enable Notifications or Indications from the Tx Characteristic then wait for subsequent Notification or Indication Events to occur.'",
@@ -4865,22 +4881,6 @@
         "company": "Silicon Labs",
         "UUID_purpose": "'The Rx (receive) and Tx (transmit) Characteristics are named from the point of view of the Peripheral BGX device. To send a string to be received by the Peripheral serial interface, write to the Rx Characteristic.'",
         "UUID_name": "Peripheral Receive (Rx)",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20240518104416/https://docs.silabs.com/gecko-os/1/bgx/latest/ble-services",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "331a36f5-2459-45ea-9d95-6142f0c4b307"
-    },
-    {
-        "UUID": "75a9f022-af03-4e41-b4bc-9de90a47d50b",
-        "company": "Silicon Labs",
-        "UUID_purpose": "Stream Mode (Mode)",
-        "UUID_name": "Stream Mode (Mode)",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -4917,6 +4917,23 @@
                 "submitter": "Xeno Kovah"
             }
         ]
+    },
+    {
+        "UUID": "00010203-0405-0607-0809-0a0b0c0d1911",
+        "company": "Telink Semiconductor Co. Ltd",
+        "UUID_purpose": "Mesh Light Status",
+        "UUID_name": "Mesh Light Status",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250117021209/https://wiki.telink-semi.cn//tools_and_sdk/BLE_Mesh/Telink_Mesh/telink_mesh_sdk.zip",
+                "description": "Note: auto-downloading zip. Unfortunate UUID reuse! Evidence that this UUID can also be interpreted as a Mesh Light Status is in the 'E3_Communication Protocol for Telink BLE Mesh Light APP.pdf' inside this zip.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00010203-0405-0607-0809-0a0b0c0d1910"
     },
     {
         "UUID": "00010203-0405-0607-0809-0a0b0c0d1912",
@@ -4964,23 +4981,6 @@
             {
                 "URL": "https://web.archive.org/web/20250117021209/https://wiki.telink-semi.cn//tools_and_sdk/BLE_Mesh/Telink_Mesh/telink_mesh_sdk.zip",
                 "description": "Note: auto-downloading zip. Unfortunate UUID reuse! Evidence that this UUID can also be interpreted as a Mesh Light Pair is in the 'E3_Communication Protocol for Telink BLE Mesh Light APP.pdf' inside this zip.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "00010203-0405-0607-0809-0a0b0c0d1910"
-    },
-    {
-        "UUID": "00010203-0405-0607-0809-0a0b0c0d1911",
-        "company": "Telink Semiconductor Co. Ltd",
-        "UUID_purpose": "Mesh Light Status",
-        "UUID_name": "Mesh Light Status",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250117021209/https://wiki.telink-semi.cn//tools_and_sdk/BLE_Mesh/Telink_Mesh/telink_mesh_sdk.zip",
-                "description": "Note: auto-downloading zip. Unfortunate UUID reuse! Evidence that this UUID can also be interpreted as a Mesh Light Status is in the 'E3_Communication Protocol for Telink BLE Mesh Light APP.pdf' inside this zip.",
                 "submitter": "Xeno Kovah"
             }
         ],
@@ -5633,6 +5633,21 @@
         ]
     },
     {
+        "UUID": "0000eb11-d102-11e1-9b23-00025b00a5a5",
+        "company": "Unknown",
+        "UUID_purpose": "Unknown, present on many audio devices. Under 0000eb10d10211e19b2300025b00a5a5 service. Possibly something from Qualcomm based on similarly to 0000eb20d10211e19b2300025b00a5a5 found under Qualcomm 0xfd92 UUID. TODO: Further investigate",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Present on many audio devices. Found under 0000eb10-d102-11e1-9b23-00025b00a5a5. Possibly something from Qualcomm based on similarly to 0000eb20-d102-11e1-9b23-00025b00a5a5 found under Qualcomm 0xfd92 UUID. TODO: Needs investigation.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "0000eb10-d102-11e1-9b23-00025b00a5a5"
+    },
+    {
         "UUID": "0000eb12-d102-11e1-9b23-00025b00a5a5",
         "company": "Unknown",
         "UUID_purpose": "Unknown",
@@ -5666,21 +5681,6 @@
         "UUID": "0000eb14-d102-11e1-9b23-00025b00a5a5",
         "company": "Unknown",
         "UUID_purpose": "Unknown",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Present on many audio devices. Found under 0000eb10-d102-11e1-9b23-00025b00a5a5. Possibly something from Qualcomm based on similarly to 0000eb20-d102-11e1-9b23-00025b00a5a5 found under Qualcomm 0xfd92 UUID. TODO: Needs investigation.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "0000eb10-d102-11e1-9b23-00025b00a5a5"
-    },
-    {
-        "UUID": "0000eb11-d102-11e1-9b23-00025b00a5a5",
-        "company": "Unknown",
-        "UUID_purpose": "Unknown, present on many audio devices. Under 0000eb10d10211e19b2300025b00a5a5 service. Possibly something from Qualcomm based on similarly to 0000eb20d10211e19b2300025b00a5a5 found under Qualcomm 0xfd92 UUID. TODO: Further investigate",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -5813,6 +5813,23 @@
         "parent_UUID": "38eb4a80-c570-11e3-9507-0002a5d5c51b"
     },
     {
+        "UUID": "38eb4a82-c570-11e3-9507-0002a5d5c51b",
+        "company": "Zebra Technologies",
+        "UUID_purpose": "To Printer Data",
+        "UUID_name": "To Printer Data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240901112306/https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/application-notes/AppNote-BlueToothLE-v4.pdf",
+                "description": "Zebra printers app note w/ UUID attestation",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "38eb4a80-c570-11e3-9507-0002a5d5c51b"
+    },
+    {
         "UUID": "38eb4a8x-c570-11e3-9507-0002a5d5c51b",
         "company": "Zebra Technologies",
         "UUID_purpose": "Printing unknown",
@@ -5829,22 +5846,5 @@
         ],
         "parent_UUID": "38eb4a80-c570-11e3-9507-0002a5d5c51b",
         "regex": true
-    },
-    {
-        "UUID": "38eb4a82-c570-11e3-9507-0002a5d5c51b",
-        "company": "Zebra Technologies",
-        "UUID_purpose": "To Printer Data",
-        "UUID_name": "To Printer Data",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20240901112306/https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/application-notes/AppNote-BlueToothLE-v4.pdf",
-                "description": "Zebra printers app note w/ UUID attestation",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "38eb4a80-c570-11e3-9507-0002a5d5c51b"
     }
 ]
