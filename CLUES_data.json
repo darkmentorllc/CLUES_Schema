@@ -6026,14 +6026,49 @@
         "UUID_purpose": "Tile Service",
         "UUID_name": "Tile Service",
         "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250106182157/https://github.com/lesleyxyz/node-tile/blob/main/Tile_Protocol.md",
+                "description": "Tile protocol documentation obtained via reverse engineering.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "9d410018-35d6-f4dd-ba60-e7bd8dc491c0",
+        "company": "Tile",
+        "UUID_purpose": "To send data to the Tile.",
+        "UUID_name": "MEP_COMMAND_CHAR",
+        "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
                 "URL": "https://web.archive.org/web/20250106182157/https://github.com/lesleyxyz/node-tile/blob/main/Tile_Protocol.md",
+                "description": "Tile protocol documentation obtained via reverse engineering.",
                 "submitter": "Xeno Kovah"
             }
-        ]
+        ],
+        "parent_UUID": "feed"
+    },
+    {
+        "UUID": "9d410019-35d6-f4dd-ba60-e7bd8dc491c0",
+        "company": "Tile",
+        "UUID_purpose": "To receive data to the Tile.",
+        "UUID_name": "MEP_RESPONSE_CHAR",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250106182157/https://github.com/lesleyxyz/node-tile/blob/main/Tile_Protocol.md",
+                "description": "Tile protocol documentation obtained via reverse engineering.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "feed"
     },
     {
         "UUID": "0000eb10-d102-11e1-9b23-00025b00a5a5",
