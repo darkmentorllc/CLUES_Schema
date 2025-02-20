@@ -6023,8 +6023,8 @@
     {
         "UUID": "feed",
         "company": "Tile",
-        "UUID_purpose": "Tile Service",
-        "UUID_name": "Tile Service",
+        "UUID_purpose": "'This is the mode the Tile is in for most of its active life. A Tile is in this mode after it has been activated and associated with a Tile Customer account. It then stays in this mode until its death.'",
+        "UUID_name": "Tile Post-provisioning.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -6032,6 +6032,16 @@
             {
                 "URL": "https://web.archive.org/web/20250106182157/https://github.com/lesleyxyz/node-tile/blob/main/Tile_Protocol.md",
                 "description": "Tile protocol documentation obtained via reverse engineering.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20230307091358/https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_nrf5_v16.0.0%2Fgroup___t_o_a___c_o_m_p_a_t_i_b_i_l_i_t_y.html",
+                "description": "Additional data about Tile data types, posted to Nordic's website.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250220235149/https://docs.nordicsemi.com/bundle/sdk_nrf5_v16.0.0/page/ble_sdk_app_tile.html",
+                "description": "Quotes about purpose from this URL.",
                 "submitter": "Xeno Kovah"
             }
         ]
@@ -6069,6 +6079,32 @@
             }
         ],
         "parent_UUID": "feed"
+    },
+    {
+        "UUID": "feec",
+        "company": "Tile",
+        "UUID_purpose": "'This is the mode the Tile is in when in the packaging. In this mode, the Tile is ready to be activated and associated to a Tile customer account. For applications that do not support activating a Tile, there is usually no need to detect these Tiles.'",
+        "UUID_name": "Tile Service Pre-provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250106182157/https://github.com/lesleyxyz/node-tile/blob/main/Tile_Protocol.md",
+                "description": "Tile protocol documentation obtained via reverse engineering.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20230307091358/https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_nrf5_v16.0.0%2Fgroup___t_o_a___c_o_m_p_a_t_i_b_i_l_i_t_y.html",
+                "description": "Additional data about Tile data types, posted to Nordic's website.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250220235149/https://docs.nordicsemi.com/bundle/sdk_nrf5_v16.0.0/page/ble_sdk_app_tile.html",
+                "description": "Quotes about purpose from this URL.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
     },
     {
         "UUID": "0000eb10-d102-11e1-9b23-00025b00a5a5",
