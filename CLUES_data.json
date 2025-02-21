@@ -2041,6 +2041,98 @@
         ]
     },
     {
+        "UUID": "1b7e8251-2877-41c3-b46e-cf057c562023",
+        "company": "Infineon (formerly Cypress)",
+        "UUID_purpose": "WICED (Cypress) Smart Tag test service",
+        "UUID_name": "Hello Service",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221015741/https://github.com/Infineon/Code-Examples-BT-SDK-for-ModusToolbox/blob/master/CYBT-213043-EVAL/apps/demo/hello_sensor/hello_sensor.h#L97",
+                "description": "Cypress example code sample.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20241203022739/https://github.com/Infineon/linux-example-btstack-hello-sensor",
+                "description": "'AIROC\u2122 BTSTACK: Bluetooth\u00ae LE hello sensor for Linux host' example code. I believe AIROC is the Infineon replacement name for WICED (which was Cypress's name)",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "note": "For some reason I see this UUID under Samsung devices like 'Galaxy Fit3' too?",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "5e9bf2a8-f93f-4481-a67e-3b2f4a07891a",
+        "company": "Infineon (formerly Cypress)",
+        "UUID_purpose": "WICED (Cypress) Smart Tag test service",
+        "UUID_name": "Hello configuration",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221015741/https://github.com/Infineon/Code-Examples-BT-SDK-for-ModusToolbox/blob/master/CYBT-213043-EVAL/apps/demo/hello_sensor/hello_sensor.h#L97",
+                "description": "Cypress example code sample.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://community.infineon.com/t5/Smart-Bluetooth/Testing-a-WICED-Smart-Tag-with-Android-Devices/td-p/45801",
+                "description": "'Testing a WICED Smart Tag with Android Devices'",
+                "note": "Archive.org can't archive this page as it says 'The capture failed because Save Page Now does not have access rights' (probably anti-scraper protection).",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "1b7e8251-2877-41c3-b46e-cf057c562023"
+    },
+    {
+        "UUID": "8ac32d3f-5cb9-4d44-bec2-ee689169f626",
+        "company": "Infineon (formerly Cypress)",
+        "UUID_purpose": "WICED (Cypress) Smart Tag test",
+        "UUID_name": "Hello input",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221015741/https://github.com/Infineon/Code-Examples-BT-SDK-for-ModusToolbox/blob/master/CYBT-213043-EVAL/apps/demo/hello_sensor/hello_sensor.h#L97",
+                "description": "Cypress example code sample.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://community.infineon.com/t5/Smart-Bluetooth/Testing-a-WICED-Smart-Tag-with-Android-Devices/td-p/45801",
+                "description": "'Testing a WICED Smart Tag with Android Devices'",
+                "note": "Archive.org can't archive this page as it says 'The capture failed because Save Page Now does not have access rights' (probably anti-scraper protection).",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "1b7e8251-2877-41c3-b46e-cf057c562023"
+    },
+    {
+        "UUID": "8e57e44f-b26a-f030-141a-09b19b267a02",
+        "company": "Infineon (formerly Cypress)",
+        "UUID_purpose": "WICED (Cypress) Smart Tag test",
+        "UUID_name": "Hello test",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241203022739/https://github.com/Infineon/linux-example-btstack-hello-sensor",
+                "description": "'AIROC\u2122 BTSTACK: Bluetooth\u00ae LE hello sensor for Linux host' example code. I believe AIROC is the Infineon replacement name for WICED (which was Cypress's name)",
+                "note": "THIS UUID ONLY EXISTS IN AN IMAGE! (Specifically when it says 'UUID:1B7E8251-2877-41C3-B46E-CF057C562023 (see Figure 5).', it shows this UUID below.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "1b7e8251-2877-41c3-b46e-cf057c562023"
+    },
+    {
         "UUID": "fe8d",
         "company": "Interaxon Inc.",
         "UUID_purpose": "Muse EEG Headset",
@@ -3333,7 +3425,7 @@
     {
         "UUID": "ad7b334f-4637-4b86-90b6-9d787f03d218",
         "company": "Open Interconnect Consortium (OIC)",
-        "UUID_purpose": "Open Interconnect Consortium (OIC) Transport Profile",
+        "UUID_purpose": "OCF Node Request",
         "UUID_name": "Unsecure CoAP Request",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -3355,12 +3447,17 @@
     {
         "UUID": "e9241982-4580-42c4-8831-95048216b256",
         "company": "Open Interconnect Consortium (OIC)",
-        "UUID_purpose": "Samsung Gear Manager Service (2)",
+        "UUID_purpose": "OCF Node Response",
         "UUID_name": "Unsecure CoAP Response",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221005257/https://github.com/Samsung/TizenRT/blob/master/external/iotivity/iotivity_1.2-rel/resource/csdk/connectivity/inc/cagattservice.h#L31",
+                "description": "Different bit of Tizen source code. Tizen is Samsung's OS for wearables.",
+                "submitter": "Xeno Kovah"
+            },
             {
                 "URL": "https://web.archive.org/web/20250221010503/https://github.com/apache/mynewt-core/blob/master/net/oic/include/oic/oc_gatt.h#L27",
                 "description": "Apache MyNewt RTOS source.",
