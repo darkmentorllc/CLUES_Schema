@@ -2026,6 +2026,21 @@
         "parent_UUID": "fe2c"
     },
     {
+        "UUID": "a201",
+        "company": "Hangzhou Tuya Information  Technology Co., Ltd",
+        "UUID_purpose": "Unknown",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221002425/https://github.com/xiangfeng1215/tuya_ble_sdk_Demo_Project_rtl8762c/blob/e728959804a383250c8a2304b6d42ac6344de4ff/sample/tuya_ble_sdk/README.md?plain=1#L81",
+                "description": "This service UUID is technically not in a valid range, but I've seen this data used in AdvData type 0x16 (Service Data - 16-bit UUID) packets with names associated with Tuya (like TY)",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "fe8d",
         "company": "Interaxon Inc.",
         "UUID_purpose": "Muse EEG Headset",
@@ -3279,6 +3294,119 @@
         "regex": true
     },
     {
+        "UUID": "ade3d529-c784-4f63-a987-eb69f70ee816",
+        "company": "Open Interconnect Consortium (OIC)",
+        "UUID_purpose": "Open Interconnect Consortium (OIC) Transport Profile. Also called \"Unsecure CoAP service\" in MyNewt code. (CoAP = Constrained Application Protocol)",
+        "UUID_name": "Open Interconnect Consortium (OIC) Transport Profile",
+        "UUID_usage_array": [
+            "GATT Service",
+            "SDP Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221004021/https://review.tizen.org/git/?p=platform/core/connectivity/bluetooth-frwk.git;a=blob;f=bt-api/bt-common.c;h=eab2120fa49ca82fdff69c84430513935c50d424;hb=HEAD#l2424",
+                "description": "Tizen source code. Tizen is Samsung's OS for wearables.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250221005257/https://github.com/Samsung/TizenRT/blob/master/external/iotivity/iotivity_1.2-rel/resource/csdk/connectivity/inc/cagattservice.h#L31",
+                "description": "Different bit of Tizen source code. Tizen is Samsung's OS for wearables.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250221010503/https://github.com/apache/mynewt-core/blob/master/net/oic/include/oic/oc_gatt.h#L27",
+                "description": "Apache MyNewt RTOS source.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20221020100135/https://openconnectivity.org/specs/OIC_Core_Specification_v1.1.2.pdf",
+                "description": "OIC Core specification.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20220308112822/https://datatracker.ietf.org/doc/html/rfc7252.txt",
+                "description": "Constrained Application Protocol (CoAP) RFC7252.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "ad7b334f-4637-4b86-90b6-9d787f03d218",
+        "company": "Open Interconnect Consortium (OIC)",
+        "UUID_purpose": "Open Interconnect Consortium (OIC) Transport Profile",
+        "UUID_name": "Unsecure CoAP Request",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221005257/https://github.com/Samsung/TizenRT/blob/master/external/iotivity/iotivity_1.2-rel/resource/csdk/connectivity/inc/cagattservice.h#L31",
+                "description": "Different bit of Tizen source code. Tizen is Samsung's OS for wearables.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250221010503/https://github.com/apache/mynewt-core/blob/master/net/oic/include/oic/oc_gatt.h#L27",
+                "description": "Apache MyNewt RTOS source.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "ade3d529-c784-4f63-a987-eb69f70ee816"
+    },
+    {
+        "UUID": "e9241982-4580-42c4-8831-95048216b256",
+        "company": "Open Interconnect Consortium (OIC)",
+        "UUID_purpose": "Samsung Gear Manager Service (2)",
+        "UUID_name": "Unsecure CoAP Response",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221010503/https://github.com/apache/mynewt-core/blob/master/net/oic/include/oic/oc_gatt.h#L27",
+                "description": "Apache MyNewt RTOS source.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "ade3d529-c784-4f63-a987-eb69f70ee816"
+    },
+    {
+        "UUID": "fe18",
+        "company": "Open Interconnect Consortium (OIC) (although UUID is assigned to Google)",
+        "UUID_purpose": "Open Interconnect Consortium (OIC) Transport Profile. Also called \"Unsecure CoAP service\" in MyNewt code. (CoAP = Constrained Application Protocol)",
+        "UUID_name": "Unsecure Constrained Application Protocol (CoAP)",
+        "UUID_usage_array": [
+            "GATT Service",
+            "SDP Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221004021/https://review.tizen.org/git/?p=platform/core/connectivity/bluetooth-frwk.git;a=blob;f=bt-api/bt-common.c;h=eab2120fa49ca82fdff69c84430513935c50d424;hb=HEAD#l2424",
+                "description": "Tizen source code. Tizen is Samsung's OS for wearables.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250221005257/https://github.com/Samsung/TizenRT/blob/master/external/iotivity/iotivity_1.2-rel/resource/csdk/connectivity/inc/cagattservice.h#L31",
+                "description": "Different bit of Tizen source code. Tizen is Samsung's OS for wearables.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250221010503/https://github.com/apache/mynewt-core/blob/master/net/oic/include/oic/oc_gatt.h#L27",
+                "description": "Apache MyNewt RTOS source.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20221020100135/https://openconnectivity.org/specs/OIC_Core_Specification_v1.1.2.pdf",
+                "description": "OIC Core specification.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20220308112822/https://datatracker.ietf.org/doc/html/rfc7252.txt",
+                "description": "Constrained Application Protocol (CoAP) RFC7252.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "fd92",
         "company": "Qualcomm",
         "UUID_purpose": "Unknown",
@@ -4446,6 +4574,70 @@
             }
         ],
         "parent_UUID": "eedd5e73-6aa8-4673-8219-398a489da87c"
+    },
+    {
+        "UUID": "32d1955a-e5aa-4a96-9a49-08538da8b8f6",
+        "company": "Samsung",
+        "UUID_purpose": "Samsung Gear Fit Manager Service",
+        "UUID_name": "Gear Fit Manager",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221004021/https://review.tizen.org/git/?p=platform/core/connectivity/bluetooth-frwk.git;a=blob;f=bt-api/bt-common.c;h=eab2120fa49ca82fdff69c84430513935c50d424;hb=HEAD#l2424",
+                "description": "Tizen source code. Tizen is Samsung's OS for wearables.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "9a3f68e0-86ce-11e5-a309-0002a5d5c51b",
+        "company": "Samsung",
+        "UUID_purpose": "Samsung Gear Manager Service",
+        "UUID_name": "Gear Manager",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221004021/https://review.tizen.org/git/?p=platform/core/connectivity/bluetooth-frwk.git;a=blob;f=bt-api/bt-common.c;h=eab2120fa49ca82fdff69c84430513935c50d424;hb=HEAD#l2424",
+                "description": "Tizen source code. Tizen is Samsung's OS for wearables.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "a49eb41e-cb06-495c-9f4f-bb80a90cdf00",
+        "company": "Samsung",
+        "UUID_purpose": "Samsung Gear Manager Service (2)",
+        "UUID_name": "Gear Manager (2)",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221004021/https://review.tizen.org/git/?p=platform/core/connectivity/bluetooth-frwk.git;a=blob;f=bt-api/bt-common.c;h=eab2120fa49ca82fdff69c84430513935c50d424;hb=HEAD#l2424",
+                "description": "Tizen source code. Tizen is Samsung's OS for wearables.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "1ab7c24d-185a-45b9-90d4-f7ab1a71949a",
+        "company": "Samsung",
+        "UUID_purpose": "Samsung Health Service",
+        "UUID_name": "Health",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250221004021/https://review.tizen.org/git/?p=platform/core/connectivity/bluetooth-frwk.git;a=blob;f=bt-api/bt-common.c;h=eab2120fa49ca82fdff69c84430513935c50d424;hb=HEAD#l2424",
+                "description": "Tizen source code. Tizen is Samsung's OS for wearables.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
     },
     {
         "UUID": "ede3469c-f706-11e7-8c3f-9a214cf093ae",
