@@ -5843,6 +5843,80 @@
         "regex": true
     },
     {
+        "UUID": "00000211-b2d1-43f0-9b88-960cebf8b91e",
+        "company": "Tesla",
+        "UUID_purpose": "Getting data to and from the vehicle.",
+        "UUID_name": "Vehicle Service",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20220726092401/https://cfp.recon.cx/media/2022/submissions/NMXBUN/resources/20220604_tempa_presentation_recon22_public_luZ5fqg.pdf",
+                "description": "'Project TEMPA - Demystifying Tesla's Bluetooth Passive Entry system' by Martin Herfurt",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "00000212-b2d1-43f0-9b88-960cebf8b91e",
+        "company": "Tesla",
+        "UUID_purpose": "Sending data to the vehicle. (This characteristic is writable.)",
+        "UUID_name": "To Vehicle",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20220726092401/https://cfp.recon.cx/media/2022/submissions/NMXBUN/resources/20220604_tempa_presentation_recon22_public_luZ5fqg.pdf",
+                "description": "'Project TEMPA - Demystifying Tesla's Bluetooth Passive Entry system' by Martin Herfurt",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "description": "Teslas provide their Characteristic names via a type 0x2901 Characteristic User Description descriptor.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00000211-b2d1-43f0-9b88-960cebf8b91e"
+    },
+    {
+        "UUID": "00000213-b2d1-43f0-9b88-960cebf8b91e",
+        "company": "Tesla",
+        "UUID_purpose": "Receiving data from the vehicle. (This characteristic supports notifications & indications.)",
+        "UUID_name": "From Vehicle",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20220726092401/https://cfp.recon.cx/media/2022/submissions/NMXBUN/resources/20220604_tempa_presentation_recon22_public_luZ5fqg.pdf",
+                "description": "'Project TEMPA - Demystifying Tesla's Bluetooth Passive Entry system' by Martin Herfurt",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "description": "Teslas provide their Characteristic names via a type 0x2901 Characteristic User Description descriptor.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00000211-b2d1-43f0-9b88-960cebf8b91e"
+    },
+    {
+        "UUID": "00000214-b2d1-43f0-9b88-960cebf8b91e",
+        "company": "Tesla",
+        "UUID_purpose": "Getting vehicle version information.",
+        "UUID_name": "Version Info",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Teslas provide their Characteristic names via a type 0x2901 Characteristic User Description descriptor.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00000211-b2d1-43f0-9b88-960cebf8b91e"
+    },
+    {
         "UUID": "f000ffc0-0451-4000-b000-000000000000",
         "company": "Texas Instruments",
         "UUID_purpose": "Over-the-Air Download (OAD) Firmware Update",
