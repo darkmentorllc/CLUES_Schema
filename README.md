@@ -50,7 +50,7 @@ We are seeking contributions of more UUIDs. To add an entry perform the followin
  * `python3 -m venv ./venv`
  * `source ./venv/bin/activate`
  * `pip3 install check-jsonschema`
- * `check-jsonschema --verbose --base-uri . --schemafile ./CLUES_schema.json ./CLUES_data.json`
+ * `check-jsonschema --verbose --base-uri ./CLUES_schema.json --schemafile ./CLUES_schema.json ./CLUES_data.json`
 
 4) Re-sort the `CLUES_data.json` by running:
 
