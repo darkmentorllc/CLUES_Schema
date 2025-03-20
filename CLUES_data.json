@@ -2026,6 +2026,22 @@
         "parent_UUID": "fe2c"
     },
     {
+        "UUID": "fea0",
+        "company": "Google",
+        "UUID_purpose": "Chromecast Setup",
+        "UUID_name": "Chromecast Setup",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250320105414/https://github.com/project-chip/connectedhomeip/blob/master/src/controller/python/chip/ChipCoreBluetoothMgr.py#L67",
+                "description": "Code for Matter, which started out as CHIP (Connected Home over IP), contains a description of 0xFEA0 as 'CHROMECAST_SETUP_SERVICE'",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "a201",
         "company": "Hangzhou Tuya Information  Technology Co., Ltd",
         "UUID_purpose": "Unknown",
@@ -2502,6 +2518,93 @@
             }
         ],
         "regex": true
+    },
+    {
+        "UUID": "fff6",
+        "company": "Matter alliance (formerly CHIP)",
+        "UUID_purpose": "Matter Bluetooth Transport Protocol",
+        "UUID_name": "Matter",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241201003126/https://csa-iot.org/wp-content/uploads/2024/11/24-27349-006_Matter-1.4-Core-Specification.pdf",
+                "description": "Specification for Matter, which started out as CHIP (Connected Home over IP), contains a description of 0xFFF6 as 'Matter service' and elsewhere as MATTER_BLE_SERVICE_UUID = 'BTP' = Bluetooth Transport Protocol.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250320105414/https://github.com/project-chip/connectedhomeip/blob/master/src/controller/python/chip/ChipCoreBluetoothMgr.py#L63",
+                "description": "Code for Matter, which started out as CHIP (Connected Home over IP), contains a description of 0xFFF6 as 'CHIP_SERVICE'",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "18ee2ef5-263d-4559-959f-4f9c429f9d12",
+        "company": "Matter alliance (formerly CHIP)",
+        "UUID_purpose": "Matter Client Receive (RX) Buffer",
+        "UUID_name": "Matter Receive (RX)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241201003126/https://csa-iot.org/wp-content/uploads/2024/11/24-27349-006_Matter-1.4-Core-Specification.pdf",
+                "description": "Specification for Matter, which started out as CHIP (Connected Home over IP), contains a description of this UUID as 'C2 Characteristic (Client RX Buffer)'",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250320105414/https://github.com/project-chip/connectedhomeip/blob/master/src/controller/python/chip/ChipCoreBluetoothMgr.py#L65",
+                "description": "Code for Matter, which started out as CHIP (Connected Home over IP), contains a description of this UUID as 'CHIP_RX'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "fff6"
+    },
+    {
+        "UUID": "18ee2ef5-263d-4559-959f-4f9c429f9d11",
+        "company": "Matter alliance (formerly CHIP)",
+        "UUID_purpose": "Matter Client Transmit (TX) Buffer",
+        "UUID_name": "Matter Transmit (TX)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241201003126/https://csa-iot.org/wp-content/uploads/2024/11/24-27349-006_Matter-1.4-Core-Specification.pdf",
+                "description": "Specification for Matter, which started out as CHIP (Connected Home over IP), contains a description of this UUID as 'C1 Characteristic (Client TX Buffer)'",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250320105414/https://github.com/project-chip/connectedhomeip/blob/master/src/controller/python/chip/ChipCoreBluetoothMgr.py#L65",
+                "description": "Code for Matter, which started out as CHIP (Connected Home over IP), contains a description of this UUID as 'CHIP_TX'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "fff6"
+    },
+    {
+        "UUID": "64630238-8772-45f2-b87d-748a83218f04",
+        "company": "Matter alliance (formerly CHIP)",
+        "UUID_purpose": "Matter Commisioning Data",
+        "UUID_name": "Matter Commisioning Data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241201003126/https://csa-iot.org/wp-content/uploads/2024/11/24-27349-006_Matter-1.4-Core-Specification.pdf",
+                "description": "Specification for Matter, which started out as CHIP (Connected Home over IP), contains a description of this UUID as 'C3 Characteristic (Additional commissioning-related data)'",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250320105414/https://github.com/project-chip/connectedhomeip/blob/master/src/controller/python/chip/ChipCoreBluetoothMgr.py#L65",
+                "description": "Code for Matter, which started out as CHIP (Connected Home over IP), contains a description of this UUID as 'CHIP_RX'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "fff6"
     },
     {
         "UUID": "54220000-f6a5-4007-a371-722f4ebd8436",
