@@ -1127,6 +1127,36 @@
         "parent_UUID": "7905f431-b5ce-4e99-a40f-4b1e122d00d0"
     },
     {
+        "UUID": "efcacade-afde-cade-defa-cade00000000",
+        "company": "Apple",
+        "UUID_purpose": "(Wrong-endian) MFi (Made for i{pod,Phone,Pad, etc}) Apple certification program uses the iAP (iPod Accessories Protocol) to communicate with accessories. This is the service designation for the MFI iAP client.",
+        "UUID_name": "(Wrong-endian) MFi (Made for i{pod,Phone}) iAP (iPod Accessories Protocol) client",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Data observed in the wild, which appears to be the 00000000-deca-fade-deca-deafdecacafe UUID, but in wrong-endian format.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "ffcacade-afde-cade-defa-cade00000000",
+        "company": "Apple",
+        "UUID_purpose": "(Wrong-endian) MFi (Made for i{pod,Phone,Pad, etc}) Apple certification program uses the iAP (iPod Accessories Protocol) to communicate with accessories. This is the service designation for the MFI iAP server.",
+        "UUID_name": "(Wrong-endian) MFi (Made for i{pod,Phone}) iAP (iPod Accessories Protocol) server",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Data observed in the wild, which appears to be the 00000000-deca-fade-deca-deafdecacaff UUID, but in wrong-endian format.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "7dfc9000-7d1c-4951-86aa-8d9728f8d66c",
         "company": "Apple",
         "UUID_purpose": "Airtags unknown",
@@ -2609,7 +2639,7 @@
     {
         "UUID": "54220000-f6a5-4007-a371-722f4ebd8436",
         "company": "Memfault",
-        "UUID_purpose": "'The Bluetooth\u00ae Low Energy (LE) GATT Memfault Diagnostic Service is a custom service that forwards diagnostic data collected by firmware through a Bluetooth gateway.'",
+        "UUID_purpose": "'The Bluetooth Low Energy (LE) GATT Memfault Diagnostic Service is a custom service that forwards diagnostic data collected by firmware through a Bluetooth gateway.'",
         "UUID_name": "Memfault Diagnostic Service (MDS)",
         "UUID_usage_array": [
             "GATT Service"
