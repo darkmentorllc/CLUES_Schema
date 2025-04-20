@@ -2835,6 +2835,72 @@
         "regex": true
     },
     {
+        "UUID": "00035b03-58e6-07dd-021a-08123a000300",
+        "company": "Microchip Technology Inc.",
+        "UUID_purpose": "Microchip Low energy Data Profile (MLDP) to send data to Microchip devices",
+        "UUID_name": "Microchip Low energy Data Profile (MLDP) Service",
+        "UUID_usage_array": [
+            "GATT Service",
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/advanced-useof-rn-4020-cookbook",
+                "description": "'Advanced Usage of Microchip RN4020' attesting this UUID's name/value",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20241008174854/https://ww1.microchip.com/downloads/en/DeviceDoc/70005191B.pdf",
+                "description": "More about how MLDP works, and MLDP commands.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "00035b03-58e6-07dd-021a-08123a000301",
+        "company": "Microchip Technology Inc.",
+        "UUID_purpose": "Microchip Low energy Data Profile (MLDP) data interface",
+        "UUID_name": "Microchip Low energy Data Profile (MLDP) Data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/advanced-useof-rn-4020-cookbook",
+                "description": "'Advanced Usage of Microchip RN4020' attesting this UUID's name/value",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20241008174854/https://ww1.microchip.com/downloads/en/DeviceDoc/70005191B.pdf",
+                "description": "More about how MLDP works, and MLDP commands.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00035b03-58e6-07dd-021a-08123a000300"
+    },
+    {
+        "UUID": "00035b03-58e6-07dd-021a-08123a0003ff",
+        "company": "Microchip Technology Inc.",
+        "UUID_purpose": "Microchip Low energy Data Profile (MLDP) control interface",
+        "UUID_name": "Microchip Low energy Data Profile (MLDP) Control",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/advanced-useof-rn-4020-cookbook",
+                "description": "'Advanced Usage of Microchip RN4020' attesting this UUID's name/value",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20241008174854/https://ww1.microchip.com/downloads/en/DeviceDoc/70005191B.pdf",
+                "description": "More about how MLDP works, and MLDP commands.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00035b03-58e6-07dd-021a-08123a000300"
+    },
+    {
         "UUID": "49535343-fe7d-4ae5-8fa9-9fafd205e455",
         "company": "Microchip Technology Inc.",
         "UUID_purpose": "UART serial communications with Microchip chips",
@@ -3651,6 +3717,494 @@
                 "submitter": "Xeno Kovah"
             }
         ]
+    },
+    {
+        "UUID": "5ee1b93c-3df6-11e4-9d9f-164230d1df67",
+        "company": "Polara",
+        "UUID_purpose": "Default service UUID for Polara devices",
+        "UUID_name": "Default service UUID",
+        "UUID_usage_array": [
+            "GATT Service",
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com. (The fact that this is used in advertisements is based on observed data.)",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "xxxxxxxx-3df6-11e4-9d9f-164230d1df67",
+        "company": "Polara",
+        "UUID_purpose": "Default Characteristic UUID for Polara devices (regex match)",
+        "UUID_name": "Default Characteristic UUID (regex match)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com. (The fact that this is used in advertisements is based on observed data.)",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "5ee1b93c-3df6-11e4-9d9f-164230d1df67",
+        "regex": true
+    },
+    {
+        "UUID": "ad014001-3bcb-fea6-7746-c3084ad1df97",
+        "company": "Polara",
+        "UUID_purpose": "WPC (Wireless Pedestrian Head Control Unit) UUID used seemingly specifically for advertisement, to be discoverable by the Polara Field Service app.",
+        "UUID_name": "WPC (Wireless Pedestrian Head Control Unit) advertisement-specific UUID",
+        "UUID_usage_array": [
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com. (Note: not yet observed in the wild as an advertisement. Based on numbering convention/usage in decompiled code.)",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://polara.com/wp-content/uploads/2024/12/WPS-System-Manual.pdf",
+                "description": "Archive.org wont archive this currently...",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "ad015001-3bcb-fea6-7746-c3084ad1df97",
+        "company": "Polara",
+        "UUID_purpose": "WPC (Wireless Pedestrian Head Control Unit) devices' primary interface via GATT",
+        "UUID_name": "WPC (Wireless Pedestrian Head Control Unit)",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://polara.com/wp-content/uploads/2024/12/WPS-System-Manual.pdf",
+                "description": "Archive.org wont archive this currently...",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "ad015002-3bcb-fea6-7746-c3084ad1df97",
+        "company": "Polara",
+        "UUID_purpose": "WPC (Wireless Pedestrian Head Control Unit) devices' unknown Characteristic",
+        "UUID_name": "WPC (Wireless Pedestrian Head Control Unit)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://polara.com/wp-content/uploads/2024/12/WPS-System-Manual.pdf",
+                "description": "Archive.org wont archive this currently...",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "ad015001-3bcb-fea6-7746-c3084ad1df97"
+    },
+    {
+        "UUID": "ad015003-3bcb-fea6-7746-c3084ad1df97",
+        "company": "Polara",
+        "UUID_purpose": "WPC (Wireless Pedestrian Head Control Unit) devices' unknown Characteristic",
+        "UUID_name": "WPC (Wireless Pedestrian Head Control Unit)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://polara.com/wp-content/uploads/2024/12/WPS-System-Manual.pdf",
+                "description": "Archive.org wont archive this currently...",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "ad015001-3bcb-fea6-7746-c3084ad1df97"
+    },
+    {
+        "UUID": "b02d4001-0ba5-482b-a8ec-5bb115408951",
+        "company": "Polara",
+        "UUID_purpose": "WPSE (Wireless Pedestrian System w/ Solar) UUID used seemingly specifically for advertisement, to be discoverable by the Polara Field Service app.",
+        "UUID_name": "WPSE (Wireless Pedestrian System w/ Solar) advertisement-specific UUID",
+        "UUID_usage_array": [
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com. (Note: not yet observed in the wild as an advertisement. Based on numbering convention/usage in decompiled code.)",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://polara.com/wp-content/uploads/2024/12/WPS-System-Manual.pdf",
+                "description": "Archive.org wont archive this currently...",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "b02d5001-0ba5-482b-a8ec-5bb115408951",
+        "company": "Polara",
+        "UUID_purpose": "WPSE (Wireless Pedestrian System w/ Solar) devices primary interface via GATT",
+        "UUID_name": "WPSE (Wireless Pedestrian System w/ Solar)",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://polara.com/wp-content/uploads/2024/12/WPS-System-Manual.pdf",
+                "description": "Archive.org wont archive this currently...",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "b02d5002-0ba5-482b-a8ec-5bb115408951",
+        "company": "Polara",
+        "UUID_purpose": "WPSE (Wireless Pedestrian System w/ Solar) devices' unknown Characteristic'",
+        "UUID_name": "WPSE (Wireless Pedestrian System w/ Solar)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://polara.com/wp-content/uploads/2024/12/WPS-System-Manual.pdf",
+                "description": "Archive.org wont archive this currently...",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "b02d5001-0ba5-482b-a8ec-5bb115408951"
+    },
+    {
+        "UUID": "b02d5003-0ba5-482b-a8ec-5bb115408951",
+        "company": "Polara",
+        "UUID_purpose": "WPSE (Wireless Pedestrian System w/ Solar) devices' unknown Characteristic'",
+        "UUID_name": "WPSE (Wireless Pedestrian System w/ Solar)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://polara.com/wp-content/uploads/2024/12/WPS-System-Manual.pdf",
+                "description": "Archive.org wont archive this currently...",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "b02d5001-0ba5-482b-a8ec-5bb115408951"
+    },
+    {
+        "UUID": "60054001-f97c-c5a3-9941-1c799c307ddf",
+        "company": "Polara",
+        "UUID_purpose": "iNS or PedScout UUID used seemingly specifically for advertisement, to be discoverable by the Polara Field Service app.",
+        "UUID_name": "iNS or PedScout advertisement-specific UUID",
+        "UUID_usage_array": [
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com. (The fact that this is used in advertisements is based on observed data.)",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "60055001-f97c-c5a3-9941-1c799c307ddf",
+        "company": "Polara",
+        "UUID_purpose": "iNS or PedScout primary interface via GATT",
+        "UUID_name": "iNS or PedScout",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "60055002-f97c-c5a3-9941-1c799c307ddf",
+        "company": "Polara",
+        "UUID_purpose": "iNS or PedScout devices' unknown characteristic",
+        "UUID_name": "iNS or PedScout",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "60055001-f97c-c5a3-9941-1c799c307ddf"
+    },
+    {
+        "UUID": "60055003-f97c-c5a3-9941-1c799c307ddf",
+        "company": "Polara",
+        "UUID_purpose": "iNS or PedScout devices' unknown characteristic",
+        "UUID_name": "iNS or PedScout",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "60055001-f97c-c5a3-9941-1c799c307ddf"
+    },
+    {
+        "UUID": "6005x00x-f97c-c5a3-9941-1c799c307ddf",
+        "company": "Polara",
+        "UUID_purpose": "iNS or PedScout devices primary interface via GATT",
+        "UUID_name": "iNS or PedScout (regex match)",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Based on observed values for devices with 60055002-F97C-C5A3-9941-1C799C307DDF present. Observed x values are 6, 7 for the first x, and 1 (service), 2(characteristic), 4 (characteristic) for the second.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "60055001-f97c-c5a3-9941-1c799c307ddf",
+        "regex": true
+    },
+    {
+        "UUID": "8ee74001-818d-cf84-a142-dc849f91bee7",
+        "company": "Polara",
+        "UUID_purpose": "iNX UUID used seemingly specifically for advertisement, to be discoverable by the Polara Field Service app.",
+        "UUID_name": "iNX advertisement-specific UUID",
+        "UUID_usage_array": [
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com. (The fact that this is used in advertisements is based on observed data.)",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "8ee75001-818d-cf84-a142-dc849f91bee7",
+        "company": "Polara",
+        "UUID_purpose": "iNX devices' primary interface via GATT",
+        "UUID_name": "iNX",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "8ee75002-818d-cf84-a142-dc849f91bee7",
+        "company": "Polara",
+        "UUID_purpose": "iNX devices' unknown characteristic",
+        "UUID_name": "iNX",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "8ee75001-818d-cf84-a142-dc849f91bee7"
+    },
+    {
+        "UUID": "8ee75003-818d-cf84-a142-dc849f91bee7",
+        "company": "Polara",
+        "UUID_purpose": "iNX devices' unknown characteristic",
+        "UUID_name": "iNX",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "8ee75001-818d-cf84-a142-dc849f91bee7"
+    },
+    {
+        "UUID": "377c4001-d305-4d3e-b6ee-67610e18b575",
+        "company": "Polara",
+        "UUID_purpose": "iNXv2 UUID used seemingly specifically for advertisement, to be discoverable by the Polara Field Service app.",
+        "UUID_name": "iNXv2 advertisement-specific UUID",
+        "UUID_usage_array": [
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com. (Note: not yet observed in the wild as an advertisement. Based on numbering convention/usage in decompiled code.)",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "377c5001-d305-4d3e-b6ee-67610e18b575",
+        "company": "Polara",
+        "UUID_purpose": "iNXv2 devices primary interface via GATT",
+        "UUID_name": "iNXv2",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "377c5002-d305-4d3e-b6ee-67610e18b575",
+        "company": "Polara",
+        "UUID_purpose": "iNXv2 devices' unknown Characteristic",
+        "UUID_name": "iNXv2",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "377c5001-d305-4d3e-b6ee-67610e18b575"
+    },
+    {
+        "UUID": "377c5003-d305-4d3e-b6ee-67610e18b575",
+        "company": "Polara",
+        "UUID_purpose": "iNXv2 devices' unknown Characteristic",
+        "UUID_name": "iNXv2",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-field-service/com.polara.eng.polarafieldservice/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.eng.polarafieldservice Android APK downloaded from apkpure.com.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
+                "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "377c5001-d305-4d3e-b6ee-67610e18b575"
     },
     {
         "UUID": "fd92",
