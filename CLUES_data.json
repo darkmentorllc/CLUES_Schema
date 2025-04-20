@@ -3759,6 +3759,39 @@
         "regex": true
     },
     {
+        "UUID": "60056001-f97c-c5a3-9941-1c799c307ddf",
+        "company": "Polara",
+        "UUID_purpose": "Support for the 'Polara PedApp' app, which allows for virtual pressing of buttons (possibly created for no-contact usage during COVID)",
+        "UUID_name": "iNS PedApp",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-pedapp/com.polara.androidpedapp/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.androidpedapp Android APK downloaded from apkpure.com. This UUID is named 'iNSPedApp' in the decompiled output.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "60056002-f97c-c5a3-9941-1c799c307ddf",
+        "company": "Polara",
+        "UUID_purpose": "Support for the 'Polara PedApp' app, which allows for virtual pressing of buttons (possibly created for no-contact usage during COVID)",
+        "UUID_name": "iNS PedApp",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-pedapp/com.polara.androidpedapp/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.androidpedapp Android APK downloaded from apkpure.com. This UUID is named 'PedApp_NBF' in the decompiled output. Placement in hierarchy is based on observed data.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "60056001-f97c-c5a3-9941-1c799c307ddf"
+    },
+    {
         "UUID": "ad014001-3bcb-fea6-7746-c3084ad1df97",
         "company": "Polara",
         "UUID_purpose": "WPC (Wireless Pedestrian Head Control Unit) UUID used seemingly specifically for advertisement, to be discoverable by the Polara Field Service app.",
@@ -3947,6 +3980,22 @@
             {
                 "URL": "https://web.archive.org/web/20240806224520/https://polara.com/wp-content/uploads/2023/02/Polara-iN3-Android-Application-Manual.pdf",
                 "description": "iN/iNS/iDS 3-Wire Polara FS Android Application Manual",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "60044001-f97c-c5a3-9941-1c799c307ddf",
+        "company": "Polara",
+        "UUID_purpose": "iNS or PedScout UUID used seemingly specifically for advertisement, to be discoverable by the Polara PedApp app. One of the two UUIDs used for advertisement scan filtering (the other being 60054001-f97c-c5a3-9941-1c799c307ddf).",
+        "UUID_name": "iNS disabled advertisement-specific UUID",
+        "UUID_usage_array": [
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://apkpure.com/polara-pedapp/com.polara.androidpedapp/download",
+                "description": "Based on decompilation (via https://www.decompiler.com/) of com.polara.androidpedapp Android APK downloaded from apkpure.com. (Observed in one data point of presence in an advertisement.)",
                 "submitter": "Xeno Kovah"
             }
         ]
