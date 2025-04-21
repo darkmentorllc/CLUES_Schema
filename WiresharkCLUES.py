@@ -45,7 +45,7 @@ def main():
 
         print(f"CSV file '{output_file}' created successfully.")
         print(f"You must copy it to the correct location for Wireshark based on your OS.")
-        print(f"E.g. on macOS: ~/.config/wireshark/")
+        print(f"E.g. on Linux and macOS: ~/.config/wireshark/bluetooth_uuids")
 
     except Exception as e:
         print(f"Error: {e}")
