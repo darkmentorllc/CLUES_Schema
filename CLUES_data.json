@@ -6351,6 +6351,25 @@
         ]
     },
     {
+        "UUID": "9ec5d2b8-8f51-4dea-9cd3-f3dea220b5e0",
+        "company": "TASER International, Inc.",
+        "UUID_purpose": "Unknown",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "This UUID has been seen associated with devices which have either IEEE OUI (e.g. 00:25:df) associated with TASER International, Inc.  Note: unlike the other Taser/Axon UUIDs this does not spell out anything in ASCII.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250422133732/https://github.com/VirusFriendly/GobBLE/blob/master/GobBLE.ipynb",
+                "description": "This page (the only hit for this UUID at the time) claims this UUID specifically is used for an 'Axon Body Camera'.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "00010203-0405-0607-0809-0a0b0c0d1910",
         "company": "Telink Semiconductor Co. Ltd",
         "UUID_purpose": "Serial Port Profile (if 2b10 characteristic is present) OR Mesh Light Service (if 1911 characteristic is present). Unfortunate UUID reuse!",
