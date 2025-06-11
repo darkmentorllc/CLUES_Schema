@@ -6689,7 +6689,7 @@
     },
     {
         "UUID": "f000ffc0-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Over-the-Air Download (OAD) Firmware Update",
         "UUID_name": "Over-the-Air Download (OAD)",
         "UUID_usage_array": [
@@ -6704,7 +6704,7 @@
     },
     {
         "UUID": "f000ffc1-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "'The Image Identify characteristic is used to exchange image metadata between OAD Downloader and target. The OAD process begins when the OAD Downloader sends the 16 byte metadata of the proposed OAD image to the target. Upon receiving the candidate metadata, the target will do some calculations to determine whether or not the proposed image should be downloaded. \"01:00\" shall be written to the CCCD of this characteristic so that notification for metadata rejection is enabled.'",
         "UUID_name": "Image Identify",
         "UUID_usage_array": [
@@ -6720,7 +6720,7 @@
     },
     {
         "UUID": "f000ffc2-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "'The OAD Image Block characteristic is used to request and transfer a block of the OAD image. \"01:00\" shall be written to the CCCD of this characteristic so that notification for block request is enabled. The target requests the next block of the image by sending a GATT notification to the OAD Downloader with the requested block number. The OAD Downloader will respond (GATT write no response) with the block number and a 16 byte OAD image block.'",
         "UUID_name": "Image Block",
         "UUID_usage_array": [
@@ -6736,7 +6736,7 @@
     },
     {
         "UUID": "f000ffc3-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "'The OAD Image Count characteristic is used to set the number of OAD images to be downloaded. This is used for only Off-chip OAD and the default value of the characteristic is 1.'",
         "UUID_name": "Image Count",
         "UUID_usage_array": [
@@ -6752,7 +6752,7 @@
     },
     {
         "UUID": "f000ffc4-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "'The OAD image status characteristic is used to report various failures that may occur during the OAD process. The OAD Downloader may use this information to determine why an OAD failed, so that it may correct for the errors and try again. To enable notifications on this characteristic \"01:00\" shall be written to the CCCD of this characteristic.'",
         "UUID_name": "Image Status",
         "UUID_usage_array": [
@@ -6768,7 +6768,7 @@
     },
     {
         "UUID": "f000ffc5-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "For firmware update, but exact usage unknown currently.",
         "UUID_name": "Control",
         "UUID_usage_array": [
@@ -6785,7 +6785,7 @@
     },
     {
         "UUID": "f000aa10-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Accelerometer sensor on SensorTag which was a previous product of Texas Instruments",
         "UUID_name": "Accelerometer",
         "UUID_usage_array": [
@@ -6811,7 +6811,7 @@
     },
     {
         "UUID": "f000aa40-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Barometer sensor on SensorTag which was a previous product of Texas Instruments",
         "UUID_name": "Barometer",
         "UUID_usage_array": [
@@ -6837,7 +6837,7 @@
     },
     {
         "UUID": "f000aa50-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Gyroscope sensor on SensorTag which was a previous product of Texas Instruments",
         "UUID_name": "Gyroscope",
         "UUID_usage_array": [
@@ -6863,7 +6863,7 @@
     },
     {
         "UUID": "f000aa20-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Humidity sensor on SensorTag which was a previous product of Texas Instruments",
         "UUID_name": "Humidity",
         "UUID_usage_array": [
@@ -6889,7 +6889,7 @@
     },
     {
         "UUID": "f000aa00-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Infrared Thermometer sensor on SensorTag which was a previous product of Texas Instruments",
         "UUID_name": "Infrared Thermometer",
         "UUID_usage_array": [
@@ -6920,7 +6920,7 @@
     },
     {
         "UUID": "f000aa70-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Luxometer on SensorTag (2.0?) which was a previous product of Texas Instruments",
         "UUID_name": "Luxometer",
         "UUID_usage_array": [
@@ -6936,7 +6936,7 @@
     },
     {
         "UUID": "f000aa30-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Magnetometer on SensorTag which was a previous product of Texas Instruments",
         "UUID_name": "Magnetometer",
         "UUID_usage_array": [
@@ -6962,7 +6962,7 @@
     },
     {
         "UUID": "f000aa31-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Magnetometer on SensorTag which was a previous product of Texas Instruments",
         "UUID_name": "Magnet Data",
         "UUID_usage_array": [
@@ -6989,7 +6989,7 @@
     },
     {
         "UUID": "f000aa32-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Magnetometer on SensorTag which was a previous product of Texas Instruments",
         "UUID_name": "Magnet Config",
         "UUID_usage_array": [
@@ -7016,7 +7016,7 @@
     },
     {
         "UUID": "f000aa80-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Movement on SensorTag (2.0?) which was a previous product of Texas Instruments",
         "UUID_name": "Movement",
         "UUID_usage_array": [
@@ -7042,7 +7042,7 @@
     },
     {
         "UUID": "f000ffd0-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Over-the-Air Download (OAD) reset service declaration + 'The OAD reset service is only used by basic_ble_oad_onchip project.'",
         "UUID_name": "OAD Reset",
         "UUID_usage_array": [
@@ -7058,7 +7058,7 @@
     },
     {
         "UUID": "f000ffd1-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Responsible for starting the Over-the-Air Download (OAD) process or resetting the target device. + 'The OAD reset service is only used by basic_ble_oad_onchip project.'",
         "UUID_name": "OAD Start/Reset",
         "UUID_usage_array": [
@@ -7075,7 +7075,7 @@
     },
     {
         "UUID": "f000c0e0-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Serial Port on SensorTag which was a previous product of Texas Instruments",
         "UUID_name": "Serial Port",
         "UUID_usage_array": [
@@ -7096,7 +7096,7 @@
     },
     {
         "UUID": "f000aa60-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Test sensor on SensorTag which was a previous product of Texas Instruments",
         "UUID_name": "Test",
         "UUID_usage_array": [
@@ -7122,7 +7122,7 @@
     },
     {
         "UUID": "f000xxxx-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "Texas Instruments base UUID, used for TI-specific services and characteristics (including OAD)",
         "UUID_name": "Unknown TI_BASE_UUID_128 regex match",
         "UUID_usage_array": [
@@ -7140,7 +7140,7 @@
     },
     {
         "UUID": "f000ffe0-0451-4000-b000-000000000000",
-        "company": "Texas Instruments",
+        "company": "Texas Instruments Inc.",
         "UUID_purpose": "UART serial communications with TI CC2540 chip (and others?)",
         "UUID_name": "UART serial",
         "UUID_usage_array": [
