@@ -1570,6 +1570,117 @@
         "parent_UUID": "00001100-d102-11e1-9b23-00025b00a5a5"
     },
     {
+        "UUID": "5810bbc0-b499-11e9-a2a3-2a2ae2dbcce4",
+        "company": "Car Connectivity Consortium, LLC",
+        "UUID_purpose": "Car Connectivity Consortium standardized service",
+        "UUID_name": "CCCServiceDataIntent",
+        "UUID_usage_array": [
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250612125220/https://github.com/Infineon/mtb-example-btstack-freertos-le-ccc-adv/blob/1a0ef544b34eaa58a076aada1c02f8bbab525740/design.cybt#L119",
+                "description": "Infineon/Cypress BLE example code for Car Connectivity Consortium advertisement",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://archive.org/details/ccc-ts-101-digital-key-v-4.0.0",
+                "description": "CCCServiceDataIntent name confirmation comes from CCC-TS-101-Digital-Key-v4.0.0.pdf .",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "c6d7d4a1-e2b0-4e95-b576-df983d1a5d9f",
+        "company": "Car Connectivity Consortium, LLC",
+        "UUID_purpose": "The Vehicle antenna identifier represents a unique identifier for every physical Bluetooth LE antenna located in the vehicle that establishes a connection to a device.",
+        "UUID_name": "Vehicle Antenna Identifier",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/ccc-ts-101-digital-key-v-4.0.0",
+                "description": "Name comes from ccc-ts-101-digital-key-v-4.0.0.pdf with some manual interpolation (e.g. DK -> Digital Key). UUID also found emperically in in-the-wild GATT data.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "fff5"
+    },
+    {
+        "UUID": "d3b5a130-9e23-4b3a-8be4-6b1ee5f980a3",
+        "company": "Car Connectivity Consortium, LLC",
+        "UUID_purpose": "This characteristic shall return the Simplified Protocol/Service Multiplexer (SPSM) used for the L2CAP channel from the vehicle.",
+        "UUID_name": "Simplified Protocol/Service Multiplexer (SPSM)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/ccc-ts-101-digital-key-v-4.0.0",
+                "description": "Name comes from ccc-ts-101-digital-key-v-4.0.0.pdf with some manual interpolation (e.g. DK -> Digital Key). UUID also found emperically in in-the-wild GATT data.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "fff5"
+    },
+    {
+        "UUID": "fff5",
+        "company": "Car Connectivity Consortium, LLC",
+        "UUID_purpose": "Used in advertisements",
+        "UUID_name": "CCC Digitial Key UUID (CCC_DK_UUID; only when found in advertisements)",
+        "UUID_usage_array": [
+            "GATT Service",
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250612125220/https://github.com/Infineon/mtb-example-btstack-freertos-le-ccc-adv/blob/1a0ef544b34eaa58a076aada1c02f8bbab525740/design.cybt#L119",
+                "description": "Infineon/Cypress BLE example code for Car Connectivity Consortium advertisement",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://archive.org/details/ccc-ts-101-digital-key-v-4.0.0",
+                "description": "CCCServiceDataIntent name confirmation comes from ccc-ts-101-digital-key-v-4.0.0.pdf",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "ae285b91-6d23-23f1-ca12-6b1ee5b780a3",
+        "company": "Car Connectivity Consortium, LLC",
+        "UUID_purpose": "Used to communicate both the Simplified Protocol/Service Multiplexer (SPSM) used for the L2CAP channel and the Digital Key version from the vehicle, and features. This is similar to (but not exactly the same as) the information in d3b5a130-9e23-4b3a-8be4-6b1ee5f980a3 followed by the information in BD4B9502-3F54-11EC-B919-0242AC120005.",
+        "UUID_name": "Vehicle SPSM and Digital Key Version",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/ccc-ts-101-digital-key-v-4.0.0",
+                "description": "Name comes from ccc-ts-101-digital-key-v-4.0.0.pdf with some manual interpolation (e.g. DK -> Digital Key). UUID also found emperically in in-the-wild GATT data.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "fff5"
+    },
+    {
+        "UUID": "bd4b9502-3f54-11ec-b919-0242ac120005",
+        "company": "Car Connectivity Consortium, LLC",
+        "UUID_purpose": "Used to communicate the Digital Key version from the vehicle, and features.",
+        "UUID_name": "Device Selected Digital Key Version",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/ccc-ts-101-digital-key-v-4.0.0",
+                "description": "Name comes from ccc-ts-101-digital-key-v-4.0.0.pdf with some manual interpolation (e.g. DK -> Digital Key). UUID also found emperically in in-the-wild GATT data.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "fff5"
+    },
+    {
         "UUID": "2dd10010-1c37-452d-8979-d1b4a787d0a4",
         "company": "Dyson Limited",
         "UUID_purpose": "ASSOCIATED WITH: ADV_IND, GATT_Service: Air purifying fan",
