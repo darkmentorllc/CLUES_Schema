@@ -3542,6 +3542,27 @@
         "parent_UUID": "57a70000-9350-11ed-a1eb-0242ac120002"
     },
     {
+        "UUID": "8e400001-f315-4f60-9fb8-838830daea50",
+        "company": "Nordic",
+        "UUID_purpose": "Secure Device Firmware Update (DFU) with no requirement to press a button. Temporary UUID usage in Nordic SDK ~12.1.0.",
+        "UUID_name": "(EXPERIMENTAL/TEMPORARY) Buttonless DFU)",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240618153615/https://devzone.nordicsemi.com/f/nordic-q-a/17722/buttonless-dfu-secure-format-sdk-12-1-0",
+                "description": "Temporary UUID used for this, before migrating to 0xfe59 version.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://github.com/NordicSemiconductor/Android-DFU-Library/issues/31#issuecomment-261474135",
+                "description": "Evidence that this UUID was eventually replaced with the 0xFE59 UUID16, according to Nordic devs (writing before it happened.)",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "ab5e0001-5a21-4f05-bc7d-af01f617b664",
         "company": "Ohsung Electronics",
         "UUID_purpose": "C009 remote control interface",
