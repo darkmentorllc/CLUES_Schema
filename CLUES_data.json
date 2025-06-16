@@ -3315,6 +3315,56 @@
         "parent_UUID": "d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c"
     },
     {
+        "UUID": "1bc50003-0200-d29e-e511-446c609db825",
+        "company": "Noke",
+        "UUID_purpose": "MERGED: (Read (Rx) from the lock.), (Session string used to encrypt commands to the lock.)",
+        "UUID_name": "MERGED: (Rx), (Session)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616191603/https://github.com/noke-inc/noke-mobile-library-ios/blob/e183d2dc2dd88699175b1655d00a2bcad1df494c/NokeMobileLibrary/Classes/NokeDevice.swift#L145",
+                "description": "Official Nok\u0113 library code.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "1bc50001-0200-d29e-e511-446c609db825"
+    },
+    {
+        "UUID": "1bc50001-0200-d29e-e511-446c609db825",
+        "company": "Noke",
+        "UUID_purpose": "Primary GATT service",
+        "UUID_name": "Primary",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616191603/https://github.com/noke-inc/noke-mobile-library-ios/blob/e183d2dc2dd88699175b1655d00a2bcad1df494c/NokeMobileLibrary/Classes/NokeDevice.swift#L145",
+                "description": "Official Nok\u0113 library code.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "1bc50002-0200-d29e-e511-446c609db825",
+        "company": "Noke",
+        "UUID_purpose": "Write (Tx) to the lock.",
+        "UUID_name": "Tx",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616191603/https://github.com/noke-inc/noke-mobile-library-ios/blob/e183d2dc2dd88699175b1655d00a2bcad1df494c/NokeMobileLibrary/Classes/NokeDevice.swift#L145",
+                "description": "Official Nok\u0113 library code.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "1bc50001-0200-d29e-e511-446c609db825"
+    },
+    {
         "UUID": "14387800-130c-49e7-b877-2881c89cb258",
         "company": "Nordic",
         "UUID_purpose": "Provision a Wi-Fi device that lacks input or output capability",
@@ -3476,22 +3526,6 @@
         "parent_UUID": "00001523-1212-efde-1523-785feabcd123"
     },
     {
-        "UUID": "0483dadd-6c9d-6ca9-5d41-03ad4fff4abb",
-        "company": "Nordic",
-        "UUID_purpose": "'The GATT Throughput Service is a custom service that receives and writes data and returns metrics about these operations.''",
-        "UUID_name": "GATT Throughput",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250219003342/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/throughput.html",
-                "description": "Nordic SDK description of GATT Throughput Service.",
-                "submitter": "Xeno Kovah"
-            }
-        ]
-    },
-    {
         "UUID": "fe59",
         "company": "Nordic",
         "UUID_purpose": "Secure Device Firmware Update (DFU) (in contrast to earlier Nordic 'Legacy' DFU which is known to be insecure.)",
@@ -3514,7 +3548,8 @@
     {
         "UUID": "8ec90001-f315-4f60-9fb8-838830daea50",
         "company": "Nordic",
-        "UUID_purpose": "Buttonless DFU",
+        "UUID_purpose": "'The DFU Control Point characteristic is used to control the state of the DFU process. All DFU procedures are requested by writing to this characteristic. A response that marks the end of the procedure is received as a notification.'",
+        "UUID_name": "Secure DFU Control point",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3522,6 +3557,33 @@
             {
                 "URL": "https://web.archive.org/web/20240712091552/https://nordicsemiconductor.github.io/Nordic-Thingy52-FW/documentation/firmware_architecture.html",
                 "description": "Previous 1st party documented 'Buttonless DFU' characteristic UUID. Believed to be deprecated now though.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250104225418/https://docs.nordicsemi.com/bundle/sdk_nrf5_v16.0.0/page/lib_dfu_transport_ble.html",
+                "description": "The Secure Device Firmware Update (DFU) Service.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fe59"
+    },
+    {
+        "UUID": "8ec90002-f315-4f60-9fb8-838830daea50",
+        "company": "Nordic",
+        "UUID_purpose": "'This characteristic receives data for Device Firmware Updates as DFU packets.'",
+        "UUID_name": "Secure DFU Packet",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20240712091552/https://nordicsemiconductor.github.io/Nordic-Thingy52-FW/documentation/firmware_architecture.html",
+                "description": "Previous 1st party documented 'Buttonless DFU' characteristic UUID. Believed to be deprecated now though.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250104225418/https://docs.nordicsemi.com/bundle/sdk_nrf5_v16.0.0/page/lib_dfu_transport_ble.html",
+                "description": "The Secure Device Firmware Update (DFU) Service.",
                 "submitter": "Xeno Kovah"
             }
         ],
@@ -3548,6 +3610,22 @@
             }
         ],
         "parent_UUID": "fe59"
+    },
+    {
+        "UUID": "0483dadd-6c9d-6ca9-5d41-03ad4fff4abb",
+        "company": "Nordic",
+        "UUID_purpose": "'The GATT Throughput Service is a custom service that receives and writes data and returns metrics about these operations.''",
+        "UUID_name": "GATT Throughput",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250219003342/https://docs.nordicsemi.com/bundle/ncs-2.6.3/page/nrf/libraries/bluetooth_services/services/throughput.html",
+                "description": "Nordic SDK description of GATT Throughput Service.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
     },
     {
         "UUID": "00001530-1212-efde-1523-785feabcd123",
