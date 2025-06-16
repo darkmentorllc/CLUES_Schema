@@ -7317,6 +7317,40 @@
         "parent_UUID": "00000211-b2d1-43f0-9b88-960cebf8b91e"
     },
     {
+        "UUID": "ba04c4b2-892b-43be-b69c-5d13f2195392",
+        "company": "Texas Instruments Inc.",
+        "UUID_purpose": "'Client sends credits to the server using this characteristic with an ATT Write Request.'",
+        "UUID_name": "Transmit (TX) Credits",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
+                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
+    },
+    {
+        "UUID": "e06d5efb-4f4a-45c0-9eb1-371ae5a14ad4",
+        "company": "Texas Instruments Inc.",
+        "UUID_purpose": "'Server sends credits to the client using this characteristic with an ATT Handle Value Notification.'",
+        "UUID_name": "Receive (RX) Credits",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
+                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
+    },
+    {
         "UUID": "f000ffc0-0451-4000-b000-000000000000",
         "company": "Texas Instruments Inc.",
         "UUID_purpose": "Over-the-Air Download (OAD) Firmware Update",
@@ -7460,6 +7494,22 @@
             {
                 "URL": "https://web.archive.org/web/20250116234027/https://raw.githubusercontent.com/xamarin/Monkey.BluetoothLE/b1ef069aa7b9adf18ed79a7e17492bde4349b757/Source/Platform%20Stacks/Robotics.Mobile.Core/Bluetooth/LE/KnownServices.json",
                 "description": "3rd party source that indicated the same thing for this UUID",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "14839ac4-7d7e-415c-9a42-167340cf2339",
+        "company": "Texas Instruments Inc.",
+        "UUID_purpose": "Example of how to create something similar to the Serial Port Profile for BLE.",
+        "UUID_name": "TI custom serial example",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
+                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
                 "submitter": "Xeno Kovah"
             }
         ]
@@ -7703,6 +7753,23 @@
         "parent_UUID": "f000ffd0-0451-4000-b000-000000000000"
     },
     {
+        "UUID": "8b00ace7-eb0b-49b0-bbe9-9aee0a26e1a3",
+        "company": "Texas Instruments Inc.",
+        "UUID_purpose": "Receive data. 'Client sends data to the server using this characteristic with an ATT Write Request.'",
+        "UUID_name": "Receive (RX)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
+                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
+    },
+    {
         "UUID": "f000c0e0-0451-4000-b000-000000000000",
         "company": "Texas Instruments Inc.",
         "UUID_purpose": "Serial Port on SensorTag which was a previous product of Texas Instruments",
@@ -7766,6 +7833,23 @@
             }
         ],
         "regex": true
+    },
+    {
+        "UUID": "0734594a-a8e7-4b1a-a6b1-cd5243059a57",
+        "company": "Texas Instruments Inc.",
+        "UUID_purpose": "Transmit data. 'Server sends data to the client using this characteristic with an ATT Handle Value Notification.'",
+        "UUID_name": "Transmit (TX)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
+                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
     },
     {
         "UUID": "f000ffe0-0451-4000-b000-000000000000",
