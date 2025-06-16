@@ -4612,6 +4612,158 @@
         "parent_UUID": "fef5"
     },
     {
+        "UUID": "2413b53f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The Beacon UUID characteristic sets the UUID broadcast within the beacon advertisement packet for an iBeacon style beacon.'",
+        "UUID_name": "Beacon UUID",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413b33f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The Beacon configuration service provides necessary beacon configuration information and a control point for performing additional actions such as password protection and setting calibration data. This section lists the various characteristics along with their UUIDs and data types.'",
+        "UUID_name": "Beacon Configuration",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "2413b93f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The TX power characteristic provides a way to set the output radio power for the beacon advertisement packet. The default value is -4. Available values are: -30, -20, -16, -12, -8, -4, 0, 4 in dBm.'",
+        "UUID_name": "Beacon TX Power",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413ba3f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The beacon enable characteristic enables and disables the beacon advertisement. If set to 0, no beacon advertisement will be generated. Any other value will cause the device to generate beacon advertisements. The default value is 0.'",
+        "UUID_name": "Beacon Enable",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413bb3f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The connectable TX power sets the radio output power for connectable advertisement packets. These packets are sent out every so often providing a way for configuration apps to connect and update settings. The default value is -4. Valid values are: -30, -20, -16, -12, -8, -4, 0, 4 in dBm.'",
+        "UUID_name": "Connectable TX Power",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413b43f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The control point provides an interface for additional commands. See the Control Point Commands section for a detailed description of all available commands.'",
+        "UUID_name": "Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413b63f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The major number characteristic sets the major number within the beacon advertisement packet for an iBeacon style beacon. This characteristic is 16 bits. Valid values are 0 to 0xFFFF.'",
+        "UUID_name": "Major Number",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413b73f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The minor number characteristic sets the minor number within the beacon advertisement packet for an iBeacon style beacon. This characteristic is 16 bits. Valid values are 0 to 0xFFFF.'",
+        "UUID_name": "Minor Number",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413b83f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'This characteristic sets the advertising interval for the Beacon advertisement packet. This characteristic is 16 bits. Values are represented in milliseconds and range from 50 to 4000 ms.'",
+        "UUID_name": "Beacon Advertising Interval",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
         "UUID": "00000000-000f-11e1-9ab4-0002a5d5c51b",
         "company": "ST Microelectronics (STMicro)",
         "UUID_purpose": "BlueST SDK",
