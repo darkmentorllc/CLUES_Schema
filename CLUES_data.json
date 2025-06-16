@@ -2795,6 +2795,39 @@
         "regex": true
     },
     {
+        "UUID": "03b80e5a-ede8-4b33-a751-6ce34ec4c700",
+        "company": "MIDI Association",
+        "UUID_purpose": "Exposing MIDI devices via BLE.",
+        "UUID_name": "MIDI (Audio)",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241105132650/https://docs.silabs.com/bluetooth/2.13/bluetooth-code-examples-applications/midi-over-ble",
+                "description": "The MIDI Association wants people to sign up to download the spec, so I just used this instead.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "7772e5db-3868-4112-a1a9-f2669d106bf3",
+        "company": "MIDI Association",
+        "UUID_purpose": "Exposing MIDI devices via BLE.",
+        "UUID_name": "MIDI input/output",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241105132650/https://docs.silabs.com/bluetooth/2.13/bluetooth-code-examples-applications/midi-over-ble",
+                "description": "The MIDI Association wants people to sign up to download the spec, so I just used this instead.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "03B80E5A-EDE8-4B33-A751-6CE34EC4C700"
+    },
+    {
         "UUID": "fff6",
         "company": "Matter alliance (formerly CHIP)",
         "UUID_purpose": "Matter Bluetooth Transport Protocol",
