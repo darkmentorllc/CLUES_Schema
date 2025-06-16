@@ -6803,6 +6803,39 @@
         "parent_UUID": "331a36f5-2459-45ea-9d95-6142f0c4b307"
     },
     {
+        "UUID": "4880c12c-fdcb-4077-8920-a450d7f9b907",
+        "company": "Silicon Labs",
+        "UUID_purpose": "BLE reimplementation of BTC SPP-like service with a vendor-specific UUID.",
+        "UUID_name": "Serial Port Profile (SPP)",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241114215333/https://docs.silabs.com/bluetooth/2.13/bluetooth-code-examples-applications/",
+                "description": "Silicon Labs documentation of their custom Serial-Port-Profile-like service.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "fec26ec4-6d71-4442-9f81-55bc21d658d6",
+        "company": "Silicon Labs",
+        "UUID_purpose": "BLE reimplementation of BTC SPP-like service with a vendor-specific UUID.",
+        "UUID_name": "Serial Port Profile (SPP) data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241114215333/https://docs.silabs.com/bluetooth/2.13/bluetooth-code-examples-applications/",
+                "description": "Silicon Labs documentation of their custom Serial-Port-Profile-like service.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "4880c12c-fdcb-4077-8920-a450d7f9b907"
+    },
+    {
         "UUID": "41584a41-4e55-5342-5743444556494345",
         "company": "TASER International, Inc.",
         "UUID_purpose": "Unknown",
