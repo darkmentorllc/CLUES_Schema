@@ -4676,6 +4676,56 @@
         "parent_UUID": "fd92"
     },
     {
+        "UUID": "713d0003-503e-4c75-ba94-3148f18d941e",
+        "company": "RedBearLab",
+        "UUID_purpose": "Custom UART RX.",
+        "UUID_name": "Custom UART RX",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616220227/https://raw.githubusercontent.com/RedBearLab/nRF8001/refs/heads/master/src/RBL_nRF8001.xml",
+                "description": "RedBearLab created a 'BLE Shield is an Arduino compatible shield with nRF8001 BLE controller chip that enables BLE feature for Arduino boards.', and this is the custom UART service definition.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "713D0000-503E-4C75-BA94-3148F18D941E"
+    },
+    {
+        "UUID": "713d0002-503e-4c75-ba94-3148f18d941e",
+        "company": "RedBearLab",
+        "UUID_purpose": "Custom UART TX.",
+        "UUID_name": "Custom UART TX",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616220227/https://raw.githubusercontent.com/RedBearLab/nRF8001/refs/heads/master/src/RBL_nRF8001.xml",
+                "description": "RedBearLab created a 'BLE Shield is an Arduino compatible shield with nRF8001 BLE controller chip that enables BLE feature for Arduino boards.', and this is the custom UART service definition.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "713D0000-503E-4C75-BA94-3148F18D941E"
+    },
+    {
+        "UUID": "713d0000-503e-4c75-ba94-3148f18d941e",
+        "company": "RedBearLab",
+        "UUID_purpose": "Custom UART.",
+        "UUID_name": "Custom UART",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616220227/https://raw.githubusercontent.com/RedBearLab/nRF8001/refs/heads/master/src/RBL_nRF8001.xml",
+                "description": "RedBearLab created a 'BLE Shield is an Arduino compatible shield with nRF8001 BLE controller chip that enables BLE feature for Arduino boards.', and this is the custom UART service definition.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "fef5",
         "company": "Renesas",
         "UUID_purpose": "Software Update Over-The-Air (OTA) Receiver (SUOTAR))",
