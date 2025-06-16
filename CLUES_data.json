@@ -100,6 +100,107 @@
         "parent_UUID": "db450001-8e9a-4818-add7-6ed94a328ab4"
     },
     {
+        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cbb",
+        "company": "ActiveLook",
+        "UUID_purpose": "'The sensor server is used for notifying the master device of user gesture detection. When a gesture is detected on the glasses (hand motion), a notification is sent on the sensor server to the master application.'",
+        "UUID_name": "Gesture Event",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250104003833/https://atmotube.com/atmotube-support/bluetooth-api",
+                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
+    },
+    {
+        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cbc",
+        "company": "ActiveLook",
+        "UUID_purpose": "'The user data server is used for notifying the master device of user interactions with the ActiveLook\u00ae device. When the user touches the capacitive button for a short time (<3s) a notification is sent on the user data server to the master application'",
+        "UUID_name": "Touch Event",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250104003833/https://atmotube.com/atmotube-support/bluetooth-api",
+                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
+    },
+    {
+        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cb9",
+        "company": "ActiveLook",
+        "UUID_purpose": "Flow control to prevent the ActiveLook memory buffer from being overloaded & error control.",
+        "UUID_name": "Control",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250104003833/https://atmotube.com/atmotube-support/bluetooth-api",
+                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
+    },
+    {
+        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cba",
+        "company": "ActiveLook",
+        "UUID_purpose": "Receive data to ActiveLook heads up display.",
+        "UUID_name": "Receive by HUD",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250104003833/https://atmotube.com/atmotube-support/bluetooth-api",
+                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
+    },
+    {
+        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7",
+        "company": "ActiveLook",
+        "UUID_purpose": "Send commands to ActiveLook heads up display.",
+        "UUID_name": "Commands Interface",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250104003833/https://atmotube.com/atmotube-support/bluetooth-api",
+                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cb8",
+        "company": "ActiveLook",
+        "UUID_purpose": "Send responses from ActiveLook heads up display.",
+        "UUID_name": "Transmit from HUD",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250104003833/https://atmotube.com/atmotube-support/bluetooth-api",
+                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
+    },
+    {
         "UUID": "fe03",
         "company": "Amazon",
         "UUID_purpose": "Alexa Gadgets (older) or Amazon Sidewalk (newer) allows devices to connect to Amazon Echo devices. 'The BLE GATT Alexa Gadgets Service is a custom service that manages Alexa Gadgets stream transactions.'",
