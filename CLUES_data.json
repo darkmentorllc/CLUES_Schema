@@ -6803,6 +6803,22 @@
         "parent_UUID": "331a36f5-2459-45ea-9d95-6142f0c4b307"
     },
     {
+        "UUID": "0bd51666-e7cb-469b-8e4d-2742f1ba77cc",
+        "company": "Silicon Labs",
+        "UUID_purpose": "BLE reimplementation of BTC SPP-like service with a vendor-specific UUID.",
+        "UUID_name": "Cable replacement service",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241123100951/https://www.silabs.com/documents/public/user-guides/ug211-bt-low-energy-profile-toolkit.pdf",
+                "description": "Silicon Labs' 'BLUETOOTH LOW ENERGY PROFILE TOOLKIT' with example UUIDs (which people inevitably use in real products).",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "4880c12c-fdcb-4077-8920-a450d7f9b907",
         "company": "Silicon Labs",
         "UUID_purpose": "BLE reimplementation of BTC SPP-like service with a vendor-specific UUID.",
@@ -6817,6 +6833,23 @@
                 "submitter": "Xeno Kovah"
             }
         ]
+    },
+    {
+        "UUID": "e7add780-b042-4876-aae1-112855353cc1",
+        "company": "Silicon Labs",
+        "UUID_purpose": "BLE reimplementation of BTC SPP-like service with a vendor-specific UUID.",
+        "UUID_name": "xgatt_data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241123100951/https://www.silabs.com/documents/public/user-guides/ug211-bt-low-energy-profile-toolkit.pdf",
+                "description": "Silicon Labs' 'BLUETOOTH LOW ENERGY PROFILE TOOLKIT' with example UUIDs (which people inevitably use in real products).",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "0bd51666-e7cb-469b-8e4d-2742f1ba77cc"
     },
     {
         "UUID": "fec26ec4-6d71-4442-9f81-55bc21d658d6",
