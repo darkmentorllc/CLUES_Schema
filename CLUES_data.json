@@ -3076,6 +3076,56 @@
         "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
     },
     {
+        "UUID": "feb8",
+        "company": "Meta (n\u00e9e Facebook)",
+        "UUID_purpose": "Interface to Meta Quest VR/AR headsets.",
+        "UUID_name": "Companion",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250402191512/https://github.com/QuestEscape/research/blob/master/README.md#updates",
+                "description": "Revers engineering analysis of Meta Quest.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "7a442666-509c-47fa-ac02-b06a37d9eb76",
+        "company": "Meta (n\u00e9e Facebook)",
+        "UUID_purpose": "Unknown status reporting (writeup only mentions name, not usage.)",
+        "UUID_name": "Status",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250402191512/https://github.com/QuestEscape/research/blob/master/README.md#updates",
+                "description": "Revers engineering analysis of Meta Quest.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "feb8"
+    },
+    {
+        "UUID": "7a442881-509c-47fa-ac02-b06a37d9eb76",
+        "company": "Meta (n\u00e9e Facebook)",
+        "UUID_purpose": "Primary interface for data read/write (encoded using Protobuf)",
+        "UUID_name": "CCS",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250402191512/https://github.com/QuestEscape/research/blob/master/README.md#updates",
+                "description": "Revers engineering analysis of Meta Quest.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "feb8"
+    },
+    {
         "UUID": "bf3fbd80-063f-11e5-9e69-0002a5d5c50x",
         "company": "Microchip Technology Inc.",
         "UUID_purpose": "Firmware update",
@@ -4728,7 +4778,7 @@
     {
         "UUID": "fef5",
         "company": "Renesas",
-        "UUID_purpose": "Software Update Over-The-Air (OTA) Receiver (SUOTAR))",
+        "UUID_purpose": "Software Update Over-The-Air (OTA) Receiver (SUOTAR)) for firmware updates.",
         "UUID_name": "SUOTAR",
         "UUID_usage_array": [
             "GATT Service"
