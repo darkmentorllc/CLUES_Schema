@@ -3032,6 +3032,73 @@
         "regex": true
     },
     {
+        "UUID": "13d63400-2c97-0004-0000-4c6564676572",
+        "company": "Ledger",
+        "UUID_purpose": "Paring hardware wallet with mobile app",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20220325235722/https://github.com/LedgerHQ/ledgerjs/blob/master/packages/devices/src/index.ts",
+                "description": "Source code of Ledger Live predecessor",
+                "submitter": "MaxxSyntax"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "13d63400-2c97-0004-0001-4c6564676572",
+        "company": "Ledger",
+        "UUID_purpose": "notify",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20220325235722/https://github.com/LedgerHQ/ledgerjs/blob/master/packages/devices/src/index.ts",
+                "description": "Source code of Ledger Live predecessor",
+                "submitter": "MaxxSyntax"
+            }
+        ],
+        "parent_UUID": "13d63400-2c97-0004-0000-4c6564676572",
+        "regex": true
+    },
+    {
+        "UUID": "13d63400-2c97-0004-0002-4c6564676572",
+        "company": "Ledger",
+        "UUID_purpose": "write",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20220325235722/https://github.com/LedgerHQ/ledgerjs/blob/master/packages/devices/src/index.ts",
+                "description": "Source code of Ledger Live predecessor",
+                "submitter": "MaxxSyntax"
+            }
+        ],
+        "parent_UUID": "13d63400-2c97-0004-0000-4c6564676572",
+        "regex": true
+    },
+    {
+        "UUID": "13d63400-2c97-0004-0003-4c6564676572",
+        "company": "Ledger",
+        "UUID_purpose": "writeCmd",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20220325235722/https://github.com/LedgerHQ/ledgerjs/blob/master/packages/devices/src/index.ts",
+                "description": "Source code of Ledger Live predecessor",
+                "submitter": "MaxxSyntax"
+            }
+        ],
+        "parent_UUID": "13d63400-2c97-0004-0000-4c6564676572",
+        "regex": true
+    },
+    {
         "UUID": "03b80e5a-ede8-4b33-a751-6ce34ec4c700",
         "company": "MIDI Association",
         "UUID_purpose": "Exposing MIDI devices via BLE.",
