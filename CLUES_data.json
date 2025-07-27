@@ -3034,7 +3034,7 @@
     {
         "UUID": "13d63400-2c97-0004-0000-4c6564676572",
         "company": "Ledger",
-        "UUID_purpose": "Paring hardware wallet with mobile app",
+        "UUID_purpose": "Discover the main service the Ledger device exposes for APDU communication and retrieve the relevant characteristics (write, writeCmd, notify",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -3050,7 +3050,7 @@
     {
         "UUID": "13d63400-2c97-0004-0001-4c6564676572",
         "company": "Ledger",
-        "UUID_purpose": "notify",
+        "UUID_purpose": "notify is used to listen for and handle data sent asynchronously from the device",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3067,7 +3067,7 @@
     {
         "UUID": "13d63400-2c97-0004-0002-4c6564676572",
         "company": "Ledger",
-        "UUID_purpose": "write",
+        "UUID_purpose": "write waits for a device response when sending data to the ledger.  Possibly used for firmware updates",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3084,7 +3084,7 @@
     {
         "UUID": "13d63400-2c97-0004-0003-4c6564676572",
         "company": "Ledger",
-        "UUID_purpose": "writeCmd",
+        "UUID_purpose": "writeCmd is used to send data to the Ledger device over BLE using a fast unreliable way.  It does not wait for a response",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
