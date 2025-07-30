@@ -5043,6 +5043,56 @@
         ]
     },
     {
+        "UUID": "12a24d2e-fe14-488e-93d2-173c87620000",
+        "company": "Realtek",
+        "UUID_purpose": "Over-the-air firmware update",
+        "UUID_name": "OTA firmware update",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250730221829/https://github.com/ambiot/ambz2_matter/blob/942359f7fcda6f1f8675c7ee548aa8bc08abf639/component/common/bluetooth/realtek/sdk/example/bt_ota_central_client/dfu_client.c#L45C41-L45C135",
+                "description": "Over the air firmware update service for Realtek devices.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "12a24d2e-fe14-488e-93d2-173c87630000",
+        "company": "Realtek",
+        "UUID_purpose": "Over-the-air firmware update data transfer",
+        "UUID_name": "OTA firmware update data transfer",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250730221829/https://github.com/ambiot/ambz2_matter/blob/942359f7fcda6f1f8675c7ee548aa8bc08abf639/component/common/bluetooth/realtek/sdk/example/bt_ota_central_client/dfu_client.c#L45C41-L45C135",
+                "description": "Over the air firmware update service for Realtek devices.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "12a24d2e-fe14-488e-93d2-173c87620000"
+    },
+    {
+        "UUID": "12a24d2e-fe14-488e-93d2-173c87640000",
+        "company": "Realtek",
+        "UUID_purpose": "Over-the-air firmware update control point (Characteristic used in a write-only fashion to control the OTA firmware update process)",
+        "UUID_name": "OTA firmware update control point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250730221829/https://github.com/ambiot/ambz2_matter/blob/942359f7fcda6f1f8675c7ee548aa8bc08abf639/component/common/bluetooth/realtek/sdk/example/bt_ota_central_client/dfu_client.c#L45C41-L45C135",
+                "description": "Over the air firmware update service for Realtek devices.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "12a24d2e-fe14-488e-93d2-173c87620000"
+    },
+    {
         "UUID": "713d0003-503e-4c75-ba94-3148f18d941e",
         "company": "RedBearLab",
         "UUID_purpose": "Custom UART RX.",
