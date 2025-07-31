@@ -5043,6 +5043,23 @@
         ]
     },
     {
+        "UUID": "12a24d2e-fe14-488e-93d2-173cffe00000",
+        "company": "Realtek",
+        "UUID_purpose": "Data Transfer (alt UUID)",
+        "UUID_name": "Data Transfer (alt UUID)",
+        "UUID_usage_array": [
+            "GATT Service",
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250731173150/https://github.com/Ameba-AIoT/ameba-rtos/blob/1b0b089ff45a26c1db85841441f622e61c49dd2b/component/bluetooth/rtk_stack/src/mesh/profile/datatrans_service.c#L16",
+                "description": "Data Transfer service can apparently have this alternate UUID (probably for newer software) as given by this citation of Realtek 1st party code for Ameba RTOS",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
         "UUID": "12a24d2e-fe14-488e-93d2-173c87620000",
         "company": "Realtek",
         "UUID_purpose": "Device firmware update",
