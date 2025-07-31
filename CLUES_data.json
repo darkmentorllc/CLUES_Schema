@@ -5093,6 +5093,40 @@
         "parent_UUID": "12a24d2e-fe14-488e-93d2-173c87620000"
     },
     {
+        "UUID": "12a24d2e-fe14-488e-93d2-173cffd00000",
+        "company": "Realtek",
+        "UUID_purpose": "Over-the-air (OTA) firmware update",
+        "UUID_name": "Over-the-air firmware update",
+        "UUID_usage_array": [
+            "GATT Service",
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250731114339/https://github.com/Ameba-AIoT/ameba-rtos-z2/blob/main/component/common/bluetooth/realtek/sdk/inc/bluetooth/profile/client/ota_client.h#L25",
+                "description": "This seems to have 9 characteristics in the invalid 0xFFXX range, which are not included here due to potential conflicts. See URL for values. It's interesting that this appears in the same project as a reference to the DFU service.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "12a24d2e-fe14-488e-93d2-173cxxxx0000",
+        "company": "Realtek",
+        "UUID_purpose": "Unknown Realtek catch-all regex match (if you know what this is, submit here https://forms.gle/Grq1XAZ6Fv1tGFTo8)",
+        "UUID_name": "Unknown Realtek catch-all regex match (if you know what this is, submit here https://forms.gle/Grq1XAZ6Fv1tGFTo8)",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Based on other UUIDs this seems to be the pattern used by Realtek. This is to note that fact when found with additional UUIDs in the same range.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "regex": true
+    },
+    {
         "UUID": "713d0003-503e-4c75-ba94-3148f18d941e",
         "company": "RedBearLab",
         "UUID_purpose": "Custom UART RX.",
