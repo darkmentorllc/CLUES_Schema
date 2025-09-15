@@ -3376,6 +3376,107 @@
         "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
     },
     {
+        "UUID": "cb0b9a0b-a84c-4c0d-bdbb-442e3144ee30",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'The software update service.'",
+        "UUID_name": "SoftwareUpdateService",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for updating Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "4826129c-c22a-43a3-b066-ce8f0d5bacc6",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'write last - writing this will complete the OTA operation, now you can read result'",
+        "UUID_name": "CRC32",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for updating Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "cb0b9a0b-a84c-4c0d-bdbb-442e3144ee30"
+    },
+    {
+        "UUID": "5e134862-7411-4424-ac4a-210937432c67",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'currently only 0 (app) or 100 (spiffs) are defined, if not set app is assumed'",
+        "UUID_name": "Region for Programming",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for updating Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "cb0b9a0b-a84c-4c0d-bdbb-442e3144ee30"
+    },
+    {
+        "UUID": "5e134862-7411-4424-ac4a-210937432c77",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'readable but will notify when the OTA operation completes'",
+        "UUID_name": "Result Code",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for updating Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "cb0b9a0b-a84c-4c0d-bdbb-442e3144ee30"
+    },
+    {
+        "UUID": "e272ebac-d463-4b98-bc84-5cc1a39ee517",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'variable sized, recommended 512 bytes, write one for each block of file'",
+        "UUID_name": "Data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for updating Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "cb0b9a0b-a84c-4c0d-bdbb-442e3144ee30"
+    },
+    {
+        "UUID": "e74dd9c0-a301-4a6f-95a1-f0e1dbea8e1e",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'32 bit, write this first, then read back to see if it was acceptable (0 mean not accepted)'",
+        "UUID_name": "Total Image Size",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for updating Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "cb0b9a0b-a84c-4c0d-bdbb-442e3144ee30"
+    },
+    {
         "UUID": "6ba1b218-15a8-461f-9fa8-5dcae273eafd",
         "company": "Meshtastic (open source project)",
         "UUID_purpose": "'This is the main Bluetooth service for the device and provides the API your app should use to get information about the mesh, send packets, or provision the radio.'",
