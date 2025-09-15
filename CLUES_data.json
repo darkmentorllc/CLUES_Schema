@@ -3394,7 +3394,7 @@
     {
         "UUID": "4826129c-c22a-43a3-b066-ce8f0d5bacc6",
         "company": "Meshtastic (open source project)",
-        "UUID_purpose": "'write last - writing this will complete the OTA operation, now you can read result'",
+        "UUID_purpose": "'Write last - writing this will complete the OTA operation, now you can read result'",
         "UUID_name": "CRC32",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -3411,7 +3411,7 @@
     {
         "UUID": "5e134862-7411-4424-ac4a-210937432c67",
         "company": "Meshtastic (open source project)",
-        "UUID_purpose": "'currently only 0 (app) or 100 (spiffs) are defined, if not set app is assumed'",
+        "UUID_purpose": "'Currently only 0 (app) or 100 (spiffs) are defined, if not set app is assumed'",
         "UUID_name": "Region for Programming",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -3428,7 +3428,7 @@
     {
         "UUID": "5e134862-7411-4424-ac4a-210937432c77",
         "company": "Meshtastic (open source project)",
-        "UUID_purpose": "'readable but will notify when the OTA operation completes'",
+        "UUID_purpose": "'Readable but will notify when the OTA operation completes'",
         "UUID_name": "Result Code",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -3445,7 +3445,7 @@
     {
         "UUID": "e272ebac-d463-4b98-bc84-5cc1a39ee517",
         "company": "Meshtastic (open source project)",
-        "UUID_purpose": "'variable sized, recommended 512 bytes, write one for each block of file'",
+        "UUID_purpose": "'Variable sized, recommended 512 bytes, write one for each block of file'",
         "UUID_name": "Data",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -3496,7 +3496,7 @@
     {
         "UUID": "2c55e69e-4993-11ed-b878-0242ac120002",
         "company": "Meshtastic (open source project)",
-        "UUID_purpose": "'contains a newly received FromRadio packet destined towards the phone (up to MAXPACKET bytes per packet). After reading the ESP32 will put the next packet in this mailbox. If the FIFO is empty it will put an empty packet in this mailbox.'",
+        "UUID_purpose": "'Contains a newly received FromRadio packet destined towards the phone (up to MAXPACKET bytes per packet). After reading the ESP32 will put the next packet in this mailbox. If the FIFO is empty it will put an empty packet in this mailbox.'",
         "UUID_name": "FromRadio",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -3547,7 +3547,7 @@
     {
         "UUID": "ed9da18c-a800-4f66-a670-aa7547e34453",
         "company": "Meshtastic (open source project)",
-        "UUID_purpose": "'the current packet # in the message waiting inside fromradio, if the phone sees this notify it should read messages until it catches up with this number.'",
+        "UUID_purpose": "'The current packet # in the message waiting inside fromradio, if the phone sees this notify it should read messages until it catches up with this number.'",
         "UUID_name": "FromNum",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -3564,7 +3564,7 @@
     {
         "UUID": "f75c76d2-129e-4dad-a1dd-7866124401e7",
         "company": "Meshtastic (open source project)",
-        "UUID_purpose": "'write ToRadio protobufs to this characteristic to send them (up to MAXPACKET len)'",
+        "UUID_purpose": "'Write ToRadio protobufs to this characteristic to send them (up to MAXPACKET len)'",
         "UUID_name": "ToRadio",
         "UUID_usage_array": [
             "GATT Characteristic"
