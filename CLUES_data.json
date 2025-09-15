@@ -3376,6 +3376,108 @@
         "parent_UUID": "54220000-f6a5-4007-a371-722f4ebd8436"
     },
     {
+        "UUID": "6ba1b218-15a8-461f-9fa8-5dcae273eafd",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'This is the main Bluetooth service for the device and provides the API your app should use to get information about the mesh, send packets, or provision the radio.'",
+        "UUID_name": "MeshBluetoothService",
+        "UUID_usage_array": [
+            "GATT Service",
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for configuring Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "2c55e69e-4993-11ed-b878-0242ac120002",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'contains a newly received FromRadio packet destined towards the phone (up to MAXPACKET bytes per packet). After reading the ESP32 will put the next packet in this mailbox. If the FIFO is empty it will put an empty packet in this mailbox.'",
+        "UUID_name": "FromRadio",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for configuring Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "6ba1b218-15a8-461f-9fa8-5dcae273eafd"
+    },
+    {
+        "UUID": "5a3d6e49-06e6-4423-9944-e9de8cdf9547",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'A log message as LogRecord protobuf. Clients are encouraged to listen for this notification and give the option of logging these debug messages.'",
+        "UUID_name": "LogRecord",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for configuring Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "6ba1b218-15a8-461f-9fa8-5dcae273eafd"
+    },
+    {
+        "UUID": "6c6fd238-78fa-436b-aacf-15c5be1ef2e2",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'A raw log message as a string (with a newline). This characteristic is DEPRECATED and shouldn't be used on new client code.'",
+        "UUID_name": "RawLogMessage (Deprecated)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for configuring Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "6ba1b218-15a8-461f-9fa8-5dcae273eafd"
+    },
+    {
+        "UUID": "ed9da18c-a800-4f66-a670-aa7547e34453",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'the current packet # in the message waiting inside fromradio, if the phone sees this notify it should read messages until it catches up with this number.'",
+        "UUID_name": "FromNum",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for configuring Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "6ba1b218-15a8-461f-9fa8-5dcae273eafd"
+    },
+    {
+        "UUID": "f75c76d2-129e-4dad-a1dd-7866124401e7",
+        "company": "Meshtastic (open source project)",
+        "UUID_purpose": "'write ToRadio protobufs to this characteristic to send them (up to MAXPACKET len)'",
+        "UUID_name": "ToRadio",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250812220907/https://meshtastic.org/docs/development/device/client-api/",
+                "description": "Client interface for configuring Meshtastic LoRa nodes via BLE.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "6ba1b218-15a8-461f-9fa8-5dcae273eafd"
+    },
+    {
         "UUID": "feb8",
         "company": "Meta (n\u00e9e Facebook)",
         "UUID_purpose": "Interface to Meta Quest VR/AR headsets.",
