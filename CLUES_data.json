@@ -3215,6 +3215,56 @@
         "Parent_UUID": "fff6"
     },
     {
+        "UUID": "18a0",
+        "company": "MediaTek",
+        "UUID_purpose": "Data Transfer Over GATT (DOGP. Not sure what the P stands for.) NOTE: incorrectly using *BT SIG reserved* 0x18A0 UUID)",
+        "UUID_name": "Data Transfer Over GATT (DOGP)",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250918113938/https://github.com/Ever-Never/Embedded-GUI-for-MT2523/blob/7f2f26ed17ad04128c292c0ac9494a46f0aa4dd4/middleware/MTK/bt_notify/src/dogp/ble_dogp_service.c#L67",
+                "description": "Code defining services & characteristics for interacting with MediaTek chips.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "0x2aa0",
+        "company": "MediaTek",
+        "UUID_purpose": "Data Transfer Over GATT Reading. NOTE: incorrectly using *BT SIG reserved* 0x2AA0 UUID)",
+        "UUID_name": "Data Transfer Over GATT Reading",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250918113938/https://github.com/Ever-Never/Embedded-GUI-for-MT2523/blob/7f2f26ed17ad04128c292c0ac9494a46f0aa4dd4/middleware/MTK/bt_notify/src/dogp/ble_dogp_service.c#L68",
+                "description": "Code defining services & characteristics for interacting with MediaTek chips.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "18a0"
+    },
+    {
+        "UUID": "0x2aa1",
+        "company": "MediaTek",
+        "UUID_purpose": "Data Transfer Over GATT Writing. NOTE: incorrectly using *BT SIG reserved* 0x2AA1 UUID)",
+        "UUID_name": "Data Transfer Over GATT Writing",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250918113938/https://github.com/Ever-Never/Embedded-GUI-for-MT2523/blob/7f2f26ed17ad04128c292c0ac9494a46f0aa4dd4/middleware/MTK/bt_notify/src/dogp/ble_dogp_service.c#L68",
+                "description": "Code defining services & characteristics for interacting with MediaTek chips.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "Parent_UUID": "18a0"
+    },
+    {
         "UUID": "54220000-f6a5-4007-a371-722f4ebd8436",
         "company": "Memfault",
         "UUID_purpose": "'The Bluetooth Low Energy (LE) GATT Memfault Diagnostic Service is a custom service that forwards diagnostic data collected by firmware through a Bluetooth gateway.'",
