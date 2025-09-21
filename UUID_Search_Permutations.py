@@ -47,7 +47,7 @@ if __name__ == "__main__":
     b_le = little_endian_bytes(uuid_nodash)
 
     print("Without dashes: " + uuid_nodash)
-    print("Without dashes, endian-swapped: " + b_le.hex().upper())
+    print("Without dashes, endian-swapped: " + b_le.hex().upper()) # This is for if someone got their endianness wrong
     print("With dashes:    " + uuid_dash)
     print("Little-endian C byte array: {" + format_c_array(b_le, with_spaces=True) + "}")
     print("Little-endian C byte array (no spaces): " + format_c_array(b_le, with_spaces=False))
