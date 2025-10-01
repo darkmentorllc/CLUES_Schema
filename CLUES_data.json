@@ -8675,6 +8675,422 @@
         ]
     },
     {
+        "UUID": "2c259f9c-4a57-4c74-830e-2013e4466c2c",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Handles multiple commands including reset, expose-services, reset_wifi, and read_setup_mode",
+        "UUID_name": "Multi-Command Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used for sending reset command to force device into setup mode, exposing services, resetting WiFi connection, and reading setup mode status.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "3c2fb8ce-49b9-4e1c-848f-8a26740e7c8c",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Marks device setup info as ready",
+        "UUID_name": "Setup Info Ready Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to indicate that device setup information is ready.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "3c2c5dea-35aa-4540-94be-0bd5d9e72793",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Performs a site survey of available Wi-Fi networks",
+        "UUID_name": "WiFi Scan Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Triggers a site survey to scan for available Wi-Fi networks.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "41f21774-cc72-44f2-a002-86bdbedc253d",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Reads HTTP return code from last cloud interaction",
+        "UUID_name": "HTTP Code Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to read the HTTP return code from the device's last cloud interaction.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "2e2f1c66-ace9-46aa-a993-641fce7a5c9c",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Reads P2P UUID",
+        "UUID_name": "P2P UUID Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to read the P2P UUID from the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "241d5820-bc2e-4cc9-a008-0de6ba142006",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Reads P2P vendor string",
+        "UUID_name": "P2P Vendor Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to read the P2P vendor string from the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "303a469f-7ca4-4cd5-bd79-1203774c719c",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Reads WiFi encryption protocol",
+        "UUID_name": "WiFi Encryption Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to read the WiFi encryption protocol used by the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "8518174e-c27c-4b20-8b9c-96a855773795",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Reads current Wi-Fi mode",
+        "UUID_name": "WiFi Mode Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to read the current Wi-Fi mode of the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "00002a26-0000-1000-8000-00805f9b34fb",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Reads device firmware version",
+        "UUID_name": "Firmware Version Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to read the device's firmware version.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "00002a24-0000-1000-8000-00805f9b34fb",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Reads device model",
+        "UUID_name": "Device Model Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to read the device model information.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "00002a28-0000-1000-8000-00805f9b34fb",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Reads device service version",
+        "UUID_name": "Service Version Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to read the device's service version.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "c1c1d58f-6cdc-426d-aa4d-5a18bd88fe37",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Reads device token",
+        "UUID_name": "Device Token Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to read the device token from the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "233d5fb2-f565-4fef-832a-983d6c362f36",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sends Wi-Fi SSID",
+        "UUID_name": "WiFi SSID Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to send the Wi-Fi SSID to the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "ac075b73-2424-4e7a-9fe2-62cbf19e7e89",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sends Wi-Fi password",
+        "UUID_name": "WiFi Password Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to send the Wi-Fi password to the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "d6f178c9-8137-4d18-8ced-0b62d7e3e7f2",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sends authentication token",
+        "UUID_name": "Auth Token Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to send an authentication token to the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "f34375ad-c23c-4bb5-bbfe-13d624741757",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sends country code",
+        "UUID_name": "Country Code Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to send the country code to the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "81f6f485-eae6-41cc-8a2f-e11a5844a114",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sends endpoint URL",
+        "UUID_name": "Endpoint Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to send an endpoint URL (e.g., AWS or P2P) to the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "00002aae-0000-1000-8000-00805f9b34fb",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sends latitude for timezone setup",
+        "UUID_name": "Latitude Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to send the latitude for timezone configuration.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "00002aaf-0000-1000-8000-00805f9b34fb",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sends longitude for timezone setup",
+        "UUID_name": "Longitude Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to send the longitude for timezone configuration.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "953b64d3-99bd-4434-b050-1c39512f9f95",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sends short token",
+        "UUID_name": "Short Token Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to send a short token for registration.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "00002a0e-0000-1000-8000-00805f9b34fb",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sends timezone information",
+        "UUID_name": "Timezone Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to send timezone information (e.g., America/Toronto) to the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "3c1a8fd9-ac74-4062-80cc-b2947cb7a039",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sends user account ID",
+        "UUID_name": "Account ID Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to send the user account ID for registration.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "fb6dfec1-257c-4d58-9eed-6f79599919f0",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sets Register Info Ready status",
+        "UUID_name": "Register Info Ready Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to mark register info as ready on the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "2474cee2-379d-4a0c-b630-37dd53965ca2",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sets Wi-Fi Ready status",
+        "UUID_name": "WiFi Ready Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to set the Wi-Fi ready status on the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "1a19aaae-094a-47aa-aaa3-1d66bd08ab1a",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Sets speaker volume",
+        "UUID_name": "Speaker Volume Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Used to set the speaker volume on the device (0-100).",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
+        "UUID": "378361e7-51ac-4baf-8694-1548a6a952f3",
+        "company": "TomoFun - Furbo",
+        "UUID_purpose": "Triggers RMA test",
+        "UUID_name": "RMA Trigger Characteristic",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250925122221/https://www.softwaresecured.com/post/hacking-furbo-a-hardware-research-project-part-5-exploiting-ble",
+                "description": "Initiates an RMA test on the device.",
+                "submitter": "dead1nfluence"
+            }
+        ]
+    },
+    {
         "UUID": "5052494d-2dab-0341-6972-6f6861424c45",
         "company": "Unknown",
         "UUID_purpose": "Unknown",
