@@ -5,15 +5,12 @@ CLUES → nRF Connect UUID JSON converter
 Usage:
     python3 script.py <input.json> <output.json>
 
-Limitations and Behavior:
-- Produces a list of objects with nrf-connect required fields: uuid, name, identifier, source.
-- For any input keys that are not mapped into the nRF format, their VALUES are
-  appended into the `source` string. 
-- UUIDs with non hex are dropped for time being.
+
+Converts Clues data into a NRF Connect json format.
 
 Author: Abdullah Ada <A@d4ha.com>
 Created:       2025-09-19
-Last Modified: 2025-09-21
+Last Modified: 2025-12-02
 """
 
 import sys
@@ -91,13 +88,18 @@ def normalize_uuid_key(raw: str) -> Tuple[str, str]:
     return "uuid128", s_hex.lower()
 
 def pick_name(entry: Dict[str, Any]) -> str:
-    """Prefer 'UUID_name', else 'name'/'title'/'label' variants; default 'unknown'."""
-    for k in ("UUID_name", "uuid_name", "name", "Name", "title", "label", "display_name"):
-        if k in entry and entry[k] is not None:
-            s = str(entry[k]).strip()
-            if s:
-                return s
-    return "unknown"
+    """
+    pick a readable/user friendly output name
+    """
+    company_raw = (entry.get("company") or "").strip()
+    if not company_raw:
+        company_raw = "Unknown company"
+
+    uuid_name_raw = (entry.get("UUID_name") or "").strip()
+    if not uuid_name_raw:
+        uuid_name_raw = "Unknown"
+
+    return f"{company_raw} - {uuid_name_raw}"
 
 def detect_format(entry: Dict[str, Any]) -> Optional[str]:
     """
