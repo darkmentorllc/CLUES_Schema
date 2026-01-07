@@ -10,7 +10,7 @@ Converts Clues data into a NRF Connect json format.
 
 Author: Abdullah Ada <A@d4ha.com>
 Created:       2025-09-19
-Last Modified: 2025-12-02
+Last Modified: 2026-01-07
 """
 
 import sys
@@ -25,26 +25,46 @@ UUID128_RE = re.compile(
 
 def load_entries(obj: Any) -> List[Dict[str, Any]]:
     """Flatten common CLUES-like containers into a list of entries."""
+    out: List[Dict[str, Any]] = []
+
     if isinstance(obj, list):
-        return [x for x in obj if isinstance(x, dict)]
+        for x in obj:
+            if isinstance(x, dict):
+                out.append(x)
+        return out
+
     if isinstance(obj, dict):
-        for key in ("data", "uuids", "entries", "items", "attributes"):
+        container_keys = (
+            "services", "service", "service_uuids", "serviceUuids",
+            "characteristics", "characteristic", "characteristic_uuids", "characteristicUuids",
+            "descriptors", "descriptor", "descriptor_uuids", "descriptorUuids",
+            "data", "uuids", "entries", "items", "attributes",
+        )
+
+        for key in container_keys:
             if key in obj and isinstance(obj[key], list):
-                return [x for x in obj[key] if isinstance(x, dict)]
-        # dict keyed by UUID
+                for x in obj[key]:
+                    if isinstance(x, dict):
+                        y = dict(x)
+                        y.setdefault("__container_key", key)
+                        out.append(y)
+
+        if out:
+            return out
+
         if all(isinstance(k, str) and isinstance(v, dict) for k, v in obj.items()):
-            out = []
             for k, v in obj.items():
                 v = dict(v)
                 v.setdefault("uuid", k)
                 out.append(v)
             return out
+
     return []
 
 def extract_uuid(entry: Dict[str, Any]) -> Optional[str]:
     """Return raw UUID string if present, else None."""
     for k in ("uuid", "UUID", "Uuid", "uuid128", "UUID128", "uuid_128",
-              "uuid16", "UUID16", "uuid_16", "id", "gatt_uuid", "gattUuid"):
+              "uuid16", "UUID16", "uuid_16", "id", "gatt_uuid", "gattUuid", "uuidValue", "uuid_value"):
         if k in entry:
             v = entry[k]
             if v is None:
@@ -62,28 +82,23 @@ def normalize_uuid_key(raw: str) -> Tuple[str, str]:
     s = raw.strip()
     s_hex = re.sub(r'[^0-9a-fA-F]', '', s)
 
-    # 16-bit if exactly 4 hex nibbles
     if len(s_hex) == 4:
         return "uuid16", s_hex.upper()
 
-    # 128-bit (32 hex nibbles)
     if len(s_hex) == 32:
         return "uuid128", s_hex.lower()
 
-    # Try to coerce e.g., hyphenated 128-bit to 32 hex
     if UUID128_RE.match(s):
         s_hex = re.sub(r'[^0-9a-fA-F]', '', s)
         return "uuid128", s_hex.lower()
 
-    # If it's a number like 0x2A00 or decimal, try to coerce down to 16-bit when possible
     try:
-        n = int(s, 0)  # auto base
+        n = int(s, 0)
         if 0 <= n <= 0xFFFF:
             return "uuid16", f"{n:04X}"
     except Exception:
         pass
 
-    # Fallback: treat as 128-bit-like key (strip dashes), truncate/pad cautiously
     s_hex = (s_hex + "0"*32)[:32]
     return "uuid128", s_hex.lower()
 
@@ -115,23 +130,112 @@ def detect_format(entry: Dict[str, Any]) -> Optional[str]:
         return "TEXT"
     return None
 
-def explicit_type_hint(entry: Dict[str, Any]) -> Optional[str]:
-    """Return 'service'/'characteristic'/'descriptor' if clearly indicated by fields."""
-    for k in ("gatt_type", "type", "kind", "attribute_type"):
-        if k in entry and entry[k]:
-            v = str(entry[k]).lower()
-            if "service" in v or v == "srv":
+def usage_array_type_hint(entry: Dict[str, Any]) -> Optional[str]:
+    ua = entry.get("UUID_usage_array")
+    if not isinstance(ua, list):
+        return None
+    tokens: List[str] = []
+    for x in ua:
+        if x is None:
+            continue
+        s = str(x).strip().lower()
+        if s:
+            tokens.append(s)
+    joined = " | ".join(tokens)
+    if "gatt descriptor" in joined or "descriptor" in joined:
+        return "descriptor"
+    if "gatt characteristic" in joined or "characteristic" in joined:
+        return "characteristic"
+    if "gatt service" in joined or "service" in joined:
+        return "service"
+    if "advert" in joined or "adv" in joined or "broadcast" in joined:
+        return "service"
+    return None
+
+def declaration_type_hint(entry: Dict[str, Any]) -> Optional[str]:
+    for k in (
+        "declaration_uuid", "declarationUuid", "declaration", "att_type", "attType",
+        "att_uuid", "attUuid", "attribute_type_uuid16", "attributeTypeUuid16",
+        "attribute_type", "attributeType", "attribute_uuid", "attributeUuid",
+        "gatt_declaration_uuid", "gattDeclarationUuid",
+    ):
+        if k in entry and entry[k] is not None and str(entry[k]).strip():
+            raw = str(entry[k]).strip().strip("{}")
+            kind, key = normalize_uuid_key(raw)
+            if kind != "uuid16":
+                continue
+            try:
+                n = int(key, 16)
+            except Exception:
+                continue
+            if n in (0x2800, 0x2801):
                 return "service"
-            if "characteristic" in v or v in ("char", "chrc"):
+            if n == 0x2803:
                 return "characteristic"
-            if "descriptor" in v or v in ("descr", "desc"):
+            if 0x2900 <= n <= 0x29FF:
                 return "descriptor"
     return None
+
+def explicit_type_hint(entry: Dict[str, Any]) -> Optional[str]:
+    """Return 'service'/'characteristic'/'descriptor' if clearly indicated by fields."""
+    uh = usage_array_type_hint(entry)
+    if uh:
+        return uh
+
+    dh = declaration_type_hint(entry)
+    if dh:
+        return dh
+
+    if entry.get("parent_UUID") or entry.get("parent_uuid") or entry.get("parentUuid"):
+        return "characteristic"
+
+    container = (entry.get("__container_key") or "")
+    if container:
+        c = str(container).lower()
+        if "char" in c:
+            return "characteristic"
+        if "desc" in c:
+            return "descriptor"
+        if "serv" in c:
+            return "service"
+
+    for k in ("gatt_type", "type", "kind", "attribute_type", "uuid_type", "UUID_type", "category", "gattCategory", "profile", "profile_type"):
+        if k in entry and entry[k]:
+            v = str(entry[k]).lower()
+            if "org.bluetooth.service" in v or ".service." in v or v.endswith(".service") or "service" in v or v == "srv":
+                return "service"
+            if "org.bluetooth.characteristic" in v or ".characteristic." in v or v.endswith(".characteristic") or "characteristic" in v or v in ("char", "chrc"):
+                return "characteristic"
+            if "org.bluetooth.descriptor" in v or ".descriptor." in v or v.endswith(".descriptor") or "descriptor" in v or v in ("descr", "desc"):
+                return "descriptor"
+    return None
+
+def characteristic_field_hint(entry: Dict[str, Any]) -> bool:
+    for k in (
+        "properties", "props", "characteristic_properties", "characteristicProperties",
+        "flags", "permissions", "perm", "security",
+        "read", "write", "notify", "indicate", "broadcast", "write_without_response", "writeWithoutResponse",
+        "readable", "writable", "notifiable", "indicatable",
+        "value_format", "valueFormat", "value_type", "valueType",
+    ):
+        if k in entry and entry[k] not in (None, "", [], {}):
+            return True
+    return False
+
+def service_field_hint(entry: Dict[str, Any]) -> bool:
+    for k in (
+        "primary", "secondary", "is_primary", "isPrimary", "service_type", "serviceType",
+        "included_services", "includedServices", "includes", "include", "characteristics",
+        "start_handle", "startHandle", "end_handle", "endHandle",
+    ):
+        if k in entry and entry[k] not in (None, "", [], {}):
+            return True
+    return False
 
 def classify(uuid_kind: str, uuid_key: str, name: str, entry: Dict[str, Any]) -> str:
     """
     Classify as 'service' | 'characteristic' | 'descriptor'.
-    Priority: explicit field hint → 16-bit ranges → name keyword → defaults.
+    Priority: explicit field hint → 16-bit ranges → field heuristics → name keyword → defaults.
     """
     hint = explicit_type_hint(entry)
     if hint:
@@ -148,12 +252,15 @@ def classify(uuid_kind: str, uuid_key: str, name: str, entry: Dict[str, Any]) ->
                 return "service"
         except Exception:
             pass
-        # reasonable default for other 0x2xxx is 'characteristic'
         if uuid_key.upper().startswith("2"):
             return "characteristic"
         return "service"
 
-    # 128-bit: infer from name if possible
+    if characteristic_field_hint(entry) and not service_field_hint(entry):
+        return "characteristic"
+    if service_field_hint(entry) and not characteristic_field_hint(entry):
+        return "service"
+
     lname = (name or "").lower()
     if "descriptor" in lname:
         return "descriptor"
@@ -161,13 +268,13 @@ def classify(uuid_kind: str, uuid_key: str, name: str, entry: Dict[str, Any]) ->
         return "characteristic"
     if "service" in lname:
         return "service"
-    # default custom 128-bit to service
-    return "service"
+
+    return "characteristic"
 
 def build_output_skeleton() -> Dict[str, Any]:
     return {
         "_comment": [
-            "Testing comment."
+            "CLUES converted to nrfconnect format."
         ],
         "uuid16bitServiceDefinitions": {},
         "uuid128bitServiceDefinitions": {},
@@ -193,7 +300,7 @@ def place_item(dst: Dict[str, Any], category: str, uuid_kind: str, uuid_key: str
             dst["uuid16bitCharacteristicDefinitions"][uuid_key] = record
         else:
             dst["uuid128bitCharacteristicDefinitions"][uuid_key] = record
-    else:  # descriptor
+    else:
         if uuid_kind == "uuid16":
             dst["uuid16bitDescriptorDefinitions"][uuid_key] = record
         else:
@@ -205,7 +312,7 @@ def convert(obj: Any) -> Dict[str, Any]:
     for e in entries:
         raw_uuid = extract_uuid(e)
         if not raw_uuid:
-            continue  # skip entries without UUID
+            continue
 
         uuid_kind, uuid_key = normalize_uuid_key(raw_uuid)
         name = pick_name(e)
