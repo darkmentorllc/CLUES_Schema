@@ -9252,6 +9252,238 @@
         "parent_UUID": "e7810a71-73ae-499d-8c15-faa9aef0c3f2"
     },
     {
+        "UUID": "0000fd3d-0000-1000-8000-00805f9b34fb",
+        "company": "Woan Technology (Shenzhen) Co., Ltd.",
+        "UUID_purpose": "1st fallback for SwitchBot communication",
+        "UUUD_name": "Alternative SwitchBot communication",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [],
+        "android_info_array": [
+            {
+                "package_id": "com.theswitchbot.switchbot",
+                "version_code": 30000129,
+                "version_name": "9.24.1",
+                "description": "1st fallback ID of the WoBLEClient in the SwitchBot app. No automated extraction."
+            }
+        ]
+    },
+    {
+        "UUID": "02f00000-0000-0000-0000-00000000fe00",
+        "company": "Woan Technology (Shenzhen) Co., Ltd.",
+        "UUID_purpose": "2nd fallback for SwitchBot communication",
+        "UUUD_name": "2nd alternative SwitchBot communication",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20260405160619/https://github.com/custom-components/ble_monitor/issues/946",
+                "description": "The UUID seems also to be used by Govee thermometers.",
+                "submitter": "Dowafu"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theswitchbot.switchbot",
+                "version_code": 30000129,
+                "version_name": "9.24.1",
+                "description": "2nd fallback ID of the WoBLEClient in the SwitchBot app. No automated extraction."
+            }
+        ]
+    },
+    {
+        "UUID": "02f00000-0000-0000-0000-00000000ff01",
+        "company": "Woan Technology (Shenzhen) Co., Ltd.",
+        "UUID_purpose": "2nd fallback SwitchBot RX",
+        "UUUD_name": "2nd alternative SwitchBot RX",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20260405160619/https://github.com/custom-components/ble_monitor/issues/946",
+                "description": "The UUID seems also to be used by Govee thermometers.",
+                "submitter": "Dowafu"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theswitchbot.switchbot",
+                "version_code": 30000129,
+                "version_name": "9.24.1",
+                "description": "2nd fallback RX ID of the WoBLEClient in the SwitchBot app. No automated extraction."
+            }
+        ],
+        "parent_UUID": "02f00000-0000-0000-0000-00000000fe00"
+    },
+    {
+        "UUID": "02f00000-0000-0000-0000-00000000ff02",
+        "company": "Woan Technology (Shenzhen) Co., Ltd.",
+        "UUID_purpose": "2nd fallback SwitchBot TX",
+        "UUUD_name": "2nd alternative SwitchBot TX",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20260405160619/https://github.com/custom-components/ble_monitor/issues/946",
+                "description": "The UUID seems also to be used by Govee thermometers.",
+                "submitter": "Dowafu"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theswitchbot.switchbot",
+                "version_code": 30000129,
+                "version_name": "9.24.1",
+                "description": "2nd fallback TX ID of the WoBLEClient in the SwitchBot app. No automated extraction."
+            }
+        ],
+        "parent_UUID": "02f00000-0000-0000-0000-00000000fe00"
+    },
+    {
+        "UUID": "36000001-0001-0002-0003-010203040506",
+        "company": "Woan Technology (Shenzhen) Co., Ltd.",
+        "UUID_purpose": "3rd fallback for SwitchBot communication",
+        "UUUD_name": "3rd alternative SwitchBot communication",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [],
+        "android_info_array": [
+            {
+                "package_id": "com.theswitchbot.switchbot",
+                "version_code": 30000129,
+                "version_name": "9.24.1",
+                "description": "3rd fallback ID of the WoBLEClient in the SwitchBot app. No automated extraction."
+            }
+        ]
+    },
+    {
+        "UUID": "36000002-0001-0002-0003-010203040506",
+        "company": "Woan Technology (Shenzhen) Co., Ltd.",
+        "UUID_purpose": "3rd fallback for SwitchBot RX",
+        "UUUD_name": "3rd alternative SwitchBot RX",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in the com.theswitchbot.switchbot app",
+                "submitter": "Dowafu"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theswitchbot.switchbot",
+                "version_code": 30000129,
+                "version_name": "9.24.1",
+                "description": "3rd fallback RX ID of the WoBLEClient in the SwitchBot app. No automated extraction."
+            }
+        ],
+        "parent_UUID": "36000001-0001-0002-0003-010203040506"
+    },
+    {
+        "UUID": "36000003-0001-0002-0003-010203040506",
+        "company": "Woan Technology (Shenzhen) Co., Ltd.",
+        "UUID_purpose": "3rd fallback for SwitchBot TX",
+        "UUUD_name": "3rd alternative SwitchBot TX",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in the com.theswitchbot.switchbot app",
+                "submitter": "Dowafu"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theswitchbot.switchbot",
+                "version_code": 30000129,
+                "version_name": "9.24.1",
+                "description": "3rd fallback TX ID of the WoBLEClient in the SwitchBot app. No automated extraction."
+            }
+        ],
+        "parent_UUID": "36000001-0001-0002-0003-010203040506"
+    },
+    {
+        "UUID": "cba20d00-224d-11e6-9fb8-0002a5d5c51b",
+        "company": "Woan Technology (Shenzhen) Co., Ltd.",
+        "UUID_purpose": "SwitchBot communication",
+        "UUUD_name": "SwitchBot communication",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20260311194028/https://github.com/OpenWonderLabs/SwitchBotAPI-BLE/blob/4ad138bb09f0fbbfa41b152ca327a78c1d0b6ba9/devicetypes/bot.md",
+                "description": "SwitchBot BLE API documentation",
+                "submitter": "Dowafu"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theswitchbot.switchbot",
+                "version_code": 30000129,
+                "version_name": "9.24.1",
+                "description": "Primary ID of the WoBLEClient in the SwitchBot app. No automated extraction."
+            }
+        ]
+    },
+    {
+        "UUID": "cba20002-224d-11e6-9fb8-0002a5d5c51b",
+        "company": "Woan Technology (Shenzhen) Co., Ltd.",
+        "UUID_purpose": "REQ messages sending from the Terminal to the Device, WRITE",
+        "UUUD_name": "SwitchBot RX",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20260311194028/https://github.com/OpenWonderLabs/SwitchBotAPI-BLE/blob/4ad138bb09f0fbbfa41b152ca327a78c1d0b6ba9/devicetypes/bot.md",
+                "description": "SwitchBot BLE API documentation",
+                "submitter": "Dowafu"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theswitchbot.switchbot",
+                "version_code": 30000129,
+                "version_name": "9.24.1",
+                "description": "Primary RX channel of the WoBLEClient in the SwitchBot app. No automated extraction."
+            }
+        ],
+        "parent_UUID": "cba20d00-224d-11e6-9fb8-0002a5d5c51b"
+    },
+    {
+        "UUID": "cba20003-224d-11e6-9fb8-0002a5d5c51b",
+        "company": "Woan Technology (Shenzhen) Co., Ltd.",
+        "UUID_purpose": "RESP messages from the Device to the Terminal, NOTIFY",
+        "UUUD_name": "SwitchBot TX",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20260311194028/https://github.com/OpenWonderLabs/SwitchBotAPI-BLE/blob/4ad138bb09f0fbbfa41b152ca327a78c1d0b6ba9/devicetypes/bot.md",
+                "description": "SwitchBot BLE API documentation",
+                "submitter": "Dowafu"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theswitchbot.switchbot",
+                "version_code": 30000129,
+                "version_name": "9.24.1",
+                "description": "Primary TX channel of the WoBLEClient in the SwitchBot app. No automated extraction."
+            }
+        ],
+        "parent_UUID": "cba20d00-224d-11e6-9fb8-0002a5d5c51b"
+    },
+    {
         "UUID": "0000cc00-0000-1000-8000-00805f9b34fb",
         "company": "Yoho",
         "UUID_purpose": "Unknown",
