@@ -82,7 +82,7 @@ def sort_custom_uuids(file_path):
 
     # Write the sorted entries back to the file
     with open(file_path, 'w') as f:
-        json.dump(final_sorted_entries, f, indent=4)
+        json.dump(final_sorted_entries, f, indent=4, ensure_ascii=False)
 
 # Example usage
 # sort_custom_uuids('/path/to/your/file.json')
