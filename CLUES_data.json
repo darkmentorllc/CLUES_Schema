@@ -100,74 +100,6 @@
         "parent_UUID": "db450001-8e9a-4818-add7-6ed94a328ab4"
     },
     {
-        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cbb",
-        "company": "ActiveLook",
-        "UUID_purpose": "'The sensor server is used for notifying the master device of user gesture detection. When a gesture is detected on the glasses (hand motion), a notification is sent on the sensor server to the master application.'",
-        "UUID_name": "Gesture Event",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616182837/https://github.com/ActiveLook/Activelook-API-Documentation/blob/main/ActiveLook_API.md",
-                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
-    },
-    {
-        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cbc",
-        "company": "ActiveLook",
-        "UUID_purpose": "'The user data server is used for notifying the master device of user interactions with the ActiveLook\u00ae device. When the user touches the capacitive button for a short time (<3s) a notification is sent on the user data server to the master application'",
-        "UUID_name": "Touch Event",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616182837/https://github.com/ActiveLook/Activelook-API-Documentation/blob/main/ActiveLook_API.md",
-                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
-    },
-    {
-        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cb9",
-        "company": "ActiveLook",
-        "UUID_purpose": "Flow control to prevent the ActiveLook memory buffer from being overloaded & error control.",
-        "UUID_name": "Control",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616182837/https://github.com/ActiveLook/Activelook-API-Documentation/blob/main/ActiveLook_API.md",
-                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
-    },
-    {
-        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cba",
-        "company": "ActiveLook",
-        "UUID_purpose": "Receive data to ActiveLook heads up display.",
-        "UUID_name": "Receive by HUD",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616182837/https://github.com/ActiveLook/Activelook-API-Documentation/blob/main/ActiveLook_API.md",
-                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
-    },
-    {
         "UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7",
         "company": "ActiveLook",
         "UUID_purpose": "Send commands to ActiveLook heads up display.",
@@ -198,7 +130,75 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
+        "parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
+    },
+    {
+        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cb9",
+        "company": "ActiveLook",
+        "UUID_purpose": "Flow control to prevent the ActiveLook memory buffer from being overloaded & error control.",
+        "UUID_name": "Control",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616182837/https://github.com/ActiveLook/Activelook-API-Documentation/blob/main/ActiveLook_API.md",
+                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
+    },
+    {
+        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cba",
+        "company": "ActiveLook",
+        "UUID_purpose": "Receive data to ActiveLook heads up display.",
+        "UUID_name": "Receive by HUD",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616182837/https://github.com/ActiveLook/Activelook-API-Documentation/blob/main/ActiveLook_API.md",
+                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
+    },
+    {
+        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cbb",
+        "company": "ActiveLook",
+        "UUID_purpose": "'The sensor server is used for notifying the master device of user gesture detection. When a gesture is detected on the glasses (hand motion), a notification is sent on the sensor server to the master application.'",
+        "UUID_name": "Gesture Event",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616182837/https://github.com/ActiveLook/Activelook-API-Documentation/blob/main/ActiveLook_API.md",
+                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
+    },
+    {
+        "UUID": "0783b03e-8535-b5a0-7140-a304d2495cbc",
+        "company": "ActiveLook",
+        "UUID_purpose": "'The user data server is used for notifying the master device of user interactions with the ActiveLook\u00ae device. When the user touches the capacitive button for a short time (<3s) a notification is sent on the user data server to the master application'",
+        "UUID_name": "Touch Event",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616182837/https://github.com/ActiveLook/Activelook-API-Documentation/blob/main/ActiveLook_API.md",
+                "description": "Bluetooth API documentation for ActiveLook Heads Up Display (HUD) (glasses)",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "0783b03e-8535-b5a0-7140-a304d2495cb7"
     },
     {
         "UUID": "fe03",
@@ -1692,40 +1692,6 @@
         ]
     },
     {
-        "UUID": "c6d7d4a1-e2b0-4e95-b576-df983d1a5d9f",
-        "company": "Car Connectivity Consortium, LLC",
-        "UUID_purpose": "The Vehicle antenna identifier represents a unique identifier for every physical Bluetooth LE antenna located in the vehicle that establishes a connection to a device.",
-        "UUID_name": "Vehicle Antenna Identifier",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://archive.org/details/ccc-ts-101-digital-key-v-4.0.0",
-                "description": "Name comes from ccc-ts-101-digital-key-v-4.0.0.pdf with some manual interpolation (e.g. DK -> Digital Key). UUID also found emperically in in-the-wild GATT data.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "fff5"
-    },
-    {
-        "UUID": "d3b5a130-9e23-4b3a-8be4-6b1ee5f980a3",
-        "company": "Car Connectivity Consortium, LLC",
-        "UUID_purpose": "This characteristic shall return the Simplified Protocol/Service Multiplexer (SPSM) used for the L2CAP channel from the vehicle.",
-        "UUID_name": "Simplified Protocol/Service Multiplexer (SPSM)",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://archive.org/details/ccc-ts-101-digital-key-v-4.0.0",
-                "description": "Name comes from ccc-ts-101-digital-key-v-4.0.0.pdf with some manual interpolation (e.g. DK -> Digital Key). UUID also found emperically in in-the-wild GATT data.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "fff5"
-    },
-    {
         "UUID": "fff5",
         "company": "Car Connectivity Consortium, LLC",
         "UUID_purpose": "Used in advertisements",
@@ -1762,7 +1728,7 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "fff5"
+        "parent_UUID": "fff5"
     },
     {
         "UUID": "bd4b9502-3f54-11ec-b919-0242ac120005",
@@ -1779,7 +1745,41 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "fff5"
+        "parent_UUID": "fff5"
+    },
+    {
+        "UUID": "c6d7d4a1-e2b0-4e95-b576-df983d1a5d9f",
+        "company": "Car Connectivity Consortium, LLC",
+        "UUID_purpose": "The Vehicle antenna identifier represents a unique identifier for every physical Bluetooth LE antenna located in the vehicle that establishes a connection to a device.",
+        "UUID_name": "Vehicle Antenna Identifier",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/ccc-ts-101-digital-key-v-4.0.0",
+                "description": "Name comes from ccc-ts-101-digital-key-v-4.0.0.pdf with some manual interpolation (e.g. DK -> Digital Key). UUID also found emperically in in-the-wild GATT data.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fff5"
+    },
+    {
+        "UUID": "d3b5a130-9e23-4b3a-8be4-6b1ee5f980a3",
+        "company": "Car Connectivity Consortium, LLC",
+        "UUID_purpose": "This characteristic shall return the Simplified Protocol/Service Multiplexer (SPSM) used for the L2CAP channel from the vehicle.",
+        "UUID_name": "Simplified Protocol/Service Multiplexer (SPSM)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://archive.org/details/ccc-ts-101-digital-key-v-4.0.0",
+                "description": "Name comes from ccc-ts-101-digital-key-v-4.0.0.pdf with some manual interpolation (e.g. DK -> Digital Key). UUID also found emperically in in-the-wild GATT data.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fff5"
     },
     {
         "UUID": "2dd10010-1c37-452d-8979-d1b4a787d0a4",
@@ -3125,7 +3125,7 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "03B80E5A-EDE8-4B33-A751-6CE34EC4C700"
+        "parent_UUID": "03b80e5a-ede8-4b33-a751-6ce34ec4c700"
     },
     {
         "UUID": "fff6",
@@ -3149,28 +3149,6 @@
         ]
     },
     {
-        "UUID": "18ee2ef5-263d-4559-959f-4f9c429f9d12",
-        "company": "Matter alliance (formerly CHIP)",
-        "UUID_purpose": "Matter Client Receive (RX) Buffer",
-        "UUID_name": "Matter Receive (RX)",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241201003126/https://csa-iot.org/wp-content/uploads/2024/11/24-27349-006_Matter-1.4-Core-Specification.pdf",
-                "description": "Specification for Matter, which started out as CHIP (Connected Home over IP), contains a description of this UUID as 'C2 Characteristic (Client RX Buffer)'",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20250320105414/https://github.com/project-chip/connectedhomeip/blob/master/src/controller/python/chip/ChipCoreBluetoothMgr.py#L65",
-                "description": "Code for Matter, which started out as CHIP (Connected Home over IP), contains a description of this UUID as 'CHIP_RX'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "fff6"
-    },
-    {
         "UUID": "18ee2ef5-263d-4559-959f-4f9c429f9d11",
         "company": "Matter alliance (formerly CHIP)",
         "UUID_purpose": "Matter Client Transmit (TX) Buffer",
@@ -3190,7 +3168,29 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "fff6"
+        "parent_UUID": "fff6"
+    },
+    {
+        "UUID": "18ee2ef5-263d-4559-959f-4f9c429f9d12",
+        "company": "Matter alliance (formerly CHIP)",
+        "UUID_purpose": "Matter Client Receive (RX) Buffer",
+        "UUID_name": "Matter Receive (RX)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241201003126/https://csa-iot.org/wp-content/uploads/2024/11/24-27349-006_Matter-1.4-Core-Specification.pdf",
+                "description": "Specification for Matter, which started out as CHIP (Connected Home over IP), contains a description of this UUID as 'C2 Characteristic (Client RX Buffer)'",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20250320105414/https://github.com/project-chip/connectedhomeip/blob/master/src/controller/python/chip/ChipCoreBluetoothMgr.py#L65",
+                "description": "Code for Matter, which started out as CHIP (Connected Home over IP), contains a description of this UUID as 'CHIP_RX'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "fff6"
     },
     {
         "UUID": "64630238-8772-45f2-b87d-748a83218f04",
@@ -3212,7 +3212,7 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "fff6"
+        "parent_UUID": "fff6"
     },
     {
         "UUID": "18a0",
@@ -3245,7 +3245,7 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "18a0"
+        "parent_UUID": "18a0"
     },
     {
         "UUID": "0x2aa1",
@@ -3262,7 +3262,7 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "18a0"
+        "parent_UUID": "18a0"
     },
     {
         "UUID": "54220000-f6a5-4007-a371-722f4ebd8436",
@@ -3951,23 +3951,6 @@
         "parent_UUID": "d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c"
     },
     {
-        "UUID": "1bc50003-0200-d29e-e511-446c609db825",
-        "company": "Noke",
-        "UUID_purpose": "MERGED: (Read (Rx) from the lock.), (Session string used to encrypt commands to the lock.)",
-        "UUID_name": "MERGED: (Rx), (Session)",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616191603/https://github.com/noke-inc/noke-mobile-library-ios/blob/e183d2dc2dd88699175b1655d00a2bcad1df494c/NokeMobileLibrary/Classes/NokeDevice.swift#L145",
-                "description": "Official Nok\u0113 library code.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "1bc50001-0200-d29e-e511-446c609db825"
-    },
-    {
         "UUID": "1bc50001-0200-d29e-e511-446c609db825",
         "company": "Noke",
         "UUID_purpose": "Primary GATT service",
@@ -3998,7 +3981,24 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "1bc50001-0200-d29e-e511-446c609db825"
+        "parent_UUID": "1bc50001-0200-d29e-e511-446c609db825"
+    },
+    {
+        "UUID": "1bc50003-0200-d29e-e511-446c609db825",
+        "company": "Noke",
+        "UUID_purpose": "MERGED: (Read (Rx) from the lock.), (Session string used to encrypt commands to the lock.)",
+        "UUID_name": "MERGED: (Rx), (Session)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616191603/https://github.com/noke-inc/noke-mobile-library-ios/blob/e183d2dc2dd88699175b1655d00a2bcad1df494c/NokeMobileLibrary/Classes/NokeDevice.swift#L145",
+                "description": "Official Nok\u0113 library code.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "1bc50001-0200-d29e-e511-446c609db825"
     },
     {
         "UUID": "14387800-130c-49e7-b877-2881c89cb258",
@@ -5397,12 +5397,12 @@
         "regex": true
     },
     {
-        "UUID": "713d0003-503e-4c75-ba94-3148f18d941e",
+        "UUID": "713d0000-503e-4c75-ba94-3148f18d941e",
         "company": "RedBearLab",
-        "UUID_purpose": "Custom UART RX.",
-        "UUID_name": "Custom UART RX",
+        "UUID_purpose": "Custom UART.",
+        "UUID_name": "Custom UART",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -5410,8 +5410,7 @@
                 "description": "RedBearLab created a 'BLE Shield is an Arduino compatible shield with nRF8001 BLE controller chip that enables BLE feature for Arduino boards.', and this is the custom UART service definition.",
                 "submitter": "Xeno Kovah"
             }
-        ],
-        "Parent_UUID": "713D0000-503E-4C75-BA94-3148F18D941E"
+        ]
     },
     {
         "UUID": "713d0002-503e-4c75-ba94-3148f18d941e",
@@ -5428,15 +5427,15 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "713D0000-503E-4C75-BA94-3148F18D941E"
+        "parent_UUID": "713d0000-503e-4c75-ba94-3148f18d941e"
     },
     {
-        "UUID": "713d0000-503e-4c75-ba94-3148f18d941e",
+        "UUID": "713d0003-503e-4c75-ba94-3148f18d941e",
         "company": "RedBearLab",
-        "UUID_purpose": "Custom UART.",
-        "UUID_name": "Custom UART",
+        "UUID_purpose": "Custom UART RX.",
+        "UUID_name": "Custom UART RX",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -5444,7 +5443,8 @@
                 "description": "RedBearLab created a 'BLE Shield is an Arduino compatible shield with nRF8001 BLE controller chip that enables BLE feature for Arduino boards.', and this is the custom UART service definition.",
                 "submitter": "Xeno Kovah"
             }
-        ]
+        ],
+        "parent_UUID": "713d0000-503e-4c75-ba94-3148f18d941e"
     },
     {
         "UUID": "fef5",
@@ -5616,23 +5616,6 @@
         "parent_UUID": "fef5"
     },
     {
-        "UUID": "2413b53f-707f-90bd-2045-2ab8807571b7",
-        "company": "Rigado LLC",
-        "UUID_purpose": "'The Beacon UUID characteristic sets the UUID broadcast within the beacon advertisement packet for an iBeacon style beacon.'",
-        "UUID_name": "Beacon UUID",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
-                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
-    },
-    {
         "UUID": "2413b33f-707f-90bd-2045-2ab8807571b7",
         "company": "Rigado LLC",
         "UUID_purpose": "'The Beacon configuration service provides necessary beacon configuration information and a control point for performing additional actions such as password protection and setting calibration data. This section lists the various characteristics along with their UUIDs and data types.'",
@@ -5649,57 +5632,6 @@
         ]
     },
     {
-        "UUID": "2413b93f-707f-90bd-2045-2ab8807571b7",
-        "company": "Rigado LLC",
-        "UUID_purpose": "'The TX power characteristic provides a way to set the output radio power for the beacon advertisement packet. The default value is -4. Available values are: -30, -20, -16, -12, -8, -4, 0, 4 in dBm.'",
-        "UUID_name": "Beacon TX Power",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
-                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
-    },
-    {
-        "UUID": "2413ba3f-707f-90bd-2045-2ab8807571b7",
-        "company": "Rigado LLC",
-        "UUID_purpose": "'The beacon enable characteristic enables and disables the beacon advertisement. If set to 0, no beacon advertisement will be generated. Any other value will cause the device to generate beacon advertisements. The default value is 0.'",
-        "UUID_name": "Beacon Enable",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
-                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
-    },
-    {
-        "UUID": "2413bb3f-707f-90bd-2045-2ab8807571b7",
-        "company": "Rigado LLC",
-        "UUID_purpose": "'The connectable TX power sets the radio output power for connectable advertisement packets. These packets are sent out every so often providing a way for configuration apps to connect and update settings. The default value is -4. Valid values are: -30, -20, -16, -12, -8, -4, 0, 4 in dBm.'",
-        "UUID_name": "Connectable TX Power",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
-                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
-    },
-    {
         "UUID": "2413b43f-707f-90bd-2045-2ab8807571b7",
         "company": "Rigado LLC",
         "UUID_purpose": "'The control point provides an interface for additional commands. See the Control Point Commands section for a detailed description of all available commands.'",
@@ -5714,7 +5646,24 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+        "parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413b53f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The Beacon UUID characteristic sets the UUID broadcast within the beacon advertisement packet for an iBeacon style beacon.'",
+        "UUID_name": "Beacon UUID",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
     },
     {
         "UUID": "2413b63f-707f-90bd-2045-2ab8807571b7",
@@ -5731,7 +5680,7 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+        "parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
     },
     {
         "UUID": "2413b73f-707f-90bd-2045-2ab8807571b7",
@@ -5748,7 +5697,7 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+        "parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
     },
     {
         "UUID": "2413b83f-707f-90bd-2045-2ab8807571b7",
@@ -5765,7 +5714,58 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+        "parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413b93f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The TX power characteristic provides a way to set the output radio power for the beacon advertisement packet. The default value is -4. Available values are: -30, -20, -16, -12, -8, -4, 0, 4 in dBm.'",
+        "UUID_name": "Beacon TX Power",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413ba3f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The beacon enable characteristic enables and disables the beacon advertisement. If set to 0, no beacon advertisement will be generated. Any other value will cause the device to generate beacon advertisements. The default value is 0.'",
+        "UUID_name": "Beacon Enable",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
+    },
+    {
+        "UUID": "2413bb3f-707f-90bd-2045-2ab8807571b7",
+        "company": "Rigado LLC",
+        "UUID_purpose": "'The connectable TX power sets the radio output power for connectable advertisement packets. These packets are sent out every so often providing a way for configuration apps to connect and update settings. The default value is -4. Valid values are: -30, -20, -16, -12, -8, -4, 0, 4 in dBm.'",
+        "UUID_name": "Connectable TX Power",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616165839/https://file.elecfans.com/web1/M00/20/D2/oYYBAFmk2JOADMegAAu4fGDEUUo022.pdf",
+                "description": "'The BMDware firmware package pre-programmed to all Rigado BMD-200 and BMD-300 Series modules provides built-in configurable beaconing and a pass-through UART connection.'",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "2413b33f-707f-90bd-2045-2ab8807571b7"
     },
     {
         "UUID": "00000000-000f-11e1-9ab4-0002a5d5c51b",
@@ -7623,6 +7623,23 @@
         ]
     },
     {
+        "UUID": "e7add780-b042-4876-aae1-112855353cc1",
+        "company": "Silicon Labs",
+        "UUID_purpose": "BLE reimplementation of BTC SPP-like service with a vendor-specific UUID.",
+        "UUID_name": "xgatt_data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20241123100951/https://www.silabs.com/documents/public/user-guides/ug211-bt-low-energy-profile-toolkit.pdf",
+                "description": "Silicon Labs' 'BLUETOOTH LOW ENERGY PROFILE TOOLKIT' with example UUIDs (which people inevitably use in real products).",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "0bd51666-e7cb-469b-8e4d-2742f1ba77cc"
+    },
+    {
         "UUID": "4880c12c-fdcb-4077-8920-a450d7f9b907",
         "company": "Silicon Labs",
         "UUID_purpose": "BLE reimplementation of BTC SPP-like service with a vendor-specific UUID.",
@@ -7639,23 +7656,6 @@
         ]
     },
     {
-        "UUID": "e7add780-b042-4876-aae1-112855353cc1",
-        "company": "Silicon Labs",
-        "UUID_purpose": "BLE reimplementation of BTC SPP-like service with a vendor-specific UUID.",
-        "UUID_name": "xgatt_data",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241123100951/https://www.silabs.com/documents/public/user-guides/ug211-bt-low-energy-profile-toolkit.pdf",
-                "description": "Silicon Labs' 'BLUETOOTH LOW ENERGY PROFILE TOOLKIT' with example UUIDs (which people inevitably use in real products).",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "0bd51666-e7cb-469b-8e4d-2742f1ba77cc"
-    },
-    {
         "UUID": "fec26ec4-6d71-4442-9f81-55bc21d658d6",
         "company": "Silicon Labs",
         "UUID_purpose": "BLE reimplementation of BTC SPP-like service with a vendor-specific UUID.",
@@ -7670,7 +7670,7 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "4880c12c-fdcb-4077-8920-a450d7f9b907"
+        "parent_UUID": "4880c12c-fdcb-4077-8920-a450d7f9b907"
     },
     {
         "UUID": "41584a41-4e55-5342-5743444556494345",
@@ -8038,6 +8038,56 @@
         "parent_UUID": "00000211-b2d1-43f0-9b88-960cebf8b91e"
     },
     {
+        "UUID": "14839ac4-7d7e-415c-9a42-167340cf2339",
+        "company": "Texas Instruments Inc.",
+        "UUID_purpose": "Example of how to create something similar to the Serial Port Profile for BLE.",
+        "UUID_name": "TI custom serial example",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
+                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "0734594a-a8e7-4b1a-a6b1-cd5243059a57",
+        "company": "Texas Instruments Inc.",
+        "UUID_purpose": "Transmit data. 'Server sends data to the client using this characteristic with an ATT Handle Value Notification.'",
+        "UUID_name": "Transmit (TX)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
+                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
+    },
+    {
+        "UUID": "8b00ace7-eb0b-49b0-bbe9-9aee0a26e1a3",
+        "company": "Texas Instruments Inc.",
+        "UUID_purpose": "Receive data. 'Client sends data to the server using this characteristic with an ATT Write Request.'",
+        "UUID_name": "Receive (RX)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
+                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
+    },
+    {
         "UUID": "ba04c4b2-892b-43be-b69c-5d13f2195392",
         "company": "Texas Instruments Inc.",
         "UUID_purpose": "'Client sends credits to the server using this characteristic with an ATT Write Request.'",
@@ -8052,7 +8102,7 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
+        "parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
     },
     {
         "UUID": "e06d5efb-4f4a-45c0-9eb1-371ae5a14ad4",
@@ -8069,7 +8119,7 @@
                 "submitter": "Xeno Kovah"
             }
         ],
-        "Parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
+        "parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
     },
     {
         "UUID": "f000ffc0-0451-4000-b000-000000000000",
@@ -8215,22 +8265,6 @@
             {
                 "URL": "https://web.archive.org/web/20250116234027/https://raw.githubusercontent.com/xamarin/Monkey.BluetoothLE/b1ef069aa7b9adf18ed79a7e17492bde4349b757/Source/Platform%20Stacks/Robotics.Mobile.Core/Bluetooth/LE/KnownServices.json",
                 "description": "3rd party source that indicated the same thing for this UUID",
-                "submitter": "Xeno Kovah"
-            }
-        ]
-    },
-    {
-        "UUID": "14839ac4-7d7e-415c-9a42-167340cf2339",
-        "company": "Texas Instruments Inc.",
-        "UUID_purpose": "Example of how to create something similar to the Serial Port Profile for BLE.",
-        "UUID_name": "TI custom serial example",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
-                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
                 "submitter": "Xeno Kovah"
             }
         ]
@@ -8474,23 +8508,6 @@
         "parent_UUID": "f000ffd0-0451-4000-b000-000000000000"
     },
     {
-        "UUID": "8b00ace7-eb0b-49b0-bbe9-9aee0a26e1a3",
-        "company": "Texas Instruments Inc.",
-        "UUID_purpose": "Receive data. 'Client sends data to the server using this characteristic with an ATT Write Request.'",
-        "UUID_name": "Receive (RX)",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
-                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
-    },
-    {
         "UUID": "f000c0e0-0451-4000-b000-000000000000",
         "company": "Texas Instruments Inc.",
         "UUID_purpose": "Serial Port on SensorTag which was a previous product of Texas Instruments",
@@ -8554,23 +8571,6 @@
             }
         ],
         "regex": true
-    },
-    {
-        "UUID": "0734594a-a8e7-4b1a-a6b1-cd5243059a57",
-        "company": "Texas Instruments Inc.",
-        "UUID_purpose": "Transmit data. 'Server sends data to the client using this characteristic with an ATT Handle Value Notification.'",
-        "UUID_name": "Transmit (TX)",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20250616222305/https://www.ti.com/lit/ug/swra772/swra772.pdf",
-                "description": "'CC256x TI Bluetooth Stack SPPLEDemo App' which people inevitably reused the UUIDs for.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "Parent_UUID": "14839ac4-7d7e-415c-9a42-167340cf2339"
     },
     {
         "UUID": "f000ffe0-0451-4000-b000-000000000000",

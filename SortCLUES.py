@@ -43,7 +43,9 @@ def sort_custom_uuids(file_path):
     uuid_groups = {}
     for entry in data:
         entry['UUID'] = entry['UUID'].lower()
-        if 'parent_UUID' in entry:
+        if 'Parent_UUID' in entry:
+            entry['parent_UUID'] = entry.pop('Parent_UUID').lower()
+        elif 'parent_UUID' in entry:
             entry['parent_UUID'] = entry['parent_UUID'].lower()
         company = entry['company'] if entry['company'] is not None else ''
         uuid_usage_array = json.dumps(entry.get('UUID_usage_array', []))
