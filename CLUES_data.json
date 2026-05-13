@@ -1,5 +1,123 @@
 [
     {
+        "UUID": "00007001-0000-0041-4c50-574953450000",
+        "company": "ALPWISE S.A.S.",
+        "UUID_purpose": "Firmware Over-The-Air (FOTA) update profile, used by EM Microelectronic EM9304 Bluetooth Low Energy controllers (where the service is named BleEM9304FOTA in the SDK) and other devices that integrate the ALPWISE BLE stack. The UPDATER (GAP central) streams 'em93' update containers over this service to the TARGET, which writes them to OTP or IRAM. All UUIDs in this service share the ALPWISE base 0000XXXX-0000-0041-4C50-574953450000 (the ASCII bytes 41 4C 50 57 49 53 45 spell 'ALPWISE').",
+        "UUID_name": "FOTA",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emdeveloper.com/index.php?resources/em9304-soc-sdk.1/",
+                "description": "EM9304 SoC SDK v6.2 ('EM9304SocSdkSetup_v6.2.exe' from the EM Developer site). Symbol bleEM9304FOTAServiceValue at IROM address 0x809940 in sw/rom/rom.elf section .rom_const. Header sw/libs/alpw_ble_profiles/BLESW_EM9304FOTA/Interfaces/BleEM9304FOTA_Service.h defines the service. Wire-order bytes (little-endian, low first) at 0x809940 are: 00 00 45 53 49 57 50 4C 41 00 00 00 01 70 00 00.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "00007002-0000-0041-4c50-574953450000",
+        "company": "ALPWISE S.A.S.",
+        "UUID_purpose": "FOTA: Packet. 20-byte fragments of the 'em93' container stream. Each write-without-response carries (destinationMemory: 0x00=IRAM1 / 0x01=OTP, startAddress: u32, data: up to 20 bytes). Used by EM Microelectronic EM9304 and other ALPWISE-stack devices.",
+        "UUID_name": "FOTA Packet",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emdeveloper.com/index.php?resources/em9304-soc-sdk.1/",
+                "description": "EM9304 SoC SDK v6.2 — symbol bleEM9304FOTAPacketUUID at IROM 0x809930 in sw/rom/rom.elf section .rom_const; struct BleEM9304FOTAServicePacketInfo and BLEEM9304FOTASERVICE_PACKET_LEN=20 in sw/libs/alpw_ble_profiles/BLESW_EM9304FOTA/Interfaces/BleEM9304FOTA_Service.h.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00007001-0000-0041-4c50-574953450000"
+    },
+    {
+        "UUID": "00007003-0000-0041-4c50-574953450000",
+        "company": "ALPWISE S.A.S.",
+        "UUID_purpose": "FOTA: Microcontroller identifier (legacy / optional ALPWISE FOTA characteristic). Allowed the UPDATER to read a short string naming the target MCU (e.g. 'STM32F205VG'). Defined in older ALPWISE FOTA targets; commented out in the current EM9304 SDK service definition but the UUID is still part of the ALPWISE FOTA namespace and may appear on non-EM9304 ALPW-FOTA targets.",
+        "UUID_name": "FOTA Microcontroller",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emdeveloper.com/index.php?resources/em9304-soc-sdk.1/",
+                "description": "EM9304 SoC SDK v6.2 — sw/libs/alpw_ble_profiles/BLESW_EM9304FOTA/Interfaces/BleEM9304FOTA_Service.h contains the (commented-out) microcontrollerCharacteristic/microcontrollerAttribute/microcontrollerValue declarations. ALPWISE FOTA implementer's guide rev 1.6 documents the equivalent characteristic for non-EM9304 ALPW-FOTA targets.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00007001-0000-0041-4c50-574953450000"
+    },
+    {
+        "UUID": "00007004-0000-0041-4c50-574953450000",
+        "company": "ALPWISE S.A.S.",
+        "UUID_purpose": "FOTA: Memory/Flash Content (legacy / optional ALPWISE FOTA characteristic). Allowed the UPDATER to enumerate flash sectors of the target via notifications. Commented out in the current EM9304 SDK service definition but the UUID constant remains in EM9304 IROM, and the characteristic is still used by non-EM9304 ALPW-FOTA targets that have erasable external flash.",
+        "UUID_name": "FOTA Memory Content",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emdeveloper.com/index.php?resources/em9304-soc-sdk.1/",
+                "description": "EM9304 SoC SDK v6.2 — symbol bleEM9304FOTAMemoryContentUUID at IROM 0x809920 in sw/rom/rom.elf; (commented-out) memoryContentCharacteristic/memoryContentAttribute declarations in sw/libs/alpw_ble_profiles/BLESW_EM9304FOTA/Interfaces/BleEM9304FOTA_Service.h.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00007001-0000-0041-4c50-574953450000"
+    },
+    {
+        "UUID": "00007005-0000-0041-4c50-574953450000",
+        "company": "ALPWISE S.A.S.",
+        "UUID_purpose": "FOTA: Memory Access Control Point. Write+indicate (with CCCD). Carries the FOTAON/FOTAOFF/READMEMORY/CRC/RESPONSECODE opcode set plus the EM9304-specific extensions PATCH_QUERY (0xF0), PATCH_INVALIDATE (0xF1), MEMORY_CONTROL (0xF2), SAFE_OTP_WRITE (0xF3), RESET_UPLOAD (0xF4). Indication responses use the same characteristic to return status codes and data.",
+        "UUID_name": "FOTA Memory Access Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emdeveloper.com/index.php?resources/em9304-soc-sdk.1/",
+                "description": "EM9304 SoC SDK v6.2 — symbol bleEM9304FOTAMemoryAccessControlPointUUID at IROM 0x809910; opcode constants BLEEM9304FOTASERVICE_CONTROLPOINT_* in sw/libs/alpw_ble_profiles/BLESW_EM9304FOTA/Interfaces/BleEM9304FOTA_Service.h and EM-extension opcodes BLEEM9304FOTASERVICE_CONTROLPOINT_PATCH_QUERY/INVALIDATE/MEMORY_CONTROL/SAFE_OTP_WRITE/RESET_UPLOAD (0xF0..0xF4) in sw/libs/fota_update/includes/fota_update_internal.h.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00007001-0000-0041-4c50-574953450000"
+    },
+    {
+        "UUID": "00007006-0000-0041-4c50-574953450000",
+        "company": "ALPWISE S.A.S.",
+        "UUID_purpose": "FOTA: Mode. 1-byte read characteristic returning the current FOTA mode: 0x01=FOTAON_NO_ENCRYPTION, 0x02=FOTAOFF, 0x03=FOTAON_ENCRYPTED, 0x04=FOTAON_EXT, 0x05=FOTAOFF_EXT. Lets the UPDATER tell whether the device is in user-application mode (FOTAOFF) or FOTA-active mode before pushing a container.",
+        "UUID_name": "FOTA Mode",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emdeveloper.com/index.php?resources/em9304-soc-sdk.1/",
+                "description": "EM9304 SoC SDK v6.2 — symbol bleEM9304FOTAFOTAModeUUID at IROM 0x809900; BleEM9304FOTAServiceMode enum and BLEEM9304FOTASERVICE_MODE_* constants in sw/libs/alpw_ble_profiles/BLESW_EM9304FOTA/Interfaces/BleEM9304FOTA_Service.h.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00007001-0000-0041-4c50-574953450000"
+    },
+    {
+        "UUID": "00007007-0000-0041-4c50-574953450000",
+        "company": "ALPWISE S.A.S.",
+        "UUID_purpose": "FOTA: Vendor Specific. 20-byte read/write application-defined value (length BLEEM9304FOTASERVICE_VENDORSPECIFIC_LEN). Carries an opaque identifier the application sets via BLEEM9304FOTASERVICE_SetVendorSpecific() so the UPDATER can recognize / version / brand the device being updated (e.g. microcontroller name, firmware variant, product SKU).",
+        "UUID_name": "FOTA Vendor Specific",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emdeveloper.com/index.php?resources/em9304-soc-sdk.1/",
+                "description": "EM9304 SoC SDK v6.2 — symbol bleEM9304FOTAVendorSpecificUUID at IROM 0x809950; BLEEM9304FOTASERVICE_VENDORSPECIFIC_LEN=20 and BLEEM9304FOTASERVICE_SetVendorSpecific() in sw/libs/alpw_ble_profiles/BLESW_EM9304FOTA/Interfaces/BleEM9304FOTA_Service.h.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "00007001-0000-0041-4c50-574953450000"
+    },
+    {
         "UUID": "db450001-8e9a-4818-add7-6ed94a328ab3",
         "company": "ATMOTECH INC.",
         "UUID_purpose": "Atmotube PLUS air quality monitors.",
@@ -3231,7 +3349,7 @@
         ]
     },
     {
-        "UUID": "0x2aa0",
+        "UUID": "2aa0",
         "company": "MediaTek",
         "UUID_purpose": "Data Transfer Over GATT Reading. NOTE: incorrectly using *BT SIG reserved* 0x2AA0 UUID)",
         "UUID_name": "Data Transfer Over GATT Reading",
@@ -3248,7 +3366,7 @@
         "parent_UUID": "18a0"
     },
     {
-        "UUID": "0x2aa1",
+        "UUID": "2aa1",
         "company": "MediaTek",
         "UUID_purpose": "Data Transfer Over GATT Writing. NOTE: incorrectly using *BT SIG reserved* 0x2AA1 UUID)",
         "UUID_name": "Data Transfer Over GATT Writing",
@@ -7673,7 +7791,7 @@
         "parent_UUID": "4880c12c-fdcb-4077-8920-a450d7f9b907"
     },
     {
-        "UUID": "41584a41-4e55-5342-5743444556494345",
+        "UUID": "41584a41-4e55-5342-5743-444556494345",
         "company": "TASER International, Inc.",
         "UUID_purpose": "Unknown",
         "UUID_usage_array": [
