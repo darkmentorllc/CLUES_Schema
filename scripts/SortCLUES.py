@@ -4,6 +4,7 @@
 # and the placed-under elements should be sorted also in ascending order.
 
 import json
+import os
 from itertools import groupby
 from collections import defaultdict
 
@@ -88,4 +89,11 @@ def sort_custom_uuids(file_path):
 # sort_custom_uuids('/path/to/your/file.json')
 
 if __name__ == "__main__":
-    sort_custom_uuids('CLUES_data.json')
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(script_dir, '..', 'data')
+    for filename in (
+        'CLUES_data_human_verified.json',
+        'CLUES_data_LLM_Android_APK_search.json',
+        'CLUES_data_LLM_web_search.json',
+    ):
+        sort_custom_uuids(os.path.join(data_dir, filename))
