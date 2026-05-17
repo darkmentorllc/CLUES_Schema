@@ -162,6 +162,37 @@
         ]
     },
     {
+        "UUID": "00002556-1212-efde-1523-785feabcd123",
+        "company": "Aike (Comodule)",
+        "UUID_name": "Authentication Challenge Read Characteristic",
+        "UUID_purpose": "Used during BLE authentication on Aike (Comodule-platform) cloud-connected e-scooters: client reads a challenge value from the scooter. Vendor reused the Nordic Legacy DFU 128-bit base UUID 1212-efde-1523-785feabcd123 but the 16-bit prefix 0x2556 is Aike-specific.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.nns.ee/2026/01/06/aike-ble/",
+                "description": "Blog post 'Reverse engineering my cloud-connected e-scooter and finding the master key to unlock all scooters' documenting the Aike/Comodule BLE protocol.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "00002557-1212-efde-1523-785feabcd123",
+        "company": "Aike (Comodule)",
+        "UUID_name": "Authentication Response Write Characteristic",
+        "UUID_purpose": "Used during BLE authentication on Aike (Comodule-platform) e-scooters: client writes the authentication response derived from the challenge.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.nns.ee/2026/01/06/aike-ble/",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
         "UUID": "5052494d-2dab-0341-6972-6f6861424c45",
         "company": "Airoha Technology Corp.",
         "UUID_name": "RACE GATT Service (PRIM / AirohaBLE)",
@@ -480,6 +511,40 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "be15bee0-6186-407e-8381-0bd89c4d8df4",
+        "company": "Anki (now Digital Dream Labs)",
+        "UUID_name": "Overdrive Vehicle READ characteristic",
+        "UUID_purpose": "BLE READ/notify characteristic in the Anki Overdrive racing-car / Anki Vector GATT family. Sibling of the already-documented Anki Overdrive service be15beef-6186-407e-8381-0bd89c4d8df4 and write characteristic be15bee1-... — the car/robot uses this characteristic to push state telemetry (track location, speed, errors, etc.) back to the controller.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://anki.github.io/drive-sdk/docs/programming-guide",
+                "description": "Anki Drive SDK Programming Guide explicitly documents the per-vehicle GATT service BE15BEEF-6186-407E-8381-0BD89C4D8DF4 with READ characteristic BE15BEE0-... and WRITE characteristic BE15BEE1-...; both Overdrive cars and Vector robots share this UUID family.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "be15beef-6186-407e-8381-0bd89c4d8df4"
+    },
+    {
+        "UUID": "be15bee1-6186-407e-8381-0bd89c4d8df4",
+        "company": "Anki (now Digital Dream Labs)",
+        "UUID_name": "Overdrive Vehicle WRITE characteristic",
+        "UUID_purpose": "BLE WRITE characteristic in the Anki Overdrive racing-car / Anki Vector GATT family. Sibling of the already-documented Anki Overdrive service be15beef-6186-407e-8381-0bd89c4d8df4 and read characteristic be15bee0-... — the controller sends drive/lane-change/ping commands on this characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/MasterAirscrachDev/Anki-Partydrive/blob/main/OverdriveServer/Overdrive%20BLE.md",
+                "description": "MasterAirscrachDev/Anki-Partydrive's 'Overdrive BLE.md' confirms WRITE characteristic BE15BEE1-... is the command channel for Anki Overdrive supercars; siblings of the documented BE15BEEF-... service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "be15beef-6186-407e-8381-0bd89c4d8df4"
     },
     {
         "UUID": "d31fbf50-5d57-2797-a240-41cd484388ec",
@@ -955,6 +1020,71 @@
         ]
     },
     {
+        "UUID": "afc05da0-0cd4-11e6-a148-3e1d05defe78",
+        "company": "Boosted (Future Motion / Boosted Boards electric skateboards)",
+        "UUID_name": "Controls Service",
+        "UUID_purpose": "BLE GATT service on Boosted electric-skateboard remote/board exposing throttle and button controls. Houses throttle characteristic afc0653e-0cd4-11e6-a148-3e1d05defe78.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://medium.com/@johnathanchiu1065/side-project-series-reverse-engineering-the-boosted-board-remote-ceda4c30a74a",
+                "description": "Medium writeup 'Reverse Engineering the Boosted Board Remote' by Johnathan Chiu identifies this as the Controls Service via Bluetility/Bleak enumeration.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "afc0653e-0cd4-11e6-a148-3e1d05defe78",
+        "company": "Boosted (Future Motion / Boosted Boards electric skateboards)",
+        "UUID_name": "Throttle",
+        "UUID_purpose": "BLE GATT characteristic on Boosted electric-skateboard remote exposing throttle data. Read/Notify; the board uses a CCCD subscription to push real-time throttle updates. Child of Controls Service afc05da0-0cd4-11e6-a148-3e1d05defe78.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://medium.com/@johnathanchiu1065/side-project-series-reverse-engineering-the-boosted-board-remote-ceda4c30a74a",
+                "description": "Medium writeup 'Reverse Engineering the Boosted Board Remote' by Johnathan Chiu identifies this as the throttle characteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "afc05da0-0cd4-11e6-a148-3e1d05defe78"
+    },
+    {
+        "UUID": "f4c4772c-0056-11e6-8d22-5e5517507c66",
+        "company": "Boosted (Future Motion / Boosted Boards electric skateboards)",
+        "UUID_name": "Connectivity Service",
+        "UUID_purpose": "BLE GATT service on Boosted electric-skateboard remote handling device pairing/bonding between remote and board.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://medium.com/@johnathanchiu1065/side-project-series-reverse-engineering-the-boosted-board-remote-ceda4c30a74a",
+                "description": "Medium writeup 'Reverse Engineering the Boosted Board Remote' by Johnathan Chiu identifies this as the Connectivity Service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "65a8eaa8-c61f-11e5-9912-ba0be0483c18",
+        "company": "Boosted (Future Motion / Boosted Boards electric skateboards)",
+        "UUID_name": "Board BLE identifier (v2/v3 / Mini S/X)",
+        "UUID_purpose": "BLE UUID associated with Boosted Board v3/v2 longboards and Mini S/X for board-side BLE communication. Shares the UUIDv1 node MAC ba0be0483c18 with the related Boosted UUID 7dc55a86-c61f-11e5-9912-ba0be0483c18 already in CLUES; both timestamps fall in the same UUIDv1 era (early 2016), confirming the same vendor batch.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://endless-sphere.com/sphere/threads/boosted-boards-reverse-engineered-development.56839/",
+                "description": "Endless Sphere forum 'Boosted boards reverse engineered development' identifies this UUID as a Boosted Board v3/v2 / Mini S/X BLE identifier used in the reverse-engineered ESP32 BLE Arduino implementation of the remote/board.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
         "UUID": "7dc55a86-c61f-11e5-9912-ba0be0483c18",
         "company": "Boosted (Future Motion)",
         "UUID_name": "Boosted Board controller BLE service",
@@ -966,6 +1096,118 @@
             {
                 "URL": "https://github.com/johnathanchiu/boosted-project",
                 "description": "boosted-project arduino/boosted/scanner/scanner.ino defines BOARD_ADVERTISED_UUID with this value.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "a0384f52-f95a-4bcd-b898-7b9ceec92dad",
+        "company": "Bose",
+        "UUID_name": "AR Gesture Information",
+        "UUID_purpose": "Bose AR (Augmented Reality) Gesture Information characteristic. Read-only attribute that publishes metadata about which gestures the device supports and how each entry in the AR Gesture Configuration characteristic is laid out (so the client can parse it). Used by Bose Frames AR (e.g. Frames Alto/Rondo/Tenor), Bose AR-enabled QC35 II, Bose AR-enabled Soundsport-style products. Sits under the Bose AR primary GATT service 0000fdd2-0000-1000-8000-00805f9b34fb. Companion AR characteristics are 21e550af-... (Gesture Configuration RW/Notify) and 9014dd4e-... (Gesture Data Notify).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
+                "description": "Bose AR Web SDK (Zakaton fork of the official Bose AR SDK) documents this UUID as 'Gesture Information' under the official Bose AR Service 0000fdd2-..., with description 'Provides how large each entry in Gesture Configuration is to help with parsing'. Confirmed against the Bose Developer Portal Bose AR documentation.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "21e550af-f780-477b-9334-1f983296f1d7",
+        "company": "Bose",
+        "UUID_name": "AR Gesture Configuration",
+        "UUID_purpose": "Bose AR Gesture Configuration characteristic. Read/Write/Notify attribute used to enable/disable individual AR head-gestures (e.g. single-tap, double-tap, head-nod, head-shake) on Bose AR-enabled audio products (Bose Frames AR, Bose AR-enabled QC35 II, etc.). Sits under the Bose AR primary GATT service 0000fdd2-0000-1000-8000-00805f9b34fb.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
+                "description": "Bose AR Web SDK documents this UUID as 'Gesture Configuration (Read/Write/Notify)' under the Bose AR Service 0000fdd2-..., described as 'Describes which gestures are enabled/disabled; allows control via read/write'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "9014dd4e-79ba-4802-a275-894d3b85ac74",
+        "company": "Bose",
+        "UUID_name": "AR Gesture Data",
+        "UUID_purpose": "Bose AR Gesture Data characteristic. Notify-only attribute that fires when the user performs a configured head-gesture on Bose AR-enabled audio products (Bose Frames AR, Bose AR-enabled QC35 II, etc.). Sits under the Bose AR primary GATT service 0000fdd2-0000-1000-8000-00805f9b34fb.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
+                "description": "Bose AR Web SDK documents this UUID as 'Gesture Data (Notify)' under the Bose AR Service 0000fdd2-..., described as 'Notifies you when gestures are triggered by the user'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "5af38af6-000e-404b-9b46-07f77580890b",
+        "company": "Bose",
+        "UUID_name": "AR Sensor Configuration",
+        "UUID_purpose": "Bose AR Sensor Configuration characteristic. Read/Write/Notify attribute used to enable/disable individual motion sensors (accelerometer, gyroscope, rotation, game-rotation) and to set their sampling rates on Bose AR-enabled audio products (Bose Frames AR, Bose AR-enabled QC35 II, etc.). Sits under the Bose AR primary GATT service 0000fdd2-0000-1000-8000-00805f9b34fb.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
+                "description": "Bose AR Web SDK documents this UUID as 'Sensor Configuration (Read/Write/Notify)' under the Bose AR Service 0000fdd2-..., used to 'Enable/disable sensors and set sampling rates'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "56a72ab8-4988-4cc8-a752-fbd1d54a953d",
+        "company": "Bose",
+        "UUID_name": "AR Sensor Data",
+        "UUID_purpose": "Bose AR Sensor Data characteristic. Notify-only attribute that streams raw accelerometer, gyroscope, rotation and game-rotation samples from Bose AR-enabled audio products (Bose Frames AR, Bose AR-enabled QC35 II, etc.) to a paired host. Sits under the Bose AR primary GATT service 0000fdd2-0000-1000-8000-00805f9b34fb.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
+                "description": "Bose AR Web SDK documents this UUID as 'Sensor Data (Notify)' under the Bose AR Service 0000fdd2-..., described as 'Raw accelerometer, gyroscope, rotation, and game rotation values'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "855cb3e7-98ff-42a6-80fc-40b32a2221c1",
+        "company": "Bose",
+        "UUID_name": "AR Sensor Information",
+        "UUID_purpose": "Bose AR Sensor Information characteristic. Read-only attribute that exposes metadata about which motion sensors the device supports (accelerometer, gyroscope, rotation/quaternion, game-rotation) and parsing info for the Sensor Configuration characteristic. Used by Bose Frames AR and other Bose AR-enabled audio products. Sits under the Bose AR primary GATT service 0000fdd2-0000-1000-8000-00805f9b34fb.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
+                "description": "Bose AR Web SDK documents this UUID as 'Sensor Information (Read)' under the Bose AR Service 0000fdd2-..., providing available-sensor metadata.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "2d064aa9-32b5-4970-865c-643742bd2862",
+        "company": "Bose",
+        "UUID_name": "RACE over RFCOMM SDP Service (Bose variant)",
+        "UUID_purpose": "Bose-vendor variant of the Airoha RACE (Remote Access Control Engine) protocol exposed over Bluetooth Classic (BR/EDR) via RFCOMM/SDP. RACE is a control/configuration/FOTA protocol shipped in the Airoha BT SoC SDK and used by Airoha-based TWS earbuds, speakers and headphones. The Bose-branded fork of Airoha's SDK publishes the RACE SPP service under this specific SDP record UUID instead of the canonical default 00000000-0000-0000-0099-AABBCCDDEEFF.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://insinuator.net/2025/12/bluetooth-headphone-jacking-full-disclosure-of-airoha-race-vulnerabilities/",
+                "description": "ENRW/Insinuator's December 2025 full-disclosure writeup of the Airoha RACE vulnerabilities explicitly lists this UUID as the Bose-vendor variant of the RACE-over-RFCOMM SPP service (alongside the default 00000000-0000-0000-0099-AABBCCDDEEFF and Sony variant 8901DFA8-5C7E-4D8F-9F0C-C2B70683F5F0). The disclosure notes 28+ confirmed-vulnerable audio devices spanning Bose, Sony, Marshall, JBL, Jabra, Beyerdynamic, Teufel and Jlab.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -1105,6 +1347,38 @@
         "regex": true
     },
     {
+        "UUID": "16860003-a5ae-9856-b6d3-dbb4c676993e",
+        "company": "Candy House Inc. (Sesame)",
+        "UUID_name": "Sesame RX Characteristic",
+        "UUID_purpose": "RX characteristic on Candy House Sesame 3 / Sesame 4 / Sesame 5 / Sesame Bot 2 / Sesame Bike smart locks. The lock sends notifications (status / responses) back to the phone via this characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/homy-newfs8/libsesame3bt-core/blob/main/lib/libsesame3bt-core/include/Sesame.h",
+                "description": "libsesame3bt-core (a well-known reverse-engineered library used by ESPHome's sesame3 component) defines RxUUID with this value for communicating with all Candy House Sesame BLE smart lock models. The Sesame.h header explicitly labels it as the BLE RX UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "16860002-a5ae-9856-b6d3-dbb4c676993e",
+        "company": "Candy House Inc. (Sesame)",
+        "UUID_name": "Sesame TX Characteristic",
+        "UUID_purpose": "TX characteristic on Candy House Sesame 3 / Sesame 4 / Sesame 5 / Sesame Bot 2 / Sesame Bike smart locks. The phone writes commands to this characteristic to control the lock.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/homy-newfs8/libsesame3bt-core/blob/main/lib/libsesame3bt-core/include/Sesame.h",
+                "description": "libsesame3bt-core (a well-known reverse-engineered library used by ESPHome's sesame3 component) defines TxUUID with this value for communicating with all Candy House Sesame BLE smart lock models. The Sesame.h header explicitly labels it as the BLE TX UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
         "UUID": "00010000-0000-1000-0000-d8492fffa821",
         "company": "Canon",
         "UUID_name": "EOS Camera BLE Pairing",
@@ -1166,6 +1440,118 @@
             {
                 "URL": "https://github.com/izivkov/gshock-smart-sync-webapp/blob/main/src/api/CasioConstants.ts",
                 "description": "CasioConstants.ts enumerates the family; multiple short IDs share the same base.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "00001730-2927-efef-cdab-eba0fe583711",
+        "company": "Cubii Inc.",
+        "UUID_name": "Cubii Fitness Service",
+        "UUID_purpose": "Primary custom GATT service for Cubii under-desk elliptical bikes. Uses vendor base 0000XXXX-2927-efef-cdab-eba0fe583711.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
+                "description": "iopush.net writeup 'Reverse engineer Cubii elliptic bike BLE protocol' enumerates the Cubii custom service and characteristics.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "00001731-2927-efef-cdab-eba0fe583711",
+        "company": "Cubii Inc.",
+        "UUID_name": "RPM Characteristic",
+        "UUID_purpose": "Revolutions-per-minute characteristic for Cubii elliptic bike, child of service 0x1730.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00001730-2927-efef-cdab-eba0fe583711"
+    },
+    {
+        "UUID": "00001732-2927-efef-cdab-eba0fe583711",
+        "company": "Cubii Inc.",
+        "UUID_name": "Battery Level Characteristic",
+        "UUID_purpose": "Battery-level characteristic for Cubii elliptic bike, child of service 0x1730.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00001730-2927-efef-cdab-eba0fe583711"
+    },
+    {
+        "UUID": "00001733-2927-efef-cdab-eba0fe583711",
+        "company": "Cubii Inc.",
+        "UUID_name": "Brake Position Characteristic",
+        "UUID_purpose": "Brake / resistance position characteristic for Cubii elliptic bike, child of service 0x1730.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00001730-2927-efef-cdab-eba0fe583711"
+    },
+    {
+        "UUID": "00001734-2927-efef-cdab-eba0fe583711",
+        "company": "Cubii Inc.",
+        "UUID_name": "Revolutions Counter Characteristic",
+        "UUID_purpose": "Total revolutions counter characteristic for Cubii elliptic bike, child of service 0x1730.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00001730-2927-efef-cdab-eba0fe583711"
+    },
+    {
+        "UUID": "6e400001-b5a3-f393-e0a9-e50e9ecadc24",
+        "company": "Cubii Inc.",
+        "UUID_name": "Cubii Motorized BLE Service",
+        "UUID_purpose": "Custom BLE service used on the motorized variant of the Cubii elliptic bike. Note: this UUID is a deliberate (or accidental) near-collision with the Nordic UART Service base UUID `6e400001-b5a3-f393-e0a9-e50e24dcca9e`; only the trailing six hex characters differ.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "0000xxxx-2927-efef-cdab-eba0fe583711",
+        "company": "Cubii Inc.",
+        "UUID_name": "Cubii Vendor Service/Characteristic Pattern",
+        "UUID_purpose": "Family pattern for all Cubii (under-desk elliptical bike) custom services and characteristics. Replace 'XXXX' with four hex characters to match specific UUIDs in the vendor base.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
                 "submitter": "Claude (Opus 4.7)"
             }
         ],
@@ -1263,6 +1649,118 @@
             {
                 "URL": "https://github.com/blafois/Daikin-Madoka-BRC1H-BLE-Reverse",
                 "description": "Blafois's Daikin BRC1H reverse-engineering repo labels this UUID exactly as 'AC Unit Management'. Confirmed independently by Home Assistant integrations (mduran80/daikin_madoka), the openHAB DaikinMadoka binding, and ESPHome BTProxy implementations.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "f8083536-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "Dexcom CGM Status Notify characteristic",
+        "UUID_purpose": "Dexcom G6 CGM characteristic (NOTIFY only) under the f8083532-... primary service. Used by the transmitter to push asynchronous status updates / event notifications to the connected phone.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/deviceplug/btleplug/issues/177",
+                "description": "btleplug issue #177 enumerates f8083536 with NOTIFY-only properties as part of the Dexcom G6 GATT tree.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "f8083537-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "Dexcom CGM Read characteristic",
+        "UUID_purpose": "Dexcom G6 CGM characteristic (READ only) under the f8083532-... primary service. Used to read static or rarely-changing transmitter data such as serial number / device info.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/deviceplug/btleplug/issues/177",
+                "description": "btleplug issue #177 enumerates f8083537 with READ-only properties as part of the Dexcom G6 GATT tree.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "f8083533-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "Dexcom CGM Communication characteristic",
+        "UUID_purpose": "Dexcom G6 CGM characteristic (READ/NOTIFY) under the f8083532-... primary service. Used by the receiving phone / Dexcom Receiver to read transmitter responses (control/status data) returned by the CGM transmitter after authentication.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/deviceplug/btleplug/issues/177",
+                "description": "btleplug issue #177 enumerates f8083533 with READ/NOTIFY properties as part of Dexcom G6 transmitter GATT tree. Same UUID family referenced in NightscoutFoundation/xDrip wiki and JohanDegraeve/xdripswift G6/G7 transmitter implementation.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "f8083538-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "Dexcom CGM Data characteristic",
+        "UUID_purpose": "Dexcom G6 CGM characteristic (READ/NOTIFY) under the f8083532-... primary service. Used for transmitter-to-phone CGM glucose value streaming after the auth handshake completes.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/deviceplug/btleplug/issues/177",
+                "description": "btleplug issue #177 enumerates f8083538 with READ/NOTIFY properties as part of the Dexcom G6 GATT tree.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "f8083535-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "Dexcom CGM Control characteristic",
+        "UUID_purpose": "Dexcom G6 CGM characteristic (WRITE/INDICATE) under the f8083532-... primary service. Second write/indicate command channel; used alongside f8083534 for control-point commands (backfill requests, sensor info, etc.) to the transmitter.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/deviceplug/btleplug/issues/177",
+                "description": "btleplug issue #177 enumerates f8083535 with WRITE/INDICATE properties as part of the Dexcom G6 GATT tree.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "f8083534-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "Dexcom CGM Auth characteristic",
+        "UUID_purpose": "Dexcom G6 CGM characteristic (WRITE/INDICATE) under the f8083532-... primary service. Used by xDrip+ as 'AuthRequestTX' — the phone writes the authentication-challenge request packet here at the start of every 5-minute reading window so the Dexcom transmitter will allow data extraction.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/NightscoutFoundation/xDrip/issues/1279",
+                "description": "xDrip GitHub issue #1279 ('Dexcom G6 / 8G tx: every 5mins \"Could not read after AuthRequestTX\" & \"Could not read reply to auth challenge\"') reports this characteristic by UUID, names it AuthRequestTX, and confirms WRITE/INDICATE properties. Cross-confirmed by btleplug issue #177.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "f8083532-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "Dexcom CGM Service",
+        "UUID_purpose": "Primary BLE GATT service for Dexcom G6 Continuous Glucose Monitor (CGM) transmitter. The advertised service hosts the proprietary CGM data-exchange characteristics (f8083533..f8083538) used to authenticate, read sensor backfill data, and stream glucose values to the receiving phone / receiver. The same f808353X-849e-531c-c594-30f1f86a4ea5 family is used by Dexcom G6 and (with minor changes) the Dexcom G7 / One+ transmitters.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/deviceplug/btleplug/issues/177",
+                "description": "btleplug issue #177 enumerates the Dexcom G6 GATT tree: primary service f8083532-849e-531c-c594-30f1f86a4ea5 with characteristics f8083533 (READ/NOTIFY), f8083534 (WRITE/INDICATE - AuthRequestTX), f8083535 (WRITE/INDICATE), f8083536 (NOTIFY), f8083537 (READ), f8083538 (READ/NOTIFY). xDrip+ project issues (NightscoutFoundation/xDrip #1279, JohanDegraeve/xdripswift) reference the same UUIDs in the context of Dexcom G6 / G7 / One+ CGM transmitter communication.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -1419,6 +1917,116 @@
         "evidence_array": [
             {
                 "URL": "https://github.com/espressif/esp-idf/issues/5582",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "00001910-0000-1000-8000-00805f9b34fb",
+        "company": "Etekcity (Vesync)",
+        "UUID_name": "Smart Nutrition Scale Service (ESN00)",
+        "UUID_purpose": "Primary custom GATT service for ETEKCITY ESN00 Smart Nutrition Food Calorie Kitchen Digital Scale. Uses SIG-base 128-bit encoding but the 16-bit 0x1910 is not a SIG-assigned identifier.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://dev.to/hertzg/hacking-ble-kitchen-scale-55io",
+                "description": "DEV.to writeup 'Hacking BLE Kitchen Scale' (hertzg) reverse-engineers the ETEKCITY ESN00 protocol.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "00002c10-0000-1000-8000-00805f9b34fb",
+        "company": "Etekcity (Vesync)",
+        "UUID_name": "Smart Nutrition Scale Read Characteristic (ESN00)",
+        "UUID_purpose": "Read characteristic for ETEKCITY ESN00 Smart Nutrition Kitchen Scale, child of service 0x1910.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://dev.to/hertzg/hacking-ble-kitchen-scale-55io",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00001910-0000-1000-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00002c11-0000-1000-8000-00805f9b34fb",
+        "company": "Etekcity (Vesync)",
+        "UUID_name": "Smart Nutrition Scale Write Characteristic (ESN00)",
+        "UUID_purpose": "Write / WriteWithoutResponse characteristic for ETEKCITY ESN00 Smart Nutrition Kitchen Scale, child of service 0x1910.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://dev.to/hertzg/hacking-ble-kitchen-scale-55io",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00001910-0000-1000-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00002c12-0000-1000-8000-00805f9b34fb",
+        "company": "Etekcity (Vesync)",
+        "UUID_name": "Smart Nutrition Scale Notify Characteristic (ESN00)",
+        "UUID_purpose": "Notify / Indicate characteristic for ETEKCITY ESN00 Smart Nutrition Kitchen Scale, child of service 0x1910; transmits measurement data.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://dev.to/hertzg/hacking-ble-kitchen-scale-55io",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00001910-0000-1000-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "4143f6b1-5300-4900-4700-414943415245",
+        "company": "Eufy (Anker Innovations)",
+        "UUID_name": "Eufy Smart Scale T9140 control characteristic",
+        "UUID_purpose": "BLE characteristic exposed by the Eufy Smart Scale T9140 (and likely related Eufy smart scales). The trailing 14 bytes 53 00 49 00 47 00 41 49 43 41 52 45 ASCII-decode (after stripping the 0x00 padding bytes used to make this look like a UTF-16 string) to 'SIGAICARE' — i.e. Anker/Eufy 'AICARE' (the brand name of Eufy's smart-scale platform). Sibling characteristics 4143f6b2-... and 4143f6b3-... also present.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/home-assistant/core/issues/91777",
+                "description": "Home Assistant core issue #91777 captures GATT enumeration of an Eufy Smart Scale T9140 and explicitly lists 4143f6b1/b2/b3-5300-4900-4700-414943415245 as the device's actual characteristics (the integration was buggy because it had the variant 4143f7b1/b2 with 'f7' instead of 'f6').",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "4143f6b2-5300-4900-4700-414943415245",
+        "company": "Eufy (Anker Innovations)",
+        "UUID_name": "Eufy Smart Scale T9140 characteristic (sibling 0xf6b2)",
+        "UUID_purpose": "Sibling characteristic in the Eufy Smart Scale T9140 GATT service.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/home-assistant/core/issues/91777",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "4143f6b3-5300-4900-4700-414943415245",
+        "company": "Eufy (Anker Innovations)",
+        "UUID_name": "Eufy Smart Scale T9140 characteristic (sibling 0xf6b3)",
+        "UUID_purpose": "Sibling characteristic in the Eufy Smart Scale T9140 GATT service.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/home-assistant/core/issues/91777",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -2136,6 +2744,155 @@
         "regex": true
     },
     {
+        "UUID": "dab91435-b5a1-e29c-b041-bcd562613bde",
+        "company": "Hasbro (Furby Connect)",
+        "UUID_name": "Furby Connect 'Fluff' Service",
+        "UUID_purpose": "Primary proprietary GATT service ('Fluff service') exposed by the Hasbro Furby Connect smart toy (Bluetooth-controlled animatronic, released 2016) for control, state, audio DLC upload, and microcontroller bridging. Disclosed by ContextIS / Jeija (bluefluff) during reverse-engineering of the Furby Connect's Bluetooth protocol; the BLE attack surface and unsigned Nordic DFU were the subject of widely-reported 2017 security disclosures.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Jeija/bluefluff/blob/master/doc/bluetooth.md",
+                "description": "Jeija/bluefluff explicitly documents dab91435-b5a1-e29c-b041-bcd562613bde as Furby Connect's 'Fluff' GATT service with characteristic family dab9XXXX-b5a1-e29c-b041-bcd562613bde for GeneralPlus and Nordic microcontroller bridging plus DLC file write.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://www.helpnetsecurity.com/2017/11/27/smart-toys-risk/",
+                "description": "Help Net Security coverage of Context Information Security's 2017 disclosure that the Furby Connect's BLE attack surface allowed unauthenticated firmware push via the Nordic DFU service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "dab90755-b5a1-e29c-b041-bcd562613bde",
+        "company": "Hasbro (Furby Connect)",
+        "UUID_name": "Furby Connect RSSI Listen",
+        "UUID_purpose": "Furby Connect 'Fluff' service characteristic that streams RSSI / signal-strength notifications.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Jeija/bluefluff/blob/master/doc/bluetooth.md",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "dab91435-b5a1-e29c-b041-bcd562613bde"
+    },
+    {
+        "UUID": "dab90756-b5a1-e29c-b041-bcd562613bde",
+        "company": "Hasbro (Furby Connect)",
+        "UUID_name": "Furby Connect NordicListen",
+        "UUID_purpose": "Furby Connect 'Fluff' service characteristic for reading/notify from the Nordic Semiconductor microcontroller (the BLE+state-machine side of the dual-MCU design).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Jeija/bluefluff/blob/master/doc/bluetooth.md",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "dab91435-b5a1-e29c-b041-bcd562613bde"
+    },
+    {
+        "UUID": "dab90757-b5a1-e29c-b041-bcd562613bde",
+        "company": "Hasbro (Furby Connect)",
+        "UUID_name": "Furby Connect NordicWrite",
+        "UUID_purpose": "Furby Connect 'Fluff' service write characteristic for commands to the Nordic Semiconductor microcontroller.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Jeija/bluefluff/blob/master/doc/bluetooth.md",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "dab91435-b5a1-e29c-b041-bcd562613bde"
+    },
+    {
+        "UUID": "dab90758-b5a1-e29c-b041-bcd562613bde",
+        "company": "Hasbro (Furby Connect)",
+        "UUID_name": "Furby Connect FileWrite",
+        "UUID_purpose": "Furby Connect 'Fluff' service characteristic used to write DLC audio/asset files into the toy — the channel through which malicious audio packs were demonstrated to be loadable in the Context IS 2017 disclosure.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Jeija/bluefluff/blob/master/doc/bluetooth.md",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "dab91435-b5a1-e29c-b041-bcd562613bde"
+    },
+    {
+        "UUID": "dab91382-b5a1-e29c-b041-bcd562613bde",
+        "company": "Hasbro (Furby Connect)",
+        "UUID_name": "Furby Connect GeneralPlusListen",
+        "UUID_purpose": "Furby Connect 'Fluff' service read/notify characteristic for the GeneralPlus microcontroller (the chip that controls motors, LCD eyes, speakers).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Jeija/bluefluff/blob/master/doc/bluetooth.md",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "dab91435-b5a1-e29c-b041-bcd562613bde"
+    },
+    {
+        "UUID": "dab91383-b5a1-e29c-b041-bcd562613bde",
+        "company": "Hasbro (Furby Connect)",
+        "UUID_name": "Furby Connect GeneralPlusWrite",
+        "UUID_purpose": "Furby Connect 'Fluff' service write characteristic for sending commands (eye animations, antenna colour, audio playback) to the GeneralPlus microcontroller.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Jeija/bluefluff/blob/master/doc/bluetooth.md",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "dab91435-b5a1-e29c-b041-bcd562613bde"
+    },
+    {
+        "UUID": "dab91440-b5a1-e29c-b041-bcd562613bde",
+        "company": "Hasbro (Furby Connect)",
+        "UUID_name": "Furby Connect Unknown read/notify (0x1440)",
+        "UUID_purpose": "Furby Connect 'Fluff' service characteristic of currently-unknown function (documented but not labelled in bluefluff).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Jeija/bluefluff/blob/master/doc/bluetooth.md",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "dab91435-b5a1-e29c-b041-bcd562613bde"
+    },
+    {
+        "UUID": "dab91441-b5a1-e29c-b041-bcd562613bde",
+        "company": "Hasbro (Furby Connect)",
+        "UUID_name": "Furby Connect Unknown read/write (0x1441)",
+        "UUID_purpose": "Furby Connect 'Fluff' service characteristic of currently-unknown function (documented but not labelled in bluefluff).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Jeija/bluefluff/blob/master/doc/bluetooth.md",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "dab91435-b5a1-e29c-b041-bcd562613bde"
+    },
+    {
         "UUID": "0fda92b2-44a2-4af2-84f5-fa682baa2b8d",
         "company": "Helium / Nova Labs",
         "UUID_name": "Helium Hotspot Custom Service",
@@ -2166,6 +2923,39 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "d83b80e3-e81f-4f66-879b-779be5f6a693",
+        "company": "Huawei Technologies Co., Ltd.",
+        "UUID_name": "Honor Band 4 / Huawei wearable service",
+        "UUID_purpose": "Vendor BLE service observed on a Huawei Honor Band 4 fitness tracker during BT-snoop capture of communication with the Huawei Health Android app. Coexists with the short-form fe01/fe02/fe03/fe04 characteristics that carry the proprietary 'Huawei Link Protocol v2' AES-128-CBC encrypted frames. Exact role of this service within the Huawei Link Protocol family is undocumented publicly.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/psolyca/68fdfee0960737c1234f8d7f7a6c143a",
+                "description": "psolyca's 'Honor Band 4 RE' GitHub gist documents this UUID as one of the services discovered during reverse-engineering of the Huawei Honor Band 4 BLE protocol. Lists it alongside the well-known SIG-allocated fee0/fe01/fe02/fe03/fe04 short UUIDs and SIG service-data UUIDs 0x252a / 0xfd6f / 0xfdee / 0x3802.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "98bd0004-0b0e-421a-84e5-ddbf75dc6de4",
+        "company": "Husqvarna AB",
+        "UUID_name": "Automower Connect Device Type Characteristic",
+        "UUID_purpose": "GATT characteristic on Husqvarna Automower Connect-equipped robotic lawn mowers that returns the device-type string (model identifier) for the mower.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/alistair23/AutoMower-BLE/blob/main/automower_ble/protocol.py",
+                "description": "AutoMower-BLE protocol.py constant maps this UUID to the mower's device-type read characteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "98bd0001-0b0e-421a-84e5-ddbf75dc6de4"
     },
     {
         "UUID": "58524550-5948-0000-0000-9e03c3fc0000",
@@ -2214,6 +3004,245 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "f60402a6-0293-4bdb-9f20-6758133f7090",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 alternate service (KeyOn-style)",
+        "UUID_purpose": "Alternate Kiiroo v2-protocol service UUID with non-contiguous characteristic addressing (TX 02962ac9-..., RX d44d0393-..., firmware c7b7a04b-...). Observed on certain Kiiroo Onyx/Pearl/Cliona revisions.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "02962ac9-e86f-4094-989d-231d69995fc2",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 alternate TX characteristic",
+        "UUID_purpose": "Kiiroo v2 alternate-service command-write characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "f60402a6-0293-4bdb-9f20-6758133f7090"
+    },
+    {
+        "UUID": "c7b7a04b-2cc4-40ff-8b10-5d531d1161db",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 alternate firmware characteristic",
+        "UUID_purpose": "Kiiroo v2 alternate-service firmware-update characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "f60402a6-0293-4bdb-9f20-6758133f7090"
+    },
+    {
+        "UUID": "d44d0393-0731-43b3-a373-8fc70b1f3323",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 alternate RX characteristic",
+        "UUID_purpose": "Kiiroo v2 alternate-service notify characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "f60402a6-0293-4bdb-9f20-6758133f7090"
+    },
+    {
+        "UUID": "88f80580-0000-01e6-aace-0002a5d5c51b",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 stroker service (Onyx 2 / Pearl 2)",
+        "UUID_purpose": "Proprietary BLE GATT service exposed by Kiiroo v2 protocol strokers/masturbators (Onyx 2, Pearl 2) for interactive content-synchronised control. TX char 88f80581-..., RX char 88f80582-..., firmware char 88f80583-...",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "description": "buttplugio/buttplug-device-config 'kiiroo-v2' protocol section defines service 88f80580-0000-01e6-aace-0002a5d5c51b with characteristics 88f80581-..., 88f80582-..., 88f80583-...",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "88f80581-0000-01e6-aace-0002a5d5c51b",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 stroker TX characteristic",
+        "UUID_purpose": "Kiiroo v2 stroker (Onyx/Pearl) command write characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "88f80580-0000-01e6-aace-0002a5d5c51b"
+    },
+    {
+        "UUID": "88f80582-0000-01e6-aace-0002a5d5c51b",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 stroker RX characteristic",
+        "UUID_purpose": "Kiiroo v2 stroker notify characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "88f80580-0000-01e6-aace-0002a5d5c51b"
+    },
+    {
+        "UUID": "88f80583-0000-01e6-aace-0002a5d5c51b",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 stroker firmware characteristic",
+        "UUID_purpose": "Kiiroo v2 stroker firmware-update characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "88f80580-0000-01e6-aace-0002a5d5c51b"
+    },
+    {
+        "UUID": "88f82580-0000-01e6-aace-0002a5d5c51b",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 vibrator service",
+        "UUID_purpose": "Proprietary BLE GATT service exposed by Kiiroo v2-protocol vibrators (Cliona, Pearl 2, etc.) for interactive control with companion characteristics 88f82581-... (tx), 88f82582-... (rxtouch), 88f82584-... (rxaccel).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "description": "buttplugio/buttplug-device-config explicitly registers kiiroo-v2-vibrator protocol with service 88f82580-0000-01e6-aace-0002a5d5c51b.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "88f82581-0000-01e6-aace-0002a5d5c51b",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 vibrator TX characteristic",
+        "UUID_purpose": "Kiiroo v2 vibrator command write characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "88f82580-0000-01e6-aace-0002a5d5c51b"
+    },
+    {
+        "UUID": "88f82582-0000-01e6-aace-0002a5d5c51b",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 vibrator RX touch characteristic",
+        "UUID_purpose": "Kiiroo v2 vibrator notify characteristic — touch sensor stream from the toy.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "88f82580-0000-01e6-aace-0002a5d5c51b"
+    },
+    {
+        "UUID": "88f82584-0000-01e6-aace-0002a5d5c51b",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2 vibrator RX accelerometer characteristic",
+        "UUID_purpose": "Kiiroo v2 vibrator notify characteristic — accelerometer stream from the toy.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "88f82580-0000-01e6-aace-0002a5d5c51b"
+    },
+    {
+        "UUID": "a0d70001-4c16-4ba7-977a-d394920e13a3",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2.1 vibrator service (Pearl 2+, Cliona, Esca)",
+        "UUID_purpose": "Updated Kiiroo v2.1-protocol service for newer Kiiroo vibrators (Pearl 2+, Cliona, Esca, Titan, Onyx+). TX char a0d70002-..., RX char a0d70003-...",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "description": "buttplugio/buttplug-device-config 'kiiroo-v21-vibrator' protocol section defines this service and its TX/RX characteristics.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "a0d70002-4c16-4ba7-977a-d394920e13a3",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2.1 vibrator TX characteristic",
+        "UUID_purpose": "Kiiroo v2.1 vibrator command write.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "a0d70001-4c16-4ba7-977a-d394920e13a3"
+    },
+    {
+        "UUID": "a0d70003-4c16-4ba7-977a-d394920e13a3",
+        "company": "Kiiroo B.V.",
+        "UUID_name": "Kiiroo v2.1 vibrator RX characteristic",
+        "UUID_purpose": "Kiiroo v2.1 vibrator notify.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "a0d70001-4c16-4ba7-977a-d394920e13a3"
     },
     {
         "UUID": "00000000-0069-746c-6165-4861736e694b",
@@ -2317,6 +3346,74 @@
         ]
     },
     {
+        "UUID": "632de001-604c-446b-a80f-7963e950f3fb",
+        "company": "Omi (formerly Friend)",
+        "UUID_name": "Omi wearable AI necklace BLE service",
+        "UUID_purpose": "BLE service exposed by the Omi (formerly named 'Friend') wearable AI necklace — an always-on AI assistant pendant. Used by the Omi mobile app to receive audio streams and device telemetry.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BasedHardware/omi",
+                "description": "Omi (BasedHardware/omi) flutter app references this UUID in app/lib/services/devices/models.dart. Forked by many users including beastoin/omi, bozkurtfurkan/omi.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "632de002-604c-446b-a80f-7963e950f3fb",
+        "company": "Limitless (acquired by Meta, Dec 2025)",
+        "UUID_name": "Limitless Pendant Control Characteristic",
+        "UUID_purpose": "BLE control characteristic of the Limitless Pendant LS-PT-01. Used to send commands wrapped in the Limitless protobuf protocol (ServerCommandMsg).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/thechrisfischer/mag-pendant",
+                "description": "thechrisfischer/mag-pendant src/mag_pendant/config.py: 'CONTROL_UUID = \"632de002-604c-446b-a80f-7963e950f3fb\"'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "632de001-604c-446b-a80f-7963e950f3fb"
+    },
+    {
+        "UUID": "632de003-604c-446b-a80f-7963e950f3fb",
+        "company": "Limitless (acquired by Meta, Dec 2025)",
+        "UUID_name": "Limitless Pendant Data Characteristic",
+        "UUID_purpose": "BLE data characteristic of the Limitless Pendant LS-PT-01. Carries chunked/fragmented audio data and protobuf-encoded responses.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/thechrisfischer/mag-pendant",
+                "description": "thechrisfischer/mag-pendant src/mag_pendant/config.py: 'DATA_UUID = \"632de003-604c-446b-a80f-7963e950f3fb\"'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "632de001-604c-446b-a80f-7963e950f3fb"
+    },
+    {
+        "UUID": "632de00x-604c-446b-a80f-7963e950f3fb",
+        "company": "Limitless (acquired by Meta, Dec 2025)",
+        "UUID_name": "Limitless Pendant Service/Characteristic Family (regex)",
+        "UUID_purpose": "Family regex covering the Limitless Pendant custom BLE service (632de001) and its characteristics (632de002 audio control, 632de003 data). Devices: Limitless Pendant LS-PT-01.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/thechrisfischer/mag-pendant",
+                "description": "mag-pendant config.py defines the 632de001..632de003 family as the Limitless pendant custom service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
         "UUID": "00002080-8eab-46c2-b788-0e9440016fd1",
         "company": "Linksys (Belkin)",
         "UUID_name": "Intelligent Mesh BLE Provisioning",
@@ -2344,6 +3441,230 @@
             {
                 "URL": "https://github.com/phurth/ble-plugin-bridge/blob/main/app/src/main/java/com/blemqttbridge/plugins/onecontrol/protocol/Constants.kt",
                 "description": "phurth/ble-plugin-bridge OneControl protocol Constants.kt: DISCOVERY_SERVICE_UUID = '00000041-0200-a58e-e411-afe28044e62c', LCI_MANUFACTURER_ID = 1479 (0x05C7). Cross-confirmed in phurth/ha-onecontrol, Brunke/ha-onecontrol, jkoehler11/ha-onecontrol Home Assistant integrations.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "16e009bb-3862-43c7-8f5c-6f654a4ffdd2",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "Unknown read/write Characteristic (UE Boom 2 / Megaboom 3)",
+        "UUID_purpose": "Custom read/write characteristic observed on UE Boom 2 / Megaboom 3 BLE GATT. Pairs with sibling 16e005bb-* on the same speaker.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.countableset.com/2022/02/22/ue-boom-reverse-engineering/",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "16e005bb-3862-43c7-8f5c-6f654a4ffdd2",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "UE Alarm",
+        "UUID_purpose": "Logitech Ultimate Ears (UE) BOOM / MEGABOOM speaker alarm-clock characteristic. Used by the UE Companion app to configure the wake-up alarm scheduled tone on the speaker. Confirmed on UE BOOM 2. Sibling characteristic 16e009bb-3862-43c7-8f5c-6f654a4ffdd2 (same vendor-base differing only in the 4th byte) is a related custom data channel.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/kancelott/ue-boom-2-bt-le-reverse-engineering",
+                "description": "kancelott/ue-boom-2-bt-le-reverse-engineering README labels this UUID 'ALARM'. countableset.com UE BOOM RE writeup (2022/02/22) confirms the same UUID under the UE BOOM primary service and additionally enumerates sibling 16e009bb-... showing the shared vendor-base pattern 16e0XXbb-3862-43c7-8f5c-6f654a4ffdd2.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "54f7f292-7ebb-4267-83c2-8e6ee7e881ff",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "UE Color",
+        "UUID_purpose": "Logitech Ultimate Ears (UE) BOOM / MEGABOOM speaker color characteristic. Read-only; identifies which color/finish variant of the speaker hardware is connected. Used by the UE Companion app to render the correct virtual speaker artwork. Confirmed on UE BOOM 2.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/kancelott/ue-boom-2-bt-le-reverse-engineering",
+                "description": "kancelott/ue-boom-2-bt-le-reverse-engineering README labels this UUID 'COLOR'. countableset.com UE BOOM RE writeup (2022/02/22) enumerates the same UUID under the UE BOOM primary service and labels it 'manufacturer-specific (Read)'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "c6d6dc0d-07f5-47ef-9b59-630622b01fd3",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "UE Remote Power-On/Off",
+        "UUID_purpose": "Logitech Ultimate Ears (UE) BOOM / MEGABOOM speaker remote power control characteristic. Write of <peer_BD_ADDR>||0x01 turns the speaker on, write of <peer_BD_ADDR>||0x02 turns it off, where peer_BD_ADDR is the MAC of an already-paired device. Confirmed on UE BOOM 2; same characteristic value (handle 0x0003 in the legacy advertised service) is the mechanism the official UE app uses for the in-app power button. Originally identified by sniffing PacketLogger HCI traffic from the iOS UE app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/kancelott/ue-boom-2-bt-le-reverse-engineering",
+                "description": "kancelott/ue-boom-2-bt-le-reverse-engineering README explicitly defines POWER_ON = c6d6dc0d-07f5-47ef-9b59-630622b01fd3 with the MAC||01/MAC||02 power-on/off semantics. Independently confirmed by Alessandro Aime's blog (alessandroaime.com/2019/12/05) and the countableset.com 2022/02/22 UE BOOM RE writeup, both of which discovered the same UUID inside the UE BOOM/MEGABOOM primary service via gatttool enumeration.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "16e0xxbb-3862-43c7-8f5c-6f654a4ffdd2",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "UE BOOM custom characteristic base (16e0XXbb)",
+        "UUID_purpose": "Logitech Ultimate Ears vendor-base UUID pattern for custom GATT characteristics on UE BOOM / MEGABOOM speakers. Multiple custom characteristics share the same 16e0XXbb-3862-43c7-8f5c-6f654a4ffdd2 base, varying only the 3rd byte (XX). Known instantiations include 16e005bb (Alarm) and 16e009bb (custom data channel). Useful as a regex for fingerprinting unknown UE BOOM-family speakers.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.countableset.com/2022/02/22/ue-boom-reverse-engineering/",
+                "description": "countableset.com UE BOOM reverse-engineering writeup enumerates both 16e005bb-... and 16e009bb-... under the same UE BOOM primary service, exposing the shared vendor-base 16e0XXbb-3862-43c7-8f5c-6f654a4ffdd2 pattern. Cross-confirmed by kancelott/ue-boom-2-bt-le-reverse-engineering.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "4356a21c-a599-4b94-a1c8-4b91fca02a9a",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Unidentified custom GATT characteristic enumerated on Logitech Ultimate Ears (UE) BOOM 2 speaker under its primary service. Purpose not yet documented by either of the two public reverse-engineering writeups; the UE Companion app uses it but the semantics have not been reversed.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/kancelott/ue-boom-2-bt-le-reverse-engineering",
+                "description": "kancelott/ue-boom-2-bt-le-reverse-engineering and countableset.com (2022/02/22) both list this UUID among the UE BOOM 2 custom characteristics with purpose not documented.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "015c9ee9-f3bf-4f2c-a35b-58267432c9ca",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Unidentified custom Read-only GATT characteristic enumerated on Logitech Ultimate Ears (UE) BOOM 2 speaker under its primary service. Purpose not yet documented by public reverse-engineering writeups.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.countableset.com/2022/02/22/ue-boom-reverse-engineering/",
+                "description": "countableset.com (2022/02/22) UE BOOM reverse-engineering writeup enumerates this UUID via gatttool under the UE BOOM 2 primary service as a custom Read characteristic; purpose not documented.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "5e72ccf6-f526-4bfb-b334-0204a75c84ff",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Unidentified custom Read-only GATT characteristic enumerated on Logitech Ultimate Ears (UE) BOOM 2 speaker under its primary service. Purpose not yet documented by public reverse-engineering writeups.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.countableset.com/2022/02/22/ue-boom-reverse-engineering/",
+                "description": "countableset.com (2022/02/22) UE BOOM reverse-engineering writeup enumerates this UUID via gatttool under the UE BOOM 2 primary service as a custom Read characteristic; purpose not documented.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "765c2f02-4292-45c6-b69c-725e131f97a2",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Unidentified custom Read-only GATT characteristic enumerated on Logitech Ultimate Ears (UE) BOOM 2 speaker under its primary service. Purpose not yet documented by public reverse-engineering writeups.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/kancelott/ue-boom-2-bt-le-reverse-engineering",
+                "description": "kancelott/ue-boom-2-bt-le-reverse-engineering and countableset.com (2022/02/22) both list this UUID among the UE BOOM 2 custom characteristics ('Read') with purpose not documented.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "03ed06ef-6f39-4b62-8143-e2cc6d8a3cd9",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Unidentified custom Read/Write GATT characteristic enumerated on Logitech Ultimate Ears (UE) BOOM 2 speaker under its primary service. Purpose not yet documented by public reverse-engineering writeups.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/kancelott/ue-boom-2-bt-le-reverse-engineering",
+                "description": "kancelott/ue-boom-2-bt-le-reverse-engineering and countableset.com (2022/02/22) both list this UUID among the UE BOOM 2 custom characteristics ('Read/Write') with purpose not documented.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "69c0f621-1354-4cf8-98a6-328b8faa1897",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Unidentified custom Read/Write GATT characteristic enumerated on Logitech Ultimate Ears (UE) BOOM 2 speaker under its primary service. Purpose not yet documented by public reverse-engineering writeups.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.countableset.com/2022/02/22/ue-boom-reverse-engineering/",
+                "description": "countableset.com (2022/02/22) UE BOOM reverse-engineering writeup enumerates this UUID via gatttool under the UE BOOM 2 primary service as a custom Read/Write characteristic; purpose not documented.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "fd6c01c5-25d5-4cd0-8806-52486311bd32",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Unidentified custom Read/Write GATT characteristic enumerated on Logitech Ultimate Ears (UE) BOOM 2 speaker under its primary service. Purpose not yet documented by public reverse-engineering writeups.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.countableset.com/2022/02/22/ue-boom-reverse-engineering/",
+                "description": "countableset.com (2022/02/22) UE BOOM reverse-engineering writeup enumerates this UUID via gatttool under the UE BOOM 2 primary service as a custom Read/Write characteristic; purpose not documented.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "8da149b6-5d82-11e5-885d-feff819cdc9f",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Unidentified custom Write GATT characteristic enumerated on Logitech Ultimate Ears (UE) BOOM 2 speaker under its primary service. Purpose not yet documented by public reverse-engineering writeups.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.countableset.com/2022/02/22/ue-boom-reverse-engineering/",
+                "description": "countableset.com (2022/02/22) UE BOOM reverse-engineering writeup enumerates this UUID via gatttool under the UE BOOM 2 primary service as a custom Write characteristic; purpose not documented.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "b8387326-c355-4efc-b258-a67a38c00efd",
+        "company": "Logitech (Ultimate Ears)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Unidentified custom Write GATT characteristic enumerated on Logitech Ultimate Ears (UE) BOOM 2 speaker under its primary service. Purpose not yet documented by public reverse-engineering writeups.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.countableset.com/2022/02/22/ue-boom-reverse-engineering/",
+                "description": "countableset.com (2022/02/22) UE BOOM reverse-engineering writeup enumerates this UUID via gatttool under the UE BOOM 2 primary service as a custom Write characteristic; purpose not documented.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -2421,6 +3742,38 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "78667579-7b48-43db-b8c5-7928a6b0a335",
+        "company": "Magic Motion",
+        "UUID_name": "Magic Motion toy control service",
+        "UUID_purpose": "Proprietary BLE GATT service exposed by Magic Motion interactive adult toys (Smart Mini Vibe, Eidolon, Flamingo, Equinox, Fugu, Crystal, Sundae, Kegel-Coach, Bunny, etc.) and used by the Magic Motion / Magic-Flamingo app. Companion characteristic 78667579-a914-49a4-8333-aa3c0cd8fedc handles writes.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "description": "buttplugio/buttplug-device-config explicitly registers the magic-motion protocol with service UUID 78667579-7b48-43db-b8c5-7928a6b0a335 and tx characteristic 78667579-a914-49a4-8333-aa3c0cd8fedc.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "78667579-a914-49a4-8333-aa3c0cd8fedc",
+        "company": "Magic Motion",
+        "UUID_name": "Magic Motion TX (control) characteristic",
+        "UUID_purpose": "Magic Motion command write characteristic for vibration intensity/pattern.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "78667579-7b48-43db-b8c5-7928a6b0a335"
     },
     {
         "UUID": "54421000-756f-4c74-6472-61757172614d",
@@ -2553,6 +3906,54 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "f0006900-110c-478b-b74b-6f403b364a9c",
+        "company": "MysteryVibe Ltd.",
+        "UUID_name": "MysteryVibe control service",
+        "UUID_purpose": "Proprietary BLE GATT service exposed by MysteryVibe interactive adult toys (Crescendo, Crescendo 2, Poco, Tenuto, Tenuto 2, etc.) for shape/intensity control. Companion characteristics: f0006901-... (tx-mode) and f0006903-... (tx-vibrate).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "description": "buttplugio/buttplug-device-config explicitly registers the mysteryvibe protocol with service UUID f0006900-110c-478b-b74b-6f403b364a9c and characteristics f0006901-... and f0006903-...",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "f0006901-110c-478b-b74b-6f403b364a9c",
+        "company": "MysteryVibe Ltd.",
+        "UUID_name": "MysteryVibe TX-mode characteristic",
+        "UUID_purpose": "MysteryVibe mode-select / state characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "f0006900-110c-478b-b74b-6f403b364a9c"
+    },
+    {
+        "UUID": "f0006903-110c-478b-b74b-6f403b364a9c",
+        "company": "MysteryVibe Ltd.",
+        "UUID_name": "MysteryVibe TX-vibrate characteristic",
+        "UUID_purpose": "MysteryVibe vibration-intensity write characteristic — host -> toy per-motor speed bytes.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "f0006900-110c-478b-b74b-6f403b364a9c"
     },
     {
         "UUID": "01ff0100-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
@@ -2754,6 +4155,120 @@
         ]
     },
     {
+        "UUID": "a92ee000-5501-11e4-916c-0800200c9a66",
+        "company": "Nuki Home Solutions",
+        "UUID_name": "Keyturner Initialization Service",
+        "UUID_purpose": "BLE GATT service advertised by a Nuki Smart Lock that has not yet been initialized/paired with an owner; used during the initial setup phase before encryption keys are established.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://developer.nuki.io/t/bluetooth-gatt-services/89",
+                "description": "Official Nuki developer forum thread 'Bluetooth GATT services' authored by Nuki staff, explicitly listing the Keyturner Initialization Service UUID for Nuki Smart Lock products. Vendor-authored disclosure.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "a92ee100-5501-11e4-916c-0800200c9a66",
+        "company": "Nuki Home Solutions",
+        "UUID_name": "Keyturner Pairing Service",
+        "UUID_purpose": "BLE GATT service used during the pairing phase between a Nuki Smart Lock and a mobile app, exposing a single General Data Input Output (GDIO) characteristic for unencrypted key-agreement data.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://developer.nuki.io/t/bluetooth-gatt-services/89",
+                "description": "Official Nuki developer forum thread 'Bluetooth GATT services' lists the Keyturner Pairing Service UUID for the Nuki Smart Lock. Vendor-authored disclosure.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "a92ee101-5501-11e4-916c-0800200c9a66",
+        "company": "Nuki Home Solutions",
+        "UUID_name": "Keyturner Pairing GDIO Characteristic",
+        "UUID_purpose": "General Data Input Output characteristic inside the Nuki Keyturner Pairing Service, used for bidirectional unencrypted exchange of protocol data during pairing.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://developer.nuki.io/t/bluetooth-gatt-services/89",
+                "description": "Official Nuki developer forum thread 'Bluetooth GATT services' documents the GDIO characteristic of the Keyturner Pairing Service. Vendor-authored disclosure.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "a92ee201-5501-11e4-916c-0800200c9a66",
+        "company": "Nuki Home Solutions",
+        "UUID_name": "Keyturner GDIO Characteristic",
+        "UUID_purpose": "General Data Input Output characteristic inside the Nuki Keyturner Service, used to retrieve unencrypted/protocol-level data from the Smart Lock after pairing.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://developer.nuki.io/t/bluetooth-gatt-services/89",
+                "description": "Official Nuki developer forum thread 'Bluetooth GATT services' documents the GDIO characteristic of the Keyturner Service. Vendor-authored disclosure.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "a92ee200-5501-11e4-916c-0800200c9a66",
+        "company": "Nuki Home Solutions",
+        "UUID_name": "Keyturner Service",
+        "UUID_purpose": "Main BLE GATT service of a paired Nuki Smart Lock, exposing characteristics used to send lock/unlock commands and retrieve status after a pairing has completed.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://developer.nuki.io/t/bluetooth-gatt-services/89",
+                "description": "Official Nuki developer forum thread 'Bluetooth GATT services' documents the main Keyturner Service UUID for the Nuki Smart Lock. Vendor-authored disclosure.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "a92ee202-5501-11e4-916c-0800200c9a66",
+        "company": "Nuki Home Solutions",
+        "UUID_name": "Keyturner USDIO Characteristic",
+        "UUID_purpose": "User-Specific Data Input Output characteristic inside the Nuki Keyturner Service, used for encrypted and authenticated per-user command exchange (lock/unlock commands and responses).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://developer.nuki.io/t/bluetooth-gatt-services/89",
+                "description": "Official Nuki developer forum thread 'Bluetooth GATT services' documents the USDIO characteristic of the Keyturner Service. Vendor-authored disclosure.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "a92eexxx-5501-11e4-916c-0800200c9a66",
+        "company": "Nuki Home Solutions",
+        "UUID_name": "Nuki Keyturner UUID family base",
+        "UUID_purpose": "Wildcard pattern matching all 128-bit UUIDs in the Nuki Keyturner BLE service/characteristic family used by Nuki Smart Lock products. Vendor uses the suffix 5501-11e4-916c-0800200c9a66 (a Type-1 UUID generated for Nuki).",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://developer.nuki.io/t/bluetooth-gatt-services/89",
+                "description": "Family pattern derived from Nuki's official Bluetooth GATT services documentation (Keyturner Initialization, Pairing, Service, and their child characteristics all share this base).",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
         "UUID": "ce060000-43e5-11e4-916c-0800200c9a66",
         "company": "Nuki Home Solutions GmbH",
         "UUID_name": "Nuki Keyturner BLE service (sibling)",
@@ -2781,22 +4296,6 @@
             {
                 "URL": "https://github.com/richardhopton/smartbed-mqtt/blob/main/src/Okimat/okimat.ts",
                 "description": "smartbed-mqtt Okimat driver uses this UUID as the writeCharacteristic; sibling 62741525 is the feedback characteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "632de001-604c-446b-a80f-7963e950f3fb",
-        "company": "Omi (formerly Friend)",
-        "UUID_name": "Omi wearable AI necklace BLE service",
-        "UUID_purpose": "BLE service exposed by the Omi (formerly named 'Friend') wearable AI necklace — an always-on AI assistant pendant. Used by the Omi mobile app to receive audio streams and device telemetry.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/BasedHardware/omi",
-                "description": "Omi (BasedHardware/omi) flutter app references this UUID in app/lib/services/devices/models.dart. Forked by many users including beastoin/omi, bozkurtfurkan/omi.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -2981,6 +4480,39 @@
             }
         ],
         "regex": true
+    },
+    {
+        "UUID": "00e4ca9e-ab14-41e4-8823-f9e70c7e91df",
+        "company": "Philips Hearing Solutions / Oticon (Demant)",
+        "UUID_name": "POLARIS ASHA Volume Fallback Characteristic",
+        "UUID_purpose": "ASHA (Audio Streaming for Hearing Aids) volume fallback characteristic on POLARIS hearing aids. Signed int8 `[-128..0]` payload. Used when direct POLARIS volume characteristic is not available.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md: 'ASHA volume (fallback) | 00e4ca9e-ab14-41e4-8823-f9e70c7e91df | signed int8 [-128..0] | ✅ confirmed'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "bba1c7f1-b445-4657-90c3-8dbd97361a0c",
+        "company": "Philips Hearing Solutions / Oticon (Demant)",
+        "UUID_name": "POLARIS Program Config Read Characteristic",
+        "UUID_purpose": "POLARIS hearing aid characteristic used to read program configuration when the program-list characteristic is not yet ready. Partial.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md: 'Program config read | bba1c7f1-b445-4657-90c3-8dbd97361a0c | read when program list not ready'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "56772eaf-2153-4f74-acf3-4368d99fbf5a"
     },
     {
         "UUID": "50c928bd-4cb8-4c84-b745-0e58a0280cd6",
@@ -3269,6 +4801,71 @@
         ]
     },
     {
+        "UUID": "24e1dff3-ae90-41bf-bfbd-2cf8df42bf87",
+        "company": "ReSound / GN Hearing",
+        "UUID_name": "ReSound Battery Characteristic (partial)",
+        "UUID_purpose": "ReSound / GN Hearing battery level characteristic. Partial — listed in the protocol_registry.json under the SIG Device Information service (0x180A).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control protocol_registry.json: brand=resound, operation=GetBatteryState, characteristicUuid=24e1dff3-ae90-41bf-bfbd-2cf8df42bf87, confidence=partial.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "e0262760-08c2-11e1-9073-0e8ac72eaxxx",
+        "company": "ReSound / GN Hearing",
+        "UUID_name": "GN Primary Service Family (regex)",
+        "UUID_purpose": "ReSound / GN Hearing primary BLE service family. Detection key for ReSound hearing aids. The last 12 bits (XXX) vary by service/characteristic. Per sk408's RE, 'Scan for e0262760 service family or ASHA 0000fdf0'.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md section 2.4: 'Primary service family: e0262760-08c2-11e1-9073-0e8ac72eaXXX'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "1959a468-3234-4c18-9e78-8daf8d9dbf61",
+        "company": "ReSound / GN Hearing",
+        "UUID_name": "GN Command Characteristic",
+        "UUID_purpose": "ReSound / GN Hearing proprietary BLE command characteristic. Carries opcode-based control frames: write handle `[0x03, handleLow, payload...]`, read handle `[0x04, handleLow]`, read blob `[0x05, handleLow, 0x00, 0x00]`, discover `[0x06]`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md section 2.4: 'ReSound / GN Hearing — GN Command UUID: 1959a468-3234-4c18-9e78-8daf8d9dbf61'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "8b51a2ca-5bed-418b-b54b-22fe666aadd2",
+        "company": "ReSound / GN Hearing",
+        "UUID_name": "GN Notify Characteristic",
+        "UUID_purpose": "ReSound / GN Hearing proprietary BLE notify characteristic. Paired with GN Command (1959a468) for command responses.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md: 'GN Notify UUID: 8b51a2ca-5bed-418b-b54b-22fe666aadd2'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
         "UUID": "6a24eeab-4b65-4693-986b-3c26c352264f",
         "company": "Realtek Semiconductor Corp.",
         "UUID_name": "Realsil SDK SPP transport-layer service",
@@ -3316,6 +4913,124 @@
             }
         ],
         "regex": true
+    },
+    {
+        "UUID": "8b82105d-0f0c-40bb-b422-3770fa72a864",
+        "company": "Rexton / WS Audiology",
+        "UUID_name": "Rexton Terminal IO Service",
+        "UUID_purpose": "Rexton hearing aid (WS Audiology, parent of Signia/Widex/Rexton) Terminal IO BLE service. Hosts opcode-based volume/program/balance/tinnitus/CROS control via a single characteristic with opcode-byte payloads. Rexton hearing aids also share the Philips POLARIS service (56772eaf) for basic control.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md section 2.2: 'Rexton / WS Audiology — Terminal IO service: 8b82105d-0f0c-40bb-b422-3770fa72a864'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "8b8225e0-0f0c-40bb-b422-3770fa72a864",
+        "company": "Rexton / WS Audiology",
+        "UUID_name": "Rexton Program Notify Characteristic",
+        "UUID_purpose": "Rexton hearing aid notification characteristic for currently-active program changes. Subscribe to receive program updates.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md: 'Program notify | 8b8225e0-0f0c-40bb-b422-3770fa72a864 | subscribe for active program | ✅ confirmed'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "8b82105d-0f0c-40bb-b422-3770fa72a864"
+    },
+    {
+        "UUID": "8b8276e8-0f0c-40bb-b422-3770fa72a864",
+        "company": "Rexton / WS Audiology",
+        "UUID_name": "Rexton Terminal IO Control Characteristic",
+        "UUID_purpose": "Rexton hearing aid Terminal IO control characteristic. Single endpoint multiplexes Volume (opcode 0x04), Program switch (0x05), Balance (0x06), Tinnitus volume (0x07), and CROS volume (0x08) via the first byte of the payload.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md: 'Volume | 8b8276e8-0f0c-40bb-b422-3770fa72a864 | [0x04, volumePosition] | ✅ confirmed' (plus 5 sibling opcodes on same characteristic).",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "8b82105d-0f0c-40bb-b422-3770fa72a864"
+    },
+    {
+        "UUID": "c8f75466-21b2-45b8-87f8-bd49a13eff49",
+        "company": "Rexton / WS Audiology",
+        "UUID_name": "Rexton Control/FAPI Service",
+        "UUID_purpose": "Rexton hearing aid Control/FAPI (Firmware API) BLE service. Used for command-based device control and data transfer.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md: 'Control/FAPI service: c8f75466-21b2-45b8-87f8-bd49a13eff49'. Used as both service and Control request characteristic per SPEC table.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "c8f70447-21b2-45b8-87f8-bd49a13eff49",
+        "company": "Rexton / WS Audiology",
+        "UUID_name": "Rexton Control Response Characteristic",
+        "UUID_purpose": "Rexton hearing aid notify characteristic for Control/FAPI service responses. Subscribe to receive command responses.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md: 'Control response | c8f70447-21b2-45b8-87f8-bd49a13eff49 | subscribe | ✅ confirmed'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "c8f75466-21b2-45b8-87f8-bd49a13eff49"
+    },
+    {
+        "UUID": "c8f72804-21b2-45b8-87f8-bd49a13eff49",
+        "company": "Rexton / WS Audiology",
+        "UUID_name": "Rexton Data Request Characteristic",
+        "UUID_purpose": "Rexton hearing aid Control/FAPI data request characteristic. Used for chunked data exchange.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md: 'Data request | c8f72804-21b2-45b8-87f8-bd49a13eff49 | chunked | ✅ confirmed'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "c8f75466-21b2-45b8-87f8-bd49a13eff49"
+    },
+    {
+        "UUID": "ebee6f69-70b6-4bb9-b13b-9ba84953c233",
+        "company": "Rexton / WS Audiology",
+        "UUID_name": "Rexton Battery Level Characteristic",
+        "UUID_purpose": "Rexton hearing aid proprietary battery level read characteristic, paired with the 0a23ae62 service.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control protocol_registry.json: brand=rexton, GetBatteryState, characteristicUuid=ebee6f69-70b6-4bb9-b13b-9ba84953c233.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "0a23ae62-c4c2-43d1-87b1-e8c83839a063"
     },
     {
         "UUID": "0f291746-0c80-4726-87a7-3c501fd3b4b6",
@@ -3801,6 +5516,125 @@
         "regex": true
     },
     {
+        "UUID": "0000153x-1212-efde-1523-785feabcd123",
+        "company": "Sciener (TTLock)",
+        "UUID_name": "TTLock UUID family base",
+        "UUID_purpose": "Wildcard pattern matching all GATT service/characteristic UUIDs in the TTLock primary BLE service family (1530-1534) used by Sciener TTLock smart locks and many OEM-rebranded products.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Fusseldieb/ttlock-reverse-engineering",
+                "description": "Family pattern derived from the Fusseldieb/ttlock-reverse-engineering GATT enumeration showing the primary service plus three child characteristics in the 1530-1534 range.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "6e400001-0000-0000-006e-696e65626f74",
+        "company": "Segway-Ninebot (Ninebot KickScooter/MAX/G30/ES series, Mini Pro, etc.)",
+        "UUID_name": "Ninebot custom service",
+        "UUID_purpose": "BLE GATT service on modern Segway-Ninebot scooters and self-balancing devices for app<->scooter command/notification traffic. The last 12 hex digits 6e-696e-65626f74 ASCII-decode to '\\x6Eninebot' (the trailing 'ninebot' codename plus a 0x6e prefix), distinguishing this service base from the Nordic UART Service (NUS) base used on legacy units. Houses write characteristic 6e400002, RCTP write 6e400003, notify characteristic 6e400004, and factory test characteristics 6e400005/6e400006.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://nootnooot.codeberg.page/segway-ninebot-ble/",
+                "description": "Open documentation of the Segway-Ninebot BLE protocol; identifies this UUID as the modern Ninebot custom service and decodes the 'ninebot' ASCII suffix.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "6e400002-0000-0000-006e-696e65626f74",
+        "company": "Segway-Ninebot (Ninebot KickScooter/MAX/G30/ES series, Mini Pro, etc.)",
+        "UUID_name": "Ninebot write characteristic (app -> device)",
+        "UUID_purpose": "BLE GATT characteristic on modern Segway-Ninebot scooters; primary app-to-device WRITE channel used by the Segway-Ninebot mobile app for commands. Child of Ninebot custom service 6e400001-0000-0000-006e-696e65626f74.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://nootnooot.codeberg.page/segway-ninebot-ble/transport/",
+                "description": "Segway-Ninebot BLE transport documentation lists this characteristic as the app-to-device WRITE channel.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "6e400001-0000-0000-006e-696e65626f74"
+    },
+    {
+        "UUID": "6e400003-0000-0000-006e-696e65626f74",
+        "company": "Segway-Ninebot (Ninebot KickScooter/MAX/G30/ES series, Mini Pro, etc.)",
+        "UUID_name": "Ninebot RCTP secondary write characteristic",
+        "UUID_purpose": "BLE GATT characteristic on modern Segway-Ninebot scooters; secondary WRITE channel for RCTP (Remote Control Transport Protocol) command framing. Child of Ninebot custom service 6e400001-0000-0000-006e-696e65626f74.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://nootnooot.codeberg.page/segway-ninebot-ble/transport/",
+                "description": "Segway-Ninebot BLE transport documentation lists this characteristic as the RCTP secondary WRITE channel.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "6e400001-0000-0000-006e-696e65626f74"
+    },
+    {
+        "UUID": "6e400004-0000-0000-006e-696e65626f74",
+        "company": "Segway-Ninebot (Ninebot KickScooter/MAX/G30/ES series, Mini Pro, etc.)",
+        "UUID_name": "Ninebot notify characteristic (device -> app)",
+        "UUID_purpose": "BLE GATT characteristic on modern Segway-Ninebot scooters; primary device-to-app NOTIFY channel for telemetry and command replies. Child of Ninebot custom service 6e400001-0000-0000-006e-696e65626f74.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://nootnooot.codeberg.page/segway-ninebot-ble/transport/",
+                "description": "Segway-Ninebot BLE transport documentation lists this characteristic as the device-to-app NOTIFY channel.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "6e400001-0000-0000-006e-696e65626f74"
+    },
+    {
+        "UUID": "6e400005-0000-0000-006e-696e65626f74",
+        "company": "Segway-Ninebot (Ninebot KickScooter/MAX/G30/ES series, Mini Pro, etc.)",
+        "UUID_name": "Ninebot factory-test write characteristic",
+        "UUID_purpose": "BLE GATT characteristic on modern Segway-Ninebot scooters; factory-diagnostic WRITE channel. Child of Ninebot custom service 6e400001-0000-0000-006e-696e65626f74.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://nootnooot.codeberg.page/segway-ninebot-ble/transport/",
+                "description": "Segway-Ninebot BLE transport documentation lists this characteristic as a factory-diagnostics WRITE channel.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "6e400001-0000-0000-006e-696e65626f74"
+    },
+    {
+        "UUID": "6e400006-0000-0000-006e-696e65626f74",
+        "company": "Segway-Ninebot (Ninebot KickScooter/MAX/G30/ES series, Mini Pro, etc.)",
+        "UUID_name": "Ninebot factory-test notify characteristic",
+        "UUID_purpose": "BLE GATT characteristic on modern Segway-Ninebot scooters; factory-diagnostic NOTIFY channel. Child of Ninebot custom service 6e400001-0000-0000-006e-696e65626f74.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://nootnooot.codeberg.page/segway-ninebot-ble/transport/",
+                "description": "Segway-Ninebot BLE transport documentation lists this characteristic as a factory-diagnostics NOTIFY channel.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "6e400001-0000-0000-006e-696e65626f74"
+    },
+    {
         "UUID": "deab91e4-670f-11e1-9ace-30bc4824019b",
         "company": "Sennheiser",
         "UUID_name": "PXC 550 / CapTune / Smart Control RFCOMM",
@@ -3888,6 +5722,397 @@
         "evidence_array": [
             {
                 "URL": "https://www.emtbforums.com/threads/orbea-rise-free-all-the-data-via-ant.30390/",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "932c32bd-0001-47a2-835a-a8d455b859dd",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Unknown configuration characteristic",
+        "UUID_purpose": "Characteristic in Philips Hue Light Control Service 932c32bd-0000-47a2-835a-a8d455b859dd. Function not fully documented; likely a configuration or capability register.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Listed in Philips Hue BLE GATT enumeration gist as part of the 932c32bd-XXXX-47a2-835a-a8d455b859dd family.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "932c32bd-1005-47a2-835a-a8d455b859dd",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Power-loss default state",
+        "UUID_purpose": "Characteristic in Philips Hue Light Control Service that stores the bulb's default state after power loss (off/last-state/specific value).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Philips Hue BLE reverse-engineering gist documenting non-sequential characteristic 1005 in the 932c32bd family.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "9da2ddf1-0001-44d0-909c-3f3d3cb34a7b",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Schedule Management characteristic",
+        "UUID_purpose": "Characteristic in Philips Hue Schedule Management Service used to enumerate and manage on-bulb schedules.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Mic92/hue-ble-ctl",
+                "description": "Hue BLE controller library introspection lists 9da2ddf1-0001 in the schedule service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "b8843add-0002-4aa1-8794-c3f462030bda",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Firmware Update characteristic 2",
+        "UUID_purpose": "Characteristic in Philips Hue firmware-update service (b8843add-0000-4aa1-8794-c3f462030bda).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Listed in Philips Hue BLE GATT enumeration gist.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "b8843add-0003-4aa1-8794-c3f462030bda",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Firmware Update characteristic 3",
+        "UUID_purpose": "Characteristic in Philips Hue firmware-update service (b8843add-0000-4aa1-8794-c3f462030bda).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Listed in Philips Hue BLE GATT enumeration gist.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "b8843add-0004-4aa1-8794-c3f462030bda",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Firmware Update characteristic 4",
+        "UUID_purpose": "Characteristic in Philips Hue firmware-update service (b8843add-0000-4aa1-8794-c3f462030bda).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Listed in Philips Hue BLE GATT enumeration gist.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "97fe6561-0004-4f62-86e9-b71ee2da3d22",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Possible factory reset",
+        "UUID_purpose": "Characteristic under Philips device-configuration service 0000fe0f on Hue BLE-capable bulbs; likely factory-reset trigger.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Listed in Philips Hue BLE GATT enumeration gist as 'possible factory reset'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "97fe6561-0003-4f62-86e9-b71ee2da3d22",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "User-defined device name",
+        "UUID_purpose": "Characteristic under Philips device-configuration service 0000fe0f that stores the human-readable bulb name (e.g. 'bedroom'). Used by Philips Hue BLE-capable bulbs.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Philips Hue BLE RE gist labels 97fe6561-0003 as 'user-defined device name'; corroborated by Mic92/hue-ble-ctl output showing actual room/device name string.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "b8843add-0001-4aa1-8794-c3f462030bda",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Firmware Update characteristic 1",
+        "UUID_purpose": "First characteristic in Philips Hue firmware-update service; observed to contain color/state data per Mic92/hue-ble-ctl notes.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/Mic92/hue-ble-ctl",
+                "description": "Hue BLE controller library introspection output lists b8843add-0001 in the firmware-update service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "932c32bd-0000-47a2-835a-a8d455b859dd",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Light Control Service",
+        "UUID_purpose": "Primary vendor-specific GATT service on Philips Hue BLE-capable bulbs (Bluetooth-enabled Hue White/Ambiance/Color models). Contains characteristics for power, brightness, color temperature, and color control.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Philips Hue BLE GATT enumeration gist by shinyquagsire23; confirmed by multiple RE writeups (Mic92/hue-ble-ctl, glyphack.com/huec) showing this service on Hue bulbs (e.g. model LWA001).",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "97fe6561-xxxx-4f62-86e9-b71ee2da3d22",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Hue 97fe6561 config family (regex)",
+        "UUID_purpose": "Regex pattern for Philips device-configuration characteristics (Zigbee address, device name, factory reset, write-only config) on BLE-capable Hue bulbs.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Family includes 97fe6561-0001/0003/0004/2001/2002/2004/a001.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "932c32bd-xxxx-47a2-835a-a8d455b859dd",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Hue Light Control family (regex)",
+        "UUID_purpose": "Regex pattern for the Philips Hue Light Control Service and its characteristics. Used to identify Hue BLE-capable bulbs.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Family includes 932c32bd-0000..0007 and 932c32bd-1005 documented as Hue BLE light control service/characteristics.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "9da2ddf1-xxxx-44d0-909c-3f3d3cb34a7b",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Hue Schedule Management family (regex)",
+        "UUID_purpose": "Regex pattern for the Philips Hue Schedule Management service on BLE-capable Hue bulbs.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Family includes 9da2ddf1-0000 (service) and 9da2ddf1-0001 (characteristic) for Hue schedule management.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "b8843add-xxxx-4aa1-8794-c3f462030bda",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Hue Firmware Update family (regex)",
+        "UUID_purpose": "Regex pattern for the Philips Hue firmware-update service and its four characteristics on BLE-capable Hue bulbs.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Family includes b8843add-0000..0004 documented as the Hue OTA service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "9da2ddf1-0000-44d0-909c-3f3d3cb34a7b",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Schedule Management Service",
+        "UUID_purpose": "Vendor-specific GATT service on Philips Hue BLE bulbs that manages wake/sleep schedules with create/read/update/delete operations.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Philips Hue BLE RE gist; observed in Mic92/hue-ble-ctl introspection output.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "b8843add-0000-4aa1-8794-c3f462030bda",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Firmware Update Service",
+        "UUID_purpose": "Vendor-specific GATT service on Philips Hue BLE bulbs used for firmware update / OTA. Hosts characteristics b8843add-0001..0004 for control/data/state transfer.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Documented in Hue BLE GATT enumeration gist and observed in Mic92/hue-ble-ctl introspection output.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "932c32bd-0007-47a2-835a-a8d455b859dd",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Combined color + brightness control",
+        "UUID_purpose": "Writable characteristic in Philips Hue Light Control Service that sets color and brightness in a single transaction (referenced as COLOR_UUID in some Hue BLE tools).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Philips Hue BLE RE gist; corroborated by community search results referencing 932c32bd-0007 as COLOR_UUID for Hue BLE control.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "932c32bd-0005-47a2-835a-a8d455b859dd",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Color",
+        "UUID_purpose": "Writable characteristic in Philips Hue Light Control Service that sets the bulb's RGB/CIE color.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Philips Hue BLE reverse-engineering gist; confirmed in https://glyphack.com/huec/ (Hue color values discussed).",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "932c32bd-0004-47a2-835a-a8d455b859dd",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Color Temperature",
+        "UUID_purpose": "Writable characteristic in Philips Hue Light Control Service that sets the bulb's color temperature (warm/cool white).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Philips Hue BLE reverse-engineering gist documenting the 932c32bd family characteristic indices.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "932c32bd-0006-47a2-835a-a8d455b859dd",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Flash / animation mode",
+        "UUID_purpose": "Write-only characteristic in Philips Hue Light Control Service that triggers built-in flash/animation effects.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Philips Hue BLE reverse-engineering gist documenting the 932c32bd family characteristic indices.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "97fe6561-2001-4f62-86e9-b71ee2da3d22",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Configuration (write-only) 2001",
+        "UUID_purpose": "Write-only configuration characteristic under Philips device-configuration service 0000fe0f on Hue BLE-capable bulbs.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Listed in Philips Hue BLE GATT enumeration gist.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "97fe6561-2002-4f62-86e9-b71ee2da3d22",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Configuration (write-only) 2002",
+        "UUID_purpose": "Write-only configuration characteristic under Philips device-configuration service 0000fe0f on Hue BLE-capable bulbs.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Listed in Philips Hue BLE GATT enumeration gist.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "97fe6561-2004-4f62-86e9-b71ee2da3d22",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Configuration (write-only) 2004",
+        "UUID_purpose": "Write-only configuration characteristic under Philips device-configuration service 0000fe0f on Hue BLE-capable bulbs.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Listed in Philips Hue BLE GATT enumeration gist.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "97fe6561-a001-4f62-86e9-b71ee2da3d22",
+        "company": "Signify (Philips Hue)",
+        "UUID_name": "Configuration (write-only) a001",
+        "UUID_purpose": "Write-only configuration characteristic under Philips device-configuration service 0000fe0f on Hue BLE-capable bulbs.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "description": "Listed in Philips Hue BLE GATT enumeration gist.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -4060,6 +6285,140 @@
         ]
     },
     {
+        "UUID": "8901dfa8-5c7e-4d8f-9f0c-c2b70683f5f0",
+        "company": "Sony",
+        "UUID_name": "RACE over RFCOMM SDP Service (Sony variant)",
+        "UUID_purpose": "Sony-vendor variant of the Airoha RACE (Remote Access Control Engine) protocol exposed over Bluetooth Classic (BR/EDR) via RFCOMM/SDP. RACE is a control/configuration/FOTA protocol shipped in the Airoha BT SoC SDK and used by Airoha-based TWS earbuds and headphones. Sony's fork of Airoha's SDK publishes the RACE SPP service under this specific SDP record UUID instead of the canonical default 00000000-0000-0000-0099-AABBCCDDEEFF. Companion BLE/GATT variant is dc405470-a351-4a59-97d8-2e2e3b207fbb.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://insinuator.net/2025/12/bluetooth-headphone-jacking-full-disclosure-of-airoha-race-vulnerabilities/",
+                "description": "ENRW/Insinuator's December 2025 full-disclosure writeup of the Airoha RACE vulnerabilities explicitly lists this UUID as the Sony-vendor variant of the RACE-over-RFCOMM SPP service. The disclosure confirms 12 vulnerable Sony models among 28+ affected audio devices.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "000000xx-0000-4b49-4e4f-525441474947",
+        "company": "Specialized Bicycle Components",
+        "UUID_name": "Turbo e-bike base UUID (TCU1 / GIGATRONIK protocol generation)",
+        "UUID_purpose": "BLE 128-bit base UUID family for first-generation Specialized Turbo Connect Unit (TCU1) e-bikes. Bytes 4-15 spell ASCII 'GIGATRONIK' (the bike's HMI firmware/system supplier) reversed-little-endian, and the first 4 bytes are a per-service/characteristic selector. GIGATRONIK GmbH supplied the original Turbo Connect Unit hardware/firmware. Used by Turbo Levo, Vado, Como (gen 1) before the TCX/TURBOHMI2017 rebase. The 'XX' wildcard selects the specific service or characteristic.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/JamieMagee/specialized-turbo",
+                "description": "specialized-turbo library docs/protocol.md documents this 'GIGATRONIK' base UUID for TCU1 generation bikes, distinct from the TCX2/TCX3/TCX4 'TURBOHMI2017' base.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "00000002-3731-3032-494d-484f42525554",
+        "company": "Specialized Bicycle Components",
+        "UUID_name": "Turbo e-bike write/command service (TURBOHMI2017 protocol, TCX2/TCX3/TCX4)",
+        "UUID_purpose": "BLE GATT service on Specialized Turbo (Vado/Levo/Como/Kenevo/Creo) e-bikes carrying the command/write channel. Bytes 4-15 spell ASCII 'TURBOHMI2017'; first 4 bytes are the field selector (here 0x00000002 = command service). Houses write characteristic 00000012-3731-3032-494d-484f42525554 and DFU/log alternate 00000022-3731-3032-494d-484f42525554.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/JamieMagee/specialized-turbo",
+                "description": "specialized-turbo library docs/protocol.md documents the TCX (TURBOHMI2017) base UUID and the per-field selectors. JamieMagee/ha-specialized-turbo (Home Assistant integration) corroborates.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "00000012-3731-3032-494d-484f42525554",
+        "company": "Specialized Bicycle Components",
+        "UUID_name": "Turbo e-bike command-write characteristic (TURBOHMI2017 protocol)",
+        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes accepting commands from the mobile app. WRITE property. Child of write/command service 00000002-3731-3032-494d-484f42525554.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/JamieMagee/specialized-turbo",
+                "description": "specialized-turbo library docs/protocol.md documents this characteristic as the WRITE command channel in the TURBOHMI2017 protocol.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00000002-3731-3032-494d-484f42525554"
+    },
+    {
+        "UUID": "00000022-3731-3032-494d-484f42525554",
+        "company": "Specialized Bicycle Components",
+        "UUID_name": "Turbo e-bike DFU/log alternate characteristic (TURBOHMI2017 protocol)",
+        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes used as an alternate WRITE_WITHOUT_RESPONSE channel for DFU/ride-log transfers. Child of write/command service 00000002-3731-3032-494d-484f42525554.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/JamieMagee/specialized-turbo",
+                "description": "specialized-turbo library docs/protocol.md documents this as a WRITE_WITHOUT_RESPONSE DFU/log channel under the command service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00000002-3731-3032-494d-484f42525554"
+    },
+    {
+        "UUID": "00000003-3731-3032-494d-484f42525554",
+        "company": "Specialized Bicycle Components",
+        "UUID_name": "Turbo e-bike telemetry service (TURBOHMI2017 protocol, TCX2/TCX3/TCX4)",
+        "UUID_purpose": "BLE GATT service on Specialized Turbo (Vado/Levo/Como/Kenevo/Creo) e-bikes carrying real-time telemetry (battery, speed, motor power, cadence, temperature). TURBOHMI2017 base; first 4 bytes 0x00000003 = telemetry-service selector. Houses telemetry data characteristic 00000013-3731-3032-494d-484f42525554 and DFU/ride-logs characteristic 00000023-3731-3032-494d-484f42525554.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/JamieMagee/specialized-turbo",
+                "description": "specialized-turbo library docs/protocol.md documents the TCX telemetry service. ha-specialized-turbo Home Assistant integration consumes notifications on this service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "00000013-3731-3032-494d-484f42525554",
+        "company": "Specialized Bicycle Components",
+        "UUID_name": "Turbo e-bike telemetry data characteristic (TURBOHMI2017 protocol)",
+        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes emitting telemetry notifications (battery, speed, motor power, cadence, temperature). READ + NOTIFY properties. Child of telemetry service 00000003-3731-3032-494d-484f42525554.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/JamieMagee/specialized-turbo",
+                "description": "specialized-turbo library docs/protocol.md documents this characteristic as the telemetry NOTIFY channel. ha-specialized-turbo subscribes here to stream live bike data into Home Assistant.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00000003-3731-3032-494d-484f42525554"
+    },
+    {
+        "UUID": "00000023-3731-3032-494d-484f42525554",
+        "company": "Specialized Bicycle Components",
+        "UUID_name": "Turbo e-bike DFU/ride-logs characteristic (TURBOHMI2017 protocol)",
+        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes used for DFU and ride-log uploads. WRITE_WITHOUT_RESPONSE property. Child of telemetry service 00000003-3731-3032-494d-484f42525554.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/JamieMagee/specialized-turbo",
+                "description": "specialized-turbo library docs/protocol.md documents this as the DFU/ride-logs WRITE_WITHOUT_RESPONSE characteristic under the telemetry service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00000003-3731-3032-494d-484f42525554"
+    },
+    {
         "UUID": "00000001-3731-3032-494d-484f42525554",
         "company": "Specialized Bicycle Components",
         "UUID_name": "Turbo e-bike (Gen 2 TURBOHMI2017 protocol)",
@@ -4073,6 +6432,40 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "00000011-3731-3032-494d-484f42525554",
+        "company": "Specialized Bicycle Components",
+        "UUID_name": "Turbo e-bike read-response characteristic (TURBOHMI2017 protocol)",
+        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes returning the response to a queried field. READ property. Child of request/query service 00000001-3731-3032-494d-484f42525554.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/JamieMagee/specialized-turbo",
+                "description": "specialized-turbo library docs/protocol.md documents this characteristic as the READ response in the TURBOHMI2017 protocol.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00000001-3731-3032-494d-484f42525554"
+    },
+    {
+        "UUID": "00000021-3731-3032-494d-484f42525554",
+        "company": "Specialized Bicycle Components",
+        "UUID_name": "Turbo e-bike write-request characteristic (TURBOHMI2017 protocol)",
+        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes used to push a field-query/write request. WRITE property. Child of request/query service 00000001-3731-3032-494d-484f42525554.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/JamieMagee/specialized-turbo",
+                "description": "specialized-turbo library docs/protocol.md documents this as the WRITE request characteristic paired with READ response 00000011.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00000001-3731-3032-494d-484f42525554"
     },
     {
         "UUID": "xxxxxxxx-574f-4f20-5370-6865726f2121",
@@ -4092,6 +6485,59 @@
         "regex": true
     },
     {
+        "UUID": "22bb746f-2ba0-7554-2d6f-726568705327",
+        "company": "Sphero, Inc.",
+        "UUID_name": "Sphero v1 Robot Control Service ('RobotControlService')",
+        "UUID_purpose": "Primary proprietary BLE GATT service exposed by Sphero v1 robots — Sphero 1.0/2.0/SPRK, Ollie, BB-8, BB-9E, R2-D2, R2-Q5 — for sending commands and receiving responses. ASCII decode of the trailing 12 bytes of the UUID family '2d 6f 72 65 68 70 53 27' contains '-orehpS'' i.e. 'Sphero!' reversed, a deliberate vendor signature. Companion characteristics: 22bb746f-2ba1-... (Commands/Roll write), 22bb746f-2ba6-... (Notify/Response).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://wiki.elvis.science/index.php?title=Sphero_BB-8_Robot:_Bluetooth_Connection_Sniffing",
+                "description": "Embedded Lab Vienna wiki documents the full 22bb746f-2ba0/2ba1/2ba6/2bb0... family during Sphero BB-8 GATT sniffing.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://github.com/artificial-intelligence-class/spherov2.py",
+                "description": "spherov2.py source labels 22bb746f-2ba0-... as 'Robot Control Service' alongside 22bb746f-2bb0-... 'BLE Service' for legacy v1-protocol toys.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "22bb746f-2ba1-7554-2d6f-726568705327",
+        "company": "Sphero, Inc.",
+        "UUID_name": "Sphero v1 Commands characteristic (Roll/Command write)",
+        "UUID_purpose": "Sphero v1 protocol Commands characteristic. Write target for SOP/MRSP packets (roll, set heading, set RGB, etc.).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://wiki.elvis.science/index.php?title=Sphero_BB-8_Robot:_Bluetooth_Connection_Sniffing",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "22bb746f-2ba0-7554-2d6f-726568705327"
+    },
+    {
+        "UUID": "22bb746f-2ba6-7554-2d6f-726568705327",
+        "company": "Sphero, Inc.",
+        "UUID_name": "Sphero v1 Response/Notify characteristic",
+        "UUID_purpose": "Sphero v1 protocol Response characteristic — async event/sensor stream from the robot back to the host (notification-enabled).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://wiki.elvis.science/index.php?title=Sphero_BB-8_Robot:_Bluetooth_Connection_Sniffing",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "22bb746f-2ba0-7554-2d6f-726568705327"
+    },
+    {
         "UUID": "00010001-574f-4f20-5370-6865726f2121",
         "company": "Sphero, Inc.",
         "UUID_name": "Sphero Service (legacy)",
@@ -4102,6 +6548,101 @@
         "evidence_array": [
             {
                 "URL": "https://github.com/MProx/Sphero_mini/blob/master/sphero_mini.py",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "22bb746f-2bb0-7554-2d6f-726568705327",
+        "company": "Sphero, Inc.",
+        "UUID_name": "Sphero v1 'BLE Service' (Power/Anti-DoS/Wake)",
+        "UUID_purpose": "Sphero v1 secondary BLE service that hosts power-management and anti-DoS/wake characteristics — required to be 'unlocked' before the Robot Control Service will accept commands. Sphero apps first write the anti-DoS string 011i3 to 22bb746f-2bbd-... and then write TX power and wake to begin a session.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/artificial-intelligence-class/spherov2.py",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "22bb746f-2bb2-7554-2d6f-726568705327",
+        "company": "Sphero, Inc.",
+        "UUID_name": "Sphero v1 TX Power characteristic",
+        "UUID_purpose": "Sphero v1 protocol TX-power-control characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/artificial-intelligence-class/spherov2.py",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "22bb746f-2bb0-7554-2d6f-726568705327"
+    },
+    {
+        "UUID": "22bb746f-2bbd-7554-2d6f-726568705327",
+        "company": "Sphero, Inc.",
+        "UUID_name": "Sphero v1 Anti-DoS characteristic",
+        "UUID_purpose": "Sphero v1 protocol Anti-DoS characteristic; clients must write the ASCII bytes '011i3' to enable command processing.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/artificial-intelligence-class/spherov2.py",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "22bb746f-2bb0-7554-2d6f-726568705327"
+    },
+    {
+        "UUID": "22bb746f-2bbf-7554-2d6f-726568705327",
+        "company": "Sphero, Inc.",
+        "UUID_name": "Sphero v1 Wake characteristic",
+        "UUID_purpose": "Sphero v1 protocol Wake characteristic — write to keep the robot awake / out of low-power sleep.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/artificial-intelligence-class/spherov2.py",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "22bb746f-2bb0-7554-2d6f-726568705327"
+    },
+    {
+        "UUID": "9a04f079-9840-4286-ab92-e65be0885f95",
+        "company": "Starkey Hearing Technologies",
+        "UUID_name": "Piccolo Protocol Service",
+        "UUID_purpose": "Starkey hearing aid 'Piccolo' BLE control service. App-layer framing uses byte sequences like `[0x12, 0x06, 0x04, 0x00, 0x04, opcode, value]` where opcodes include 0x35 (volume), 0x34 (program), 0x3A (mute), 0x3D (stream start/stop) over a 16-value ControlObjectId enum (Memory, MicrophoneVolume, TinnitusVolume, StreamingVolume, AccessoryStreamingVolume, BalanceVolume, etc.).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control SPEC.md section 2.3: 'Starkey (Piccolo) — Service: 9a04f079-9840-4286-ab92-e65be0885f95'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "48ddf118-efd0-48fc-8f44-b9b8e17be397",
+        "company": "Starkey Hearing Technologies",
+        "UUID_name": "Starkey Battery Service",
+        "UUID_purpose": "Starkey hearing aid proprietary battery-state BLE service. Partial reverse-engineering — exact characteristic structure pending.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control",
+                "description": "sk408/hearing_aid_control protocol_registry.json: brand=starkey, operation=GetBatteryState, serviceUuid=48ddf118-efd0-48fc-8f44-b9b8e17be397, confidence=partial.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -4280,6 +6821,56 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "d5060000-a904-deb9-4748-2c7f4a124842",
+        "company": "Thalmic Labs",
+        "UUID_name": "Myo Service Base UUID",
+        "UUID_purpose": "Base UUID used by the Myo armband (gesture-recognition EMG/IMU wearable). Specific Myo services are derived by varying the four-byte segment at offset 0-3, e.g. d5060001-... = ControlService. Treat this entry as a vendor-base pattern marker.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://medium.com/@devdevcharlie/experimenting-with-web-bluetooth-1f1176047ddd",
+                "description": "Charlie Gerard 'Experimenting with Web Bluetooth — writing a framework for the Myo armband' identifies this as MYO_SERVICE_BASE_UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "d5060001-a904-deb9-4748-2c7f4a124842",
+        "company": "Thalmic Labs",
+        "UUID_name": "Myo ControlService",
+        "UUID_purpose": "Control service for the Myo armband. Hosts firmware-info, command, IMU and EMG-related characteristics for the gesture-recognition wearable.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://medium.com/@devdevcharlie/experimenting-with-web-bluetooth-1f1176047ddd",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "d5060000-a904-deb9-4748-2c7f4a124842"
+    },
+    {
+        "UUID": "d50600xx-a904-deb9-4748-2c7f4a124842",
+        "company": "Thalmic Labs",
+        "UUID_name": "Myo Vendor Service/Characteristic Pattern",
+        "UUID_purpose": "Family pattern for all Myo armband services and characteristics (gesture-recognition EMG/IMU wearable, Thalmic Labs / acquired by Meta/CTRL-Labs). Replace 'XX' with two hex characters to match specific services/characteristics derived from the Myo base UUID.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://medium.com/@devdevcharlie/experimenting-with-web-bluetooth-1f1176047ddd",
+                "description": "Charlie Gerard describes the Myo base UUID and notes specific services like ControlService are produced by substituting the 2-byte segment.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
     },
     {
         "UUID": "00000000-00b7-4807-beee-e0b0879cf3dd",
@@ -4669,6 +7260,38 @@
         ]
     },
     {
+        "UUID": "de3a0001-7100-57ef-9190-f1be84232730",
+        "company": "Vibease Inc.",
+        "UUID_name": "Vibease control service",
+        "UUID_purpose": "Proprietary BLE GATT service exposed by Vibease wearable adult toys (Vibease Esthesia, Vibease wearable, etc.). Companion characteristic 803c3b1f-d300-1120-0530-33a62b7838c9 carries both READ (notify) and WRITE_WITHOUT_RESPONSE (command) properties.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/eldstal/vibease",
+                "description": "eldstal/vibease reverse-engineering project explicitly documents service DE3A0001-7100-57EF-9190-F1BE84232730 and command characteristic 803C3B1F-D300-1120-0530-33A62B7838C9 for the Vibease vibrator.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "803c3b1f-d300-1120-0530-33a62b7838c9",
+        "company": "Vibease Inc.",
+        "UUID_name": "Vibease command characteristic",
+        "UUID_purpose": "Vibease bidirectional command characteristic — write_without_response for commands, notify for responses.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/eldstal/vibease",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "de3a0001-7100-57ef-9190-f1be84232730"
+    },
+    {
         "UUID": "0000xxxx-9f03-0de5-96c5-b8f4f3081186",
         "company": "Vibradorm GmbH",
         "UUID_name": "VMAT-BASIC bed family (regex)",
@@ -4700,6 +7323,22 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "00001526-1212-efde-1523-785feabcd123",
+        "company": "Vibratissimo (Amor Gummiwaren GmbH)",
+        "UUID_name": "Vibratissimo TX-vibrate characteristic",
+        "UUID_purpose": "Vibratissimo vibration-intensity write characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "00001523-1212-efde-1523-785feabcd123"
     },
     {
         "UUID": "cd54a0eb-880b-425b-b167-81ed6a15e913",
@@ -4776,6 +7415,38 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "40ee1111-63ec-4b7f-8ce7-712efd55b90e",
+        "company": "Vorze (Rends Co., Ltd.)",
+        "UUID_name": "Vorze SA control service",
+        "UUID_purpose": "Proprietary BLE GATT service exposed by Vorze SA-series interactive adult devices (Vorze A10 Cyclone SA, Piston SA, UFO SA, Bach, Rocket+1D) — the BLE variant of the older Vorze A10 USB protocol used in script-synced content. TX char 40ee2222-...",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "description": "buttplugio/buttplug-device-config 'vorze-sa' protocol section defines this service and tx characteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "40ee2222-63ec-4b7f-8ce7-712efd55b90e",
+        "company": "Vorze (Rends Co., Ltd.)",
+        "UUID_name": "Vorze SA TX characteristic",
+        "UUID_purpose": "Vorze SA command write characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/buttplugio/buttplug-device-config/blob/master/buttplug-device-config.yml",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "parent_UUID": "40ee1111-63ec-4b7f-8ce7-712efd55b90e"
     },
     {
         "UUID": "6108000x-8d6d-82b8-614a-1c8cb0f8dcc6",
@@ -4944,6 +7615,72 @@
         ]
     },
     {
+        "UUID": "00008002-0000-1000-8000-57616c6b697a",
+        "company": "Walkiz / Megafeis",
+        "UUID_name": "Walkiz/Megafeis Lock Notify Characteristic",
+        "UUID_purpose": "Notify characteristic on Megafeis/Walkiz padlocks used by the lock to send encrypted responses back to the phone during the challenge/response unlock handshake.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://labs.withsecure.com/publications/megafeis-palm--exploiting-vulnerabilities-to-open-bluetooth-smar",
+                "description": "WithSecure Labs 'Megafeis-palm' writeup documents this UUID as the notify characteristic. Suffix bytes ASCII-decode to 'Walkiz', confirming the Walkiz platform attribution.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "00008000-0000-1000-8000-57616c6b697a",
+        "company": "Walkiz / Megafeis",
+        "UUID_name": "Walkiz/Megafeis Lock Service",
+        "UUID_purpose": "Primary BLE GATT service exposed by Megafeis 'Walkiz' Bluetooth padlocks (and other smartlocks built on the same Walkiz platform) for the challenge/response unlock protocol.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://labs.withsecure.com/publications/megafeis-palm--exploiting-vulnerabilities-to-open-bluetooth-smar",
+                "description": "WithSecure Labs 'Megafeis-palm' writeup documents this UUID as the lock's primary service. The trailing 12 hex bytes 57 61 6c 6b 69 7a ASCII-decode to 'Walkiz', which is the embedded platform brand, providing strong vendor attribution.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "0000800x-0000-1000-8000-57616c6b697a",
+        "company": "Walkiz / Megafeis",
+        "UUID_name": "Walkiz/Megafeis Lock UUID family base",
+        "UUID_purpose": "Wildcard pattern matching the Walkiz/Megafeis BLE service and characteristics. Suffix ASCII-decodes to 'Walkiz', the embedded platform brand used by Megafeis padlocks and other locks built on the same Shenzhen Walkiz IoT platform.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://labs.withsecure.com/publications/megafeis-palm--exploiting-vulnerabilities-to-open-bluetooth-smar",
+                "description": "Family pattern derived from WithSecure Labs 'Megafeis-palm' research. The 12-byte suffix is the ASCII string 'Walkiz' - a strong indicator of the underlying IoT platform.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "00008001-0000-1000-8000-57616c6b697a",
+        "company": "Walkiz / Megafeis",
+        "UUID_name": "Walkiz/Megafeis Lock Write Characteristic",
+        "UUID_purpose": "Write characteristic on Megafeis/Walkiz padlocks used by the phone to send encrypted challenge/response strings to the lock during the unlock handshake.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://labs.withsecure.com/publications/megafeis-palm--exploiting-vulnerabilities-to-open-bluetooth-smar",
+                "description": "WithSecure Labs 'Megafeis-palm' writeup documents this UUID as the write characteristic. Suffix bytes ASCII-decode to 'Walkiz', confirming the Walkiz platform attribution.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
         "UUID": "cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc",
         "company": "WitMotion",
         "UUID_name": "WT901BLECL IMU service",
@@ -5075,6 +7812,24 @@
         ]
     },
     {
+        "UUID": "cba200xx-224d-11e6-9fb8-0002a5d5c51b",
+        "company": "Wonderlabs Inc. (SwitchBot)",
+        "UUID_name": "SwitchBot UUID family base",
+        "UUID_purpose": "Wildcard pattern matching all SwitchBot BLE service and characteristic UUIDs (Communication Service plus RX/TX child characteristics) shared across SwitchBot Lock, Bot, Curtain, Meter, etc.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/OpenWonderLabs/SwitchBotAPI-BLE/blob/latest/devicetypes/bot.md",
+                "description": "Family pattern derived from the official SwitchBot OpenWonderLabs BLE API documentation.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "regex": true
+    },
+    {
         "UUID": "6e400001-c352-11e5-953d-0002a5d5c51b",
         "company": "Wurth Elektronik",
         "UUID_name": "Proteus-e UART service",
@@ -5202,6 +7957,39 @@
             {
                 "URL": "https://taylorbowland.com/posts/treadmill-sending-data/",
                 "description": "Taylor Bowland blog 'Reversing Treadmill Bluetooth' (tagged 'ifit', Jun 2021) shows GATT discovery: 'attr handle: 0x0017, end grp handle: 0xffff uuid: 00001400-555e-e99c-e511-f9f4f8daeb24'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "48c5d828-ac2a-442d-97a3-0c9822b04979",
+        "company": "iRobot Corporation",
+        "UUID_name": "Root Robot Identifier Service",
+        "UUID_purpose": "BLE GATT Service UUID used to uniquely identify iRobot Root educational coding robots (Root rt0, rt1) during BLE scanning. Hosts implementing 'scan for devices with service' filtering use this UUID to discover Root robots. Documented in the official iRobot Root Robot BLE Protocol specification (published under iRobot Education / Powered By SAM).",
+        "UUID_usage_array": [
+            "GATT Service",
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/PoweredBySAM/sam-root-ble-protocol",
+                "description": "Official iRobot Root Robot BLE protocol documentation: 'Root Identifier service 48c5d828-ac2a-442d-97a3-0c9822b04979 is used to identify Root Robots'. The companion services use the standard Nordic UART base 6e400001-b5a3-f393-e0a9-e50e24dcca9e for packet exchange.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "00008bb6-0000-1000-8000-00805f9b34fb",
+        "company": "iRobot Corporation",
+        "UUID_name": "Root Robot State Characteristic",
+        "UUID_purpose": "Custom characteristic UUID (registered into the standard Bluetooth base UUID space) used by iRobot Root educational coding robots to expose a 2-byte robot-state bitfield (sensor states, motor states, etc.). Documented in iRobot's official Root Robot BLE Protocol.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/PoweredBySAM/sam-root-ble-protocol",
+                "description": "Official iRobot Root Robot BLE protocol documentation lists 00008bb6-0000-1000-8000-00805f9b34fb as 'Robot State - 2-byte bitfield of sensor states', alongside the standard 0x180A Device Information service and Nordic UART for packet exchange.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
