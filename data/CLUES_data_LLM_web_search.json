@@ -633,6 +633,120 @@
         ]
     },
     {
+        "UUID": "bd4ac616-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August Home (now part of ASSA ABLOY)",
+        "UUID_name": "Smart Lock OTA Data Characteristic",
+        "UUID_purpose": "August Smart Lock GATT Characteristic for Over-The-Air firmware data transfer, paired with bd4ac615 (OTA command).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.quarkslab.com/examining-the-august-smart-lock.html",
+                "description": "Quarkslab blog handle dump shows bd4ac616 as the next characteristic following bd4ac615 (OTA command), consistent with an OTA data pipe.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac615-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August Home (now part of ASSA ABLOY)",
+        "UUID_name": "Smart Lock OTA Command Characteristic",
+        "UUID_purpose": "August Smart Lock GATT Characteristic for Over-The-Air firmware update commands — used to initiate and control firmware update transactions.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.quarkslab.com/examining-the-august-smart-lock.html",
+                "description": "Quarkslab blog handle dump labels this UUID as 'ota command | related to firmware updates'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac613-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August Home (now part of ASSA ABLOY)",
+        "UUID_name": "Smart Lock Secure Write Characteristic",
+        "UUID_purpose": "August Smart Lock GATT Characteristic for encrypted/authenticated command writes after secure channel establishment. Used for sensitive lock operations.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.quarkslab.com/examining-the-august-smart-lock.html",
+                "description": "Quarkslab blog handle dump labels this UUID as 'secure write'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac614-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August Home (now part of ASSA ABLOY)",
+        "UUID_name": "Smart Lock Secure Read Characteristic",
+        "UUID_purpose": "August Smart Lock GATT Characteristic for encrypted/authenticated response data. Paired with bd4ac613 (secure write).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.quarkslab.com/examining-the-august-smart-lock.html",
+                "description": "Quarkslab blog handle dump labels this UUID as 'secure read'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac612-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August Home (now part of ASSA ABLOY)",
+        "UUID_name": "Smart Lock Read/Notify Characteristic",
+        "UUID_purpose": "August Smart Lock GATT Characteristic for read/notification responses on the unsecured channel. Pair to the bd4ac611 write characteristic in the August Smart Lock BLE protocol.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.quarkslab.com/examining-the-august-smart-lock.html",
+                "description": "Quarkslab blog handle dump: bd4ac612-0b45-11e3-8ffd-0800200c9a66 paired with bd4ac611 as the read counterpart.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac611-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August Home (now part of ASSA ABLOY)",
+        "UUID_name": "Smart Lock Write Characteristic",
+        "UUID_purpose": "August Smart Lock proprietary GATT Characteristic for un-secured (plaintext) command writes — the entry point for protocol messages before secure channel setup. Part of the bd4ac61X-0b45-11e3-8ffd-0800200c9a66 family used by August Smart Lock first-generation hardware.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.quarkslab.com/examining-the-august-smart-lock.html",
+                "description": "Quarkslab blog 'Examining the August Smart Lock' shows characteristic discovery: `handle: 0x0012, uuid: bd4ac611-0b45-11e3-8ffd-0800200c9a66 --> write`.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac61x-0b45-11e3-8ffd-0800200c9a66",
+        "regex": true,
+        "company": "August Home (now part of ASSA ABLOY)",
+        "UUID_name": "Smart Lock GATT Service/Characteristic family (regex)",
+        "UUID_purpose": "Family regex matching the August Smart Lock proprietary GATT UUID base. Individual members documented above (bd4ac611..bd4ac616) cover write, read, secure write, secure read, OTA command, and OTA data characteristics observed in first-generation August Smart Lock hardware. Sibling UUIDs in the bd4ac6XX range may appear on newer August/Yale (ASSA ABLOY) hardware.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.quarkslab.com/examining-the-august-smart-lock.html",
+                "description": "Quarkslab 'Examining the August Smart Lock' documents the bd4ac611..bd4ac616 characteristic family from a 1st-gen August Smart Lock GATT dump.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
         "UUID": "7e400001-b5a3-f393-e0a9-e50e24dcca9e",
         "company": "Avinab Malla / SparkFun (BleSerial library — alternate UART channel)",
         "UUID_name": "ESP32_BleSerial alternate UART (Serial2) Service",
@@ -868,6 +982,106 @@
             {
                 "URL": "https://github.com/CodeMinion/another_brother/blob/main/lib/printer_info.dart",
                 "description": "CodeMinion/another_brother (Flutter Brother-printer plugin) defines `Guid(\"A76EB9E0-F3AC-4990-84CF-3A94D2426B2B\")` as the BLE service to scan for. jhbruhn/respira's `BrotherPP1Service.ts` defines `SERVICE_UUID`, `WRITE_CHAR_UUID = a76eb9e2-...`, `READ_CHAR_UUID = a76eb9e1-...`. print_bluetooth_thermal plugin lists this alongside SIG SPP UUID and 49535343-FE7D-... (Microchip RN-series UART) as allowed printer services.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "6e400001-b5a3-f393-e0a9-77656c6f6f70",
+        "company": "COROS Wearables Inc.",
+        "UUID_name": "Pace 3 watch UART Service (welooop node variant)",
+        "UUID_purpose": "COROS Pace 3 GPS watch proprietary BLE service. Nordic UART Service base (6e400001-b5a3-f393-e0a9-) with COROS-specific node ID '77656c6f6f70' which ASCII-decodes to 'weloop' (COROS Wearables' parent brand 'Weloop' was the pre-COROS Chinese smartwatch line). Distinct from the canonical Nordic UART node e50e24dcca9e.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
+                "description": "SySS blog 'Bluetooth Analysis - COROS Pace 3' enumerates this service UUID during GATT discovery of the COROS Pace 3 watch. Node 77 65 6c 6f 6f 70 = ASCII 'weloop'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "6e400002-b5a3-f393-e0a9-77656c6f6f70",
+        "company": "COROS Wearables Inc.",
+        "UUID_name": "Pace 3 watch UART RX Characteristic (welooop node)",
+        "UUID_purpose": "COROS Pace 3 watch BLE UART RX (write) characteristic, paired with 6e400001-...-77656c6f6f70 service. ASCII-decode of node 77656c6f6f70 = 'weloop'.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "6e400001-b5a3-f393-e0a9-77656c6f6f70",
+        "evidence_array": [
+            {
+                "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
+                "description": "SySS blog enumerates this characteristic during COROS Pace 3 GATT discovery.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "6e400003-b5a3-f393-e0a9-77656c6f6f70",
+        "company": "COROS Wearables Inc.",
+        "UUID_name": "Pace 3 watch UART TX/Notify Characteristic (welooop node)",
+        "UUID_purpose": "COROS Pace 3 watch BLE UART TX (notify) characteristic. The SySS Bluetooth analysis subscribes to notifications on this UUID alongside the standard Nordic UART notify endpoint. ASCII-decode of node 77656c6f6f70 = 'weloop'.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "6e400001-b5a3-f393-e0a9-77656c6f6f70",
+        "evidence_array": [
+            {
+                "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
+                "description": "SySS blog: '[!] Subscribed to notification for charac. 6e400003-b5a3-f393-e0a9-77656c6f6f70'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "6e400001-b5a3-f393-e0a9-77757c7f7f70",
+        "company": "COROS Wearables Inc.",
+        "UUID_name": "Pace 3 watch UART Service (second node variant)",
+        "UUID_purpose": "Second COROS Pace 3 watch BLE UART service variant with node ID 77757c7f7f70 (likely a related model/firmware variant of the welooop-derived service). Observed alongside the primary 77656c6f6f70 service during COROS Pace 3 GATT enumeration.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
+                "description": "SySS blog enumerates this as a second UART-style service on the COROS Pace 3.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "6e400002-b5a3-f393-e0a9-77757c7f7f70",
+        "company": "COROS Wearables Inc.",
+        "UUID_name": "Pace 3 watch UART RX Characteristic (second variant)",
+        "UUID_purpose": "COROS Pace 3 watch BLE UART RX (write) characteristic for the second service variant, paired with 6e400001-...-77757c7f7f70.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "6e400001-b5a3-f393-e0a9-77757c7f7f70",
+        "evidence_array": [
+            {
+                "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
+                "description": "SySS blog enumerates this characteristic on the COROS Pace 3.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "6e400003-b5a3-f393-e0a9-77757c7f7f70",
+        "company": "COROS Wearables Inc.",
+        "UUID_name": "Pace 3 watch UART TX/Notify Characteristic (second variant)",
+        "UUID_purpose": "COROS Pace 3 watch BLE UART TX (notify) characteristic for the second service variant.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "6e400001-b5a3-f393-e0a9-77757c7f7f70",
+        "evidence_array": [
+            {
+                "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
+                "description": "SySS blog: '[!] Subscribed to notification for charac. 6e400003-b5a3-f393-e0a9-77757c7f7f70'.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -1221,6 +1435,148 @@
             {
                 "URL": "https://www.excelpoint.com/product-type/bluetooth-module-ic/",
                 "description": "ASCII decode of UUID bytes 65 78 63 65 6c 70 6f 69 6e 74 2e 63 6f 6d = 'excelpoint.com'. Excelpoint distributes Qualcomm/NXP Bluetooth chips.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "258eafa5-e914-47da-95ca-c5ab0dc85b11",
+        "company": "Firewalla Inc.",
+        "UUID_name": "Firewalla App BLE UUID",
+        "UUID_purpose": "Additional BLE UUID extracted from the Firewalla Chancellor Android app DEX (GreyNoise Labs research, 2024).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.labs.greynoise.io/grimoire/2024-08-20-bluuid-firewalla/",
+                "description": "GreyNoise Labs APK DEX extraction.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "fbb05afa-9145-41f1-8076-9de8be56f104",
+        "company": "Firewalla Inc.",
+        "UUID_name": "Firewalla App BLE UUID",
+        "UUID_purpose": "Bluetooth Low Energy UUID extracted from the Firewalla Chancellor Android app (com.firewalla.chancellor) DEX. Observed by GreyNoise Labs research into the Firewalla Purple/Gold firewall family's 'firereset' BLE out-of-band management interface.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.labs.greynoise.io/grimoire/2024-08-20-bluuid-firewalla/",
+                "description": "GreyNoise Labs 'BLUUID: Firewallas, Diabetics, And… Bluetooth' (Aug 2024) extracts this UUID from the com.firewalla.chancellor APK via DEX string analysis.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.firewalla.chancellor",
+                "description": "Source Android app: com.firewalla.chancellor (Firewalla's official client).",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "ed4cc6ax-3fcf-4b2b-a15a-157fa8a70axx",
+        "regex": true,
+        "company": "Firewalla Inc.",
+        "UUID_name": "firereset BLE Service/Characteristic family (regex)",
+        "UUID_purpose": "Family regex for the Firewalla Purple/Gold firewall 'firereset' out-of-band BLE management interface. Covers all observed sibling UUIDs in the ed4cc6a8-3fcf-4b2b-a15a-157fa8a70aXX range (and the related ed5cc6a8 prefix). Specific members include the SSH credential service (CVE-2024-40892) and network configuration service (CVE-2024-40893).",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.labs.greynoise.io/grimoire/2024-08-20-bluuid-firewalla/",
+                "description": "GreyNoise Labs enumerates >25 sibling UUIDs in the ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a* range from APK DEX extraction; range observed: a0b through aec. Includes one ed5cc6a8 variant.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://github.com/xen0bit/fwbt",
+                "description": "GreyNoise's Firewalla PoC tool fwbt operates over this UUID family.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a7b",
+        "company": "Firewalla Inc.",
+        "UUID_name": "firereset SSH Credential Service",
+        "UUID_purpose": "Firewalla Purple/Gold firewall 'firereset' BLE out-of-band management — SSH credential service (CVE-2024-40892). Exposed when WAN connectivity is disrupted, this service provides unauthenticated read access to provisioned SSH credentials.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.labs.greynoise.io/grimoire/2024-08-20-bluuid-firewalla/",
+                "description": "GreyNoise Labs: 'a credential service that is used to provision SSH credentials available via BTLE service ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a7b at characteristic ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a7c that allows unauthenticated read operations.'",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a7c",
+        "company": "Firewalla Inc.",
+        "UUID_name": "firereset SSH Credential Characteristic",
+        "UUID_purpose": "Firewalla Purple/Gold firewall 'firereset' BLE SSH credential characteristic. Unauthenticated read returns JSON containing gid (device identifier), mac, and license-UUID checksum (CVE-2024-40892).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a7b",
+        "evidence_array": [
+            {
+                "URL": "https://www.labs.greynoise.io/grimoire/2024-08-20-bluuid-firewalla/",
+                "description": "GreyNoise Labs documents this characteristic as the unauthenticated read endpoint of the firereset SSH credential service.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a8b",
+        "company": "Firewalla Inc.",
+        "UUID_name": "firereset Network Configuration Service",
+        "UUID_purpose": "Firewalla Purple/Gold firewall 'firereset' BLE network configuration service (CVE-2024-40893). Accepts JSON-in-JSON config writes that include WiFi credentials and multiple unsanitized fields leading to command-injection RCE as root.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.labs.greynoise.io/grimoire/2024-08-20-bluuid-firewalla/",
+                "description": "GreyNoise Labs: 'WiFi configuration, access, and credentials can be provisioned via BTLE network configuration service ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a8b at characteristic ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a8c'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a8c",
+        "company": "Firewalla Inc.",
+        "UUID_name": "firereset Network Configuration Characteristic",
+        "UUID_purpose": "Firewalla firereset BLE network configuration characteristic — CVE-2024-40893 RCE vector via command injection in PingTestIP/DNSTestDomain/Gateway6 fields.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a8b",
+        "evidence_array": [
+            {
+                "URL": "https://www.labs.greynoise.io/grimoire/2024-08-20-bluuid-firewalla/",
+                "description": "GreyNoise documents this characteristic as the command-injection vector for CVE-2024-40893.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "0eba60fd-0155-4528-9c32-3b765057433e",
+        "company": "Firewalla Inc.",
+        "UUID_name": "Firewalla App BLE UUID",
+        "UUID_purpose": "Second BLE UUID extracted from the Firewalla Chancellor Android app DEX during GreyNoise's research into the Firewalla firmware's 'firereset' BLE backdoor.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.labs.greynoise.io/grimoire/2024-08-20-bluuid-firewalla/",
+                "description": "GreyNoise Labs extracts this UUID from the com.firewalla.chancellor APK DEX.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -2131,6 +2487,43 @@
         ]
     },
     {
+        "UUID": "fd123ff9-9e30-45b2-af0d-b85b7d2dc80c",
+        "company": "Mike Ryan (ICE9 Consulting) — Uberducky",
+        "UUID_name": "Uberducky BLE Trigger",
+        "UUID_purpose": "Custom 128-bit UUID used by the Uberducky project (Mike Ryan, ICE9 Consulting) as the magic identifier in a BLE advertising packet to trigger a USB Rubber Ducky-style payload from an Ubertooth One. The receiving Ubertooth firmware listens for ADV packets containing this UUID in the first 32 bytes and, when seen, runs the pre-loaded keystroke payload. Activated via `btmgmt add-adv -D 1 -u fd123ff9-9e30-45b2-af0d-b85b7d2dc80c`.",
+        "UUID_usage_array": [
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://blog.ice9.us/2018/12/uberducky-ble-wireless-usb-rubber-ducky.html",
+                "description": "ICE9 Consulting blog post (Dec 2018) introducing Uberducky describes using this exact UUID in btmgmt add-adv to trigger the payload from a Linux host.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://github.com/mikeryan/uberducky",
+                "description": "Mike Ryan's Uberducky GitHub README documents triggering via UUID fd123ff9-9e30-45b2-af0d-b85b7d2dc80c in the first 32 bytes of an ADV packet.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "344bc7f2-5619-4953-9be8-9888fe29d996",
+        "company": "Mike Ryan (ICE9 Consulting) — Uberducky",
+        "UUID_name": "Uberducky DFU Trigger",
+        "UUID_purpose": "Secondary BLE advertising UUID used by Uberducky to force the Ubertooth into DFU mode for firmware re-flashing. When this UUID is observed in an ADV packet, the Uberducky firmware resets into DFU instead of executing the keystroke payload.",
+        "UUID_usage_array": [
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/mikeryan/uberducky",
+                "description": "Uberducky README: 'send a specially-formatted BLE packet to reset it into DFU mode using a second Ubertooth: ubertooth-ducky -b' or from Linux: 'sudo btmgmt add-adv -D 1 -u 344bc7f2-5619-4953-9be8-9888fe29d996 1'.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
         "UUID": "a3e68a83-4c4d-4778-bd0a-829fb434a7a1",
         "company": "Milwaukee Electric Tool Corporation",
         "UUID_name": "ONE-KEY",
@@ -2670,6 +3063,22 @@
         ]
     },
     {
+        "UUID": "fb005c16-02e7-f387-1cad-8acd2d8df0c8",
+        "company": "Polar Electro Oy",
+        "UUID_name": "Polar File Transfer Protocol (PFTP) Characteristic",
+        "UUID_purpose": "Polar Electro's proprietary 'Polar File Transfer Protocol' (PFTP) BLE characteristic used by Polar fitness/activity trackers (Polar M-series, A-series, Vantage, OH-series, Verity Sense, etc.) to sync training session data with the Polar Flow Android app (fi.polar.polarflow). Observed in btsnoop logs during AV-Test's 2015 fitness tracker security study.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.av-test.org/fileadmin/pdf/avtest_2015-06_fitness_tracker_english.pdf",
+                "description": "AV-Test 'Fitness Tracker Security' (June 2015) shows BtGatt.GattService onAttributeWrite() log lines with UUID=fb005c16-02e7-f387-1cad-8acd2d8df0c8 immediately followed by 'D/PFTP' (Polar File Transfer Protocol) and 'D/fi.polar.polarflow.data...' log lines from the Polar Flow Android app.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
         "UUID": "0000ffb0-d102-11e1-9b23-00025b00a5a5",
         "company": "Qualcomm / Cambridge Silicon Radio (CSR)",
         "UUID_name": "GAIA vendor-specific endpoint (0xFFB0)",
@@ -3100,6 +3509,41 @@
         ]
     },
     {
+        "UUID": "0000fexx-8e22-4541-9d4c-21edae82ed19",
+        "regex": true,
+        "company": "STMicroelectronics",
+        "UUID_name": "STM32WB DFU UUID family (regex, YY=11/22/23/24)",
+        "UUID_purpose": "STMicroelectronics STM32WB BLE chipset DFU UUID family. Per Sivakumaran et al. 2023, the YY byte takes values 11, 22, 23, 24. Categorized as '3' (some security mechanisms by default).",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1: '0000FEYY-8E22-4541-9D4C-21EDAE82ED19 (YY=11,22,23,24)' under STM32WB DFU.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "0000fe20-cc7a-482a-984a-7f2ed5b3e58f",
+        "company": "STMicroelectronics",
+        "UUID_name": "STM32WB DFU UUID (security mechanisms by default)",
+        "UUID_purpose": "STMicroelectronics STM32WB BLE chipset Device Firmware Update (DFU) UUID. Per Sivakumaran et al. 2023, Table 1, this is one of two distinct STM32WB DFU UUID patterns; this entry is categorized as '3' (some security mechanisms by default).",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1: 'ST STM32WB[38] 0000FE20-CC7A-482A-984A-7F2ED5B3E58F'. Second STM32WB DFU pattern (0000FEYY-8E22-4541-9D4C-21EDAE82ED19) added separately as regex.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
         "UUID": "c23d00bc-217c-233b-9c00-fc44577136ee",
         "company": "Samsung",
         "UUID_name": "Galaxy IcService_New sibling",
@@ -3444,6 +3888,125 @@
         "evidence_array": [
             {
                 "URL": "https://www.emtbforums.com/threads/orbea-rise-free-all-the-data-via-ant.30390/",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "4f4a2368-8cca-451e-bfff-cf0e2ee23e9f",
+        "company": "Silicon Labs",
+        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
+        "UUID_purpose": "One of six UUIDs documented by Sivakumaran et al. (2023) as part of Silicon Labs' Device Firmware Update (DFU) procedure for their BLE chipsets. Categorized as 'D' (developer-dependent security) in the paper's Table 1 — the underlying chipset supports secure firmware update but it's up to the application developer to enable signing/verification.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1: BLE DFU UUIDs by chipset vendor. Lists this UUID under 'Silicon Labs[35]' alongside 1D14D6EE-FD63-4FA1-BFA4-8F47B42119F0, F7BF3564-FB6D-4E53-88A4-5E37E0326063, 984227F3-34FC-4045-A5D0-2C581F81A153, 4CC07BCF, and 25F05C0A.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "984227f3-34fc-4045-a5d0-2c581f81a153",
+        "company": "Silicon Labs",
+        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
+        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023, Table 1. Categorized as 'D' (developer-dependent security).",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "f7bf3564-fb6d-4e53-88a4-5e37e0326063",
+        "company": "Silicon Labs",
+        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
+        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023, Table 1. Categorized as 'D' (developer-dependent security).",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "25f05c0a-e917-46e9-b2a5-aa2be1245afe",
+        "company": "Silicon Labs",
+        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
+        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023. Categorized as 'D' (developer-dependent security).",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "4cc07bcf-0868-4b32-9dad-ba4cc41e5316",
+        "company": "Silicon Labs",
+        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
+        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023. Categorized as 'D' (developer-dependent security).",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0",
+        "company": "Silicon Labs",
+        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
+        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023. First of the six Silicon Labs DFU UUIDs in their Table 1. Categorized as 'D' (developer-dependent security).",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "6834636b-6d33-4c30-634b-38454163304e",
+        "company": "SmartLockPicking.com — hackmelock (educational target)",
+        "UUID_name": "hackmelock iBeacon",
+        "UUID_purpose": "iBeacon UUID used by the 'hackmelock' deliberately-vulnerable BLE smart lock training target from SmartLockPicking.com — an educational simulator used in BLE security workshops. Decodes to ASCII 'h4ckm3L0cK8EAc0N' across UUID bytes (h-4-c-k-m-3-L-0-c-K-8-E-A-c-0-N), confirming the vanity-encoded origin.",
+        "UUID_usage_array": [
+            "iBeacon",
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://smartlockpicking.com/hackmelock/",
+                "description": "SmartLockPicking 'hackmelock' tutorial: 'In initial configuration mode it advertises as iBeacon with UUID 6834636b-6d33-4c30-634b-38454163304e and Major/Minor...'. ASCII-decode of UUID bytes spells 'h4ckm3L0cK8EAc0N'.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -4623,6 +5186,22 @@
             {
                 "URL": "https://corebodytemp.com/products/core",
                 "description": "CORE / CORE 2 product pages: non-invasive continuous core body temperature wearable from greenTEG AG with BLE + ANT+ connectivity used in endurance sport apps.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "00001400-555e-e99c-e511-f9f4f8daeb24",
+        "company": "iFit Health & Fitness Inc. (NordicTrack / ProForm / Bowflex parent)",
+        "UUID_name": "iFit Treadmill Custom GATT Service",
+        "UUID_purpose": "Custom BLE GATT Service observed on an iFit-equipped treadmill during reverse-engineering by Taylor Bowland. The 'attr handle: 0x0017, end grp handle: 0xffff' span indicates a top-level proprietary service distinct from the Nordic LBS (1212-efde-1523-785feabcd123) services also exposed by the device. iFit Health & Fitness manufactures NordicTrack, ProForm, and Freemotion fitness equipment.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://taylorbowland.com/posts/treadmill-sending-data/",
+                "description": "Taylor Bowland blog 'Reversing Treadmill Bluetooth' (tagged 'ifit', Jun 2021) shows GATT discovery: 'attr handle: 0x0017, end grp handle: 0xffff uuid: 00001400-555e-e99c-e511-f9f4f8daeb24'.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
