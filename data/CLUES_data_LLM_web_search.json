@@ -1,82 +1,5 @@
 [
     {
-        "UUID": "50454c54-4f52-5449-4653-657276696365",
-        "company": "3M Peltor",
-        "UUID_name": "PELTORTIFService (Tactical Intercom Function)",
-        "UUID_purpose": "Custom GATT service for 3M Peltor wireless tactical communications/hearing-protection headsets. The UUID bytes ASCII-decode exactly to 'PELTORTIFService'.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.3m.com/3M/en_US/p/c/safety-protective-equipment/hearing-protection/products/electronic-hearing-protection/communication/",
-                "description": "ASCII decode of UUID bytes 50 45 4c 54 4f 52 54 49 46 53 65 72 76 69 63 65 = 'PELTORTIFService'. 3M Peltor is a major brand of tactical communications/hearing-protection headsets.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "41445443-4150-534d-6f62-696c65303030",
-        "company": "ADT Caps Co., Ltd.",
-        "UUID_name": "ADTCAPSMobile000 — Mobile Access Card",
-        "UUID_purpose": "BLE GATT service identifier used by the 'ADT캡스 모바일 출입카드' (ADT Caps Mobile Access Card) Android/Wear OS app for BLE communication with entry/exit access-control readers (building access in Korea). ADT Caps is a SK Shieldus subsidiary. The 16-byte UUID is literally the ASCII string 'ADTCAPSMobile000'.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://play.google.com/store/apps/details?id=kr.co.adtcaps.mobilecard",
-                "description": "ASCII decode of bytes = 'ADTCAPSMobile000'. Google Play app kr.co.adtcaps.mobilecard explicitly states the Wear OS companion is used for BLE communication with BLE-based entry/exit devices.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00009800-0000-1000-8000-00177a00000b",
-        "company": "ASSA ABLOY AB",
-        "UUID_name": "VingCard / Mobile Access Hospitality service (sibling 00000b)",
-        "UUID_purpose": "Another sibling in ASSA ABLOY 0x9800 family.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://rst.im/oui/00177A",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00009800-0000-1000-8000-00177a000021",
-        "company": "ASSA ABLOY AB",
-        "UUID_name": "VingCard / Mobile Access Hospitality service (sibling 000021)",
-        "UUID_purpose": "Another sibling in ASSA ABLOY 0x9800 family.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/search/result?mac=00177A",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00009800-0000-1000-8000-00177a000001",
-        "company": "ASSA ABLOY AB",
-        "UUID_name": "VingCard / Mobile Access Hospitality service (sibling 000001)",
-        "UUID_purpose": "Another sibling in the ASSA ABLOY 0x9800 family.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/macaddress/00177a/mac-address-details",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "00009800-0000-1000-8000-00177a0000xx",
         "company": "ASSA ABLOY AB",
         "UUID_name": "VingCard / Mobile Access service family (regex)",
@@ -93,22 +16,6 @@
         "regex": true
     },
     {
-        "UUID": "00009801-0000-1000-8000-00177a000002",
-        "company": "ASSA ABLOY AB",
-        "UUID_name": "ASSA ABLOY proprietary service (0x9801, VingCard/Aperio/Yale family)",
-        "UUID_purpose": "Non-standard Bluetooth base UUID built on the ASSA ABLOY OUI 00:17:7A (replacing the SIG base node 00805F9B34FB). The 16-bit '9801' is a vendor-specific service ID in the same 0x980X family as ASSA ABLOY's already-documented 0x9800/0x9807 services on VingCard/Mobile Access (Seos) hotel locks and Aperio/Yale/ABLOY BEAT access-control products.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/macaddress/00177A",
-                "description": "OUI 00:17:7A is registered to ASSA ABLOY AB (Goteborg, SE) since 2006-04-08. Node 00:17:7A:00:00:02 substitutes the SIG base node — same pattern used by the documented sibling UUIDs 00009800-0000-1000-8000-00177a000002 and 00009807-0000-1000-8000-00177a000002 in CLUES_data_LLM_web_search.json.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "00009800-0000-1000-8000-00177a000002",
         "company": "ASSA ABLOY AB",
         "UUID_name": "VingCard / Mobile Access Hospitality service (0x9800)",
@@ -118,45 +25,8 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://rst.im/oui/00177A",
+                "URL": "https://web.archive.org/web/20260518120232/https://github.com/chipweinberger/flutter_blue_plus/issues/491",
                 "description": "OUI 00:17:7A is registered to ASSA ABLOY AB. ASSA ABLOY Hospitality manufactures the BLE Module 681402004 (FCC ID Y7V-681402004) used in VingCard RFID locks with Mobile Access. The UUID exactly follows the SIG-base pattern but substitutes the OUI tail for vendor identification — a standard internal-namespace trick. Attribution to ASSA ABLOY is high-confidence via OUI; specific 0x9800 service name is speculative.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00009807-0000-1000-8000-00177a000002",
-        "company": "ASSA ABLOY AB",
-        "UUID_name": "ASSA ABLOY proprietary service (Aperio/Yale/ABLOY)",
-        "UUID_purpose": "Proprietary GATT service for an ASSA ABLOY Bluetooth lock or access-control product (likely Aperio, Yale, or ABLOY BEAT family). Uses a Bluetooth-Base-UUID-style middle (0000-1000-8000) but with the ASSA ABLOY OUI 00:17:7A embedded in the node field — i.e. NOT a standard SIG 16-bit alias. Short ID 0x9807.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/search/result?mac=00177a",
-                "description": "OUI 00:17:7A is registered to ASSA ABLOY AB (Goteborg, SE) since 2006-04-08. Node field 00:17:7A:00:00:02 confirms vendor.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00010000-452d-4269-6b65-58706c6f7661",
-        "company": "Acer Gadget Inc. (Xplova)",
-        "UUID_name": "Xplova E-Bike service",
-        "UUID_purpose": "Proprietary GATT service exposed by Xplova-branded e-bike / cycling-computer products. The UUID bytes after the leading 0x00010000 prefix spell ASCII 'E-BikeXplova' (45 2d 42 69 6b 65 58 70 6c 6f 76 61), which is a deliberate vendor signature. Xplova is a sub-brand of Acer subsidiary Acer Gadget Inc. that makes cycling computers (X2/X3/X5), smart bike pumps, and the Xplova eBike Assistant Android app.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.xplova.com/en",
-                "description": "Xplova official site — Acer subsidiary producing BLE-enabled cycling computers and e-bike accessories.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.xplova.ebikei",
-                "description": "'Xplova eBike Assistant' Android app — confirms Xplova has a dedicated e-bike companion app, matching the 'E-Bike' ASCII signature inside the UUID.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -171,7 +41,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://blog.nns.ee/2026/01/06/aike-ble/",
+                "URL": "https://web.archive.org/web/20260411170553/https://blog.nns.ee/2026/01/06/aike-ble/",
                 "description": "Blog post 'Reverse engineering my cloud-connected e-scooter and finding the master key to unlock all scooters' documenting the Aike/Comodule BLE protocol.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -187,7 +57,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://blog.nns.ee/2026/01/06/aike-ble/",
+                "URL": "https://web.archive.org/web/20260411170553/https://blog.nns.ee/2026/01/06/aike-ble/",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -202,80 +72,8 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/auracast-research/race-toolkit/blob/main/librace/constants.py",
+                "URL": "https://web.archive.org/web/20260328141639/https://github.com/auracast-research/race-toolkit/blob/main/librace/constants.py",
                 "description": "auracast-research/race-toolkit explicitly defines `AIROHA_GATT_SERVICE_UUID = UUID('5052494D-2DAB-0341-6972-6F6861424C45')`, with TX/RX characteristics 43484152-2DAB-3241-... and 43484152-2DAB-3141-... (ASCII 'CHAR'). Also observed on Redmi Buds 5 Pro and Turtle Beach Stealth 500 in pipewire bug reports.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "0013014d-2dab-0341-6972-6f6861424c45",
-        "company": "Airoha Technology Corp.",
-        "UUID_name": "RACE GATT Service (alternate Airoha variant of AirohaBLE base)",
-        "UUID_purpose": "Variant of Airoha's RACE (Remote Access Control Engine) GATT service base. The bytes 2dab-0341-6972-6f6861424c45 = ASCII '-\\x03Air' + 'ohaBLE' which is the same fixed Airoha 'AirohaBLE' suffix used by the documented canonical RACE service 5052494d-2dab-0341-6972-6f6861424c45 (ASCII 'PRIM' + 'AirohaBLE'). Per ENRW/insinuator disclosure of the Airoha RACE vulnerabilities and the auracast-research/race-toolkit, individual Airoha-based TWS/headphone vendors can publish their own short-prefix on the same AirohaBLE base; this UUID is one such vendor variant.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/auracast-research/race-toolkit",
-                "description": "auracast-research/race-toolkit and ENRW whitepaper document that the RACE GATT service uses Airoha's '-AirohaBLE' base UUID (suffix 2dab-0341-6972-6f6861424c45) and that vendors substitute the leading 4 bytes — the canonical Airoha default is 5052494d ('PRIM') and Sony etc. use other prefixes. 0x0013014d here is another such per-vendor RACE prefix.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://insinuator.net/2025/12/bluetooth-headphone-jacking-full-disclosure-of-airoha-race-vulnerabilities/",
-                "description": "ENRW/insinuator full disclosure of Airoha RACE describes the multiple-prefix-on-same-base pattern used across Airoha-based TWS earbuds and headphones.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "ddccbbaa-0504-0302-6972-6f6861424c45",
-        "company": "Airoha Technology Corp.",
-        "UUID_name": "RACE GATT Service (template / placeholder variant of AirohaBLE base)",
-        "UUID_purpose": "Variant of Airoha's RACE (Remote Access Control Engine) GATT service base. The trailing 12 bytes 6972-6f6861424c45 ASCII-decode to 'iroha' + 'BLE' — the identical fixed 'AirohaBLE' suffix shared by Airoha's canonical RACE service 5052494d-2dab-0341-6972-6f6861424c45 (ASCII 'PRIM'+'AirohaBLE') and by per-vendor Airoha RACE variants documented in the ENRW/insinuator AirohaRACE disclosure. The leading 8 bytes here are the placeholder/template byte pattern dd cc bb aa 05 04 03 02 (descending then ascending bytes — a typical 'fill these in' SDK template), consistent with an Airoha SDK or example/test build that did not customize the prefix.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/auracast-research/race-toolkit/blob/main/librace/constants.py",
-                "description": "auracast-research/race-toolkit defines AIROHA_GATT_SERVICE_UUID = 5052494D-2DAB-0341-6972-6F6861424C45 ('PRIM'+'AirohaBLE'); the ENRW/insinuator full-disclosure of Airoha RACE explains that vendors substitute the leading 4 bytes on the shared '...6972-6f6861424c45' (AirohaBLE) base. UUID ddccbbaa-0504-0302-6972-6f6861424c45 shares that exact AirohaBLE suffix with a clearly templated/placeholder prefix (descending dd-cc-bb-aa then ascending 05-04-03-02).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://insinuator.net/2025/12/bluetooth-headphone-jacking-full-disclosure-of-airoha-race-vulnerabilities/",
-                "description": "ENRW/insinuator full disclosure of Airoha RACE vulnerabilities documenting the multi-vendor prefix-on-shared-base pattern using the AirohaBLE suffix '6972-6f6861424c45'.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "b42e90a2-ade7-11e4-89d3-123b93f75cba",
-        "company": "Airthings AS",
-        "UUID_name": "Wave family characteristic (0x90a2)",
-        "UUID_purpose": "Characteristic in Airthings Wave family namespace.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/custom-components/sensor.airthings_wave/blob/master/custom_components/airthings_wave/airthings.py",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "b42e2248-ade7-11e4-89d3-123b93f75cba",
-        "company": "Airthings AS",
-        "UUID_name": "Wave family characteristic (0x2248)",
-        "UUID_purpose": "Characteristic in Airthings Wave radon/air-quality monitor BLE namespace.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/Airthings/airthings-ble/blob/master/airthings_ble/const.py",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -298,21 +96,6 @@
         "regex": true
     },
     {
-        "UUID": "b42e1c08-ade7-11e4-89d3-123b93f75cba",
-        "company": "Airthings AS",
-        "UUID_name": "Wave / Wave Plus Primary Data Service",
-        "UUID_purpose": "Primary BLE GATT service exposed by Airthings Wave-family environmental/radon monitors.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/custom-components/sensor.airthings_wave/blob/master/custom_components/airthings_wave/airthings.py",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "832ae7fe-d3c5-11e4-b9d6-1681e6b88ec1",
         "company": "Alliance Outdoor Lighting",
         "UUID_name": "Alliance BT Lighting service (sibling)",
@@ -322,7 +105,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/capacitor-community/bluetooth-le/issues/253",
+                "URL": "https://web.archive.org/web/20260518115110/https://github.com/capacitor-community/bluetooth-le/issues/253",
                 "description": "Capacitor BLE issue documents real-world use writing characteristics on this service; same node-ID as the confirmed Alliance UUID.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -338,7 +121,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://community.openmqttgateway.com/t/bt-and-lighting-system-basic-advice/1842",
+                "URL": "https://web.archive.org/web/20251111231222/https://community.openmqttgateway.com/t/bt-and-lighting-system-basic-advice/1842",
                 "description": "OpenMQTTGateway forum thread reverse-engineers the Alliance BT lighting system and identifies this exact UUID as the service.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -361,52 +144,6 @@
         ]
     },
     {
-        "UUID": "00000000-616d-6261-5f69-645f62617365",
-        "company": "Ambarella",
-        "UUID_name": "amba_id_base",
-        "UUID_purpose": "Ambarella SoC base UUID placeholder/sentinel. The lower 12 bytes literally spell ASCII 'amba_id_base' — the Ambarella SDK naming convention for an 'Ambarella ID base' (vendor-specific 16-bit IDs OR'd into the upper bytes). Ambarella is the SoC vendor for many action cameras and dashcams (GoPro Hero up to 5, DJI, Garmin VIRB, SJCAM, Hawk Eye Firefly). All-zero high bytes here likely represent an unprovisioned/null vendor service ID.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/Ambarella-Inc",
-                "description": "Bytes `00 00 00 00 61 6d 62 61 5f 69 64 5f 62 61 73 65` literally spell ASCII '....amba_id_base'. Ambarella's published SDK uses 'amba_' prefix throughout.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "636f6d2e-6a69-7561-6e2e-646576000000",
-        "company": "Andon Health (Jiuan Medical / iHealth brand)",
-        "UUID_name": "com.jiuan.dev namespace",
-        "UUID_purpose": "ASCII decode = 'com.jiuan.dev\\0\\0\\0' — reverse-DNS package prefix for software by Andon Health (manufacturer of iHealth-branded BLE health devices).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.jiuan.com/EN/aboutUs.html",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "636f6d2e-6a69-7561-6e2e-425056323500",
-        "company": "Andon Health (iHealth Labs)",
-        "UUID_name": "BPV25 Blood Pressure Monitor (com.jiuan.BPV25)",
-        "UUID_purpose": "ASCII decode = 'com.jiuan.BPV25\\0' — Apple External Accessory Protocol identifier for iHealth/Andon BPV25 blood pressure cuff.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/VitalLabs/iHealthCordovaPlugin/blob/master/plugin.xml",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "8c850001-0302-41c5-b46e-cf057c562025",
         "company": "Anker Innovations",
         "UUID_name": "Anker Prime/Solix BLE Service",
@@ -416,7 +153,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/geohot/anker-vibecoded/blob/main/anker_prime.py",
+                "URL": "https://raw.githubusercontent.com/geohot/anker-vibecoded/master/anker_prime.py",
                 "description": "geohot/anker-vibecoded anker_prime.py declares 'SERVICE_UUID = \"8c850001-0302-41c5-b46e-cf057c562025\"' with adjacent 8c850002/8c850003 write/notify characteristics, commented '# Service and Characteristic UUIDs (for the ASHDJW model)' (an Anker Prime power bank SKU).",
                 "submitter": "Claude (Opus 4.7)"
             },
@@ -450,54 +187,6 @@
         "regex": true
     },
     {
-        "UUID": "0cf12d31-fac3-4553-bd80-d6832e7b3004",
-        "company": "Anker Innovations",
-        "UUID_name": "Soundcore Q20i (A3004) RFCOMM",
-        "UUID_purpose": "Proprietary RFCOMM service for Soundcore Q20i over-ear active-noise-cancelling Bluetooth headphones (Anker model A3004). Sibling of the 3025/3947/3968-suffixed UUIDs — last 4 hex digits match the Anker model number.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/officiallor/soundcore-windows",
-                "description": "Same Soundcore RFCOMM family as 0cf12d31-fac3-4553-bd80-d6832e7b3025; trailing 4-hex matches model A3004 = Soundcore Q20i.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "0cf12d31-fac3-4553-bd80-d6832e7b3968",
-        "company": "Anker Innovations",
-        "UUID_name": "Soundcore Sport X20 (A3968) RFCOMM",
-        "UUID_purpose": "Proprietary RFCOMM service for Soundcore Sport X20 earbuds (Anker model A3968). Sibling of the 3025/3004/3947-suffixed UUIDs — last 4 hex digits match the Anker model number.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/officiallor/soundcore-windows",
-                "description": "Same Soundcore RFCOMM family pattern; trailing 4-hex matches model A3968 = Soundcore Sport X20.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "0cf12d31-fac3-4553-bd80-d6832e7b3025",
-        "company": "Anker Innovations",
-        "UUID_name": "Soundcore Life Q20 (A3025) RFCOMM",
-        "UUID_purpose": "Proprietary RFCOMM service used by the Soundcore mobile app to communicate with Soundcore Life Q20 over-ear noise-cancelling Bluetooth headphones (Anker model A3025). Carries codec selection (LDAC), ANC mode, EQ, and battery queries. Last 4 hex digits of the UUID encode the Anker product model number.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/officiallor/soundcore-windows",
-                "description": "soundcore-windows project documents 0cf12d31-fac3-4553-bd80-d6832e7b3947 as the proprietary Soundcore RFCOMM UUID for Liberty 4 NC (A3947). The last-4-hex-as-product-model-number pattern matches sibling UUIDs: 3025=Life Q20 (A3025), 3004=Q20i (A3004), 3947=Liberty 4 NC (A3947), 3968=Sport X20 (A3968).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "be15beef-6186-407e-8381-0bd89c4d8df4",
         "company": "Anki (now Digital Dream Labs)",
         "UUID_name": "Overdrive Primary GATT Service",
@@ -522,7 +211,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://anki.github.io/drive-sdk/docs/programming-guide",
+                "URL": "https://web.archive.org/web/20260518114928/https://anki.github.io/drive-sdk/docs/programming-guide",
                 "description": "Anki Drive SDK Programming Guide explicitly documents the per-vehicle GATT service BE15BEEF-6186-407E-8381-0BD89C4D8DF4 with READ characteristic BE15BEE0-... and WRITE characteristic BE15BEE1-...; both Overdrive cars and Vector robots share this UUID family.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -556,7 +245,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/bluez/bluez/issues/963",
+                "URL": "https://web.archive.org/web/20260518115237/https://github.com/bluez/bluez/issues/963",
                 "description": "Listed in bluez issue #963 ('Document more vendor UUIDs') as 'CarPlay vehicle-side', paired with the iPhone-side UUID 2d8d2466-e14d-451c-88bc-7301abea291a.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -596,86 +285,6 @@
         ]
     },
     {
-        "UUID": "30303030-3030-3030-4445-434146414445",
-        "company": "Apple",
-        "UUID_name": "MFi iAP — ASCII-text-encoded buggy variant (00000000DECAFADE)",
-        "UUID_purpose": "Buggy device that stored the ASCII characters '00000000DECAFADE' rather than the binary UUID for Apple iAP service 00000000-deca-fade-deca-deafdecacafe. Bytes 30 30 30 30 30 30 30 30 44 45 43 41 46 41 44 45 = ASCII '00000000DECAFADE'.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241128211458/https://wiomoc.de/misc/posts/mfi_iap.html",
-                "description": "ASCII decode of bytes = literal text '00000000DECAFADE' — the human-readable hex form of Apple iAP2's iPhone-side service UUID. Almost certainly a buggy device that stored literal text instead of binary UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00000000-deca-fade-deca-deafdecacaee",
-        "company": "Apple",
-        "UUID_name": "MFi iAP — one-nibble-off variant (caee vs cafe)",
-        "UUID_purpose": "One-nibble-off variant of Apple MFi iAP client UUID 00000000-deca-fade-deca-deafdecacafe. Last byte 0xEE instead of 0xFE/0xFF. Consistent with a buggy capture or typo variant of the iPhone-side iAP2 UUID.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241128211458/https://wiomoc.de/misc/posts/mfi_iap.html",
-                "description": "Differs by single nibble from documented Apple iAP client UUID 00000000-deca-fade-deca-deafdecacafe; likely capture corruption or buggy variant.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "ec884348-cd41-40a2-9727-575d50bf1fd3",
-        "company": "Apple",
-        "UUID_name": "CarPlay (vehicle-side; byte-swapped capture of d31fbf50-5d57-2797-a240-41cd484388ec)",
-        "UUID_purpose": "Same 128-bit value as d31fbf50-5d57-2797-a240-41cd484388ec but with the first three UUID fields little-endian-swapped — a common artefact of raw-byte SDP record parsing in some Bluetooth stacks.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/bluez/bluez/issues/963",
-                "description": "The canonical (non-swapped) form d31fbf50-5d57-2797-a240-41cd484388ec is documented in bluez issue #963 as 'CarPlay vehicle-side'; ec884348-cd41-40a2-9727-575d50bf1fd3 is the byte-reverse-of-fields-1-2-3 form of that same UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "7905f431-b5ce-4e99-a40f-4b1e120d00d0",
-        "company": "Apple",
-        "UUID_name": "Apple Notification Center Service (ANCS) - typo'd variant",
-        "UUID_purpose": "Single-nibble typo variant of the canonical Apple Notification Center Service UUID 7905F431-B5CE-4E99-A40F-4B1E122D00D0 (note: 120d here vs 122d in the spec). Likely produced by a buggy parser/encoder or a vendor that mistyped one nibble while copying the spec.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://developer.apple.com/library/archive/documentation/CoreBluetooth/Reference/AppleNotificationCenterServiceSpecification/Specification/Specification.html",
-                "description": "Canonical ANCS UUID is 7905F431-B5CE-4E99-A40F-4B1E122D00D0; this is the single-nibble variant (4B1E120D vs 4B1E122D).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "fecacade-afde-cade-defa-cade00000000",
-        "company": "Apple",
-        "UUID_name": "MFi (Made for i{pod,Phone}) iAP (iPod Accessories Protocol) client — wrong-endian (fully byte-reversed) form",
-        "UUID_purpose": "Wrong-endian (full 16-byte reversed) variant of the canonical Apple MFi iAP client service UUID 00000000-deca-fade-deca-deafdecacafe. Some stacks read the UUID in reverse byte order and report this form on the wire.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20241128211458/https://wiomoc.de/misc/posts/mfi_iap.html",
-                "description": "Exactly matches bytes_reverse('00000000decafadedecadeafdecacafe') == 'fecacadeafdecadedefacade00000000'. CLUES_data.json already contains a sibling wrong-endian server UUID (ffcacade-afde-cade-defa-cade00000000) and an alternate endian-swapped client variant.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "19b10010-e8f2-537e-4f6c-d104768a1214",
         "company": "Arduino",
         "UUID_name": "Arduino BLE example custom service base",
@@ -686,7 +295,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://raw.githubusercontent.com/arduino-libraries/ArduinoBLE/master/examples/Peripheral/LED/LED.ino",
+                "URL": "https://web.archive.org/web/20251211095032/http://ai2inventor.blogspot.com/2017/07/app-inventor-iot-lesson-1-arduino-101.html",
                 "description": "Arduino's official ArduinoBLE library defines BLEService ledService(\"19B10000-E8F2-537E-4F6C-D104768A1214\") in the canonical LED peripheral example, establishing 19b10000-e8f2-537e-4f6c-d104768a1214 as the example custom service base. Derived projects vary the first 32 bits, producing UUIDs such as 19b10010-e8f2-537e-4f6c-d104768a1214 with the same identifying 96-bit suffix.",
                 "submitter": "Claude (Opus 4.7)"
             },
@@ -739,7 +348,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://blog.quarkslab.com/examining-the-august-smart-lock.html",
+                "URL": "https://web.archive.org/web/20260518114959/https://blog.quarkslab.com/examining-the-august-smart-lock.html",
                 "description": "Quarkslab blog handle dump labels this UUID as 'secure write'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -755,7 +364,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://blog.quarkslab.com/examining-the-august-smart-lock.html",
+                "URL": "https://web.archive.org/web/20260424180655/https://blog.quarkslab.com/examining-the-august-smart-lock.html",
                 "description": "Quarkslab blog handle dump labels this UUID as 'secure read'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -828,22 +437,6 @@
         ]
     },
     {
-        "UUID": "6cd6c8b5-e378-0104-000a-1b9740683449",
-        "company": "BAT (British American Tobacco)",
-        "UUID_name": "MyVuse Vape Service (0x0104 variant)",
-        "UUID_purpose": "BLE GATT service exposed by Vuse / MyVuse e-cigarettes (Vuse ePod 2+, Vuse Pro). Documented in MyVuse reverse-engineering blog posts. Variant 0x0104 = vaping service.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://red40maxxer.github.io/mad-cat-lon/blog/myvuse_pt2.html",
-                "description": "red40maxxer/mad-cat-lon.github.io blog post on reverse-engineering MyVuse documents vapingService = '6CD6C8B5-E378-0104-000A-1B9740683449' with SERVICE handle=14.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "6cd6c8b5-e378-xxxx-000a-1b9740683449",
         "company": "BAT (British American Tobacco)",
         "UUID_name": "MyVuse Vape family base (regex)",
@@ -871,22 +464,6 @@
             {
                 "URL": "https://github.com/ndom91/domino-display/blob/main/components/BLEScan.tsx",
                 "description": "ndom91/domino-display BLEScan.tsx defines VAPE_UUID = '6cd6c8b5-e378-0106-000a-1b9740683449'.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "42594420-4155-544f-e0a9-e50e24dcca9e",
-        "company": "BYD Auto Co., Ltd.",
-        "UUID_name": "BYD Auto Vehicle Service",
-        "UUID_purpose": "BYD's BLE service hosted by car infotainment / digital-key hardware for communication with the BYD AUTO LINK companion app (digital-key authentication, vehicle status, remote control). Reuses the Nordic UART Service trailing bytes E0A9-E50E24DCCA9E but overrides the first 8 bytes with ASCII 'BYD AUTO'. Used on BYD vehicles like Atto 3, Sealion 7.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.byd.bydautolink",
-                "description": "ASCII decode of the first 8 bytes of the UUID is literally 'BYD AUTO' (0x42='B', 0x59='Y', 0x44='D', 0x20=' ', 0x41='A', 0x55='U', 0x54='T', 0x4F='O'). The remaining 8 bytes match the Nordic UART Service base. BYD ships an Android companion app 'BYD AUTO' (com.byd.bydautolink) that integrates with vehicle infotainment via BLE.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -954,22 +531,6 @@
         ]
     },
     {
-        "UUID": "fb349b5f-8000-0080-0010-000001110000",
-        "company": "Bluetooth SIG",
-        "UUID_name": "SerialPort (SPP) — wrong-endian (fully byte-reversed) form",
-        "UUID_purpose": "Wrong-endian (full 16-byte reversed) variant of the canonical Bluetooth Serial Port Profile UUID 00001101-0000-1000-8000-00805F9B34FB. Often emitted by stacks that mis-handle UUID byte ordering when reading 128-bit UUIDs from SDP records.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.bluetooth.com/specifications/specs/serial-port-profile-1-1/",
-                "description": "Exactly matches bytes_reverse('00001101-0000-1000-8000-00805F9B34FB') == 'fb349b5f-8000-0080-0010-000001110000'.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "71261000-3692-ae93-e711-472ba41689c9",
         "company": "Bontrager (Trek)",
         "UUID_name": "Flare RT Light Mode Service",
@@ -1029,7 +590,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://medium.com/@johnathanchiu1065/side-project-series-reverse-engineering-the-boosted-board-remote-ceda4c30a74a",
+                "URL": "https://web.archive.org/web/20260518115634/https://medium.com/@johnathanchiu1065/side-project-series-reverse-engineering-the-boosted-board-remote-ceda4c30a74a",
                 "description": "Medium writeup 'Reverse Engineering the Boosted Board Remote' by Johnathan Chiu identifies this as the Controls Service via Bluetility/Bleak enumeration.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -1062,7 +623,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://medium.com/@johnathanchiu1065/side-project-series-reverse-engineering-the-boosted-board-remote-ceda4c30a74a",
+                "URL": "https://web.archive.org/web/20260518115634/https://medium.com/@johnathanchiu1065/side-project-series-reverse-engineering-the-boosted-board-remote-ceda4c30a74a",
                 "description": "Medium writeup 'Reverse Engineering the Boosted Board Remote' by Johnathan Chiu identifies this as the Connectivity Service.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -1078,7 +639,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://endless-sphere.com/sphere/threads/boosted-boards-reverse-engineered-development.56839/",
+                "URL": "https://web.archive.org/web/20251211175819/https://foreverboosted.co/faq",
                 "description": "Endless Sphere forum 'Boosted boards reverse engineered development' identifies this UUID as a Boosted Board v3/v2 / Mini S/X BLE identifier used in the reverse-engineered ESP32 BLE Arduino implementation of the remote/board.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -1094,7 +655,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/johnathanchiu/boosted-project",
+                "URL": "https://raw.githubusercontent.com/johnathanchiu/boosted-project/master/arduino/boosted/scanner/scanner.ino",
                 "description": "boosted-project arduino/boosted/scanner/scanner.ino defines BOARD_ADVERTISED_UUID with this value.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -1126,7 +687,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
+                "URL": "https://web.archive.org/web/20220327082906/https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
                 "description": "Bose AR Web SDK documents this UUID as 'Gesture Configuration (Read/Write/Notify)' under the Bose AR Service 0000fdd2-..., described as 'Describes which gestures are enabled/disabled; allows control via read/write'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -1142,7 +703,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
+                "URL": "https://web.archive.org/web/20260518115738/https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
                 "description": "Bose AR Web SDK documents this UUID as 'Gesture Data (Notify)' under the Bose AR Service 0000fdd2-..., described as 'Notifies you when gestures are triggered by the user'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -1158,7 +719,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
+                "URL": "https://web.archive.org/web/20220327082906/https://zakaton.github.io/Bose-Frames-Web-SDK/default.html",
                 "description": "Bose AR Web SDK documents this UUID as 'Sensor Configuration (Read/Write/Notify)' under the Bose AR Service 0000fdd2-..., used to 'Enable/disable sensors and set sampling rates'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -1229,39 +790,6 @@
         ]
     },
     {
-        "UUID": "6e400001-b5a3-f393-e0a9-77656c6f6f70",
-        "company": "COROS Wearables Inc.",
-        "UUID_name": "Pace 3 watch UART Service (welooop node variant)",
-        "UUID_purpose": "COROS Pace 3 GPS watch proprietary BLE service. Nordic UART Service base (6e400001-b5a3-f393-e0a9-) with COROS-specific node ID '77656c6f6f70' which ASCII-decodes to 'weloop' (COROS Wearables' parent brand 'Weloop' was the pre-COROS Chinese smartwatch line). Distinct from the canonical Nordic UART node e50e24dcca9e.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
-                "description": "SySS blog 'Bluetooth Analysis - COROS Pace 3' enumerates this service UUID during GATT discovery of the COROS Pace 3 watch. Node 77 65 6c 6f 6f 70 = ASCII 'weloop'.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "6e400002-b5a3-f393-e0a9-77656c6f6f70",
-        "company": "COROS Wearables Inc.",
-        "UUID_name": "Pace 3 watch UART RX Characteristic (welooop node)",
-        "UUID_purpose": "COROS Pace 3 watch BLE UART RX (write) characteristic, paired with 6e400001-...-77656c6f6f70 service. ASCII-decode of node 77656c6f6f70 = 'weloop'.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "parent_UUID": "6e400001-b5a3-f393-e0a9-77656c6f6f70",
-        "evidence_array": [
-            {
-                "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
-                "description": "SySS blog enumerates this characteristic during COROS Pace 3 GATT discovery.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "6e400003-b5a3-f393-e0a9-77656c6f6f70",
         "company": "COROS Wearables Inc.",
         "UUID_name": "Pace 3 watch UART TX/Notify Characteristic (welooop node)",
@@ -1274,39 +802,6 @@
             {
                 "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
                 "description": "SySS blog: '[!] Subscribed to notification for charac. 6e400003-b5a3-f393-e0a9-77656c6f6f70'.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "6e400001-b5a3-f393-e0a9-77757c7f7f70",
-        "company": "COROS Wearables Inc.",
-        "UUID_name": "Pace 3 watch UART Service (second node variant)",
-        "UUID_purpose": "Second COROS Pace 3 watch BLE UART service variant with node ID 77757c7f7f70 (likely a related model/firmware variant of the welooop-derived service). Observed alongside the primary 77656c6f6f70 service during COROS Pace 3 GATT enumeration.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
-                "description": "SySS blog enumerates this as a second UART-style service on the COROS Pace 3.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "6e400002-b5a3-f393-e0a9-77757c7f7f70",
-        "company": "COROS Wearables Inc.",
-        "UUID_name": "Pace 3 watch UART RX Characteristic (second variant)",
-        "UUID_purpose": "COROS Pace 3 watch BLE UART RX (write) characteristic for the second service variant, paired with 6e400001-...-77757c7f7f70.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "parent_UUID": "6e400001-b5a3-f393-e0a9-77757c7f7f70",
-        "evidence_array": [
-            {
-                "URL": "https://blog.syss.com/posts/bluetooth-analysis-coros-pace-3/",
-                "description": "SySS blog enumerates this characteristic on the COROS Pace 3.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -1345,38 +840,6 @@
             }
         ],
         "regex": true
-    },
-    {
-        "UUID": "16860003-a5ae-9856-b6d3-dbb4c676993e",
-        "company": "Candy House Inc. (Sesame)",
-        "UUID_name": "Sesame RX Characteristic",
-        "UUID_purpose": "RX characteristic on Candy House Sesame 3 / Sesame 4 / Sesame 5 / Sesame Bot 2 / Sesame Bike smart locks. The lock sends notifications (status / responses) back to the phone via this characteristic.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/homy-newfs8/libsesame3bt-core/blob/main/lib/libsesame3bt-core/include/Sesame.h",
-                "description": "libsesame3bt-core (a well-known reverse-engineered library used by ESPHome's sesame3 component) defines RxUUID with this value for communicating with all Candy House Sesame BLE smart lock models. The Sesame.h header explicitly labels it as the BLE RX UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "16860002-a5ae-9856-b6d3-dbb4c676993e",
-        "company": "Candy House Inc. (Sesame)",
-        "UUID_name": "Sesame TX Characteristic",
-        "UUID_purpose": "TX characteristic on Candy House Sesame 3 / Sesame 4 / Sesame 5 / Sesame Bot 2 / Sesame Bike smart locks. The phone writes commands to this characteristic to control the lock.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/homy-newfs8/libsesame3bt-core/blob/main/lib/libsesame3bt-core/include/Sesame.h",
-                "description": "libsesame3bt-core (a well-known reverse-engineered library used by ESPHome's sesame3 component) defines TxUUID with this value for communicating with all Candy House Sesame BLE smart lock models. The Sesame.h header explicitly labels it as the BLE TX UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
     },
     {
         "UUID": "00010000-0000-1000-0000-d8492fffa821",
@@ -1455,65 +918,17 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
+                "URL": "https://web.archive.org/web/20250824213710/https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
                 "description": "iopush.net writeup 'Reverse engineer Cubii elliptic bike BLE protocol' enumerates the Cubii custom service and characteristics.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
     },
     {
-        "UUID": "00001731-2927-efef-cdab-eba0fe583711",
-        "company": "Cubii Inc.",
-        "UUID_name": "RPM Characteristic",
-        "UUID_purpose": "Revolutions-per-minute characteristic for Cubii elliptic bike, child of service 0x1730.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "parent_UUID": "00001730-2927-efef-cdab-eba0fe583711"
-    },
-    {
         "UUID": "00001732-2927-efef-cdab-eba0fe583711",
         "company": "Cubii Inc.",
         "UUID_name": "Battery Level Characteristic",
         "UUID_purpose": "Battery-level characteristic for Cubii elliptic bike, child of service 0x1730.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "parent_UUID": "00001730-2927-efef-cdab-eba0fe583711"
-    },
-    {
-        "UUID": "00001733-2927-efef-cdab-eba0fe583711",
-        "company": "Cubii Inc.",
-        "UUID_name": "Brake Position Characteristic",
-        "UUID_purpose": "Brake / resistance position characteristic for Cubii elliptic bike, child of service 0x1730.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://notes.iopush.net/blog/2023/09-cubii-ble-protocol/",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "parent_UUID": "00001730-2927-efef-cdab-eba0fe583711"
-    },
-    {
-        "UUID": "00001734-2927-efef-cdab-eba0fe583711",
-        "company": "Cubii Inc.",
-        "UUID_name": "Revolutions Counter Characteristic",
-        "UUID_purpose": "Total revolutions counter characteristic for Cubii elliptic bike, child of service 0x1730.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -1556,36 +971,6 @@
             }
         ],
         "regex": true
-    },
-    {
-        "UUID": "0003cbbb-0000-1000-8000-00805f9bfff0",
-        "company": "Cypress Semiconductor (Infineon)",
-        "UUID_name": "CySmart RGB LED Service (variant)",
-        "UUID_purpose": "Cypress-style proprietary GATT UUID with device ID 0x0003 and service 0xCBBB. Cypress AN91162 documents the canonical 0003CBBB-...-0131 RGB LED service; this UUID is sibling variant with FFF0 tail.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://media.digikey.com/pdf/Data%20Sheets/Cypress%20PDFs/001-91162_AN91162_Creating_a_BLE_Custom_Profile.pdf",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "0003abcd-0000-1000-8000-00805f9b0131",
-        "company": "Cypress Semiconductor (Infineon)",
-        "UUID_name": "CySmart custom-UUID convention example",
-        "UUID_purpose": "Cypress/Infineon custom-UUID convention. 0x0003 = device prefix; 'abcd' body is developer placeholder from CySmart/PSoC samples. Same family used by Grainfather Connect brewing controller.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.infineon.com/dgdl/Infineon-AN91162_Creating_a_BLE_Custom_Profile-ApplicationNotes-v05_00-EN.pdf",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
     },
     {
         "UUID": "65333333-a115-11e2-9e9a-0800200ca100",
@@ -1636,22 +1021,6 @@
             }
         ],
         "regex": true
-    },
-    {
-        "UUID": "2141e110-213a-11e6-b67b-9e71128cae77",
-        "company": "Daikin Industries",
-        "UUID_name": "Madoka BRC1H AC Unit Management",
-        "UUID_purpose": "Primary GATT service on the Daikin BRC1H ('Madoka') wall-mount BLE thermostat for residential/commercial Daikin air-conditioning units. Contains characteristics 2141e111-... (Notify, status responses) and 2141e112-... (WriteWithoutResponse, commands). The device's BLE chip is a Universal Electronics UE878 BLE module.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/blafois/Daikin-Madoka-BRC1H-BLE-Reverse",
-                "description": "Blafois's Daikin BRC1H reverse-engineering repo labels this UUID exactly as 'AC Unit Management'. Confirmed independently by Home Assistant integrations (mduran80/daikin_madoka), the openHAB DaikinMadoka binding, and ESPHome BTProxy implementations.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
     },
     {
         "UUID": "f8083536-849e-531c-c594-30f1f86a4ea5",
@@ -1743,7 +1112,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/NightscoutFoundation/xDrip/issues/1279",
+                "URL": "https://github.com/deviceplug/btleplug/issues/177",
                 "description": "xDrip GitHub issue #1279 ('Dexcom G6 / 8G tx: every 5mins \"Could not read after AuthRequestTX\" & \"Could not read reply to auth challenge\"') reports this characteristic by UUID, names it AuthRequestTX, and confirms WRITE/INDICATE properties. Cross-confirmed by btleplug issue #177.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -1776,24 +1145,8 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/cyclonite69/shadowcheck-web/blob/main/server/src/repositories/surveillanceDetectionRepository.ts",
+                "URL": "https://github.com/cyclonite69/shadowcheck-web/blob/master/server/src/repositories/surveillanceDetectionRepository.ts",
                 "description": "cyclonite69/shadowcheck-web's surveillanceDetectionRepository SQL fingerprints DEI Body-Worn Cameras using both the SSID pattern `^DEI-[0-9]+$` and the proprietary service UUID b4520100-a308-4e56-8a52-536c2ad07147, with confidence 92/100 when both match. Cross-confirmed in gedrocht/cookie BLE scan dump (MAC DD:C5:E2:A0:6B:05 advertising this UUID).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "2dd10010-1c37-452d-8979-d1b4a787d0a4",
-        "company": "Dyson Limited",
-        "UUID_name": "Air Purifying Fan",
-        "UUID_purpose": "Custom 128-bit GATT service exposed by Dyson air-purifying fan products (TP04/TP07/HP04/HP07/PH04 Pure Cool, Pure Hot+Cool, Humidify+Cool families) for BLE provisioning and control via the Dyson Link / MyDyson app prior to Wi-Fi/MQTT setup.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://youtu.be/Z65QgA_BKgc?t=45",
-                "description": "Already attributed to Dyson in CLUES_data.json based on Dyson's own setup video 'How can I link my smart phone to my Dyson purifier?' by Dyson Expert Katie (2020). Companion characteristic UUIDs 2dd10011 / 2dd10013 share the same base.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -1817,22 +1170,6 @@
         "regex": true
     },
     {
-        "UUID": "45425452-4f4e-2047-5458-000000000000",
-        "company": "EBTRON, Inc.",
-        "UUID_name": "EBTRON GTX BLE service",
-        "UUID_purpose": "Custom GATT service for EBTRON Gold Series airflow/temperature transmitters (GTx116/GTx series) exposed via the EB-Link BLE mobile interface. UUID bytes ASCII-decode to 'EBTRON GTX' followed by zero padding.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://ebtron.com/gtx116e-pc-h/",
-                "description": "ASCII decode of UUID bytes 45 42 54 52 4f 4e 20 47 54 58 = 'EBTRON GTX'. EBTRON Gold Series GTx airflow transmitters use BLE via the EB-Link app.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "f815e810-456c-6761-746f-4d756e696368",
         "company": "Elgato",
         "UUID_name": "Elgato Avea Light Bulb Service",
@@ -1847,28 +1184,13 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "URL": "https://developers.guh.io/elgato.html",
+                "URL": "https://github.com/k0rventen/avea/blob/master/README.md",
                 "description": "guh.io Elgato plugin documentation lists service {f815e810-456c-6761-746f-4d756e696368} as the Elgato Avea bulb's BLE service; characteristic f815e811-456c-6761-746f-4d756e696368 is used to read/write color, name, and brightness.",
                 "submitter": "Claude (Opus 4.7)"
             },
             {
                 "URL": "https://github.com/k0rventen/avea",
                 "description": "Open-source Python control library for Elgato Avea bulb references this UUID family for bulb communication.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "fc5421a1-236c-4c94-8fa9-944a3e5353fa",
-        "company": "Ember Technologies",
-        "UUID_name": "Mug BLE characteristic (0x21A1)",
-        "UUID_purpose": "Characteristic in Ember's fc54XXXX-236c-4c94-8fa9-944a3e5353fa BLE family. Service is fc543622-...; known char IDs: 0001 (mug name), 0002 (drink temp), 0003 (target temp), 0012 (push events).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/orlopau/ember-mug",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -2032,22 +1354,6 @@
         ]
     },
     {
-        "UUID": "65786365-6c70-6f69-6e74-2e636f6d0000",
-        "company": "Excelpoint Technology Ltd.",
-        "UUID_name": "excelpoint.com demo/eval-kit UUID",
-        "UUID_purpose": "UUID bytes ASCII-decode to 'excelpoint.com\\x00\\x00'. Excelpoint is a Hong Kong-based Qualcomm/NXP-authorized Asia distributor that ships Bluetooth eval kits (QCC30xx/QCC50xx/QN90xx/NXH36xx). This UUID is the literal ASCII of their domain and is almost certainly a placeholder in their reference firmware/eval-kit BLE demo.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.excelpoint.com/product-type/bluetooth-module-ic/",
-                "description": "ASCII decode of UUID bytes 65 78 63 65 6c 70 6f 69 6e 74 2e 63 6f 6d = 'excelpoint.com'. Excelpoint distributes Qualcomm/NXP Bluetooth chips.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "258eafa5-e914-47da-95ca-c5ab0dc85b11",
         "company": "Firewalla Inc.",
         "UUID_name": "Firewalla App BLE UUID",
@@ -2059,27 +1365,6 @@
             {
                 "URL": "https://www.labs.greynoise.io/grimoire/2024-08-20-bluuid-firewalla/",
                 "description": "GreyNoise Labs APK DEX extraction.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "fbb05afa-9145-41f1-8076-9de8be56f104",
-        "company": "Firewalla Inc.",
-        "UUID_name": "Firewalla App BLE UUID",
-        "UUID_purpose": "Bluetooth Low Energy UUID extracted from the Firewalla Chancellor Android app (com.firewalla.chancellor) DEX. Observed by GreyNoise Labs research into the Firewalla Purple/Gold firewall family's 'firereset' BLE out-of-band management interface.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.labs.greynoise.io/grimoire/2024-08-20-bluuid-firewalla/",
-                "description": "GreyNoise Labs 'BLUUID: Firewallas, Diabetics, And… Bluetooth' (Aug 2024) extracts this UUID from the com.firewalla.chancellor APK via DEX string analysis.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.firewalla.chancellor",
-                "description": "Source Android app: com.firewalla.chancellor (Firewalla's official client).",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -2242,54 +1527,6 @@
         ]
     },
     {
-        "UUID": "adabfb00-6e7d-4601-bda2-bffaa68956ba",
-        "company": "Fitbit",
-        "UUID_name": "Tracker Service (Airlink-generation, product code FB00)",
-        "UUID_purpose": "Fitbit's BLE advertising/discovery service for legacy 'Airlink-protocol' trackers (Ace 2, Ace 3, Alta, Alta HR, Blaze, Charge 2, Charge 3, Charge HR, Flex 2, Inspire, Inspire 2, Inspire HR, Ionic, Versa, Versa Lite, Zip); the first 32 bits XXXXXXXX-6e7d-4601-bda2-bffaa68956ba encode the product-type code so the Fitbit companion app can identify the model during BLE scanning.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/Fitbit/bitgatt/blob/master/README.md",
-                "description": "Fitbit's bitgatt README uses `ABCDEFGH-6E7D-4601-BDA2-BFFAA68956BA` as the scan-filter placeholder, confirming the XXXXXXXX-6E7D-4601-BDA2-BFFAA68956BA structure where XXXXXXXX is the product-type code. reelyactive's BLE identifier reference also documents the pattern.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "731893f9-744e-4899-b7e3-174106ff2b82",
-        "company": "Fujifilm",
-        "UUID_name": "Camera BLE Service (XApp / Camera Remote)",
-        "UUID_purpose": "BLE GATT service exposed by Fujifilm digital cameras (X-series and similar) used by the Fujifilm XApp and Camera Remote apps for pairing, geotagging, time sync, shutter release, and handoff to Wi-Fi for image transfer. Companion characteristic f90f7d3a-3b64-45c6-ab21-933900184837 also present.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/tiredboffin/fffw",
-                "description": "tiredboffin/fffw is a research-tool project for Fujifilm cameras; the ffbt tool emulates BLE functions of Fujifilm XApp / Camera Remote, with GATT configuration in `ffbt/cfg/gatt-*.yaml` defining service UUID 731893f9-744e-4899-b7e3-174106ff2b82.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "bd4ac610-0b45-11e3-8ffd-0800200c9a66",
-        "company": "Future Motion",
-        "UUID_name": "Onewheel related BLE service (sibling)",
-        "UUID_purpose": "Onewheel-related BLE service sharing the same UUIDv1 node MAC 0800200c9a66 as the main Onewheel service (e659f300-ea98-11e3-ac10-0800200c9a66). Note: 0800200c9a66 is the RFC 4122 sample MAC, used by many UUIDv1 generators; the timestamp era (Aug 2013) and family suggest Onewheel.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/TomasHubelbauer/onewheel-web-bluetooth",
-                "description": "UUIDv1 sibling of the main Onewheel service; shared 0800200c9a66 node.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "e659f300-ea98-11e3-ac10-0800200c9a66",
         "company": "Future Motion",
         "UUID_name": "Onewheel main BLE service",
@@ -2301,22 +1538,6 @@
             {
                 "URL": "https://github.com/TomasHubelbauer/onewheel-web-bluetooth",
                 "description": "Widely documented in the Onewheel reverse-engineering community as the main service UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "fefe0000-0000-0000-0000-010000000000",
-        "company": "GN ReSound A/S (GN Hearing)",
-        "UUID_name": "ReSound hearing aid identifier (non-standard 128-bit form)",
-        "UUID_purpose": "0xFEFE is the Bluetooth SIG 16-bit UUID assigned to GN ReSound A/S (hearing-aid manufacturer; makers of ReSound, Beltone, Interton hearing aids supporting BLE ASHA streaming). The non-canonical 128-bit padding here suggests a 16-bit service UUID + service-data bytes concatenated and stored as a 128-bit string by some scanner — capture artifact rather than a true 128-bit service identifier.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.bluetooth.com/specifications/assigned-numbers/",
-                "description": "0xFEFE = GN ReSound A/S SIG assignment 2013-12-17. The non-canonical 128-bit form is a scanner concatenation artifact.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -2338,22 +1559,6 @@
             }
         ],
         "regex": true
-    },
-    {
-        "UUID": "6a4e3e10-667b-11e3-949a-0800200c9a66",
-        "company": "Garmin",
-        "UUID_name": "Garmin proprietary BLE service (variant 3E10)",
-        "UUID_purpose": "Garmin watch/sensor/dive-computer BLE service; matches Garmin's well-known custom base 6a4e****-667b-11e3-949a-0800200c9a66 used by their watches for the Multi-Link (ML/MLR) and GFDI protocols. The exact 3e10 sub-identifier is not in the publicly documented Multi-Link characteristic map (28xx range) — could be a newer/older characteristic, dive-computer or sensor-specific characteristic, or a non-Multilink Garmin service.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://gadgetbridge.org/internals/specifics/garmin-protocol/",
-                "description": "Gadgetbridge's Garmin Protocol page documents the base 6a4e****-667b-11e3-949a-0800200c9a66 as Garmin's namespace (Multi-Link service 6a4e2800, characteristics 6a4e2810-2814 read, 6a4e2820-2824 write, 6a4e4c80, 6a4ecd28, 6a4e8022). The OpenFenix/bluetooth-sniffer Garmin reverse-engineering project also enumerates UUIDs in this family.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
     },
     {
         "UUID": "4d500001-4745-5630-3031-e50e24dcca9e",
@@ -2390,38 +1595,6 @@
         "regex": true
     },
     {
-        "UUID": "b5f90001-aa8d-11e3-9046-0002a5d5c51b",
-        "company": "GoPro, Inc.",
-        "UUID_name": "GoPro WiFi Access Point (WAP) service",
-        "UUID_purpose": "GoPro legacy BLE WiFi-provisioning service used to read and write the camera's WiFi SSID (b5f90003) and WiFi password (b5f90002) over Bluetooth Low Energy. Used by HERO5/6/7/Session/MAX cameras and earlier Open GoPro firmware.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/KonradIT/goprowifihack/blob/master/Bluetooth/bluetooth-api.md",
-                "description": "Documented in goprowifihack and Open GoPro: b5f9XXXX-aa8d-11e3-9046-0002a5d5c51b is GoPro's WAP service family.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "200c9a66-0800-bdf4-e611-cb52007ae14d",
-        "company": "Google",
-        "UUID_name": "Android Auto — mangled byte-order capture",
-        "UUID_purpose": "Buggy capture of canonical Android Auto UUID 4de17a00-52cb-11e6-bdf4-0800200c9a66. Bytes have been per-field byte-swapped and field-order rearranged. Common bug when parsing a 128-bit SDP UUID with Microsoft GUID byte layout (field-reversed).",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/bluez/bluez/issues/963",
-                "description": "Decodes to canonical Google Android Auto UUID 4de17a00-52cb-11e6-bdf4-0800200c9a66 (per bluez issue #963) under field-swapped Microsoft GUID byte layout interpretation.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "5e164731-1999-3405-9061-08a610fd3787",
         "company": "Google",
         "UUID_name": "Chrome OS Nearby Quick Start",
@@ -2431,7 +1604,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://source.chromium.org/chromium/chromium/src/+/main:chromeos/ash/services/nearby/public/cpp/nearby_client_uuids.cc",
+                "URL": "https://raw.githubusercontent.com/chromium/chromium/main/chromeos/ash/services/nearby/public/cpp/nearby_client_uuids.cc",
                 "description": "Chromium source explicitly defines `const char kQuickStartUuid[] = \"5e164731-1999-3405-9061-08a610fd3787\"` alongside kNearbySharingUuid and kSecureChannelUuid.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -2447,7 +1620,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://source.chromium.org/chromium/chromium/src/+/main:chromeos/ash/services/nearby/public/cpp/nearby_client_uuids.cc",
+                "URL": "https://raw.githubusercontent.com/chromium/chromium/main/chromeos/ash/services/nearby/public/cpp/nearby_client_uuids.cc",
                 "description": "Chromium source explicitly defines `const char kSecureChannelUuid[] = \"a384bd4f-41ea-3b02-8901-8c2ed9a79970\"` alongside kDataMigrationUuid, kNearbySharingUuid, and kQuickStartUuid.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -2465,22 +1638,6 @@
             {
                 "URL": "https://developers.google.com/nearby/fast-pair/specifications/extensions/messagestream",
                 "description": "Confirmed directly from Google's official Fast Pair developer documentation: 'Use fixed UUID as the endpoint df21fe2c-2515-4fdb-8886-f12c4d67927c'.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "9a2b3d00-d590-11e5-82ac-0002a5d5c51b",
-        "company": "Google",
-        "UUID_name": "Chromecast / Cast proprietary service",
-        "UUID_purpose": "Proprietary GATT service used by Google Cast / Chromecast devices for setup, device control, or media interaction. UUIDv1 timestamp ~late 2015 (Chromecast 2nd-gen / Chromecast Audio era). Trailing `0002a5d5c51b` is the Chromecast vendor MAC node observed across many Chromecast BLE characteristics.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://gist.github.com/joustava/eb357c62c261984b8af32a5024c6bd65",
-                "description": "Chromecast BLE service-discovery dump identifies a Google Chromecast at MAC 54:60:09:4A:6D:D9 whose device-name characteristic returned 'TV'. The UUIDv1 timestamp (Dec 2015) and node-MAC convention match Chromecast.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -2582,22 +1739,6 @@
         ]
     },
     {
-        "UUID": "47726f74-6547-4c4f-5353-414253000000",
-        "company": "Grote Industries",
-        "UUID_name": "4SEE Smart Trailer ABS (GroteGLOSSABS)",
-        "UUID_purpose": "BLE GATT service identifier for the ABS (Anti-Lock Brake System) module of Grote's 4SEE Smart Trailer System. The 16-byte UUID is literally the ASCII string 'GroteGLOSSABS\\x00\\x00\\x00' — vanity/fixed-length identifier for the GLOSS (Grote Lighting/Operating Sub-System) ABS subsystem.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.grote.com/4see/",
-                "description": "ASCII decode of bytes = 'GroteGLOSSABS\\0\\0\\0'. Grote's 4SEE Smart Trailer System uses BLE for nose-box to mobile-device communication, providing ABS Notifications with diagnostic trouble codes, ABS health checks, pressure/valve readings, and wheel-speed data.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "028c8db0-fb17-11e4-a322-1697f925ec7b",
         "company": "GymNext",
         "UUID_name": "GymNext fitness timer/device BLE service",
@@ -2625,39 +1766,6 @@
             {
                 "URL": "https://forum.donanimarsivi.com/konu/windows-11-aygit-yoneticisi-diger-aygitlar-hatasi.1008308/",
                 "description": "Turkish Windows 11 Device Manager thread labels BTHENUM\\{fafbdd20-83f0-4389-addf-917ac9dae5b2}_VID&00010075_PID&0100, LOCALMFG&0002 as 'Flow' on an HONOR MagicBook X 15. Sibling UUID e9dc66d5-... is labelled 'Flow15' in the same listing.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "e9dc66d5-e94f-4ba5-809d-cc5595eefa71",
-        "company": "HONOR",
-        "UUID_name": "Flow15",
-        "UUID_purpose": "HONOR-proprietary Bluetooth profile on HONOR MagicBook laptops, part of the same Flow / Magic-Link / HONOR Connect cross-device collaboration suite as the parent Flow UUID (fafbdd20-...). Specific function within the Flow protocol family is undocumented publicly; 'Flow15' likely indicates a sub-feature or version variant of Flow.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://techolay.net/sosyal/konu/honor-magicbook-x-15-bluetooth-surucusu.59201/",
-                "description": "Windows Device Manager dump from HONOR MagicBook X 15 lists this UUID with the textual label 'Flow15'. Repeatedly reported across multiple tech-support forums for HONOR MagicBook laptops.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "parent_UUID": "fafbdd20-83f0-4389-addf-917ac9dae5b2"
-    },
-    {
-        "UUID": "cee50b63-5f79-4727-8b5d-504eb07e1e22",
-        "company": "HONOR",
-        "UUID_name": "DirectProfileSecure",
-        "UUID_purpose": "HONOR-proprietary Bluetooth profile used by HONOR MagicBook laptops (and related HONOR Connect / Magic-Link multi-screen collaboration feature) for secure cross-device control with HONOR phones/tablets.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://techolay.net/sosyal/konu/honor-magicbook-x-15-bluetooth-surucusu.59201/",
-                "description": "Windows Device Manager BTHENUM entries on an HONOR MagicBook X 15 list this UUID with the textual label 'DirectProfileSecure' alongside other HONOR-specific profiles such as Flow, Flow15, IcService_New, InstantHotspot, and NearbySharing.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -2695,38 +1803,6 @@
         ]
     },
     {
-        "UUID": "00000000-0001-1100-8000-e83935499f35",
-        "company": "HP Inc.",
-        "UUID_name": "HP custom-base service (alias 0x0001-1100)",
-        "UUID_purpose": "Custom BLE GATT service in an HP-branded device using a vendor base UUID modeled after the Bluetooth SIG base. The 6-byte suffix `e83935499f35` reuses HP's IEEE OUI E8:39:35. Sibling of 00000000-0001-1000-8000-e83935499f35 within the same HP custom UUID base.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/macaddress/E83935",
-                "description": "Tail matches HP OUI E8:39:35. Sibling pattern with 00000000-0001-1000-... confirms HP custom base UUID with 16-bit alias slot.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00000000-0001-1000-8000-e83935499f35",
-        "company": "HP Inc.",
-        "UUID_name": "HP custom-base service (alias 0x0001-1000)",
-        "UUID_purpose": "Custom BLE GATT service on an HP-branded device using a vendor base UUID modeled after the Bluetooth SIG base. The 6-byte suffix `e83935499f35` reuses HP's IEEE OUI E8:39:35. Likely an HP printer/IoT BLE setup or device-info service exposed via the HP Smart app. Sibling 00000000-0001-1100-8000-e83935499f35 confirms multi-service vendor base.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/macaddress/e83935",
-                "description": "Tail `e83935499f35` starts with HP OUI E8:39:35 (registered 2011-10-07 to Hewlett Packard).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "00000000-0001-xxxx-8000-e83935499f35",
         "company": "HP Inc.",
         "UUID_name": "HP custom-base service family (regex)",
@@ -2758,7 +1834,7 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "URL": "https://www.helpnetsecurity.com/2017/11/27/smart-toys-risk/",
+                "URL": "https://github.com/Jeija/bluefluff/blob/master/doc/bluetooth.md",
                 "description": "Help Net Security coverage of Context Information Security's 2017 disclosure that the Furby Connect's BLE attack surface allowed unauthenticated firmware push via the Nordic DFU service.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -2918,7 +1994,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/taciturnaxolotl/hilton-honors/blob/main/smali_classes3/com/hilton/cr/crconnector/core/constant/a.smali",
+                "URL": "https://github.com/taciturnaxolotl/hilton-honors/blob/master/smali_classes3/com/hilton/cr/crconnector/core/constant/a.smali",
                 "description": "taciturnaxolotl/hilton-honors decompilation of the Hilton Honors Android app contains the constant `\"8ec1e808-67c9-11e6-8b77-86f30ca893d3\"` inside `com.hilton.cr.crconnector.core.constant.a` — Hilton's BLE digital-key service.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -2956,22 +2032,6 @@
             }
         ],
         "parent_UUID": "98bd0001-0b0e-421a-84e5-ddbf75dc6de4"
-    },
-    {
-        "UUID": "58524550-5948-0000-0000-9e03c3fc0000",
-        "company": "HyperX (HP Inc. gaming peripherals division)",
-        "UUID_name": "Custom GATT Service",
-        "UUID_purpose": "Vendor-attributed GATT Service from HyperX gaming peripherals (formerly Kingston, acquired by HP in 2021). Attribution evidence: the UUID's first 6 bytes (58 52 45 50 59 48) byte-reversed decode to ASCII 'HYPERX'. Distinct from the AIROHA_SPP UUID (00000000-0000-0000-0099-aabbccddeeff) which appears in the HyperX NGENUITY Android app via the Airoha SDK.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://hyperx.com/",
-                "description": "ASCII byte-reversed decode of UUID's first 6 bytes: '58 52 45 50 59 48' reversed = '48 59 50 45 52 58' = 'HYPERX' — HyperX is HP Inc.'s gaming peripherals brand (gaming headsets, keyboards, mice).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
     },
     {
         "UUID": "14cf8001-1ec2-d408-1b04-2eb270f14203",
@@ -3245,91 +2305,6 @@
         "parent_UUID": "a0d70001-4c16-4ba7-977a-d394920e13a3"
     },
     {
-        "UUID": "00000000-0069-746c-6165-4861736e694b",
-        "company": "Kinsa Health, Inc.",
-        "UUID_name": "Kinsa Smart Thermometer service",
-        "UUID_purpose": "Custom BLE service for Kinsa Bluetooth smart thermometers (fever-tracking medical device, parent-tracker app). UUID bytes reversed ASCII-decode to 'KinsaHealti...' (Kinsa Health, truncated).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://waynehartman.com/posts/reverse-engineering-the-kinsa-smart-thermometer.html",
-                "description": "Reverse-engineering write-up of the Kinsa thermometer documents this UUID; ASCII reverse decodes to 'KinsaHealti'.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00000000-006b-746c-6165-4861736e694b",
-        "company": "Kinsa Health, Inc.",
-        "UUID_name": "Kinsa Smart Thermometer service",
-        "UUID_purpose": "Custom BLE service for Kinsa Bluetooth smart thermometers. UUID bytes reversed ASCII-decode to 'KinsaHealtk' (Kinsa Health, truncated). Same UUID family as the existing 00000000-0069-... attribution; trailing bytes encode a Kinsa device/identifier suffix.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://waynehartman.com/posts/reverse-engineering-the-kinsa-smart-thermometer.html",
-                "description": "Reverse-engineering write-up of the Kinsa thermometer documents this UUID family (KinsaHealt-prefixed reversed-ASCII pattern); trailing 0x69/0x6b vary by device but all decode to 'KinsaHealt*'.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://home.kinsahealth.com/products/kinsa-quickcare-smart-thermometer",
-                "description": "Kinsa Health official product page confirming Kinsa as the vendor of Bluetooth Smart Thermometer products.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00001623-1212-efde-1623-785feabcd123",
-        "company": "LEGO Group",
-        "UUID_name": "LEGO Wireless Protocol v3 Hub Service (LWP3)",
-        "UUID_purpose": "Official LEGO Wireless Protocol v3 service used by LEGO Powered Up hubs (Boost Move Hub, City Hub, Technic Hub, Mario, etc.) for control of motors, sensors, and lights via the LEGO Powered Up app or Pybricks.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/LEGO/lego-ble-wireless-protocol-docs",
-                "description": "LEGO official BLE wireless protocol documentation defines this as the LWP3 Hub Service UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "569a1104-b87f-490c-92cb-11ba5ea5167c",
-        "company": "Laird Connectivity (Ezurio)",
-        "UUID_name": "BLE Serial Port Service (vSP family, X=4 variant)",
-        "UUID_purpose": "Variant of Laird's BL6xx Virtual Serial Port (vSP) base UUID 569a110X-b87f-490c-92cb-11ba5ea5167c where X=4. Laird's reserved 16-bit ID space sits inside '569aXXXX-b87f-490c-92cb-11ba5ea5167c'; X=1 is the official vSP service. X=4 is widely used by Laird-module-based ELDs (Sensata XT6300 / XT2400, marketed as 'HarpBT_*' / 'Link2_*') and consumed by dozens of trucking HoursOfService Android apps.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20240702193309/https://connectivity-staging.s3.us-east-2.amazonaws.com/s3fs-public/2019-01/Application%20Note%20-%20Laird%20BLE%20Serial%20Port%20Service%20v1_0_0.pdf",
-                "description": "Already captured by the regex entry '569a110x-...' in CLUES_data.json (Laird, observed in the wild for X=2,3,4). BLEScope confirms the X=4 instance is used by ~50 Android packages, overwhelmingly ELD / HoursOfService trucking apps consistent with the Sensata BluLink (XT6300 'HarpBT_*' / XT2400 'Link2_*') ELD ecosystem.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "0000f001-db4c-4549-4341-43414d455241",
-        "company": "Leica Camera AG",
-        "UUID_name": "Leica FOTOS camera service (LEICACAMERA, alias 0xF001)",
-        "UUID_purpose": "Vendor-specific BLE service used by Leica cameras with the Leica FOTOS companion app for camera control, image transfer, and pairing. Bytes 6-15 ASCII-decode to 'EICACAMERA'; the full UUID encodes the LEICACAMERA tag with short alias 0xF001.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://leica-camera.com/en-US/photography/leica-fotos",
-                "description": "ASCII decode of trailing UUID bytes spells 'LEICACAMERA'. Leica's BLE-equipped product line (Q2/Q3, M11, SL3, etc.) uses Leica FOTOS for Bluetooth pairing.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "29580001-d281-83bd-bc46-ad9b5bb78380",
         "company": "Lezyne",
         "UUID_name": "Lezyne KTV bicycle light BLE service",
@@ -3355,7 +2330,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/BasedHardware/omi",
+                "URL": "https://raw.githubusercontent.com/BasedHardware/omi/main/app/lib/services/devices/models.dart",
                 "description": "Omi (BasedHardware/omi) flutter app references this UUID in app/lib/services/devices/models.dart. Forked by many users including beastoin/omi, bozkurtfurkan/omi.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -3371,7 +2346,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/thechrisfischer/mag-pendant",
+                "URL": "https://raw.githubusercontent.com/thechrisfischer/mag-pendant/main/src/mag_pendant/config.py",
                 "description": "thechrisfischer/mag-pendant src/mag_pendant/config.py: 'CONTROL_UUID = \"632de002-604c-446b-a80f-7963e950f3fb\"'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -3388,7 +2363,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/thechrisfischer/mag-pendant",
+                "URL": "https://raw.githubusercontent.com/thechrisfischer/mag-pendant/main/src/mag_pendant/config.py",
                 "description": "thechrisfischer/mag-pendant src/mag_pendant/config.py: 'DATA_UUID = \"632de003-604c-446b-a80f-7963e950f3fb\"'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -3670,27 +2645,6 @@
         ]
     },
     {
-        "UUID": "455a0001-0023-4bd4-bbd5-a6920e4c5653",
-        "company": "Lovense",
-        "UUID_name": "Lovense Toy Control service (LVS- series, 'EZ' device-name prefix variant)",
-        "UUID_purpose": "BLE GATT Service UUID for Lovense interactive adult toys. Matches the documented Lovense service-UUID family pattern XY300001-002Z-4bd4-bbd5-a6920e4c5653, where the first two bytes (here 0x455A = ASCII 'EZ') encode the device-name prefix used in the toy's BLE advertising name (LVS-EZ...). Sibling characteristics use 002Z=0001 or similar offsets within the same UUID family. The constant trailing suffix a6920e4c5653 is unique to Lovense.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://buttplug.io/stpihkal/protocols/lovense/",
-                "description": "Buttplug.io / STPIHKAL Lovense protocol documentation describes the XY300001-002Z-4bd4-bbd5-a6920e4c5653 service-UUID family pattern where X/Y/Z vary per device generation; constant suffix a6920e4c5653 is Lovense-specific.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://github.com/buttplugio/stpihkal/issues/14",
-                "description": "buttplugio/stpihkal issue #14 tracks newly-discovered Lovense service/characteristic UUIDs following the same XY300001-002Z-... pattern.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "57300001-0023-4bd4-bbd5-a6920e4c5653",
         "company": "Lovense",
         "UUID_name": "Lovense Toy Control service (LVS-* series)",
@@ -3702,27 +2656,6 @@
             {
                 "URL": "https://metafetish.gitbooks.io/stpihkal/hardware/lovense.html",
                 "description": "Documented in the STPIHKAL hardware reverse-engineering wiki; trailing bytes spell 'LVS' matching the Lovense 'LVS-' device-name prefix.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "54300001-0023-4bd4-bbd5-a6920e4c5653",
-        "company": "Lovense",
-        "UUID_name": "Lovense Service (LVS device variant prefix 5430)",
-        "UUID_purpose": "Lovense BLE toy service. All Lovense devices share the base UUID suffix '-0023-4bd4-bbd5-a6920e4c5653' (ASCII 'LVS' = Lovense at trailing bytes). The first 4 hex chars (here '5430') vary by device model and follow the pattern XY300001-002Z-4bd4-bbd5-a6920e4c5653 documented in the buttplug.io stpihkal repository.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://buttplug.io/stpihkal/protocols/lovense/",
-                "description": "buttplug.io stpihkal documents the Lovense base service UUID format XY300001-002Z-4bd4-bbd5-a6920e4c5653 used across all Lovense BLE toys; suffix bytes spell 'LVS'.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://github.com/buttplugio/stpihkal/issues/14",
-                "description": "Issue tracking new Lovense Service/Characteristic UUIDs in the buttplug.io project — confirms the pattern XX300001-0023-4bd4-bbd5-a6920e4c5653 represents Lovense devices.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -3776,22 +2709,6 @@
         "parent_UUID": "78667579-7b48-43db-b8c5-7928a6b0a335"
     },
     {
-        "UUID": "54421000-756f-4c74-6472-61757172614d",
-        "company": "Marquardt GmbH",
-        "UUID_name": "Custom GATT Service",
-        "UUID_purpose": "Vendor-attributed GATT Service likely from Marquardt GmbH (German automotive/industrial electronics manufacturer producing switches, controls, and BLE-enabled access systems for automotive, e-bike, and HMI applications). Attribution evidence: the UUID's last 12 bytes byte-reversed decode to ASCII 'MarquardtLou' (with 'Lou' likely a device/product suffix).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.marquardt.com/",
-                "description": "ASCII byte-reversed decode of UUID's last 12 bytes: '75 6f 4c 74 64 72 61 75 71 72 61 4d' reversed = '4d 61 72 71 75 61 72 64 74 4c 6f 75' = 'MarquardtLou' — Marquardt GmbH is a German manufacturer of automotive switches, sensors, and BLE-enabled access systems (e-bike, automotive, industrial HMI).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "453994d5-d58b-96f9-6616-b37f586ba2ec",
         "company": "Microsoft",
         "UUID_name": "Generic Bluetooth Peripheral Device placeholder",
@@ -3817,7 +2734,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://www.dell.com/community/en/conversations/networking-internet-bluetooth/vostro-470-unrecognized-bluetooth-devices/647f6902f4ccf8a8de606780",
+                "URL": "https://learn.microsoft.com/en-us/answers/questions/2641452/unknown-bluetooth-device-missing-drivers",
                 "description": "Appears repeatedly in Dell/HP/Microsoft Q&A/Windows-Phone support forums in the BTHENUM\\{936da01f-...}_LOCALMFG&xxxx form whenever a connected Bluetooth peripheral exposes a service for which Windows has no specific driver. Re-used in PRTG Multi-Platform Probe project as a default probe ID, confirming it is treated as a well-known MSDN sample.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4069,43 +2986,6 @@
         ]
     },
     {
-        "UUID": "000002fd-3c17-d293-8e48-14fe2e4da212",
-        "company": "Nokia",
-        "UUID_name": "GC5000 Gamepad Vendor-Specific Service",
-        "UUID_purpose": "Vendor-specific BLE GATT service exposed by the Nokia GC5000 / 'Nokia 5000 Game Controller' gamepad. Base xxxxxxxx-3c17-d293-8e48-14fe2e4da212. Sibling members include 00006287-..., 0000d0ff-..., 0000d1ff-... NOTE: Sibling 010002fd-3c17-... was also seen attributed to an OEM 'STYLE' smartwatch line, so this base may be shared across multiple Chinese-OEM products using the same BLE template (or one of the attributions is mistaken).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/bluez/bluez/issues/1179",
-                "description": "BlueZ GitHub issue #1179 documents the Nokia GC5000 gamepad (modalias bluetooth:v1D5Ap1802d0003) advertising vendor-specific UUIDs of the form xxxxxxxx-3c17-d293-8e48-14fe2e4da212.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "4e6f7261-6c73-7942-6c75-65746f6f7468",
-        "company": "Noralsy",
-        "UUID_name": "NoralsyBluetooth Service",
-        "UUID_purpose": "Custom GATT service identifier used by Noralsy (a French access-control manufacturer) for their BLE/Bluetooth-based door access control solution. The 16-byte UUID ASCII-decodes exactly to 'NoralsyBluetooth'. Used with Noralsy's BatiConnect mobile app for hands-free / gesture-based door unlocking in residential and commercial buildings.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.noralsy.com/appli-baticonnect-mobile",
-                "description": "ASCII decode of UUID bytes 4e 6f 72 61 6c 73 79 42 6c 75 65 74 6f 6f 74 68 = 'NoralsyBluetooth'. Noralsy's BatiConnect mobile app uses BLE for hands-free door unlocking.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://www.noralsy.com/",
-                "description": "Noralsy is a French manufacturer of building access-control / intercom systems with BLE-based smartphone unlocking solutions.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "8ec9xxxx-f315-4f60-9fb8-838830daea50",
         "company": "Nordic Semiconductor",
         "UUID_name": "Secure DFU service family (regex)",
@@ -4134,22 +3014,6 @@
             {
                 "URL": "https://github.com/NordicPlayground/android-multi-link-demo/blob/master/src/com/nordicsemi/MultiLinkDemo/LedButtonService.java",
                 "description": "NordicPlayground/android-multi-link-demo `LedButtonService.java` defines `RX_SERVICE_UUID = UUID.fromString(\"3e520001-1368-b682-4440-d7dd234c45bc\")` with paired `RX_CHAR_UUID = 3e520002-...` and `TX_CHAR_UUID = 3e520003-...`. Companion characteristics confirm this is Nordic Semi's reference nRF Multi-Link sample.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "4b486400-6e6f-7274-6870-6f6c65656e67",
-        "company": "North Pole Engineering, Inc. (npe.fit)",
-        "UUID_name": "Custom GATT Service",
-        "UUID_purpose": "Vendor-attributed GATT Service from North Pole Engineering (NPE), maker of the GEM3, CABLE, and WASP ANT+/BLE bridge fitness devices (also produced the Wahoo GEM line). Attribution evidence: the UUID's last 12 bytes ASCII-decode exactly to 'northpoleeng' (6e 6f 72 74 68 70 6f 6c 65 65 6e 67), with the leading bytes 'KHd\\x00' likely encoding a service/version field.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://npe.fit/",
-                "description": "ASCII decode of UUID bytes (positions 4-15): '6e 6f 72 74 68 70 6f 6c 65 65 6e 67' = 'northpoleeng' — corresponds to North Pole Engineering's domain (npe.fit) and company name. NPE manufactures ANT+/BLE fitness bridge devices including the GEM3 and CABLE/WASP product lines.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -4269,22 +3133,6 @@
         "regex": true
     },
     {
-        "UUID": "ce060000-43e5-11e4-916c-0800200c9a66",
-        "company": "Nuki Home Solutions GmbH",
-        "UUID_name": "Nuki Keyturner BLE service (sibling)",
-        "UUID_purpose": "Probable Nuki Keyturner BLE service. Shares the same UUIDv1 node 0800200c9a66 and 11e4 timestamp family as documented Nuki services (e.g. a92ee000-5501-11e4-916c-0800200c9a66). 0800200c9a66 is the RFC 4122 sample MAC, used by Nuki's UUIDv1 generator.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://developer.nuki.io/t/bluetooth-gatt-services/89",
-                "description": "Same UUIDv1 generator (node + timestamp era) as documented Nuki Keyturner services.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "62741523-52f9-8864-b1ab-3b3a8d65950b",
         "company": "Okimat",
         "UUID_name": "Okimat adjustable smart bed BLE write characteristic",
@@ -4317,22 +3165,6 @@
         ]
     },
     {
-        "UUID": "98ed0001-a541-11e4-b6a0-0002a5d5c51b",
-        "company": "Oura Health Oy",
-        "UUID_name": "Oura Ring",
-        "UUID_purpose": "Primary GATT service exposed by the Oura smart ring (Gen 2 / Gen 3 / Heritage) for sync with the Oura Android/iOS app. Characteristic 98ed0002 = write-without-response (commands); 98ed0003 = notify (handle 0x0012, status/data responses). The trailing `0002a5d5c51b` is a Hewlett-Packard OUI but is a developer-shared UUIDv1 placeholder, not an HP product.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/LogosIsLife/open_ring/blob/main/PROTOCOL.md",
-                "description": "LogosIsLife/open_ring `PROTOCOL.md` documents `Service UUID: 98ed0001-a541-11e4-b6a0-0002a5d5c51b`, `Notify char: 98ed0003-...` (handle 0x0012), and Cmd char (handle 0x0015, write-without-response). DeveloperMarius/OuraClient defines `_SERVICE_UUID = '98ed0001-...'`, `_WRITE_CHARACTERISTIC_UUID = '98ed0002-...'`, `_READ_CHARACTERISTIC_UUID = '98ed0003-...'`. rsaxvc/rsaxvc.net.blagr writeup attributes it to OURA.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "09fc95c0-c111-11e3-9904-0002a5d5c52d",
         "company": "Overkiz / Somfy",
         "UUID_name": "io-homecontrol BluetoothManager service",
@@ -4342,7 +3174,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/Velocet/iown-homecontrol",
+                "URL": "https://raw.githubusercontent.com/Velocet/iown-homecontrol/master/docs/parameter/Internald/Connection/Connection.BluetoothManager.lua",
                 "description": "Connection.BluetoothManager.lua (decompiled from Overkiz gateway firmware) lists this UUID in the BluetoothManager namespace.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4420,37 +3252,6 @@
         ]
     },
     {
-        "UUID": "daebb240-b041-11e4-9e45-0002a5d5c51b",
-        "company": "Parrot SA",
-        "UUID_name": "Pot / Flower Power vendor service",
-        "UUID_purpose": "Custom service on Parrot smart-garden products (Flower Power sensor / Parrot Pot self-watering planter). 0002a5d5c51b suffix is Parrot's family node.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://developer.parrot.com/docs/FlowerPower/FlowerPower-BLE.pdf",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00500041-0054-0045-004f-481147385162",
-        "company": "Pateo Connect (Shanghai PATEO Electronic Equipment Mfg.)",
-        "UUID_name": "Pateo IVI Service",
-        "UUID_purpose": "Self-identifying BLE service UUID: UTF-16BE encoding of ASCII 'PATEO' in the first 10 bytes (0x0050='P', 0x0041='A', 0x0054='T', 0x0045='E', 0x004F='O'). Pateo Connect+ is a Chinese in-vehicle infotainment (IVI) and connected-car platform supplier whose Android Automotive IVI stack is used by multiple Chinese OEMs (Geely, etc.).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.pateo.com.cn/en/operating_system.html",
-                "description": "UTF-16BE decode of first 10 bytes literally yields 'PATEO'. PATEO is a well-known Chinese connected-car / IVI vendor (collaborator with Wind River for Android Automotive, Sierra Wireless modules in Geely vehicles).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "477ea600-a260-11e4-ae37-0002a5d50001",
         "company": "Philips",
         "UUID_name": "Sonicare HX9xx Connected Toothbrush (service 1)",
@@ -4491,7 +3292,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md: 'ASHA volume (fallback) | 00e4ca9e-ab14-41e4-8823-f9e70c7e91df | signed int8 [-128..0] | ✅ confirmed'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4507,7 +3308,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md: 'Program config read | bba1c7f1-b445-4657-90c3-8dbd97361a0c | read when program list not ready'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4579,22 +3380,6 @@
         ]
     },
     {
-        "UUID": "00001c00-d102-11e1-9b23-00025b00a5a3",
-        "company": "Polar Electro",
-        "UUID_name": "Polar proprietary service (short ID 0x1c00)",
-        "UUID_purpose": "Polar vendor BLE service. The suffix d102-11e1-9b23-00025b00a5aX is Polar's proprietary 128-bit base UUID used across H7/H10/OH1/Verity Sense and Polar wearables. Short ID 0x1c00 designates a specific service in Polar's custom GATT (likely related to measurement data or device control).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/polarofficial/polar-ble-sdk",
-                "description": "Polar BLE SDK uses the d102-11e1-9b23-00025b00a5aX namespace for proprietary services (PMD, H10 raw HR, etc.).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "fb005c16-02e7-f387-1cad-8acd2d8df0c8",
         "company": "Polar Electro Oy",
         "UUID_name": "Polar File Transfer Protocol (PFTP) Characteristic",
@@ -4606,36 +3391,6 @@
             {
                 "URL": "https://www.av-test.org/fileadmin/pdf/avtest_2015-06_fitness_tracker_english.pdf",
                 "description": "AV-Test 'Fitness Tracker Security' (June 2015) shows BtGatt.GattService onAttributeWrite() log lines with UUID=fb005c16-02e7-f387-1cad-8acd2d8df0c8 immediately followed by 'D/PFTP' (Polar File Transfer Protocol) and 'D/fi.polar.polarflow.data...' log lines from the Polar Flow Android app.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "0000ffb0-d102-11e1-9b23-00025b00a5a5",
-        "company": "Qualcomm / Cambridge Silicon Radio (CSR)",
-        "UUID_name": "GAIA vendor-specific endpoint (0xFFB0)",
-        "UUID_purpose": "CSR GAIA endpoint with short-ID 0xFFB0. 0xFFB0-0xFFBF range typically OEM/vendor custom endpoints over GAIA.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://cweiske.de/tagebuch/bluetooth-gaia.htm",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00001c00-d102-11e1-9b23-00025b00a5a5",
-        "company": "Qualcomm / Cambridge Silicon Radio (CSR)",
-        "UUID_name": "GAIA family endpoint (0x1C00)",
-        "UUID_purpose": "CSR GAIA vendor-specific endpoint (0x1C00 prefix).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/Hypfer/fiio-bta30-protocol",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -4658,21 +3413,6 @@
         "regex": true
     },
     {
-        "UUID": "0000eb16-d102-11e1-9b23-00025b00a5a5",
-        "company": "Qualcomm / Cambridge Silicon Radio (CSR)",
-        "UUID_name": "GAIA vendor-specific endpoint (0xEB16)",
-        "UUID_purpose": "Proprietary CSR/Qualcomm GAIA endpoint UUID. Part of the 0000XXXX-d102-11e1-9b23-00025b00a5a5 family.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://cweiske.de/tagebuch/bluetooth-gaia.htm",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "960cxxxx-244c-11e2-b299-00a0c60077ad",
         "company": "Qualcomm Labs Inc.",
         "UUID_name": "Qualcomm Labs UUIDv1 family (regex)",
@@ -4688,54 +3428,6 @@
             }
         ],
         "regex": true
-    },
-    {
-        "UUID": "960c489a-244c-11e2-b299-00a0c60077ad",
-        "company": "Qualcomm Labs Inc.",
-        "UUID_name": "Qualcomm Labs proprietary BLE service (960c489a)",
-        "UUID_purpose": "Qualcomm Labs vendor BLE service. UUIDv1 generated 2012-10-30; node 00:a0:c6:00:77:ad is registered to Qualcomm. The 960cXXXX-244c-11e2-b299-00a0c60077ad family is associated with various Qualcomm reference designs and AllJoyn-related code.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/search/result?mac=00a0c6",
-                "description": "OUI 00:A0:C6 is registered to Qualcomm. UUIDv1 timestamp matches Qualcomm Labs era.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "960c489c-244c-11e2-b299-00a0c60077ad",
-        "company": "Qualcomm Labs Inc.",
-        "UUID_name": "Qualcomm Labs proprietary BLE service (960c489c)",
-        "UUID_purpose": "Sibling of 960c489a in the Qualcomm Labs 960cXXXX-244c-11e2-b299-00a0c60077ad family. Node 00:a0:c6 is Qualcomm OUI.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/search/result?mac=00a0c6",
-                "description": "OUI 00:A0:C6 = Qualcomm. UUIDv1 sibling of other 960c... Qualcomm Labs UUIDs.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "960c4b8f-244c-11e2-b299-00a0c60077ad",
-        "company": "Qualcomm Labs Inc.",
-        "UUID_name": "Qualcomm Labs proprietary BLE service (960c4b8f)",
-        "UUID_purpose": "Sibling of 960c489a/c in the Qualcomm Labs 960cXXXX-244c-11e2-b299-00a0c60077ad family. Node 00:a0:c6 is Qualcomm OUI.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/search/result?mac=00a0c6",
-                "description": "OUI 00:A0:C6 = Qualcomm. UUIDv1 sibling of other 960c... Qualcomm Labs UUIDs.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
     },
     {
         "UUID": "366048ae-9f36-43cf-8004-010c0c9fa52e",
@@ -4810,7 +3502,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/protocol_registry.json",
                 "description": "sk408/hearing_aid_control protocol_registry.json: brand=resound, operation=GetBatteryState, characteristicUuid=24e1dff3-ae90-41bf-bfbd-2cf8df42bf87, confidence=partial.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4843,7 +3535,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md section 2.4: 'ReSound / GN Hearing — GN Command UUID: 1959a468-3234-4c18-9e78-8daf8d9dbf61'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4859,7 +3551,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md: 'GN Notify UUID: 8b51a2ca-5bed-418b-b54b-22fe666aadd2'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4891,7 +3583,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/kristofferR/ha-adjustable-bed/blob/main/docs/beds/reverie.md",
+                "URL": "https://raw.githubusercontent.com/nhchmg/ha-adjustable-bed/master/docs/beds/reverie.md",
                 "description": "Documented in kristofferR/ha-adjustable-bed Reverie docs, nhchmg/ha-adjustable-bed const.py (REVERIE_NIGHTSTAND_SERVICE_UUID, with head/foot/lumbar position characteristics), and jbyerline/flask-purple-powerbase.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4924,7 +3616,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md section 2.2: 'Rexton / WS Audiology — Terminal IO service: 8b82105d-0f0c-40bb-b422-3770fa72a864'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4940,7 +3632,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md: 'Program notify | 8b8225e0-0f0c-40bb-b422-3770fa72a864 | subscribe for active program | ✅ confirmed'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4957,7 +3649,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md: 'Volume | 8b8276e8-0f0c-40bb-b422-3770fa72a864 | [0x04, volumePosition] | ✅ confirmed' (plus 5 sibling opcodes on same characteristic).",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4975,7 +3667,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md: 'Control/FAPI service: c8f75466-21b2-45b8-87f8-bd49a13eff49'. Used as both service and Control request characteristic per SPEC table.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -4991,7 +3683,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md: 'Control response | c8f70447-21b2-45b8-87f8-bd49a13eff49 | subscribe | ✅ confirmed'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -5008,7 +3700,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md: 'Data request | c8f72804-21b2-45b8-87f8-bd49a13eff49 | chunked | ✅ confirmed'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -5025,7 +3717,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/protocol_registry.json",
                 "description": "sk408/hearing_aid_control protocol_registry.json: brand=rexton, GetBatteryState, characteristicUuid=ebee6f69-70b6-4bb9-b13b-9ba84953c233.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -5074,39 +3766,8 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://devzone.nordicsemi.com/f/nordic-q-a/80589/sniffing-a-bosch-laser-tape-2",
+                "URL": "https://www.b4x.com/android/forum/threads/ble2-leica-disto-and-bosch-laser-rangefinder.160390/",
                 "description": "Nordic DevZone reverse-engineering thread for the Bosch GLM120C/GLM400C laser tape documents this exact UUID as the primary service.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "089810cc-ef89-11e9-81b4-2a2ae2dbcce4",
-        "company": "Robert Bosch GmbH",
-        "UUID_name": "eBike Live Data characteristic",
-        "UUID_purpose": "BLE characteristic on Bosch smart-system eBike control units used by the Bosch eBike Flow app and Garmin integration to expose live ride data (assist level, mode names OFF/ECO/TOUR/eMTB/TURBO, battery, speed, cadence, rider power). Under the primary service 00000010-eaa2-11e9-81b4-2a2ae2dbcce4.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.emtbforums.com/threads/project-to-enable-bosch-garmin-integration.37793/page-4",
-                "description": "EMTB Forums + Soarcer/bosch-garmin-bridge GitHub repo identify the family of UUIDs (*-eaa2-11e9-... and *-ef89-11e9-...) as Bosch smart-system eBike control characteristics.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "424f5343-4820-4d43-5350-76012e002e00",
-        "company": "Robert Bosch GmbH",
-        "UUID_name": "MCSP (Measurement Common Service Protocol) v1.0.0",
-        "UUID_purpose": "Bosch-encoded BLE service UUID. Raw bytes decode as ASCII 'BOSCH MCSPv1.0.0'. Used by Bosch measurement tools (GLM laser distance meters).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/PointerEvent/bosch-plr-demo",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -5194,36 +3855,6 @@
         ]
     },
     {
-        "UUID": "3bf58980-3a2f-11e6-9011-0002a5d5c51b",
-        "company": "STMicroelectronics",
-        "UUID_name": "BlueST SDK characteristic (2016-06-24)",
-        "UUID_purpose": "Another STMicro BlueST SDK characteristic.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://stmicroelectronics.github.io/BlueSTSDK_Python/blue_st_sdk.utils.html",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "36412500-d99d-11e5-95ec-0002a5d5c51b",
-        "company": "STMicroelectronics",
-        "UUID_name": "BlueST SDK characteristic (2016-02-22)",
-        "UUID_purpose": "Custom characteristic using STMicro BlueST SDK pattern. 0002a5d5c51b is the BlueST SDK fixed suffix marker.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://stmicroelectronics.github.io/BlueSTSDK_Python/blue_st_sdk.utils.html",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "0000fexx-8e22-4541-9d4c-21edae82ed19",
         "regex": true,
         "company": "STMicroelectronics",
@@ -5254,22 +3885,6 @@
             {
                 "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
                 "description": "Sivakumaran et al. 2023, Table 1: 'ST STM32WB[38] 0000FE20-CC7A-482A-984A-7F2ED5B3E58F'. Second STM32WB DFU pattern (0000FEYY-8E22-4541-9D4C-21EDAE82ED19) added separately as regex.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "c23d00bc-217c-233b-9c00-fc44577136ee",
-        "company": "Samsung",
-        "UUID_name": "Galaxy IcService_New sibling",
-        "UUID_purpose": "Another sibling in the Samsung 'IcService_New' family. Shares 9 of 16 bytes with the documented Samsung Galaxy Buds UUID a23d00bc-217c-123b-9c00-fc44577136ee.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://learn.microsoft.com/en-us/answers/questions/3718998/upgreded-from-windowes-7-to-windows-10-i-find-thes",
-                "description": "Appears alongside a23d00bc-... in BTHENUM driver-not-found discussions; same family pattern.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -5337,22 +3952,6 @@
         ]
     },
     {
-        "UUID": "a49eb41e-cb06-495c-9f4f-aa80a90cdf4a",
-        "company": "Samsung",
-        "UUID_name": "Samsung Accessory Protocol (SAP) 'data' RFCOMM service",
-        "UUID_purpose": "One of two RFCOMM services in the Samsung Accessory Protocol family used by Gear Manager / Galaxy Wearable to communicate with Samsung wearables (Gear / Galaxy Watch). The watch immediately opens a connection to the phone's 'data' service after the phone connects to the watch's 'nudge' service. Sister UUID a49eb41e-cb06-495c-9f4f-bb80a90cdf00 (already in CLUES as 'Gear Manager (2)') is the 'nudge' service.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://xdaforums.com/t/figuring-out-samsung-accesory-protocol-internals.2857377/",
-                "description": "XDA Developers reverse-engineering thread 'Figuring out Samsung Accessory Protocol internals' explicitly lists both UUIDs a49eb41e-cb06-495c-9f4f-aa80a90cdf4a and a49eb41e-cb06-495c-9f4f-bb80a90cdf00 as the two RFCOMM services exposed by Samsung watches, calling them 'data' and 'nudge' respectively.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "bd3c76f3-8572-4687-b392-0fe5bdefe643",
         "company": "Samsung",
         "UUID_name": "Galaxy Continuity / Flow AuthBTManager service",
@@ -5380,22 +3979,6 @@
             {
                 "URL": "https://github.com/AyraHikari/OneUIAppsPort/blob/master/Flow/smali_classes2/com/samsung/android/galaxycontinuity/services/subfeature/NotiBTManager.smali",
                 "description": "AyraHikari/OneUIAppsPort Flow decompilation contains `NotiBTManager.smali` and `NotiTabletBTManager.smali` both with constant `\"B0D85563-4A77-495A-AF8D-87FB0FDA9FCF\"` passed to `Ljava/util/UUID;->fromString(...)`.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "e23b00bc-217c-453b-9c08-fc44577136fe",
-        "company": "Samsung",
-        "UUID_name": "Galaxy IcService_New sibling",
-        "UUID_purpose": "Sibling of a23d00bc-217c-123b-9c00-fc44577136ee (Samsung Galaxy Buds 'IcService_New'). Same family of vendor SDP UUIDs used by Samsung Galaxy devices for proprietary Bluetooth communication.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "http://drivers.awdit.fr/hwid/bthenum/%7Be23b00bc-217c-453b-9c08-fc44577136fe%7D_localmfg/000f",
-                "description": "Found in BTHENUM hardware ID `BTHENUM\\{e23b00bc-...}_VID&000104e8_PID&8080`. VID 0x00E8 = Samsung. Shared suffix with a23d00bc 'IcService_New' family.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -5449,39 +4032,6 @@
         ]
     },
     {
-        "UUID": "53445348-4f4d-4549-4f54-0016b724ea34",
-        "company": "Samsung SDS (Seoul Commtech)",
-        "UUID_name": "SDSHOMEIOT service (per-device, MAC 00:16:B7:24:EA:34)",
-        "UUID_purpose": "Samsung SDS smart-home / IoT (e.g. SHP digital door-lock, Home IoT Hub) vendor BLE service. UUID bytes 0-9 ASCII-decode to 'SDSHOMEIOT'; trailing 6 bytes are the device MAC starting with Seoul Commtech OUI 00:16:B7 (Samsung SDS subsidiary).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/vendors/seoul-commtech",
-                "description": "ASCII decode = 'SDSHOMEIOT' + Seoul Commtech OUI 00:16:B7. Samsung SDS markets door-lock/IoT products under the 'SDS Home IoT' brand.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "53445348-4f4d-4549-4f54-0016b724ea91",
-        "company": "Samsung SDS (Seoul Commtech subsidiary)",
-        "UUID_name": "SDSHOMEIOT service (per-device, MAC 00:16:B7:24:EA:91)",
-        "UUID_purpose": "Per-device sibling of the existing 'SDSHOMEIOT' family entry (53445348-4f4d-4549-4f54-0016b724ea34). The first 10 bytes (53 44 53 48 4f 4d 45 49 4f 54) ASCII-decode to 'SDSHOMEIOT' (Samsung SDS Home IoT) and the trailing 6 bytes (00:16:B7:24:EA:91) are an IEEE OUI 00:16:B7 belonging to Seoul Commtech Co., Ltd. — the hardware vendor for many Samsung SDS Home IoT devices.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "parent_UUID": "53445348-4f4d-4549-4f54-0016b724ea34",
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/search/result?mac=00:16:B7",
-                "description": "Trailing 6 bytes 00:16:B7:24:EA:91 — OUI 00:16:B7 = Seoul Commtech Co., Ltd. (per IEEE registry). First 10 bytes ASCII-decode to 'SDSHOMEIOT' (Samsung SDS Home IoT). Same encoding scheme as existing CLUES entry 53445348-4f4d-4549-4f54-0016b724ea34 (Samsung SDS / Seoul Commtech).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "c0ffee00-2624-46ff-9311-4d7083160300",
         "company": "Scanomat (TopBrewer)",
         "UUID_name": "TopBrewer coffee machine MACHINE service",
@@ -5491,7 +4041,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/bika11/SiloOS",
+                "URL": "https://raw.githubusercontent.com/bika11/SiloOS/master/dashboard/src/bluetooth/constants.ts",
                 "description": "SiloOS dashboard/src/bluetooth/constants.ts and ble_bridge.py both define TopBrewer custom service UUIDs in this c0ffee00 family.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -5543,7 +4093,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://nootnooot.codeberg.page/segway-ninebot-ble/",
+                "URL": "https://codeberg.org/NootNooot/segway-ninebot-ble/raw/branch/main/docs/transport.md",
                 "description": "Open documentation of the Segway-Ninebot BLE protocol; identifies this UUID as the modern Ninebot custom service and decodes the 'ninebot' ASCII suffix.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -5635,37 +4185,6 @@
         "parent_UUID": "6e400001-0000-0000-006e-696e65626f74"
     },
     {
-        "UUID": "deab91e4-670f-11e1-9ace-30bc4824019b",
-        "company": "Sennheiser",
-        "UUID_name": "PXC 550 / CapTune / Smart Control RFCOMM",
-        "UUID_purpose": "Vendor-specific Bluetooth Classic SDP service used by Sennheiser wireless headphones (confirmed on PXC 550). Used by the Sennheiser CapTune (later renamed 'Smart Control') companion app to push EQ settings, codec selection, and noise-cancel modes.",
-        "UUID_usage_array": [
-            "SDP Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.solveforum.com/forums/threads/pair-sennheiser-pxc-550-via-bluetooth-windows-7-x64-to-hp-elitebook-840-g1.269062/",
-                "description": "BTHENUM hardware-ID string `BTHENUM\\{deab91e4-670f-11e1-9ace-30bc4824019b}_VID&00010075_PID&0100` observed advertised by a Sennheiser PXC 550. Sennheiser's Bluetooth Company Identifier (BT SIG) is 0x0075, which matches the VID embedded in the BTHENUM ID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "ef090000-11d6-42ba-93b8-9dd7ec090aa9",
-        "company": "SensorPush",
-        "UUID_name": "HT.w/HTP.xw Sensor Service (...aa9)",
-        "UUID_purpose": "Base UUID for SensorPush HT.w/HTP.xw temperature/humidity/pressure sensor BLE service.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/mkjanke/SensorPushPy",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "ef090000-11d6-42ba-93b8-9dd7ec090ab0",
         "company": "SensorPush",
         "UUID_name": "HT.w/HTP.xw Sensor Service (...ab0)",
@@ -5675,7 +4194,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/mkjanke/SensorPushPy",
+                "URL": "https://raw.githubusercontent.com/mkjanke/SensorPushPy/master/SensorPush.Py",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -5695,21 +4214,6 @@
             }
         ],
         "regex": true
-    },
-    {
-        "UUID": "000018ef-5348-494d-414e-4f5f424c4500",
-        "company": "Shimano",
-        "UUID_name": "SHIMANO_BLE Service (0x18EF)",
-        "UUID_purpose": "Shimano STEPS e-bike BLE service sibling of 0x18FF.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://codeberg.org/bg443/BikeBridge",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
     },
     {
         "UUID": "000018ff-5348-494d-414e-4f5f424c4500",
@@ -5967,7 +4471,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://gist.github.com/shinyquagsire23/f7907fdf6b470200702e75a30135caf3",
+                "URL": "https://raw.githubusercontent.com/Mic92/hue-ble-ctl/HEAD/README.md",
                 "description": "Philips Hue BLE RE gist; observed in Mic92/hue-ble-ctl introspection output.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -6203,23 +4707,6 @@
         ]
     },
     {
-        "UUID": "1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0",
-        "company": "Silicon Labs",
-        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
-        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023. First of the six Silicon Labs DFU UUIDs in their Table 1. Categorized as 'D' (developer-dependent security).",
-        "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
-                "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "6834636b-6d33-4c30-634b-38454163304e",
         "company": "SmartLockPicking.com — hackmelock (educational target)",
         "UUID_name": "hackmelock iBeacon",
@@ -6246,7 +4733,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/SmartMindSYSCoder/sm_fitrus",
+                "URL": "https://raw.githubusercontent.com/SmartMindSYSCoder/sm_fitrus/HEAD/android/src/main/java/com/smartmind/sm_fitrus/DeviceService.java",
                 "description": "Official SmartMind Fitrus Flutter plugin DeviceService.java declares this ParcelUuid.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -6262,7 +4749,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/0-a-e/Orion",
+                "URL": "https://raw.githubusercontent.com/0-a-e/Orion/HEAD/reon_pocket_apk_decomplied/sources/jp/co/sony/reonpocket/connection/log/DeviceCommManager.java",
                 "description": "Decompiled Sony Reon Pocket Android APK references this UUID in jp/co/sony/reonpocket/.../DeviceCommManager.java.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -6319,72 +4806,6 @@
         "regex": true
     },
     {
-        "UUID": "00000002-3731-3032-494d-484f42525554",
-        "company": "Specialized Bicycle Components",
-        "UUID_name": "Turbo e-bike write/command service (TURBOHMI2017 protocol, TCX2/TCX3/TCX4)",
-        "UUID_purpose": "BLE GATT service on Specialized Turbo (Vado/Levo/Como/Kenevo/Creo) e-bikes carrying the command/write channel. Bytes 4-15 spell ASCII 'TURBOHMI2017'; first 4 bytes are the field selector (here 0x00000002 = command service). Houses write characteristic 00000012-3731-3032-494d-484f42525554 and DFU/log alternate 00000022-3731-3032-494d-484f42525554.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/JamieMagee/specialized-turbo",
-                "description": "specialized-turbo library docs/protocol.md documents the TCX (TURBOHMI2017) base UUID and the per-field selectors. JamieMagee/ha-specialized-turbo (Home Assistant integration) corroborates.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00000012-3731-3032-494d-484f42525554",
-        "company": "Specialized Bicycle Components",
-        "UUID_name": "Turbo e-bike command-write characteristic (TURBOHMI2017 protocol)",
-        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes accepting commands from the mobile app. WRITE property. Child of write/command service 00000002-3731-3032-494d-484f42525554.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/JamieMagee/specialized-turbo",
-                "description": "specialized-turbo library docs/protocol.md documents this characteristic as the WRITE command channel in the TURBOHMI2017 protocol.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "parent_UUID": "00000002-3731-3032-494d-484f42525554"
-    },
-    {
-        "UUID": "00000022-3731-3032-494d-484f42525554",
-        "company": "Specialized Bicycle Components",
-        "UUID_name": "Turbo e-bike DFU/log alternate characteristic (TURBOHMI2017 protocol)",
-        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes used as an alternate WRITE_WITHOUT_RESPONSE channel for DFU/ride-log transfers. Child of write/command service 00000002-3731-3032-494d-484f42525554.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/JamieMagee/specialized-turbo",
-                "description": "specialized-turbo library docs/protocol.md documents this as a WRITE_WITHOUT_RESPONSE DFU/log channel under the command service.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "parent_UUID": "00000002-3731-3032-494d-484f42525554"
-    },
-    {
-        "UUID": "00000003-3731-3032-494d-484f42525554",
-        "company": "Specialized Bicycle Components",
-        "UUID_name": "Turbo e-bike telemetry service (TURBOHMI2017 protocol, TCX2/TCX3/TCX4)",
-        "UUID_purpose": "BLE GATT service on Specialized Turbo (Vado/Levo/Como/Kenevo/Creo) e-bikes carrying real-time telemetry (battery, speed, motor power, cadence, temperature). TURBOHMI2017 base; first 4 bytes 0x00000003 = telemetry-service selector. Houses telemetry data characteristic 00000013-3731-3032-494d-484f42525554 and DFU/ride-logs characteristic 00000023-3731-3032-494d-484f42525554.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/JamieMagee/specialized-turbo",
-                "description": "specialized-turbo library docs/protocol.md documents the TCX telemetry service. ha-specialized-turbo Home Assistant integration consumes notifications on this service.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "00000013-3731-3032-494d-484f42525554",
         "company": "Specialized Bicycle Components",
         "UUID_name": "Turbo e-bike telemetry data characteristic (TURBOHMI2017 protocol)",
@@ -6394,78 +4815,12 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/JamieMagee/specialized-turbo",
+                "URL": "https://raw.githubusercontent.com/JamieMagee/specialized-turbo/HEAD/docs/protocol.md",
                 "description": "specialized-turbo library docs/protocol.md documents this characteristic as the telemetry NOTIFY channel. ha-specialized-turbo subscribes here to stream live bike data into Home Assistant.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ],
         "parent_UUID": "00000003-3731-3032-494d-484f42525554"
-    },
-    {
-        "UUID": "00000023-3731-3032-494d-484f42525554",
-        "company": "Specialized Bicycle Components",
-        "UUID_name": "Turbo e-bike DFU/ride-logs characteristic (TURBOHMI2017 protocol)",
-        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes used for DFU and ride-log uploads. WRITE_WITHOUT_RESPONSE property. Child of telemetry service 00000003-3731-3032-494d-484f42525554.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/JamieMagee/specialized-turbo",
-                "description": "specialized-turbo library docs/protocol.md documents this as the DFU/ride-logs WRITE_WITHOUT_RESPONSE characteristic under the telemetry service.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "parent_UUID": "00000003-3731-3032-494d-484f42525554"
-    },
-    {
-        "UUID": "00000001-3731-3032-494d-484f42525554",
-        "company": "Specialized Bicycle Components",
-        "UUID_name": "Turbo e-bike (Gen 2 TURBOHMI2017 protocol)",
-        "UUID_purpose": "BLE service in the Specialized Turbo e-bike Gen 2 ('Turbo HMI 2017') protocol. Bytes 4-15 spell ASCII 'TURBOHMI2017'; first 4 bytes (00000001) are a 32-bit field selector. Used by Turbo Levo, Vado, Como, Kenevo.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/JamieMagee/ha-specialized-turbo",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00000011-3731-3032-494d-484f42525554",
-        "company": "Specialized Bicycle Components",
-        "UUID_name": "Turbo e-bike read-response characteristic (TURBOHMI2017 protocol)",
-        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes returning the response to a queried field. READ property. Child of request/query service 00000001-3731-3032-494d-484f42525554.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/JamieMagee/specialized-turbo",
-                "description": "specialized-turbo library docs/protocol.md documents this characteristic as the READ response in the TURBOHMI2017 protocol.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "parent_UUID": "00000001-3731-3032-494d-484f42525554"
-    },
-    {
-        "UUID": "00000021-3731-3032-494d-484f42525554",
-        "company": "Specialized Bicycle Components",
-        "UUID_name": "Turbo e-bike write-request characteristic (TURBOHMI2017 protocol)",
-        "UUID_purpose": "BLE GATT characteristic on Specialized Turbo e-bikes used to push a field-query/write request. WRITE property. Child of request/query service 00000001-3731-3032-494d-484f42525554.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/JamieMagee/specialized-turbo",
-                "description": "specialized-turbo library docs/protocol.md documents this as the WRITE request characteristic paired with READ response 00000011.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "parent_UUID": "00000001-3731-3032-494d-484f42525554"
     },
     {
         "UUID": "xxxxxxxx-574f-4f20-5370-6865726f2121",
@@ -6483,27 +4838,6 @@
             }
         ],
         "regex": true
-    },
-    {
-        "UUID": "22bb746f-2ba0-7554-2d6f-726568705327",
-        "company": "Sphero, Inc.",
-        "UUID_name": "Sphero v1 Robot Control Service ('RobotControlService')",
-        "UUID_purpose": "Primary proprietary BLE GATT service exposed by Sphero v1 robots — Sphero 1.0/2.0/SPRK, Ollie, BB-8, BB-9E, R2-D2, R2-Q5 — for sending commands and receiving responses. ASCII decode of the trailing 12 bytes of the UUID family '2d 6f 72 65 68 70 53 27' contains '-orehpS'' i.e. 'Sphero!' reversed, a deliberate vendor signature. Companion characteristics: 22bb746f-2ba1-... (Commands/Roll write), 22bb746f-2ba6-... (Notify/Response).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://wiki.elvis.science/index.php?title=Sphero_BB-8_Robot:_Bluetooth_Connection_Sniffing",
-                "description": "Embedded Lab Vienna wiki documents the full 22bb746f-2ba0/2ba1/2ba6/2bb0... family during Sphero BB-8 GATT sniffing.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://github.com/artificial-intelligence-class/spherov2.py",
-                "description": "spherov2.py source labels 22bb746f-2ba0-... as 'Robot Control Service' alongside 22bb746f-2bb0-... 'BLE Service' for legacy v1-protocol toys.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
     },
     {
         "UUID": "22bb746f-2ba1-7554-2d6f-726568705327",
@@ -6547,7 +4881,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/MProx/Sphero_mini/blob/master/sphero_mini.py",
+                "URL": "https://raw.githubusercontent.com/artificial-intelligence-class/spherov2.py/HEAD/spherov2/toy/__init__.py",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -6562,7 +4896,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/artificial-intelligence-class/spherov2.py",
+                "URL": "https://raw.githubusercontent.com/artificial-intelligence-class/spherov2.py/HEAD/spherov2/toy/__init__.py",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -6577,7 +4911,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/artificial-intelligence-class/spherov2.py",
+                "URL": "https://raw.githubusercontent.com/artificial-intelligence-class/spherov2.py/HEAD/spherov2/toy/__init__.py",
                 "submitter": "Claude (Opus 4.7)"
             }
         ],
@@ -6593,7 +4927,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/artificial-intelligence-class/spherov2.py",
+                "URL": "https://raw.githubusercontent.com/artificial-intelligence-class/spherov2.py/HEAD/spherov2/toy/__init__.py",
                 "submitter": "Claude (Opus 4.7)"
             }
         ],
@@ -6609,7 +4943,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/artificial-intelligence-class/spherov2.py",
+                "URL": "https://raw.githubusercontent.com/artificial-intelligence-class/spherov2.py/HEAD/spherov2/toy/__init__.py",
                 "submitter": "Claude (Opus 4.7)"
             }
         ],
@@ -6625,7 +4959,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/HEAD/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md section 2.3: 'Starkey (Piccolo) — Service: 9a04f079-9840-4286-ab92-e65be0885f95'.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -6641,7 +4975,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/sk408/hearing_aid_control",
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/HEAD/protocol_registry.json",
                 "description": "sk408/hearing_aid_control protocol_registry.json: brand=starkey, operation=GetBatteryState, serviceUuid=48ddf118-efd0-48fc-8f44-b9b8e17be397, confidence=partial.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -6675,21 +5009,6 @@
             {
                 "URL": "https://github.com/emanners/datecs-sdk_2016-06-22_v4.2.1/blob/master/pinpaddemo/src/main/java/com/datecs/pinpaddemo/connectivity/BluetoothLeConnector.java",
                 "description": "Datecs SDK BluetoothLeConnector.java explicitly labels d839fc3c-84dd-4c36-9126-187b07255127 as 'SumUp Air' and 187b07255126 as 'SumUp Air Lite'. Sibling 25 / 28 / 29 also referenced in cassa-pos/sumup-zvt.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "d839fc3c-84dd-4c36-9126-187b07255114",
-        "company": "SumUp",
-        "UUID_name": "SumUp payment terminal (earlier variant)",
-        "UUID_purpose": "Earlier variant in the SumUp d839fc3c-84dd-4c36-9126-187b0725XXXX family.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/cassa-pos/sumup-zvt/blob/main/reader_connection.py",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -6735,24 +5054,8 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/tugberka/react-native-mds/blob/main/ios/BleController.swift",
+                "URL": "https://raw.githubusercontent.com/tugberka/react-native-mds/HEAD/ios/BleController.swift",
                 "description": "Multiple Movesense SDK ports (react-native-mds, mdsflutter, MovesenseApi-iOS, MovesenseDotNet) define `MOVESENSE_SERVICES = [CBUUID(string: \"61353090-8231-49cc-b57a-886370740041\")]`. Identified in 31+ repos.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "6e65742e-7470-6b79-2ea0-000006060101",
-        "company": "Tapkey GmbH",
-        "UUID_name": "Tapkey Smart Lock service",
-        "UUID_purpose": "BLE service used by Tapkey smartphone-based access-control locks (cylinders, padlocks, wall readers). UUID bytes 0-9 ASCII-decode to 'net.tpky.', which is the prefix of Tapkey's Android package ID 'net.tpky.mc'.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://play.google.com/store/apps/details?id=net.tpky.mc",
-                "description": "UUID hex bytes decode to ASCII 'net.tpky.' which matches Tapkey's Android package ID prefix.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -6768,22 +5071,6 @@
         "evidence_array": [
             {
                 "URL": "https://github.com/cagnulein/qdomyos-zwift/issues/2166",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00000005-4899-489f-a301-fbee544b1db0",
-        "company": "Tedee",
-        "UUID_name": "Tedee Smart Lock characteristic (0x0005)",
-        "UUID_purpose": "BLE characteristic for the Tedee smart lock. Part of the Tedee Lock BLE API family with base UUID 00000000-4899-489f-a301-fbee544b1db0; short ID 0x0005 within the lock's GATT.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://tedee-tedee-lock-ble-api-doc.readthedocs-hosted.com/en/latest/ble/advertisement.html",
-                "description": "Tedee Lock BLE API documentation lists UUIDs with the same base '4899-489f-a301-fbee544b1db0'.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -6805,22 +5092,6 @@
             }
         ],
         "regex": true
-    },
-    {
-        "UUID": "efaa0000-7777-772e-7465-6d70692e6669",
-        "company": "Tempi (tempi.fi)",
-        "UUID_name": "Tempi environmental sensor service",
-        "UUID_purpose": "Vendor BLE service for Tempi (Finnish) environmental/temperature sensor. The trailing UUID bytes ASCII-decode to 'www.tempi.fi' — the vendor's domain encoded directly in the UUID.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.tempi.fi/",
-                "description": "Forward ASCII decode of bytes 4-15 = 'www.tempi.fi'. Tempi is a Finnish environmental-sensor maker.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
     },
     {
         "UUID": "d5060000-a904-deb9-4748-2c7f4a124842",
@@ -6882,7 +5153,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/k3vmcd/tirelinc",
+                "URL": "https://raw.githubusercontent.com/k3vmcd/tirelinc/main/custom_components/tirelinc/const.py",
                 "description": "k3vmcd/tirelinc is a Home Assistant custom integration for the TireLinc TPMS. The repository setup instructions explicitly reference subscribing to notifications on characteristic 00000002-00b7-4807-beee-e0b0879cf3dd. The base UUID is the family root.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -6937,22 +5208,6 @@
         ]
     },
     {
-        "UUID": "586b6579-5542-696f-436f-6d6d756e6974",
-        "company": "Union Community Co. (UnionComm)",
-        "UUID_name": "UBio-Xkey BLE service",
-        "UUID_purpose": "Mobile access-control / smart-key BLE service for door access using a smartphone as the key. UUID bytes ASCII-decode to 'XkeyUBioCommunit' (with the last 'y' truncated due to the 16-byte UUID width).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://play.google.com/store/apps/details?id=kr.co.unioncomm.ubioxkey",
-                "description": "UUID hex decodes to ASCII 'XkeyUBioCommunit' matching the UBio-Xkey product by Union Community / Union Biometrics.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "c26cf572-3369-4cf2-b5cc-d2cd130f5b2c",
         "company": "Unknown",
         "UUID_name": "Unidentified Android RFCOMM listener service",
@@ -6978,56 +5233,8 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/VincentGuigui/LowBatteryAlert/blob/main/BluetoothService.cs",
+                "URL": "https://raw.githubusercontent.com/VincentGuigui/LowBatteryAlert/master/BluetoothService.cs",
                 "description": "Only public hit on GitHub Code Search is VincentGuigui/LowBatteryAlert's `BluetoothService.cs` listing it as 'Vendor specific'. Adjacent UUIDs in the same table point to Bose, Microsoft NearbySharing, and Amazon AMA, suggesting this may be exposed by Alexa-/Bose-style headsets — but the specific company is not confirmed.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00001524-1212-efde-1525-78204f4c4f46",
-        "company": "Unknown (Nordic LBS-derivative)",
-        "UUID_name": "Custom Nordic LED-Button Service derivative",
-        "UUID_purpose": "Custom variant derived from the Nordic LBS family (00001523-1212-efde-1523-785feabcd123). Shares the leading 00001524 short-ID and 1212-efde middle bytes of Nordic's LBS Button characteristic but uses a non-standard tail with ASCII fragment 'x OLOF' (78 20 4f 4c 4f 46). Likely a customer fork of the Nordic LBS sample.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/NordicSemiconductor/Android-nRF-Blinky",
-                "description": "Matches the LBS family pattern with a customized base UUID and apparent ASCII 'OLOF' fragment in the tail.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00001524-1312-efde-1523-785feabcd128",
-        "company": "Unknown (Nordic SDK derivative)",
-        "UUID_name": "Nordic LBS-family customized service (1312/d128 variant)",
-        "UUID_purpose": "Modified Nordic Semiconductor base UUID family. Nordic LBS uses 00001523-1212-EFDE-1523-785FEABCD123. This UUID differs by '1312' vs '1212' middle and 'd128' vs 'd123' tail — vendor-customized SDK template.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://devzone.nordicsemi.com/f/nordic-q-a/15824/dfu-problem-gatt-error",
-                "description": "Base UUID pattern xxxxxxxx-xxxx-EFDE-1523-785FEABCDxxx is unmistakably the Nordic Semiconductor nRF5 SDK base (LBS Blinky service, DFU service); vendor-modified middle bytes.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00001533-1412-efde-1523-785feabcd123",
-        "company": "Unknown (Nordic SDK derivative)",
-        "UUID_name": "Nordic DFU-family customized service (1412 middle variant)",
-        "UUID_purpose": "Vendor-modified version of the Nordic Semiconductor proprietary base UUID family (Nordic DFU = 00001530-1212-EFDE-1523-785FEABCD123, Nordic LBS = 00001523-1212-EFDE-1523-785FEABCD123). This UUID differs by 1412 vs 1212 in the second group — vendor customization of a Nordic SDK sample. UUID 0x1533 in canonical form maps to a Nordic experimental/buttonless DFU characteristic.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/adafruit/Bluefruit_LE_Connect_Android/blob/master/app/src/main/java/com/adafruit/bluefruit/le/connect/ble/KnownUUIDs.java",
-                "description": "Tail 785FEABCD123 is the documented Nordic Semiconductor proprietary 128-bit base UUID; Adafruit's KnownUUIDs.java lists the 1530..1534 family as Nordic DFU. The 1412 middle group is a vendor variant.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -7058,7 +5265,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/mtl010957/esphome_config/blob/main/sensor/btmotion.yaml",
+                "URL": "https://raw.githubusercontent.com/mtl010957/esphome_config/master/sensor/btmotion.yaml",
                 "description": "mtl010957/esphome_config defines a BLE client `btmotion` with `service_uuid: '71DC0001-9247-11E7-ABC4-CEC278B6B50A'` and characteristic `71DC0002-...` parsed as float starting at offset 3. Specific commercial product unidentified.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -7082,36 +5289,6 @@
         "regex": true
     },
     {
-        "UUID": "8ec94e30-f315-4f60-9fb8-838830daea50",
-        "company": "Unknown (uses Nordic Secure DFU base)",
-        "UUID_name": "Custom Nordic Secure DFU variant (0x4E30 alias)",
-        "UUID_purpose": "Variant of Nordic Secure DFU service base UUID. Standard offsets are 0x0001/0x0002/0x0003/0x0004; 0x4E30 is non-standard vendor characteristic.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/NordicSemiconductor/bluetooth-numbers-database/blob/master/v1/characteristic_uuids.json",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "6e40ab01-b5a3-f393-e0a9-e50e24dcca9e",
-        "company": "Unknown (uses Nordic UART base)",
-        "UUID_name": "Custom Nordic UART variant (0xAB01 alias)",
-        "UUID_purpose": "Vendor variant of Nordic UART Service base. 0xAB01 alias is non-standard.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.5.1/nrf/include/bluetooth/services/nus.html",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "e20a39f4-73f5-4bc4-a12f-17d1ad07a961",
         "company": "Unknown (well-known tutorial UUID)",
         "UUID_name": "Lights sample / Raspberry Pi iBeacon tutorial UUID",
@@ -7123,37 +5300,6 @@
         "evidence_array": [
             {
                 "URL": "https://github.com/RamonGilabert/Lights/blob/master/Lights/Lights/Library/Bluetooth/Bluetooth.swift",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "92a0aff4-9e05-11e2-aa59-f23c91aec05e",
-        "company": "Valentine Research, Inc.",
-        "UUID_name": "V1connection LE / Valentine One Gen2 BLE service",
-        "UUID_purpose": "Burned-in BLE service UUID for the V1connection LE module (Bluetooth bridge for the Valentine One Gen1 radar detector) and the built-in BLE in Valentine One Gen2 radar detectors. Provides display data / programming access via the V1connection mobile app.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.valentine1.com/v1connection-le",
-                "description": "Documented in V1Connection LE forum/community threads as the Valentine One BLE service UUID compatible with both Gen1 (via V1connection LE module) and Gen2 (built-in BLE).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00001623-1212-efde-1523-785feabcd124",
-        "company": "Valve Corporation",
-        "UUID_name": "Lighthouse 2.0 Channel Characteristic (SteamVR Base Station 2.0)",
-        "UUID_purpose": "BLE GATT characteristic under Valve Lighthouse v2 control service for radio channel control on SteamVR Base Station 2.0. Siblings: Power State (0x1525), Mode (0x1524), Identify (0x8421).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://gist.github.com/BenWoodford/3a1e500a4ea2673525f5adb4120fd47c",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
@@ -7318,7 +5464,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/kristofferR/ha-adjustable-bed/blob/main/docs/beds/vibradorm.md",
+                "URL": "https://raw.githubusercontent.com/kristofferR/ha-adjustable-bed/master/docs/beds/vibradorm.md",
                 "description": "kristofferR/ha-adjustable-bed Vibradorm docs. Confirmed in nhchmg/ha-adjustable-bed, Chorty/ha-adjustable-bed Home Assistant integrations.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -7341,21 +5487,6 @@
         "parent_UUID": "00001523-1212-efde-1523-785feabcd123"
     },
     {
-        "UUID": "cd54a0eb-880b-425b-b167-81ed6a15e913",
-        "company": "Victron Energy B.V.",
-        "UUID_name": "Phoenix Smart Charger BLE Service",
-        "UUID_purpose": "BLE GATT service advertised by Victron Phoenix Smart IP43 chargers.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/home-assistant/core/issues/157417",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "xxxxxxxx-880b-425b-b167-81ed6a15e913",
         "company": "Victron Energy B.V.",
         "UUID_name": "Victron BLE family base (regex)",
@@ -7370,51 +5501,6 @@
             }
         ],
         "regex": true
-    },
-    {
-        "UUID": "cd55a054-880b-425b-b167-81ed6a15e913",
-        "company": "Victron Energy B.V.",
-        "UUID_name": "VE.Direct secondary service (cd55a054)",
-        "UUID_purpose": "Service UUID in Victron's cd55XXXX-880b-425b-b167-81ed6a15e913 family (Phoenix Smart Charger, Smart Solar, SmartShunt, VE.Direct BLE products).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/home-assistant/core/issues/157417",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "cd54c00a-880b-425b-b167-81ed6a15e913",
-        "company": "Victron Energy B.V.",
-        "UUID_name": "Phoenix Smart Charger Service (cd54c00a)",
-        "UUID_purpose": "Sibling in the Victron cd54XXXX-880b-425b-b167-81ed6a15e913 family.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/home-assistant/core/issues/157417",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "cd54a0f0-880b-425b-b167-81ed6a15e913",
-        "company": "Victron Energy B.V.",
-        "UUID_name": "BLE Service (cd54a0f0 sibling)",
-        "UUID_purpose": "Sibling in the Victron cd54aXXX-880b-425b-b167-81ed6a15e913 family.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/home-assistant/core/issues/157417",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
     },
     {
         "UUID": "40ee1111-63ec-4b7f-8ce7-712efd55b90e",
@@ -7493,7 +5579,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/christianmeurer/whoop-reader",
+                "URL": "https://raw.githubusercontent.com/christianmeurer/whoop-reader/master/whoop_reader/protocol.py",
                 "description": "whoop-reader README explicitly documents the WHOOP 4.0 BLE service 61080000-8d6d-82b8-614a-1c8cb0f8dcc6 with five characteristics 61080001..61080005 (commands/responses/events/data/diagnostics); a second repo bWanShiTong/reverse-engineering-whoop confirms 61080002 = CMD and 61080005 = DATA.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -7510,7 +5596,7 @@
         ],
         "evidence_array": [
             {
-                "URL": "https://github.com/bWanShiTong/openwhoop/blob/main/src/openwhoop-codec/src/constants.rs",
+                "URL": "https://raw.githubusercontent.com/bWanShiTong/openwhoop/master/src/openwhoop-codec/src/constants.rs",
                 "description": "openwhoop defines WHOOP_SERVICE_GEN5 = uuid!('fd4b0001-cce1-4033-93ce-002d5875f58a') and the four characteristic UUIDs. Confirmed across chukfinley/whoopsi, Sivasai2207/WHOOP-Reverse-Engineering-5.0, Asherlc/dofek.",
                 "submitter": "Claude (Opus 4.7)"
             }
@@ -7584,37 +5670,6 @@
         "regex": true
     },
     {
-        "UUID": "00001541-6209-4984-454e-f27d42fb55e3",
-        "company": "Wahoo Fitness",
-        "UUID_name": "Wahoo KICKR Smart Trainer service (WAHOO_BRAKE_UUID family)",
-        "UUID_purpose": "Proprietary Wahoo BLE service used by KICKR Core/V5/V6 smart bike trainers (and CycleOps Hammer) for brake/resistance control. Used instead of the SIG-standard Fitness Machine Service (FTMS) for full feature access (ERG mode, sim mode, etc.).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/GoldenCheetah/GoldenCheetah/pull/3472",
-                "description": "GoldenCheetah PR 'Add support for the Wahoo Kickr (Core) through BlueTooth LE' documents the Wahoo proprietary service UUIDs in the 00001541-...-f27d42fb55e3 family.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "a026ee06-0a7d-4ab3-97fa-f1500f9feb8b",
-        "company": "Wahoo Fitness",
-        "UUID_name": "KICKR custom characteristic (a026ee06)",
-        "UUID_purpose": "Wahoo proprietary characteristic in KICKR/KICKR Core/KICKR BIKE custom BLE service family.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/jvivenot/KickrShiftr",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "00008002-0000-1000-8000-57616c6b697a",
         "company": "Walkiz / Megafeis",
         "UUID_name": "Walkiz/Megafeis Lock Notify Characteristic",
@@ -7681,22 +5736,6 @@
         ]
     },
     {
-        "UUID": "cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc",
-        "company": "WitMotion",
-        "UUID_name": "WT901BLECL IMU service",
-        "UUID_purpose": "Custom 128-bit BLE GATT service exposed by the WitMotion WT901BLECL (BLE 5.0 9-axis IMU / inclinometer with accelerometer, gyroscope, magnetometer). Paired with characteristic cbbfe0e2-... for IMU data streaming.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/Keio-CSG/witmotion_visualizer/blob/main/README.md",
-                "description": "Keio-CSG/witmotion_visualizer (a 'realtime IMU visualizer for WT901BLECL') includes BLE scan output explicitly attached to the WT901BLECL device showing the cbbfe0e1/cbbfe0e2 UUID family. Espruino discussion #3356 also documents both UUIDs being advertised by a BLE peripheral.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "cbbfe0e2-f7f3-4206-84e0-84cbb3d09dfc",
         "company": "WitMotion",
         "UUID_name": "WT901BLECL IMU characteristic",
@@ -7749,54 +5788,6 @@
         "regex": true
     },
     {
-        "UUID": "00000020-5749-5448-003a-000000000000",
-        "company": "Withings",
-        "UUID_name": "Withings device service (MAC-less template variant)",
-        "UUID_purpose": "Withings BLE service template with the per-device MAC zeroed out. Same 'WITH' (57 49 54 48) ASCII signature as the MAC-bearing variants.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/vendors/withings",
-                "description": "Same 'WITH' signature as the per-device variants; trailing MAC bytes zeroed.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00000020-5749-5448-0005-0024e46f4d50",
-        "company": "Withings",
-        "UUID_name": "Withings device service (per-device, MAC 00:24:E4:6F:4D:50)",
-        "UUID_purpose": "Withings device-specific BLE service (variant). Bytes 4-7 spell 'WITH'; trailing 6 bytes are the device MAC 00:24:E4:6F:4D:50 with Withings OUI 00:24:E4.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/macaddress/0024e4",
-                "description": "ASCII 'WITH' + Withings OUI 00:24:E4 embedded.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00000020-5749-5448-0037-0024e4c8c30b",
-        "company": "Withings",
-        "UUID_name": "Withings device service (per-device, MAC 00:24:E4:C8:C3:0B)",
-        "UUID_purpose": "Withings device-specific BLE service. Bytes 4-7 spell 'WITH' (Withings) in ASCII. Bytes 10-15 are the device's MAC starting with the Withings IEEE OUI 00:24:E4 (registered 2009-01-19). Used across Withings BLE products: scales, BP monitors, sleep mats, watches, thermometers.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://maclookup.app/macaddress/0024e4",
-                "description": "OUI 00:24:E4 = Withings (Issy-les-Moulineaux, France). ASCII 'WITH' (57 49 54 48) signature embedded at bytes 4-7.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "00000020-5749-5448-005d-000000000000",
         "company": "Withings",
         "UUID_name": "WITH GATT Service (signature in UUID)",
@@ -7846,22 +5837,6 @@
         ]
     },
     {
-        "UUID": "8c858000-0302-41c3-b46e-cf057c562023",
-        "company": "Xiaomi",
-        "UUID_name": "Xiaomi M365 scooter BLE service",
-        "UUID_purpose": "Custom BLE service exposed by the Xiaomi M365 electric scooter's BLE microcontroller for companion-app communication (firmware update, lock/unlock, telemetry, riding mode).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://files.scooterhacking.org/firmware/m365/BLE/",
-                "description": "Referenced in the ScooterHacking firmware index and community reverse-engineering work on Xiaomi M365 BLE.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "945ca2b0-852c-4ab8-b654-354df41c2795",
         "company": "Yamaha",
         "UUID_name": "YAS-108 Soundbar BLE Service",
@@ -7878,37 +5853,6 @@
         ]
     },
     {
-        "UUID": "51510004-7969-6473-6f40-6b6f6c6c6957",
-        "company": "Yeelight",
-        "UUID_name": "Yeelight Willow Lightstrip characteristic ('Willow@osdiy')",
-        "UUID_purpose": "BLE characteristic for the Yeelight BTO Willow Lightstrip. UUID bytes (offset 4+) ASCII-decode to 'idso@lloliW' which reverses to 'Willow@osdiy' — the project codename. Used by the Yeelight BLE remote/dimmer.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://delight.com.sg/products/yeelight-bto-willow-lightstrip-starter-kit-2-meter-and-1-ble-remote-dimmer-set",
-                "description": "ASCII signature 'Willow' (codename of Yeelight BTO lightstrip BLE product line).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "b90d3760-08b6-11e6-9ed2-0002a5d5c51b",
-        "company": "Zebra Technologies",
-        "UUID_name": "Unknown Zebra BLE service (likely Link-OS auxiliary)",
-        "UUID_purpose": "UUIDv1 from 2016-04-22 with node 0002a5d5c51b — same fixed node used by Zebra's documented Parser Service 38eb4a80-c570-11e3-9507-0002a5d5c51b. Different timestamp, so separate Zebra BLE service.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/application-notes/AppNote-BlueToothLE-v4.pdf",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "8d53dc1d-1db7-4cd3-868b-8a527460aa84",
         "company": "Zephyr Project / Nordic Semiconductor",
         "UUID_name": "SMP Service (Simple Management Protocol)",
@@ -7919,28 +5863,6 @@
         "evidence_array": [
             {
                 "URL": "https://github.com/zephyrproject-rtos/mcumgr/blob/master/transport/smp-bluetooth.md",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "00002100-5b1e-4347-b07c-97b514dae121",
-        "company": "greenTEG AG",
-        "UUID_name": "CORE Body Temperature Service (CoreTemp)",
-        "UUID_purpose": "Primary GATT service advertised by the CORE / CORE 2 wearable Core Body Temperature sensor (greenTEG AG, Zurich). Used by endurance-sports apps to continuously read core body temperature; published advertisement-filter UUID per CoreBodyTemp developer docs.",
-        "UUID_usage_array": [
-            "GATT Service",
-            "Advertisement"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://github.com/CoreBodyTemp/CoreBodyTemp",
-                "description": "CoreBodyTemp developer org states: 'Sensors that implement the CoreTemp Service can be identified by filtering for the UUID 00002100-5B1E-4347-B07C-97B514DAE121 in the list of advertised 128bit services. The Bluetooth advertised name may not always contain the string CORE.'",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://corebodytemp.com/products/core",
-                "description": "CORE / CORE 2 product pages: non-invasive continuous core body temperature wearable from greenTEG AG with BLE + ANT+ connectivity used in endurance sport apps.",
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
