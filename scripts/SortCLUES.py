@@ -2,11 +2,26 @@
 # The basic goal is to sort first by company name, alphabetically, ascending order
 # Then second to group things so that UUIDs with parent_UUID fields are placed underneath the parent_UUIDs
 # and the placed-under elements should be sorted also in ascending order.
+#
+# Files larger than ~100 MB are written out as 16 hex-bucketed shards
+# (`CLUES_data_foo_0.json` .. `CLUES_data_foo_f.json`) so individual files
+# stay reviewable in git and editors. The sort still happens over the full
+# combined dataset before bucketing — only the on-disk layout changes.
 
 import json
 import os
-from itertools import groupby
+import sys
 from collections import defaultdict
+
+
+# The CLUES IO helper lives next to this script. Add the script's own
+# directory to sys.path so `from clues_io import ...` works whether the
+# script is invoked as `python3 scripts/SortCLUES.py` or by absolute path.
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+if _SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, _SCRIPT_DIR)
+from clues_io import load_clues, save_clues  # noqa: E402
+
 
 def merge_entries(entry1, entry2):
     # Check if UUID_usage_array fields are the same
@@ -32,9 +47,8 @@ def entries_are_equal(entry1, entry2):
         return False
     return all(entry1.get(key) == entry2.get(key) for key in entry1)
 
-def sort_custom_uuids(file_path):
-    with open(file_path, 'r') as f:
-        data = json.load(f)
+def sort_custom_uuids(file_path, *, split=False):
+    data = load_clues(file_path)
 
     def sort_key(entry):
         company = entry['company'] if entry['company'] is not None else ''
@@ -81,9 +95,13 @@ def sort_custom_uuids(file_path):
         # Add the child entries
         final_sorted_entries.extend(sorted_children)
 
-    # Write the sorted entries back to the file
-    with open(file_path, 'w') as f:
-        json.dump(final_sorted_entries, f, indent=4, ensure_ascii=False)
+    # Write the sorted entries back. `split` controls layout:
+    #   True  -> always 16 hex-bucket shards by UUID[0]
+    #   False -> always single combined file
+    # Child characteristics whose UUID starts with a different hex letter
+    # than their parent service will end up in different shards
+    # (acceptable per design — parent_UUID still links them).
+    save_clues(final_sorted_entries, file_path, split=split)
 
 # Example usage
 # sort_custom_uuids('/path/to/your/file.json')
@@ -91,9 +109,19 @@ def sort_custom_uuids(file_path):
 if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(script_dir, '..', 'data')
+    # Per-file layout opt-in. Only these basenames are written as
+    # 16 hex-bucket shards; every other CLUES file stays a single
+    # combined file regardless of size. Edit this set to opt a file
+    # into or out of split layout.
+    SPLIT_FILES = {
+        'CLUES_data_LLM_Android_APK_search.json',
+    }
     for filename in (
         'CLUES_data_human_verified.json',
         'CLUES_data_LLM_Android_APK_search.json',
         'CLUES_data_LLM_web_search.json',
     ):
-        sort_custom_uuids(os.path.join(data_dir, filename))
+        sort_custom_uuids(
+            os.path.join(data_dir, filename),
+            split=(filename in SPLIT_FILES),
+        )
