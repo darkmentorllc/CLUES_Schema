@@ -527,8 +527,8 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "description": "Found in decompiled DEX of com.intelitycorp.icedroidplus.pelicanhill v5.6.0-887 (versionCode 1605060887), in Java field `h`, declared in Java package `com.legic.mobile.sdk.i1` (third-party SDK). Classification source: cross-file usage:getCharacteristic(h).",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.intelitycorp.icedroidplus.pelicanhill v5.6.0-887 (versionCode 1605060887), in Java field `context`, declared in Java package `com.legic.mobile.sdk.h1` (third-party SDK). Classification source: cross-file usage:getCharacteristic(h).",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of com.okkami.android.intercontinentalsingapore.app v4.27 (versionCode 156), in Java field `h`, declared in Java package `defpackage` (third-party SDK). Classification source: naming-convention.",
@@ -539,8 +539,8 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "description": "Found in decompiled DEX of com.skistar.SKISTAR1 v8.1.2 (versionCode 510), in Java field `h`, declared in Java package `com.legic.mobile.sdk.i1` (third-party SDK). Classification source: cross-file usage:getCharacteristic(h).",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.skistar.SKISTAR1 v8.1.2 (versionCode 510), in Java field `name`, declared in Java package `com.legic.mobile.sdk.i1` (third-party SDK). Classification source: cross-file usage:getCharacteristic(h).",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of com.zaplox.steelhouse.hospitality v6.3.1 (versionCode 304636), in Java field `f8458h`, declared in Java package `com.legic.mobile.sdk.i1` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f8458h).",
@@ -639,8 +639,8 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "description": "Found in decompiled DEX of com.dwelo.dwelo v2.1.7 (versionCode 76), in Java field `h`, declared in Java package `com.legic.mobile.sdk.i1` (third-party SDK). Classification source: cross-file usage:getCharacteristic(h).",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.dwelo.dwelo v2.1.7 (versionCode 76), in Java field `context`, declared in Java package `com.legic.mobile.sdk.i1` (third-party SDK). Classification source: cross-file usage:getCharacteristic(h).",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of com.okkami.android.ok0000000929.app v4.27 (versionCode 105), in Java field `h`, declared in Java package `defpackage` (third-party SDK). Classification source: naming-convention.",
@@ -25791,7 +25791,7 @@
     {
         "UUID": "6e400008-b5a3-f393-e0a9-e50e24dcca9e",
         "company": "bHaptics",
-        "UUID_name": "LBS_UUID_BATTERY",
+        "UUID_name": "LBS_UUID_BATTERY / CHAR_BATTERY",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.bhaptics.player, declared as Java field `CHAR_BATTERY_UUID`. Classification determined by field-name:CHAR_BATTERY_UUID.",
         "UUID_usage_array": [
             "GATT Characteristic",
@@ -26009,15 +26009,15 @@
     {
         "UUID": "6109b631-a643-4a51-83d2-2059700ad49f",
         "company": "Silicon Laboratories",
-        "UUID_name": "Unknown",
+        "UUID_name": "ThroughputIndications",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `ThroughputIndications`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -26034,7 +26034,7 @@
     {
         "UUID": "61a885a4-41c3-60d0-9a53-6d652a70d29c",
         "company": "Silicon Laboratories",
-        "UUID_name": "DATA_CHAR",
+        "UUID_name": "ReportButton",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic",
@@ -26042,8 +26042,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `ReportButton`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of com.boxxldn.boxx v1.0.12 (versionCode 96), in Java field `DATA_CHAR_UUID`, declared in Java package `com.lembergsolutions.boxxble.ble` (third-party SDK). Classification source: naming-convention.",
@@ -26071,15 +26071,15 @@
     {
         "UUID": "67e2c4f2-2f50-914c-a611-adb3727b056d",
         "company": "Silicon Laboratories",
-        "UUID_name": "Unknown",
+        "UUID_name": "ThroughputSupervisionTimeout",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `ThroughputSupervisionTimeout`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -52580,12 +52580,12 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of fr.franceveloconnecte.grandannecy v3.16.1 (versionCode 126), in Java field `uuidFromString5`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of fr.franceveloconnecte.grandannecy v3.16.1 (versionCode 126), in Java field `VERSION_2_uuid_service`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
-                "description": "Found in decompiled DEX of fr.franceveloconnecte.vichy v3.16.2 (versionCode 128), in Java field `uuidFromString5`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of fr.franceveloconnecte.vichy v3.16.2 (versionCode 128), in Java field `VERSION_2_uuid_service`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of in.greenpedia.mybyk v11.4 (versionCode 107), declared in Java package `com.omni.support.ble.profile.sub` (third-party SDK). Classification source: file-level-default.",
@@ -52942,12 +52942,12 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of fr.franceveloconnecte.grandannecy v3.16.1 (versionCode 126), in Java field `uuidFromString6`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of fr.franceveloconnecte.grandannecy v3.16.1 (versionCode 126), in Java field `VERSION_2_uuid_characteristic_write`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
-                "description": "Found in decompiled DEX of fr.franceveloconnecte.vichy v3.16.2 (versionCode 128), in Java field `uuidFromString6`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of fr.franceveloconnecte.vichy v3.16.2 (versionCode 128), in Java field `VERSION_2_uuid_characteristic_write`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of in.greenpedia.mybyk v11.4 (versionCode 107), declared in Java package `com.omni.support.ble.profile.sub` (third-party SDK). Classification source: file-level-default.",
@@ -53056,12 +53056,12 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of fr.franceveloconnecte.grandannecy v3.16.1 (versionCode 126), in Java field `uuidFromString7`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of fr.franceveloconnecte.grandannecy v3.16.1 (versionCode 126), in Java field `VERSION_2_uuid_characteristic_read`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
-                "description": "Found in decompiled DEX of fr.franceveloconnecte.vichy v3.16.2 (versionCode 128), in Java field `uuidFromString7`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of fr.franceveloconnecte.vichy v3.16.2 (versionCode 128), in Java field `VERSION_2_uuid_characteristic_read`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of in.greenpedia.mybyk v11.4 (versionCode 107), declared in Java package `com.omni.support.ble.profile.sub` (third-party SDK). Classification source: naming-convention.",
@@ -55751,7 +55751,7 @@
     {
         "UUID": "6a4e2803-667b-11e3-949a-0800200c9a66",
         "company": "Third-party SDK code (declared in Java package `com.garmin.device.multilink` — distinct from host tacx.android; Phase-4 identification needed)",
-        "UUID_name": "MULTILINK_INFO_POINT_CHARACTERISTIC_UUID_V2",
+        "UUID_name": "MULTILINK_INFO_POINT_CHARACTERISTIC_UUID_V2 / MULTI_LINK_INFO_CHARACTERISTIC",
         "UUID_purpose": "GATT Characteristic observed in Android app tacx.android but declared in third-party SDK package `com.garmin.device.multilink` as Java field `MULTI_LINK_INFO_CHARACTERISTIC_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(MULTI_LINK_INFO_CHARACTERISTIC_UUID).",
         "UUID_usage_array": [
             "GATT Characteristic",
@@ -101512,8 +101512,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `uuidFromString3`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `LOG_SERVICE_NOTIFICATION_dataReadyCharacteristicUUID`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -101536,8 +101536,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `uuidFromString4`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `LOG_SERVICE_NOTIFICATION_readCharacteristicUUID`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -101560,8 +101560,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `uuidFromString7`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `INTERNAL_LOG_SERVICE_NOTIFICATION_characteristicUUID`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -122686,7 +122686,7 @@
     {
         "UUID": "635a11b5-50e6-4815-9c6d-2c803108f82d",
         "company": "Third-party SDK code (declared in Java package `com.um.features.tui.mvvm.view.fragments` — distinct from host com.um; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "uuid3",
         "UUID_purpose": "GATT Service observed in Android app com.um but declared in third-party SDK package `com.um.features.tui.mvvm.view.fragments` as Java field `uuidFromString2`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -122710,7 +122710,7 @@
     {
         "UUID": "6c83b1b5-b41d-4c16-b47f-1387fa73eb3d",
         "company": "Third-party SDK code (declared in Java package `com.um.features.tui.mvvm.view.fragments` — distinct from host com.um; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "uuid2",
         "UUID_purpose": "GATT Service observed in Android app com.um but declared in third-party SDK package `com.um.features.tui.mvvm.view.fragments` as Java field `uuidFromString`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -126279,15 +126279,15 @@
     {
         "UUID": "6da3efe1-3a17-462d-85e6-a5730f756b7b",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "ETU_BT_MEASUREMENT",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString17`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of eu.gatee.gatecontrolstation v1.27.3 (versionCode 211), in Java field `uuidFromString17`, declared in Java package `qf` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of eu.gatee.gatecontrolstation v1.27.3 (versionCode 211), in Java field `ETU_BT_MEASUREMENT`, declared in Java package `qf` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -126303,7 +126303,7 @@
     {
         "UUID": "6df1c356-28d0-456a-bbfc-8b4db8b2156a",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "DATA_CHAR",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString4`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"

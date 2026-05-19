@@ -436,7 +436,7 @@
     {
         "UUID": "ffc6",
         "company": "ASA Electronics (US; marine/RV electronics — Jensen / Voyager / iN-Command brands; NCS-50 BLE smart-system app)",
-        "UUID_name": "DISTRIBUTION_NETWORK_NOTIFY_CHAR / ALARM_CODE_UUID_16",
+        "UUID_name": "DISTRIBUTION_NETWORK_NOTIFY_CHAR / ALARM_CODE_UUID_16 / Control Service",
         "UUID_purpose": "Custom GATT Service observed in Android app com.asaelectronics.ncs50app, declared as Java field `Control Service`. Classification determined by field-name:CONTROL_SERVICE.",
         "UUID_usage_array": [
             "GATT Service",
@@ -2579,6 +2579,10 @@
             {
                 "description": "Found in decompiled DEX of eu.sharry.swp.aoa1350 v4.0.15 (versionCode 6332), declared in Java package `a.a.a.a.o` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f1377q`, declared in Java package `c` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -4270,6 +4274,10 @@
                 "URL": "https://apkpure.net/oplayer/com.oplayer.fitness4kids/versions",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `e`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getCharacteristic(e).",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -6894,6 +6902,10 @@
                 "URL": "https://apkpure.net/oplayer/com.oplayer.fitness4kids/versions",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `f`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -19116,6 +19128,14 @@
                 "URL": "https://apkpure.net/oplayer/com.oplayer.fitness4kids/versions",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of oucare.ou6601an vv1.0.8 (2023.08.28.1511) (versionCode 11), in Java field `OUcare Write f3`. Classification source: field-name:OUcare_CHARACTERISTIC_WRITE_F3.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oucare.Momisure vv2.1.27 (2024.01.30.1507) (versionCode 51), in Java field `OUcare Write f3`. Classification source: field-name:OUcare_CHARACTERISTIC_WRITE_F3.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -30880,15 +30900,15 @@
     {
         "UUID": "f5b7",
         "company": "Winegard",
-        "UUID_name": "Unknown",
+        "UUID_name": "CHARACTERISTIC_SCAN_CONFIGURATION",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.winegard.halo, declared as Java field `uuidFromString29`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.winegard.halo v1.74.1 (versionCode 10000571), in Java field `uuidFromString29`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.winegard.halo v1.74.1 (versionCode 10000571), in Java field `CHARACTERISTIC_SCAN_CONFIGURATION`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -117341,15 +117361,15 @@
     {
         "UUID": "fcb89c40-c603-59f3-7dc3-5ece444a401b",
         "company": "Silicon Laboratories",
-        "UUID_name": "Unknown",
+        "UUID_name": "RgbLeds",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `RgbLeds`. Classification source: cross-file usage:getCharacteristic(RgbLeds).",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -117366,15 +117386,15 @@
     {
         "UUID": "ff629b92-332b-e7f7-975f-0e535872ddae",
         "company": "Silicon Laboratories",
-        "UUID_name": "Unknown",
+        "UUID_name": "ThroughputSlaveLatency",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `ThroughputSlaveLatency`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -122728,7 +122748,7 @@
     {
         "UUID": "f2b32c77-ea68-464b-9cd7-a22cbffb98bd",
         "company": "Ecolab",
-        "UUID_name": "SERVICE_BLUE2_TEMPERATURE",
+        "UUID_name": "SERVICE_BLUE2_TEMPERATURE / TEMPERATURE_SERVICE",
         "UUID_purpose": "Custom GATT Service observed in Android app com.deloitte.dnmobile.trueview.store, declared as Java field `TEMPERATURE_SERVICE_UUID`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Service",
@@ -146971,7 +146991,7 @@
     {
         "UUID": "f2f0",
         "company": "Gyroor (Chinese self-balancing hoverboard / scooter vendor; Bluetooth speaker + companion app for speed / battery / LED control)",
-        "UUID_name": "Communicate Service",
+        "UUID_name": "Communicate Service / uuidByCmd",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.gyroor.selfbalance.global, declared as Java field `t`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Characteristic",
@@ -149406,6 +149426,10 @@
             {
                 "description": "Found in decompiled DEX of com.gryphonconnect.gryphon v05.0003.20 (versionCode 140), in Java field `Colored Bulb Time Picker`. Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f1378r`, declared in Java package `c` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -149450,7 +149474,7 @@
     {
         "UUID": "f003",
         "company": "JLR Gear (Shenzhen, China) — SG Tracker anti-lost BLE device tracker",
-        "UUID_name": "White Light Bulb Time Picker",
+        "UUID_name": "White Light Bulb Time Picker / UUID_CHARACT_AUTHORIZATION",
         "UUID_purpose": "Custom GATT Service observed in Android app com.sg.sgtracker, declared as Java field `PRODUCT_TYPE_SERVICE_UUID`. Classification determined by cross-file usage:getService(PRODUCT_TYPE_SERVICE_UUID).",
         "UUID_usage_array": [
             "GATT Service",
@@ -149950,7 +149974,7 @@
     {
         "UUID": "fb005c81-02e7-f387-1cad-8acd2d8df0c8",
         "company": "Third-party SDK code (declared in Java package `com.polar.androidcommunications.api.ble.model.gatt.client.pmd` — distinct from host com.phlexswim.app; Phase-4 identification needed)",
-        "UUID_name": "POLAR_PMD_CONTROL_CHARACTERISTIC_ID",
+        "UUID_name": "POLAR_PMD_CONTROL_CHARACTERISTIC_ID / PMD_CP",
         "UUID_purpose": "GATT Service observed in Android app com.phlexswim.app but declared in third-party SDK package `com.polar.androidcommunications.api.ble.model.gatt.client.pmd` as Java field `uuidFromString2`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service",
@@ -170643,6 +170667,22 @@
                 "URL": "https://apkpure.net/oplayer/com.oplayer.fitness4kids/versions",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of oucare.ou6601an vv1.0.8 (2023.08.28.1511) (versionCode 11), in Java field `OUcare Read`, declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: field-name:OUcare_CHARACTERISTIC_READ.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of de.zeiss.spo.hunting v8.0.0 (514) (versionCode 1707500713), in Java field `NOTIFY`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of fi.fineid.security.scs v1.1.55 (2024-01-14) (versionCode 55), in Java field `Z`, declared in Java package `u0` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oucare.Momisure vv2.1.27 (2024.01.30.1507) (versionCode 51), in Java field `OUcare Read`, declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: field-name:OUcare_CHARACTERISTIC_READ.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -181541,6 +181581,22 @@
                 "URL": "https://apkpure.net/oplayer/com.oplayer.fitness4kids/versions",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of oucare.ou6601an vv1.0.8 (2023.08.28.1511) (versionCode 11), in Java field `OUcare Write`, declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: field-name:OUcare_CHARACTERISTIC_WRITE.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of de.zeiss.spo.hunting v8.0.0 (514) (versionCode 1707500713), in Java field `WRITE`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of fi.fineid.security.scs v1.1.55 (2024-01-14) (versionCode 55), in Java field `f5412a0`, declared in Java package `u0` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oucare.Momisure vv2.1.27 (2024.01.30.1507) (versionCode 51), in Java field `OUcare Write`, declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: field-name:OUcare_CHARACTERISTIC_WRITE.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -188518,7 +188574,7 @@
     {
         "UUID": "ffc3",
         "company": "MOKO Technology Ltd",
-        "UUID_name": "MOTOR_ACTUAL_RPM_UUID_16",
+        "UUID_name": "MOTOR_ACTUAL_RPM_UUID_16 / SERVICE_UUID",
         "UUID_purpose": "Custom GATT Service observed in Android app com.moko.lorawan, declared as Java field `SERVICE_UUID`. Classification determined by cross-file usage:getService(SERVICE_UUID).",
         "UUID_usage_array": [
             "GATT Service",
@@ -190325,6 +190381,10 @@
                 "URL": "https://apkpure.net/dreamslair/com.dreamslair.esocialbike.mobileapp/download/3.9.0",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.kiddesigns.ezlink v3.5 (50) (versionCode 400). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -190530,6 +190590,10 @@
                 "URL": "https://apkpure.net/dreamslair/com.dreamslair.esocialbike.mobileapp/download/3.9.0",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.kiddesigns.ezlink v3.5 (50) (versionCode 400). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -191336,6 +191400,10 @@
                 "URL": "https://apkpure.net/dreamslair/com.dreamslair.esocialbike.mobileapp/download/3.9.0",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.kiddesigns.ezlink v3.5 (50) (versionCode 400), in Java field `JL`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -196966,6 +197034,22 @@
                 "URL": "https://apkpure.net/oplayer/com.oplayer.fitness4kids/versions",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of oucare.ou6601an vv1.0.8 (2023.08.28.1511) (versionCode 11), in Java field `OUcare Read Write service`, declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: field-name:OUcare_CHARACTERISTIC_CONFIG.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of de.zeiss.spo.hunting v8.0.0 (514) (versionCode 1707500713), in Java field `uuidFromString`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of fi.fineid.security.scs v1.1.55 (2024-01-14) (versionCode 55), in Java field `Y`, declared in Java package `u0` (third-party SDK). Classification source: usage:getService.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oucare.Momisure vv2.1.27 (2024.01.30.1507) (versionCode 51), in Java field `OUcare Read Write service`, declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: field-name:OUcare_CHARACTERISTIC_CONFIG.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -209374,6 +209458,14 @@
             {
                 "description": "Found in decompiled DEX of com.riversongfit.epoch v1.8.8.2 (versionCode 3056), declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of oucare.ou6601an vv1.0.8 (2023.08.28.1511) (versionCode 11), in Java field `Vscale Read Write service`, declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: field-name:VSCALE_CHARACTERISTIC_CONFIG.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oucare.Momisure vv2.1.27 (2024.01.30.1507) (versionCode 51), in Java field `Vscale Read Write service`, declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: field-name:VSCALE_CHARACTERISTIC_CONFIG.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -209593,7 +209685,7 @@
     {
         "UUID": "f2a411e9-1575-447f-a4ad-f1b706b213cb",
         "company": "Signify Netherlands B.V. (formerly Philips Lighting B.V.)",
-        "UUID_name": "Unknown",
+        "UUID_name": "dVar",
         "UUID_purpose": "Custom GATT Service observed in Android app com.signify.masterconnect, declared as Java field `uuidFromString26`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -209622,7 +209714,7 @@
     {
         "UUID": "f7e68b02-e189-41ba-a5cb-639fdf50628d",
         "company": "Signify Netherlands B.V. (formerly Philips Lighting B.V.)",
-        "UUID_name": "Unknown",
+        "UUID_name": "aVar2",
         "UUID_purpose": "Custom GATT Service observed in Android app com.signify.masterconnect, declared as Java field `uuidFromString27`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -216393,6 +216485,14 @@
                 "URL": "https://apkpure.net/gpstuner/com.gpstuner.tqapp/download/1.3.2%23m-26-gd309c48.m-145-gb1437a24c.m-77-gf46819a",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of oucare.ou6601an vv1.0.8 (2023.08.28.1511) (versionCode 11), in Java field `VSCALE2_CHARACTERISTIC_READ`. Classification source: field-name:VSCALE2_CHARACTERISTIC_READ.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oucare.Momisure vv2.1.27 (2024.01.30.1507) (versionCode 51), in Java field `VSCALE2_CHARACTERISTIC_READ`. Classification source: field-name:VSCALE2_CHARACTERISTIC_READ.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -226316,7 +226416,7 @@
     {
         "UUID": "fc01",
         "company": "Third-party SDK code (declared in Java package `com.p2pcamera.wizard` — distinct from host com.atomslabs.sighthd; Phase-4 identification needed)",
-        "UUID_name": "CHARACTERISTIC_FC01_SESSION_KEY",
+        "UUID_name": "CHARACTERISTIC_FC01_SESSION_KEY / ImUartCfg / Session key",
         "UUID_purpose": "GATT Characteristic observed in Android app com.atomslabs.sighthd but declared in third-party SDK package `com.p2pcamera.wizard` as Java field `Session key`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -229146,7 +229246,7 @@
     {
         "UUID": "fff8",
         "company": "Yesoul (Chinese smart spin-bike vendor; BLE for cadence/resistance to phone app)",
-        "UUID_name": "UUID_ISDT_BLE_DATA_CHANNEL_WRITE_FF8",
+        "UUID_name": "UUID_ISDT_BLE_DATA_CHANNEL_WRITE_FF8 / settingReadVersionCharacteristic",
         "UUID_purpose": "Custom GATT Service observed in Android app com.yesoulchina.international.bicycle, declared as Java field `writeUuid`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service",
@@ -229927,6 +230027,10 @@
                 "URL": "https://apkpure.net/rpmhealthcare/com.rpmhealthcare.englewood/versions",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `d`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -231459,6 +231563,10 @@
             {
                 "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `g`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `g`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -231483,6 +231591,10 @@
             {
                 "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `h`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `h`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -231507,6 +231619,10 @@
             {
                 "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `i`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getService(i).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `i`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getService(i).",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -231531,6 +231647,10 @@
             {
                 "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `j`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `j`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -231555,6 +231675,10 @@
             {
                 "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `k`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.purascents.android v3.9.19 (3) (versionCode 30919003), in Java field `k`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -231797,7 +231921,7 @@
     {
         "UUID": "fd349b5f-8000-0080-0010-000000c30000",
         "company": "Third-party SDK code (declared in Java package `f.m.a.k.d.a.e` — distinct from host com.honeywell.android.lyric; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "DISCOVER_CMD",
         "UUID_purpose": "GATT Service observed in Android app com.honeywell.android.lyric but declared in third-party SDK package `f.m.a.k.d.a.e` as Java field `uuidFromString`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -242677,7 +242801,7 @@
     {
         "UUID": "f0001114-6865-6172-7469-73656e7365ae",
         "company": "i-Lab World (Korean medical-training simulator vendor; HeartiSense BLE CPR-training manikin instructor app)",
-        "UUID_name": "UUID02_08_DeviceSerialNumber",
+        "UUID_name": "UUID02_08_DeviceSerialNumber / UUID02_08_PiezoCalibration",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.imlabworld.android.testing.fw.imlab.heartisenseinstructor, declared as Java field `UUID02_08_PiezoCalibration`. Classification determined by cross-file usage:getCharacteristic(UUID02_08_PiezoCalibration).",
         "UUID_usage_array": [
             "GATT Characteristic",
@@ -243196,7 +243320,7 @@
     {
         "UUID": "f1dd1502-0f1d-4f53-8aec-abc12920d602",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "FORCE_POWER_OFF",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString4`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -243221,7 +243345,7 @@
     {
         "UUID": "f240757f-81c5-41f3-88de-d5c430a21ee3",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "LOG_SELECTED_ID",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString15`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -243246,7 +243370,7 @@
     {
         "UUID": "fa9a659a-061e-4bce-a272-02e7dcdb4f06",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "LOG_CLEAR",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString14`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -243271,7 +243395,7 @@
     {
         "UUID": "fdb62145-3577-467e-8914-ad63d324c57e",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "HARDWARE_CHECK",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString22`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -243296,7 +243420,7 @@
     {
         "UUID": "fa8dbc0a-678e-4f82-b8a4-999ffd1270d0",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "DEBUGLOG",
         "UUID_purpose": "Custom GATT Service observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString6`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"

@@ -20174,8 +20174,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `uuidFromString2`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `PAX_SERVICE_NOTIFICATION_readCharacteristicUUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -20224,8 +20224,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `uuidFromString`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `PAX_SERVICE_NOTIFICATION_dataReadyCharacteristicUUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -24309,7 +24309,7 @@
     {
         "UUID": "8001",
         "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
-        "UUID_name": "EC_NETWORKING_DATA_IOM_IPV4_CHARACTERISTIC_UUID / BLECharacteristic",
+        "UUID_name": "EC_NETWORKING_DATA_IOM_IPV4_CHARACTERISTIC_UUID / BLECharacteristic / DATA1_WRITE_CH_ID",
         "UUID_purpose": "GATT Characteristic observed in Android app com.noisefit but declared in third-party SDK package `cn.appscomm.bluetooth` as Java field `f6183b`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(f6183b).",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -24361,7 +24361,7 @@
     {
         "UUID": "8002",
         "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
-        "UUID_name": "EC_NETWORKING_DATA_IOM_IPV6_CHARACTERISTIC",
+        "UUID_name": "EC_NETWORKING_DATA_IOM_IPV6_CHARACTERISTIC / DATA1_READ_CH_ID",
         "UUID_purpose": "GATT Service observed in Android app com.noisefit but declared in third-party SDK package `cn.appscomm.bluetooth` as Java field `f6184c`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service",
@@ -24414,7 +24414,7 @@
     {
         "UUID": "8003",
         "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
-        "UUID_name": "EC_APPLY_GROUP_CONFIG_CHAR",
+        "UUID_name": "EC_APPLY_GROUP_CONFIG_CHAR / DATA2_READ_CH_ID",
         "UUID_purpose": "GATT Characteristic observed in Android app com.noisefit but declared in third-party SDK package `cn.appscomm.bluetooth` as Java field `f6187f`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(f6187f).",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -24466,7 +24466,7 @@
     {
         "UUID": "8004",
         "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
-        "UUID_name": "EC_GROUP_CONFIG_JOB_STATUS",
+        "UUID_name": "EC_GROUP_CONFIG_JOB_STATUS / DATA2_WRITE_CH_ID",
         "UUID_purpose": "GATT Service observed in Android app com.noisefit but declared in third-party SDK package `cn.appscomm.bluetooth` as Java field `f6188g`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service",
@@ -26145,15 +26145,15 @@
     {
         "UUID": "8a354244-c1ff-4318-8834-0e86efac1067",
         "company": "Silicon Laboratories",
-        "UUID_name": "Unknown",
+        "UUID_name": "RangePhyConfig",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `RangePhyConfig`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of com.gensuite.onthego v5.77 (versionCode 126). Classification source: file-level-default.",
@@ -62557,8 +62557,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `uuidFromString5`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `INTERNAL_SERVICE_NOTIFICATION_characteristicUUID`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -62605,8 +62605,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+                "description": "Found in decompiled DEX of com.pax.app v4.7.4 (versionCode 633), in Java field `C0331g`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -67891,6 +67891,14 @@
                 "URL": "https://apkpure.net/eBestIoT/com.eBestIoT.main/download/5.7",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of oucare.ou6601an vv1.0.8 (2023.08.28.1511) (versionCode 11), in Java field `ACTIVESYNC`, declared in Java package `uk.co.alt236.bluetoothlelib.resolvers` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oucare.Momisure vv2.1.27 (2024.01.30.1507) (versionCode 51), in Java field `ACTIVESYNC`, declared in Java package `uk.co.alt236.bluetoothlelib.resolvers` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -68152,7 +68160,7 @@
     {
         "UUID": "8563dda4-7d43-4af4-86ef-fe50d9993f16",
         "company": "Signify Netherlands B.V. (formerly Philips Lighting B.V.)",
-        "UUID_name": "Unknown",
+        "UUID_name": "aVar2",
         "UUID_purpose": "Custom GATT Service observed in Android app com.signify.masterconnect, declared as Java field `uuidFromString2`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -68181,7 +68189,7 @@
     {
         "UUID": "8aa94107-5144-4da3-8202-6f440d09f812",
         "company": "Signify Netherlands B.V. (formerly Philips Lighting B.V.)",
-        "UUID_name": "Unknown",
+        "UUID_name": "aVar2",
         "UUID_purpose": "Custom GATT Service observed in Android app com.signify.masterconnect, declared as Java field `uuidFromString7`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -70866,15 +70874,15 @@
     {
         "UUID": "8d4675a5-b5fa-42b2-b587-0ee71c46b709",
         "company": "Third-party SDK code (declared in Java package `com.fuzionble.implementation` — distinct from host com.selectcomfort.SleepIQ; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "Auth",
         "UUID_purpose": "GATT Characteristic observed in Android app com.selectcomfort.SleepIQ but declared in third-party SDK package `com.fuzionble.implementation`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.selectcomfort.SleepIQ v5.0.5 (versionCode 1701873462), declared in Java package `com.fuzionble.implementation` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.selectcomfort.SleepIQ v5.0.5 (versionCode 1701873462), in Java field `Auth`, declared in Java package `com.fuzionble.implementation` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -76803,7 +76811,7 @@
     {
         "UUID": "8bc32d3f-5cb9-4d44-bec2-ee689169f626",
         "company": "Third-party SDK code (declared in Java package `f.m.a.k.d.a.e` — distinct from host com.honeywell.android.lyric; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "WRITE_CMD",
         "UUID_purpose": "GATT Service observed in Android app com.honeywell.android.lyric but declared in third-party SDK package `f.m.a.k.d.a.e` as Java field `uuidFromString2`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -77201,7 +77209,7 @@
     {
         "UUID": "8d57e3e8-3f97-4f15-8cca-5cf9af1d302a",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "TELEMETRY_CHAR",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString10`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -77225,15 +77233,15 @@
     {
         "UUID": "87438961-11c0-4807-bd4d-04bc409ac439",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "BLU_LINK_STATE_CHAR",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString2`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of eu.gatee.gatecontrolstation v1.27.3 (versionCode 211), in Java field `uuidFromString2`, declared in Java package `qf` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of eu.gatee.gatecontrolstation v1.27.3 (versionCode 211), in Java field `BLU_LINK_STATE_CHAR`, declared in Java package `qf` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -77249,15 +77257,15 @@
     {
         "UUID": "80a5bb24-7274-41ad-961f-964858081c4d",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "COMMUNICATION_CHAR",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of eu.gatee.gatecontrolstation v1.27.3 (versionCode 211), in Java field `uuidFromString`, declared in Java package `qf` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of eu.gatee.gatecontrolstation v1.27.3 (versionCode 211), in Java field `COMMUNICATION_CHAR`, declared in Java package `qf` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -82221,7 +82229,7 @@
     {
         "UUID": "812a8890-b8da-49be-9f8c-6ff10adc64db",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "REMINDER",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString29`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -82246,7 +82254,7 @@
     {
         "UUID": "89b11bcd-10b7-4b8e-bcef-bf3bb0b70883",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "UVC_CONTROL",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString3`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"

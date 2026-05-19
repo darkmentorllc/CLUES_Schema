@@ -1942,7 +1942,7 @@
     {
         "UUID": "2003",
         "company": "Third-party SDK code (declared in Java package `com.zjw.zhbraceletsdk.service` — distinct from host com.linwear.ogglobe; Phase-4 identification needed)",
-        "UUID_name": "CHAR_BIG_UUID_03",
+        "UUID_name": "CHAR_BIG_UUID_03 / f13189OooOO0",
         "UUID_purpose": "GATT Characteristic observed in Android app com.linwear.ogglobe but declared in third-party SDK package `com.zjw.zhbraceletsdk.service` as Java field `j`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(j).",
         "UUID_usage_array": [
             "GATT Characteristic",
@@ -3445,7 +3445,7 @@
     {
         "UUID": "2001",
         "company": "Third-party SDK code (declared in Java package `com.zjw.zhbraceletsdk.service` — distinct from host com.linwear.ogglobe; Phase-4 identification needed)",
-        "UUID_name": "UUID_BIG_SERVICE",
+        "UUID_name": "UUID_BIG_SERVICE / f13188OooO0oo",
         "UUID_purpose": "GATT Service observed in Android app com.linwear.ogglobe but declared in third-party SDK package `com.zjw.zhbraceletsdk.service` as Java field `h`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getService(h).",
         "UUID_usage_array": [
             "GATT Service",
@@ -3646,7 +3646,7 @@
     {
         "UUID": "2002",
         "company": "Tobit.Software AG (Germany; chayns® lifestyle/access app — uses Bluetooth for Tobit chayns location-based and unlock-sharing services)",
-        "UUID_name": "CHAR_BIG_UUID_02",
+        "UUID_name": "CHAR_BIG_UUID_02 / f13180OooO",
         "UUID_purpose": "Custom GATT Service observed in Android app com.Tobit.android.Slitte6494720562. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Service",
@@ -6017,8 +6017,8 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `BootloaderVersion`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of cloud.shelly.smartcontrol v1.17.1/5c4393f (versionCode 24021483), in Java field `UUID_VERSION_BOOTLOADER`, declared in Java package `com.allterco.rpcgatt.devices` (third-party SDK). Classification source: usage:getCharacteristic.",
@@ -6064,7 +6064,7 @@
     {
         "UUID": "2c10",
         "company": "Blue Jay Transit Inc.",
-        "UUID_name": "CAR_COMMON_CHANNEL",
+        "UUID_name": "CAR_COMMON_CHANNEL / CHARACTERISTIC_UUID",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app co.bird.android, declared as Java field `uuidFromString25`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Characteristic",
@@ -50490,7 +50490,7 @@
     {
         "UUID": "28ef0770-3640-4565-a99b-d07cf6a9103f",
         "company": "TDR3 / HotSchedules (now Fourth, US) — Chick-fil-A workforce app; BLE-based shift check-in beacons",
-        "UUID_name": "CHARACTERISTIC_TEMP_UNIT",
+        "UUID_name": "CHARACTERISTIC_TEMP_UNIT / TEMP_SCALE",
         "UUID_purpose": "Custom GATT Service observed in Android app com.tdr3.hs.android.cfa, declared as Java field `TEMP_SCALE_UUID`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service",
@@ -60356,6 +60356,14 @@
             {
                 "description": "Found in decompiled DEX of com.riversongfit.epoch v1.8.8.2 (versionCode 3056), declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of oucare.ou6601an vv1.0.8 (2023.08.28.1511) (versionCode 11), declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oucare.Momisure vv2.1.27 (2024.01.30.1507) (versionCode 51), declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -60492,6 +60500,14 @@
             {
                 "description": "Found in decompiled DEX of com.riversongfit.epoch v1.8.8.2 (versionCode 3056), declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of oucare.ou6601an vv1.0.8 (2023.08.28.1511) (versionCode 11), in Java field `Vscale Write`, declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: field-name:VSCALE_CHARACTERISTIC_WRITE.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oucare.Momisure vv2.1.27 (2024.01.30.1507) (versionCode 51), in Java field `Vscale Write`, declared in Java package `com.vtrump.vtble` (third-party SDK). Classification source: field-name:VSCALE_CHARACTERISTIC_WRITE.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -60816,7 +60832,7 @@
     {
         "UUID": "289081c9-0000-48cf-983b-4a63ed4a8f96",
         "company": "Signify Netherlands B.V. (formerly Philips Lighting B.V.)",
-        "UUID_name": "Unknown",
+        "UUID_name": "dVar",
         "UUID_purpose": "Custom GATT Service observed in Android app com.signify.masterconnect, declared as Java field `uuidFromString4`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -60856,7 +60872,7 @@
     {
         "UUID": "289081c9-0001-48cf-983b-4a63ed4a8f96",
         "company": "Signify Netherlands B.V. (formerly Philips Lighting B.V.)",
-        "UUID_name": "Unknown",
+        "UUID_name": "aVar2",
         "UUID_purpose": "Custom GATT Service observed in Android app com.signify.masterconnect, declared as Java field `uuidFromString5`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -60896,7 +60912,7 @@
     {
         "UUID": "289081c9-0002-48cf-983b-4a63ed4a8f96",
         "company": "Signify Netherlands B.V. (formerly Philips Lighting B.V.)",
-        "UUID_name": "Unknown",
+        "UUID_name": "aVar2",
         "UUID_purpose": "Custom GATT Service observed in Android app com.signify.masterconnect, declared as Java field `uuidFromString6`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -61953,7 +61969,7 @@
     {
         "UUID": "2eacc415-b9b5-46b1-9418-ba952583dabd",
         "company": "Stryd Inc. (US; Stryd running-power footpod; BLE companion for stride/power data)",
-        "UUID_name": "Unknown",
+        "UUID_name": "ACTIVE_DAYS_ID",
         "UUID_purpose": "Custom GATT Service observed in Android app com.stryd.pioneer, declared as Java field `uuidFromString5`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -71422,6 +71438,10 @@
             {
                 "description": "Found in decompiled DEX of com.gm.gmc.nomad.ownership v6.22.2 (4316) (versionCode 4316), in Java field `B`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getCharacteristic(B).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.gm.chevrolet.nomad.ownership v6.22.2 (4316) (versionCode 4316), in Java field `B`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getCharacteristic(B).",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -73934,7 +73954,7 @@
     {
         "UUID": "245eb57f-55cc-4262-a715-44bd88b393ef",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "SENSORS_CHAR",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString9`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -82412,7 +82432,7 @@
     {
         "UUID": "2dc7bf04-67fa-4d4f-866d-412f97c75081",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "EVENTLOG",
         "UUID_purpose": "Custom GATT Service observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString7`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"

@@ -9620,15 +9620,15 @@
     {
         "UUID": "d05bd818-6000-489f-8cc0-aa4b93a5edaf",
         "company": "Silicon Laboratories",
-        "UUID_name": "Unknown",
+        "UUID_name": "RangeTestLog",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `RangeTestLog`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of com.gensuite.onthego v5.77 (versionCode 126). Classification source: file-level-default.",
@@ -9656,7 +9656,7 @@
     {
         "UUID": "dc46f0fe-81d2-4616-b5d9-6abdd796939a",
         "company": "Silicon Laboratories",
-        "UUID_name": "DescriptorHapCharacteristicIid",
+        "UUID_name": "DescriptorHapCharacteristicIid / homekit_descriptor",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo, declared as Java field `homekit_descriptor`. Classification determined by field-name:homekit_descriptor.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -34208,7 +34208,7 @@
     {
         "UUID": "d44bc439-abfd-45a2-b575-925416129602",
         "company": "Neeuro Pte Ltd (Singapore brain-computer-interface vendor; Cogo attention-training program — uses SenzeBand 2 BLE EEG headband for ADHD/focus training)",
-        "UUID_name": "uuid_read_ota_cha / UUID_READ_VER_CHA",
+        "UUID_name": "uuid_read_ota_cha / UUID_READ_VER_CHA / NOTIFY2_UUID_V2",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.neeuro.cogo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic",
@@ -44707,7 +44707,7 @@
     {
         "UUID": "d587c47f-ac6e-4388-a31c-e6cd380ba043",
         "company": "Third-party SDK code (declared in Java package `com.ui.hotel.cmpts.ble` — distinct from host com.ui.access.app; Phase-4 identification needed)",
-        "UUID_name": "SERVICE_READ_CHARACTERISTIC / UI_CHARACTERISTIC_READ",
+        "UUID_name": "SERVICE_READ_CHARACTERISTIC / UI_CHARACTERISTIC_READ / NOTIFICATION_CHARACTERISTIC",
         "UUID_purpose": "GATT Characteristic observed in Android app com.ui.access.app but declared in third-party SDK package `com.ui.hotel.cmpts.ble` as Java field `UNIFI_READ_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(UNIFI_READ_UUID).",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -45142,6 +45142,10 @@
             {
                 "description": "Found in decompiled DEX of com.gm.gmc.nomad.ownership v6.22.2 (4316) (versionCode 4316), declared in Java package `defpackage` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.gm.chevrolet.nomad.ownership v6.22.2 (4316) (versionCode 4316), declared in Java package `defpackage` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -58869,15 +58873,15 @@
     {
         "UUID": "d69d17df-c000-4f7f-b623-b45d8e03e98c",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "HYDRATION_GOAL_CURVE",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString26`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.waterdrop.hydrationapp v2.14.0 (versionCode 3060), in Java field `uuidFromString26`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.waterdrop.hydrationapp v2.14.0 (versionCode 3060), in Java field `HYDRATION_GOAL_CURVE`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [

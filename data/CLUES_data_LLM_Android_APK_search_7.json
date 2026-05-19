@@ -5839,7 +5839,7 @@
     {
         "UUID": "7802",
         "company": "OPPO (Guangdong Oppo Mobile Telecommunications; Bluetooth audio / wearable AT-command service)",
-        "UUID_name": "Transtek Weight Scale Service",
+        "UUID_name": "Transtek Weight Scale Service / SERVICE_UUID_A2_SCALE / WEIGHT_SCALE_SERVICE",
         "UUID_purpose": "GATT Service observed in Android app com.watch.life but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `SERVICE_UUID_A2_SCALE`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:SERVICE_UUID_A2_SCALE. Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
         "UUID_usage_array": [
             "GATT Service",
@@ -6555,7 +6555,7 @@
     {
         "UUID": "7809",
         "company": "OPPO (Guangdong Oppo Mobile Telecommunications; Bluetooth audio / wearable AT-command service)",
-        "UUID_name": "Transtek Blood Pressure Service",
+        "UUID_name": "Transtek Blood Pressure Service / SERVICE_UUID_A2_BLOOD_PRESSURE / BLOOD_PRESSURE_SERVICE",
         "UUID_purpose": "GATT Service observed in Android app com.watch.life but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE. Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
         "UUID_usage_array": [
             "GATT Service",
@@ -7533,15 +7533,15 @@
     {
         "UUID": "76e137ac-b15f-49d7-9c4c-e278e6492ad9",
         "company": "Silicon Laboratories",
-        "UUID_name": "Unknown",
+        "UUID_name": "Light",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `Light`. Classification source: cross-file usage:getCharacteristic(Light).",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of com.gensuite.onthego v5.77 (versionCode 126). Classification source: naming-convention.",
@@ -45026,8 +45026,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.basspro.bassprocommerce v24.02.01 (versionCode 251), in Java field `uuidFromString2`, declared in Java package `com.campchef` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.basspro.bassprocommerce v24.02.01 (versionCode 251), in Java field `CampChef_bleMultiplex`, declared in Java package `com.campchef` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of com.cabelas.commerce v24.02.01 (versionCode 101), in Java field `CampChef_bleMultiplex`, declared in Java package `com.campchef` (third-party SDK). Classification source: file-level-default.",
@@ -45061,8 +45061,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.basspro.bassprocommerce v24.02.01 (versionCode 251), in Java field `uuidFromString4`, declared in Java package `com.campchef` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.basspro.bassprocommerce v24.02.01 (versionCode 251), in Java field `Cabelas_bleMultiplex`, declared in Java package `com.campchef` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of com.cabelas.commerce v24.02.01 (versionCode 101), in Java field `Cabelas_bleMultiplex`, declared in Java package `com.campchef` (third-party SDK). Classification source: file-level-default.",
@@ -45096,8 +45096,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.basspro.bassprocommerce v24.02.01 (versionCode 251), in Java field `uuidFromString6`, declared in Java package `com.campchef` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.basspro.bassprocommerce v24.02.01 (versionCode 251), in Java field `Kingsford_bleMultiplex`, declared in Java package `com.campchef` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "description": "Found in decompiled DEX of com.cabelas.commerce v24.02.01 (versionCode 101), in Java field `Kingsford_bleMultiplex`, declared in Java package `com.campchef` (third-party SDK). Classification source: file-level-default.",
@@ -52785,6 +52785,10 @@
             {
                 "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17968a`, declared in Java package `d6` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17968a`, declared in Java package `d6` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -52809,6 +52813,10 @@
             {
                 "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17972e`, declared in Java package `d6` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17972e`, declared in Java package `d6` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -52834,6 +52842,10 @@
             {
                 "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17973f`, declared in Java package `d6` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17973f`, declared in Java package `d6` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -52859,6 +52871,10 @@
             {
                 "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17971d`, declared in Java package `d6` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17971d`, declared in Java package `d6` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -57367,6 +57383,10 @@
             {
                 "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17969b`, declared in Java package `y5` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17969b`, declared in Java package `y5` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -57391,6 +57411,10 @@
             {
                 "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17970c`, declared in Java package `y5` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tandemdiabetes.tconnect v2.7 (11c9rb) (versionCode 4553), in Java field `f17970c`, declared in Java package `y5` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -70093,7 +70117,7 @@
     {
         "UUID": "70b36318-aca6-4e7c-9bdf-0359443ab5ce",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "ENABLED_LOG",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString17`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"

@@ -13772,7 +13772,7 @@
     {
         "UUID": "4cc07bcf-0868-4b32-9dad-ba4cc41e5316",
         "company": "Third-party SDK code (declared in Java package `com.water.water_io_sdk.ble.utilities` — distinct from host com.GatoradeConsumer.GXMobile; Phase-4 identification needed)",
-        "UUID_name": "OTA_VER_DATA_CHARACTERISTIC",
+        "UUID_name": "OTA_VER_DATA_CHARACTERISTIC / OtaVersion",
         "UUID_purpose": "GATT Characteristic observed in Android app com.GatoradeConsumer.GXMobile but declared in third-party SDK package `com.water.water_io_sdk.ble.utilities` as Java field `OTA_VER_DATA_CHARACTERISTIC`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: usage:getCharacteristic.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -13783,8 +13783,8 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `OtaVersion`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -26454,15 +26454,15 @@
     {
         "UUID": "47b73dd6-dee3-4da1-9be0-f5c539a9a4be",
         "company": "Silicon Laboratories",
-        "UUID_name": "Unknown",
+        "UUID_name": "ThroughputNotifications",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `ThroughputNotifications`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -26479,15 +26479,15 @@
     {
         "UUID": "4f4a2368-8cca-451e-bfff-cf0e2ee23e9f",
         "company": "Silicon Laboratories",
-        "UUID_name": "Unknown",
+        "UUID_name": "FwVersion",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `FwVersion`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -40640,6 +40640,18 @@
             {
                 "description": "Found in decompiled DEX of com.levstone.mobility.trustedwellbeing vVersion 1.155 : 2024-02-29 10:50 (versionCode 155). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.levstone.mobility.trustedelderlycare vVersion 1.155 : 2024-02-29 10:50 (versionCode 155). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.levstone.mobility.trustedtransport vVersion 1.153 : 2023-06-27 17:07 (versionCode 153). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.levstone.mobility.trustedlocationaid vVersion 1.155 : 2024-02-29 10:50 (versionCode 155). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -40875,7 +40887,7 @@
     {
         "UUID": "41fe1789-923d-4fba-abae-c2503485a219",
         "company": "Third-party SDK code (declared in Java package `nl.dopple.t4.platform.characteristic` — distinct from host com.logitech.uedrops; Phase-4 identification needed)",
-        "UUID_name": "CRADLE_CHARACTERISTIC",
+        "UUID_name": "CRADLE_CHARACTERISTIC / CradleConfiguration",
         "UUID_purpose": "GATT Service observed in Android app com.logitech.uedrops but declared in third-party SDK package `nl.dopple.t4.platform.characteristic` as Java field `CradleConfiguration`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service",
@@ -42186,15 +42198,15 @@
     {
         "UUID": "4f540003-4245-4665-6e64-61536d617274",
         "company": "Orangetheory Fitness (US franchise fitness brand; BLE-paired OTbeat heart-rate monitors)",
-        "UUID_name": "Unknown",
+        "UUID_name": "DeviceSettingsCharacteristic",
         "UUID_purpose": "Custom GATT Service observed in Android app com.orangetheoryfitness.orangetheory, declared as Java field `uuidFromString10`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `uuidFromString10`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `DeviceSettingsCharacteristic`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -42210,15 +42222,15 @@
     {
         "UUID": "4f540104-4245-4665-6e64-61536d617274",
         "company": "Orangetheory Fitness (US franchise fitness brand; BLE-paired OTbeat heart-rate monitors)",
-        "UUID_name": "Unknown",
+        "UUID_name": "CurrentStatsCharacteristic",
         "UUID_purpose": "Custom GATT Service observed in Android app com.orangetheoryfitness.orangetheory, declared as Java field `uuidFromString2`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `uuidFromString2`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `CurrentStatsCharacteristic`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -42234,15 +42246,15 @@
     {
         "UUID": "4f540102-4245-4665-6e64-61536d617274",
         "company": "Orangetheory Fitness (US franchise fitness brand; BLE-paired OTbeat heart-rate monitors)",
-        "UUID_name": "Unknown",
+        "UUID_name": "WorkoutDataCharacteristic",
         "UUID_purpose": "Custom GATT Service observed in Android app com.orangetheoryfitness.orangetheory, declared as Java field `uuidFromString3`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `uuidFromString3`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `WorkoutDataCharacteristic`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -42258,15 +42270,15 @@
     {
         "UUID": "4f540002-4245-4665-6e64-61536d617274",
         "company": "Orangetheory Fitness (US franchise fitness brand; BLE-paired OTbeat heart-rate monitors)",
-        "UUID_name": "Unknown",
+        "UUID_name": "PersonalInfoCharacteristic",
         "UUID_purpose": "Custom GATT Service observed in Android app com.orangetheoryfitness.orangetheory, declared as Java field `uuidFromString7`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `uuidFromString7`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `PersonalInfoCharacteristic`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -42282,15 +42294,15 @@
     {
         "UUID": "4f540103-4245-4665-6e64-61536d617274",
         "company": "Orangetheory Fitness (US franchise fitness brand; BLE-paired OTbeat heart-rate monitors)",
-        "UUID_name": "Unknown",
+        "UUID_name": "DailyActivityCharacteristic",
         "UUID_purpose": "Custom GATT Service observed in Android app com.orangetheoryfitness.orangetheory, declared as Java field `uuidFromString8`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `uuidFromString8`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `DailyActivityCharacteristic`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -42306,15 +42318,15 @@
     {
         "UUID": "4f540105-4245-4665-6e64-61536d617274",
         "company": "Orangetheory Fitness (US franchise fitness brand; BLE-paired OTbeat heart-rate monitors)",
-        "UUID_name": "Unknown",
+        "UUID_name": "SyncDataCharacteristic",
         "UUID_purpose": "Custom GATT Service observed in Android app com.orangetheoryfitness.orangetheory, declared as Java field `uuidFromString9`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `uuidFromString9`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.orangetheoryfitness.orangetheory v4.2.0 (versionCode 27275555), in Java field `SyncDataCharacteristic`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -47037,8 +47049,8 @@
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.sony.songpal v7.3.0 (versionCode 7030050), in Java field `b`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.sony.songpal v7.3.0 (versionCode 7030050), in Java field `f29587a`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             },
             {
                 "URL": "https://apkpure.net/sony/com.sony.songpal/download/7.3.0",
@@ -47151,7 +47163,7 @@
     {
         "UUID": "461a08ef-0e6f-43bc-95dd-459e6c129ddf",
         "company": "Stryd Inc. (US; Stryd running-power footpod; BLE companion for stride/power data)",
-        "UUID_name": "Unknown",
+        "UUID_name": "FAVORITES_ID",
         "UUID_purpose": "Custom GATT Service observed in Android app com.stryd.pioneer, declared as Java field `uuidFromString4`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -48369,7 +48381,7 @@
     {
         "UUID": "49535343-4c8a-39b3-2f49-511cff073b7e",
         "company": "Third-party SDK code (declared in Java package `com.c1it.lib.ble` — distinct from host com.ibk.boxpos; Phase-4 identification needed)",
-        "UUID_name": "ON_WALL_READ_CHARACTERISTIC_UUID2",
+        "UUID_name": "ON_WALL_READ_CHARACTERISTIC_UUID2 / CHR_ISSC_TRANS_CTRL",
         "UUID_purpose": "GATT Characteristic observed in Android app com.ibk.boxpos but declared in third-party SDK package `com.c1it.lib.ble` as Java field `CHR_ISSC_TRANS_CTRL`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -49461,7 +49473,7 @@
     {
         "UUID": "421e00f3-ae76-4c49-ab6e-39e4df4a5333",
         "company": "Third-party SDK code (declared in Java package `com.fuzionble.implementation` — distinct from host com.selectcomfort.SleepIQ; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "BamKey",
         "UUID_purpose": "GATT Characteristic observed in Android app com.selectcomfort.SleepIQ but declared in third-party SDK package `com.fuzionble.implementation` as Java field `f9126q`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -54079,15 +54091,15 @@
     {
         "UUID": "426f0001-f2ae-bb9e-5947-3972490ef624",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "STATUS_COMMUNICATION",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString13`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of eu.gatee.gatecontrolstation v1.27.3 (versionCode 211), in Java field `uuidFromString13`, declared in Java package `qf` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of eu.gatee.gatecontrolstation v1.27.3 (versionCode 211), in Java field `STATUS_COMMUNICATION`, declared in Java package `qf` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -54103,7 +54115,7 @@
     {
         "UUID": "426f0002-f2ae-bb9e-5947-3972490ef624",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "STATUS_DATA",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString14`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -54127,7 +54139,7 @@
     {
         "UUID": "426f0003-f2ae-bb9e-5947-3972490ef624",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "STATUS_STATE",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString15`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -54151,15 +54163,15 @@
     {
         "UUID": "4206770e-1d45-43cd-a80c-c6bc051e3435",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "ETU_BT_COMMUNICATION",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString16`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of eu.gatee.gatecontrolstation v1.27.3 (versionCode 211), in Java field `uuidFromString16`, declared in Java package `qf` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of eu.gatee.gatecontrolstation v1.27.3 (versionCode 211), in Java field `ETU_BT_COMMUNICATION`, declared in Java package `qf` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -54175,7 +54187,7 @@
     {
         "UUID": "48e35e5c-211a-4187-a186-3163cd234710",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "ETU_BT_INFO_0",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString19`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -54199,7 +54211,7 @@
     {
         "UUID": "442d0bae-4842-4a91-b85b-656476dc9d73",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "ETU_BT_INFO_1",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString20`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -54223,7 +54235,7 @@
     {
         "UUID": "457d4649-4734-463b-985f-f5fc8a8b1e30",
         "company": "Third-party SDK code (declared in Java package `qf` — distinct from host eu.gatee.gatecontrolstation; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
+        "UUID_name": "ETU_INFO1_CHAR",
         "UUID_purpose": "GATT Service observed in Android app eu.gatee.gatecontrolstation but declared in third-party SDK package `qf` as Java field `uuidFromString6`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -59438,6 +59450,10 @@
             {
                 "description": "Found in decompiled DEX of com.kiddesigns.ezlink v3.5 (50) (versionCode 400), in Java field `BK`. Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.kiddesigns.ezlink v3.5 (50) (versionCode 400), in Java field `BK`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -59462,6 +59478,10 @@
             {
                 "description": "Found in decompiled DEX of com.kiddesigns.ezlink v3.5 (50) (versionCode 400). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.kiddesigns.ezlink v3.5 (50) (versionCode 400). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -59486,6 +59506,10 @@
             {
                 "description": "Found in decompiled DEX of com.kiddesigns.ezlink v3.5 (50) (versionCode 400). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.kiddesigns.ezlink v3.5 (50) (versionCode 400). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
             }
         ],
         "android_info_array": [
@@ -59792,7 +59816,7 @@
     {
         "UUID": "4a3488d3-9062-4c29-8dca-bcfbe9858ebe",
         "company": "waterdrop GmbH (Austria; LUCY Smart Cap BLE smart-bottle hydration tracker; UV purification + sip measurement)",
-        "UUID_name": "Unknown",
+        "UUID_name": "USER_ID",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.waterdrop.hydrationapp, declared as Java field `uuidFromString27`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
