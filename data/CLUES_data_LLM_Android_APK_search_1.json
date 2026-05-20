@@ -3222,8 +3222,7 @@
         "UUID_name": "OTA_MODE_UUID_ARRAY / OTA_SERVICE_ID",
         "UUID_purpose": "GATT Service observed in Android app net.punchlab.app but declared in third-party SDK package `com.onecoder.fitblekit.Ble.FBKBleScan` as Java field `OTA_MODE_UUID_ARRAY`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -3622,7 +3621,6 @@
         "UUID_name": "UUID_THEME_WRITE / f13185OooO0o",
         "UUID_purpose": "GATT Service observed in Android app com.linwear.ogglobe but declared in third-party SDK package `com.zjw.zhbraceletsdk.service` as Java field `f`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -3834,8 +3832,7 @@
         "UUID_name": "UUID_THEME_READ / f13187OooO0oO",
         "UUID_purpose": "GATT Characteristic observed in Android app com.linwear.ogglobe but declared in third-party SDK package `com.zjw.zhbraceletsdk.service` as Java field `g`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(g).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -4346,7 +4343,6 @@
         "UUID_name": "UUID_LOG_READ",
         "UUID_purpose": "GATT Service observed in Android app com.noisefit but declared in third-party SDK package `com.zhapp.ble` as Java field `f36614p`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -5184,8 +5180,7 @@
         "UUID_name": "TUYA_BLE_UUID16_1910",
         "UUID_purpose": "GATT Service observed in Android app com.grameenphone.alo but declared in third-party SDK package `com.thingclips.sdk.bluetooth` as Java field `bpbbqdb`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default. Phase-4 SDK identification: Tuya BLE config SDK — UUID base `7475-7961-626c-636f6e666967` decodes ASCII to `tu` `ya` `bl` `config`. Field names SERVER / WRITE / NOTIFY (uuids 00001000/1001/1002 in that namespace). The other UUID16s (1910/1912/1920) are obfuscated tokens in the same Tuya SDK, plus 7fdd = Telink mesh-test (Tuya often uses Telink chips). Observed in 6 host apps including IoT Solution AiDot, Grameenphone alo, Coclean Degrii, ElegrP home, Movinghub, Xtreme Cables..",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -14061,8 +14056,7 @@
         "UUID_name": "INDEX",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.ufro.colorboard, declared as Java field `INDEX`. Classification determined by cross-file usage:getCharacteristic(INDEX).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -14142,8 +14136,7 @@
         "UUID_name": "RGB_COLOR",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.ufro.colorboard, declared as Java field `RGB_COLOR`. Classification determined by cross-file usage:getCharacteristic(RGB_COLOR).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -14223,7 +14216,6 @@
         "UUID_name": "EVENT",
         "UUID_purpose": "Custom GATT Service observed in Android app com.ufro.colorboard, declared as Java field `EVENT`. Classification determined by naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -18000,7 +17992,6 @@
         "UUID_name": "UUID_ACON_WRITE_SERVICE",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.sjty.ydstrong_italy. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
-            "GATT Characteristic",
             "GATT Service"
         ],
         "evidence_array": [
@@ -23034,8 +23025,7 @@
         "UUID_name": "GMX_PIN_LITE_SERVICE",
         "UUID_purpose": "Custom GATT Service observed in Android app branded.com.publicansmanhasset, declared as Java field `uuidFromString5`. Classification determined by naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -24763,8 +24753,7 @@
         "UUID_name": "GMX_PIN_LITE_V2_SERVICE",
         "UUID_purpose": "Custom GATT Service observed in Android app branded.com.publicansmanhasset, declared as Java field `uuidFromString6`. Classification determined by naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -26481,8 +26470,7 @@
         "UUID_name": "GMX_PIN_CLESS_SERVICE",
         "UUID_purpose": "Custom GATT Service observed in Android app branded.com.publicansmanhasset, declared as Java field `uuidFromString7`. Classification determined by naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -29082,7 +29070,6 @@
         "UUID_name": "BlueNRG_OTA_ImageFeature",
         "UUID_purpose": "GATT Service observed in Android app com.st.smartTag but declared in third-party SDK package `com.st.BlueNRG.fwUpgrade.feature`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -31519,7 +31506,6 @@
         "UUID_name": "INVALID_DEVICE_ID",
         "UUID_purpose": "Custom GATT Service observed in Android app com.allegion.pureaccess.mfr, declared as Java field `INVALID_DEVICE_ID`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -31719,8 +31705,7 @@
         "UUID_name": "MPPT_FW",
         "UUID_purpose": "Custom GATT Service observed in Android app com.philips.servicetag, declared as Java field `MPPT_FW`. Classification determined by naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -32364,8 +32349,7 @@
         "UUID_name": "SERVICE_UUID / BLE_SERVICE / AINA_SERV",
         "UUID_purpose": "GATT Service observed in Android app com.cpc.briaxalpha but declared in third-party SDK package `com.bria.common.pushtotalk.aina` as Java field `AINA_SERV`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getService(AINA_SERV).",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -33368,8 +33352,7 @@
         "UUID_name": "SOLO_SERVICE",
         "UUID_purpose": "Custom GATT Service observed in Android app branded.com.publicansmanhasset, declared as Java field `uuidFromString7`. Classification determined by naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -36578,8 +36561,7 @@
         "UUID_name": "LINKPLAY_BLE_HOTSPOT_CONFIG_WRITE",
         "UUID_purpose": "GATT Characteristic observed in Android app com.wifiaudio.Yamaha but declared in third-party SDK package `com.i.a`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -37363,8 +37345,7 @@
         "UUID_name": "LINKPLAY_BLE_INDEX_WRITE",
         "UUID_purpose": "GATT Characteristic observed in Android app com.wifiaudio.Yamaha but declared in third-party SDK package `com.i.a`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -37634,8 +37615,7 @@
         "UUID_name": "LINKPLAY_BLE_INDEX_READ",
         "UUID_purpose": "GATT Characteristic observed in Android app com.wifiaudio.Yamaha but declared in third-party SDK package `com.i.a`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -37766,8 +37746,7 @@
         "UUID_name": "UUID_LCR_SERVICE",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.squareup.restaurants.beta, declared as Java field `UUID_LCR_SERVICE`. Classification determined by cross-file usage:getCharacteristic(UUID_LCR_SERVICE).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -38551,8 +38530,7 @@
         "UUID_name": "UUID_PROTOBUF_SERVICE / f13190OooOO0O",
         "UUID_purpose": "GATT Service observed in Android app com.linwear.ogglobe but declared in third-party SDK package `com.zjw.zhbraceletsdk.service` as Java field `k`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -38752,7 +38730,6 @@
         "UUID_name": "CHAR_PROTOBUF_UUID_01 / f13191OooOO0o",
         "UUID_purpose": "GATT Service observed in Android app com.linwear.ogglobe but declared in third-party SDK package `com.zjw.zhbraceletsdk.service` as Java field `l`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -38953,7 +38930,6 @@
         "UUID_name": "CHAR_PROTOBUF_UUID_02 / f13193OooOOO0",
         "UUID_purpose": "GATT Service observed in Android app com.linwear.ogglobe but declared in third-party SDK package `com.zjw.zhbraceletsdk.service` as Java field `m`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -39154,7 +39130,6 @@
         "UUID_name": "CHAR_PROTOBUF_UUID_03 / f13192OooOOO",
         "UUID_purpose": "GATT Service observed in Android app com.linwear.ogglobe but declared in third-party SDK package `com.zjw.zhbraceletsdk.service` as Java field `n`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -39355,7 +39330,6 @@
         "UUID_name": "CHAR_PROTOBUF_UUID_04 / f13194OooOOOO",
         "UUID_purpose": "GATT Service observed in Android app com.linwear.ogglobe but declared in third-party SDK package `com.zjw.zhbraceletsdk.service` as Java field `o`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -40770,7 +40744,6 @@
         "UUID_name": "BLUETOOTH_LE_TRUCONNECT_SERVICE / confirmationCancellation",
         "UUID_purpose": "GATT Characteristic observed in Android app com.philips.servicetag but declared in third-party SDK package `o` as Java field `confirmationCancellation`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Characteristic",
             "GATT Service"
         ],
         "evidence_array": [
@@ -41380,8 +41353,7 @@
         "UUID_name": "RADBEACON_E_CHALLENGE_UUID128",
         "UUID_purpose": "GATT Characteristic observed in Android app com.hp.printercontrol but declared in third-party SDK package `com.radiusnetworks.radbeaconkit` as Java field `f68124h`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(f68124h).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -41930,7 +41902,6 @@
         "UUID_name": "AUTO_POWER_OFF_TIME_CHARACTERISTICS",
         "UUID_purpose": "Custom GATT Service observed in Android app jp.co.casio.exilimconnectforgolf, declared as Java field `AUTO_POWER_OFF_TIME`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -43552,7 +43523,6 @@
         "UUID_name": "bleTappCharacteristicIntensity",
         "UUID_purpose": "Custom GATT Service observed in Android app com.constellationlabs.bi_tapp. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -45048,7 +45018,6 @@
         "UUID_name": "ARDUINO_BLE_DEFAULT_CHAR",
         "UUID_purpose": "Custom GATT Service observed in Android app com.fitphilia.fitway.gym_fit_usa_new, declared as Java field `f13864d`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -45981,8 +45950,7 @@
         "UUID_name": "VSCALE_CHARACTERISTIC_READ / Vscale Read / WeightScale2Char",
         "UUID_purpose": "GATT Characteristic observed in Android app oucare.ou6601an but declared in third-party SDK package `com.vtrump.vtble`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -46644,8 +46612,7 @@
         "UUID_name": "LINKPLAY_BLE_DATA_WRITE",
         "UUID_purpose": "GATT Characteristic observed in Android app com.wifiaudio.Yamaha but declared in third-party SDK package `com.i.a`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -46776,8 +46743,7 @@
         "UUID_name": "LINKPLAY_BLE_DATA_READ",
         "UUID_purpose": "GATT Characteristic observed in Android app com.wifiaudio.Yamaha but declared in third-party SDK package `com.i.a`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -47112,7 +47078,6 @@
         "UUID_name": "VST_GW_MEASUREMENT_CHAR",
         "UUID_purpose": "Custom GATT Service observed in Android app com.vernier.instrumentalanalysis, declared as Java field `VST_GW_MEASUREMENT_CHAR`. Classification determined by naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -47728,7 +47693,6 @@
         "UUID_name": "ZEBRA_ACCESS",
         "UUID_purpose": "GATT Service observed in Android app com.zebra.zbsetup but declared in third-party SDK package `k3` as Java field `ZEBRA_ACCESS`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -48130,7 +48094,6 @@
         "UUID_name": "KONTAKT_DFU_SERVICE",
         "UUID_purpose": "GATT Service observed in Android app co.bytemark.nycf, declared in cached third-party SDK package `com.kontakt.sdk.android.ble.spec`. Company attributed via Phase-6 KNOWN_SDK_JAVA_PACKAGES cache. No Java field-name hint. Phase-4 SDK identification: Kontakt.io Beacon SDK.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -54013,7 +53976,6 @@
         "UUID_name": "TRFRAMEWORK_C_UUID",
         "UUID_purpose": "GATT Service (TRFRAMEWORK_C_UUID) from com.utc.fs.trframework.n1.java / z3.java.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -68906,7 +68868,6 @@
         "UUID_name": "ADDED_PRECEDENCE_TRANSITIONS",
         "UUID_purpose": "GATT Service observed in Android app com.boyneresorts.brighton but declared in third-party SDK package `android.databinding.internal.org.antlr.v4.runtime.atn` as Java field `uuidFromString2`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -69398,7 +69359,6 @@
         "UUID_name": "COAG_READING",
         "UUID_purpose": "GATT Service observed in Android app com.mayoclinic.patient, declared in cached third-party SDK package `com.validic.mobile.ble` as Java field `COAG_READING_UUID`. Company attributed via Phase-6 KNOWN_SDK_JAVA_PACKAGES cache. Classification source: naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -69462,7 +69422,6 @@
         "UUID_name": "COAG_INDEX",
         "UUID_purpose": "GATT Service observed in Android app com.mayoclinic.patient, declared in cached third-party SDK package `com.validic.mobile.ble` as Java field `COAG_INDEX_UUID`. Company attributed via Phase-6 KNOWN_SDK_JAVA_PACKAGES cache. Classification source: naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -69526,7 +69485,6 @@
         "UUID_name": "COAG_STATUS",
         "UUID_purpose": "GATT Service observed in Android app com.mayoclinic.patient, declared in cached third-party SDK package `com.validic.mobile.ble` as Java field `COAG_STATUS_UUID`. Company attributed via Phase-6 KNOWN_SDK_JAVA_PACKAGES cache. Classification source: naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -69590,8 +69548,7 @@
         "UUID_name": "COAG_CONFIG",
         "UUID_purpose": "GATT Characteristic observed in Android app com.mayoclinic.patient, declared in cached third-party SDK package `com.validic.mobile.ble` as Java field `COAG_CONFIG_UUID`. Company attributed via Phase-6 KNOWN_SDK_JAVA_PACKAGES cache. Classification source: usage:getCharacteristic.",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -69772,8 +69729,7 @@
         "UUID_name": "Unknown",
         "UUID_purpose": "GATT Characteristic observed in Android app com.ebest.warehouseapp but declared in third-party SDK package `com.wdtl.scs.scscommunicationsdk`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -69889,7 +69845,6 @@
         "UUID_name": "BATTERY_LEVEL_CHARACTERISTIC / BatteryLevel",
         "UUID_purpose": "GATT Service observed in Android app com.logitech.uedrops but declared in third-party SDK package `nl.dopple.t4.platform.characteristic` as Java field `BatteryLevel`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -70177,7 +70132,6 @@
         "UUID_name": "DEVICE_NAME_CHARACTERISTIC / DeviceName",
         "UUID_purpose": "GATT Service observed in Android app com.logitech.uedrops but declared in third-party SDK package `nl.dopple.t4.platform.characteristic` as Java field `DeviceName`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -71785,7 +71739,6 @@
         "UUID_name": "LILAC210_UUID_READ_CHAR / CUSTOM_READ",
         "UUID_purpose": "Custom GATT Service observed in Android app com.bm.android.thermometer, declared as Java field `CUSTOM_READ`. Classification determined by naming-convention.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -72072,8 +72025,7 @@
         "UUID_name": "READ_FROM_PERIPHERAL_CHARACTERISTIC / UUID_CHARACTERISTIC_READ / UUID_RX_CHAR / READ_FROM_PERIPHERAL_CHARACTERISTIC / UUID_RX_CHAR",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app branded.com.publicansmanhasset, declared as Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`. Classification determined by usage:getCharacteristic.",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -74362,8 +74314,7 @@
         "UUID_name": "DATECS_V2_CHARACTERISTIC_RX",
         "UUID_purpose": "GATT Characteristic observed in Android app com.nexpos but declared in third-party SDK package `com.izettle.payments.android.readers.vendors.datecs` as Java field `DATECS_V2_CHARACTERISTIC_RX`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DATECS_V2_CHARACTERISTIC_RX. Phase-4 SDK identification: Datecs V2 BLE characteristic.",
         "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
