@@ -12,7 +12,15 @@ One interesting class of UUIDs are the UUID16s which are defined in [https://bit
 
 ## Shared data
 
-The `CLUES_data.json` file is the crowdsourced data which is currently captured in CLUES format (i.e. conforming to the `CLUES_schema.json` schema). It describes what is currently known/captured about custom UUIDs. This data is shared under a [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) license. It can be incorporated into other projects with an attribution of *"From the CLUES project - https://github.com/darkmentorllc/CLUES_Schema"*.
+The crowdsourced data captured in CLUES format (i.e. conforming to the `CLUES_schema.json` schema) lives in the [`data/`](data/) directory. It describes what is currently known/captured about custom UUIDs, drawn from several sources of differing trust:
+
+| File | Source |
+| --- | --- |
+| `CLUES_data_human_verified.json` | Hand-curated and vetted by a human reviewer. This is the authoritative source when a UUID appears in multiple files. (Renamed from the legacy `CLUES_data.json` when the data moved under `data/`.) |
+| `CLUES_data_LLM_Android_APK_search_{0..f}.json` | Auto-extracted from Android APKs by the [`apk-clues-extract`](skills/apk-clues-extract/) skill, sharded into 16 files by the first hex character of the UUID. |
+| `CLUES_data_LLM_web_search.json` | Auto-researched via web search and GitHub Code Search by the [`web-clues-search`](skills/web-clues-search/) skill; every record is URL-cited in its `evidence_array`. |
+
+See [`data/README.md`](data/README.md) for full details on each file. This data is shared under a [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) license. It can be incorporated into other projects with an attribution of *"From the CLUES project - https://github.com/darkmentorllc/CLUES_Schema"*.
 
 ## Schema
 
@@ -43,18 +51,18 @@ We are seeking contributions of more UUIDs. To add an entry perform the followin
 
 1) Create a fork of this repository.
 
-2) Add your change to the end of `CLUES_data.json`.
+2) Add your change to the end of `data/CLUES_data_human_verified.json` (the hand-curated, human-vetted file).
 
 3) ***Verify the data still conforms to the schema***, by running the following on *nix or macOS:
 
  * `python3 -m venv ./venv`
  * `source ./venv/bin/activate`
  * `pip3 install check-jsonschema`
- * `check-jsonschema --verbose --base-uri ./CLUES_schema.json --schemafile ./CLUES_schema.json ./CLUES_data.json`
+ * `check-jsonschema --verbose --base-uri ./CLUES_schema.json --schemafile ./CLUES_schema.json data/CLUES_data_human_verified.json`
 
-4) Re-sort the `CLUES_data.json` by running:
+4) Re-sort the CLUES data files by running:
 
- *  `python3 SortCLUES.py` from within your fork.
+ *  `python3 scripts/SortCLUES.py` from within your fork.
  *  Search for any entries marked "MERGED", and correct them (e.g. if they should legitimately be merged, merge their descriptions. If not, correct the UUID conflict which caused them to be merged.)
 
 5) Commit your changes and make a pull request.

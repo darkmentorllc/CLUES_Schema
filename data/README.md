@@ -7,8 +7,8 @@ Every file here is a JSON array of records conforming to [`../CLUES_schema.json`
 | File | Source | Trust |
 | --- | --- | --- |
 | `CLUES_data_human_verified.json` | Hand-curated by a human reviewer | **Highest** |
-| `CLUES_data_LLM_Android_APK_search_{0..f}.json` | `apk-clues-extract` skill | Medium (auto-extracted; merged from many APKs) |
-| `CLUES_data_LLM_web_search.json` | `web-clues-search` skill | Medium (auto-extracted; URL-cited) |
+| `CLUES_data_LLM_Android_APK_search_{0..f}.json` | [`apk-clues-extract`](../skills/apk-clues-extract/) skill | Medium (auto-extracted; merged from many APKs) |
+| `CLUES_data_LLM_web_search.json` | [`web-clues-search`](../skills/web-clues-search/) skill | Medium (auto-extracted; URL-cited) |
 
 ### `CLUES_data_human_verified.json`
 
@@ -18,7 +18,7 @@ Tooling that auto-generates records (the two LLM skills) is required to *skip* U
 
 ### `CLUES_data_LLM_Android_APK_search_{0..f}.json`
 
-Output of the [`apk-clues-extract` skill](https://github.com/anthropics/claude-code) (in `~/.claude/skills/apk-clues-extract/`), which decompiles Android APKs with `jadx` and pulls vendor-specific UUIDs out of the Java source — `UUID.fromString("…")`, `ParcelUuid.fromString("…")`, log strings, anonymous-object constructors, lowered Kotlin enums, etc.
+Output of the [`apk-clues-extract`](../skills/apk-clues-extract/) skill, which decompiles Android APKs with `jadx` and pulls vendor-specific UUIDs out of the Java source — `UUID.fromString("…")`, `ParcelUuid.fromString("…")`, log strings, anonymous-object constructors, lowered Kotlin enums, etc.
 
 **Split layout.** Records are sharded across 16 files by the first hex character of `UUID` (UUIDs starting with `0` live in `_0.json`, UUIDs starting with `a` live in `_a.json`, etc.). This keeps every shard under ~25 MB so they remain reviewable in git diffs and load quickly in editors. The split is purely a storage layout — the **global sort is across all 16 files combined** (see [`scripts/SortCLUES.py`](../scripts/SortCLUES.py)). To work with the full dataset, use the loader:
 
@@ -33,7 +33,7 @@ records = load_clues("data/CLUES_data_LLM_Android_APK_search.json")  # path uses
 
 ### `CLUES_data_LLM_web_search.json`
 
-Output of the `web-clues-search` skill, which researches unidentified BLE/BTC UUID128 values from Blue2thprinting scan data using web search, GitHub Code Search, and ASCII/OUI/vendor-base-pattern analysis. Every record carries at least one URL in its `evidence_array` so a curator can verify the attribution.
+Output of the [`web-clues-search`](../skills/web-clues-search/) skill, which researches unidentified BLE/BTC UUID128 values from Blue2thprinting scan data using web search, GitHub Code Search, and ASCII/OUI/vendor-base-pattern analysis. Every record carries at least one URL in its `evidence_array` so a curator can verify the attribution.
 
 ## Transient files (not consumed, not committed)
 
