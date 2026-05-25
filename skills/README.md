@@ -14,7 +14,9 @@ Agents load skills from a per-tool skills directory, so copy the skill folder(s)
 - **Claude Code** → `~/.claude/skills/`
 - **OpenAI Codex** → `~/.codex/skills/`
 
-Run the commands below from this `skills/` directory. For **Claude Code**:
+Run the commands below from this `skills/` directory.
+
+For **Claude Code**:
 
 ```bash
 mkdir -p ~/.claude/skills
@@ -29,3 +31,5 @@ cp -R apk-clues-extract web-clues-search ~/.codex/skills/
 ```
 
 Then start a new agent session so the skills are picked up.
+
+To understand the usage of each skill, read the SKILL.md file.
