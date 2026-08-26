@@ -100,7 +100,7 @@ Before running any web search, deduplicate against the known sources:
 
 Then additionally filter against the **negative-result cache** (`web_search_unresolved.json` in the skill folder) — see the "Negative-result cache" section above for full semantics.
 
-Include regex pattern matching: any entry with `regex: true` and `X` wildcards in `UUID` should be expanded to a Python regex (replace `X` with `[0-9a-f]`) and used to filter.
+Include regex pattern matching: any entry with `regex: true` and `x` wildcards in `UUID` should be expanded to a Python regex (replace `x` with `[0-9a-f]`) and used to filter.
 
 ```python
 import json, re
@@ -227,7 +227,7 @@ For every UUID in the batch, exactly one of two things must happen at the end of
 The "Chrome throttled" case is a legitimate negative-cache entry only if the navigate-based fallback also produced no usable result. If both Chrome paths were throttled and no real search ran, do NOT cache — leave the UUID for the next pass.
 
 Each new entry in `data/CLUES_data_LLM_web_search.json` must conform to `CLUES_schema.json`. Required fields:
-- `UUID` (string, full 8-4-4-4-12 format, lowercase; or with `X` wildcards if regex)
+- `UUID` (string, full 8-4-4-4-12 format, lowercase; or with lowercase `x` wildcards if regex)
 - `company` (string) — **bare company name only.** Do NOT pack in country, product line, app name, what BLE is used for, acquisition history, or any other context. Bad: `"Canon Inc. (Japan) — Camera Connect app; BLE for EOS / PowerShot cameras"`. Good: `"Canon Inc."`. Bad: `"Anki (now Digital Dream Labs)"`. Good: `"Anki"` (historically-attributed name; rebrand notes go into evidence). The lone exceptions are: (a) the `(formerly OldName)` rebrand suffix that SIG-style entries also use, and (b) acronyms that are part of the formal name like `(IBV)`. Descriptive context belongs in `UUID_purpose` (if it's about how the UUID is used) or in an extra `evidence_array` entry (if it's about the company). Apply scripts in the sibling `apk-clues-extract` skill enforce this via `company_sanitizer`; the web-search skill writes records directly, so the responsibility is on the author here.
 - `UUID_name` (string)
 - `UUID_purpose` (string, prose)
@@ -235,7 +235,9 @@ Each new entry in `data/CLUES_data_LLM_web_search.json` must conform to `CLUES_s
 - `evidence_array` (array of objects with `URL`, `description`, `submitter`)
 - `regex` (boolean, optional — `true` for family-pattern entries)
 
-When multiple UUIDs share a vendor base (e.g., 3+ from the Casio G-Shock `26eb00XX-...` family), add a **regex family entry** in addition to the individual entries. The regex entry uses uppercase `X` characters as wildcards.
+When multiple UUIDs share a vendor base (e.g., 3+ from the Casio G-Shock `26eb00xx-...` family), add a **regex family entry** in addition to the individual entries. The regex entry uses **lowercase `x`** characters as wildcards.
+
+**Wildcards must be lowercase `x`, not uppercase `X`** — even though `CLUES_schema.json`'s own prose says `X`. The consumer, `Analysis/TME/TME_helpers.py`, builds the pattern with `UUID_regex.replace('-','').replace('x','[0-9a-fA-F]')` and never lowercases first, so an uppercase-`X` entry compiles to a literal `X` that can never match a hex UUID: the entry loads and validates fine, and is silently dead. Every pre-existing regex entry in the data files uses lowercase. Before committing a family entry, verify it with that exact `replace` chain plus `re.match` against the no-dash UUID, and check it does not over-match. (Exact-match lookups are tried *before* the regex loop, so a family entry never masks a more specific entry.)
 
 After every append, validate:
 
