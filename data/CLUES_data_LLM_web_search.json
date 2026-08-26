@@ -111,6 +111,108 @@
         ]
     },
     {
+        "UUID": "55f80aef-d89f-41a4-9e36-0ffc88dc81ce",
+        "company": "Airoha Technology Corp.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Cross-vendor wireless-audio SDK service observed on Sony, JBL, and other headphones/earbuds; exact protocol function unknown. Public enumerations corroborate the product association, while the Airoha attribution comes from retained over-the-air Manufacturer Name, controller, and sibling-UUID evidence.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 14 distinct bt2 device profiles with successful GATT reads across multiple finished-device brands. Read GATT Manufacturer Name values explicitly identify Airoha on representative profiles, with Airoha controller and sibling-UUID evidence providing additional SDK-level corroboration. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://askubuntu.com/questions/1424712/yet-another-question-on-connecting-bluetooth-headphones",
+                "description": "The exact service UUID appears in a public GATT enumeration of Sony WF-1000XM3 wireless earbuds.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://gist.github.com/tanriol/790acc3f2bf3e9c181d84e8881083cf6",
+                "description": "The exact service UUID appears in a public GATT enumeration of JBL LIVE400BT wireless headphones.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "3adf41af-f7a1-4e16-863e-53a188d5bf8d",
+        "company": "Airoha Technology Corp.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Cross-vendor wireless-audio SDK characteristic observed on Sony, JBL, and other headphones/earbuds; exact protocol function unknown. Public enumerations corroborate the product association, while the Airoha attribution comes from retained over-the-air Manufacturer Name, controller, and sibling-UUID evidence.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "55f80aef-d89f-41a4-9e36-0ffc88dc81ce",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 11 distinct bt2 device profiles with successful GATT reads, coherently beneath 55f80aef-d89f-41a4-9e36-0ffc88dc81ce across multiple finished-device brands. Read GATT Manufacturer Name values explicitly identify Airoha on representative profiles, with Airoha controller and sibling-UUID evidence providing additional SDK-level corroboration. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://askubuntu.com/questions/1424712/yet-another-question-on-connecting-bluetooth-headphones",
+                "description": "The exact characteristic UUID appears in a public GATT enumeration of Sony WF-1000XM3 wireless earbuds.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://gist.github.com/tanriol/790acc3f2bf3e9c181d84e8881083cf6",
+                "description": "The exact characteristic UUID appears in a public GATT enumeration of JBL LIVE400BT wireless headphones.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "67a846ad-de3e-451b-a6d8-7b2899ca2370",
+        "company": "Airoha Technology Corp.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Cross-vendor wireless-audio SDK service observed on Sony, JBL, and other headphones/earbuds; exact protocol function unknown. Public enumerations corroborate the product association, while the Airoha attribution comes from retained over-the-air Manufacturer Name, controller, and sibling-UUID evidence.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 14 distinct bt2 device profiles with successful GATT reads across multiple finished-device brands. Read GATT Manufacturer Name values explicitly identify Airoha on representative profiles, with Airoha controller and sibling-UUID evidence providing additional SDK-level corroboration. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://askubuntu.com/questions/1424712/yet-another-question-on-connecting-bluetooth-headphones",
+                "description": "The exact service UUID appears in a public GATT enumeration of Sony WF-1000XM3 wireless earbuds.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://gist.github.com/tanriol/790acc3f2bf3e9c181d84e8881083cf6",
+                "description": "The exact service UUID appears in a public GATT enumeration of JBL LIVE400BT wireless headphones.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "753eed35-a584-45bb-baed-67fc7b2dc142",
+        "company": "Airoha Technology Corp.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Cross-vendor wireless-audio SDK characteristic observed on Sony, JBL, and other headphones/earbuds; exact protocol function unknown. Public enumerations corroborate the product association, while the Airoha attribution comes from retained over-the-air Manufacturer Name, controller, and sibling-UUID evidence.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "67a846ad-de3e-451b-a6d8-7b2899ca2370",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 11 distinct bt2 device profiles with successful GATT reads, coherently beneath 67a846ad-de3e-451b-a6d8-7b2899ca2370 across multiple finished-device brands. Read GATT Manufacturer Name values explicitly identify Airoha on representative profiles, with Airoha controller and sibling-UUID evidence providing additional SDK-level corroboration. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://askubuntu.com/questions/1424712/yet-another-question-on-connecting-bluetooth-headphones",
+                "description": "The exact characteristic UUID appears in a public GATT enumeration of Sony WF-1000XM3 wireless earbuds.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://gist.github.com/tanriol/790acc3f2bf3e9c181d84e8881083cf6",
+                "description": "The exact characteristic UUID appears in a public GATT enumeration of JBL LIVE400BT wireless headphones.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
         "UUID": "b42exxxx-ade7-11e4-89d3-123b93f75cba",
         "company": "Airthings AS",
         "UUID_name": "Wave family base (regex)",
@@ -418,6 +520,436 @@
         ]
     },
     {
+        "UUID": "48fe3e40-0817-4bb2-8633-3073689c2dba",
+        "company": "Apple Inc.",
+        "UUID_name": "Nearby Interaction",
+        "UUID_purpose": "Apple Nearby Interaction accessory GATT service used to exchange UWB configuration data before a ranging session. It is observed on Tesla Model 3/Y phone-key profiles, but the UUID is Apple-defined rather than Tesla-proprietary.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 33 distinct bt2 device profiles with successful GATT reads. Aggregate read GATT names and Blue2thprinting NamePrint evidence identify Tesla Model 3 and Model Y phone-key profiles. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://developer.apple.com/download/files/Nearby-Interaction-Accessory-Protocol-Specification-R4.pdf",
+                "description": "Apple's official Nearby Interaction Accessory Protocol specification lists and names the exact UUID.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://forum.qorvo.com/uploads/short-url/rNaHnjDEGow81uivmpNkY77Ulm4.pdf",
+                "description": "A publicly accessible mirror of the specification provides a second directly inspectable table containing the exact UUID.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "95e8d9d5-d8ef-4721-9a4e-807375f53328",
+        "company": "Apple Inc.",
+        "UUID_name": "Accessory Single Configuration Data",
+        "UUID_purpose": "Readable Apple Nearby Interaction characteristic carrying an accessory's UWB configuration data so the BLE connection can be associated with a Nearby Interaction ranging session. It is observed on Tesla Model 3/Y phone-key profiles, but the UUID is Apple-defined.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "48fe3e40-0817-4bb2-8633-3073689c2dba",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 33 distinct bt2 device profiles with successful GATT reads, coherently nested beneath 48fe3e40-0817-4bb2-8633-3073689c2dba. Aggregate read GATT names and Blue2thprinting NamePrint evidence identify Tesla Model 3 and Model Y phone-key profiles. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://developer.apple.com/download/files/Nearby-Interaction-Accessory-Protocol-Specification-R4.pdf",
+                "description": "Apple's official Nearby Interaction Accessory Protocol specification lists and names the exact UUID.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://forum.qorvo.com/uploads/short-url/rNaHnjDEGow81uivmpNkY77Ulm4.pdf",
+                "description": "A publicly accessible mirror of the specification provides a second directly inspectable table containing the exact UUID.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "7798082b-b7b7-45a6-9933-563492efe04e",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary wireless-audio service present on AirPods and Beats headsets; the exact protocol role is not publicly named.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 24 distinct bt2 device profiles with successful GATT reads. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats Pill, Solo, and Studio products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact service UUID appears in a GATT enumeration of a Beats Studio Pro together with its five child characteristics.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://doing-programming.tistory.com/entry/CoreBluetooth-%EC%B0%8D%EB%A8%B9",
+                "description": "The exact service UUID appears in a CoreBluetooth enumeration of AirPods, corroborating cross-product Apple/Beats use.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "82f6bc0a-1bca-4873-afc9-ec5890e3469a",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of an Apple/Beats proprietary wireless-audio service used on AirPods and Beats headsets; exact protocol role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "7798082b-b7b7-45a6-9933-563492efe04e",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 23 distinct bt2 device profiles with successful GATT reads beneath 7798082b-b7b7-45a6-9933-563492efe04e. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath 7798082b-b7b7-45a6-9933-563492efe04e in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://doing-programming.tistory.com/entry/CoreBluetooth-%EC%B0%8D%EB%A8%B9",
+                "description": "A public CoreBluetooth enumeration of AirPods corroborates the same service family.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "a1d0b756-dc3f-4b52-aafe-2abde66b3166",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of an Apple/Beats proprietary wireless-audio service used on AirPods and Beats headsets; exact protocol role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "7798082b-b7b7-45a6-9933-563492efe04e",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 23 distinct bt2 device profiles with successful GATT reads beneath 7798082b-b7b7-45a6-9933-563492efe04e. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath 7798082b-b7b7-45a6-9933-563492efe04e in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://doing-programming.tistory.com/entry/CoreBluetooth-%EC%B0%8D%EB%A8%B9",
+                "description": "A public CoreBluetooth enumeration of AirPods corroborates the same service family.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "a48fec08-3921-43db-82aa-afbce8ebb4fb",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of an Apple/Beats proprietary wireless-audio service used on AirPods and Beats headsets; exact protocol role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "7798082b-b7b7-45a6-9933-563492efe04e",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 23 distinct bt2 device profiles with successful GATT reads beneath 7798082b-b7b7-45a6-9933-563492efe04e. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath 7798082b-b7b7-45a6-9933-563492efe04e in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://doing-programming.tistory.com/entry/CoreBluetooth-%EC%B0%8D%EB%A8%B9",
+                "description": "A public CoreBluetooth enumeration of AirPods corroborates the same service family.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "d5621cc1-f7ab-45db-9403-9eaf744d5390",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of an Apple/Beats proprietary wireless-audio service used on AirPods and Beats headsets; exact protocol role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "7798082b-b7b7-45a6-9933-563492efe04e",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 23 distinct bt2 device profiles with successful GATT reads beneath 7798082b-b7b7-45a6-9933-563492efe04e. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath 7798082b-b7b7-45a6-9933-563492efe04e in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://doing-programming.tistory.com/entry/CoreBluetooth-%EC%B0%8D%EB%A8%B9",
+                "description": "A public CoreBluetooth enumeration of AirPods corroborates the same service family.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "d5f96afa-2f2c-41bb-a7e6-f54abe6235b4",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of an Apple/Beats proprietary wireless-audio service used on AirPods and Beats headsets; exact protocol role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "7798082b-b7b7-45a6-9933-563492efe04e",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 23 distinct bt2 device profiles with successful GATT reads beneath 7798082b-b7b7-45a6-9933-563492efe04e. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath 7798082b-b7b7-45a6-9933-563492efe04e in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://doing-programming.tistory.com/entry/CoreBluetooth-%EC%B0%8D%EB%A8%B9",
+                "description": "A public CoreBluetooth enumeration of AirPods corroborates the same service family.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "9bd708d7-64c7-4e9f-9ded-f6b6c4551967",
+        "company": "Apple Inc.",
+        "UUID_name": "DoAP",
+        "UUID_purpose": "Siri and Dictation audio transport for AirPods and Beats headsets; streams Opus-encoded microphone audio and stream-state data over BLE. The expansion of \"DoAP\" is unknown.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 16 distinct bt2 device profiles with successful GATT reads. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats Solo and Studio products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "description": "The analyzed Apple bluetoothd binary checks this exact UUID, logs that the device supports DOAP, emits DOAPDeviceConnected, and publishes kBTAudioMsgPropertyDOAPSupported. The binary does not expand the acronym.",
+                "submitter": "OpenAI Codex bluetoothd analysis"
+            },
+            {
+                "URL": "https://www.usenix.org/system/files/woot20-paper-heinze.pdf",
+                "description": "The USENIX WOOT 2020 ToothPicker paper describes DoAP as a pairing-required GATT protocol whose responsibilities include configuring and triggering Siri.",
+                "submitter": "OpenAI Codex bluetoothd analysis"
+            },
+            {
+                "URL": "https://cra.sh/public_html/strlcpy3/cve-2022-32946-sirispy-eavesdrop-conversations-with-siri",
+                "description": "The exact UUID is explicitly identified as the DoAP service used for Siri and Dictation on AirPods and Beats headsets.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact service UUID appears in a full GATT enumeration of a Beats Studio Pro (Apple Bluetooth vendor ID 0x004c).",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "3f1c161d-6473-4746-91f5-6d27610780c6",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of the DoAP Siri/Dictation audio service on AirPods and Beats headsets; exact stream-state or audio-packet role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "9bd708d7-64c7-4e9f-9ded-f6b6c4551967",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 16 distinct bt2 device profiles with successful GATT reads beneath 9bd708d7-64c7-4e9f-9ded-f6b6c4551967. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath the DoAP service UUID in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://cra.sh/public_html/strlcpy3/cve-2022-32946-sirispy-eavesdrop-conversations-with-siri",
+                "description": "The parent service is explicitly identified as DoAP, which carries stream-state notifications and Opus audio packets for Siri and Dictation; this source does not map the individual characteristic.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "6288ea2d-7b89-47ad-890b-9fa6bf3cfc58",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of the DoAP Siri/Dictation audio service on AirPods and Beats headsets; exact stream-state or audio-packet role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "9bd708d7-64c7-4e9f-9ded-f6b6c4551967",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 16 distinct bt2 device profiles with successful GATT reads beneath 9bd708d7-64c7-4e9f-9ded-f6b6c4551967. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath the DoAP service UUID in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://cra.sh/public_html/strlcpy3/cve-2022-32946-sirispy-eavesdrop-conversations-with-siri",
+                "description": "The parent service is explicitly identified as DoAP, which carries stream-state notifications and Opus audio packets for Siri and Dictation; this source does not map the individual characteristic.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "a08ce5ef-698a-42a2-b980-7f3ac00b3845",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of the DoAP Siri/Dictation audio service on AirPods and Beats headsets; exact stream-state or audio-packet role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "9bd708d7-64c7-4e9f-9ded-f6b6c4551967",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 16 distinct bt2 device profiles with successful GATT reads beneath 9bd708d7-64c7-4e9f-9ded-f6b6c4551967. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath the DoAP service UUID in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://cra.sh/public_html/strlcpy3/cve-2022-32946-sirispy-eavesdrop-conversations-with-siri",
+                "description": "The parent service is explicitly identified as DoAP, which carries stream-state notifications and Opus audio packets for Siri and Dictation; this source does not map the individual characteristic.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "c7c6947d-3165-4bcb-8eaf-b328896cb531",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of the DoAP Siri/Dictation audio service on AirPods and Beats headsets; exact stream-state or audio-packet role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "9bd708d7-64c7-4e9f-9ded-f6b6c4551967",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 16 distinct bt2 device profiles with successful GATT reads beneath 9bd708d7-64c7-4e9f-9ded-f6b6c4551967. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath the DoAP service UUID in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://cra.sh/public_html/strlcpy3/cve-2022-32946-sirispy-eavesdrop-conversations-with-siri",
+                "description": "The parent service is explicitly identified as DoAP, which carries stream-state notifications and Opus audio packets for Siri and Dictation; this source does not map the individual characteristic.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "e1f9b835-7e47-413d-af94-c68e574b8f7e",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of the DoAP Siri/Dictation audio service on AirPods and Beats headsets; exact stream-state or audio-packet role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "9bd708d7-64c7-4e9f-9ded-f6b6c4551967",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 16 distinct bt2 device profiles with successful GATT reads beneath 9bd708d7-64c7-4e9f-9ded-f6b6c4551967. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath the DoAP service UUID in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://cra.sh/public_html/strlcpy3/cve-2022-32946-sirispy-eavesdrop-conversations-with-siri",
+                "description": "The parent service is explicitly identified as DoAP, which carries stream-state notifications and Opus audio packets for Siri and Dictation; this source does not map the individual characteristic.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "f195b8fb-a9e2-4401-858b-2f87a06928a8",
+        "company": "Apple Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic of the DoAP Siri/Dictation audio service on AirPods and Beats headsets; exact stream-state or audio-packet role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "9bd708d7-64c7-4e9f-9ded-f6b6c4551967",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 16 distinct bt2 device profiles with successful GATT reads beneath 9bd708d7-64c7-4e9f-9ded-f6b6c4551967. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact characteristic UUID appears beneath the DoAP service UUID in a GATT enumeration of a Beats Studio Pro.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://cra.sh/public_html/strlcpy3/cve-2022-32946-sirispy-eavesdrop-conversations-with-siri",
+                "description": "The parent service is explicitly identified as DoAP, which carries stream-state notifications and Opus audio packets for Siri and Dictation; this source does not map the individual characteristic.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "4715650b-5e9d-4ac2-b898-a4fc0aa5df78",
+        "company": "Apple Inc.",
+        "UUID_name": "Universal Accessory Restore Protocol (UARP)",
+        "UUID_purpose": "Encrypted primary GATT service indicating support for Universal Accessory Restore Protocol (UARP), an application-layer protocol for delivering and applying accessory firmware-update assets. bluetoothd reports connected UARP peers and can carry UARP data over AACP as an alternate transport.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 28 distinct bt2 device profiles with successful GATT reads. Read GATT Manufacturer Name, model, and device-name values identify Apple/Beats Pill, Solo, and Studio products. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "description": "The analyzed Apple bluetoothd binary checks this exact UUID, logs that the device supports UARP, requires an encrypted link before matching the service, emits UARPDeviceConnected, and exposes AACPTransportForUARP and UARPDataOverAACP paths.",
+                "submitter": "OpenAI Codex bluetoothd analysis"
+            },
+            {
+                "URL": "https://patents.google.com/patent/US11275576B2/en",
+                "description": "Apple patent US11275576B2 expands UARP as Universal Accessory Restore Protocol and describes it as an application-layer protocol for accessory firmware updates.",
+                "submitter": "OpenAI Codex bluetoothd analysis"
+            },
+            {
+                "URL": "https://chirpmyradio.com/attachments/13286/win_system_info.txt",
+                "description": "The exact UUID appears in a Windows Bluetooth inventory with Apple vendor ID 0x004c and the device description UARPS.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://forum.ubuntuusers.de/topic/beats-studio-pro-kein-sound/#post-9503181",
+                "description": "The exact service UUID appears in a GATT enumeration of a Beats Studio Pro, corroborating use on an Apple accessory.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
         "UUID": "19b10010-e8f2-537e-4f6c-d104768a1214",
         "company": "Arduino",
         "UUID_name": "Arduino BLE example custom service base",
@@ -671,6 +1203,87 @@
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (British American Tobacco)"
             }
         ]
+    },
+    {
+        "UUID": "a700cc65-e486-40ba-5d24-99601dc38fd7",
+        "company": "BLESPlo.it",
+        "UUID_name": "Light Control",
+        "UUID_purpose": "Belongs to the BLESPlo.it example \"Light\" peripheral profile, which the BLESPlo.it BLE tool (and its ESP32 firmware) can simulate. GATT Service controlling the power state and colour of an LED bulb. It is also advertised as AD type 0x21 (Service Data - 128-bit UUID) in ADV_IND, with the service data byte carrying the on/off state, and is what the tool's observer matches on.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/blesploit_lightbulb/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `SVC_LIGHTBULB` (\"BLESPlo.it Light Control\") - \"Controls power state and color of the LED bulb\".",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/blesploit_lightbulb/peripheral/adv.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The simulated advertisement `adv_data_hex` \"0201061521d78fc31d6099245dba4086e465cc00a700aaaaaa\" carries this UUID little-endian in an AD type 0x21 (Service Data - 128-bit UUID) field.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "adv_channel_pdu_array": [
+            "ADV_IND"
+        ],
+        "adv_data_type_array": [
+            33
+        ],
+        "adv_data_type_str_array": [
+            "Service Data - 128-bit UUID"
+        ]
+    },
+    {
+        "UUID": "a701cc65-e486-40ba-5d24-99601dc38fd7",
+        "company": "BLESPlo.it",
+        "UUID_name": "Power Switch",
+        "UUID_purpose": "Belongs to the BLESPlo.it example \"Light\" peripheral profile, which the BLESPlo.it BLE tool (and its ESP32 firmware) can simulate. LED on/off state as a single uint8: 0 = off, 1 = on, 2-255 reserved.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/blesploit_lightbulb/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `CHR_ONOFF` (\"Power Switch\") with a documented 1-byte State field.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "a700cc65-e486-40ba-5d24-99601dc38fd7"
+    },
+    {
+        "UUID": "a702cc65-e486-40ba-5d24-99601dc38fd7",
+        "company": "BLESPlo.it",
+        "UUID_name": "RGB Color",
+        "UUID_purpose": "Belongs to the BLESPlo.it example \"Light\" peripheral profile, which the BLESPlo.it BLE tool (and its ESP32 firmware) can simulate. LED colour as three uint8 bytes: Red, Green, Blue, each 0-255.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/blesploit_lightbulb/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `CHR_RGB` (\"RGB Color\") - \"LED color as 3-byte RGB\".",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "a700cc65-e486-40ba-5d24-99601dc38fd7"
+    },
+    {
+        "UUID": "a703cc65-e486-40ba-5d24-99601dc38fd7",
+        "company": "BLESPlo.it",
+        "UUID_name": "Secret Challenge",
+        "UUID_purpose": "Belongs to the BLESPlo.it example \"Light\" peripheral profile, which the BLESPlo.it BLE tool (and its ESP32 firmware) can simulate. Write-only teaching/demo Characteristic: the single byte written is compared against a peripheral-generated random secret.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/blesploit_lightbulb/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `CHR_SECRET` (\"Secret challenge\") - \"Write-only: first byte compared to a peripheral-generated secret\".",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "a700cc65-e486-40ba-5d24-99601dc38fd7"
     },
     {
         "UUID": "42594420-4155-544f-e0a9-e50e24dcca9e",
@@ -2118,6 +2731,48 @@
         ]
     },
     {
+        "UUID": "8b5b80c0-ac6d-11e4-baef-0002a5d5c51b",
+        "company": "GN Netcom",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Jabra proprietary bidirectional control/data characteristic beneath the GN Netcom feff service. Public GATT properties allow read, write, notify, and indicate; the payload protocol remains unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "feff",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 47 distinct bt2 device profiles with successful GATT reads, consistently beneath the GN Netcom-assigned feff Service. Read GATT Manufacturer Name and device-name values identify Jabra Evolve and Elite product families. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://bbs.archlinux.org/viewtopic.php?id=261767",
+                "description": "The exact UUID appears beneath feff in a full Jabra Elite 45h GATT enumeration with properties 0x2e.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "cacdf71a-fbe7-412b-91ec-045d2aeb7950",
+        "company": "GN Netcom",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Jabra proprietary device-to-host indication/response characteristic beneath the GN Netcom feff service. Public GATT properties show indicate-only behavior; the payload protocol remains unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "feff",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 22 distinct bt2 device profiles with successful GATT reads, consistently beneath the GN Netcom-assigned feff Service. Read GATT Manufacturer Name and device-name values identify Jabra Evolve and Elite product families. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://bbs.archlinux.org/viewtopic.php?id=261767",
+                "description": "The exact UUID appears beneath feff in a full Jabra Elite 45h GATT enumeration with indicate-only property 0x20.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
         "UUID": "6a4exxxx-667b-11e3-949a-0800200c9a66",
         "company": "Garmin",
         "UUID_name": "Garmin proprietary BLE base (regex)",
@@ -2314,6 +2969,104 @@
         ]
     },
     {
+        "UUID": "104c022e-48d6-4dd2-8737-f8ac5489c5d4",
+        "company": "Google",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Undocumented Characteristic of GATT Service fe59bfa8-7fe3-4a05-9d94-99fadc69faff, which the BlueZ vendor-UUID thread identifies (tentatively) as the GSound / \"Bisto\" communication service - Google's Assistant-on-headphones platform. Write-only (properties 0x08). The same Service and its five Characteristics have been captured independently on two different Sony headphone models, so this is a shared platform profile rather than a per-model one. Note: this attribution rests on the BlueZ identification of the parent Service and is less certain than the other BLESPlo.it-sourced entries; the Characteristic's own name and payload format are not publicly documented.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/sony_wh_ch720n/ble.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Present at handle 149 with properties 0x08 (write) in a captured Sony WH-CH720N GATT profile, under Service fe59bfa8-7fe3-4a05-9d94-99fadc69faff.",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://github.com/bluez/bluez/issues/963",
+                "description": "BlueZ issue \"Document more vendor UUIDs\" lists fe59bfa8-7fe3-4a05-9d94-99fadc69faff as \"Gsound/bisto(?) communication service.. Might be google assistant?\".",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/1815",
+                "description": "Gadgetbridge device-request issue for the Sony WI-SP600N contains a gatttool/hcitool GATT dump showing the same five Characteristics under Service fe59bfa8-7fe3-4a05-9d94-99fadc69faff.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "fe59bfa8-7fe3-4a05-9d94-99fadc69faff"
+    },
+    {
+        "UUID": "a79e2bd1-d6e4-4d1e-8b4f-141d69011cbb",
+        "company": "Google",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Undocumented Characteristic of GATT Service fe59bfa8-7fe3-4a05-9d94-99fadc69faff, which the BlueZ vendor-UUID thread identifies (tentatively) as the GSound / \"Bisto\" communication service - Google's Assistant-on-headphones platform. Write-only (properties 0x08). The same Service and its five Characteristics have been captured independently on two different Sony headphone models, so this is a shared platform profile rather than a per-model one. Note: this attribution rests on the BlueZ identification of the parent Service and is less certain than the other BLESPlo.it-sourced entries; the Characteristic's own name and payload format are not publicly documented.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/sony_wh_ch720n/ble.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Present at handle 156 with properties 0x08 (write) in a captured Sony WH-CH720N GATT profile, under Service fe59bfa8-7fe3-4a05-9d94-99fadc69faff.",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://github.com/bluez/bluez/issues/963",
+                "description": "BlueZ issue \"Document more vendor UUIDs\" lists fe59bfa8-7fe3-4a05-9d94-99fadc69faff as \"Gsound/bisto(?) communication service.. Might be google assistant?\".",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/1815",
+                "description": "Gadgetbridge device-request issue for the Sony WI-SP600N contains a gatttool/hcitool GATT dump showing the same five Characteristics under Service fe59bfa8-7fe3-4a05-9d94-99fadc69faff.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "fe59bfa8-7fe3-4a05-9d94-99fadc69faff"
+    },
+    {
+        "UUID": "eea2e8a0-89f0-4985-a1e2-d91dc4a52632",
+        "company": "Google",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Undocumented Characteristic of GATT Service fe59bfa8-7fe3-4a05-9d94-99fadc69faff, which the BlueZ vendor-UUID thread identifies (tentatively) as the GSound / \"Bisto\" communication service - Google's Assistant-on-headphones platform. Read-only (properties 0x02). The same Service and its five Characteristics have been captured independently on two different Sony headphone models, so this is a shared platform profile rather than a per-model one. Note: this attribution rests on the BlueZ identification of the parent Service and is less certain than the other BLESPlo.it-sourced entries; the Characteristic's own name and payload format are not publicly documented.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/sony_wh_ch720n/ble.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Present at handle 154 with properties 0x02 (read) in a captured Sony WH-CH720N GATT profile, under Service fe59bfa8-7fe3-4a05-9d94-99fadc69faff.",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://github.com/bluez/bluez/issues/963",
+                "description": "BlueZ issue \"Document more vendor UUIDs\" lists fe59bfa8-7fe3-4a05-9d94-99fadc69faff as \"Gsound/bisto(?) communication service.. Might be google assistant?\".",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/1815",
+                "description": "Gadgetbridge device-request issue for the Sony WI-SP600N contains a gatttool/hcitool GATT dump showing the same five Characteristics under Service fe59bfa8-7fe3-4a05-9d94-99fadc69faff.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "fe59bfa8-7fe3-4a05-9d94-99fadc69faff"
+    },
+    {
+        "UUID": "fe2c1239-8366-4814-8eb0-01de32100bea",
+        "company": "Google",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Undocumented read-only (properties 0x02) Characteristic of the Fast Pair Service (16-bit UUID 0xFE2C), sharing the Fast Pair Characteristic base -8366-4814-8eb0-01de32100bea with the published Model ID (...1233) through Beacon actions (...1238). Captured on a Google Pixel Buds 2a returning the 3-byte value 0x0100f0. It does not appear in Google's published Fast Pair characteristics specification, in the Nordic bluetooth-numbers-database, or in any located open-source Fast Pair implementation, so its purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/pixel_buds_2a/ble.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Present at handle 3089 with properties 0x02 (read) and value 0100f0 in a captured Google Pixel Buds 2a GATT profile, inside the 0xFE2C Fast Pair Service alongside Characteristics ...1233 through ...1238. It is not assigned a symbolic name in the library's fast_pair/uuids.json.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "fe2c"
+    },
+    {
         "UUID": "81c2e72a-0591-443e-a1ff-05f988593351",
         "company": "Google",
         "UUID_name": "GSound Voice / AudioWear Voice",
@@ -2358,6 +3111,47 @@
                 "URL": "https://github.com/bluez/bluez/issues/963",
                 "description": "Exactly matches bytes_reverse('4de17a00-52cb-11e6-bdf4-0800200c9a66') == '669a0c20-0008-f4bd-e611-cb52007ae14d'. Canonical form is documented in bluez issue #963 as 'Android Auto protocol'.",
                 "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "e73e0001-ef1b-4e74-8291-2e4f3164f3b5",
+        "company": "Google LLC",
+        "UUID_name": "Android Information Service (AIS)",
+        "UUID_purpose": "Android 14+ GATT service that lets a Bluetooth peer identify an Android-powered device and read its Android API level.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 449 distinct bt2 device profiles with successful GATT reads. Aggregate read GATT identity values and device names identify many Pixel and Samsung Galaxy models, while co-occurring human-reviewed Google platform UUIDs support Google as the shared platform owner. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://source.android.com/docs/core/connect/bluetooth/os-identification?hl=en",
+                "description": "Official Android documentation names this exact primary-service UUID Android Information Service (AIS) and describes its role.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "e73e0002-ef1b-4e74-8291-2e4f3164f3b5",
+        "company": "Google LLC",
+        "UUID_name": "Android API Level",
+        "UUID_purpose": "Readable AIS characteristic containing the Android API level as a four-octet little-endian unsigned integer; unauthenticated access is limited to discoverable mode.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "e73e0001-ef1b-4e74-8291-2e4f3164f3b5",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 427 distinct bt2 device profiles with successful GATT reads, coherently nested beneath e73e0001-ef1b-4e74-8291-2e4f3164f3b5. Aggregate read GATT identity values and device names identify many Pixel and Samsung Galaxy models, while co-occurring human-reviewed Google platform UUIDs support Google as the shared platform owner. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://source.android.com/docs/core/connect/bluetooth/os-identification?hl=en",
+                "description": "Official Android documentation names this exact characteristic and specifies its four-byte little-endian value and access conditions.",
+                "submitter": "Codex bt2-to-web research"
             }
         ]
     },
@@ -2457,6 +3251,32 @@
             }
         ],
         "regex": true
+    },
+    {
+        "UUID": "4152554e-f99b-4a3b-86d0-947070693a78",
+        "company": "HPE Aruba Networking",
+        "UUID_name": "Access Point iBeacon",
+        "UUID_purpose": "Fixed iBeacon proximity UUID broadcast by Aruba access points with BLE beaconing enabled; individual APs are distinguished by the iBeacon major/minor values. Distinct from the APs' BluConsole manufacturer-data advertisement (company ID 0x011B, payload subtype 0x08). APs beaconing this UUID commonly also use a GAP name of the form \"AP-<12 hex MAC digits>\". The leading four bytes are the ASCII vanity string \"ARUN\".",
+        "UUID_usage_array": [
+            "iBeacon"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/aruba/manifest.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The \"HPE Aruba Access Point\" vendor entry matches on this UUID appearing in an iBeacon fingerprint; the manifest notes the payload work was derived from the Aruba Utilities Android app (com.arubanetworks.arubautilities).",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/aruba/observer/adv_decode.lua",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Hardcoded as `ARUBA_IBEACON_UUID` in the advertisement decoder, which emits an \"HPE Aruba iBeacon\" device entry when an iBeacon frame carries it.",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://arubanetworking.hpe.com/techdocs/CLI-Bank/Content/aos8/sh-ap-ble-ibea.htm",
+                "description": "HPE Aruba Networking's own ArubaOS 8 CLI documentation for `show ap ble-ibeacon-info` shows this UUID as the AP iBeacon UUID. Corroborating reference only: the page is served 403 to automated fetches and has no web.archive.org snapshot, so the UUID's presence there was confirmed via search-engine indexing rather than direct retrieval.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ]
     },
     {
         "UUID": "dab91435-b5a1-e29c-b041-bcd562613bde",
@@ -4086,6 +4906,95 @@
         ]
     },
     {
+        "UUID": "8082caa8-41a6-4021-91c6-56f9b954cc18",
+        "company": "Oclean",
+        "UUID_name": "Main Command and Notify",
+        "UUID_purpose": "Observed on Oclean Y3/Y3L-class smart toothbrushes. Primary command and notification GATT Service. The client subscribes to the notify Characteristic (5f78df94-...bb86) before writing hex opcodes to the write Characteristic (9d84b9a3-...bb85); replies arrive as notifications. Not advertised - the toothbrush advertises the separate data-gateway Service a6ed0401-d344-460a-8075-b9e8ec90d71b instead.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/oclean_toothbrush/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `OCLEAN_SERVICE` (\"Oclean Main Service\") - \"Primary Oclean toothbrush command and notify channel (bb85/bb86)\".",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/oclean_toothbrush/ble.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Present in a captured GATT profile at handles 20-30 with four vendor Characteristics.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ]
+    },
+    {
+        "UUID": "5f78df94-798c-46f5-990a-855b673fbb86",
+        "company": "Oclean",
+        "UUID_name": "Notify (bb86)",
+        "UUID_purpose": "Observed on Oclean Y3/Y3L-class smart toothbrushes. Notification channel paired with the write Characteristic (9d84b9a3-...bb85). Subscribe (CCCD 0x0100) before writing; query replies arrive here, e.g. 0303 battery and 0302 device info (often split across two chunks on the Y3L).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/oclean_toothbrush/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `OCLEAN_READ_NOTIFY` (\"Oclean Notify (bb86)\").",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "8082caa8-41a6-4021-91c6-56f9b954cc18"
+    },
+    {
+        "UUID": "5f78df94-798c-46f5-990a-855b673fbb89",
+        "company": "Oclean",
+        "UUID_name": "Brush Write (bb89)",
+        "UUID_purpose": "Observed on Oclean Y3/Y3L-class smart toothbrushes. Brushing-history sync write channel (opcodes 0306 / 0307).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/oclean_toothbrush/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `CHR_BRUSH_WRITE` (\"Oclean Brush Write (bb89)\").",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "8082caa8-41a6-4021-91c6-56f9b954cc18"
+    },
+    {
+        "UUID": "5f78df94-798c-46f5-990a-855b673fbb90",
+        "company": "Oclean",
+        "UUID_name": "Brush Notify (bb90)",
+        "UUID_purpose": "Observed on Oclean Y3/Y3L-class smart toothbrushes. Brushing-history chunks and live brushing telemetry, notified in response to writes on the brush write Characteristic (5f78df94-...bb89).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/oclean_toothbrush/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `CHR_BRUSH_NOTIFY` (\"Oclean Brush Notify (bb90)\").",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "8082caa8-41a6-4021-91c6-56f9b954cc18"
+    },
+    {
+        "UUID": "9d84b9a3-000c-49d8-9183-855b673fbb85",
+        "company": "Oclean",
+        "UUID_name": "Write (bb85)",
+        "UUID_purpose": "Observed on Oclean Y3/Y3L-class smart toothbrushes. Main command write channel. The client subscribes to the notify Characteristic (5f78df94-...bb86) first, then writes a big-endian opcode word plus optional payload; documented opcodes include 0303 (battery query), 030201 (device info), 0222 01/00 (pause/resume brushing), 0216xx (set language) and 0202 (clear brushing history).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/oclean_toothbrush/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `OCLEAN_WRITE` (\"Oclean Write (bb85)\") with a documented opcode table and write presets.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "8082caa8-41a6-4021-91c6-56f9b954cc18"
+    },
+    {
         "UUID": "62741523-52f9-8864-b1ab-3b3a8d65950b",
         "company": "Okimat",
         "UUID_name": "Okimat adjustable smart bed BLE write characteristic",
@@ -4146,6 +5055,28 @@
                 "URL": "https://raw.githubusercontent.com/Velocet/iown-homecontrol/master/docs/parameter/Internald/Connection/Connection.BluetoothManager.lua",
                 "description": "Connection.BluetoothManager.lua (decompiled from Overkiz gateway firmware) lists this UUID in the BluetoothManager namespace. UUID literally appears on this page as `09FC95C0-C111-11E3-9904-0002A5D5C52D`.",
                 "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "0001000x-78fc-48fe-8e23-433b3a1942d0",
+        "regex": true,
+        "company": "PINE64",
+        "UUID_name": "InfiniTime Navigation family",
+        "UUID_purpose": "PineTime/InfiniTime navigation service family. Concrete member 00010000 is the Navigation Service; 00010001 is the maneuver-icon flag, 00010002 the narrative instruction, 00010003 the maneuver distance, and 00010004 route progress.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The pattern covers five UUID128 members observed over the air on a bt2 profile with successful GATT reads. Read GATT Manufacturer Name, model, and device-name values identify PINE64, InfiniTime, and PineTime. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://github.com/InfiniTimeOrg/InfiniTime/blob/main/doc/NavigationService.md",
+                "description": "Official InfiniTime documentation visibly lists every captured concrete UUID (00010000 through 00010004) and names each member.",
+                "submitter": "Codex bt2-to-web research"
             }
         ]
     },
@@ -4369,6 +5300,27 @@
         ]
     },
     {
+        "UUID": "31ba000x-6085-4726-be45-040c957391b5",
+        "regex": true,
+        "company": "Plejd",
+        "UUID_name": "Proprietary BLE mesh family",
+        "UUID_purpose": "Plejd mesh-lighting characteristic family beneath service 31ba0001. Public implementation constants identify 31ba0003 as light level, 31ba0004 as data, 31ba0005 as last data, 31ba0009 as authentication, and 31ba000a as ping; captured members 0002, 0006, 0007, 0008, and 000b remain unnamed.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The pattern covers ten UUID128 Characteristics observed over the air on eight distinct bt2 device profiles with successful GATT reads. Every member was nested beneath 31ba0001-6085-4726-be45-040c957391b5, while aggregate P mesh names and trusted sibling UUID evidence identify Plejd. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://git.thomasloven.com/thomas/hass_plejd/src/commit/2a1bb9ee630d4c89a4807fdeb2e2fc473e9f8251/custom_components/plejd/pyplejd/const.py?display=source",
+                "description": "A Plejd Home Assistant implementation visibly names five concrete captured family members: light level, data, last data, auth, and ping.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
         "UUID": "31ba0001-6085-4726-be45-040c957391b5",
         "company": "Plejd",
         "UUID_name": "Plejd BLE",
@@ -4413,6 +5365,28 @@
                 "URL": "https://www.av-test.org/fileadmin/pdf/avtest_2015-06_fitness_tracker_english.pdf",
                 "description": "AV-Test 'Fitness Tracker Security' (June 2015) shows BtGatt.GattService onAttributeWrite() log lines with UUID=fb005c16-02e7-f387-1cad-8acd2d8df0c8 immediately followed by 'D/PFTP' (Polar File Transfer Protocol) and 'D/fi.polar.polarflow.data...' log lines from the Polar Flow Android app.",
                 "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "a0f0ffxx-5047-4d53-8208-4f72616c2d42",
+        "regex": true,
+        "company": "Procter & Gamble",
+        "UUID_name": "Smart Toothbrush family",
+        "UUID_purpose": "Oral-B smart-toothbrush services and characteristics for identity/model/user data, live status, battery, buttons, brushing mode/time/sector, configuration, and stored-session data. Public protocol documentation names many concrete captured members, including 01 through 09, 21, 22, 25, 26, and 29.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The pattern covers 31 UUID128 members observed over the air on two distinct bt2 electric-toothbrush profiles with successful GATT reads. Read GATT device names identify Oral-B Toothbrush, and the stable UUID bytes encode PGM and Oral-B. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://raw.githubusercontent.com/wise86-android/OralBlue_python/15e1a03bcb3350574d438e4593bcff59608a77a7/Protocol.md",
+                "description": "Public Oral-B Smart Toothbrush protocol documentation visibly lists and names numerous concrete UUIDs actually captured in bt2.",
+                "submitter": "Codex bt2-to-web research"
             }
         ]
     },
@@ -4502,6 +5476,61 @@
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (tutorial UUID)"
             }
         ]
+    },
+    {
+        "UUID": "fa879af4-d601-420c-b2b4-07ffb528dde3",
+        "company": "Rapidpower",
+        "UUID_name": "Control",
+        "UUID_purpose": "Observed on a Rapidpower robotic dog toy, which advertises the GAP name \"Rapidpower-dog-*\". Vendor control GATT Service holding a notify Characteristic (10e2fde2-...) and a command write Characteristic (b02eaeaa-...). Not advertised; the device advertises only the 16-bit Service UUID 0xaf30 plus its GAP name. Companion apps: com.zhongrun.robotdog (Android) / \"Rapidpower\" (iOS).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/rapidpower_robotic_dog/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `SVC_RAPIDPOWER` (\"Rapidpower control service\").",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/rapidpower_robotic_dog/ble.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Present in a captured GATT profile at handles 16-21.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ]
+    },
+    {
+        "UUID": "10e2fde2-d7fe-4845-b3f3-a32010ebb095",
+        "company": "Rapidpower",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Observed on a Rapidpower robotic dog toy, which advertises the GAP name \"Rapidpower-dog-*\". Notify-only Characteristic (properties 0x10) of the vendor control Service, at handle 18 in the captured profile; it is the return leg paired with the command write Characteristic (b02eaeaa-...). No name or payload format is documented for it.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/rapidpower_robotic_dog/ble.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Present in a captured GATT profile at handle 18 under Service fa879af4-d601-420c-b2b4-07ffb528dde3, with properties 0x10 (notify). It is not assigned a symbolic name in the accompanying uuids.json.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "fa879af4-d601-420c-b2b4-07ffb528dde3"
+    },
+    {
+        "UUID": "b02eaeaa-f6bc-4a7e-bc94-f7b7fc8ded0b",
+        "company": "Rapidpower",
+        "UUID_name": "Control Command",
+        "UUID_purpose": "Observed on a Rapidpower robotic dog toy, which advertises the GAP name \"Rapidpower-dog-*\". Write-only command Characteristic carrying 7-byte vendor command frames that match the companion app's phrase/command map.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/rapidpower_robotic_dog/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed as `CHR_COMMAND` (\"Rapidpower Control\") - \"7-byte vendor command frames (hex). Matches vendor app phrase map.\"",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "fa879af4-d601-420c-b2b4-07ffb528dde3"
     },
     {
         "UUID": "416d656c-2d52-617a-6572-424c4501f40a",
@@ -4799,22 +5828,6 @@
         ]
     },
     {
-        "UUID": "089810cc-ef89-11e9-81b4-2a2ae2dbcce4",
-        "company": "Robert Bosch GmbH",
-        "UUID_name": "eBike Live Data characteristic",
-        "UUID_purpose": "BLE characteristic on Bosch smart-system eBike control units used by the Bosch eBike Flow app and Garmin integration to expose live ride data (assist level, mode names OFF/ECO/TOUR/eMTB/TURBO, battery, speed, cadence, rider power). Under the primary service 00000010-eaa2-11e9-81b4-2a2ae2dbcce4.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://raw.githubusercontent.com/j-kaltes/Juggluco/HEAD/Common/src/main/java/tk/glucodata/SuperGattCallback.java",
-                "description": "Literal UUID present in this file (verified via curl+grep, 2026-05-18 audit). UUID literally appears on this page as `089810CC-EF89-11E9-81B4-2A2AE2DBCCE4`.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "424f5343-4820-4d43-5350-76012e002e00",
         "company": "Robert Bosch GmbH",
         "UUID_name": "MCSP (Measurement Common Service Protocol) v1.0.0",
@@ -4910,6 +5923,31 @@
                 "URL": "https://github.com/Anrijs/Aranet4-Python/blob/master/docs/UUIDs.md",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "UUID literally appears on this page as `F0CD1400-95DA-4F4B-9AC8-AA55D312AF0C`."
+            }
+        ]
+    },
+    {
+        "UUID": "63331358-23c1-11e5-b696-feff819cdc9f",
+        "company": "SENNHEISER electronic GmbH & Co. KG",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT service observed on Sennheiser PXC 550 and EPOS ADAPT headsets; exact protocol function unknown. Only this concrete member of the broader captured 633313XX family received direct public corroboration, so the wildcard family remains in the ITW file.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The exact UUID was observed over the air as a GATT Service on PXC 550 and EPOS ADAPT 260 profiles with successful GATT reads; this is a concrete member of the broader retained 633313XX ITW family.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://askubuntu.com/questions/1121648/ubuntu-18-04-cannot-connect-to-sennheiser-pxc-550-via-bluetooth",
+                "description": "The exact UUID appears in a public Bluetooth enumeration of a Sennheiser PXC 550 headset.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://forum.arduino.cc/t/esp32-ble-displays-only-one-serviceuuid/996096",
+                "description": "The exact UUID appears in a second public GATT enumeration of a PXC 550.",
+                "submitter": "Codex bt2-to-web research"
             }
         ]
     },
@@ -5135,6 +6173,27 @@
                 "URL": "https://github.com/bluez/bluez/issues/963",
                 "description": "bluez issue #963 explicitly identifies this UUID as 'Windows calls it \"SPPSERVICE3\" and should be Bixby-specific'; the Gadgetbridge Galaxy Buds Pro discussion confirms it carries the post-Hey-Bixby microphone stream. UUID literally appears on this page as `b4a9d6a0-b2e3-4e40-976d-a69f167ea895`.",
                 "submitter": "Claude (Opus 4.7)"
+            }
+        ]
+    },
+    {
+        "UUID": "0487d871-d55e-44aa-83f8-4faa72f278e5",
+        "company": "Samsung Electronics Co., Ltd.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Characteristic used by Samsung Find My Mobile / Offline Finding BLE functionality beneath Samsung's fd69 service; exact payload role unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "fd69",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 139 distinct bt2 device profiles with successful GATT reads, coherently beneath the Samsung-assigned fd69 Service. Read GATT manufacturer/name/model evidence identifies many Galaxy phone and Galaxy Watch families. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://hybrid-analysis.com/sample/b4adf7b0c39a00a064dc3a570706489e84b2455b089c5ae3d87c97c0f179ca4f/68c9b713017a7b90010ec8d1",
+                "description": "The exact UUID is visible in a public analysis of Samsung package com.samsung.android.fmm alongside Bluetooth and offline-finding strings.",
+                "submitter": "Codex bt2-to-web research"
             }
         ]
     },
@@ -6073,6 +7132,77 @@
         ]
     },
     {
+        "UUID": "5b833e28-6bc7-4802-8e9a-723ceca4bd8f",
+        "company": "Sony",
+        "UUID_name": "Bluetooth CTKD Pairing",
+        "UUID_purpose": "Cross-transport key derivation (CTKD) pairing service used by the Sound Connect 13.x app: the app arms BR/EDR Inquiry Scan on the accessory, then reads the classic Bluetooth Public Address (5b833c1d-...) to issue an address-targeted createBond. Part of the shared SongPal/Sound Connect BLE service family that uses the 5b833xxx-6bc7-4802-8e9a-723ceca4bd8f base. Also listed as an advertised 128-bit Service UUID in the BLESPlo.it Sony vendor observer manifest.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The BLESPlo.it device library's Sony vendor UUID map lists this UUID under the symbolic name `SVC_BLUETOOTH_CTKD_PAIRING` (\"Sony Bluetooth CTKD Pairing\"), derived from analysis of the Sony Sound Connect / SongPal companion apps and live headphone/speaker GATT captures.",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/manifest.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Listed in the Sony vendor entry's observer scan_conditions as `service_uuid_128`, i.e. it is observable in advertisement data.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ]
+    },
+    {
+        "UUID": "5b833c1d-6bc7-4802-8e9a-723ceca4bd8f",
+        "company": "Sony",
+        "UUID_name": "Bluetooth Public Address",
+        "UUID_purpose": "Read the accessory's classic BR/EDR BD_ADDR (public) after a successful CTKD Inquiry Scan; the companion app uses the returned address for an address-targeted createBond.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The BLESPlo.it device library's Sony vendor UUID map lists this UUID under the symbolic name `CHR_BLUETOOTH_PUBLIC_ADDRESS` (\"Bluetooth Public Address\"), derived from analysis of the Sony Sound Connect / SongPal companion apps and live headphone/speaker GATT captures.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "5b833e28-6bc7-4802-8e9a-723ceca4bd8f"
+    },
+    {
+        "UUID": "5b833e27-6bc7-4802-8e9a-723ceca4bd8f",
+        "company": "Sony",
+        "UUID_name": "LE Audio Capability (HPC)",
+        "UUID_purpose": "LE Audio switch / compatibility probe for headphones, as used by the Sound Connect 13.x app, which reads LE_AUDIO_SWITCH_SUPPORTED_COMPATIBILITY from it. Part of the shared SongPal/Sound Connect BLE service family that uses the 5b833xxx-6bc7-4802-8e9a-723ceca4bd8f base.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The BLESPlo.it device library's Sony vendor UUID map lists this UUID under the symbolic name `SVC_LE_AUDIO_CAPABILITY_HPC` (\"Sony LE Audio Capability (HPC)\"), derived from analysis of the Sony Sound Connect / SongPal companion apps and live headphone/speaker GATT captures.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ]
+    },
+    {
+        "UUID": "5b833c68-6bc7-4802-8e9a-723ceca4bd8f",
+        "company": "Sony",
+        "UUID_name": "LE Audio Switch Compatibility",
+        "UUID_purpose": "Read a 1-byte LE Audio switch supported-compatibility version (LE_AUDIO_CAPABILITY_FOR_HPC).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The BLESPlo.it device library's Sony vendor UUID map lists this UUID under the symbolic name `CHR_LE_AUDIO_SWITCH_COMPATIBILITY` (\"LE Audio Switch Compatibility\"), derived from analysis of the Sony Sound Connect / SongPal companion apps and live headphone/speaker GATT captures.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "5b833e27-6bc7-4802-8e9a-723ceca4bd8f"
+    },
+    {
         "UUID": "dc405470-a351-4a59-97d8-2e2e3b207fbb",
         "company": "Sony",
         "UUID_name": "WH-series headphones vendor-specific GATT",
@@ -6089,6 +7219,39 @@
         ]
     },
     {
+        "UUID": "5b833e10-6bc7-4802-8e9a-723ceca4bd8f",
+        "company": "Sony",
+        "UUID_name": "SSH Launch TV Function",
+        "UUID_purpose": "Service holding a write trigger used to open a TV function/screen (e.g. the Broadcast Audio usage setting), as used by the Sound Connect 13.x app. Part of the shared SongPal/Sound Connect BLE service family that uses the 5b833xxx-6bc7-4802-8e9a-723ceca4bd8f base.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The BLESPlo.it device library's Sony vendor UUID map lists this UUID under the symbolic name `SVC_SSH_LAUNCH_TV_FUNCTION` (\"Sony SSH Launch TV Function\"), derived from analysis of the Sony Sound Connect / SongPal companion apps and live headphone/speaker GATT captures.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ]
+    },
+    {
+        "UUID": "5b833cdc-6bc7-4802-8e9a-723ceca4bd8f",
+        "company": "Sony",
+        "UUID_name": "SSH Launch TV Function",
+        "UUID_purpose": "Write a launch-TV-function trigger, e.g. to open a settings screen on a paired TV.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The BLESPlo.it device library's Sony vendor UUID map lists this UUID under the symbolic name `CHR_SSH_LAUNCH_TV_FUNCTION` (\"SSH Launch TV Function\"), derived from analysis of the Sony Sound Connect / SongPal companion apps and live headphone/speaker GATT captures.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "5b833e10-6bc7-4802-8e9a-723ceca4bd8f"
+    },
+    {
         "UUID": "8901dfa8-5c7e-4d8f-9f0c-c2b70683f5f0",
         "company": "Sony",
         "UUID_name": "RACE over RFCOMM SDP Service (Sony variant)",
@@ -6103,6 +7266,74 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "5b833e0f-6bc7-4802-8e9a-723ceca4bd8f",
+        "company": "Sony",
+        "UUID_name": "SSH TV Product Code",
+        "UUID_purpose": "TV product-code trigger/status pair, as used by the Sound Connect 13.x app. Part of the shared SongPal/Sound Connect BLE service family that uses the 5b833xxx-6bc7-4802-8e9a-723ceca4bd8f base. Child Characteristics are the trigger (5b833cda-...) and the value/status (5b833cdb-...).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The BLESPlo.it device library's Sony vendor UUID map lists this UUID under the symbolic name `SVC_SSH_TV_PRODUCT_CODE` (\"Sony SSH TV Product Code\"), derived from analysis of the Sony Sound Connect / SongPal companion apps and live headphone/speaker GATT captures.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ]
+    },
+    {
+        "UUID": "5b833cda-6bc7-4802-8e9a-723ceca4bd8f",
+        "company": "Sony",
+        "UUID_name": "SSH TV Product Code Trigger",
+        "UUID_purpose": "Trigger a TV product-code read; the resulting value/status is exposed on 5b833cdb-....",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The BLESPlo.it device library's Sony vendor UUID map lists this UUID under the symbolic name `CHR_SSH_TV_PRODUCT_CODE_TRIGGER` (\"SSH TV Product Code Trigger\"), derived from analysis of the Sony Sound Connect / SongPal companion apps and live headphone/speaker GATT captures.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "5b833e0f-6bc7-4802-8e9a-723ceca4bd8f"
+    },
+    {
+        "UUID": "5b833cdb-6bc7-4802-8e9a-723ceca4bd8f",
+        "company": "Sony",
+        "UUID_name": "SSH TV Product Code",
+        "UUID_purpose": "TV product code value/status, read after writing the trigger on 5b833cda-....",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The BLESPlo.it device library's Sony vendor UUID map lists this UUID under the symbolic name `CHR_SSH_TV_PRODUCT_CODE` (\"SSH TV Product Code\"), derived from analysis of the Sony Sound Connect / SongPal companion apps and live headphone/speaker GATT captures.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "5b833e0f-6bc7-4802-8e9a-723ceca4bd8f"
+    },
+    {
+        "UUID": "5b833xxx-6bc7-4802-8e9a-723ceca4bd8f",
+        "company": "Sony",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Vendor base UUID family used by the SongPal / Sound Connect BLE profile across headphones, speakers and other audio products. Within the family, 5b833exx-... values are GATT Services and 5b833cxx-... values are GATT Characteristics. This wildcard entry only matches UUID128s that have no more specific CLUES entry.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/vendors/sony/uuids.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. The Sony vendor UUID map enumerates 114 symbolic names sharing this base, split between 5b833exx-... Services and 5b833cxx-... Characteristics.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "regex": true
     },
     {
         "UUID": "000000xx-0000-4b49-4e4f-525441474947",
@@ -6676,6 +7907,43 @@
         ]
     },
     {
+        "UUID": "2141e10x-213a-11e6-b67b-9e71128cae77",
+        "regex": true,
+        "company": "Universal Electronics, Inc.",
+        "UUID_name": "UE878 RF Module vendor family",
+        "UUID_purpose": "Vendor-specific UE878 RF Module GATT family: 2141e100 is the Service and 2141e101 through 2141e103 are its Characteristics. The module/platform is used by Daikin Madoka/BRC1H HVAC controllers and also appears in a Vodafone TV remote, so the UUID family is not Daikin-exclusive; exact characteristic semantics remain unknown.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The pattern covers four UUID128 members observed over the air on 13 distinct bt2 device profiles with successful GATT reads. Read GATT values identify Universal Electronics modules, while device names and trusted sibling UUID evidence consistently identify Daikin HVAC controllers. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://forum.ubuntu-fr.org/viewtopic.php?id=2072077",
+                "description": "A public GATT dump shows all four captured concrete UUIDs (2141e100 through 2141e103) and identifies the device as UE878 RF MODULE.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://community.openhab.org/t/new-binding-for-daikin-madoka-controller-ble/91355/69",
+                "description": "The exact 2141e100 service is reported on the UE878 module used by a Daikin Madoka controller.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://stackoverflow.com/questions/73908399/bluetooth-vodafone-tv-remote-not-connecting-to-linux-w-bluez",
+                "description": "The same exact service family is reported on a Vodafone TV remote, demonstrating that the family is not exclusive to Daikin HVAC devices.",
+                "submitter": "Codex bt2-to-web research"
+            },
+            {
+                "URL": "https://www.uei.com/wireless-connectivity",
+                "description": "Universal Electronics' wireless-connectivity product information supports attribution of the UE878 platform to Universal Electronics.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
         "UUID": "71dc0001-9247-11e7-abc4-cec278b6b50a",
         "company": "Unknown",
         "UUID_name": "btmotion BLE motion sensor",
@@ -6846,6 +8114,47 @@
             }
         ],
         "regex": true
+    },
+    {
+        "UUID": "00000000-0060-7990-5544-1cce81af42f0",
+        "company": "Valve Corporation",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary service exposed by SteamVR Lighthouse 2.0 base stations; the exact role is not publicly identified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 11 distinct bt2 device profiles with successful GATT reads. Aggregate GATT names use the Lighthouse Base Station LHB naming convention, and trusted sibling evidence identifies Valve. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://blog.hinaloe.net/2021/08/23/control-basestation-via-bluez/",
+                "description": "The exact service UUID appears in a complete GATT walk-through of a Valve Lighthouse 2.0 base station.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
+    },
+    {
+        "UUID": "00000010-0060-7990-5544-1cce81af42f0",
+        "company": "Valve Corporation",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Read-only characteristic of a proprietary SteamVR Lighthouse 2.0 base-station service; the exact value semantics are not publicly identified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "00000000-0060-7990-5544-1cce81af42f0",
+        "evidence_array": [
+            {
+                "description": "Observed over the air on 11 distinct bt2 device profiles with successful GATT reads, coherently nested beneath 00000000-0060-7990-5544-1cce81af42f0. Aggregate GATT names use the Lighthouse Base Station LHB naming convention, and trusted sibling evidence identifies Valve. Raw identifiers and values were omitted.",
+                "submitter": "In-the-wild data extraction via Codex 5.6 Sol"
+            },
+            {
+                "URL": "https://blog.hinaloe.net/2021/08/23/control-basestation-via-bluez/",
+                "description": "The exact characteristic UUID appears beneath 00000000-0060-7990-5544-1cce81af42f0 in a complete Valve Lighthouse 2.0 GATT walk-through and has read-only property 0x02.",
+                "submitter": "Codex bt2-to-web research"
+            }
+        ]
     },
     {
         "UUID": "6acc5540-e631-4069-944d-b8ca7598ad50",
