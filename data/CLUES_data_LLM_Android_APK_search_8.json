@@ -59504,64 +59504,6 @@
         ]
     },
     {
-        "UUID": "81d9f61a-e12c-4f1b-8ac8-484636c957d1",
-        "company": "Inspire Zone",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.inspirezone.bluetoothpair. No Java field-name hint available (likely an obfuscated identifier).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.inspirezone.bluetoothpair",
-                "version_code": 5,
-                "version_name": "1.4",
-                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
-        "UUID": "889dbea2-6c42-4b56-a453-8eab0976d184",
-        "company": "Inspire Zone",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.inspirezone.bluetoothpair. No Java field-name hint available (likely an obfuscated identifier).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.inspirezone.bluetoothpair",
-                "version_code": 5,
-                "version_name": "1.4",
-                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
         "UUID": "89b834b0-c3d6-4d86-8407-f5c3edc3a65f",
         "company": "Intesa Sanpaolo",
         "UUID_name": "DARWIN_CLIENT_SECRET",
@@ -81411,6 +81353,72 @@
                 "version_name": "3.0.1",
                 "package_path": "BLUUID_APKS/0457/b6c255660a7e2103f1469d3b4a8104c7e9095eff6b292f2ff532203eb3bf587f/b6c255660a7e2103f1469d3b4a8104c7e9095eff6b292f2ff532203eb3bf587f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `e`."
+            }
+        ]
+    },
+    {
+        "UUID": "81d9f61a-e12c-4f1b-8ac8-484636c957d1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Company could not be determined. Retained with an explicit \"Unknown\" company rather than the previous incorrect attribution. No sibling UUID on this base is attributed anywhere in CLUES, and web/GitHub searching returned no usable reference. Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.inspirezone.bluetoothpair",
+                "version_code": 5,
+                "version_name": "1.4",
+                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "889dbea2-6c42-4b56-a453-8eab0976d184",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Company could not be determined. Retained with an explicit \"Unknown\" company rather than the previous incorrect attribution. No sibling UUID on this base is attributed anywhere in CLUES, and web/GitHub searching returned no usable reference. Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.inspirezone.bluetoothpair",
+                "version_code": 5,
+                "version_name": "1.4",
+                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
             }
         ]
     },

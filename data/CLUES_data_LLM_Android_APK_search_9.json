@@ -5010,6 +5010,39 @@
         "parent_UUID": "ffa0"
     },
     {
+        "UUID": "9aa4730f-b25c-4cc3-b821-c931559fc196",
+        "company": "Apple",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Accessory Reconnect / Watch pairing-proximity service. The specific function of this member is not documented. Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true. A separate CLUES entry for this exact UUID already attributes it to Apple as \"Accessory Reconnect / Apple Watch pairing-proximity service\"; the two entries directly contradicted each other.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.inspirezone.bluetoothpair",
+                "version_code": 5,
+                "version_name": "1.4",
+                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
         "UUID": "9b08c95c-a1ef-477b-afd4-3b3be98daa07",
         "company": "Apption Labs",
         "UUID_name": "MEATERBlockWiFiMAC",
@@ -186047,223 +186080,6 @@
         "parent_UUID": "c9282723-4680-491b-a904-c066fa81061f"
     },
     {
-        "UUID": "9c794418-bf66-47d1-82bb-1f278ae8dacc",
-        "company": "Zillow",
-        "UUID_name": "CAPTURE_APPLICATION_ID",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.zillowgroup.capture3d, declared as Java field `CAPTURE_APPLICATION_ID`. Classification determined by field-name:CAPTURE_APPLICATION_ID.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.zillowgroup.capture3d v3.3.3 (versionCode 178), in Java field `CAPTURE_APPLICATION_ID`. Classification source: field-name:CAPTURE_APPLICATION_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.zillowgroup.capture3d",
-                "version_code": 178,
-                "version_name": "3.3.3",
-                "package_path": "BLUUID_APKS/0656/481468e5b6e9986f98b2120f9a186337b5746b07577d0f86cc7126d82e02e61d/481468e5b6e9986f98b2120f9a186337b5746b07577d0f86cc7126d82e02e61d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CAPTURE_APPLICATION_ID`."
-            }
-        ],
-        "parent_UUID": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
-    },
-    {
-        "UUID": "9971",
-        "company": "Third-party SDK code (declared in Java package `b` — distinct from host com.lgeha.nuts; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.lgeha.nuts but declared in third-party SDK package `b` as Java field `f24819d`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: usage:getCharacteristic.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.lgeha.nuts v5.0.14130 (versionCode 50001108), in Java field `f24819d`, declared in Java package `b` (third-party SDK). Classification source: usage:getCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.lgeha.nuts",
-                "version_code": 50001108,
-                "version_name": "5.0.14130",
-                "package_path": "BLUUID_APKS/0834/7f6bcaea1c4d441bbf849764c8877dbab0ee0dbc5d3053ac08ec27e9351d668a/7f6bcaea1c4d441bbf849764c8877dbab0ee0dbc5d3053ac08ec27e9351d668a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f24819d`."
-            }
-        ],
-        "parent_UUID": "6a400001-b5a3-f393-e0a9-e50e24dcca9e"
-    },
-    {
-        "UUID": "91c10d9c-aaef-42bd-b6d6-8a648c19213d",
-        "company": "Inspire Zone",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.inspirezone.bluetoothpair. No Java field-name hint available (likely an obfuscated identifier).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.inspirezone.bluetoothpair",
-                "version_code": 5,
-                "version_name": "1.4",
-                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
-        "UUID": "925db52b-047d-4cd4-b5e4-8c5e0bd57368",
-        "company": "Inspire Zone",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.inspirezone.bluetoothpair. No Java field-name hint available (likely an obfuscated identifier).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.inspirezone.bluetoothpair",
-                "version_code": 5,
-                "version_name": "1.4",
-                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
-        "UUID": "95c09f26-95a4-4597-a798-b8e408f5ca66",
-        "company": "Inspire Zone",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.inspirezone.bluetoothpair. No Java field-name hint available (likely an obfuscated identifier).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.zoundindustries.urbanears v1.0.0 (versionCode 2305043), declared in Java package `com.tym.tymappplatform.TAProtocol.TABluetoothLowEnergy.Proxy` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.zoundindustries.AdidasHeadphones v2.1.0 (versionCode 23062855), declared in Java package `com.tym.tymappplatform.TAProtocol.TABluetoothLowEnergy.Proxy` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.inspirezone.bluetoothpair",
-                "version_code": 5,
-                "version_name": "1.4",
-                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.zoundindustries.urbanears",
-                "version_code": 2305043,
-                "version_name": "1.0.0",
-                "package_path": "BLUUID_APKS/0823/09afbf407ea638936eaa5be6ab35809c9fc08bccae360a3e3e1ef3d419169ecd/09afbf407ea638936eaa5be6ab35809c9fc08bccae360a3e3e1ef3d419169ecd.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.zoundindustries.AdidasHeadphones",
-                "version_code": 23062855,
-                "version_name": "2.1.0",
-                "package_path": "BLUUID_APKS/0911/dc2c31a3eaff0d1bc68f40c8cd3b10fa9f971af27e7626833b92a891d7206267/dc2c31a3eaff0d1bc68f40c8cd3b10fa9f971af27e7626833b92a891d7206267.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
-        "UUID": "99d1064e-4517-46aa-8fb4-6be64dd1a1f1",
-        "company": "Inspire Zone",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.inspirezone.bluetoothpair. No Java field-name hint available (likely an obfuscated identifier).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.inspirezone.bluetoothpair",
-                "version_code": 5,
-                "version_name": "1.4",
-                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
-        "UUID": "9aa4730f-b25c-4cc3-b821-c931559fc196",
-        "company": "Inspire Zone",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.inspirezone.bluetoothpair. No Java field-name hint available (likely an obfuscated identifier).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.inspirezone.bluetoothpair",
-                "version_code": 5,
-                "version_name": "1.4",
-                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
         "UUID": "9de4dbd5-71dc-4ac3-8068-588f39dea7e1",
         "company": "Intesa Sanpaolo",
         "UUID_name": "WALK_ME_KEY",
@@ -186846,6 +186662,31 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
             }
         ]
+    },
+    {
+        "UUID": "9971",
+        "company": "Third-party SDK code (declared in Java package `b` — distinct from host com.lgeha.nuts; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.lgeha.nuts but declared in third-party SDK package `b` as Java field `f24819d`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: usage:getCharacteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.lgeha.nuts v5.0.14130 (versionCode 50001108), in Java field `f24819d`, declared in Java package `b` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.lgeha.nuts",
+                "version_code": 50001108,
+                "version_name": "5.0.14130",
+                "package_path": "BLUUID_APKS/0834/7f6bcaea1c4d441bbf849764c8877dbab0ee0dbc5d3053ac08ec27e9351d668a/7f6bcaea1c4d441bbf849764c8877dbab0ee0dbc5d3053ac08ec27e9351d668a.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f24819d`."
+            }
+        ],
+        "parent_UUID": "6a400001-b5a3-f393-e0a9-e50e24dcca9e"
     },
     {
         "UUID": "9fdc9c81-fffe-5d88-e511-ee537a6267d3",
@@ -188088,6 +187929,31 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `OooO0O0`."
             }
         ]
+    },
+    {
+        "UUID": "9c794418-bf66-47d1-82bb-1f278ae8dacc",
+        "company": "Zillow",
+        "UUID_name": "CAPTURE_APPLICATION_ID",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.zillowgroup.capture3d, declared as Java field `CAPTURE_APPLICATION_ID`. Classification determined by field-name:CAPTURE_APPLICATION_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.zillowgroup.capture3d v3.3.3 (versionCode 178), in Java field `CAPTURE_APPLICATION_ID`. Classification source: field-name:CAPTURE_APPLICATION_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.zillowgroup.capture3d",
+                "version_code": 178,
+                "version_name": "3.3.3",
+                "package_path": "BLUUID_APKS/0656/481468e5b6e9986f98b2120f9a186337b5746b07577d0f86cc7126d82e02e61d/481468e5b6e9986f98b2120f9a186337b5746b07577d0f86cc7126d82e02e61d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CAPTURE_APPLICATION_ID`."
+            }
+        ],
+        "parent_UUID": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
     },
     {
         "UUID": "9111cdd0-9f01-45c4-a2d4-e09e8fb0424d",
@@ -190245,6 +190111,83 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `b`."
             }
         ]
+    },
+    {
+        "UUID": "91c10d9c-aaef-42bd-b6d6-8a648c19213d",
+        "company": "Sony",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Undocumented vendor service captured on a Sony WH-CH720N headset at handle 192-204, exposing four vendor Characteristics (99d1064e-..., fbe87f6c-..., 420791c0-..., e4ef5a46-...). Its name and payload format are not publicly documented. Note: the WH-CH720N is an Airoha-based headset, so an Airoha-platform origin cannot be excluded. Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/sony_wh_ch720n/ble.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Present in a captured Sony WH-CH720N GATT profile at handle 192-204.",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "description": "Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.inspirezone.bluetoothpair",
+                "version_code": 5,
+                "version_name": "1.4",
+                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "99d1064e-4517-46aa-8fb4-6be64dd1a1f1",
+        "company": "Sony",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Undocumented vendor characteristic captured on a Sony WH-CH720N headset at handle 194 (properties 0x1a), under Service 91c10d9c-aaef-42bd-b6d6-8a648c19213d. Its name and payload format are not publicly documented. Note: the WH-CH720N is an Airoha-based headset, so an Airoha-platform origin cannot be excluded. Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://github.com/BLESPloit/device-library/blob/main/products/sony_wh_ch720n/ble.json",
+                "description": "From https://github.com/BLESPloit by Slawomir Jasek. Present in a captured Sony WH-CH720N GATT profile at handle 194 (properties 0x1a).",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "description": "Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.inspirezone.bluetoothpair",
+                "version_code": 5,
+                "version_name": "1.4",
+                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ],
+        "parent_UUID": "91c10d9c-aaef-42bd-b6d6-8a648c19213d"
     },
     {
         "UUID": "9e54d5e8-5b8f-48ed-a49f-392cdf5ec8d7",
@@ -203395,6 +203338,94 @@
                 "version_code": 6790,
                 "version_name": "6.790",
                 "package_path": "BLUUID_APKS/0921/8a3ff16d91bd92a97ca79ef4620a5676b819bce8ecbae732cb7729498caec530/8a3ff16d91bd92a97ca79ef4620a5676b819bce8ecbae732cb7729498caec530.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "925db52b-047d-4cd4-b5e4-8c5e0bd57368",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Company could not be determined. Retained with an explicit \"Unknown\" company rather than the previous incorrect attribution. No sibling UUID on this base is attributed anywhere in CLUES, and web/GitHub searching returned no usable reference. Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.inspirezone.bluetoothpair",
+                "version_code": 5,
+                "version_name": "1.4",
+                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "95c09f26-95a4-4597-a798-b8e408f5ca66",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Company could not be determined. Retained with an explicit \"Unknown\" company rather than the previous incorrect attribution. No sibling UUID on this base is attributed anywhere in CLUES, and web/GitHub searching returned no usable reference. Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.inspirezone.bluetoothpair v1.4 (versionCode 5). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zoundindustries.urbanears v1.0.0 (versionCode 2305043), declared in Java package `com.tym.tymappplatform.TAProtocol.TABluetoothLowEnergy.Proxy` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zoundindustries.AdidasHeadphones v2.1.0 (versionCode 23062855), declared in Java package `com.tym.tymappplatform.TAProtocol.TABluetoothLowEnergy.Proxy` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/inspirezone/com.inspirezone.bluetoothpair/download/1.4",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Inspire Zone\": the only evidence for that company was the UUID's presence in the decompiled DEX of the Android app com.inspirezone.bluetoothpair, which is a generic third-party Bluetooth scanner/pairing utility that ships a large bundled dictionary of other parties' UUIDs. It is a consumer of this UUID, not its originator. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.inspirezone.bluetoothpair",
+                "version_code": 5,
+                "version_name": "1.4",
+                "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.zoundindustries.urbanears",
+                "version_code": 2305043,
+                "version_name": "1.0.0",
+                "package_path": "BLUUID_APKS/0823/09afbf407ea638936eaa5be6ab35809c9fc08bccae360a3e3e1ef3d419169ecd/09afbf407ea638936eaa5be6ab35809c9fc08bccae360a3e3e1ef3d419169ecd.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.zoundindustries.AdidasHeadphones",
+                "version_code": 23062855,
+                "version_name": "2.1.0",
+                "package_path": "BLUUID_APKS/0911/dc2c31a3eaff0d1bc68f40c8cd3b10fa9f971af27e7626833b92a891d7206267/dc2c31a3eaff0d1bc68f40c8cd3b10fa9f971af27e7626833b92a891d7206267.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
             }
         ]
