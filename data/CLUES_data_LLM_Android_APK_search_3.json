@@ -10419,30 +10419,6 @@
         ]
     },
     {
-        "UUID": "3bf58980-3a2f-11e6-9011-0002a5d5c51b",
-        "company": "Johnson Health Tech Trading inc.",
-        "UUID_name": "Schwinn 70 Bike",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.nautilus.bowflex, declared as Java field `Schwinn 70 Bike`. Classification determined by catalog-map.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.nautilus.bowflex v2.18.0 (versionCode 1703093233), in Java field `Schwinn 70 Bike`. Classification source: catalog-map.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.nautilus.bowflex",
-                "version_code": 1703093233,
-                "version_name": "2.18.0",
-                "package_path": "BLUUID_APKS/0327/a2312c5010ee04ce4395dd233326843c653240bb733a6ff53ecd2250198ff9ca/a2312c5010ee04ce4395dd233326843c653240bb733a6ff53ecd2250198ff9ca.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `Schwinn 70 Bike`."
-            }
-        ]
-    },
-    {
         "UUID": "31014a75-6e65-81de-a4b2-940b4c6f6b69",
         "company": "June Life Inc.",
         "UUID_name": "ApplianceService.Status",
@@ -12922,6 +12898,34 @@
             }
         ],
         "parent_UUID": "02a6c0d0-0451-4000-b000-fb3210111989"
+    },
+    {
+        "UUID": "3bf58980-3a2f-11e6-9011-0002a5d5c51b",
+        "company": "STMicroelectronics",
+        "UUID_name": "Schwinn 70 Bike",
+        "UUID_purpose": "BlueST SDK characteristic. Re-attributed from \"Johnson Health Tech Trading inc.\" to STMicroelectronics. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. This UUID sits on the -0002a5d5c51b BlueST SDK base and a separately-sourced CLUES entry identifies this exact value as a BlueST SDK characteristic. The observing app is exercise equipment software built on an ST BLE module. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Service observed in Android app com.nautilus.bowflex, declared as Java field `Schwinn 70 Bike`. Classification determined by catalog-map.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.nautilus.bowflex v2.18.0 (versionCode 1703093233), in Java field `Schwinn 70 Bike`. Classification source: catalog-map.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Johnson Health Tech Trading inc.\" to STMicroelectronics. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. This UUID sits on the -0002a5d5c51b BlueST SDK base and a separately-sourced CLUES entry identifies this exact value as a BlueST SDK characteristic. The observing app is exercise equipment software built on an ST BLE module. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nautilus.bowflex",
+                "version_code": 1703093233,
+                "version_name": "2.18.0",
+                "package_path": "BLUUID_APKS/0327/a2312c5010ee04ce4395dd233326843c653240bb733a6ff53ecd2250198ff9ca/a2312c5010ee04ce4395dd233326843c653240bb733a6ff53ecd2250198ff9ca.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `Schwinn 70 Bike`."
+            }
+        ]
     },
     {
         "UUID": "30c48d2a-6ccb-4240-9f97-7f97a3f1c030",

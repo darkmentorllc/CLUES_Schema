@@ -139280,6 +139280,41 @@
         ]
     },
     {
+        "UUID": "00000000-0000-1000-1000-000000000000",
+        "company": "mySugr GmbH",
+        "UUID_name": "UUID_RPC_SERVICE / RpcService",
+        "UUID_purpose": "Custom GATT Service observed in Android app com.mysugr.android.companion, declared as Java field `RpcService`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.mysugr.android.companion v3.96.0 (versionCode 540998), in Java field `RpcService`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `UUID_RPC_SERVICE`. Classification source: field-name:UUID_RPC_SERVICE.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mysugr.android.companion",
+                "version_code": 540998,
+                "version_name": "3.96.0",
+                "package_path": "BLUUID_APKS/0720/d654393d0f4d63015d505271f099da55b9867910984ac50c0c516ae3064f8086/d654393d0f4d63015d505271f099da55b9867910984ac50c0c516ae3064f8086.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `RpcService`."
+            },
+            {
+                "package_id": "com.glooko.logbook",
+                "version_code": 20505,
+                "version_name": "6.4.0-0-gecf39ec17a",
+                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_RPC_SERVICE`."
+            }
+        ]
+    },
+    {
         "UUID": "00010004-0000-0000-0000-00137e5a8eef",
         "company": "Distech Controls",
         "UUID_name": "DISTECH_CONFIG_ACTIONS_CHAR",
@@ -177778,41 +177813,6 @@
         ]
     },
     {
-        "UUID": "00000000-0000-1000-1000-000000000000",
-        "company": "mySugr GmbH",
-        "UUID_name": "UUID_RPC_SERVICE / RpcService",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.mysugr.android.companion, declared as Java field `RpcService`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.mysugr.android.companion v3.96.0 (versionCode 540998), in Java field `RpcService`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `UUID_RPC_SERVICE`. Classification source: field-name:UUID_RPC_SERVICE.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.mysugr.android.companion",
-                "version_code": 540998,
-                "version_name": "3.96.0",
-                "package_path": "BLUUID_APKS/0720/d654393d0f4d63015d505271f099da55b9867910984ac50c0c516ae3064f8086/d654393d0f4d63015d505271f099da55b9867910984ac50c0c516ae3064f8086.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `RpcService`."
-            },
-            {
-                "package_id": "com.glooko.logbook",
-                "version_code": 20505,
-                "version_name": "6.4.0-0-gecf39ec17a",
-                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_RPC_SERVICE`."
-            }
-        ]
-    },
-    {
         "UUID": "0fc29afc-52c1-4e58-b79b-bad9e2dcfd41",
         "company": "Gogoro Inc.",
         "UUID_name": "NO_CUSTOMIZE_SCOOTER_MODEL_ID",
@@ -197906,6 +197906,95 @@
         ]
     },
     {
+        "UUID": "0ab5b670-c2ce-c4ab-e711-6ccbaa65c888",
+        "company": "Wsd (inferred from package id)",
+        "UUID_name": "WSDemoService",
+        "UUID_purpose": "Custom GATT Service observed in Android app mk.wsd, declared as Java field `WSDemoServiceUUID`. Classification determined by usage:getService.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of mk.wsd v1.03 (versionCode 4), in Java field `WSDemoServiceUUID`. Classification source: usage:getService.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "mk.wsd",
+                "version_code": 4,
+                "version_name": "1.03",
+                "package_path": "BLUUID_APKS/0487/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `WSDemoServiceUUID`."
+            }
+        ]
+    },
+    {
+        "UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
+        "company": "NXP Semiconductors",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Bluetooth LE OTAP (Over-the-Air Programming) service. Re-attributed from \"SIGMA Bike\" to NXP Semiconductors. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. A separately-sourced CLUES entry identifies this exact UUID as the NXP Bluetooth LE OTAP (Over-the-Air Programming) service, a firmware-update service shipped in NXP's BLE stack. The observing app is a bike-computer app whose device uses an NXP part. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Characteristic observed in Android app mk.wsd, declared as Java field `WSDemoUUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of mk.wsd v1.03 (versionCode 4), in Java field `WSDemoUUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sigmasport.ebikeapp v1.5.15 (versionCode 1005015), in Java field `OTAP_SERVICE_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"SIGMA Bike\" to NXP Semiconductors. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. A separately-sourced CLUES entry identifies this exact UUID as the NXP Bluetooth LE OTAP (Over-the-Air Programming) service, a firmware-update service shipped in NXP's BLE stack. The observing app is a bike-computer app whose device uses an NXP part. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "mk.wsd",
+                "version_code": 4,
+                "version_name": "1.03",
+                "package_path": "BLUUID_APKS/0487/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WSDemoUUID`."
+            },
+            {
+                "package_id": "com.sigmasport.ebikeapp",
+                "version_code": 1005015,
+                "version_name": "1.5.15",
+                "package_path": "BLUUID_APKS/0514/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `OTAP_SERVICE_UUID`."
+            }
+        ],
+        "parent_UUID": "0ab5b670-c2ce-c4ab-e711-6ccbaa65c888"
+    },
+    {
+        "UUID": "0ab5b672-c2ce-c4ab-e711-6ccbaa65c888",
+        "company": "Wsd (inferred from package id)",
+        "UUID_name": "Light",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app mk.wsd, declared as Java field `LightUUID`. Classification determined by usage:getCharacteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of mk.wsd v1.03 (versionCode 4), in Java field `LightUUID`. Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "mk.wsd",
+                "version_code": 4,
+                "version_name": "1.03",
+                "package_path": "BLUUID_APKS/0487/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `LightUUID`."
+            }
+        ],
+        "parent_UUID": "0ab5b670-c2ce-c4ab-e711-6ccbaa65c888"
+    },
+    {
         "UUID": "00000701-0000-1000-8000-0026bb765291",
         "company": "Nanoleaf",
         "UUID_name": "Unknown",
@@ -205081,91 +205170,6 @@
             }
         ],
         "parent_UUID": "0000000c-abab-4499-b9d7-d0efc0d06477"
-    },
-    {
-        "UUID": "0ab5b670-c2ce-c4ab-e711-6ccbaa65c888",
-        "company": "Wsd (inferred from package id)",
-        "UUID_name": "WSDemoService",
-        "UUID_purpose": "Custom GATT Service observed in Android app mk.wsd, declared as Java field `WSDemoServiceUUID`. Classification determined by usage:getService.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of mk.wsd v1.03 (versionCode 4), in Java field `WSDemoServiceUUID`. Classification source: usage:getService.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "mk.wsd",
-                "version_code": 4,
-                "version_name": "1.03",
-                "package_path": "BLUUID_APKS/0487/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `WSDemoServiceUUID`."
-            }
-        ]
-    },
-    {
-        "UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
-        "company": "SIGMA Bike",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app mk.wsd, declared as Java field `WSDemoUUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of mk.wsd v1.03 (versionCode 4), in Java field `WSDemoUUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sigmasport.ebikeapp v1.5.15 (versionCode 1005015), in Java field `OTAP_SERVICE_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "mk.wsd",
-                "version_code": 4,
-                "version_name": "1.03",
-                "package_path": "BLUUID_APKS/0487/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WSDemoUUID`."
-            },
-            {
-                "package_id": "com.sigmasport.ebikeapp",
-                "version_code": 1005015,
-                "version_name": "1.5.15",
-                "package_path": "BLUUID_APKS/0514/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `OTAP_SERVICE_UUID`."
-            }
-        ],
-        "parent_UUID": "0ab5b670-c2ce-c4ab-e711-6ccbaa65c888"
-    },
-    {
-        "UUID": "0ab5b672-c2ce-c4ab-e711-6ccbaa65c888",
-        "company": "Wsd (inferred from package id)",
-        "UUID_name": "Light",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app mk.wsd, declared as Java field `LightUUID`. Classification determined by usage:getCharacteristic.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of mk.wsd v1.03 (versionCode 4), in Java field `LightUUID`. Classification source: usage:getCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "mk.wsd",
-                "version_code": 4,
-                "version_name": "1.03",
-                "package_path": "BLUUID_APKS/0487/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `LightUUID`."
-            }
-        ],
-        "parent_UUID": "0ab5b670-c2ce-c4ab-e711-6ccbaa65c888"
     },
     {
         "UUID": "00001523-74b9-c1e2-1535-785feabcd8af",

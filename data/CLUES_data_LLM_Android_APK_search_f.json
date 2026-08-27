@@ -123862,6 +123862,56 @@
         ]
     },
     {
+        "UUID": "f000aa61-0451-4000-b000-000000000000",
+        "company": "Horsepal Ltd",
+        "UUID_name": "getData",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.horseware.horsepalTraining, declared as Java field `getDataUUID`. Classification determined by cross-file usage:getCharacteristic(getDataUUID).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.horseware.horsepalTraining v2.0.72 (versionCode 203), in Java field `getDataUUID`. Classification source: cross-file usage:getCharacteristic(getDataUUID).",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horseware.horsepalTraining",
+                "version_code": 203,
+                "version_name": "2.0.72",
+                "package_path": "BLUUID_APKS/0706/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `getDataUUID`."
+            }
+        ],
+        "parent_UUID": "65333333-a115-11e2-9e9a-0800200ca100"
+    },
+    {
+        "UUID": "f000aa62-0451-4000-b000-000000000000",
+        "company": "Horsepal Ltd",
+        "UUID_name": "getConfig",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.horseware.horsepalTraining, declared as Java field `getConfigUUID`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.horseware.horsepalTraining v2.0.72 (versionCode 203), in Java field `getConfigUUID`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horseware.horsepalTraining",
+                "version_code": 203,
+                "version_name": "2.0.72",
+                "package_path": "BLUUID_APKS/0706/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `getConfigUUID`."
+            }
+        ],
+        "parent_UUID": "65333333-a115-11e2-9e9a-0800200ca100"
+    },
+    {
         "UUID": "fec5c0e5-62e6-433e-b9de-c508c4e4bf17",
         "company": "DDL Australia",
         "UUID_name": "SIGN_UP_EMAIL",
@@ -124236,6 +124286,178 @@
             }
         ],
         "parent_UUID": "11a7a236-d841-42d1-a99c-061c6e909bf9"
+    },
+    {
+        "UUID": "f8083533-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "SynchronizationChar",
+        "UUID_purpose": "Dexcom continuous glucose monitor (CGM) BLE UUID. Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Characteristic observed in Android app com.glooko.logbook, declared as Java field `SynchronizationCharUuid`. Classification determined by cross-file usage:getCharacteristic(Synchronization",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `SynchronizationCharUuid`. Classification source: cross-file usage:getCharacteristic(SynchronizationCharUuid).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.glooko.logbook",
+                "version_code": 20505,
+                "version_name": "6.4.0-0-gecf39ec17a",
+                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SynchronizationCharUuid`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-1000-1000-000000000000"
+    },
+    {
+        "UUID": "f8083534-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "CgmControlPointChar",
+        "UUID_purpose": "Dexcom continuous glucose monitor (CGM) BLE UUID. Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Characteristic observed in Android app com.glooko.logbook, declared as Java field `CgmControlPointCharUuid`. Classification determined by cross-file usage:getCharacteristic(CgmControlPoint",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `CgmControlPointCharUuid`. Classification source: cross-file usage:getCharacteristic(CgmControlPointCharUuid).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.glooko.logbook",
+                "version_code": 20505,
+                "version_name": "6.4.0-0-gecf39ec17a",
+                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CgmControlPointCharUuid`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-1000-1000-000000000000"
+    },
+    {
+        "UUID": "f8083535-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "AuthenticationControlPointChar",
+        "UUID_purpose": "Dexcom continuous glucose monitor (CGM) BLE UUID. Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Characteristic observed in Android app com.glooko.logbook, declared as Java field `AuthenticationControlPointCharUuid`. Classification determined by cross-file usage:getCharacteristic(Auth",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `AuthenticationControlPointCharUuid`. Classification source: cross-file usage:getCharacteristic(AuthenticationControlPointCharUuid).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.glooko.logbook",
+                "version_code": 20505,
+                "version_name": "6.4.0-0-gecf39ec17a",
+                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `AuthenticationControlPointCharUuid`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-1000-1000-000000000000"
+    },
+    {
+        "UUID": "f8083536-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "ExchangeChar",
+        "UUID_purpose": "Dexcom continuous glucose monitor (CGM) BLE UUID. Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Characteristic observed in Android app com.glooko.logbook, declared as Java field `ExchangeCharUuid`. Classification determined by cross-file usage:getCharacteristic(ExchangeCharUuid).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `ExchangeCharUuid`. Classification source: cross-file usage:getCharacteristic(ExchangeCharUuid).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.glooko.logbook",
+                "version_code": 20505,
+                "version_name": "6.4.0-0-gecf39ec17a",
+                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ExchangeCharUuid`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-1000-1000-000000000000"
+    },
+    {
+        "UUID": "f8083532-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "DexcomCgmService",
+        "UUID_purpose": "Dexcom continuous glucose monitor (CGM) BLE UUID. Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Service observed in Android app com.glooko.logbook, declared as Java field `DexcomCgmServiceUuid`. Classification determined by cross-file usage:getService(DexcomCgmServiceUuid).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `DexcomCgmServiceUuid`. Classification source: cross-file usage:getService(DexcomCgmServiceUuid).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.glooko.logbook",
+                "version_code": 20505,
+                "version_name": "6.4.0-0-gecf39ec17a",
+                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `DexcomCgmServiceUuid`."
+            }
+        ]
+    },
+    {
+        "UUID": "f8084532-849e-531c-c594-30f1f86a4ea5",
+        "company": "Dexcom, Inc.",
+        "UUID_name": "DexcomTestService",
+        "UUID_purpose": "Dexcom continuous glucose monitor (CGM) BLE UUID. Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Service observed in Android app com.glooko.logbook, declared as Java field `DexcomTestServiceUuid`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `DexcomTestServiceUuid`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Glooko Inc\" to Dexcom, Inc.. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The Java field names recovered from the observing app literally name the other vendor (DexcomCgmService, DexcomTestService, CgmControlPointChar), and a separately-sourced CLUES entry identifies f8083532-849e-531c-c594-30f1f86a4ea5 as the Dexcom CGM Service. The observing package is com.glooko.logbook, a diabetes-data aggregator app that reads Dexcom CGMs. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.glooko.logbook",
+                "version_code": 20505,
+                "version_name": "6.4.0-0-gecf39ec17a",
+                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `DexcomTestServiceUuid`."
+            }
+        ]
     },
     {
         "UUID": "fc24f07e-8256-4a18-b0bc-fb1aa922c7de",
@@ -138108,154 +138330,6 @@
         "parent_UUID": "00001001-7791-11e2-9452-f23c91aec05e"
     },
     {
-        "UUID": "f8083533-849e-531c-c594-30f1f86a4ea5",
-        "company": "Glooko Inc",
-        "UUID_name": "SynchronizationChar",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.glooko.logbook, declared as Java field `SynchronizationCharUuid`. Classification determined by cross-file usage:getCharacteristic(SynchronizationCharUuid).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `SynchronizationCharUuid`. Classification source: cross-file usage:getCharacteristic(SynchronizationCharUuid).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.glooko.logbook",
-                "version_code": 20505,
-                "version_name": "6.4.0-0-gecf39ec17a",
-                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SynchronizationCharUuid`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-1000-1000-000000000000"
-    },
-    {
-        "UUID": "f8083534-849e-531c-c594-30f1f86a4ea5",
-        "company": "Glooko Inc",
-        "UUID_name": "CgmControlPointChar",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.glooko.logbook, declared as Java field `CgmControlPointCharUuid`. Classification determined by cross-file usage:getCharacteristic(CgmControlPointCharUuid).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `CgmControlPointCharUuid`. Classification source: cross-file usage:getCharacteristic(CgmControlPointCharUuid).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.glooko.logbook",
-                "version_code": 20505,
-                "version_name": "6.4.0-0-gecf39ec17a",
-                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CgmControlPointCharUuid`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-1000-1000-000000000000"
-    },
-    {
-        "UUID": "f8083535-849e-531c-c594-30f1f86a4ea5",
-        "company": "Glooko Inc",
-        "UUID_name": "AuthenticationControlPointChar",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.glooko.logbook, declared as Java field `AuthenticationControlPointCharUuid`. Classification determined by cross-file usage:getCharacteristic(AuthenticationControlPointCharUuid).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `AuthenticationControlPointCharUuid`. Classification source: cross-file usage:getCharacteristic(AuthenticationControlPointCharUuid).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.glooko.logbook",
-                "version_code": 20505,
-                "version_name": "6.4.0-0-gecf39ec17a",
-                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `AuthenticationControlPointCharUuid`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-1000-1000-000000000000"
-    },
-    {
-        "UUID": "f8083536-849e-531c-c594-30f1f86a4ea5",
-        "company": "Glooko Inc",
-        "UUID_name": "ExchangeChar",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.glooko.logbook, declared as Java field `ExchangeCharUuid`. Classification determined by cross-file usage:getCharacteristic(ExchangeCharUuid).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `ExchangeCharUuid`. Classification source: cross-file usage:getCharacteristic(ExchangeCharUuid).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.glooko.logbook",
-                "version_code": 20505,
-                "version_name": "6.4.0-0-gecf39ec17a",
-                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ExchangeCharUuid`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-1000-1000-000000000000"
-    },
-    {
-        "UUID": "f8083532-849e-531c-c594-30f1f86a4ea5",
-        "company": "Glooko Inc",
-        "UUID_name": "DexcomCgmService",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.glooko.logbook, declared as Java field `DexcomCgmServiceUuid`. Classification determined by cross-file usage:getService(DexcomCgmServiceUuid).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `DexcomCgmServiceUuid`. Classification source: cross-file usage:getService(DexcomCgmServiceUuid).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.glooko.logbook",
-                "version_code": 20505,
-                "version_name": "6.4.0-0-gecf39ec17a",
-                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `DexcomCgmServiceUuid`."
-            }
-        ]
-    },
-    {
-        "UUID": "f8084532-849e-531c-c594-30f1f86a4ea5",
-        "company": "Glooko Inc",
-        "UUID_name": "DexcomTestService",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.glooko.logbook, declared as Java field `DexcomTestServiceUuid`. Classification determined by file-level-default.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `DexcomTestServiceUuid`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.glooko.logbook",
-                "version_code": 20505,
-                "version_name": "6.4.0-0-gecf39ec17a",
-                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `DexcomTestServiceUuid`."
-            }
-        ]
-    },
-    {
         "UUID": "ffff0001-ffff-ffff-0996-a6a5a4a3a2a1",
         "company": "Gogoro Inc.",
         "UUID_name": "TRANSFER_SERVICE",
@@ -138404,6 +138478,68 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `TRANSFER_CHARACTERISTIC_TX_UUID`."
             }
         ]
+    },
+    {
+        "UUID": "fa87c0d0-afac-11de-8a39-0800200c9a66",
+        "company": "Google",
+        "UUID_name": "MY_UUID_SECURE",
+        "UUID_purpose": "Android BluetoothChat sample RFCOMM UUID (MY_UUID_SECURE). Re-attributed from \"Shenzhen EASYWAY Technology Co., Ltd.\" to Google. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. This is the hard-coded MY_UUID_SECURE constant from Google's Android BluetoothChat sample application, copied verbatim into countless apps. A separately-sourced CLUES entry already identifies it as such. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Characteristic observed in Android app com.sz.easyway.ewaylink.felix, declared as Java field `b`. Classification determined by cross-file usage:getCharacteristic(b).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.felix v5.3 (versionCode 27), in Java field `b`. Classification source: cross-file usage:getCharacteristic(b).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cardo.smartset v7.4 (versionCode 1084), in Java field `MY_UUID_SECURE`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.oxxgen v4.9 (versionCode 21), in Java field `b`. Classification source: cross-file usage:getCharacteristic(b).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.osio v4.6 (versionCode 18), in Java field `b`. Classification source: cross-file usage:getCharacteristic(b).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Shenzhen EASYWAY Technology Co., Ltd.\" to Google. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. This is the hard-coded MY_UUID_SECURE constant from Google's Android BluetoothChat sample application, copied verbatim into countless apps. A separately-sourced CLUES entry already identifies it as such. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.sz.easyway.ewaylink.felix",
+                "version_code": 27,
+                "version_name": "5.3",
+                "package_path": "BLUUID_APKS/0648/c5be7acf0ac195f4b7f4d100707bfc63f190148345ae77a8fa06844d078a7400/c5be7acf0ac195f4b7f4d100707bfc63f190148345ae77a8fa06844d078a7400.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `b`."
+            },
+            {
+                "package_id": "com.cardo.smartset",
+                "version_code": 1084,
+                "version_name": "7.4",
+                "package_path": "BLUUID_APKS/0718/72e0e728b4503efb55b7dc75677020ea6105c325c226301865eba978d5508fae/72e0e728b4503efb55b7dc75677020ea6105c325c226301865eba978d5508fae.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `MY_UUID_SECURE`."
+            },
+            {
+                "package_id": "com.sz.easyway.ewaylink.oxxgen",
+                "version_code": 21,
+                "version_name": "4.9",
+                "package_path": "BLUUID_APKS/0825/4eff810311e25436f594053c60763df0ffed71715c59d1d0d593474a85aafd6f/4eff810311e25436f594053c60763df0ffed71715c59d1d0d593474a85aafd6f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `b`."
+            },
+            {
+                "package_id": "com.sz.easyway.ewaylink.osio",
+                "version_code": 18,
+                "version_name": "4.6",
+                "package_path": "BLUUID_APKS/0958/a629fb62d99d4ac47b039ee2894bea7e6a713faaa5c5f6519e66fdb21e76ea30/a629fb62d99d4ac47b039ee2894bea7e6a713faaa5c5f6519e66fdb21e76ea30.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `b`."
+            }
+        ],
+        "parent_UUID": "ae00"
     },
     {
         "UUID": "fe59bfa8-7fe3-4a05-9d94-99fadc69faff",
@@ -140592,56 +140728,6 @@
             }
         ],
         "parent_UUID": "00001111-0000-0000-0000-000000000000"
-    },
-    {
-        "UUID": "f000aa61-0451-4000-b000-000000000000",
-        "company": "Horsepal Ltd",
-        "UUID_name": "getData",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.horseware.horsepalTraining, declared as Java field `getDataUUID`. Classification determined by cross-file usage:getCharacteristic(getDataUUID).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.horseware.horsepalTraining v2.0.72 (versionCode 203), in Java field `getDataUUID`. Classification source: cross-file usage:getCharacteristic(getDataUUID).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.horseware.horsepalTraining",
-                "version_code": 203,
-                "version_name": "2.0.72",
-                "package_path": "BLUUID_APKS/0706/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `getDataUUID`."
-            }
-        ],
-        "parent_UUID": "65333333-a115-11e2-9e9a-0800200ca100"
-    },
-    {
-        "UUID": "f000aa62-0451-4000-b000-000000000000",
-        "company": "Horsepal Ltd",
-        "UUID_name": "getConfig",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.horseware.horsepalTraining, declared as Java field `getConfigUUID`. Classification determined by file-level-default.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.horseware.horsepalTraining v2.0.72 (versionCode 203), in Java field `getConfigUUID`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.horseware.horsepalTraining",
-                "version_code": 203,
-                "version_name": "2.0.72",
-                "package_path": "BLUUID_APKS/0706/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `getConfigUUID`."
-            }
-        ],
-        "parent_UUID": "65333333-a115-11e2-9e9a-0800200ca100"
     },
     {
         "UUID": "ff88",
@@ -211312,64 +211398,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicObjectState`."
             }
         ]
-    },
-    {
-        "UUID": "fa87c0d0-afac-11de-8a39-0800200c9a66",
-        "company": "Shenzhen EASYWAY Technology Co., Ltd.",
-        "UUID_name": "MY_UUID_SECURE",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.sz.easyway.ewaylink.felix, declared as Java field `b`. Classification determined by cross-file usage:getCharacteristic(b).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.felix v5.3 (versionCode 27), in Java field `b`. Classification source: cross-file usage:getCharacteristic(b).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.cardo.smartset v7.4 (versionCode 1084), in Java field `MY_UUID_SECURE`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.oxxgen v4.9 (versionCode 21), in Java field `b`. Classification source: cross-file usage:getCharacteristic(b).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.osio v4.6 (versionCode 18), in Java field `b`. Classification source: cross-file usage:getCharacteristic(b).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.sz.easyway.ewaylink.felix",
-                "version_code": 27,
-                "version_name": "5.3",
-                "package_path": "BLUUID_APKS/0648/c5be7acf0ac195f4b7f4d100707bfc63f190148345ae77a8fa06844d078a7400/c5be7acf0ac195f4b7f4d100707bfc63f190148345ae77a8fa06844d078a7400.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `b`."
-            },
-            {
-                "package_id": "com.cardo.smartset",
-                "version_code": 1084,
-                "version_name": "7.4",
-                "package_path": "BLUUID_APKS/0718/72e0e728b4503efb55b7dc75677020ea6105c325c226301865eba978d5508fae/72e0e728b4503efb55b7dc75677020ea6105c325c226301865eba978d5508fae.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `MY_UUID_SECURE`."
-            },
-            {
-                "package_id": "com.sz.easyway.ewaylink.oxxgen",
-                "version_code": 21,
-                "version_name": "4.9",
-                "package_path": "BLUUID_APKS/0825/4eff810311e25436f594053c60763df0ffed71715c59d1d0d593474a85aafd6f/4eff810311e25436f594053c60763df0ffed71715c59d1d0d593474a85aafd6f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `b`."
-            },
-            {
-                "package_id": "com.sz.easyway.ewaylink.osio",
-                "version_code": 18,
-                "version_name": "4.6",
-                "package_path": "BLUUID_APKS/0958/a629fb62d99d4ac47b039ee2894bea7e6a713faaa5c5f6519e66fdb21e76ea30/a629fb62d99d4ac47b039ee2894bea7e6a713faaa5c5f6519e66fdb21e76ea30.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `b`."
-            }
-        ],
-        "parent_UUID": "ae00"
     },
     {
         "UUID": "f433bd80-75b8-11e2-97d9-0002a5d5c51b",

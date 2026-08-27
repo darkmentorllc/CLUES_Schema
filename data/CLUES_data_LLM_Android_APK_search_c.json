@@ -27294,6 +27294,31 @@
         ]
     },
     {
+        "UUID": "cf65b65d-081d-4bdd-b956-f5880768631b",
+        "company": "Horsepal Ltd",
+        "UUID_name": "ONESIGNAL_APP_ID",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.horseware.horsepalTraining, declared as Java field `ONESIGNAL_APP_ID`. Classification determined by field-name:ONESIGNAL_APP_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.horseware.horsepalTraining v2.0.72 (versionCode 203), in Java field `ONESIGNAL_APP_ID`. Classification source: field-name:ONESIGNAL_APP_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horseware.horsepalTraining",
+                "version_code": 203,
+                "version_name": "2.0.72",
+                "package_path": "BLUUID_APKS/0706/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ONESIGNAL_APP_ID`."
+            }
+        ],
+        "parent_UUID": "65333333-a115-11e2-9e9a-0800200ca100"
+    },
+    {
         "UUID": "c681ebbf-319b-4549-811f-8917dcbe1e00",
         "company": "D-heart",
         "UUID_name": "UUID_BLE_CHAR_ECG_ELECTRODE_STATUS",
@@ -38121,31 +38146,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f15415c`."
             }
         ]
-    },
-    {
-        "UUID": "cf65b65d-081d-4bdd-b956-f5880768631b",
-        "company": "Horsepal Ltd",
-        "UUID_name": "ONESIGNAL_APP_ID",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.horseware.horsepalTraining, declared as Java field `ONESIGNAL_APP_ID`. Classification determined by field-name:ONESIGNAL_APP_ID.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.horseware.horsepalTraining v2.0.72 (versionCode 203), in Java field `ONESIGNAL_APP_ID`. Classification source: field-name:ONESIGNAL_APP_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.horseware.horsepalTraining",
-                "version_code": 203,
-                "version_name": "2.0.72",
-                "package_path": "BLUUID_APKS/0706/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2/212d2d229a7b9e4ee680d8f59f3f40851e2625816420abb216d7f4c3b0b247d2.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ONESIGNAL_APP_ID`."
-            }
-        ],
-        "parent_UUID": "65333333-a115-11e2-9e9a-0800200ca100"
     },
     {
         "UUID": "ca49e05e-4b7b-4b7c-9270-4ab42bf17d99",

@@ -29770,54 +29770,6 @@
         ]
     },
     {
-        "UUID": "dff40f44-29e8-11e7-877f-f45c89a336f5",
-        "company": "Glooko Inc",
-        "UUID_name": "GUID_LEVEMIR",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.glooko.logbook, declared as Java field `GUID_LEVEMIR`. Classification determined by file-level-default.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `GUID_LEVEMIR`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.glooko.logbook",
-                "version_code": 20505,
-                "version_name": "6.4.0-0-gecf39ec17a",
-                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GUID_LEVEMIR`."
-            }
-        ]
-    },
-    {
-        "UUID": "dff412dc-29e8-11e7-877f-f45c89a336f5",
-        "company": "Glooko Inc",
-        "UUID_name": "GUID_TRESIBA",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.glooko.logbook, declared as Java field `GUID_TRESIBA`. Classification determined by file-level-default.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `GUID_TRESIBA`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.glooko.logbook",
-                "version_code": 20505,
-                "version_name": "6.4.0-0-gecf39ec17a",
-                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GUID_TRESIBA`."
-            }
-        ]
-    },
-    {
         "UUID": "d3d14f85-133d-4f19-a1c1-a471b2c23826",
         "company": "Google LLC (Google Home / Chromecast BLE setup)",
         "UUID_name": "GOOGLE_HOME_BLE_SETUP_UUID_D3D14F85",
@@ -48618,6 +48570,62 @@
                 "version_name": "1.4",
                 "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "dff40f44-29e8-11e7-877f-f45c89a336f5",
+        "company": "Unknown",
+        "UUID_name": "GUID_LEVEMIR",
+        "UUID_purpose": "Probably NOT a Bluetooth UUID. Recovered from com.glooko.logbook as the Java field `GUID_LEVEMIR` - Levemir and Tresiba are Novo Nordisk insulin brand names, so this is most likely an internal medication identifier in the app's data model that the extractor's file-level default classified as a custom GATT Service. No BLE usage evidence exists. Re-attributed away from \"Glooko Inc\" and flagged rather than deleted.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `GUID_LEVEMIR`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Flagged as a probable non-BLE identifier: field name prefix is GUID_ rather than UUID_, the classification source was file-level-default, and the token names a medication rather than a service.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.glooko.logbook",
+                "version_code": 20505,
+                "version_name": "6.4.0-0-gecf39ec17a",
+                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GUID_LEVEMIR`."
+            }
+        ]
+    },
+    {
+        "UUID": "dff412dc-29e8-11e7-877f-f45c89a336f5",
+        "company": "Unknown",
+        "UUID_name": "GUID_TRESIBA",
+        "UUID_purpose": "Probably NOT a Bluetooth UUID. Recovered from com.glooko.logbook as the Java field `GUID_TRESIBA` - Levemir and Tresiba are Novo Nordisk insulin brand names, so this is most likely an internal medication identifier in the app's data model that the extractor's file-level default classified as a custom GATT Service. No BLE usage evidence exists. Re-attributed away from \"Glooko Inc\" and flagged rather than deleted.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.glooko.logbook v6.4.0-0-gecf39ec17a (versionCode 20505), in Java field `GUID_TRESIBA`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Flagged as a probable non-BLE identifier: field name prefix is GUID_ rather than UUID_, the classification source was file-level-default, and the token names a medication rather than a service.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.glooko.logbook",
+                "version_code": 20505,
+                "version_name": "6.4.0-0-gecf39ec17a",
+                "package_path": "BLUUID_APKS/0762/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f/4aff06a5d6ccb190289abb3d22d421510b53a4121ce37fc186e8489ca08a7a3f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GUID_TRESIBA`."
             }
         ]
     },

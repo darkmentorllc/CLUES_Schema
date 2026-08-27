@@ -187372,90 +187372,6 @@
         "parent_UUID": "00a215bd-9b02-4e5a-9a65-98f1095f4755"
     },
     {
-        "UUID": "932c32bd-0005-47a2-835a-a8d455b859dd",
-        "company": "Metaverse Labs",
-        "UUID_name": "Color",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.smartwidgetlabs.philipshue, declared as Java field `Color`. Classification determined by cross-file usage:getCharacteristic(Color).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.smartwidgetlabs.philipshue v6.0 (versionCode 331), in Java field `Color`. Classification source: cross-file usage:getCharacteristic(Color).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of hueledlight.remotecontrol.smartapp v2.0.4 (versionCode 43), in Java field `f62840i`, declared in Java package `fj` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.smartwidgetlabs.philipshue",
-                "version_code": 331,
-                "version_name": "6.0",
-                "package_path": "BLUUID_APKS/0788/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `Color`."
-            },
-            {
-                "package_id": "hueledlight.remotecontrol.smartapp",
-                "version_code": 43,
-                "version_name": "2.0.4",
-                "package_path": "BLUUID_APKS/0896/96ac90abb8296419ebe5e926f93a9f30a371f5eef84d03212a11d414339a99ae/96ac90abb8296419ebe5e926f93a9f30a371f5eef84d03212a11d414339a99ae.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f62840i`."
-            }
-        ],
-        "parent_UUID": "932c32bd-0002-47a2-835a-a8d455b859dd"
-    },
-    {
-        "UUID": "932c32bd-0007-47a2-835a-a8d455b859dd",
-        "company": "Metaverse Labs",
-        "UUID_name": "AllInfo",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.smartwidgetlabs.philipshue, declared as Java field `AllInfo`. Classification determined by file-level-default.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.smartwidgetlabs.philipshue v6.0 (versionCode 331), in Java field `AllInfo`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.smartwidgetlabs.philipshue",
-                "version_code": 331,
-                "version_name": "6.0",
-                "package_path": "BLUUID_APKS/0788/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AllInfo`."
-            }
-        ]
-    },
-    {
-        "UUID": "932c32bd-0004-47a2-835a-a8d455b859dd",
-        "company": "Metaverse Labs",
-        "UUID_name": "Temperature",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.smartwidgetlabs.philipshue, declared as Java field `Temperature`. Classification determined by file-level-default.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.smartwidgetlabs.philipshue v6.0 (versionCode 331), in Java field `Temperature`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.smartwidgetlabs.philipshue",
-                "version_code": 331,
-                "version_name": "6.0",
-                "package_path": "BLUUID_APKS/0788/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `Temperature`."
-            }
-        ]
-    },
-    {
         "UUID": "9804c436-45ed-50e2-b577-c43ccb17079d",
         "company": "Mirion Technologies",
         "UUID_name": "DOSE_PARAMS_1 / DoseParams1",
@@ -189463,6 +189379,102 @@
             }
         ],
         "parent_UUID": "6cb501b7-96f6-4eef-acb1-d7535f153cf0"
+    },
+    {
+        "UUID": "932c32bd-0005-47a2-835a-a8d455b859dd",
+        "company": "Signify",
+        "UUID_name": "Color",
+        "UUID_purpose": "Philips Hue light control BLE UUID. Re-attributed from \"Metaverse Labs\" to Signify. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The observing package is com.smartwidgetlabs.philipshue - a third-party Philips Hue controller app, not a first-party one - and a separately-sourced CLUES entry identifies this exact UUID as part of the Philips Hue Light Control Service, citing a Hue BLE reverse-engineering gist. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Characteristic observed in Android app com.smartwidgetlabs.philipshue, declared as Java field `Color`. Classification determined by cross-file usage:getCharacteristic(Color).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.smartwidgetlabs.philipshue v6.0 (versionCode 331), in Java field `Color`. Classification source: cross-file usage:getCharacteristic(Color).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of hueledlight.remotecontrol.smartapp v2.0.4 (versionCode 43), in Java field `f62840i`, declared in Java package `fj` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Metaverse Labs\" to Signify. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The observing package is com.smartwidgetlabs.philipshue - a third-party Philips Hue controller app, not a first-party one - and a separately-sourced CLUES entry identifies this exact UUID as part of the Philips Hue Light Control Service, citing a Hue BLE reverse-engineering gist. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.smartwidgetlabs.philipshue",
+                "version_code": 331,
+                "version_name": "6.0",
+                "package_path": "BLUUID_APKS/0788/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `Color`."
+            },
+            {
+                "package_id": "hueledlight.remotecontrol.smartapp",
+                "version_code": 43,
+                "version_name": "2.0.4",
+                "package_path": "BLUUID_APKS/0896/96ac90abb8296419ebe5e926f93a9f30a371f5eef84d03212a11d414339a99ae/96ac90abb8296419ebe5e926f93a9f30a371f5eef84d03212a11d414339a99ae.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f62840i`."
+            }
+        ],
+        "parent_UUID": "932c32bd-0002-47a2-835a-a8d455b859dd"
+    },
+    {
+        "UUID": "932c32bd-0007-47a2-835a-a8d455b859dd",
+        "company": "Signify",
+        "UUID_name": "AllInfo",
+        "UUID_purpose": "Philips Hue light control BLE UUID. Re-attributed from \"Metaverse Labs\" to Signify. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The observing package is com.smartwidgetlabs.philipshue - a third-party Philips Hue controller app, not a first-party one - and a separately-sourced CLUES entry identifies this exact UUID as part of the Philips Hue Light Control Service, citing a Hue BLE reverse-engineering gist. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Service observed in Android app com.smartwidgetlabs.philipshue, declared as Java field `AllInfo`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.smartwidgetlabs.philipshue v6.0 (versionCode 331), in Java field `AllInfo`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Metaverse Labs\" to Signify. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The observing package is com.smartwidgetlabs.philipshue - a third-party Philips Hue controller app, not a first-party one - and a separately-sourced CLUES entry identifies this exact UUID as part of the Philips Hue Light Control Service, citing a Hue BLE reverse-engineering gist. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.smartwidgetlabs.philipshue",
+                "version_code": 331,
+                "version_name": "6.0",
+                "package_path": "BLUUID_APKS/0788/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AllInfo`."
+            }
+        ]
+    },
+    {
+        "UUID": "932c32bd-0004-47a2-835a-a8d455b859dd",
+        "company": "Signify",
+        "UUID_name": "Temperature",
+        "UUID_purpose": "Philips Hue light control BLE UUID. Re-attributed from \"Metaverse Labs\" to Signify. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The observing package is com.smartwidgetlabs.philipshue - a third-party Philips Hue controller app, not a first-party one - and a separately-sourced CLUES entry identifies this exact UUID as part of the Philips Hue Light Control Service, citing a Hue BLE reverse-engineering gist. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Service observed in Android app com.smartwidgetlabs.philipshue, declared as Java field `Temperature`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.smartwidgetlabs.philipshue v6.0 (versionCode 331), in Java field `Temperature`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Re-attributed from \"Metaverse Labs\" to Signify. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. The observing package is com.smartwidgetlabs.philipshue - a third-party Philips Hue controller app, not a first-party one - and a separately-sourced CLUES entry identifies this exact UUID as part of the Philips Hue Light Control Service, citing a Hue BLE reverse-engineering gist. The original APK observation is retained below because it remains factually true.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.smartwidgetlabs.philipshue",
+                "version_code": 331,
+                "version_name": "6.0",
+                "package_path": "BLUUID_APKS/0788/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9/8f414c6e7aa3440982b4613f97a99b040cede9dcf318a81e3e3e6d4bc2197ed9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `Temperature`."
+            }
+        ]
     },
     {
         "UUID": "9144db21-87b4-11e5-ac6c-2c768ae5fc1a",

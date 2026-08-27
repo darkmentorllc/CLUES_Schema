@@ -58254,6 +58254,68 @@
         ]
     },
     {
+        "UUID": "8ce255c0-200a-11e0-ac64-0800200c9a66",
+        "company": "Third-party SDK code (declared in Java package `miui.bt` — distinct from host com.xiaomi.midrop; Phase-4 identification needed)",
+        "UUID_name": "EASYWAY_NOTIFY_CHARACTERISTIC",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.xiaomi.midrop but declared in third-party SDK package `miui.bt` as Java field `f21798a`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.xiaomi.midrop v3.36.11 (versionCode 33611), in Java field `f21798a`, declared in Java package `miui.bt` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.felix v5.3 (versionCode 27), in Java field `c`. Classification source: cross-file usage:getCharacteristic(c).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.oxxgen v4.9 (versionCode 21), in Java field `c`. Classification source: cross-file usage:getCharacteristic(c).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.osio v4.6 (versionCode 18), in Java field `c`. Classification source: cross-file usage:getCharacteristic(c).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: AppCompatDelegateImplV9.java:151 write path; BackStackState.java:146 write path; DrawerLayout.java:154 write path; FragmentManagerState.java:49 write path; FragmentState.java:106 write path; MediaDescriptionCompat.java:197 write path; ParcelableVolumeInfo.java:43 write path; PlaybackStateCompat.java:175 write path",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.xiaomi.midrop",
+                "version_code": 33611,
+                "version_name": "3.36.11",
+                "package_path": "BLUUID_APKS/0172/fbaae9b48c2795e0fdc2a0bbd1b534b9ee6137527e4fec1c2262ee3701bcb642/fbaae9b48c2795e0fdc2a0bbd1b534b9ee6137527e4fec1c2262ee3701bcb642.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f21798a`."
+            },
+            {
+                "package_id": "com.sz.easyway.ewaylink.felix",
+                "version_code": 27,
+                "version_name": "5.3",
+                "package_path": "BLUUID_APKS/0648/c5be7acf0ac195f4b7f4d100707bfc63f190148345ae77a8fa06844d078a7400/c5be7acf0ac195f4b7f4d100707bfc63f190148345ae77a8fa06844d078a7400.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
+            },
+            {
+                "package_id": "com.sz.easyway.ewaylink.oxxgen",
+                "version_code": 21,
+                "version_name": "4.9",
+                "package_path": "BLUUID_APKS/0825/4eff810311e25436f594053c60763df0ffed71715c59d1d0d593474a85aafd6f/4eff810311e25436f594053c60763df0ffed71715c59d1d0d593474a85aafd6f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
+            },
+            {
+                "package_id": "com.sz.easyway.ewaylink.osio",
+                "version_code": 18,
+                "version_name": "4.6",
+                "package_path": "BLUUID_APKS/0958/a629fb62d99d4ac47b039ee2894bea7e6a713faaa5c5f6519e66fdb21e76ea30/a629fb62d99d4ac47b039ee2894bea7e6a713faaa5c5f6519e66fdb21e76ea30.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
+            }
+        ],
+        "parent_UUID": "ae00"
+    },
+    {
         "UUID": "8385",
         "company": "GulliverNet",
         "UUID_name": "ServiceDataUUIDString",
@@ -67409,68 +67471,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `LRI_SERVICE`."
             }
         ]
-    },
-    {
-        "UUID": "8ce255c0-200a-11e0-ac64-0800200c9a66",
-        "company": "Third-party SDK code (declared in Java package `miui.bt` — distinct from host com.xiaomi.midrop; Phase-4 identification needed)",
-        "UUID_name": "EASYWAY_NOTIFY_CHARACTERISTIC",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.xiaomi.midrop but declared in third-party SDK package `miui.bt` as Java field `f21798a`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.xiaomi.midrop v3.36.11 (versionCode 33611), in Java field `f21798a`, declared in Java package `miui.bt` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.felix v5.3 (versionCode 27), in Java field `c`. Classification source: cross-file usage:getCharacteristic(c).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.oxxgen v4.9 (versionCode 21), in Java field `c`. Classification source: cross-file usage:getCharacteristic(c).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sz.easyway.ewaylink.osio v4.6 (versionCode 18), in Java field `c`. Classification source: cross-file usage:getCharacteristic(c).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: AppCompatDelegateImplV9.java:151 write path; BackStackState.java:146 write path; DrawerLayout.java:154 write path; FragmentManagerState.java:49 write path; FragmentState.java:106 write path; MediaDescriptionCompat.java:197 write path; ParcelableVolumeInfo.java:43 write path; PlaybackStateCompat.java:175 write path",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.xiaomi.midrop",
-                "version_code": 33611,
-                "version_name": "3.36.11",
-                "package_path": "BLUUID_APKS/0172/fbaae9b48c2795e0fdc2a0bbd1b534b9ee6137527e4fec1c2262ee3701bcb642/fbaae9b48c2795e0fdc2a0bbd1b534b9ee6137527e4fec1c2262ee3701bcb642.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f21798a`."
-            },
-            {
-                "package_id": "com.sz.easyway.ewaylink.felix",
-                "version_code": 27,
-                "version_name": "5.3",
-                "package_path": "BLUUID_APKS/0648/c5be7acf0ac195f4b7f4d100707bfc63f190148345ae77a8fa06844d078a7400/c5be7acf0ac195f4b7f4d100707bfc63f190148345ae77a8fa06844d078a7400.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
-            },
-            {
-                "package_id": "com.sz.easyway.ewaylink.oxxgen",
-                "version_code": 21,
-                "version_name": "4.9",
-                "package_path": "BLUUID_APKS/0825/4eff810311e25436f594053c60763df0ffed71715c59d1d0d593474a85aafd6f/4eff810311e25436f594053c60763df0ffed71715c59d1d0d593474a85aafd6f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
-            },
-            {
-                "package_id": "com.sz.easyway.ewaylink.osio",
-                "version_code": 18,
-                "version_name": "4.6",
-                "package_path": "BLUUID_APKS/0958/a629fb62d99d4ac47b039ee2894bea7e6a713faaa5c5f6519e66fdb21e76ea30/a629fb62d99d4ac47b039ee2894bea7e6a713faaa5c5f6519e66fdb21e76ea30.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
-            }
-        ],
-        "parent_UUID": "ae00"
     },
     {
         "UUID": "831c4071-7bc8-4a9c-a01c-15df25a4adbc",
