@@ -2216,6 +2216,119 @@
         "regex": true
     },
     {
+        "UUID": "f4000a80-de94-078f-e311-35b1ee4fdb15",
+        "company": "EM Microelectronic-Marin SA",
+        "UUID_name": "Beacon Information",
+        "UUID_purpose": "Command-response GATT service exposed by EM's Bluetooth Low Energy proximity beacon modules (EMBC22, EMBP01 and siblings), which lets a connected app read back the module's current configuration. A client writes a command byte to the Command Characteristic (f1000a80-de94-078f-e311-35b1ee4fdb15) and reads the reply from the Data Characteristic (f2000a80-de94-078f-e311-35b1ee4fdb15); the protocol is documented in the EM Beacon SDK and driven by the Beacon Configuration Tool Suite. Devices exposing it also expose the ALPWISE/EM9304 FOTA service 00007001-0000-0041-4c50-574953450000 and SIG Device Information (0x180A, with Manufacturer Name defaulting to 'EM Microelectronic' and Serial Number to the factory MAC address).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EMBC22-DS_0.pdf",
+                "description": "EMBC22 datasheet (EMBC22-DS, Version 6.0, 29-Sep-21), section 6.3.2 'Beacon Information Service': 'Service UUID: F4000A80-DE94-078F-E311-35B1EE4FDB15'. The EMBC22 is EM's CR2032-powered Bluetooth 5.0 proximity beacon with accelerometer, built on the EM9304 BLE IC.",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EMBP01-DS_0.pdf",
+                "description": "EMBP01 datasheet (EMBP01-DS, Version 3.0), section 6.3.2, lists the identical Service UUID, confirming the UUID belongs to EM's beacon product line rather than to a single product.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ]
+    },
+    {
+        "UUID": "f1000a80-de94-078f-e311-35b1ee4fdb15",
+        "company": "EM Microelectronic-Marin SA",
+        "UUID_name": "Beacon Information Command",
+        "UUID_purpose": "Beacon Information: Command. Write-only characteristic carrying '<Command> <Optional Parameter> <Bytes to Follow> <Optional Data>'. Documented command codes: 0x01 Get Version (application firmware version), 0x02 Get Device Configuration, 0x03 Get Advertising Configuration <n> (n=0 POST advertisement, n=1 Configuration Mode advertisement, n=16..25 Advertisement 1..10), 0x04 Get Accelerometer Configuration, 0x05 Get RSSI Table, 0x06 Get Device Address (factory-assigned), 0x07 Get Diagnostic Code, 0x0B Generate On/Off Event, 0x0C Get Factory Marker, 0x0D Get VBAT (battery voltage, 100mV resolution), plus a Get Protocol ID command listed without a hex code. Responses are read back from the sibling Data Characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EMBC22-DS_0.pdf",
+                "description": "EMBC22 datasheet (EMBC22-DS, Version 6.0, 29-Sep-21), section 6.3.2 'Command Characteristic': 'Characteristic UUID: F1000A80-DE94-078F-E311-35B1EE4FDB15', with the command table (Table 15: Beacon Information Service Commands) and the command format.",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EMBP01-DS_0.pdf",
+                "description": "EMBP01 datasheet (EMBP01-DS, Version 3.0), section 6.3.2, lists the identical Command Characteristic UUID and an equivalent command table (Table 13).",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "f4000a80-de94-078f-e311-35b1ee4fdb15"
+    },
+    {
+        "UUID": "f2000a80-de94-078f-e311-35b1ee4fdb15",
+        "company": "EM Microelectronic-Marin SA",
+        "UUID_name": "Beacon Information Data",
+        "UUID_purpose": "Beacon Information: Data. Read-only characteristic returning the response to the last command written to the sibling Command Characteristic, or an error. The first returned byte identifies the response type: 0x80 = Error Response (detailed error code plus any additional data), 0x33 = Configuration Patch (the payload can be saved verbatim as an EM9304 patch binary; used for the Device Configuration, Advertisement Configuration, Accelerometer Configuration, Factory Marker and RSSI Table replies), any other value = echo of the command code that generated the data.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EMBC22-DS_0.pdf",
+                "description": "EMBC22 datasheet (EMBC22-DS, Version 6.0, 29-Sep-21), section 6.3.2 'Data Characteristic': 'Characteristic UUID: F2000A80-DE94-078F-E311-35B1EE4FDB15', with the response-type table (Table 16: Beacon Information Data Characteristic).",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EMBP01-DS_0.pdf",
+                "description": "EMBP01 datasheet (EMBP01-DS, Version 3.0), section 6.3.2, lists the identical Data Characteristic UUID and an equivalent response-type table.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "parent_UUID": "f4000a80-de94-078f-e311-35b1ee4fdb15"
+    },
+    {
+        "UUID": "699ebc80-e1f3-11e3-9a0f-0cf3ee3bc012",
+        "company": "EM Microelectronic-Marin SA",
+        "UUID_name": "Default beacon ID",
+        "UUID_purpose": "Factory-default beacon identity broadcast by EM's Bluetooth Low Energy proximity beacon modules (EMBC22, EMBP01 and siblings) when the operator leaves the identity parameter at 0 in the Beacon Configuration Tool Suite: it is used both as the iBeacon proximity UUID and as the AltBeacon GUID, and its first 10 bytes (699e-bc80-e1f3-11e3-9a0f) are the default Eddystone-UID Namespace. A device advertising this value has not had its beacon identity customized; its Major/Minor IDs (or Eddystone UID Instance) are then derived from the device address instead. This is an RFC 4122 v1 (time-based) UUID whose node field 0c:f3:ee:3b:c0:12 embeds EM Microelectronic's IEEE OUI 0C:F3:EE, which is also the OUI of the modules' factory-assigned Bluetooth device addresses. Carried in non-connectable undirected advertising (ADV_NONCONN_IND) inside Manufacturer Specific Data, so it is not exposed as a GATT Service UUID.",
+        "UUID_usage_array": [
+            "iBeacon",
+            "Advertisement"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EMBC22-DS_0.pdf",
+                "description": "EMBC22 datasheet (EMBC22-DS, Version 6.0, 29-Sep-21), section 6.2.5: 'If the UUID is set to 0, the default UUID of 699EBC80-E1F3-11E3-9A0F-0CF3EE3BC012 is used' (iBeacon), the same value again as the default AltBeacon GUID, and 'the default UID Namespace value is 699E-BC80-E1F3-11E3-9A0F' (Eddystone). Section 6.2.5 also states these packet types are ADV_NONCONN_IND.",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EMBP01-DS_0.pdf",
+                "description": "EMBP01 datasheet (EMBP01-DS, Version 3.0), section 6.2.5, repeats the identical default iBeacon UUID, AltBeacon GUID and Eddystone UID Namespace, and gives the worked example device address 0C:F3:EE:AA:BB:CC, confirming the 0C:F3:EE prefix of EM beacon addresses.",
+                "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://standards-oui.ieee.org/oui/oui.txt",
+                "description": "IEEE OUI registry: 0C-F3-EE is assigned to 'EM Microelectronic'. That OUI is the trailing 3 bytes of this UUIDv1's node field, independently corroborating EM as the generator of this UUID.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "adv_channel_pdu_array": [
+            "ADV_NONCONN_IND"
+        ]
+    },
+    {
+        "UUID": "xx000a80-de94-078f-e311-35b1ee4fdb15",
+        "company": "EM Microelectronic-Marin SA",
+        "UUID_name": "Beacon Information family base (regex)",
+        "UUID_purpose": "Family-base regex for EM's Bluetooth beacon Beacon Information namespace. Non-RFC-conformant vendor base in which only the leading byte varies. Known sub-IDs: f4 (Beacon Information Service), f1 (Command Characteristic), f2 (Data Characteristic). Match this only as a fallback for undocumented members of the same namespace on other EM beacon modules.",
+        "UUID_usage_array": [
+            "GATT Service",
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EMBC22-DS_0.pdf",
+                "description": "Derived from the three UUIDs documented in EMBC22-DS Version 6.0 section 6.3.2 (F4000A80/F1000A80/F2000A80-DE94-078F-E311-35B1EE4FDB15), which differ only in the leading byte. The same three appear unchanged in the EMBP01 datasheet, so the shared 15-byte tail is an EM-wide beacon base rather than a per-product value.",
+                "submitter": "Claude (Opus 5)"
+            }
+        ],
+        "regex": true
+    },
+    {
         "UUID": "f815e810-456c-6761-746f-4d756e696368",
         "company": "Elgato",
         "UUID_name": "Elgato Avea Light Bulb Service",
