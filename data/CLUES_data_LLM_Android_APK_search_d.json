@@ -180,6 +180,35 @@
         "parent_UUID": "12345678-90ab-cdef-fedc-ba0987654321"
     },
     {
+        "UUID": "de5ac50d-7031-4ba4-bdb8-9a4f204b1507",
+        "company": "ARKRAY Inc.",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Custom GATT Service observed in Android app jp.co.arkray.android.SmarteSMBPJPN, declared as Java field `f9895b`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of jp.co.arkray.android.SmarteSMBPJPN v0.0.6 (versionCode 6), in Java field `f9895b`. Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=jp.co.arkray.android.SmarteSMBPJPN",
+                "description": "Verified current Google Play listing for jp.co.arkray.android.SmarteSMBPJPN. This listing does not establish that archived APK version 0.0.6 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "jp.co.arkray.android.SmarteSMBPJPN",
+                "version_code": 6,
+                "version_name": "0.0.6",
+                "package_path": "AndroZoo/apks/0a/jp.co.arkray.android.SmarteSMBPJPN_0AB29289E3D1C3DADCF2E0F1CA5A0343D5F9D7FA7B7A595B363EF6283BFB9902.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f9895b`."
+            }
+        ]
+    },
+    {
         "UUID": "dcb2ea2d-b8fa-433d-a287-b7ff38ad1cae",
         "company": "ASB Bank",
         "UUID_name": "ADD_CK_SAVINGS_GOAL",
@@ -679,6 +708,15 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: AssumeRoleRequest.java:252 write path; BioCustomMapView.java:109 write path; ConnectManager.java:598 changed value broadcast/handler; CreateJobRequest.java:247 write path; CreateOTAUpdateRequest.java:260 write path; Decimal128.java:117 write path; Decimal128.java:337 write path; EKGRecordActivity.java:123 write path",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.pclhealth.app v2.0.14 (versionCode 32), in Java field `y`, declared in Java package `com.raiing.blelib.temperature.a.a` (third-party SDK). Classification source: cross-file usage:getCharacteristic(y).",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.pclhealth.app",
+                "description": "Verified current Google Play listing for com.pclhealth.app. This listing does not establish that archived APK version 2.0.14 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -709,6 +747,13 @@
                 "version_name": "1.7.3.17",
                 "package_path": "BLUUID_APKS/0983/66551d2f9ad19e314a4230409e25505a98055339a2beb1b53e69d44b00d884b6/66551d2f9ad19e314a4230409e25505a98055339a2beb1b53e69d44b00d884b6.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `n`."
+            },
+            {
+                "package_id": "com.pclhealth.app",
+                "version_code": 32,
+                "version_name": "2.0.14",
+                "package_path": "AndroZoo/apks/94/com.pclhealth.app_94EB91F090096215C98A98A58B68C79F509B4F4731FE3FD0512B4BEDA40A837B.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `y`."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -802,8 +847,8 @@
     },
     {
         "UUID": "da2e7828-fbce-4e01-ae9e-261174997c48",
-        "company": "Third-party SDK code (declared in Java package `io.runtime.mcumgr.ble` — distinct from host com.pax.app; Phase-4 identification needed)",
-        "UUID_name": "SMP_CHARACTERISTIC",
+        "company": "Apache Mynewt",
+        "UUID_name": "SMP_CHARACTERISTIC / SMP_CHAR",
         "UUID_purpose": "GATT Characteristic observed in Android app com.pax.app but declared in third-party SDK package `io.runtime.mcumgr.ble` as Java field `SMP_CHAR_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: usage:getCharacteristic.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -884,6 +929,38 @@
             {
                 "description": "Found in decompiled DEX of com.pomtracer v1.7.2 (versionCode 17), in Java field `SMP_CHAR_UUID`, declared in Java package `io.runtime.mcumgr.ble` (third-party SDK). Classification source: usage:getCharacteristic.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.kenzen.v2 v2.5.08.02.0p (versionCode 367), in Java field `SMP_CHAR_UUID`, declared in Java package `io.runtime.mcumgr.ble` (third-party SDK). Classification source: field-name:SMP_CHAR_UUID.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.safeguard.compasspro v2.222 (versionCode 89), in Java field `SMP_CHARACTERISTIC / SMP_CHAR_UUID`, declared in Java package `com.oncelabs.onceble.core.dfu.mcuboot` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of de.fior_gentz.neurotronic v2.2.0 (versionCode 64), in Java field `SMP_CHAR_UUID`, declared in Java package `io.runtime.mcumgr.ble` (third-party SDK). Classification source: field-name:SMP_CHAR_UUID.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.kenzen.v2",
+                "description": "Verified current Google Play listing for com.kenzen.v2. This listing does not establish that archived APK version 2.5.08.02.0p is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.safeguard.compasspro",
+                "description": "Verified current Google Play listing for com.safeguard.compasspro. This listing does not establish that archived APK version 2.222 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=de.fior_gentz.neurotronic",
+                "description": "Verified current Google Play listing for de.fior_gentz.neurotronic. This listing does not establish that archived APK version 2.2.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/apache/mynewt-mcumgr/blob/master/transport/smp-bluetooth.md",
+                "description": "Phase-4 ownership review of the exact 128-bit UUID in reviewed c27_apache_mynewt_mcumgr_smp protocol source and Android DEX evidence attributes this UUID to Apache Mynewt. The vendor page establishes the product/protocol context; the exact UUID attribution also uses the cited DEX fields.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -1018,6 +1095,27 @@
                 "version_code": 17,
                 "version_name": "1.7.2",
                 "package_path": "BLUUID_APKS/0989/63ebc5fa76ea8940dbe4dd83639747b6076d337ac0308ca1be7bbc79224f1f19/63ebc5fa76ea8940dbe4dd83639747b6076d337ac0308ca1be7bbc79224f1f19.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SMP_CHAR_UUID`."
+            },
+            {
+                "package_id": "com.kenzen.v2",
+                "version_code": 367,
+                "version_name": "2.5.08.02.0p",
+                "package_path": "AndroZoo/apks/c3/com.kenzen.v2_C3838E8A0476D4405C506B67723B257FD2CCB393FA867C4D7DBECD39BFAF841A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SMP_CHAR_UUID`."
+            },
+            {
+                "package_id": "com.safeguard.compasspro",
+                "version_code": 89,
+                "version_name": "2.222",
+                "package_path": "AndroZoo/apks/9f/com.safeguard.compasspro_9F0357365DE9985CD50F98AB20C48A16504222EDCACDB992B26D7962CCF7A7D2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SMP_CHARACTERISTIC / SMP_CHAR_UUID`."
+            },
+            {
+                "package_id": "de.fior_gentz.neurotronic",
+                "version_code": 64,
+                "version_name": "2.2.0",
+                "package_path": "AndroZoo/apks/1b/de.fior_gentz.neurotronic_1BCEC693F4E37D591060C3A7FD934B7C86A38B221FD9AEB216F2405F714A23C2.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SMP_CHAR_UUID`."
             }
         ],
@@ -2468,6 +2566,15 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: NotificationService.java:1481 write path; a13.java:643 write path; aaf.java:53 write path; aj5.java:38 write path; axf.java:118 write path; axf.java:119 write path; ayh.java:50 write path; bge.java:129 write path",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.pclhealth.app v2.0.14 (versionCode 32), in Java field `J`, declared in Java package `com.raiing.blelib.temperature.a.a` (third-party SDK). Classification source: cross-file usage:getCharacteristic(J).",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.pclhealth.app",
+                "description": "Verified current Google Play listing for com.pclhealth.app. This listing does not establish that archived APK version 2.0.14 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -2498,6 +2605,13 @@
                 "version_name": "1.7.3.17",
                 "package_path": "BLUUID_APKS/0983/66551d2f9ad19e314a4230409e25505a98055339a2beb1b53e69d44b00d884b6/66551d2f9ad19e314a4230409e25505a98055339a2beb1b53e69d44b00d884b6.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `y`."
+            },
+            {
+                "package_id": "com.pclhealth.app",
+                "version_code": 32,
+                "version_name": "2.0.14",
+                "package_path": "AndroZoo/apks/94/com.pclhealth.app_94EB91F090096215C98A98A58B68C79F509B4F4731FE3FD0512B4BEDA40A837B.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `J`."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -2846,6 +2960,64 @@
         "parent_UUID": "00000000-0000-0000-0099-aabbccddeeff"
     },
     {
+        "UUID": "dd890004-bce5-4d8a-8af8-9b2125d125a5",
+        "company": "Aktiia",
+        "UUID_name": "CALIBRATION_1",
+        "UUID_purpose": "Custom GATT Service observed in Android app com.aktiia.android.production, declared as Java field `CALIBRATION_1`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.aktiia.android.production v2.12.1 (versionCode 605), in Java field `CALIBRATION_1`. Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.aktiia.android.production",
+                "description": "Verified current Google Play listing for com.aktiia.android.production. This listing does not establish that archived APK version 2.12.1 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.aktiia.android.production",
+                "version_code": 605,
+                "version_name": "2.12.1",
+                "package_path": "AndroZoo/apks/36/com.aktiia.android.production_36BC6A75F157C07A81A3E15A075422A5FB09442704EA951AA6B354CD25EB3FED.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CALIBRATION_1`."
+            }
+        ]
+    },
+    {
+        "UUID": "dd890005-bce5-4d8a-8af8-9b2125d125a5",
+        "company": "Aktiia",
+        "UUID_name": "CALIBRATION_2",
+        "UUID_purpose": "Custom GATT Service observed in Android app com.aktiia.android.production, declared as Java field `CALIBRATION_2`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.aktiia.android.production v2.12.1 (versionCode 605), in Java field `CALIBRATION_2`. Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.aktiia.android.production",
+                "description": "Verified current Google Play listing for com.aktiia.android.production. This listing does not establish that archived APK version 2.12.1 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.aktiia.android.production",
+                "version_code": 605,
+                "version_name": "2.12.1",
+                "package_path": "AndroZoo/apks/36/com.aktiia.android.production_36BC6A75F157C07A81A3E15A075422A5FB09442704EA951AA6B354CD25EB3FED.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CALIBRATION_2`."
+            }
+        ]
+    },
+    {
         "UUID": "d9c4a45d-215e-4321-ba91-9fc0ce39ac40",
         "company": "Alen Corp",
         "UUID_name": "devApiKey",
@@ -2868,6 +3040,31 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `devApiKey`."
             }
         ]
+    },
+    {
+        "UUID": "d3ee9eb7-1628-48b6-b0b2-8a0089561da1",
+        "company": "Third-party SDK code (declared in Java package `com.philosys.libconnectcom` — distinct from host com.mydayda.myhk; Phase-4 identification needed)",
+        "UUID_name": "TX2_CHAR",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.mydayda.myhk but declared in third-party SDK package `com.philosys.libconnectcom` as Java field `TX2_CHAR_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:TX2_CHAR_UUID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.mydayda.myhk v1.0.7 (versionCode 43), in Java field `TX2_CHAR_UUID`, declared in Java package `com.philosys.libconnectcom` (third-party SDK). Classification source: field-name:TX2_CHAR_UUID.",
+                "submitter": "GPT-6 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mydayda.myhk",
+                "version_code": 43,
+                "version_name": "1.0.7",
+                "package_path": "AndroZoo/apks/05/com.mydayda.myhk_05D778B829D41FEE921B442C52034181C228669771909B633099E19DC61E6A4D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `TX2_CHAR_UUID`."
+            }
+        ],
+        "parent_UUID": "00006287-3c17-d293-8e48-14fe2e4da212"
     },
     {
         "UUID": "da0f6527-3957-49d6-a000-f008ec1233bb",
@@ -3927,6 +4124,31 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `V2TemperatureServiceUUID`."
             }
         ]
+    },
+    {
+        "UUID": "d0eea519-86a3-4eed-ad08-6afa05d836eb",
+        "company": "Third-party SDK code (declared in Java package `com.logitech.ue.centurion.ble` — distinct from host com.astrogaming.scorpius; Phase-4 identification needed)",
+        "UUID_name": "RO_AUTHORIZE_CHARACTERISTIC",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.astrogaming.scorpius but declared in third-party SDK package `com.logitech.ue.centurion.ble` as Java field `RO_AUTHORIZE_CHARACTERISTIC`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(RO_AUTHORIZE_CHARACTERISTIC).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.astrogaming.scorpius v2.0.5 (versionCode 15), in Java field `RO_AUTHORIZE_CHARACTERISTIC`, declared in Java package `com.logitech.ue.centurion.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(RO_AUTHORIZE_CHARACTERISTIC).",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.astrogaming.scorpius",
+                "version_code": 15,
+                "version_name": "2.0.5",
+                "package_path": "BLUUID_APKS/0644/01f6bf3d25876a65a3bf7e4a380497ab5774cce1618c55fb1242012308e73c4c/01f6bf3d25876a65a3bf7e4a380497ab5774cce1618c55fb1242012308e73c4c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `RO_AUTHORIZE_CHARACTERISTIC`."
+            }
+        ],
+        "parent_UUID": "1b7e8251-2877-41c3-b46e-cf057c562023"
     },
     {
         "UUID": "d94a1e5d-d362-4532-a06a-cde33ba5e38a",
@@ -7422,6 +7644,98 @@
         "parent_UUID": "55dd"
     },
     {
+        "UUID": "d08b9fca-2232-11ed-861d-0242ac120002",
+        "company": "Bullitt Satellite Messenger",
+        "UUID_name": "CHARACTERISTICS_UUID_FOR_READ",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.bullitt.wave, declared as Java field `CHARACTERISTICS_UUID_FOR_READ`. Classification determined by usage:getCharacteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.bullitt.wave v2.8.29 (versionCode 108), in Java field `CHARACTERISTICS_UUID_FOR_READ`. Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hmdglobal.mobile.offgrid v2.6.30 (versionCode 105), in Java field `CHARACTERISTICS_UUID_FOR_READ`, declared in Java package `com.bullitt.sdk.platform.device.ble` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.bullitt.wave",
+                "description": "Verified current Google Play listing for com.bullitt.wave. This listing does not establish that archived APK version 2.8.29 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.hmdglobal.mobile.offgrid",
+                "description": "Verified current Google Play listing for com.hmdglobal.mobile.offgrid. This listing does not establish that archived APK version 2.6.30 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bullitt.wave",
+                "version_code": 108,
+                "version_name": "2.8.29",
+                "package_path": "AndroZoo/apks/c0/com.bullitt.wave_C0441A9C19369537B85BD5906BB1886054C85EED018ED5A783DF0A36F732DFFB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTICS_UUID_FOR_READ`."
+            },
+            {
+                "package_id": "com.hmdglobal.mobile.offgrid",
+                "version_code": 105,
+                "version_name": "2.6.30",
+                "package_path": "AndroZoo/apks/10/com.hmdglobal.mobile.offgrid_1054BD7BE9A320D9A772CC73EEDB53454A60D83E6436DEE5949999A8AD1F8E0D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTICS_UUID_FOR_READ`."
+            }
+        ],
+        "parent_UUID": "c598cfbc-2232-11ed-861d-0242ac120002"
+    },
+    {
+        "UUID": "d9ceea92-2232-11ed-861d-0242ac120002",
+        "company": "Third-party SDK code (declared in Java package `com.tinno.dw.device.ota.msg` — distinct from host com.bullitt.wave; Phase-4 identification needed)",
+        "UUID_name": "CHARACTERISTICS_UUID_FOR_NOTIFY / d2dNotify",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.bullitt.wave but declared in third-party SDK package `com.tinno.dw.device.ota.msg` as Java field `CHARACTERISTICS_UUID_FOR_NOTIFY / d2dNotifyUUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: usage:getCharacteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.bullitt.wave v2.8.29 (versionCode 108), in Java field `CHARACTERISTICS_UUID_FOR_NOTIFY / d2dNotifyUUID`, declared in Java package `com.tinno.dw.device.ota.msg` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hmdglobal.mobile.offgrid v2.6.30 (versionCode 105), in Java field `CHARACTERISTICS_UUID_FOR_NOTIFY / d2dNotifyUUID`, declared in Java package `com.bullitt.sdk.platform.device.ble` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.bullitt.wave",
+                "description": "Verified current Google Play listing for com.bullitt.wave. This listing does not establish that archived APK version 2.8.29 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.hmdglobal.mobile.offgrid",
+                "description": "Verified current Google Play listing for com.hmdglobal.mobile.offgrid. This listing does not establish that archived APK version 2.6.30 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bullitt.wave",
+                "version_code": 108,
+                "version_name": "2.8.29",
+                "package_path": "AndroZoo/apks/c0/com.bullitt.wave_C0441A9C19369537B85BD5906BB1886054C85EED018ED5A783DF0A36F732DFFB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTICS_UUID_FOR_NOTIFY / d2dNotifyUUID`."
+            },
+            {
+                "package_id": "com.hmdglobal.mobile.offgrid",
+                "version_code": 105,
+                "version_name": "2.6.30",
+                "package_path": "AndroZoo/apks/10/com.hmdglobal.mobile.offgrid_1054BD7BE9A320D9A772CC73EEDB53454A60D83E6436DEE5949999A8AD1F8E0D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTICS_UUID_FOR_NOTIFY / d2dNotifyUUID`."
+            }
+        ],
+        "parent_UUID": "c598cfbc-2232-11ed-861d-0242ac120002"
+    },
+    {
         "UUID": "d7c49c48-8ddd-3578-1ee2-336a015c7dac",
         "company": "Bluetees",
         "UUID_name": "BackDistWriteCharacter",
@@ -7483,8 +7797,8 @@
     },
     {
         "UUID": "d24b6ec0-d55a-11e5-8476-0002a5d5c51b",
-        "company": "Third-party SDK code (declared in Java package `com.blueparrott.blueparrottsdk` — distinct from host com.attofficeathand.android; Phase-4 identification needed)",
-        "UUID_name": "appkey",
+        "company": "GN Audio",
+        "UUID_name": "BLUEPARROTT_PARTNER_APP_KEY",
         "UUID_purpose": "GATT Characteristic observed in Android app com.attofficeathand.android but declared in third-party SDK package `com.blueparrott.blueparrottsdk`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -7521,6 +7835,38 @@
             {
                 "description": "Found in decompiled DEX of com.ringcentral.intune v23.4.20.25931 (versionCode 624025931), declared in Java package `com.blueparrott.blueparrottsdk` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.reactmobile.hospitality v2.5.06.4 (versionCode 25064), in Java field `S`, declared in Java package `com.zello.ui.blueparrott` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lstllc.apps.android.mcare v2.114 (versionCode 291), declared in Java package `com.blueparrott.blueparrottsdk` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.nineteenlabs.gale vr.1.20.2.prd-BYOD-9-gbb64ae8ff (versionCode 120050002), declared in Java package `com.blueparrott.blueparrottsdk` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.reactmobile.hospitality",
+                "description": "Verified current Google Play listing for com.reactmobile.hospitality. This listing does not establish that archived APK version 2.5.06.4 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.lstllc.apps.android.mcare",
+                "description": "Verified current Google Play listing for com.lstllc.apps.android.mcare. This listing does not establish that archived APK version 2.114 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.nineteenlabs.gale",
+                "description": "Verified current Google Play listing for com.nineteenlabs.gale. This listing does not establish that archived APK version r.1.20.2.prd-BYOD-9-gbb64ae8ff is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://blueparrott-developer.net/Home/InterfaceSpecificationBLE",
+                "description": "Phase-4 ownership review of the exact 128-bit UUID in reviewed c19_gn_audio_blueparrott protocol source and Android DEX evidence attributes this UUID to GN Audio. The vendor page establishes the product/protocol context; the exact UUID attribution also uses the cited DEX fields.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -7578,6 +7924,27 @@
                 "version_code": 624025931,
                 "version_name": "23.4.20.25931",
                 "package_path": "BLUUID_APKS/0675/f93e485fc8e63b04febd837fce96b625a9c3493d2c9ee9c9f3001342a3eaf33b/f93e485fc8e63b04febd837fce96b625a9c3493d2c9ee9c9f3001342a3eaf33b.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.reactmobile.hospitality",
+                "version_code": 25064,
+                "version_name": "2.5.06.4",
+                "package_path": "AndroZoo/apks/13/com.reactmobile.hospitality_133372F359E585802EC5E3206E8C835614B6419BB928003C2E88F3E45BBE652F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `S`."
+            },
+            {
+                "package_id": "com.lstllc.apps.android.mcare",
+                "version_code": 291,
+                "version_name": "2.114",
+                "package_path": "AndroZoo/apks/bd/com.lstllc.apps.android.mcare_BDFCBF3FB5FEF815D5A5C7A98C54EA87F390FB7994BFA653FCCCF09351A9D59A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.nineteenlabs.gale",
+                "version_code": 120050002,
+                "version_name": "r.1.20.2.prd-BYOD-9-gbb64ae8ff",
+                "package_path": "AndroZoo/apks/25/com.nineteenlabs.gale_25F86270927B773FE7704A1ED665B66FDFA63D91AE6F2FE8FBED1EFBA5A632FB.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
             }
         ],
@@ -7642,31 +8009,6 @@
             }
         ],
         "parent_UUID": "a76eb9e0-f3ac-4990-84cf-3a94d2426b2b"
-    },
-    {
-        "UUID": "d0eea519-86a3-4eed-ad08-6afa05d836eb",
-        "company": "Third-party SDK code (declared in Java package `com.logitech.ue.centurion.ble` — distinct from host com.astrogaming.scorpius; Phase-4 identification needed)",
-        "UUID_name": "RO_AUTHORIZE_CHARACTERISTIC",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.astrogaming.scorpius but declared in third-party SDK package `com.logitech.ue.centurion.ble` as Java field `RO_AUTHORIZE_CHARACTERISTIC`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(RO_AUTHORIZE_CHARACTERISTIC).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.astrogaming.scorpius v2.0.5 (versionCode 15), in Java field `RO_AUTHORIZE_CHARACTERISTIC`, declared in Java package `com.logitech.ue.centurion.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(RO_AUTHORIZE_CHARACTERISTIC).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.astrogaming.scorpius",
-                "version_code": 15,
-                "version_name": "2.0.5",
-                "package_path": "BLUUID_APKS/0644/01f6bf3d25876a65a3bf7e4a380497ab5774cce1618c55fb1242012308e73c4c/01f6bf3d25876a65a3bf7e4a380497ab5774cce1618c55fb1242012308e73c4c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `RO_AUTHORIZE_CHARACTERISTIC`."
-            }
-        ],
-        "parent_UUID": "1b7e8251-2877-41c3-b46e-cf057c562023"
     },
     {
         "UUID": "d7372459-d4b8-4f17-9b3b-237b1cd4ba2f",
@@ -8030,6 +8372,15 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): — smart-scale BLE SDK (JD product line)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.yuwell.uhealth v3.1.13 (versionCode 3113), in Java field `GLUCOSE_MEASURE_TYPE`. Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.yuwell.uhealth",
+                "description": "Verified current Google Play listing for com.yuwell.uhealth. This listing does not establish that archived APK version 3.1.13 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -8039,6 +8390,13 @@
                 "version_name": "3.1.13",
                 "package_path": "BLUUID_APKS/0009/f4b14082e9b7f0f30e98b9015bb7ad8db7fd91df5e9ad470dab630650661f464/f4b14082e9b7f0f30e98b9015bb7ad8db7fd91df5e9ad470dab630650661f464.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.yuwell.uhealth",
+                "version_code": 3113,
+                "version_name": "3.1.13",
+                "package_path": "AndroZoo/apks/7f/com.yuwell.uhealth_7FE7C134C78C4CD18867815A1C0C825EC64C077CF854D12EA107999ABAF0F682.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `GLUCOSE_MEASURE_TYPE`."
             }
         ],
         "parent_UUID": "6e40fc00-b5a3-f393-e0a9-e50e24dcca9e"
@@ -8108,6 +8466,15 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): — smart-scale BLE SDK (JD product line)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.yuwell.uhealth v3.1.13 (versionCode 3113), in Java field `BLOOD_GLUCOSE_MEASUREMMENT_TYPE`. Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.yuwell.uhealth",
+                "description": "Verified current Google Play listing for com.yuwell.uhealth. This listing does not establish that archived APK version 3.1.13 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -8117,6 +8484,13 @@
                 "version_name": "3.1.13",
                 "package_path": "BLUUID_APKS/0009/f4b14082e9b7f0f30e98b9015bb7ad8db7fd91df5e9ad470dab630650661f464/f4b14082e9b7f0f30e98b9015bb7ad8db7fd91df5e9ad470dab630650661f464.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.yuwell.uhealth",
+                "version_code": 3113,
+                "version_name": "3.1.13",
+                "package_path": "AndroZoo/apks/7f/com.yuwell.uhealth_7FE7C134C78C4CD18867815A1C0C825EC64C077CF854D12EA107999ABAF0F682.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BLOOD_GLUCOSE_MEASUREMMENT_TYPE`."
             }
         ]
     },
@@ -8378,7 +8752,7 @@
     },
     {
         "UUID": "d44bc439-abfd-45a2-b575-925416129601",
-        "company": "Third-party SDK code (declared in Java package `cn.com.heaton.blelibrary.ble` — distinct from host com.emsfit.way8.online.newVersion.SportTecFrance; Phase-4 identification needed)",
+        "company": "NXP Semiconductors",
         "UUID_name": "uuid_notify_cha / NOTIFY1_UUID_V2 / rxCharacteristicsIdentifier / ZYLIGHT_UUID_READ_CHAR",
         "UUID_purpose": "GATT Characteristic observed in Android app com.emsfit.way8.online.newVersion.SportTecFrance but declared in third-party SDK package `cn.com.heaton.blelibrary.ble` as Java field `uuid_notify`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
         "UUID_usage_array": [
@@ -8677,6 +9051,42 @@
             {
                 "description": "Found in decompiled DEX of com.emsfit.way8.online.newVersion.GetBusy v4.1 (versionCode 4), in Java field `uuid_notify`, declared in Java package `cn.com.heaton.blelibrary.ble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.aldi_project v1.0.77 (versionCode 79), in Java field `ANALOG_WATCH_NOTIFICATION`, declared in Java package `com.analog.ble` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of es.lifevit.valuecare v1.0.0 (versionCode 195), in Java field `UUID_QUINTIC_BLE_SERVICE_4_READ`, declared in Java package `es.inmovens.daga.model.BluetoothLeDevices` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of in.janitri.wardapp.daksh vv4.41.0.642 (versionCode 642), in Java field `UUID_READ`. Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.renpho.health v7.9.9 (versionCode 821), in Java field `uuid_notify_cha`. Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=es.lifevit.valuecare",
+                "description": "Verified current Google Play listing for es.lifevit.valuecare. This listing does not establish that archived APK version 1.0.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=in.janitri.wardapp.daksh",
+                "description": "Verified current Google Play listing for in.janitri.wardapp.daksh. This listing does not establish that archived APK version v4.41.0.642 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.renpho.health",
+                "description": "Verified current Google Play listing for com.renpho.health. This listing does not establish that archived APK version 7.9.9 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://www.nxp.com/docs/en/application-note/AN11846.pdf",
+                "description": "Phase-4 ownership review of the exact 128-bit UUID in reviewed c10_nxp_qpp protocol source and Android DEX evidence attributes this UUID to NXP Semiconductors. The vendor page establishes the product/protocol context; the exact UUID attribution also uses the cited DEX fields.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -9183,6 +9593,34 @@
                 "version_name": "4.1",
                 "package_path": "BLUUID_APKS/0997/8268b5807d4fa24f7b153f71718d6e273bbcef330e1be7099a3cac5b3192e92a/8268b5807d4fa24f7b153f71718d6e273bbcef330e1be7099a3cac5b3192e92a.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuid_notify`."
+            },
+            {
+                "package_id": "com.aldi_project",
+                "version_code": 79,
+                "version_name": "1.0.77",
+                "package_path": "AndroZoo/apks/45/com.aldi_project_4536038C856F7290F4D1B71C10B8234CFCDC69C8832AA93D458E90BF1493B343.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ANALOG_WATCH_NOTIFICATION`."
+            },
+            {
+                "package_id": "es.lifevit.valuecare",
+                "version_code": 195,
+                "version_name": "1.0.0",
+                "package_path": "AndroZoo/apks/62/es.lifevit.valuecare_6226FCAC0F62AFC0C5E4C5BB763B51A70743390A258004111F0EC4CCA10E3C1D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_QUINTIC_BLE_SERVICE_4_READ`."
+            },
+            {
+                "package_id": "in.janitri.wardapp.daksh",
+                "version_code": 642,
+                "version_name": "v4.41.0.642",
+                "package_path": "AndroZoo/apks/59/in.janitri.wardapp.daksh_599CD987845D3B1A1D55E5343232507BB9D89E546945C50970351C5A80445DE0.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_READ`."
+            },
+            {
+                "package_id": "com.renpho.health",
+                "version_code": 821,
+                "version_name": "7.9.9",
+                "package_path": "AndroZoo/apks/04/com.renpho.health_04D6E2E47ED0F90F916C62C47C70680D79510A852E4AE35E83DFAE919A33F78E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuid_notify_cha`."
             }
         ],
         "parent_UUID": "6e400001-b5a3-f393-e0a9-e50e24dcca9e"
@@ -9890,7 +10328,7 @@
     },
     {
         "UUID": "d44bc439-abfd-45a2-b575-925416129600",
-        "company": "Third-party SDK code (declared in Java package `cn.com.heaton.blelibrary.ble` — distinct from host com.emsfit.way8.online.newVersion.SportTecFrance; Phase-4 identification needed)",
+        "company": "NXP Semiconductors",
         "UUID_name": "qppWriteCharacteristic / WRITE_UUID_V2 / uuid_write_cha / UUID_WRITE1_CHA",
         "UUID_purpose": "GATT Characteristic observed in Android app com.emsfit.way8.online.newVersion.SportTecFrance but declared in third-party SDK package `cn.com.heaton.blelibrary.ble` as Java field `uuid_write_cha`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
         "UUID_usage_array": [
@@ -10201,6 +10639,42 @@
             {
                 "description": "Found in decompiled DEX of com.emsfit.way8.online.newVersion.GetBusy v4.1 (versionCode 4), in Java field `uuid_write_cha`, declared in Java package `cn.com.heaton.blelibrary.ble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.aldi_project v1.0.77 (versionCode 79), in Java field `ANALOG_WATCH_NOTIFICATION_WRITE`, declared in Java package `com.quintic.libota` (third-party SDK). Classification source: cross-file usage:getCharacteristic(ANALOG_WATCH_NOTIFICATION_WRITE).",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of es.lifevit.valuecare v1.0.0 (versionCode 195), in Java field `UUID_QUINTIC_BLE_SERVICE_4_SEND`, declared in Java package `es.inmovens.daga.model.BluetoothLeDevices` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of in.janitri.wardapp.daksh vv4.41.0.642 (versionCode 642), in Java field `UUID_WRITE`. Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.renpho.health v7.9.9 (versionCode 821), in Java field `uuid_write_cha`. Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=es.lifevit.valuecare",
+                "description": "Verified current Google Play listing for es.lifevit.valuecare. This listing does not establish that archived APK version 1.0.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=in.janitri.wardapp.daksh",
+                "description": "Verified current Google Play listing for in.janitri.wardapp.daksh. This listing does not establish that archived APK version v4.41.0.642 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.renpho.health",
+                "description": "Verified current Google Play listing for com.renpho.health. This listing does not establish that archived APK version 7.9.9 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://www.nxp.com/docs/en/application-note/AN11846.pdf",
+                "description": "Phase-4 ownership review of the exact 128-bit UUID in reviewed c10_nxp_qpp protocol source and Android DEX evidence attributes this UUID to NXP Semiconductors. The vendor page establishes the product/protocol context; the exact UUID attribution also uses the cited DEX fields.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -10727,6 +11201,34 @@
                 "version_code": 4,
                 "version_name": "4.1",
                 "package_path": "BLUUID_APKS/0997/8268b5807d4fa24f7b153f71718d6e273bbcef330e1be7099a3cac5b3192e92a/8268b5807d4fa24f7b153f71718d6e273bbcef330e1be7099a3cac5b3192e92a.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuid_write_cha`."
+            },
+            {
+                "package_id": "com.aldi_project",
+                "version_code": 79,
+                "version_name": "1.0.77",
+                "package_path": "AndroZoo/apks/45/com.aldi_project_4536038C856F7290F4D1B71C10B8234CFCDC69C8832AA93D458E90BF1493B343.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ANALOG_WATCH_NOTIFICATION_WRITE`."
+            },
+            {
+                "package_id": "es.lifevit.valuecare",
+                "version_code": 195,
+                "version_name": "1.0.0",
+                "package_path": "AndroZoo/apks/62/es.lifevit.valuecare_6226FCAC0F62AFC0C5E4C5BB763B51A70743390A258004111F0EC4CCA10E3C1D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_QUINTIC_BLE_SERVICE_4_SEND`."
+            },
+            {
+                "package_id": "in.janitri.wardapp.daksh",
+                "version_code": 642,
+                "version_name": "v4.41.0.642",
+                "package_path": "AndroZoo/apks/59/in.janitri.wardapp.daksh_599CD987845D3B1A1D55E5343232507BB9D89E546945C50970351C5A80445DE0.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_WRITE`."
+            },
+            {
+                "package_id": "com.renpho.health",
+                "version_code": 821,
+                "version_name": "7.9.9",
+                "package_path": "AndroZoo/apks/04/com.renpho.health_04D6E2E47ED0F90F916C62C47C70680D79510A852E4AE35E83DFAE919A33F78E.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuid_write_cha`."
             }
         ],
@@ -28945,6 +29447,66 @@
         "parent_UUID": "6c2b0c9c-fdaa-4375-8268-268b353853ee"
     },
     {
+        "UUID": "d474d4dc-2d5e-459c-9b34-00ab073ab5f3",
+        "company": "FIOR \\u0026 GENTZ",
+        "UUID_name": "devInfoServUUID_ET3860",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app de.fior_gentz.neurotronic, declared as Java field `devInfoServUUID_ET3860`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of de.fior_gentz.neurotronic v2.2.0 (versionCode 64), in Java field `devInfoServUUID_ET3860`. Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=de.fior_gentz.neurotronic",
+                "description": "Verified current Google Play listing for de.fior_gentz.neurotronic. This listing does not establish that archived APK version 2.2.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.fior_gentz.neurotronic",
+                "version_code": 64,
+                "version_name": "2.2.0",
+                "package_path": "AndroZoo/apks/1b/de.fior_gentz.neurotronic_1BCEC693F4E37D591060C3A7FD934B7C86A38B221FD9AEB216F2405F714A23C2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `devInfoServUUID_ET3860`."
+            }
+        ],
+        "parent_UUID": "107fc7af-cfad-489f-bac3-b65d5748013e"
+    },
+    {
+        "UUID": "df4b35d3-a22c-4345-824d-86bc113fd040",
+        "company": "FIOR \\u0026 GENTZ",
+        "UUID_name": "devInfoManufacturerNameUUID_ET3860",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app de.fior_gentz.neurotronic, declared as Java field `devInfoManufacturerNameUUID_ET3860`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of de.fior_gentz.neurotronic v2.2.0 (versionCode 64), in Java field `devInfoManufacturerNameUUID_ET3860`. Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=de.fior_gentz.neurotronic",
+                "description": "Verified current Google Play listing for de.fior_gentz.neurotronic. This listing does not establish that archived APK version 2.2.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.fior_gentz.neurotronic",
+                "version_code": 64,
+                "version_name": "2.2.0",
+                "package_path": "AndroZoo/apks/1b/de.fior_gentz.neurotronic_1BCEC693F4E37D591060C3A7FD934B7C86A38B221FD9AEB216F2405F714A23C2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `devInfoManufacturerNameUUID_ET3860`."
+            }
+        ],
+        "parent_UUID": "107fc7af-cfad-489f-bac3-b65d5748013e"
+    },
+    {
         "UUID": "d813bf66-5e61-188c-3d47-2487320a8b6e",
         "company": "FLIR Systems Aktiebolag",
         "UUID_name": "METERLINK_SERVICE_UUID_STRING",
@@ -29666,6 +30228,10 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: l.java:259 changed value broadcast/handler; l.java:261 changed value broadcast/handler; l.java:264 changed value broadcast/handler; l.java:265 changed value broadcast/handler",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of de.qurasoft.saniq v1.12.3 (versionCode 2022052386), in Java field `f34709f`, declared in Java package `com.garmin.le` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
             }
         ],
         "android_info_array": [
@@ -29766,6 +30332,13 @@
                 "version_name": "2.25",
                 "package_path": "BLUUID_APKS/0982/0428f513c7a5f5c8c07dac675ca71cafd4668cde9c24e86c068ec4d2c7c2c6ad/0428f513c7a5f5c8c07dac675ca71cafd4668cde9c24e86c068ec4d2c7c2c6ad.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `b`."
+            },
+            {
+                "package_id": "de.qurasoft.saniq",
+                "version_code": 2022052386,
+                "version_name": "1.12.3",
+                "package_path": "AndroZoo/apks/c0/de.qurasoft.saniq_C052CBCCBE4B0E103EF49E9E7B040A526E76DBA82E015B6D74655B4AA7F21F39.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f34709f`."
             }
         ]
     },
@@ -29926,6 +30499,65 @@
             }
         ],
         "parent_UUID": "8a97f7c0-8506-11e3-baa7-0800200c9a66"
+    },
+    {
+        "UUID": "d7be942a-58ca-11ea-8e2d-0242ac130003",
+        "company": "Hearing Lab Technology, LLC",
+        "UUID_name": "CHARACTERISTIC_SELECTED_PROGRAM_NAME",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.aliasapps.lucidhearing, declared as Java field `CHARACTERISTIC_SELECTED_PROGRAM_NAME`. Classification determined by field-name:CHARACTERISTIC_SELECTED_PROGRAM_NAME.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.aliasapps.lucidhearing v3.4.6 (versionCode 330), in Java field `CHARACTERISTIC_SELECTED_PROGRAM_NAME`. Classification source: field-name:CHARACTERISTIC_SELECTED_PROGRAM_NAME.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.aliasapps.lucidhearing",
+                "description": "Verified current Google Play listing for com.aliasapps.lucidhearing. This listing does not establish that archived APK version 3.4.6 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.aliasapps.lucidhearing",
+                "version_code": 330,
+                "version_name": "3.4.6",
+                "package_path": "AndroZoo/apks/db/com.aliasapps.lucidhearing_DB122FD2601A7168D7C9549B1D68482BE426376515259852914F70EDA5942298.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_SELECTED_PROGRAM_NAME`."
+            }
+        ],
+        "parent_UUID": "02fa99fd-91d7-4b41-9afe-2cb8f1e6e369"
+    },
+    {
+        "UUID": "dda9a9bd-367a-4378-bbd6-2abf4bd3c637",
+        "company": "Hearing Lab Technology, LLC",
+        "UUID_name": "SERVICE_PICO_CASE_INFO_SERVICE",
+        "UUID_purpose": "Custom GATT Service observed in Android app com.aliasapps.lucidhearing, declared as Java field `SERVICE_PICO_CASE_INFO_SERVICE`. Classification determined by field-name:SERVICE_PICO_CASE_INFO_SERVICE.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.aliasapps.lucidhearing v3.4.6 (versionCode 330), in Java field `SERVICE_PICO_CASE_INFO_SERVICE`. Classification source: field-name:SERVICE_PICO_CASE_INFO_SERVICE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.aliasapps.lucidhearing",
+                "description": "Verified current Google Play listing for com.aliasapps.lucidhearing. This listing does not establish that archived APK version 3.4.6 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.aliasapps.lucidhearing",
+                "version_code": 330,
+                "version_name": "3.4.6",
+                "package_path": "AndroZoo/apks/db/com.aliasapps.lucidhearing_DB122FD2601A7168D7C9549B1D68482BE426376515259852914F70EDA5942298.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SERVICE_PICO_CASE_INFO_SERVICE`."
+            }
+        ]
     },
     {
         "UUID": "db01",
@@ -30090,6 +30722,33 @@
             {
                 "description": "Found in decompiled DEX of com.qcwireless.qcwatch v1.0.2.32 (versionCode 109), in Java field `SERIAL_PORT_CHAREACTER_NOTIRY / SERIAL_PORT_CHARACTER_NOTIFY`, declared in Java package `com.oudmon.ble.base.communication.dfu_temperature` (third-party SDK). Classification source: field-name:SERIAL_PORT_CHARACTER_NOTIFY.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cerashealth.ceras v1.2.22 (versionCode 71), in Java field `f2025h`, declared in Java package `com.walnutin.hardsdk.ProductList` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cerashealth.imhomev2 v1.0.10 (versionCode 63), in Java field `f15405h`, declared in Java package `com.walnutin.hardsdk.ProductList` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.beebirdhome.home v110.1.13 (versionCode 110), in Java field `SERIAL_PORT_CHAREACTER_NOTIRY / SERIAL_PORT_CHARACTER_NOTIFY`, declared in Java package `com.oudmon.ble.base.communication.dfu_temperature` (third-party SDK). Classification source: field-name:SERIAL_PORT_CHAREACTER_NOTIRY.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cerashealth.ceras",
+                "description": "Verified current Google Play listing for com.cerashealth.ceras. This listing does not establish that archived APK version 1.2.22 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cerashealth.imhomev2",
+                "description": "Verified current Google Play listing for com.cerashealth.imhomev2. This listing does not establish that archived APK version 1.0.10 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.beebirdhome.home",
+                "description": "Verified current Google Play listing for com.beebirdhome.home. This listing does not establish that archived APK version 110.1.13 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -30134,6 +30793,27 @@
                 "version_name": "1.0.2.32",
                 "package_path": "BLUUID_APKS/0947/2283ee399de9b96df85750cac669b3583397ed684cacbde135fdca157846b17c/2283ee399de9b96df85750cac669b3583397ed684cacbde135fdca157846b17c.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERIAL_PORT_CHAREACTER_NOTIRY / SERIAL_PORT_CHARACTER_NOTIFY`."
+            },
+            {
+                "package_id": "com.cerashealth.ceras",
+                "version_code": 71,
+                "version_name": "1.2.22",
+                "package_path": "AndroZoo/apks/e5/com.cerashealth.ceras_E55F333A0431504EDBE867E9D1991F0A6847B865FDFE6C72033D3C1BE954671B.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f2025h`."
+            },
+            {
+                "package_id": "com.cerashealth.imhomev2",
+                "version_code": 63,
+                "version_name": "1.0.10",
+                "package_path": "AndroZoo/apks/65/com.cerashealth.imhomev2_6575A7D600E01BD71A5946528BA970FCFA1E930807DEF10777EE797B5BF4BCAD.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f15405h`."
+            },
+            {
+                "package_id": "com.beebirdhome.home",
+                "version_code": 110,
+                "version_name": "110.1.13",
+                "package_path": "AndroZoo/apks/7c/com.beebirdhome.home_7CC8AE4A3E3CBE43F81D7BC4AEEB361135484C62AD0C9575F3F1B1614502DC14.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERIAL_PORT_CHAREACTER_NOTIRY / SERIAL_PORT_CHARACTER_NOTIFY`."
             }
         ],
         "parent_UUID": "000002fd-3c17-d293-8e48-14fe2e4da212"
@@ -30170,6 +30850,33 @@
             {
                 "description": "Found in decompiled DEX of com.qcwireless.qcwatch v1.0.2.32 (versionCode 109), in Java field `SERIAL_PORT_CHAREACTER_WRITE / SERIAL_PORT_CHARACTER_WRITE`, declared in Java package `com.oudmon.ble.base.communication.dfu_temperature` (third-party SDK). Classification source: field-name:SERIAL_PORT_CHARACTER_WRITE.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cerashealth.ceras v1.2.22 (versionCode 71), in Java field `f2026i`, declared in Java package `com.walnutin.hardsdk.ProductList` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cerashealth.imhomev2 v1.0.10 (versionCode 63), in Java field `i`, declared in Java package `com.walnutin.hardsdk.ProductList` (third-party SDK). Classification source: cross-file usage:getService(i).",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.beebirdhome.home v110.1.13 (versionCode 110), in Java field `SERIAL_PORT_CHAREACTER_WRITE / SERIAL_PORT_CHARACTER_WRITE`, declared in Java package `com.oudmon.ble.base.communication.dfu_temperature` (third-party SDK). Classification source: field-name:SERIAL_PORT_CHAREACTER_WRITE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cerashealth.ceras",
+                "description": "Verified current Google Play listing for com.cerashealth.ceras. This listing does not establish that archived APK version 1.2.22 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cerashealth.imhomev2",
+                "description": "Verified current Google Play listing for com.cerashealth.imhomev2. This listing does not establish that archived APK version 1.0.10 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.beebirdhome.home",
+                "description": "Verified current Google Play listing for com.beebirdhome.home. This listing does not establish that archived APK version 110.1.13 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -30213,6 +30920,27 @@
                 "version_code": 109,
                 "version_name": "1.0.2.32",
                 "package_path": "BLUUID_APKS/0947/2283ee399de9b96df85750cac669b3583397ed684cacbde135fdca157846b17c/2283ee399de9b96df85750cac669b3583397ed684cacbde135fdca157846b17c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERIAL_PORT_CHAREACTER_WRITE / SERIAL_PORT_CHARACTER_WRITE`."
+            },
+            {
+                "package_id": "com.cerashealth.ceras",
+                "version_code": 71,
+                "version_name": "1.2.22",
+                "package_path": "AndroZoo/apks/e5/com.cerashealth.ceras_E55F333A0431504EDBE867E9D1991F0A6847B865FDFE6C72033D3C1BE954671B.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f2026i`."
+            },
+            {
+                "package_id": "com.cerashealth.imhomev2",
+                "version_code": 63,
+                "version_name": "1.0.10",
+                "package_path": "AndroZoo/apks/65/com.cerashealth.imhomev2_6575A7D600E01BD71A5946528BA970FCFA1E930807DEF10777EE797B5BF4BCAD.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `i`."
+            },
+            {
+                "package_id": "com.beebirdhome.home",
+                "version_code": 110,
+                "version_name": "110.1.13",
+                "package_path": "AndroZoo/apks/7c/com.beebirdhome.home_7CC8AE4A3E3CBE43F81D7BC4AEEB361135484C62AD0C9575F3F1B1614502DC14.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERIAL_PORT_CHAREACTER_WRITE / SERIAL_PORT_CHARACTER_WRITE`."
             }
         ],
@@ -31754,6 +32482,88 @@
         ]
     },
     {
+        "UUID": "d459",
+        "company": "Lepu Medical",
+        "UUID_name": "CMB590611_SERVICE",
+        "UUID_purpose": "GATT Service observed in Android app com.medtechglobal.managemyhealth.uk but declared in third-party SDK package `doa` as Java field `uuidFromString`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default. Phase-4 SDK identification: LepuBle SDK code in com.lepu.blepro; the included UUID subset is directly declared in Lepu BLE managers..",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.medtechglobal.managemyhealth.uk v5.0.1 (versionCode 295), in Java field `uuidFromString`, declared in Java package `doa` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.viatom.vihealth v2.75.66 (versionCode 334), in Java field `uuidFromString`, declared in Java package `com.lepu.blepro.ble` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of in.janitri.mothers v3.6.1.154 (versionCode 154), in Java field `uuidFromString`, declared in Java package `doa` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of in.janitri.wardapp.daksh vv4.41.0.642 (versionCode 642), in Java field `uuidFromString`, declared in Java package `doa` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.medtechglobal.managemyhealth.uk",
+                "description": "Verified current Google Play listing for com.medtechglobal.managemyhealth.uk. This listing does not establish that archived APK version 5.0.1 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.viatom.vihealth",
+                "description": "Verified current Google Play listing for com.viatom.vihealth. This listing does not establish that archived APK version 2.75.66 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=in.janitri.mothers",
+                "description": "Verified current Google Play listing for in.janitri.mothers. This listing does not establish that archived APK version 3.6.1.154 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=in.janitri.wardapp.daksh",
+                "description": "Verified current Google Play listing for in.janitri.wardapp.daksh. This listing does not establish that archived APK version v4.41.0.642 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/viatomEcho/LepuBle",
+                "description": "Phase-4 GPT-6 Luna ownership review: matched this exact UUID in the APK's BLE implementation to the Lepu Medical protocol; the linked vendor source supports the protocol or product context.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.medtechglobal.managemyhealth.uk",
+                "version_code": 295,
+                "version_name": "5.0.1",
+                "package_path": "AndroZoo/apks/b3/com.medtechglobal.managemyhealth.uk_B388F392F5D0D1229BA5F052E3572804880F7AFB084F5EF05950749EB95A21E9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidFromString`."
+            },
+            {
+                "package_id": "com.viatom.vihealth",
+                "version_code": 334,
+                "version_name": "2.75.66",
+                "package_path": "AndroZoo/apks/f8/com.viatom.vihealth_F87F0B9E9C2AAFF011214DACEF495E65FCA89549FEB7FFBD28ED1D2A9EE8A2F3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidFromString`."
+            },
+            {
+                "package_id": "in.janitri.mothers",
+                "version_code": 154,
+                "version_name": "3.6.1.154",
+                "package_path": "AndroZoo/apks/66/in.janitri.mothers_6604702496F7E4D279B1CEF3F3AF149FD8DCB12993A63E2A41C528C82A6BE2B4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidFromString`."
+            },
+            {
+                "package_id": "in.janitri.wardapp.daksh",
+                "version_code": 642,
+                "version_name": "v4.41.0.642",
+                "package_path": "AndroZoo/apks/59/in.janitri.wardapp.daksh_599CD987845D3B1A1D55E5343232507BB9D89E546945C50970351C5A80445DE0.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidFromString`."
+            }
+        ]
+    },
+    {
         "UUID": "de7bf61a-5eac-4cda-94ea-f18212483dd2",
         "company": "MTS Pjsc",
         "UUID_name": "MARVIN_SERVICE_TO_FIND",
@@ -31866,6 +32676,86 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `C_KEY_POST_WALK_OXY_TASK`."
             }
         ]
+    },
+    {
+        "UUID": "dcb8d975-1314-5572-2edf-cd7cd80eb52d",
+        "company": "UTM:Healthcare",
+        "UUID_name": "UUID_MODIFY_BT_NAME",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.utm.rpm, declared as Java field `UUID_MODIFY_BT_NAME`. Classification determined by cross-file usage:getCharacteristic(UUID_MODIFY_BT_NAME).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.utm.rpm v3.0.30 (versionCode 53), in Java field `UUID_MODIFY_BT_NAME`. Classification source: cross-file usage:getCharacteristic(UUID_MODIFY_BT_NAME).",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.utm.rpm",
+                "description": "Verified current Google Play listing for com.utm.rpm. This listing does not establish that archived APK version 3.0.30 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.utm.rpm",
+                "version_code": 53,
+                "version_name": "3.0.30",
+                "package_path": "AndroZoo/apks/6d/com.utm.rpm_6D30603D8C846C6EE6D61321903EF2A345056CEF0991895B25558639F4EA6417.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_MODIFY_BT_NAME`."
+            }
+        ],
+        "parent_UUID": "233bf000-5a34-1b6d-975c-000d5690abe4"
+    },
+    {
+        "UUID": "d3cb0a40-008b-11e3-8007-0002a5d5c51b",
+        "company": "Medtronic (inferred from package id)",
+        "UUID_name": "SENSOR_EXPIRATION",
+        "UUID_purpose": "Guardian Connect characteristic labeled SENSOR_EXPIRATION; source operation d(..., G, SENSOR_EXPIRATION); h3.java:72,921-923. Parent is service b0202e40-008b-11e3-a5f3-0002a5d5c51b.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Exact archive APK AndroZoo/apks/c1/com.medtronic.diabetes.guardianconnect.us_C10E0C28E457A0EBB88D5D64A358B335A0A23876154F0BA5D924790F99E4D858.apk; Exact APK SHA-256 c10e0c28e457a0ebb88d5d64a358b335a0a23876154f0ba5d924790f99e4d858: sources/com/medtronic/guardian/services/bluetooth/c0/g/h3.java:h3.java:72,921-923 defines the UUID and direct label; sources/com/medtronic/guardian/services/bluetooth/c0/e/f1.java:22-63 performs GATT reads and :115-140 sets up indications. This is a characteristic under service b0202e40-008b-11e3-a5f3-0002a5d5c51b.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.medtronic.diabetes.guardianconnect.us",
+                "version_code": 3326,
+                "version_name": "4.3.0",
+                "package_path": "AndroZoo/apks/c1/com.medtronic.diabetes.guardianconnect.us_C10E0C28E457A0EBB88D5D64A358B335A0A23876154F0BA5D924790F99E4D858.apk",
+                "description": "Directly reviewed in archived Guardian Connect 4.3.0 APK; source-backed GATT Characteristic mapping."
+            }
+        ],
+        "parent_UUID": "b0202e40-008b-11e3-a5f3-0002a5d5c51b"
+    },
+    {
+        "UUID": "d8b8f120-008b-11e3-bda3-0002a5d5c51b",
+        "company": "Medtronic (inferred from package id)",
+        "UUID_name": "NON_CRITICAL_OPS",
+        "UUID_purpose": "Guardian Connect characteristic labeled NON_CRITICAL_OPS; source operation i(..., A, ..., NON_CRITICAL_OPS); h3.java:66,364-366. Parent is service b0202e40-008b-11e3-a5f3-0002a5d5c51b.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Exact archive APK AndroZoo/apks/c1/com.medtronic.diabetes.guardianconnect.us_C10E0C28E457A0EBB88D5D64A358B335A0A23876154F0BA5D924790F99E4D858.apk; Exact APK SHA-256 c10e0c28e457a0ebb88d5d64a358b335a0a23876154f0ba5d924790f99e4d858: sources/com/medtronic/guardian/services/bluetooth/c0/g/h3.java:h3.java:66,364-366 defines the UUID and direct label; sources/com/medtronic/guardian/services/bluetooth/c0/e/f1.java:22-63 performs GATT reads and :115-140 sets up indications. This is a characteristic under service b0202e40-008b-11e3-a5f3-0002a5d5c51b.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.medtronic.diabetes.guardianconnect.us",
+                "version_code": 3326,
+                "version_name": "4.3.0",
+                "package_path": "AndroZoo/apks/c1/com.medtronic.diabetes.guardianconnect.us_C10E0C28E457A0EBB88D5D64A358B335A0A23876154F0BA5D924790F99E4D858.apk",
+                "description": "Directly reviewed in archived Guardian Connect 4.3.0 APK; source-backed GATT Characteristic mapping."
+            }
+        ],
+        "parent_UUID": "b0202e40-008b-11e3-a5f3-0002a5d5c51b"
     },
     {
         "UUID": "df444d48-ae6b-494e-a95c-50a4a0055d30",
@@ -32604,6 +33494,15 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Chinese smart spin-bike vendor; BLE for cadence/resistance to phone app)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.renpho.health v7.9.9 (versionCode 821), in Java field `fitnessExtensionData`. Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.renpho.health",
+                "description": "Verified current Google Play listing for com.renpho.health. This listing does not establish that archived APK version 7.9.9 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -32619,6 +33518,13 @@
                 "version_code": 190,
                 "version_name": "5.18.6",
                 "package_path": "BLUUID_APKS/0422/071c9f8409cf5d1186b26e2a61a63cfe956bf697bf8628f872723c4a003ba7bd/071c9f8409cf5d1186b26e2a61a63cfe956bf697bf8628f872723c4a003ba7bd.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `fitnessExtensionData`."
+            },
+            {
+                "package_id": "com.renpho.health",
+                "version_code": 821,
+                "version_name": "7.9.9",
+                "package_path": "AndroZoo/apks/04/com.renpho.health_04D6E2E47ED0F90F916C62C47C70680D79510A852E4AE35E83DFAE919A33F78E.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `fitnessExtensionData`."
             }
         ],
@@ -32846,6 +33752,15 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (blood-pressure/health device SDK)"
+            },
+            {
+                "description": "Found in decompiled DEX of nl.focuscura.beeldbelapp v5.74.1 (versionCode 29752190), in Java field `f1518v`, declared in Java package `Bi` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=nl.focuscura.beeldbelapp",
+                "description": "Verified current Google Play listing for nl.focuscura.beeldbelapp. This listing does not establish that archived APK version 5.74.1 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -32911,6 +33826,13 @@
                 "version_name": "1.1.0",
                 "package_path": "BLUUID_APKS/0873/34cd33e11583e4ad4570c2fc06ae408726fdc432cc1444dd6ec02d774efb1315/34cd33e11583e4ad4570c2fc06ae408726fdc432cc1444dd6ec02d774efb1315.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f125918z2`."
+            },
+            {
+                "package_id": "nl.focuscura.beeldbelapp",
+                "version_code": 29752190,
+                "version_name": "5.74.1",
+                "package_path": "AndroZoo/apks/ea/nl.focuscura.beeldbelapp_EA37F042E85C04AC54D479F7A17DD57F98DDBDF270CBE7B48FDE7E560C3F6612.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f1518v`."
             }
         ]
     },
@@ -36717,6 +37639,36 @@
         ]
     },
     {
+        "UUID": "dc73303c-7046-4dbc-b983-52980bec0fee",
+        "company": "Third-party SDK code (declared in Java package `com.happitech.heartbeatandroid` — distinct from host nl.focuscura.beeldbelapp; Phase-4 identification needed)",
+        "UUID_name": "RELEASE_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app nl.focuscura.beeldbelapp but declared in third-party SDK package `com.happitech.heartbeatandroid` as Java field `RELEASE_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:RELEASE_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.focuscura.beeldbelapp v5.74.1 (versionCode 29752190), in Java field `RELEASE_ID`, declared in Java package `com.happitech.heartbeatandroid` (third-party SDK). Classification source: field-name:RELEASE_ID.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=nl.focuscura.beeldbelapp",
+                "description": "Verified current Google Play listing for nl.focuscura.beeldbelapp. This listing does not establish that archived APK version 5.74.1 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.focuscura.beeldbelapp",
+                "version_code": 29752190,
+                "version_name": "5.74.1",
+                "package_path": "AndroZoo/apks/ea/nl.focuscura.beeldbelapp_EA37F042E85C04AC54D479F7A17DD57F98DDBDF270CBE7B48FDE7E560C3F6612.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `RELEASE_ID`."
+            }
+        ],
+        "parent_UUID": "0a89aff3-1f43-4ead-b137-1ea03c460b7e"
+    },
+    {
         "UUID": "d01ab591-d282-4ef5-b83b-538e0bf32d85",
         "company": "Third-party SDK code (declared in Java package `a.b.a.a.p` — distinct from host com.miracleear.mdapp; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -36757,6 +37709,24 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: ArrayWriter.java:11 write path; BeansWriter.java:12 write path; BeansWriterASM.java:14 write path; BeansWriterASMRemap.java:27 write path; BluetoothLeQueuedService.java:328 notification subscription; BluetoothLeQueuedService.java:334 notification subscription; BluetoothLeQueuedService.java:339 notification subscription; BluetoothLeQueuedService.java:342 notification subscription",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of ch.intersharing.intersharing v3.14.42.71 (versionCode 455), in Java field `e`, declared in Java package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of ch.ecargovia.poolcar v4.15.01.000 (versionCode 4150100), in Java field `e`, declared in Java package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=ch.intersharing.intersharing",
+                "description": "Verified current Google Play listing for ch.intersharing.intersharing. This listing does not establish that archived APK version 3.14.42.71 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=ch.ecargovia.poolcar",
+                "description": "Verified current Google Play listing for ch.ecargovia.poolcar. This listing does not establish that archived APK version 4.15.01.000 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -36766,6 +37736,20 @@
                 "version_name": "1.0.18",
                 "package_path": "BLUUID_APKS/0664/2578351bb5cf249a28a56f41ade0c4c4735683660d0f1fb670db10aabfa52f20/2578351bb5cf249a28a56f41ade0c4c4735683660d0f1fb670db10aabfa52f20.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `e`."
+            },
+            {
+                "package_id": "ch.intersharing.intersharing",
+                "version_code": 455,
+                "version_name": "3.14.42.71",
+                "package_path": "AndroZoo/apks/44/ch.intersharing.intersharing_44061E0E2128CD3DB3D8FDBFE926EBA907D80E3AD66EAE3EFFD952EF5BD5F0F4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `e`."
+            },
+            {
+                "package_id": "ch.ecargovia.poolcar",
+                "version_code": 4150100,
+                "version_name": "4.15.01.000",
+                "package_path": "AndroZoo/apks/08/ch.ecargovia.poolcar_08C9780F67966DD7B1CEB429EFC95D093107C4F1F656537BA89C8C641716F25A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `e`."
             }
         ]
     },
@@ -36785,6 +37769,28 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: ActivityResult.java:58 write path; ActivityResult.java:63 write path; AppGroupCreationContent.java:91 write path; AspectRatio.java:55 write path; Attribute.java:101 write path; Attribute.java:133 write path; Attribute.java:146 write path; BaseCustomization.java:54 write path",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of ch.intersharing.intersharing v3.14.42.71 (versionCode 455), in Java field `c`, declared in Java package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of ch.ecargovia.poolcar v4.15.01.000 (versionCode 4150100), in Java field `d`, declared in Java package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: AsyncBluetoothDevice.java:30 changed value broadcast/handler; AsyncBluetoothDeviceImpl.java:124 changed value broadcast/handler; AsyncBluetoothDeviceImpl.java:128 changed value broadcast/handler; AsyncBluetoothDeviceImpl.java:129 changed value broadcast/handler; AsyncBluetoothDeviceImpl.java:149 write path; AsyncBluetoothDeviceImpl.java:150 write path; AsyncBluetoothDeviceImpl.java:151 read path; AsyncBluetoothDeviceImpl.java:155 write path",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=ch.intersharing.intersharing",
+                "description": "Verified current Google Play listing for ch.intersharing.intersharing. This listing does not establish that archived APK version 3.14.42.71 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=ch.ecargovia.poolcar",
+                "description": "Verified current Google Play listing for ch.ecargovia.poolcar. This listing does not establish that archived APK version 4.15.01.000 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -36794,6 +37800,20 @@
                 "version_name": "1.0.18",
                 "package_path": "BLUUID_APKS/0664/2578351bb5cf249a28a56f41ade0c4c4735683660d0f1fb670db10aabfa52f20/2578351bb5cf249a28a56f41ade0c4c4735683660d0f1fb670db10aabfa52f20.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f30d`."
+            },
+            {
+                "package_id": "ch.intersharing.intersharing",
+                "version_code": 455,
+                "version_name": "3.14.42.71",
+                "package_path": "AndroZoo/apks/44/ch.intersharing.intersharing_44061E0E2128CD3DB3D8FDBFE926EBA907D80E3AD66EAE3EFFD952EF5BD5F0F4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `c`."
+            },
+            {
+                "package_id": "ch.ecargovia.poolcar",
+                "version_code": 4150100,
+                "version_name": "4.15.01.000",
+                "package_path": "AndroZoo/apks/08/ch.ecargovia.poolcar_08C9780F67966DD7B1CEB429EFC95D093107C4F1F656537BA89C8C641716F25A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `d`."
             }
         ]
     },
@@ -36813,6 +37833,24 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: BluetoothLeService.java:41 changed value broadcast/handler; JsonWriter.java:184 write path; LinkaMerchantlock.java:536 write path; LockPairingController.java:214 write path; LockPairingController.java:224 write path; a.java:127 write path; a.java:388 write path; a.java:437 write path",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of ch.intersharing.intersharing v3.14.42.71 (versionCode 455), in Java field `f`, declared in Java package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of ch.ecargovia.poolcar v4.15.01.000 (versionCode 4150100), in Java field `f`, declared in Java package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=ch.intersharing.intersharing",
+                "description": "Verified current Google Play listing for ch.intersharing.intersharing. This listing does not establish that archived APK version 3.14.42.71 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=ch.ecargovia.poolcar",
+                "description": "Verified current Google Play listing for ch.ecargovia.poolcar. This listing does not establish that archived APK version 4.15.01.000 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -36822,6 +37860,20 @@
                 "version_name": "1.0.18",
                 "package_path": "BLUUID_APKS/0664/2578351bb5cf249a28a56f41ade0c4c4735683660d0f1fb670db10aabfa52f20/2578351bb5cf249a28a56f41ade0c4c4735683660d0f1fb670db10aabfa52f20.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f`."
+            },
+            {
+                "package_id": "ch.intersharing.intersharing",
+                "version_code": 455,
+                "version_name": "3.14.42.71",
+                "package_path": "AndroZoo/apks/44/ch.intersharing.intersharing_44061E0E2128CD3DB3D8FDBFE926EBA907D80E3AD66EAE3EFFD952EF5BD5F0F4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f`."
+            },
+            {
+                "package_id": "ch.ecargovia.poolcar",
+                "version_code": 4150100,
+                "version_name": "4.15.01.000",
+                "package_path": "AndroZoo/apks/08/ch.ecargovia.poolcar_08C9780F67966DD7B1CEB429EFC95D093107C4F1F656537BA89C8C641716F25A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f`."
             }
         ]
     },
@@ -36841,6 +37893,24 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: BluetoothLeService.java:42 changed value broadcast/handler; LinkaMerchantAPIServiceImpl.java:629 write path; a.java:152 write path; a.java:354 write path; a.java:359 write path; a.java:364 write path; a.java:442 write path",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of ch.intersharing.intersharing v3.14.42.71 (versionCode 455), in Java field `g`, declared in Java package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of ch.ecargovia.poolcar v4.15.01.000 (versionCode 4150100), in Java field `g`, declared in Java package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=ch.intersharing.intersharing",
+                "description": "Verified current Google Play listing for ch.intersharing.intersharing. This listing does not establish that archived APK version 3.14.42.71 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=ch.ecargovia.poolcar",
+                "description": "Verified current Google Play listing for ch.ecargovia.poolcar. This listing does not establish that archived APK version 4.15.01.000 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -36850,6 +37920,20 @@
                 "version_name": "1.0.18",
                 "package_path": "BLUUID_APKS/0664/2578351bb5cf249a28a56f41ade0c4c4735683660d0f1fb670db10aabfa52f20/2578351bb5cf249a28a56f41ade0c4c4735683660d0f1fb670db10aabfa52f20.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `g`."
+            },
+            {
+                "package_id": "ch.intersharing.intersharing",
+                "version_code": 455,
+                "version_name": "3.14.42.71",
+                "package_path": "AndroZoo/apks/44/ch.intersharing.intersharing_44061E0E2128CD3DB3D8FDBFE926EBA907D80E3AD66EAE3EFFD952EF5BD5F0F4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `g`."
+            },
+            {
+                "package_id": "ch.ecargovia.poolcar",
+                "version_code": 4150100,
+                "version_name": "4.15.01.000",
+                "package_path": "AndroZoo/apks/08/ch.ecargovia.poolcar_08C9780F67966DD7B1CEB429EFC95D093107C4F1F656537BA89C8C641716F25A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `g`."
             }
         ]
     },
@@ -36981,6 +38065,46 @@
             {
                 "description": "Found in decompiled DEX of com.icare.iweight v3.44.3 (versionCode 314), in Java field `JD_UUID`, declared in Java package `aicare.net.cn.iweightlibrary.utils` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.chi.chi_patient_app v2.0.22 (versionCode 2022), in Java field `JD_UUID`, declared in Java package `aicare.net.cn.iweightlibrary.utils` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.chi.patientapp.clinic v1.2.3 (versionCode 1023), in Java field `JD_UUID`, declared in Java package `aicare.net.cn.iweightlibrary.utils` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.chi.patientapp.dev v3.2.18-000 (versionCode 197138), in Java field `JD_UUID`, declared in Java package `aicare.net.cn.iweightlibrary.utils` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.remetrichealth.rpm v1.6.0 (versionCode 160), declared in Java package `r` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.nurecausa.drtrustscaleconnect v7.3.6 (versionCode 177), in Java field `JD_UUID`, declared in Java package `aicare.net.cn.iweightlibrary.utils` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.chi.patientapp.clinic",
+                "description": "Verified current Google Play listing for com.chi.patientapp.clinic. This listing does not establish that archived APK version 1.2.3 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.chi.patientapp.dev",
+                "description": "Verified current Google Play listing for com.chi.patientapp.dev. This listing does not establish that archived APK version 3.2.18-000 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.remetrichealth.rpm",
+                "description": "Verified current Google Play listing for com.remetrichealth.rpm. This listing does not establish that archived APK version 1.6.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.nurecausa.drtrustscaleconnect",
+                "description": "Verified current Google Play listing for com.nurecausa.drtrustscaleconnect. This listing does not establish that archived APK version 7.3.6 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -37025,6 +38149,41 @@
                 "version_name": "3.44.3",
                 "package_path": "BLUUID_APKS/0877/023d315dc1ff148ab1bfa40dc81a82287198870da5d107253e31942d030cb28d/023d315dc1ff148ab1bfa40dc81a82287198870da5d107253e31942d030cb28d.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JD_UUID`."
+            },
+            {
+                "package_id": "com.chi.chi_patient_app",
+                "version_code": 2022,
+                "version_name": "2.0.22",
+                "package_path": "AndroZoo/apks/54/com.chi.chi_patient_app_54327BEE8E4AC2C3EF65B9D8C9C226ABF395E395541A4E85A005694FA4DBF32E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JD_UUID`."
+            },
+            {
+                "package_id": "com.chi.patientapp.clinic",
+                "version_code": 1023,
+                "version_name": "1.2.3",
+                "package_path": "AndroZoo/apks/a4/com.chi.patientapp.clinic_A45FC5A8B02EF0AD8EAD951A4897B2DC2E71CADA42BEB7CA41EA726B25B85D62.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JD_UUID`."
+            },
+            {
+                "package_id": "com.chi.patientapp.dev",
+                "version_code": 197138,
+                "version_name": "3.2.18-000",
+                "package_path": "AndroZoo/apks/a2/com.chi.patientapp.dev_A231A035887825CDE4DD2C5259891BE15811646AF5CF7DD8B3C63E001EF0208E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JD_UUID`."
+            },
+            {
+                "package_id": "com.remetrichealth.rpm",
+                "version_code": 160,
+                "version_name": "1.6.0",
+                "package_path": "AndroZoo/apks/d3/com.remetrichealth.rpm_D3520173038F8123BEFBB54F4A96B10BD928CDB7F5672174716DEFDD906CDB31.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.nurecausa.drtrustscaleconnect",
+                "version_code": 177,
+                "version_name": "7.3.6",
+                "package_path": "AndroZoo/apks/e0/com.nurecausa.drtrustscaleconnect_E0480397984ACCE3A25F2503F21175810D339E550750867BA9B311CF75553ED7.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JD_UUID`."
             }
         ]
     },
@@ -37052,6 +38211,19 @@
             {
                 "description": "Found in decompiled DEX of com.skyhealth.fitnessbuddyandroidfree v5.36.9536 (versionCode 9536), in Java field `AUTH_SERVICE_UUID_STRING`, declared in Java package `com.agamatrix.ambtsdk.lib` (third-party SDK). Classification source: field-name:AUTH_SERVICE_UUID_STRING.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of datosapp.datos_healthad.com.telesheba v26.1.1.67 (versionCode 67), in Java field `AUTH_SERVICE_UUID_STRING`, declared in Java package `com.agamatrix.ambtsdk.lib` (third-party SDK). Classification source: field-name:AUTH_SERVICE_UUID_STRING.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of datosapp.datos_healthad.com.natali v24.2.0.90 (versionCode 90), in Java field `AUTH_SERVICE_UUID_STRING`, declared in Java package `com.agamatrix.ambtsdk.lib` (third-party SDK). Classification source: field-name:AUTH_SERVICE_UUID_STRING.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=datosapp.datos_healthad.com.telesheba",
+                "description": "Verified current Google Play listing for datosapp.datos_healthad.com.telesheba. This listing does not establish that archived APK version 26.1.1.67 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -37081,6 +38253,20 @@
                 "version_code": 9536,
                 "version_name": "5.36.9536",
                 "package_path": "BLUUID_APKS/0673/f2f6ba2946f31158dee53767238c2cb0b14f636309fc7300d360d7213351e079/f2f6ba2946f31158dee53767238c2cb0b14f636309fc7300d360d7213351e079.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AUTH_SERVICE_UUID_STRING`."
+            },
+            {
+                "package_id": "datosapp.datos_healthad.com.telesheba",
+                "version_code": 67,
+                "version_name": "26.1.1.67",
+                "package_path": "AndroZoo/apks/76/datosapp.datos_healthad.com.telesheba_76264D03A859693136D6167485D6D081BB931AF5C4B5D3F16DD6B4AD35BE7773.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AUTH_SERVICE_UUID_STRING`."
+            },
+            {
+                "package_id": "datosapp.datos_healthad.com.natali",
+                "version_code": 90,
+                "version_name": "24.2.0.90",
+                "package_path": "AndroZoo/apks/b0/datosapp.datos_healthad.com.natali_B022DC8FBD55CC37F907002DBD8E79F496C2166F72A652C15F481A374F15B930.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AUTH_SERVICE_UUID_STRING`."
             }
         ]
@@ -37599,6 +38785,36 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `OTA_SERVICE_UUID`."
             }
         ]
+    },
+    {
+        "UUID": "d804380c-1c12-4ea9-9087-ea7f1b2e002e",
+        "company": "Third-party SDK code (declared in Java package `com.ederdoski.simpleble.utils` — distinct from host com.bitmick.k_4g_m_key; Phase-4 identification needed)",
+        "UUID_name": "CHARACTERISTIC_LAST_DISTANCE",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.bitmick.k_4g_m_key but declared in third-party SDK package `com.ederdoski.simpleble.utils` as Java field `CHARACTERISTIC_LAST_DISTANCE`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:CHARACTERISTIC_LAST_DISTANCE.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.bitmick.k_4g_m_key vcobra-app_1_0_4_62 (versionCode 1000462), in Java field `CHARACTERISTIC_LAST_DISTANCE`, declared in Java package `com.ederdoski.simpleble.utils` (third-party SDK). Classification source: field-name:CHARACTERISTIC_LAST_DISTANCE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.bitmick.k_4g_m_key",
+                "description": "Verified current Google Play listing for com.bitmick.k_4g_m_key. This listing does not establish that archived APK version cobra-app_1_0_4_62 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bitmick.k_4g_m_key",
+                "version_code": 1000462,
+                "version_name": "cobra-app_1_0_4_62",
+                "package_path": "AndroZoo/apks/1e/com.bitmick.k_4g_m_key_1EB1F0761F9674378FDB57EE50AC42D15A477719E03BDE06CA21415A01D8E252.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_LAST_DISTANCE`."
+            }
+        ],
+        "parent_UUID": "bed9865e-81b1-471c-bf0e-6c2c135f2d0e"
     },
     {
         "UUID": "dc67d5fd-e3b6-4f35-8969-01057317d789",
@@ -42403,6 +43619,35 @@
         ]
     },
     {
+        "UUID": "dfd71255-237f-4aa6-88e0-6df3615a5a95",
+        "company": "Third-party SDK code (declared in Java package `com.jawbone.healthhub.notifications` — distinct from host health.all; Phase-4 identification needed)",
+        "UUID_name": "BAND_REMINDER_BEDTIME",
+        "UUID_purpose": "GATT Service observed in Android app health.all but declared in third-party SDK package `com.jawbone.healthhub.notifications` as Java field `BAND_REMINDER_BEDTIME`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of health.all v2025.9.1 (versionCode 420), in Java field `BAND_REMINDER_BEDTIME`, declared in Java package `com.jawbone.healthhub.notifications` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=health.all",
+                "description": "Verified current Google Play listing for health.all. This listing does not establish that archived APK version 2025.9.1 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "health.all",
+                "version_code": 420,
+                "version_name": "2025.9.1",
+                "package_path": "AndroZoo/apks/dc/health.all_DC469DE251D8BA4CB2860C99EDBF0FD4E3C3FA4582C40B188691344CC97B0E1C.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BAND_REMINDER_BEDTIME`."
+            }
+        ]
+    },
+    {
         "UUID": "d81a1682-9138-11ea-bb37-0242ac130002",
         "company": "Third-party SDK code (declared in Java package `com.lilly.ddcs.lillydevice.insulin.profile` — distinct from host com.mysugr.android.companion; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -42426,6 +43671,35 @@
             }
         ],
         "parent_UUID": "0e00761b-27d5-4461-b4c9-2d7ba3a70ea1"
+    },
+    {
+        "UUID": "d31e0000-416b-499b-95aa-5db239a0bfbe",
+        "company": "Third-party SDK code (declared in Java package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` — distinct from host ch.intersharing.intersharing; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service observed in Android app ch.intersharing.intersharing but declared in third-party SDK package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` as Java field `d`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of ch.intersharing.intersharing v3.14.42.71 (versionCode 455), in Java field `d`, declared in Java package `com.linka.linkaapikit.module.Lock.FirmwareAPI.Comms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=ch.intersharing.intersharing",
+                "description": "Verified current Google Play listing for ch.intersharing.intersharing. This listing does not establish that archived APK version 3.14.42.71 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "ch.intersharing.intersharing",
+                "version_code": 455,
+                "version_name": "3.14.42.71",
+                "package_path": "AndroZoo/apks/44/ch.intersharing.intersharing_44061E0E2128CD3DB3D8FDBFE926EBA907D80E3AD66EAE3EFFD952EF5BD5F0F4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `d`."
+            }
+        ]
     },
     {
         "UUID": "db1cfee0-e0f9-49f3-b34e-03c4fcbb80ee",
@@ -42647,7 +43921,7 @@
     {
         "UUID": "d6d5556b-cfd1-4c5c-9fec-417cf023a6ca",
         "company": "Validic",
-        "UUID_name": "TRUE_METRIX_EVENT_CHARACTERISTIC",
+        "UUID_name": "TRUE_METRIX_EVENT_CHARACTERISTIC / NDI_METER_CONTROL_NOTIFY",
         "UUID_purpose": "GATT Characteristic observed in Android app com.teladoc.members, declared in cached third-party SDK package `com.validic.mobile.ble` as Java field `uuidFromString3`. Company attributed via Phase-6 KNOWN_SDK_JAVA_PACKAGES cache. Classification source: naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -42685,6 +43959,24 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (US digital-health connectivity SDK; com.validic.mobile.ble — bridges medical-device BLE to clinical apps)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.remetrichealth.rpm v1.6.0 (versionCode 160), in Java field `NDI_METER_CONTROL_NOTIFY`. Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.wow.hopecare v2.18.1 (versionCode 48), in Java field `TRUE_METRIX_EVENT_CHARACTERISTIC`, declared in Java package `com.validic.mobile.ble` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.remetrichealth.rpm",
+                "description": "Verified current Google Play listing for com.remetrichealth.rpm. This listing does not establish that archived APK version 1.6.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.wow.hopecare",
+                "description": "Verified current Google Play listing for com.wow.hopecare. This listing does not establish that archived APK version 2.18.1 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -42736,6 +44028,20 @@
                 "version_name": "4.41.0",
                 "package_path": "BLUUID_APKS/0901/b43fab13ad8ce5a32932567db62e16278c28475ba3fa819330ab95844fb76fc2/b43fab13ad8ce5a32932567db62e16278c28475ba3fa819330ab95844fb76fc2.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `TRUE_METRIX_EVENT_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.remetrichealth.rpm",
+                "version_code": 160,
+                "version_name": "1.6.0",
+                "package_path": "AndroZoo/apks/d3/com.remetrichealth.rpm_D3520173038F8123BEFBB54F4A96B10BD928CDB7F5672174716DEFDD906CDB31.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `NDI_METER_CONTROL_NOTIFY`."
+            },
+            {
+                "package_id": "com.wow.hopecare",
+                "version_code": 48,
+                "version_name": "2.18.1",
+                "package_path": "AndroZoo/apks/1b/com.wow.hopecare_1BF533607A4FF64FB63EAC429EA13EE3E7F85B0168BB0BB325C15BEED8886A5C.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `TRUE_METRIX_EVENT_CHARACTERISTIC`."
             }
         ],
         "parent_UUID": "c4dea010-5a9d-11e9-8647-d663bd873d93"
@@ -42768,9 +44074,9 @@
         "UUID": "de5bf728-d711-4e47-af26-65e3012a5dc7",
         "company": "Third-party SDK code (declared in Java package `com.oudmon.ble.base.communication.dfu_temperature` — distinct from host com.app.watch.pro; Phase-4 identification needed)",
         "UUID_name": "MTKWATCH_OUTPUT_NOTIFY_CHARACTERISTIC",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.app.watch.pro but declared in third-party SDK package `com.oudmon.ble.base.communication.dfu_temperature` as Java field `SERIAL_PORT_SERVICE`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:SERIAL_PORT_SERVICE.",
+        "UUID_purpose": "GATT Service observed in Android app com.app.watch.pro but declared in third-party SDK package `com.oudmon.ble.base.communication.dfu_temperature` as Java field `SERIAL_PORT_SERVICE`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:SERIAL_PORT_SERVICE.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -42800,6 +44106,33 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: BleAbsConnManager.java:311 write path; BleManager.java:106 write path; BleManager.java:1077 write path; BleManager.java:1083 write path; BleManager.java:1134 write path; BleManager.java:1140 write path; BleManager.java:1421 write path; BleManager.java:150 write path",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cerashealth.ceras v1.2.22 (versionCode 71), in Java field `f2022e`, declared in Java package `com.walnutin.hardsdk.ProductList` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cerashealth.imhomev2 v1.0.10 (versionCode 63), in Java field `f15402e`, declared in Java package `com.walnutin.hardsdk.ProductList` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.beebirdhome.home v110.1.13 (versionCode 110), in Java field `SERIAL_PORT_SERVICE`, declared in Java package `com.oudmon.ble.base.communication.dfu_temperature` (third-party SDK). Classification source: field-name:SERIAL_PORT_SERVICE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cerashealth.ceras",
+                "description": "Verified current Google Play listing for com.cerashealth.ceras. This listing does not establish that archived APK version 1.2.22 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cerashealth.imhomev2",
+                "description": "Verified current Google Play listing for com.cerashealth.imhomev2. This listing does not establish that archived APK version 1.0.10 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.beebirdhome.home",
+                "description": "Verified current Google Play listing for com.beebirdhome.home. This listing does not establish that archived APK version 110.1.13 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -42844,9 +44177,29 @@
                 "version_name": "1.0.2.32",
                 "package_path": "BLUUID_APKS/0947/2283ee399de9b96df85750cac669b3583397ed684cacbde135fdca157846b17c/2283ee399de9b96df85750cac669b3583397ed684cacbde135fdca157846b17c.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERIAL_PORT_SERVICE`."
+            },
+            {
+                "package_id": "com.cerashealth.ceras",
+                "version_code": 71,
+                "version_name": "1.2.22",
+                "package_path": "AndroZoo/apks/e5/com.cerashealth.ceras_E55F333A0431504EDBE867E9D1991F0A6847B865FDFE6C72033D3C1BE954671B.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f2022e`."
+            },
+            {
+                "package_id": "com.cerashealth.imhomev2",
+                "version_code": 63,
+                "version_name": "1.0.10",
+                "package_path": "AndroZoo/apks/65/com.cerashealth.imhomev2_6575A7D600E01BD71A5946528BA970FCFA1E930807DEF10777EE797B5BF4BCAD.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f15402e`."
+            },
+            {
+                "package_id": "com.beebirdhome.home",
+                "version_code": 110,
+                "version_name": "110.1.13",
+                "package_path": "AndroZoo/apks/7c/com.beebirdhome.home_7CC8AE4A3E3CBE43F81D7BC4AEEB361135484C62AD0C9575F3F1B1614502DC14.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SERIAL_PORT_SERVICE`."
             }
-        ],
-        "parent_UUID": "49535343-8841-43f4-a8d4-ecbe34729bb3"
+        ]
     },
     {
         "UUID": "dcff0001-b574-3b39-a8ea-e179e8642c4b",
@@ -43257,6 +44610,51 @@
                 "version_name": "3.28.0",
                 "package_path": "BLUUID_APKS/0786/4cf2ebcfa8fa55032fd5e4abf114f4eeb101752666458e073036682652c6a5ea/4cf2ebcfa8fa55032fd5e4abf114f4eeb101752666458e073036682652c6a5ea.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `x`."
+            }
+        ]
+    },
+    {
+        "UUID": "daceea92-2232-11ed-861d-0242ac120002",
+        "company": "Third-party SDK code (declared in Java package `com.tinno.dw.device.mt6825` — distinct from host com.bullitt.wave; Phase-4 identification needed)",
+        "UUID_name": "notify",
+        "UUID_purpose": "GATT Service observed in Android app com.bullitt.wave but declared in third-party SDK package `com.tinno.dw.device.mt6825` as Java field `notifyUUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.bullitt.wave v2.8.29 (versionCode 108), in Java field `notifyUUID`, declared in Java package `com.tinno.dw.device.mt6825` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hmdglobal.mobile.offgrid v2.6.30 (versionCode 105), in Java field `notifyUUID`, declared in Java package `com.tinno.dw.device.mt6825` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.bullitt.wave",
+                "description": "Verified current Google Play listing for com.bullitt.wave. This listing does not establish that archived APK version 2.8.29 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.hmdglobal.mobile.offgrid",
+                "description": "Verified current Google Play listing for com.hmdglobal.mobile.offgrid. This listing does not establish that archived APK version 2.6.30 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bullitt.wave",
+                "version_code": 108,
+                "version_name": "2.8.29",
+                "package_path": "AndroZoo/apks/c0/com.bullitt.wave_C0441A9C19369537B85BD5906BB1886054C85EED018ED5A783DF0A36F732DFFB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `notifyUUID`."
+            },
+            {
+                "package_id": "com.hmdglobal.mobile.offgrid",
+                "version_code": 105,
+                "version_name": "2.6.30",
+                "package_path": "AndroZoo/apks/10/com.hmdglobal.mobile.offgrid_1054BD7BE9A320D9A772CC73EEDB53454A60D83E6436DEE5949999A8AD1F8E0D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `notifyUUID`."
             }
         ]
     },
@@ -43789,6 +45187,15 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: ActiveViolation.java:109 write path; ActivityCheckAdapter.java:168 write path; ActivityLineView.java:224 write path; AssumeRoleRequestMarshaller.java:37 write path; AssumeRoleRequestMarshaller.java:53 write path; AssumeRoleWithSAMLRequestMarshaller.java:38 write path; AssumeRoleWithSAMLResult.java:125 write path; AssumeRoleWithWebIdentityRequestMarshaller.java:41 write path",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.pclhealth.app v2.0.14 (versionCode 32), in Java field `s`, declared in Java package `com.raiing.blelib.temperature.a.a` (third-party SDK). Classification source: cross-file usage:getCharacteristic(h).",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.pclhealth.app",
+                "description": "Verified current Google Play listing for com.pclhealth.app. This listing does not establish that archived APK version 2.0.14 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -43819,6 +45226,13 @@
                 "version_name": "1.7.3.17",
                 "package_path": "BLUUID_APKS/0983/66551d2f9ad19e314a4230409e25505a98055339a2beb1b53e69d44b00d884b6/66551d2f9ad19e314a4230409e25505a98055339a2beb1b53e69d44b00d884b6.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.pclhealth.app",
+                "version_code": 32,
+                "version_name": "2.0.14",
+                "package_path": "AndroZoo/apks/94/com.pclhealth.app_94EB91F090096215C98A98A58B68C79F509B4F4731FE3FD0512B4BEDA40A837B.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `s`."
             }
         ],
         "parent_UUID": "29a59c78-ccc0-11e2-b493-14cf921ae45d"
@@ -59178,6 +60592,15 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (BLE-based vehicle unlock for car-sharing operators; identify the actual vendor from the SDK Java package)"
+            },
+            {
+                "description": "Found in decompiled DEX of ch.intersharing.intersharing v3.14.42.71 (versionCode 455), in Java field `BRIDGE_SERVICE_UUID`, declared in Java package `com.otakeys.sdk.ble.service` (third-party SDK). Classification source: field-name:BRIDGE_SERVICE_UUID.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=ch.intersharing.intersharing",
+                "description": "Verified current Google Play listing for ch.intersharing.intersharing. This listing does not establish that archived APK version 3.14.42.71 is available to download.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -59222,6 +60645,13 @@
                 "version_name": "6.32",
                 "package_path": "BLUUID_APKS/0727/e78555daf41e1d95714395d12999177f97a5ebbe7495895685be7ae3696a48a5/e78555daf41e1d95714395d12999177f97a5ebbe7495895685be7ae3696a48a5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BRIDGE_SERVICE_UUID_STRING`."
+            },
+            {
+                "package_id": "ch.intersharing.intersharing",
+                "version_code": 455,
+                "version_name": "3.14.42.71",
+                "package_path": "AndroZoo/apks/44/ch.intersharing.intersharing_44061E0E2128CD3DB3D8FDBFE926EBA907D80E3AD66EAE3EFFD952EF5BD5F0F4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BRIDGE_SERVICE_UUID`."
             }
         ]
     },
