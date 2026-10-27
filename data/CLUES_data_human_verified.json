@@ -4496,6 +4496,71 @@
         ]
     },
     {
+        "UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
+        "company": "NXP Semiconductors",
+        "UUID_purpose": "Bluetooth LE Over-the-Air Programming (OTAP) service for firmware updates. Contains the OTAP Control Point and OTAP Data characteristics.",
+        "UUID_name": "Bluetooth LE OTAP",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
+                "description": "NXP MCUXpresso SDK OTAP guide, Implemented profile and services: identifies this UUID as the Bluetooth LE OTAP Service and lists its two characteristics.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20261027124304/https://raw.githubusercontent.com/nxp-mcuxpresso/mcuxsdk-middleware-bluetooth-host/768bc6adab7811af2dc217da3dbcd70cd74b20fd/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/implemented_profile_and_services_009.md",
+                "description": "NXP SDK source at an immutable commit identifies the OTAP service and characteristics.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "01ff5551-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
+        "company": "NXP Semiconductors",
+        "UUID_purpose": "OTAP Control Point: exchanges firmware-update commands between the OTAP Server and Client via writes and indications; image data chunks are not transferred through this characteristic.",
+        "UUID_name": "OTAP Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
+                "description": "NXP MCUXpresso SDK OTAP guide explicitly identifies this UUID as the OTAP Control Point Characteristic of the Bluetooth LE OTAP Service.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20261027124304/https://raw.githubusercontent.com/nxp-mcuxpresso/mcuxsdk-middleware-bluetooth-host/768bc6adab7811af2dc217da3dbcd70cd74b20fd/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/implemented_profile_and_services_009.md",
+                "description": "NXP SDK source at an immutable commit identifies the OTAP Control Point within the OTAP service.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0"
+    },
+    {
+        "UUID": "01ff5552-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
+        "company": "NXP Semiconductors",
+        "UUID_purpose": "OTAP Data: transfers firmware image chunks through writes without response when the OTAP Client requests ATT transfer; L2CAP credit-based channels are an alternate transfer method.",
+        "UUID_name": "OTAP Data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
+                "description": "NXP MCUXpresso SDK OTAP guide explicitly identifies this UUID as the OTAP Data Characteristic of the Bluetooth LE OTAP Service.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20261027124304/https://raw.githubusercontent.com/nxp-mcuxpresso/mcuxsdk-middleware-bluetooth-host/768bc6adab7811af2dc217da3dbcd70cd74b20fd/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/implemented_profile_and_services_009.md",
+                "description": "NXP SDK source at an immutable commit identifies the OTAP Data characteristic within the OTAP service.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0"
+    },
+    {
         "UUID": "ab5e0001-5a21-4f05-bc7d-af01f617b664",
         "company": "Ohsung Electronics",
         "UUID_purpose": "C009 remote control interface",

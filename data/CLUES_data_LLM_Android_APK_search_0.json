@@ -213360,10 +213360,10 @@
     {
         "UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
         "company": "NXP Semiconductors",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Bluetooth LE OTAP (Over-the-Air Programming) service. Re-attributed from \"SIGMA Bike\" to NXP Semiconductors. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. A separately-sourced CLUES entry identifies this exact UUID as the NXP Bluetooth LE OTAP (Over-the-Air Programming) service, a firmware-update service shipped in NXP's BLE stack. The observing app is a bike-computer app whose device uses an NXP part. The original APK observation is retained below because it remains factually true. Previously recorded description: Custom GATT Characteristic observed in Android app mk.wsd, declared as Java field `WSDemoUUID`. Classification determined by naming-convention.",
+        "UUID_name": "Bluetooth LE OTAP",
+        "UUID_purpose": "Over-the-Air Programming (OTAP) service for firmware image transfer in NXP's Bluetooth LE SDK. Contains the OTAP Control Point and OTAP Data characteristics.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -213375,8 +213375,13 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "description": "Re-attributed from \"SIGMA Bike\" to NXP Semiconductors. The only evidence for the previous company was the UUID's presence in that vendor's Android app; the app is a consumer of this UUID, not its originator. A separately-sourced CLUES entry identifies this exact UUID as the NXP Bluetooth LE OTAP (Over-the-Air Programming) service, a firmware-update service shipped in NXP's BLE stack. The observing app is a bike-computer app whose device uses an NXP part. The original APK observation is retained below because it remains factually true.",
+                "description": "Earlier attribution to SIGMA Bike was based only on the UUID's presence in that vendor's Android app. A separately-sourced CLUES entry identifies this exact UUID as the NXP Bluetooth LE OTAP service. The APK observation is retained; it does not by itself identify the device's MCU.",
                 "submitter": "Claude (Opus 5)"
+            },
+            {
+                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
+                "description": "NXP MCUXpresso SDK OTAP guide explicitly identifies this UUID as the Bluetooth LE OTAP Service, with 01ff5551 as its Control Point and 01ff5552 as its Data characteristic. Earlier APK naming-convention classification as a characteristic and its parent_UUID were incorrect.",
+                "submitter": "Xeno Kovah"
             }
         ],
         "android_info_array": [
@@ -213385,17 +213390,76 @@
                 "version_code": 4,
                 "version_name": "1.03",
                 "package_path": "BLUUID_APKS/0487/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c/e69ea1e721a97522ade5b9775cdf3c8103da5bc5e634a6252df4a60787c5ef5c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WSDemoUUID`."
+                "description": "Detected by apk-clues-extract scan in Java field `WSDemoUUID`; the extractor's original GATT Characteristic classification is superseded by NXP's GATT Service definition."
             },
             {
                 "package_id": "com.sigmasport.ebikeapp",
                 "version_code": 1005015,
                 "version_name": "1.5.15",
                 "package_path": "BLUUID_APKS/0514/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `OTAP_SERVICE_UUID`."
+                "description": "Detected by apk-clues-extract scan in Java field `OTAP_SERVICE_UUID`; the extractor's original GATT Characteristic classification is superseded by NXP's GATT Service definition."
+            }
+        ]
+    },
+    {
+        "UUID": "01ff5551-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
+        "company": "NXP Semiconductors",
+        "UUID_name": "OTAP Control Point",
+        "UUID_purpose": "Exchanges OTAP commands between the OTAP Server and Client via writes and indications; firmware image data chunks are not transferred through this characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.sigmasport.ebikeapp v1.5.15 (versionCode 1005015), in Java field `OTAP_CONTROL_POINT_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
+                "description": "NXP MCUXpresso SDK OTAP guide explicitly identifies this UUID as the OTAP Control Point Characteristic within the Bluetooth LE OTAP Service. SIGMA Bike is an APK observer, not the UUID's source; the previous parent_UUID was incorrect.",
+                "submitter": "Xeno Kovah"
             }
         ],
-        "parent_UUID": "0ab5b670-c2ce-c4ab-e711-6ccbaa65c888"
+        "android_info_array": [
+            {
+                "package_id": "com.sigmasport.ebikeapp",
+                "version_code": 1005015,
+                "version_name": "1.5.15",
+                "package_path": "BLUUID_APKS/0514/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `OTAP_CONTROL_POINT_CHARACTERISTIC_UUID`."
+            }
+        ],
+        "parent_UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0"
+    },
+    {
+        "UUID": "01ff5552-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
+        "company": "NXP Semiconductors",
+        "UUID_name": "OTAP Data",
+        "UUID_purpose": "Transfers firmware image data chunks via writes without response when the OTAP Client requests ATT transfer. L2CAP credit-based channels are an alternate data transfer method.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.sigmasport.ebikeapp v1.5.15 (versionCode 1005015), in Java field `OTAP_DATA_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
+                "description": "NXP MCUXpresso SDK OTAP guide explicitly identifies this UUID as the OTAP Data Characteristic within the Bluetooth LE OTAP Service. SIGMA Bike is an APK observer, not the UUID's source; the previous parent_UUID was incorrect.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.sigmasport.ebikeapp",
+                "version_code": 1005015,
+                "version_name": "1.5.15",
+                "package_path": "BLUUID_APKS/0514/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `OTAP_DATA_CHARACTERISTIC_UUID`."
+            }
+        ],
+        "parent_UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0"
     },
     {
         "UUID": "0ab5b672-c2ce-c4ab-e711-6ccbaa65c888",
@@ -221935,56 +221999,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f19735n`."
             }
         ]
-    },
-    {
-        "UUID": "01ff5551-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
-        "company": "SIGMA Bike",
-        "UUID_name": "OTAP_CONTROL_POINT_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.sigmasport.ebikeapp, declared as Java field `OTAP_CONTROL_POINT_CHARACTERISTIC_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.sigmasport.ebikeapp v1.5.15 (versionCode 1005015), in Java field `OTAP_CONTROL_POINT_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.sigmasport.ebikeapp",
-                "version_code": 1005015,
-                "version_name": "1.5.15",
-                "package_path": "BLUUID_APKS/0514/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `OTAP_CONTROL_POINT_CHARACTERISTIC_UUID`."
-            }
-        ],
-        "parent_UUID": "0000000c-abab-4499-b9d7-d0efc0d06477"
-    },
-    {
-        "UUID": "01ff5552-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
-        "company": "SIGMA Bike",
-        "UUID_name": "OTAP_DATA_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.sigmasport.ebikeapp, declared as Java field `OTAP_DATA_CHARACTERISTIC_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.sigmasport.ebikeapp v1.5.15 (versionCode 1005015), in Java field `OTAP_DATA_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.sigmasport.ebikeapp",
-                "version_code": 1005015,
-                "version_name": "1.5.15",
-                "package_path": "BLUUID_APKS/0514/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb/f2299c05df5c02c494843c3f63fece63846b77b120280c064a7c28707c2162fb.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `OTAP_DATA_CHARACTERISTIC_UUID`."
-            }
-        ],
-        "parent_UUID": "0000000c-abab-4499-b9d7-d0efc0d06477"
     },
     {
         "UUID": "00002902-1212-efde-1523-785feabcd123",
