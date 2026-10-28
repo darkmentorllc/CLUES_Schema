@@ -773,6 +773,14 @@
             {
                 "description": "Found in decompiled DEX of com.zaplox.premium.nexthouse v6.3.1 (versionCode 304636), in Java field `str`, declared in Java package `com.legic.mobile.sdk.i1` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f8459i).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.risesoftware.universityave100 v25.07.100 (versionCode 600974), in Java field `str`, declared in Java package `com.legic.mobile.sdk.i1` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lane.pallas v5.437.0 (versionCode 142), in Java field `str`, declared in Java package `com.legic.mobile.sdk.h1` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -1187,6 +1195,20 @@
                 "version_code": 304636,
                 "version_name": "6.3.1",
                 "package_path": "BLUUID_APKS/0968/8ae092b0c9c47d4ec2919b8a5091f07fcbca2e632d1c870e007a4b90d1535f5e/8ae092b0c9c47d4ec2919b8a5091f07fcbca2e632d1c870e007a4b90d1535f5e.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `str`."
+            },
+            {
+                "package_id": "com.risesoftware.universityave100",
+                "version_code": 600974,
+                "version_name": "25.07.100",
+                "package_path": "AndroZoo/apks/00/com.risesoftware.universityave100_00527B04B080686CB7404014459E0E740A5A2AFC5A32628D239BC796D5375314.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `str`."
+            },
+            {
+                "package_id": "com.lane.pallas",
+                "version_code": 142,
+                "version_name": "5.437.0",
+                "package_path": "AndroZoo/apks/00/com.lane.pallas_0084CA13D0AF9DAE01EB0CE53C0193FB3A57A16A4DC3E93154752B395D7CC06F.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `str`."
             }
         ],
@@ -2516,6 +2538,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=vigo.life.android",
                 "description": "Verified current Google Play listing for vigo.life.android. This listing does not establish that archived APK version 4.14.0-Release is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.femmto.app v4.1.0 (versionCode 1031), in Java field `CHARACTERISTIC_UUID_WIFI_TX_UUID`, declared in Java package `com.aojmedical.plugin.ble.device.a` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_WIFI_TX_UUID.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -2776,6 +2802,13 @@
                 "version_code": 123,
                 "version_name": "4.14.0-Release",
                 "package_path": "AndroZoo/apks/6f/vigo.life.android_6F1FD2C4FE291C0DE5FFD4382D78DC0C1A1AB9B9B02D3AEA012CB16B1E456C8F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WIFI_TX_UUID`."
+            },
+            {
+                "package_id": "com.femmto.app",
+                "version_code": 1031,
+                "version_name": "4.1.0",
+                "package_path": "AndroZoo/apks/00/com.femmto.app_000E2F8FC0DB35DF06C2EBE1473D3A5EA028E69BE8B0D02F2DA4B28C3F34BDDD.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WIFI_TX_UUID`."
             }
         ],
@@ -3068,6 +3101,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=vigo.life.android",
                 "description": "Verified current Google Play listing for vigo.life.android. This listing does not establish that archived APK version 4.14.0-Release is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.femmto.app v4.1.0 (versionCode 1031), in Java field `CHARACTERISTIC_UUID_WIFI_RX_UUID`, declared in Java package `com.aojmedical.plugin.ble.device.a` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_WIFI_RX_UUID.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -3322,6 +3359,13 @@
                 "version_name": "4.14.0-Release",
                 "package_path": "AndroZoo/apks/6f/vigo.life.android_6F1FD2C4FE291C0DE5FFD4382D78DC0C1A1AB9B9B02D3AEA012CB16B1E456C8F.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WIFI_RX_UUID`."
+            },
+            {
+                "package_id": "com.femmto.app",
+                "version_code": 1031,
+                "version_name": "4.1.0",
+                "package_path": "AndroZoo/apks/00/com.femmto.app_000E2F8FC0DB35DF06C2EBE1473D3A5EA028E69BE8B0D02F2DA4B28C3F34BDDD.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WIFI_RX_UUID`."
             }
         ],
         "parent_UUID": "000001ff-3c17-d293-8e48-14fe2e4da212"
@@ -3387,6 +3431,13 @@
                 "version_name": "1.20.0",
                 "package_path": "BLUUID_APKS/0179/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_NETWORK_LIST`."
+            },
+            {
+                "package_id": "com.klipsch.connect",
+                "version_code": 1365,
+                "version_name": "1.20.0",
+                "package_path": "AndroZoo/apks/00/com.klipsch.connect_0099C6F8A68F13F55EF2E81F774C6EF480E4EB9C04032A4CC0E64013675522D7.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_NETWORK_LIST`."
             }
         ],
         "parent_UUID": "00000000-0000-0000-0099-aabbccddeeff"
@@ -3421,6 +3472,13 @@
                 "version_code": 1365,
                 "version_name": "1.20.0",
                 "package_path": "BLUUID_APKS/0179/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_NETWORK_CONNECT`."
+            },
+            {
+                "package_id": "com.klipsch.connect",
+                "version_code": 1365,
+                "version_name": "1.20.0",
+                "package_path": "AndroZoo/apks/00/com.klipsch.connect_0099C6F8A68F13F55EF2E81F774C6EF480E4EB9C04032A4CC0E64013675522D7.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_NETWORK_CONNECT`."
             }
         ],
@@ -3457,6 +3515,13 @@
                 "version_name": "1.20.0",
                 "package_path": "BLUUID_APKS/0179/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_CONNECTION_STATUS_NOTIFICATION`."
+            },
+            {
+                "package_id": "com.klipsch.connect",
+                "version_code": 1365,
+                "version_name": "1.20.0",
+                "package_path": "AndroZoo/apks/00/com.klipsch.connect_0099C6F8A68F13F55EF2E81F774C6EF480E4EB9C04032A4CC0E64013675522D7.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_CONNECTION_STATUS_NOTIFICATION`."
             }
         ],
         "parent_UUID": "00000000-0000-0000-0099-aabbccddeeff"
@@ -3491,6 +3556,13 @@
                 "version_code": 1365,
                 "version_name": "1.20.0",
                 "package_path": "BLUUID_APKS/0179/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_PUBLIC_KEY`."
+            },
+            {
+                "package_id": "com.klipsch.connect",
+                "version_code": 1365,
+                "version_name": "1.20.0",
+                "package_path": "AndroZoo/apks/00/com.klipsch.connect_0099C6F8A68F13F55EF2E81F774C6EF480E4EB9C04032A4CC0E64013675522D7.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_PUBLIC_KEY`."
             }
         ],
@@ -3527,6 +3599,13 @@
                 "version_name": "1.20.0",
                 "package_path": "BLUUID_APKS/0179/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_NETWORK_LIST_READ_OFFSET`."
+            },
+            {
+                "package_id": "com.klipsch.connect",
+                "version_code": 1365,
+                "version_name": "1.20.0",
+                "package_path": "AndroZoo/apks/00/com.klipsch.connect_0099C6F8A68F13F55EF2E81F774C6EF480E4EB9C04032A4CC0E64013675522D7.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_NETWORK_LIST_READ_OFFSET`."
             }
         ],
         "parent_UUID": "00000000-0000-0000-0099-aabbccddeeff"
@@ -3562,6 +3641,13 @@
                 "version_name": "1.20.0",
                 "package_path": "BLUUID_APKS/0179/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_CONNECTION_STATUS`."
+            },
+            {
+                "package_id": "com.klipsch.connect",
+                "version_code": 1365,
+                "version_name": "1.20.0",
+                "package_path": "AndroZoo/apks/00/com.klipsch.connect_0099C6F8A68F13F55EF2E81F774C6EF480E4EB9C04032A4CC0E64013675522D7.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_CONNECTION_STATUS`."
             }
         ],
         "parent_UUID": "00000000-0000-0000-0099-aabbccddeeff"
@@ -3596,6 +3682,13 @@
                 "version_code": 1365,
                 "version_name": "1.20.0",
                 "package_path": "BLUUID_APKS/0179/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d/a38e02027c54a5ccdf02849b85986a849a8a0f1032ed5aca8a4141b27c4b447d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_IP_ADDRESS`."
+            },
+            {
+                "package_id": "com.klipsch.connect",
+                "version_code": 1365,
+                "version_name": "1.20.0",
+                "package_path": "AndroZoo/apks/00/com.klipsch.connect_0099C6F8A68F13F55EF2E81F774C6EF480E4EB9C04032A4CC0E64013675522D7.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_IP_ADDRESS`."
             }
         ],
@@ -23916,6 +24009,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_ADVERTISING_SEED`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -26584,6 +26681,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_ADVERTISING_SEED`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_ADVERTISING_SEED`."
             }
         ],
@@ -29144,6 +29248,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_ADVERTISING_VECTOR`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -31812,6 +31920,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_ADVERTISING_VECTOR`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_ADVERTISING_VECTOR`."
             }
         ],
@@ -34372,6 +34487,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_MAJOR`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -37040,6 +37159,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_MAJOR`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_MAJOR`."
             }
         ],
@@ -39600,6 +39726,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_MINOR`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -42268,6 +42398,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_MINOR`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_MINOR`."
             }
         ],
@@ -44828,6 +44965,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_UUID`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -47496,6 +47637,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_UUID`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_UUID`."
             }
         ],
@@ -54314,6 +54462,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_POWER`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -56982,6 +57134,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_POWER`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_POWER`."
             }
         ],
@@ -59542,6 +59701,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_ADVERTISING_INTERVAL`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -62210,6 +62373,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_ADVERTISING_INTERVAL`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_ADVERTISING_INTERVAL`."
             }
         ],
@@ -64770,6 +64940,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_TEMPERATURE`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -67438,6 +67612,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_TEMPERATURE`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_TEMPERATURE`."
             }
         ],
@@ -116729,6 +116910,34 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Spain) — JustIN Mobile smart-lock BLE protocol (com.saltosystems.justinmobile Android SDK)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.nexudusspaces.bureau v3.8.2 (versionCode 320250909), in Java field `SALTO_CHARACTERISTIC_READ_ONLY`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SALTO_CHARACTERISTIC_READ_ONLY).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.risesoftware.universityave100 v25.07.100 (versionCode 600974), in Java field `SALTO_CHARACTERISTIC_READ_ONLY`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SALTO_CHARACTERISTIC_READ_ONLY).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lane.pallas v5.437.0 (versionCode 142), in Java field `SALTO_CHARACTERISTIC_READ_ONLY`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SALTO_CHARACTERISTIC_READ_ONLY).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.pacesettertechnology.android.golfer.pacesetteruk v26.02.8 (20260218.1629) (versionCode 16194), in Java field `SALTO_CHARACTERISTIC_READ_ONLY`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SALTO_CHARACTERISTIC_READ_ONLY).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.buildinglink.winworth v3.6.6 (versionCode 601), declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.thexcompany.app v2.5.1-prod (versionCode 489), in Java field `b`, declared in Java package `com.saltosystems.justinmobile.sdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(b).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.nexudusspaces.impacthubmadrid v3.8.5 (versionCode 320251013), in Java field `SALTO_CHARACTERISTIC_READ_ONLY`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SALTO_CHARACTERISTIC_READ_ONLY).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -124207,6 +124416,55 @@
                 "version_name": "24.01.110",
                 "package_path": "BLUUID_APKS/0997/8af204285028a0f7f07a7adae777bacd3c10fc88e2970f81b36c0cca2fd9a676/8af204285028a0f7f07a7adae777bacd3c10fc88e2970f81b36c0cca2fd9a676.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6798b`."
+            },
+            {
+                "package_id": "com.nexudusspaces.bureau",
+                "version_code": 320250909,
+                "version_name": "3.8.2",
+                "package_path": "AndroZoo/apks/00/com.nexudusspaces.bureau_004EDABD20675654DACA1DDCB05997326C949941D2262B984AABB3E35979FA0E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SALTO_CHARACTERISTIC_READ_ONLY`."
+            },
+            {
+                "package_id": "com.risesoftware.universityave100",
+                "version_code": 600974,
+                "version_name": "25.07.100",
+                "package_path": "AndroZoo/apks/00/com.risesoftware.universityave100_00527B04B080686CB7404014459E0E740A5A2AFC5A32628D239BC796D5375314.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SALTO_CHARACTERISTIC_READ_ONLY`."
+            },
+            {
+                "package_id": "com.lane.pallas",
+                "version_code": 142,
+                "version_name": "5.437.0",
+                "package_path": "AndroZoo/apks/00/com.lane.pallas_0084CA13D0AF9DAE01EB0CE53C0193FB3A57A16A4DC3E93154752B395D7CC06F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SALTO_CHARACTERISTIC_READ_ONLY`."
+            },
+            {
+                "package_id": "com.pacesettertechnology.android.golfer.pacesetteruk",
+                "version_code": 16194,
+                "version_name": "26.02.8 (20260218.1629)",
+                "package_path": "AndroZoo/apks/00/com.pacesettertechnology.android.golfer.pacesetteruk_00C1205BB243726C3933CA34FF59ECF2B03311C4AE2CB094A4374E2D591FB34E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SALTO_CHARACTERISTIC_READ_ONLY`."
+            },
+            {
+                "package_id": "com.buildinglink.winworth",
+                "version_code": 601,
+                "version_name": "3.6.6",
+                "package_path": "AndroZoo/apks/00/com.buildinglink.winworth_00CEE8D321C36A5AE7B60A88F15DE9B79D662AF223F30577EC381BC2F10120D5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.thexcompany.app",
+                "version_code": 489,
+                "version_name": "2.5.1-prod",
+                "package_path": "AndroZoo/apks/00/com.thexcompany.app_00DB2BDAC0BF6FF5E5469995020EAFE6139BBF114A714F88835E31E7A166E795.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `b`."
+            },
+            {
+                "package_id": "com.nexudusspaces.impacthubmadrid",
+                "version_code": 320251013,
+                "version_name": "3.8.5",
+                "package_path": "AndroZoo/apks/00/com.nexudusspaces.impacthubmadrid_00ED594E6D414F7BE7012243770BF18FBEF1F4B94ADCFDAEC7523C5726BBA4E5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SALTO_CHARACTERISTIC_READ_ONLY`."
             }
         ],
         "parent_UUID": "00000000-0000-0000-0000-00137e5a8eef"
@@ -129355,6 +129613,34 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Spain) — JustIN Mobile smart-lock BLE protocol (com.saltosystems.justinmobile Android SDK)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.nexudusspaces.bureau v3.8.2 (versionCode 320250909), in Java field `SALTO_CHARACTERISTIC_WRITE_ONLY`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SALTO_CHARACTERISTIC_WRITE_ONLY).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.risesoftware.universityave100 v25.07.100 (versionCode 600974), in Java field `SALTO_CHARACTERISTIC_WRITE_ONLY`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SALTO_CHARACTERISTIC_WRITE_ONLY).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lane.pallas v5.437.0 (versionCode 142), in Java field `SALTO_CHARACTERISTIC_WRITE_ONLY`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SALTO_CHARACTERISTIC_WRITE_ONLY).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.pacesettertechnology.android.golfer.pacesetteruk v26.02.8 (20260218.1629) (versionCode 16194), in Java field `SALTO_CHARACTERISTIC_WRITE_ONLY`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SALTO_CHARACTERISTIC_WRITE_ONLY).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.buildinglink.winworth v3.6.6 (versionCode 601), declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.thexcompany.app v2.5.1-prod (versionCode 489), in Java field `c`, declared in Java package `com.saltosystems.justinmobile.sdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(c).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.nexudusspaces.impacthubmadrid v3.8.5 (versionCode 320251013), in Java field `SALTO_CHARACTERISTIC_WRITE_ONLY`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SALTO_CHARACTERISTIC_WRITE_ONLY).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -136833,6 +137119,55 @@
                 "version_name": "24.01.110",
                 "package_path": "BLUUID_APKS/0997/8af204285028a0f7f07a7adae777bacd3c10fc88e2970f81b36c0cca2fd9a676/8af204285028a0f7f07a7adae777bacd3c10fc88e2970f81b36c0cca2fd9a676.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6799c`."
+            },
+            {
+                "package_id": "com.nexudusspaces.bureau",
+                "version_code": 320250909,
+                "version_name": "3.8.2",
+                "package_path": "AndroZoo/apks/00/com.nexudusspaces.bureau_004EDABD20675654DACA1DDCB05997326C949941D2262B984AABB3E35979FA0E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SALTO_CHARACTERISTIC_WRITE_ONLY`."
+            },
+            {
+                "package_id": "com.risesoftware.universityave100",
+                "version_code": 600974,
+                "version_name": "25.07.100",
+                "package_path": "AndroZoo/apks/00/com.risesoftware.universityave100_00527B04B080686CB7404014459E0E740A5A2AFC5A32628D239BC796D5375314.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SALTO_CHARACTERISTIC_WRITE_ONLY`."
+            },
+            {
+                "package_id": "com.lane.pallas",
+                "version_code": 142,
+                "version_name": "5.437.0",
+                "package_path": "AndroZoo/apks/00/com.lane.pallas_0084CA13D0AF9DAE01EB0CE53C0193FB3A57A16A4DC3E93154752B395D7CC06F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SALTO_CHARACTERISTIC_WRITE_ONLY`."
+            },
+            {
+                "package_id": "com.pacesettertechnology.android.golfer.pacesetteruk",
+                "version_code": 16194,
+                "version_name": "26.02.8 (20260218.1629)",
+                "package_path": "AndroZoo/apks/00/com.pacesettertechnology.android.golfer.pacesetteruk_00C1205BB243726C3933CA34FF59ECF2B03311C4AE2CB094A4374E2D591FB34E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SALTO_CHARACTERISTIC_WRITE_ONLY`."
+            },
+            {
+                "package_id": "com.buildinglink.winworth",
+                "version_code": 601,
+                "version_name": "3.6.6",
+                "package_path": "AndroZoo/apks/00/com.buildinglink.winworth_00CEE8D321C36A5AE7B60A88F15DE9B79D662AF223F30577EC381BC2F10120D5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.thexcompany.app",
+                "version_code": 489,
+                "version_name": "2.5.1-prod",
+                "package_path": "AndroZoo/apks/00/com.thexcompany.app_00DB2BDAC0BF6FF5E5469995020EAFE6139BBF114A714F88835E31E7A166E795.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
+            },
+            {
+                "package_id": "com.nexudusspaces.impacthubmadrid",
+                "version_code": 320251013,
+                "version_name": "3.8.5",
+                "package_path": "AndroZoo/apks/00/com.nexudusspaces.impacthubmadrid_00ED594E6D414F7BE7012243770BF18FBEF1F4B94ADCFDAEC7523C5726BBA4E5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SALTO_CHARACTERISTIC_WRITE_ONLY`."
             }
         ],
         "parent_UUID": "00000000-0000-0000-0000-00137e5a8eef"
@@ -137300,6 +137635,527 @@
             }
         ],
         "parent_UUID": "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
+    },
+    {
+        "UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_DEVICES_SERVICE",
+        "UUID_purpose": "Enphase Envoy v2 devices service.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.v2.service.devices` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a); j0/C4131z.java:104-105 sets the first UUID argument as the GATT service; BleModeRequestBuilder$write$2.java:47-55 passes service and characteristic to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "ba808b5b-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_PCU_COMM_CHECK",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `pcu-comm_check`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.v2.service.devices` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to pcu-comm_check; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b5c-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_DEVICE_ENERGY_READINGS",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `device-energy-readings`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to device-energy-readings; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b5d-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_DEVICE_CONTROL",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `device-control`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to device-control; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b5e-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_ACB_PHASE",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `acb-phase`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to acb-phase; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b5f-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_INVERTER_DETAILS",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `inverter-details`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to inverter-details; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b60-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_RETIRE_NON_ENSEMBLE_DEVICE",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `retire-non-ensemble-device`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to retire-non-ensemble-device; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b61-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_RETIRE_THIRDPARTY_INVERTER",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `retire-thirdparty-inverter`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to retire-thirdparty-inverter; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b62-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_RETIRE_ENSEMBLE_DEVICE",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `retire-ensemble-device`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to retire-ensemble-device; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b63-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_RESET_ENSEMBLE_DEVICE",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `reset-ensemble-device`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to reset-ensemble-device; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b64-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_DELETE_GENERATOR",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `delete-generator`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to delete-generator; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b65-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_GATEWAY",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `gateway`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to gateway; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b66-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_POWERLINE_NOISE_COMMUNICATION",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `powerline-noise-communication`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.v2.service.devices` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to powerline-noise-communication; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b67-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_POWER_MODE",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `power-mode`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to power-mode; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b68-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_ZIGBEE_SET_PHASE",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `zigbee-set-phase`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to zigbee-set-phase; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b69-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_INGERATOR",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `ingerator`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to ingerator; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b6a-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_ACB_PHASE",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `acb-phase`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to acb-phase; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
+    },
+    {
+        "UUID": "ba808b6b-de23-4cf5-9a47-0f2849934896",
+        "company": "Enphase Energy, Inc.",
+        "UUID_name": "ENVOY_CHAR_PCU_STATUS",
+        "UUID_purpose": "Enphase Envoy BLE characteristic mapped by the SDK to `pcu-status`.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.enphase.installer v4.12.4(4) (versionCode 1358), declared in Java package `envoyClientLibrary.utils` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Phase-5 UUID-name resolution: AndroZoo/apks_jadx/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk.jadx.tar.xz: GPT-6 Luna review: envoyClientLibrary/utils/Gateway2UtilityKt.java:16 maps this characteristic UUID to pcu-status; envoyClientLibrary/v2/service/devices/BleModeDevicesService.java (C4131z.k calls use service ba808b5a). j0/C4131z.java:104-105 sets service and characteristic separately; BleModeRequestBuilder$write$2.java:47-55 passes them to IBleManager.writeData.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.enphase.installer",
+                "version_code": 1358,
+                "version_name": "4.12.4(4)",
+                "package_path": "AndroZoo/apks/00/com.enphase.installer_006C0D93BED31DD18C2C01EAABEBD9B14D652C1834EB4892FD8F9F43AF603FBA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "ba808b5a-de23-4cf5-9a47-0f2849934896"
     },
     {
         "UUID": "b9407f30-f5f8-466e-aff9-25556b57fe6d",
@@ -176082,6 +176938,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_BATTERY`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -178750,6 +179610,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_BATTERY`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_BATTERY`."
             }
         ],
@@ -181310,6 +182177,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_SOFTWARE_VERSION`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -183978,6 +184849,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_SOFTWARE_VERSION`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_SOFTWARE_VERSION`."
             }
         ],
@@ -186538,6 +187416,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_HARDWARE_VERSION`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -189206,6 +190088,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_HARDWARE_VERSION`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ESTIMOTE_HARDWARE_VERSION`."
             }
         ],
@@ -191770,6 +192659,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_AUTHENTICATION_SERVICE`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: field-name:ESTIMOTE_AUTHENTICATION_SERVICE.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -194438,6 +195331,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ESTIMOTE_AUTHENTICATION_SERVICE`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ESTIMOTE_AUTHENTICATION_SERVICE`."
             }
         ]
@@ -201258,6 +202158,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_SERVICE`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: field-name:ESTIMOTE_SERVICE.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -203926,6 +204830,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ESTIMOTE_SERVICE`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ESTIMOTE_SERVICE`."
             }
         ]
@@ -210746,6 +211657,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=com.microtechmd.cgms.mg",
                 "description": "Verified current Google Play listing for com.microtechmd.cgms.mg. This listing does not establish that archived APK version 1.5.1 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `ESTIMOTE_VERSION_SERVICE`, declared in Java package `com.vise.baseble.model.resolver` (third-party SDK). Classification source: field-name:ESTIMOTE_VERSION_SERVICE.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -213414,6 +214329,13 @@
                 "version_code": 2016,
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/61/com.microtechmd.cgms.mg_61977D641C6DC48F1D82B51E2DA99A1844ED1BB1E17C66621D283F72A6CAD83E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ESTIMOTE_VERSION_SERVICE`."
+            },
+            {
+                "package_id": "jp.anima.app",
+                "version_code": 96,
+                "version_name": "2.5.5",
+                "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ESTIMOTE_VERSION_SERVICE`."
             }
         ]
@@ -218073,6 +218995,66 @@
         ]
     },
     {
+        "UUID": "ba67c742-3e49-4e0f-ad0d-141e0020f2a2",
+        "company": "NAPCO Security Technologies, Inc.",
+        "UUID_name": "CHARACTERISTIC_DATA_TX_TYPE",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.napcosecurity.ilock.conti, declared as Java field `CHARACTERISTIC_DATA_TX_TYPE`. Classification determined by field-name:CHARACTERISTIC_DATA_TX_TYPE.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.napcosecurity.ilock.conti v1.0.20 (versionCode 36010022), in Java field `CHARACTERISTIC_DATA_TX_TYPE`. Classification source: field-name:CHARACTERISTIC_DATA_TX_TYPE.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.napcosecurity.ilock.conti",
+                "description": "Publisher attribution for com.napcosecurity.ilock.conti: Google Play lists NAPCO Security Technologies and its developer details name NAPCO Security Technologies, Inc. This source does not establish that it distributes the scanned APK build.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.napcosecurity.ilock.conti",
+                "version_code": 36010022,
+                "version_name": "1.0.20",
+                "package_path": "AndroZoo/apks/00/com.napcosecurity.ilock.conti_00CEB054CC129B5F34E45BEEA0BA50B8C546AC19FA596BAA4FA627E3539BE483.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_DATA_TX_TYPE`."
+            }
+        ],
+        "parent_UUID": "ee88dbb3-5ee0-4ed5-be48-0f520407ec74"
+    },
+    {
+        "UUID": "bcd6678b-55d0-47bc-ad27-edb6ec455255",
+        "company": "NAPCO Security Technologies, Inc.",
+        "UUID_name": "CHARACTERISTIC_DATA_TX_CTRL",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.napcosecurity.ilock.conti, declared as Java field `CHARACTERISTIC_DATA_TX_CTRL`. Classification determined by field-name:CHARACTERISTIC_DATA_TX_CTRL.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.napcosecurity.ilock.conti v1.0.20 (versionCode 36010022), in Java field `CHARACTERISTIC_DATA_TX_CTRL`. Classification source: field-name:CHARACTERISTIC_DATA_TX_CTRL.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.napcosecurity.ilock.conti",
+                "description": "Publisher attribution for com.napcosecurity.ilock.conti: Google Play lists NAPCO Security Technologies and its developer details name NAPCO Security Technologies, Inc. This source does not establish that it distributes the scanned APK build.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.napcosecurity.ilock.conti",
+                "version_code": 36010022,
+                "version_name": "1.0.20",
+                "package_path": "AndroZoo/apks/00/com.napcosecurity.ilock.conti_00CEB054CC129B5F34E45BEEA0BA50B8C546AC19FA596BAA4FA627E3539BE483.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_DATA_TX_CTRL`."
+            }
+        ],
+        "parent_UUID": "ee88dbb3-5ee0-4ed5-be48-0f520407ec74"
+    },
+    {
         "UUID": "b275204f-e964-4fba-9780-c35daccdb557",
         "company": "Third-party SDK code (declared in Java package `com.networkr` — distinct from host events.grip.scaleevents; Phase-4 identification needed)",
         "UUID_name": "ONESIGNAL_APP_ID",
@@ -222061,6 +223043,64 @@
                 "version_name": "2.6.14_983fc07_230425",
                 "package_path": "BLUUID_APKS/0231/1cc0c6af9b191b6204d536a0bef08bc6770267008df75713750e3070b920b7e5/1cc0c6af9b191b6204d536a0bef08bc6770267008df75713750e3070b920b7e5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "b25699f1-2418-4530-a510-3f1d97af13ca",
+        "company": "Onlife Health, Inc.",
+        "UUID_name": "GUID_BLENDED_BP",
+        "UUID_purpose": "Custom GATT Service observed in Android app com.onlife.regence, declared as Java field `GUID_BLENDED_BP`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.onlife.regence v14.1.0 (versionCode 2609551), in Java field `GUID_BLENDED_BP`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?hl=en_US&id=com.onlife.regence",
+                "description": "Publisher attribution for com.onlife.regence: Google Play package-specific listing names Onlife Health, Inc. as developer. This source does not establish that it distributes the scanned APK build.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.onlife.regence",
+                "version_code": 2609551,
+                "version_name": "14.1.0",
+                "package_path": "AndroZoo/apks/00/com.onlife.regence_00CD8BE78DDCC5CCD75C739DA701A5AE9B8CA9D0E8670BD080CCE279E52F23AE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GUID_BLENDED_BP`."
+            }
+        ]
+    },
+    {
+        "UUID": "b459f803-6450-437e-af59-9639409ea923",
+        "company": "Onlife Health, Inc.",
+        "UUID_name": "GUID_NUTRITION",
+        "UUID_purpose": "Custom GATT Service observed in Android app com.onlife.regence, declared as Java field `GUID_NUTRITION`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.onlife.regence v14.1.0 (versionCode 2609551), in Java field `GUID_NUTRITION`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?hl=en_US&id=com.onlife.regence",
+                "description": "Publisher attribution for com.onlife.regence: Google Play package-specific listing names Onlife Health, Inc. as developer. This source does not establish that it distributes the scanned APK build.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.onlife.regence",
+                "version_code": 2609551,
+                "version_name": "14.1.0",
+                "package_path": "AndroZoo/apks/00/com.onlife.regence_00CD8BE78DDCC5CCD75C739DA701A5AE9B8CA9D0E8670BD080CCE279E52F23AE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GUID_NUTRITION`."
             }
         ]
     },
@@ -228142,6 +229182,34 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Spain) — JustIN Mobile smart-lock BLE protocol (com.saltosystems.justinmobile Android SDK)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.nexudusspaces.bureau v3.8.2 (versionCode 320250909), in Java field `SALTO_GATT_SERVICE`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getService(SALTO_GATT_SERVICE).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.risesoftware.universityave100 v25.07.100 (versionCode 600974), in Java field `SALTO_GATT_SERVICE`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getService(SALTO_GATT_SERVICE).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lane.pallas v5.437.0 (versionCode 142), in Java field `SALTO_GATT_SERVICE`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getService(SALTO_GATT_SERVICE).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.pacesettertechnology.android.golfer.pacesetteruk v26.02.8 (20260218.1629) (versionCode 16194), in Java field `SALTO_GATT_SERVICE`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getService(SALTO_GATT_SERVICE).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.buildinglink.winworth v3.6.6 (versionCode 601), declared in Java package `com.saltosystems.justinmobile.sdk.ble` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.thexcompany.app v2.5.1-prod (versionCode 489), in Java field `a`, declared in Java package `com.saltosystems.justinmobile.sdk` (third-party SDK). Classification source: cross-file usage:getService(a).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.nexudusspaces.impacthubmadrid v3.8.5 (versionCode 320251013), in Java field `SALTO_GATT_SERVICE`, declared in Java package `com.saltosystems.justinmobile.obscured` (third-party SDK). Classification source: cross-file usage:getService(SALTO_GATT_SERVICE).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -235620,6 +236688,55 @@
                 "version_name": "24.01.110",
                 "package_path": "BLUUID_APKS/0997/8af204285028a0f7f07a7adae777bacd3c10fc88e2970f81b36c0cca2fd9a676/8af204285028a0f7f07a7adae777bacd3c10fc88e2970f81b36c0cca2fd9a676.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f6797a`."
+            },
+            {
+                "package_id": "com.nexudusspaces.bureau",
+                "version_code": 320250909,
+                "version_name": "3.8.2",
+                "package_path": "AndroZoo/apks/00/com.nexudusspaces.bureau_004EDABD20675654DACA1DDCB05997326C949941D2262B984AABB3E35979FA0E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SALTO_GATT_SERVICE`."
+            },
+            {
+                "package_id": "com.risesoftware.universityave100",
+                "version_code": 600974,
+                "version_name": "25.07.100",
+                "package_path": "AndroZoo/apks/00/com.risesoftware.universityave100_00527B04B080686CB7404014459E0E740A5A2AFC5A32628D239BC796D5375314.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SALTO_GATT_SERVICE`."
+            },
+            {
+                "package_id": "com.lane.pallas",
+                "version_code": 142,
+                "version_name": "5.437.0",
+                "package_path": "AndroZoo/apks/00/com.lane.pallas_0084CA13D0AF9DAE01EB0CE53C0193FB3A57A16A4DC3E93154752B395D7CC06F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SALTO_GATT_SERVICE`."
+            },
+            {
+                "package_id": "com.pacesettertechnology.android.golfer.pacesetteruk",
+                "version_code": 16194,
+                "version_name": "26.02.8 (20260218.1629)",
+                "package_path": "AndroZoo/apks/00/com.pacesettertechnology.android.golfer.pacesetteruk_00C1205BB243726C3933CA34FF59ECF2B03311C4AE2CB094A4374E2D591FB34E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SALTO_GATT_SERVICE`."
+            },
+            {
+                "package_id": "com.buildinglink.winworth",
+                "version_code": 601,
+                "version_name": "3.6.6",
+                "package_path": "AndroZoo/apks/00/com.buildinglink.winworth_00CEE8D321C36A5AE7B60A88F15DE9B79D662AF223F30577EC381BC2F10120D5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.thexcompany.app",
+                "version_code": 489,
+                "version_name": "2.5.1-prod",
+                "package_path": "AndroZoo/apks/00/com.thexcompany.app_00DB2BDAC0BF6FF5E5469995020EAFE6139BBF114A714F88835E31E7A166E795.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `a`."
+            },
+            {
+                "package_id": "com.nexudusspaces.impacthubmadrid",
+                "version_code": 320251013,
+                "version_name": "3.8.5",
+                "package_path": "AndroZoo/apks/00/com.nexudusspaces.impacthubmadrid_00ED594E6D414F7BE7012243770BF18FBEF1F4B94ADCFDAEC7523C5726BBA4E5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SALTO_GATT_SERVICE`."
             }
         ]
     },
@@ -238221,6 +239338,35 @@
         "parent_UUID": "22eac6e9-24d6-4bb5-be44-b36ace7c7bfb"
     },
     {
+        "UUID": "bb01",
+        "company": "T2FI LLC",
+        "UUID_name": "PROFILE_B",
+        "UUID_purpose": "Custom GATT Service observed in Android app com.RHPConnect, declared as Java field `PROFILE_B_UUID`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.RHPConnect v7.02.12.4 (versionCode 121), in Java field `PROFILE_B_UUID`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.RHPConnect",
+                "description": "Publisher attribution for com.RHPConnect: Google Play lists the publisher as t2Fi and identifies T2FI LLC in developer details. This source does not establish that it distributes the scanned APK build.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.RHPConnect",
+                "version_code": 121,
+                "version_name": "7.02.12.4",
+                "package_path": "AndroZoo/apks/00/com.RHPConnect_0027E02172661A1FBBFA071CC684F41BCF5A4A0E80089719C0DE489820822A86.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `PROFILE_B_UUID`."
+            }
+        ]
+    },
+    {
         "UUID": "beb7705e-bd66-4501-80c0-0c8f0bcca1a5",
         "company": "Technogym SpA",
         "UUID_name": "SERVICE_CALIBRATION_COMMAND / SERVICE_UART",
@@ -238232,6 +239378,15 @@
             {
                 "description": "Found in decompiled DEX of com.technogym.mycycling v1.6.5 (versionCode 433), in Java field `SERVICE_CALIBRATION_COMMAND / SERVICE_UART`. Classification source: field-name:SERVICE_CALIBRATION_COMMAND.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.technogym.myo v7.36.2 (versionCode 4041), in Java field `f12417b`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://chrome-stats.com/d/com.technogym.myo?hl=pt",
+                "description": "Publisher attribution for com.technogym.myo: Package-specific Google Play-derived metadata names O2 Centro Wellness as publisher; this appears to be the branded app publisher for the shared Technogym package namespace. This source does not establish that it distributes the scanned APK build.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -238241,6 +239396,13 @@
                 "version_name": "1.6.5",
                 "package_path": "BLUUID_APKS/0678/2b9700554fe252dc376d170d6a765d449ce4b59c6089352ff98fb04df8b13145/2b9700554fe252dc376d170d6a765d449ce4b59c6089352ff98fb04df8b13145.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SERVICE_CALIBRATION_COMMAND / SERVICE_UART`."
+            },
+            {
+                "package_id": "com.technogym.myo",
+                "version_code": 4041,
+                "version_name": "7.36.2",
+                "package_path": "AndroZoo/apks/00/com.technogym.myo_00ACA4EB44746CF3AA97901B4C26272A13F6022684D0EBCED90D3682A6587BC1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f12417b`."
             }
         ]
     },
@@ -238269,6 +239431,30 @@
                 "version_name": "3.19.48.7686",
                 "package_path": "BLUUID_APKS/0816/30d4969590749361b7154ad87f76c3d0f49bf8649c54e5f672545272260538b6/30d4969590749361b7154ad87f76c3d0f49bf8649c54e5f672545272260538b6.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `e`."
+            }
+        ]
+    },
+    {
+        "UUID": "b5634099-97c4-4f37-adf3-771246e77754",
+        "company": "Third-party SDK code (declared in Java package `M` — distinct from host com.ctek.sba; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.ctek.sba but declared in third-party SDK package `M` as Java field `f504c`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(f504c).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.ctek.sba v2.4.6 (versionCode 81), in Java field `f504c`, declared in Java package `M` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f504c).",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ctek.sba",
+                "version_code": 81,
+                "version_name": "2.4.6",
+                "package_path": "AndroZoo/apks/00/com.ctek.sba_0076E21A72E87E6E75BB5E390E593CECB2CF9E28D24CBF5778DE837CEFF34A19.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f504c`."
             }
         ]
     },
@@ -240862,6 +242048,10 @@
             {
                 "description": "Found in decompiled DEX of com.amfam.milesmyway vamfam-v2.2.0.0-82767-g4c8061d-prod (versionCode 82767), in Java field `DRIVEWELL_SERVICE_BEACON`, declared in Java package `com.cmtelematics.sdk` (third-party SDK). Classification source: field-name:DRIVEWELL_SERVICE_BEACON.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of ca.tpic.ajusto v4.32.0 (versionCode 5853), in Java field `DRIVEWELL_SERVICE_BEACON`, declared in Java package `com.cmtelematics.sdk` (third-party SDK). Classification source: field-name:DRIVEWELL_SERVICE_BEACON.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -240968,6 +242158,13 @@
                 "version_code": 82767,
                 "version_name": "amfam-v2.2.0.0-82767-g4c8061d-prod",
                 "package_path": "BLUUID_APKS/0986/43ac6e2ed63eb546c131ad78f6519e7771712c37024126e8c71c77437a1e105b/43ac6e2ed63eb546c131ad78f6519e7771712c37024126e8c71c77437a1e105b.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `DRIVEWELL_SERVICE_BEACON`."
+            },
+            {
+                "package_id": "ca.tpic.ajusto",
+                "version_code": 5853,
+                "version_name": "4.32.0",
+                "package_path": "AndroZoo/apks/00/ca.tpic.ajusto_003E26393E6719032F5D2D3227876D1C7181E0A7D11863BB0B40FE7900BDDAE4.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `DRIVEWELL_SERVICE_BEACON`."
             }
         ]
@@ -242253,6 +243450,10 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: BleConnection.java:659 getCharacteristic(B); BleManagerHandler.java:354 changed value broadcast/handler; CC2541OADProxy.java:198 changed value broadcast/handler; CC2541OADProxy.java:230 changed value broadcast/handler",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of xl.HoursOfService v4.05.011 (versionCode 405011), in Java field `B`, declared in Java package `com.raven.ravensdk.ble` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -242303,6 +243504,13 @@
                 "version_code": 405005,
                 "version_name": "4.05.005",
                 "package_path": "BLUUID_APKS/0897/54e36ef2e391f1f1de09182716beb8a1f438176a0d02c9f32ff3dd0f006d38ee/54e36ef2e391f1f1de09182716beb8a1f438176a0d02c9f32ff3dd0f006d38ee.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `B`."
+            },
+            {
+                "package_id": "xl.HoursOfService",
+                "version_code": 405011,
+                "version_name": "4.05.011",
+                "package_path": "AndroZoo/apks/00/xl.HoursOfService_00896263568F9379EB46CDE3A62EDBE1CA984A1DA23A15C33F446EE742D70D3D.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `B`."
             }
         ],
@@ -242615,6 +243823,222 @@
         ]
     },
     {
+        "UUID": "b537370c-e47e-4c80-91c8-c13df70c7fe7",
+        "company": "Third-party SDK code (declared in Java package `com.teckelmedical.mediktorcore.common` — distinct from host com.universallifemobileapp; Phase-4 identification needed)",
+        "UUID_name": "GIVE_FEEDBACK_CATEGORY_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.universallifemobileapp but declared in third-party SDK package `com.teckelmedical.mediktorcore.common` as Java field `GIVE_FEEDBACK_CATEGORY_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:GIVE_FEEDBACK_CATEGORY_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.universallifemobileapp v2.2.14 (versionCode 91), in Java field `GIVE_FEEDBACK_CATEGORY_ID`, declared in Java package `com.teckelmedical.mediktorcore.common` (third-party SDK). Classification source: field-name:GIVE_FEEDBACK_CATEGORY_ID.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.universallifemobileapp",
+                "version_code": 91,
+                "version_name": "2.2.14",
+                "package_path": "AndroZoo/apks/00/com.universallifemobileapp_003B44C972AEEEB3F496F5F1395346FBE56C5564F90C804FA202B739E52AE575.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `GIVE_FEEDBACK_CATEGORY_ID`."
+            }
+        ]
+    },
+    {
+        "UUID": "b2b15b7f-3f78-4edf-b550-000b65757269",
+        "company": "Third-party SDK code (declared in Java package `com.teckelmedical.mediktorcore.common` — distinct from host com.universallifemobileapp; Phase-4 identification needed)",
+        "UUID_name": "FahrenheitUnit",
+        "UUID_purpose": "GATT Service observed in Android app com.universallifemobileapp but declared in third-party SDK package `com.teckelmedical.mediktorcore.common` as Java field `FahrenheitUnit`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.universallifemobileapp v2.2.14 (versionCode 91), in Java field `FahrenheitUnit`, declared in Java package `com.teckelmedical.mediktorcore.common` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.universallifemobileapp",
+                "version_code": 91,
+                "version_name": "2.2.14",
+                "package_path": "AndroZoo/apks/00/com.universallifemobileapp_003B44C972AEEEB3F496F5F1395346FBE56C5564F90C804FA202B739E52AE575.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `FahrenheitUnit`."
+            }
+        ]
+    },
+    {
+        "UUID": "bdf05ca6-6f92-40a0-8b37-524353ad7728",
+        "company": "Third-party SDK code (declared in Java package `com.teckelmedical.mediktorcore.common` — distinct from host com.universallifemobileapp; Phase-4 identification needed)",
+        "UUID_name": "FamilyHistory",
+        "UUID_purpose": "GATT Service observed in Android app com.universallifemobileapp but declared in third-party SDK package `com.teckelmedical.mediktorcore.common` as Java field `FamilyHistory`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.universallifemobileapp v2.2.14 (versionCode 91), in Java field `FamilyHistory`, declared in Java package `com.teckelmedical.mediktorcore.common` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.universallifemobileapp",
+                "version_code": 91,
+                "version_name": "2.2.14",
+                "package_path": "AndroZoo/apks/00/com.universallifemobileapp_003B44C972AEEEB3F496F5F1395346FBE56C5564F90C804FA202B739E52AE575.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `FamilyHistory`."
+            }
+        ]
+    },
+    {
+        "UUID": "b527e2c0-69fd-4aac-ac02-d3e039fd407c",
+        "company": "Third-party SDK code (declared in Java package `com.teckelmedical.mediktorcore.common` — distinct from host com.universallifemobileapp; Phase-4 identification needed)",
+        "UUID_name": "GpsQ19",
+        "UUID_purpose": "GATT Service observed in Android app com.universallifemobileapp but declared in third-party SDK package `com.teckelmedical.mediktorcore.common` as Java field `GpsQ19`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.universallifemobileapp v2.2.14 (versionCode 91), in Java field `GpsQ19`, declared in Java package `com.teckelmedical.mediktorcore.common` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.universallifemobileapp",
+                "version_code": 91,
+                "version_name": "2.2.14",
+                "package_path": "AndroZoo/apks/00/com.universallifemobileapp_003B44C972AEEEB3F496F5F1395346FBE56C5564F90C804FA202B739E52AE575.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GpsQ19`."
+            }
+        ]
+    },
+    {
+        "UUID": "b374dee8-9c0d-4228-93e5-3672b341b1e8",
+        "company": "Third-party SDK code (declared in Java package `com.teckelmedical.mediktorcore.common` — distinct from host com.universallifemobileapp; Phase-4 identification needed)",
+        "UUID_name": "NullifierAllergies",
+        "UUID_purpose": "GATT Service observed in Android app com.universallifemobileapp but declared in third-party SDK package `com.teckelmedical.mediktorcore.common` as Java field `NullifierAllergies`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.universallifemobileapp v2.2.14 (versionCode 91), in Java field `NullifierAllergies`, declared in Java package `com.teckelmedical.mediktorcore.common` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.universallifemobileapp",
+                "version_code": 91,
+                "version_name": "2.2.14",
+                "package_path": "AndroZoo/apks/00/com.universallifemobileapp_003B44C972AEEEB3F496F5F1395346FBE56C5564F90C804FA202B739E52AE575.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `NullifierAllergies`."
+            }
+        ]
+    },
+    {
+        "UUID": "bac8ff3a-c375-453d-908c-f85e80793f1c",
+        "company": "Third-party SDK code (declared in Java package `com.teckelmedical.mediktorcore.common` — distinct from host com.universallifemobileapp; Phase-4 identification needed)",
+        "UUID_name": "SURVEY_CATEGORY",
+        "UUID_purpose": "GATT Service observed in Android app com.universallifemobileapp but declared in third-party SDK package `com.teckelmedical.mediktorcore.common` as Java field `SURVEY_CATEGORY`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.universallifemobileapp v2.2.14 (versionCode 91), in Java field `SURVEY_CATEGORY`, declared in Java package `com.teckelmedical.mediktorcore.common` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.universallifemobileapp",
+                "version_code": 91,
+                "version_name": "2.2.14",
+                "package_path": "AndroZoo/apks/00/com.universallifemobileapp_003B44C972AEEEB3F496F5F1395346FBE56C5564F90C804FA202B739E52AE575.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SURVEY_CATEGORY`."
+            }
+        ]
+    },
+    {
+        "UUID": "bac275dd-6f57-4618-aa9c-012bca389197",
+        "company": "Third-party SDK code (declared in Java package `com.teckelmedical.mediktorcore.common` — distinct from host com.universallifemobileapp; Phase-4 identification needed)",
+        "UUID_name": "SurveyRating",
+        "UUID_purpose": "GATT Service observed in Android app com.universallifemobileapp but declared in third-party SDK package `com.teckelmedical.mediktorcore.common` as Java field `SurveyRating`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.universallifemobileapp v2.2.14 (versionCode 91), in Java field `SurveyRating`, declared in Java package `com.teckelmedical.mediktorcore.common` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.universallifemobileapp",
+                "version_code": 91,
+                "version_name": "2.2.14",
+                "package_path": "AndroZoo/apks/00/com.universallifemobileapp_003B44C972AEEEB3F496F5F1395346FBE56C5564F90C804FA202B739E52AE575.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SurveyRating`."
+            }
+        ]
+    },
+    {
+        "UUID": "bfc2f1ad-83a9-43f5-ae24-9c81cecfcc90",
+        "company": "Third-party SDK code (declared in Java package `com.teckelmedical.mediktorcore.common` — distinct from host com.universallifemobileapp; Phase-4 identification needed)",
+        "UUID_name": "SurveyStart",
+        "UUID_purpose": "GATT Service observed in Android app com.universallifemobileapp but declared in third-party SDK package `com.teckelmedical.mediktorcore.common` as Java field `SurveyStart`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.universallifemobileapp v2.2.14 (versionCode 91), in Java field `SurveyStart`, declared in Java package `com.teckelmedical.mediktorcore.common` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.universallifemobileapp",
+                "version_code": 91,
+                "version_name": "2.2.14",
+                "package_path": "AndroZoo/apks/00/com.universallifemobileapp_003B44C972AEEEB3F496F5F1395346FBE56C5564F90C804FA202B739E52AE575.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SurveyStart`."
+            }
+        ]
+    },
+    {
+        "UUID": "bb3fcbb3-0bc5-4709-8929-4eccf08d80f0",
+        "company": "Third-party SDK code (declared in Java package `com.teckelmedical.mediktorcore.common` — distinct from host com.universallifemobileapp; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service observed in Android app com.universallifemobileapp but declared in third-party SDK package `com.teckelmedical.mediktorcore.common`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.universallifemobileapp v2.2.14 (versionCode 91), declared in Java package `com.teckelmedical.mediktorcore.common` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.universallifemobileapp",
+                "version_code": 91,
+                "version_name": "2.2.14",
+                "package_path": "AndroZoo/apks/00/com.universallifemobileapp_003B44C972AEEEB3F496F5F1395346FBE56C5564F90C804FA202B739E52AE575.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
         "UUID": "beadb4c6-d0b6-874f-f499-17f9dc3a0012",
         "company": "Third-party SDK code (declared in Java package `com.thales.blevoicecard.sdk.ble` — distinct from host com.mobillium.papara; Phase-4 identification needed)",
         "UUID_name": "CHARACTERISTIC_DEVICE_DATA",
@@ -242751,6 +244175,10 @@
             {
                 "description": "Found in decompiled DEX of com.modus.ZephyrELD v3.0.2207.220606 (versionCode 561), declared in Java package `com.vistracks.vtlib.vbus.datareaders` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.trackm2m.trackm2mvistracks v1.0.2024.210126 (versionCode 421), declared in Java package `g.h.f.f0.a` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -242759,6 +244187,13 @@
                 "version_code": 561,
                 "version_name": "3.0.2207.220606",
                 "package_path": "BLUUID_APKS/0604/1b51ad261c000ee4042155a71c663e1c766877cdd78064e12467fff2aa13025a/1b51ad261c000ee4042155a71c663e1c766877cdd78064e12467fff2aa13025a.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.trackm2m.trackm2mvistracks",
+                "version_code": 421,
+                "version_name": "1.0.2024.210126",
+                "package_path": "AndroZoo/apks/00/com.trackm2m.trackm2mvistracks_004FDB5E6AAFE5EEC7DE2D628F7FA74E57DF79C8CF15E93DF6BF7851127DEB83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
             }
         ],
@@ -242776,6 +244211,10 @@
             {
                 "description": "Found in decompiled DEX of com.modus.ZephyrELD v3.0.2207.220606 (versionCode 561), in Java field `oldWriteCharacteristicUUID`, declared in Java package `com.vistracks.vtlib.vbus.datareaders` (third-party SDK). Classification source: field-name:oldWriteCharacteristicUUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.trackm2m.trackm2mvistracks v1.0.2024.210126 (versionCode 421), in Java field `L`, declared in Java package `g.h.f.f0.a` (third-party SDK). Classification source: cross-file usage:getCharacteristic(L).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -242785,6 +244224,13 @@
                 "version_name": "3.0.2207.220606",
                 "package_path": "BLUUID_APKS/0604/1b51ad261c000ee4042155a71c663e1c766877cdd78064e12467fff2aa13025a/1b51ad261c000ee4042155a71c663e1c766877cdd78064e12467fff2aa13025a.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `oldWriteCharacteristicUUID`."
+            },
+            {
+                "package_id": "com.trackm2m.trackm2mvistracks",
+                "version_code": 421,
+                "version_name": "1.0.2024.210126",
+                "package_path": "AndroZoo/apks/00/com.trackm2m.trackm2mvistracks_004FDB5E6AAFE5EEC7DE2D628F7FA74E57DF79C8CF15E93DF6BF7851127DEB83.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `L`."
             }
         ],
         "parent_UUID": "00031234-0000-1000-8000-00805f9b0130"
@@ -242801,6 +244247,10 @@
             {
                 "description": "Found in decompiled DEX of com.modus.ZephyrELD v3.0.2207.220606 (versionCode 561), in Java field `oldServiceConfigUUID`, declared in Java package `com.vistracks.vtlib.vbus.datareaders` (third-party SDK). Classification source: field-name:oldServiceConfigUUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.trackm2m.trackm2mvistracks v1.0.2024.210126 (versionCode 421), in Java field `M`, declared in Java package `g.h.f.f0.a` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -242810,6 +244260,13 @@
                 "version_name": "3.0.2207.220606",
                 "package_path": "BLUUID_APKS/0604/1b51ad261c000ee4042155a71c663e1c766877cdd78064e12467fff2aa13025a/1b51ad261c000ee4042155a71c663e1c766877cdd78064e12467fff2aa13025a.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `oldServiceConfigUUID`."
+            },
+            {
+                "package_id": "com.trackm2m.trackm2mvistracks",
+                "version_code": 421,
+                "version_name": "1.0.2024.210126",
+                "package_path": "AndroZoo/apks/00/com.trackm2m.trackm2mvistracks_004FDB5E6AAFE5EEC7DE2D628F7FA74E57DF79C8CF15E93DF6BF7851127DEB83.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `M`."
             }
         ]
     },
@@ -242825,6 +244282,10 @@
             {
                 "description": "Found in decompiled DEX of com.modus.ZephyrELD v3.0.2207.220606 (versionCode 561), in Java field `oldServiceReadUUID`, declared in Java package `com.vistracks.vtlib.vbus.datareaders` (third-party SDK). Classification source: field-name:oldServiceReadUUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.trackm2m.trackm2mvistracks v1.0.2024.210126 (versionCode 421), in Java field `K`, declared in Java package `g.h.f.f0.a` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -242834,6 +244295,13 @@
                 "version_name": "3.0.2207.220606",
                 "package_path": "BLUUID_APKS/0604/1b51ad261c000ee4042155a71c663e1c766877cdd78064e12467fff2aa13025a/1b51ad261c000ee4042155a71c663e1c766877cdd78064e12467fff2aa13025a.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `oldServiceReadUUID`."
+            },
+            {
+                "package_id": "com.trackm2m.trackm2mvistracks",
+                "version_code": 421,
+                "version_name": "1.0.2024.210126",
+                "package_path": "AndroZoo/apks/00/com.trackm2m.trackm2mvistracks_004FDB5E6AAFE5EEC7DE2D628F7FA74E57DF79C8CF15E93DF6BF7851127DEB83.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `K`."
             }
         ]
     },
@@ -242899,6 +244367,10 @@
             {
                 "description": "Found in decompiled DEX of se.volvo.vcc v5.36.0 (versionCode 26097), declared in Java package `com.volvocars.vocmosdk.business.pairing.ble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of se.volvo.vcc v7.3.0 (versionCode 29828), declared in Java package `com.volvocars.vocmosdk.business.pairing.ble` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -242907,6 +244379,13 @@
                 "version_code": 26097,
                 "version_name": "5.36.0",
                 "package_path": "BLUUID_APKS/0930/8a459a16787e967774d28c20ee27631c50248917271f269635f17e040b11ab32/8a459a16787e967774d28c20ee27631c50248917271f269635f17e040b11ab32.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "se.volvo.vcc",
+                "version_code": 29828,
+                "version_name": "7.3.0",
+                "package_path": "AndroZoo/apks/00/se.volvo.vcc_005C37BC9270D8A6C5B8FD4B3EF820DF845936C9C0125A59029FF93C9747F60A.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
             }
         ]
@@ -251139,6 +252618,27 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (white-label fitness app platform)"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m0a9e98ded7204cc6a9992fff23f8be8f.affordablelawncare v2.94723.0 (versionCode 94723000), in Java field `WRITE_TO_PERIPHERAL_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.thepinkroomhtx v2.114732.0 (versionCode 105575732), in Java field `WRITE_TO_PERIPHERAL_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.tv.brandup v2.62867.0 (versionCode 62867000), in Java field `WRITE_TO_PERIPHERAL_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:WRITE_TO_PERIPHERAL_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.laramiepeakyoga v2.65048.1 (versionCode 65048001), in Java field `WRITE_TO_PERIPHERAL_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:WRITE_TO_PERIPHERAL_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://developer.sumup.com/terminal-payments/sdks/android/readers/",
+                "description": "GPT-6 Luna SDK review: Likely SumUp Android reader SDK GATT profile: the exact same 20 UUID records are present in two distinct host packages and their DEX evidence names com.sumup.reader.core.pinplus.transport. SumUp primary docs confirm the Android SDK handles Bluetooth readers including legacy PIN+, but do not list the UUIDs. Keep bc2f4cc6-aaef-4351-9034-d66268e328f0 Unknown; a different public product manual assigns that UUID to Blue Creation BC Smart, so ownership/name needs direct firmware or SDK context.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -252254,6 +253754,34 @@
                 "version_name": "7.3.2",
                 "package_path": "BLUUID_APKS/0983/ab74d39f36939df2d3536a4b136db4a130cd3dec8e89c27bafe11133d4a7b5df/ab74d39f36939df2d3536a4b136db4a130cd3dec8e89c27bafe11133d4a7b5df.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `Q`."
+            },
+            {
+                "package_id": "branded.m0a9e98ded7204cc6a9992fff23f8be8f.affordablelawncare",
+                "version_code": 94723000,
+                "version_name": "2.94723.0",
+                "package_path": "AndroZoo/apks/00/branded.m0a9e98ded7204cc6a9992fff23f8be8f.affordablelawncare_007504F05FDEC942E25F662E6B1356F7D33E7A34BD3B44FF2F2C4DAAFF37FF19.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WRITE_TO_PERIPHERAL_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.thepinkroomhtx",
+                "version_code": 105575732,
+                "version_name": "2.114732.0",
+                "package_path": "AndroZoo/apks/00/com.thepinkroomhtx_00CB0260712D1A8CF008117F5E1EA09656DD17BA9DFB35EE0970F4C21F7E3C41.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WRITE_TO_PERIPHERAL_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "branded.tv.brandup",
+                "version_code": 62867000,
+                "version_name": "2.62867.0",
+                "package_path": "AndroZoo/apks/00/branded.tv.brandup_00CD8899DC1715B3463A9F677860F927F6A21E5428E13D1C5D600FB8C33AB8E1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WRITE_TO_PERIPHERAL_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.laramiepeakyoga",
+                "version_code": 65048001,
+                "version_name": "2.65048.1",
+                "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WRITE_TO_PERIPHERAL_CHARACTERISTIC`."
             }
         ],
         "parent_UUID": "134441a1-384e-4100-9c1d-d0cff27c5a60"
@@ -252918,6 +254446,22 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (white-label fitness app platform)"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m0a9e98ded7204cc6a9992fff23f8be8f.affordablelawncare v2.94723.0 (versionCode 94723000), in Java field `GMX_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.thepinkroomhtx v2.114732.0 (versionCode 105575732), in Java field `GMX_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.util` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.tv.brandup v2.62867.0 (versionCode 62867000), in Java field `GMX_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.laramiepeakyoga v2.65048.1 (versionCode 65048001), in Java field `GMX_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -254026,6 +255570,34 @@
                 "version_name": "7.3.2",
                 "package_path": "BLUUID_APKS/0983/ab74d39f36939df2d3536a4b136db4a130cd3dec8e89c27bafe11133d4a7b5df/ab74d39f36939df2d3536a4b136db4a130cd3dec8e89c27bafe11133d4a7b5df.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `R`."
+            },
+            {
+                "package_id": "branded.m0a9e98ded7204cc6a9992fff23f8be8f.affordablelawncare",
+                "version_code": 94723000,
+                "version_name": "2.94723.0",
+                "package_path": "AndroZoo/apks/00/branded.m0a9e98ded7204cc6a9992fff23f8be8f.affordablelawncare_007504F05FDEC942E25F662E6B1356F7D33E7A34BD3B44FF2F2C4DAAFF37FF19.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GMX_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.thepinkroomhtx",
+                "version_code": 105575732,
+                "version_name": "2.114732.0",
+                "package_path": "AndroZoo/apks/00/com.thepinkroomhtx_00CB0260712D1A8CF008117F5E1EA09656DD17BA9DFB35EE0970F4C21F7E3C41.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GMX_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.tv.brandup",
+                "version_code": 62867000,
+                "version_name": "2.62867.0",
+                "package_path": "AndroZoo/apks/00/branded.tv.brandup_00CD8899DC1715B3463A9F677860F927F6A21E5428E13D1C5D600FB8C33AB8E1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GMX_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.laramiepeakyoga",
+                "version_code": 65048001,
+                "version_name": "2.65048.1",
+                "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GMX_SERVICE_UUID`."
             }
         ],
         "parent_UUID": "d839fc3c-84dd-4c36-9126-187b07255125"
@@ -254678,6 +256250,27 @@
             {
                 "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m0a9e98ded7204cc6a9992fff23f8be8f.affordablelawncare v2.94723.0 (versionCode 94723000), in Java field `GMX_WUBLE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.thepinkroomhtx v2.114732.0 (versionCode 105575732), in Java field `GMX_WUBLE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.util` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.tv.brandup v2.62867.0 (versionCode 62867000), in Java field `GMX_WUBLE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.laramiepeakyoga v2.65048.1 (versionCode 65048001), in Java field `GMX_WUBLE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://developer.sumup.com/terminal-payments/sdks/android/readers/",
+                "description": "GPT-6 Luna SDK review: Likely SumUp Android reader SDK GATT profile: the exact same 20 UUID records are present in two distinct host packages and their DEX evidence names com.sumup.reader.core.pinplus.transport. SumUp primary docs confirm the Android SDK handles Bluetooth readers including legacy PIN+, but do not list the UUIDs. Keep bc2f4cc6-aaef-4351-9034-d66268e328f0 Unknown; a different public product manual assigns that UUID to Blue Creation BC Smart, so ownership/name needs direct firmware or SDK context.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -255758,6 +257351,34 @@
                 "version_name": "7.3.2",
                 "package_path": "BLUUID_APKS/0983/ab74d39f36939df2d3536a4b136db4a130cd3dec8e89c27bafe11133d4a7b5df/ab74d39f36939df2d3536a4b136db4a130cd3dec8e89c27bafe11133d4a7b5df.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `S`."
+            },
+            {
+                "package_id": "branded.m0a9e98ded7204cc6a9992fff23f8be8f.affordablelawncare",
+                "version_code": 94723000,
+                "version_name": "2.94723.0",
+                "package_path": "AndroZoo/apks/00/branded.m0a9e98ded7204cc6a9992fff23f8be8f.affordablelawncare_007504F05FDEC942E25F662E6B1356F7D33E7A34BD3B44FF2F2C4DAAFF37FF19.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GMX_WUBLE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.thepinkroomhtx",
+                "version_code": 105575732,
+                "version_name": "2.114732.0",
+                "package_path": "AndroZoo/apks/00/com.thepinkroomhtx_00CB0260712D1A8CF008117F5E1EA09656DD17BA9DFB35EE0970F4C21F7E3C41.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GMX_WUBLE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.tv.brandup",
+                "version_code": 62867000,
+                "version_name": "2.62867.0",
+                "package_path": "AndroZoo/apks/00/branded.tv.brandup_00CD8899DC1715B3463A9F677860F927F6A21E5428E13D1C5D600FB8C33AB8E1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GMX_WUBLE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.laramiepeakyoga",
+                "version_code": 65048001,
+                "version_name": "2.65048.1",
+                "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GMX_WUBLE_SERVICE_UUID`."
             }
         ]
     },
