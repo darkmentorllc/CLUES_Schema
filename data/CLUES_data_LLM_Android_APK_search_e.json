@@ -4008,6 +4008,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=cn.fitcare.heartool",
                 "description": "Verified current Google Play listing for cn.fitcare.heartool. This listing does not establish that archived APK version 2.0.5 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "FBKBleUuids.java:6 defines ECG_NOTIFY_UUID; FBKProtocolECG.java:219 compares an incoming BluetoothGattCharacteristic UUID against it, and FBKBleFunction.java:68 checks it in a List<BluetoothGattCharacteristic>.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -4031,6 +4035,13 @@
                 "version_name": "2.0.5",
                 "package_path": "AndroZoo/apks/d1/cn.fitcare.heartool_D14243E2CB34882F2863DFB656A841003D1A54D6A4677C7E3B8E70CCB3216F80.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ECG_NOTIFY_UUID`."
+            },
+            {
+                "package_id": "net.punchlab.app",
+                "version_code": 463,
+                "version_name": "4.8.36",
+                "package_path": "AndroZoo/apks/fa/net.punchlab.app_FA7B6AD4C21F13547DDB81B32FC76CC3E8092D97D1EA1DFD774CD7106321845D.apk",
+                "description": "Detected by apk-clues-extract scan; usage GATT Characteristic; Java field `ECG_NOTIFY_UUID`."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -4389,6 +4400,10 @@
                 "URL": "https://apkpure.net/klipsch/com.klipsch.connect/download/1.20.0",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): e49a25e0-f69a-11e8-8eb2-f2801f1b9fd1 is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:213. Paired lookup at simple_jadx/sources/be/ml.java:80 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: e49a258f-f69a-11e8-8eb2-f2801f1b9fd1.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -4510,6 +4525,13 @@
                 "version_name": "1.20.0",
                 "package_path": "AndroZoo/apks/00/com.klipsch.connect_0099C6F8A68F13F55EF2E81F774C6EF480E4EB9C04032A4CC0E64013675522D7.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_WRITE_FIFO / BLE_UUID_SERVICE_WRITE`."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
         ],
         "parent_UUID": "00006287-3c17-d293-8e48-14fe2e4da212"
@@ -4600,6 +4622,10 @@
                 "URL": "https://apkpure.net/klipsch/com.klipsch.connect/download/1.20.0",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): e49a28e1-f69a-11e8-8eb2-f2801f1b9fd1 is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:214. Paired lookup at simple_jadx/sources/be/ml.java:79 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: e49a258f-f69a-11e8-8eb2-f2801f1b9fd1.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -4728,6 +4754,13 @@
                 "version_name": "1.20.0",
                 "package_path": "AndroZoo/apks/00/com.klipsch.connect_0099C6F8A68F13F55EF2E81F774C6EF480E4EB9C04032A4CC0E64013675522D7.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_READ_FIFO / BLE_UUID_SERVICE_READ`."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
         ],
         "parent_UUID": "00006287-3c17-d293-8e48-14fe2e4da212"
@@ -8625,6 +8658,10 @@
             {
                 "description": "Found in decompiled DEX of com.glassbiller.techside_native v4.2.22 (versionCode 83), in Java field `UUID_CHARACTERISTIC_SERVICE_VERSION`, declared in Java package `com.squareup.cardreader.ble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Exact target APK SHA-256 6bc9b62fe06cb18e83fadda6264f7dd324155b5efcfe6f069e567e6e01398824; decompiled source com.squareup.cardreader.ble.R12Gatt.java declares UUID_CHARACTERISTIC_SERVICE_VERSION and assigns e0ab0dd2-88bf-11e5-a9da-24a074e98014. R12Gatt.LCR_CHARACTERISTICS includes this value.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -8766,7 +8803,13 @@
                 "version_code": 83,
                 "version_name": "4.2.22",
                 "package_path": "AndroZoo/apks/00/com.glassbiller.techside_native_0063FBFC7BD75B44727F814BA604B8724D549A76732F67569A0F249A946BC1AF.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_CHARACTERISTIC_SERVICE_VERSION`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_CHARACTERISTIC_SERVICE_VERSION`."
+            },
+            {
+                "package_id": "com.acuityscheduling.app.android",
+                "version_code": 1788445294,
+                "version_name": "97.0.0",
+                "package_path": "AndroZoo/apks/6b/com.acuityscheduling.app.android_6BC9B62FE06CB18E83FADDA6264F7DD324155B5EFCFE6F069E567E6E01398824.apk"
             }
         ],
         "parent_UUID": "4362f634-04e8-4f03-b07f-434f0d7551e0"
@@ -8864,6 +8907,10 @@
             {
                 "description": "Found in decompiled DEX of com.glassbiller.techside_native v4.2.22 (versionCode 83), in Java field `UUID_CHARACTERISTIC_CONNECTION_CONTROL`, declared in Java package `com.squareup.cardreader.ble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Exact target APK SHA-256 6bc9b62fe06cb18e83fadda6264f7dd324155b5efcfe6f069e567e6e01398824; decompiled source com.squareup.cardreader.ble.R12Gatt.java declares UUID_CHARACTERISTIC_CONNECTION_CONTROL and assigns e0c56d1c-be88-4ada-ae89-42feb563f4e9. R12Gatt.LCR_CHARACTERISTICS includes this value.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -9006,6 +9053,12 @@
                 "version_name": "4.2.22",
                 "package_path": "AndroZoo/apks/00/com.glassbiller.techside_native_0063FBFC7BD75B44727F814BA604B8724D549A76732F67569A0F249A946BC1AF.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_CHARACTERISTIC_CONNECTION_CONTROL`."
+            },
+            {
+                "package_id": "com.acuityscheduling.app.android",
+                "version_code": 1788445294,
+                "version_name": "97.0.0",
+                "package_path": "AndroZoo/apks/6b/com.acuityscheduling.app.android_6BC9B62FE06CB18E83FADDA6264F7DD324155B5EFCFE6F069E567E6E01398824.apk"
             }
         ],
         "parent_UUID": "4362f634-04e8-4f03-b07f-434f0d7551e0"
@@ -9210,6 +9263,10 @@
             {
                 "description": "Found in decompiled DEX of com.glassbiller.techside_native v4.2.22 (versionCode 83), in Java field `UUID_CHARACTERISTIC_BOND_STATUS`, declared in Java package `com.squareup.cardreader.ble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Exact target APK SHA-256 6bc9b62fe06cb18e83fadda6264f7dd324155b5efcfe6f069e567e6e01398824; decompiled source com.squareup.cardreader.ble.R12Gatt.java declares UUID_CHARACTERISTIC_BOND_STATUS and assigns eee76878-4864-47ab-b5d7-3d6791a5725b. R12Gatt.LCR_CHARACTERISTICS includes this value.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -9352,6 +9409,12 @@
                 "version_name": "4.2.22",
                 "package_path": "AndroZoo/apks/00/com.glassbiller.techside_native_0063FBFC7BD75B44727F814BA604B8724D549A76732F67569A0F249A946BC1AF.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_CHARACTERISTIC_BOND_STATUS`."
+            },
+            {
+                "package_id": "com.acuityscheduling.app.android",
+                "version_code": 1788445294,
+                "version_name": "97.0.0",
+                "package_path": "AndroZoo/apks/6b/com.acuityscheduling.app.android_6BC9B62FE06CB18E83FADDA6264F7DD324155B5EFCFE6F069E567E6E01398824.apk"
             }
         ],
         "parent_UUID": "4362f634-04e8-4f03-b07f-434f0d7551e0"
@@ -267294,6 +267357,177 @@
         ]
     },
     {
+        "UUID": "e1fb2456-704c-4aee-91d6-51438a993eea",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 1ce95b6c-f868-4329-8927-9e22e7651a5c by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): e1fb2456-704c-4aee-91d6-51438a993eea is used as a characteristic UUID. Source profile compiled from WingmanViewSpeakerDevice.kt. Literal defined at simple_jadx/sources/wd/n.java:118. Paired lookup at simple_jadx/sources/be/xq.java:2075 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1ce95b6c-f868-4329-8927-9e22e7651a5c.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "1ce95b6c-f868-4329-8927-9e22e7651a5c"
+    },
+    {
+        "UUID": "ef454fc0-d849-4dec-b628-8033870eed9d",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 1ce95b6c-f868-4329-8927-9e22e7651a5c by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): ef454fc0-d849-4dec-b628-8033870eed9d is used as a characteristic UUID. Source profile compiled from WingmanViewSpeakerDevice.kt. Literal defined at simple_jadx/sources/wd/n.java:107. Paired lookup at simple_jadx/sources/be/xq.java:2064 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1ce95b6c-f868-4329-8927-9e22e7651a5c.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "1ce95b6c-f868-4329-8927-9e22e7651a5c"
+    },
+    {
+        "UUID": "e3e24463-d3e0-4332-ba67-ca2e1b523a20",
+        "company": "Third-party SDK code (declared in Java package `q6` — distinct from host com.bushnell.golf; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.bushnell.golf v1.9.5 (versionCode 31), declared in Java package `q6` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): e3e24463-d3e0-4332-ba67-ca2e1b523a20 is used as a characteristic UUID. Source profile compiled from ProXMDevice.kt. Literal defined at simple_jadx/sources/wd/e.java:105. Paired lookup at simple_jadx/sources/be/sa.java:2138 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 39a9c7b9-961e-4600-b35c-5854713359de.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 31,
+                "version_name": "1.9.5",
+                "package_path": "BLUUID_APKS/0055/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "39a9c7b9-961e-4600-b35c-5854713359de"
+    },
+    {
+        "UUID": "e4098e1f-e276-4bc1-a37d-84a70d290c4a",
+        "company": "Third-party SDK code (declared in Java package `q6` — distinct from host com.bushnell.golf; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.bushnell.golf v1.9.5 (versionCode 31), declared in Java package `q6` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): e4098e1f-e276-4bc1-a37d-84a70d290c4a is used as a characteristic UUID. Source profile compiled from ProXMDevice.kt. Literal defined at simple_jadx/sources/wd/e.java:104. Paired lookup at simple_jadx/sources/be/sa.java:2137 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 39a9c7b9-961e-4600-b35c-5854713359de.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 31,
+                "version_name": "1.9.5",
+                "package_path": "BLUUID_APKS/0055/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "39a9c7b9-961e-4600-b35c-5854713359de"
+    },
+    {
+        "UUID": "e913c762-1bbe-4f4c-80b4-f7152187edb4",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service ace76cdc-b3ed-467c-994c-f6da677621a1 by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): e913c762-1bbe-4f4c-80b4-f7152187edb4 is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:181. Paired lookup at simple_jadx/sources/be/rl.java:5700 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: ace76cdc-b3ed-467c-994c-f6da677621a1.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "ace76cdc-b3ed-467c-994c-f6da677621a1"
+    },
+    {
+        "UUID": "e49a258f-f69a-11e8-8eb2-f2801f1b9fd1",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT service used by the target app's Bushnell device communication code; the exact feature is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): e49a258f-f69a-11e8-8eb2-f2801f1b9fd1 is used as a service UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:212. Paired lookup at simple_jadx/sources/be/ml.java:80 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ]
+    },
+    {
         "UUID": "eb328ba9-2bab-4b38-b6e6-22652211f11d",
         "company": "CBRE",
         "UUID_name": "DATA_DOG_APP_ID_NON_PROD",
@@ -298661,6 +298895,10 @@
                 "URL": "https://apkpure.net/klipsch/com.klipsch.connect/download/1.20.0",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): e49a25f8-f69a-11e8-8eb2-f2801f1b9fd1 is used as a service UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:211. Paired lookup at simple_jadx/sources/be/wf.java:4760 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -298774,7 +299012,14 @@
                 "version_code": 1365,
                 "version_name": "1.20.0",
                 "package_path": "AndroZoo/apks/00/com.klipsch.connect_0099C6F8A68F13F55EF2E81F774C6EF480E4EB9C04032A4CC0E64013675522D7.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BLE_UUID_SERVICE`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BLE_UUID_SERVICE`."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
         ]
     },
@@ -348261,6 +348506,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=cn.fitcare.heartool",
                 "description": "Verified current Google Play listing for cn.fitcare.heartool. This listing does not establish that archived APK version 2.0.5 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "FBKBleUuids.java:7 defines ECG_SERVICE_UUID in the com.onecoder.fitblekit BLE UUID table. Service classification follows the explicit field name; no separate use-site for this field was found in the recovery source tree.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -348284,6 +348533,13 @@
                 "version_name": "2.0.5",
                 "package_path": "AndroZoo/apks/d1/cn.fitcare.heartool_D14243E2CB34882F2863DFB656A841003D1A54D6A4677C7E3B8E70CCB3216F80.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ECG_SERVICE_UUID`."
+            },
+            {
+                "package_id": "net.punchlab.app",
+                "version_code": 463,
+                "version_name": "4.8.36",
+                "package_path": "AndroZoo/apks/fa/net.punchlab.app_FA7B6AD4C21F13547DDB81B32FC76CC3E8092D97D1EA1DFD774CD7106321845D.apk",
+                "description": "Detected by apk-clues-extract scan; usage GATT Service; Java field `ECG_SERVICE_UUID`."
             }
         ]
     },
@@ -348291,9 +348547,9 @@
         "UUID": "ec0a",
         "company": "Third-party SDK code (declared in Java package `com.onecoder.fitblekit.Ble.FBKBleDevice` — distinct from host net.punchlab.app; Phase-4 identification needed)",
         "UUID_name": "ECG_WRITE",
-        "UUID_purpose": "GATT Service observed in Android app net.punchlab.app but declared in third-party SDK package `com.onecoder.fitblekit.Ble.FBKBleDevice` as Java field `ECG_WRITE_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
+        "UUID_purpose": "GATT Characteristic observed in Android app net.punchlab.app but declared in third-party SDK package `com.onecoder.fitblekit.Ble.FBKBleDevice` as Java field `ECG_WRITE_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -348312,6 +348568,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=cn.fitcare.heartool",
                 "description": "Verified current Google Play listing for cn.fitcare.heartool. This listing does not establish that archived APK version 2.0.5 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "FBKBleUuids.java:8 defines ECG_WRITE_UUID in the GATT profile table. Its explicit WRITE role is clear, but no direct reference outside that table was found in the recovery source tree.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -348320,23 +348580,31 @@
                 "version_code": 227,
                 "version_name": "4.4.1",
                 "package_path": "BLUUID_APKS/0056/173bc1b44914737e8e086605e38e0a69426f7b0a34aab4bf4d9bed171ea754bf/173bc1b44914737e8e086605e38e0a69426f7b0a34aab4bf4d9bed171ea754bf.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ECG_WRITE_UUID`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ECG_WRITE_UUID`."
             },
             {
                 "package_id": "com.dexbee.sport.admin",
                 "version_code": 208,
                 "version_name": "1.11.0",
                 "package_path": "BLUUID_APKS/0145/802fcb4209bc0232bb8c4b04a23c31dab56f1fd30c4a2e96b5a8900cdddd7b68/802fcb4209bc0232bb8c4b04a23c31dab56f1fd30c4a2e96b5a8900cdddd7b68.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ECG_WRITE_UUID`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ECG_WRITE_UUID`."
             },
             {
                 "package_id": "cn.fitcare.heartool",
                 "version_code": 205,
                 "version_name": "2.0.5",
                 "package_path": "AndroZoo/apks/d1/cn.fitcare.heartool_D14243E2CB34882F2863DFB656A841003D1A54D6A4677C7E3B8E70CCB3216F80.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ECG_WRITE_UUID`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ECG_WRITE_UUID`."
+            },
+            {
+                "package_id": "net.punchlab.app",
+                "version_code": 463,
+                "version_name": "4.8.36",
+                "package_path": "AndroZoo/apks/fa/net.punchlab.app_FA7B6AD4C21F13547DDB81B32FC76CC3E8092D97D1EA1DFD774CD7106321845D.apk",
+                "description": "Detected by apk-clues-extract scan; usage GATT Characteristic; Java field `ECG_WRITE_UUID`."
             }
-        ]
+        ],
+        "parent_UUID": "ec00"
     },
     {
         "UUID": "eee20001-5242-4c88-9e57-86b154322679",
@@ -351657,65 +351925,21 @@
         ]
     },
     {
-        "UUID": "e3e24463-d3e0-4332-ba67-ca2e1b523a20",
-        "company": "Third-party SDK code (declared in Java package `q6` — distinct from host com.bushnell.golf; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.bushnell.golf v1.9.5 (versionCode 31), declared in Java package `q6` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.bushnell.golf",
-                "version_code": 31,
-                "version_name": "1.9.5",
-                "package_path": "BLUUID_APKS/0055/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
-        "UUID": "e4098e1f-e276-4bc1-a37d-84a70d290c4a",
-        "company": "Third-party SDK code (declared in Java package `q6` — distinct from host com.bushnell.golf; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.bushnell.golf v1.9.5 (versionCode 31), declared in Java package `q6` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.bushnell.golf",
-                "version_code": 31,
-                "version_name": "1.9.5",
-                "package_path": "BLUUID_APKS/0055/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
         "UUID": "e47a5499-e4fa-4e14-81a8-e8dbb142e2e7",
         "company": "Third-party SDK code (declared in Java package `q6` — distinct from host com.bushnell.golf; Phase-4 identification needed)",
         "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
                 "description": "Found in decompiled DEX of com.bushnell.golf v1.9.5 (versionCode 31), declared in Java package `q6` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): e47a5499-e4fa-4e14-81a8-e8dbb142e2e7 is used as a characteristic UUID. Source profile compiled from ProXMDevice.kt. Literal defined at simple_jadx/sources/wd/e.java:130. Paired lookup at simple_jadx/sources/be/sa.java:2167 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 907b2eab-cc3b-4a5b-8ab5-a924b4d84346.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -351724,9 +351948,17 @@
                 "version_code": 31,
                 "version_name": "1.9.5",
                 "package_path": "BLUUID_APKS/0055/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
-        ]
+        ],
+        "parent_UUID": "907b2eab-cc3b-4a5b-8ab5-a924b4d84346"
     },
     {
         "UUID": "e5526af1-18c9-474a-a80d-70c7f725e833",
@@ -351740,6 +351972,10 @@
             {
                 "description": "Found in decompiled DEX of com.bushnell.golf v1.9.5 (versionCode 31), declared in Java package `q6` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): e5526af1-18c9-474a-a80d-70c7f725e833 is used as a service UUID. Source profile compiled from ProXMDevice.kt. Literal defined at simple_jadx/sources/wd/e.java:116. Paired lookup at simple_jadx/sources/be/sa.java:2155 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -351749,6 +351985,13 @@
                 "version_name": "1.9.5",
                 "package_path": "BLUUID_APKS/0055/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
         ]
     },

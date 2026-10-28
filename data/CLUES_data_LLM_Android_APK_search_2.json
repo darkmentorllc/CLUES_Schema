@@ -8090,6 +8090,10 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Korean motorcycle helmet Bluetooth intercom vendor; companion app for setup/firmware)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 2e31421d-b466-4113-a1f7-b037eea994a6 is used as a characteristic UUID. Source profile compiled from WingmanMiniDevice.kt. Literal defined at simple_jadx/sources/wd/l.java:57. Paired lookup at simple_jadx/sources/be/po.java:1613 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: bce91fcb-709a-4851-93a3-0df96dc218f3.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -8099,6 +8103,13 @@
                 "version_name": "1.0.9",
                 "package_path": "BLUUID_APKS/0140/d7f6c40426ed26bd5e4af36810d00c77ae6a4fc04d8cf6cfe24b427d24b08a3c/d7f6c40426ed26bd5e4af36810d00c77ae6a4fc04d8cf6cfe24b427d24b08a3c.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SinglePressCharacterUUID`."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
         ],
         "parent_UUID": "13094283-3bb4-12ee-9f21-f5cb37b3472a"
@@ -50697,6 +50708,106 @@
         ]
     },
     {
+        "UUID": "22414ce0-f5ea-11ec-bd69-0800200c9a66",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 1ce95b6c-f868-4329-8927-9e22e7651a5c by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 22414ce0-f5ea-11ec-bd69-0800200c9a66 is used as a characteristic UUID. Source profile compiled from WingmanViewSpeakerDevice.kt. Literal defined at simple_jadx/sources/wd/n.java:105. Paired lookup at simple_jadx/sources/be/xq.java:2062 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1ce95b6c-f868-4329-8927-9e22e7651a5c.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "1ce95b6c-f868-4329-8927-9e22e7651a5c"
+    },
+    {
+        "UUID": "2b94e9ff-b31b-4e44-bef9-a8c559b05201",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 1ce95b6c-f868-4329-8927-9e22e7651a5c by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 2b94e9ff-b31b-4e44-bef9-a8c559b05201 is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:170. Paired lookup at simple_jadx/sources/be/rl.java:5688 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1ce95b6c-f868-4329-8927-9e22e7651a5c.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "1ce95b6c-f868-4329-8927-9e22e7651a5c"
+    },
+    {
+        "UUID": "2266cbb0-f5e9-11ec-bd69-0800200c9a66",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service a0c52a20-f101-11ec-ad8b-0800200c9a66 by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 2266cbb0-f5e9-11ec-bd69-0800200c9a66 is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:161. Paired lookup at simple_jadx/sources/be/xq.java:2050 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: a0c52a20-f101-11ec-ad8b-0800200c9a66.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "a0c52a20-f101-11ec-ad8b-0800200c9a66"
+    },
+    {
+        "UUID": "2983563d-b400-48fd-9cb6-a2b25a50eb63",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service afa49c93-6a0c-497c-a6e5-f11362463628 by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 2983563d-b400-48fd-9cb6-a2b25a50eb63 is used as a characteristic UUID. Source profile compiled from WingmanMiniDevice.kt. Literal defined at simple_jadx/sources/wd/l.java:63. Paired lookup at simple_jadx/sources/be/xq.java:2035 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: afa49c93-6a0c-497c-a6e5-f11362463628.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "afa49c93-6a0c-497c-a6e5-f11362463628"
+    },
+    {
         "UUID": "272fe158-6c6c-4718-a3d4-6de8a3735cff",
         "company": "CTODeveloper at HPE Aruba Networking",
         "UUID_name": "Unknown",
@@ -52508,6 +52619,506 @@
         "parent_UUID": "fd00"
     },
     {
+        "UUID": "278315a0-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Flitsmeister",
+        "UUID_name": "RA_SERVICE",
+        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `RA_SERVICE_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `RA_SERVICE_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.neptis.yanosik.mobi.android v4.0.1.7 (1420) (versionCode 3401420), declared in Java package `i.q.b.k.c.c.a` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. zf/a.java passes this UUID to mf/o.java (BluetoothGatt.getService) and constructs ag/a.java, ag/b.java, and ag/c.java child wrappers. Its logger is named RaService.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.flitsmeister",
+                "version_code": 1058,
+                "version_name": "11.4.1",
+                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `RA_SERVICE_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 3401420,
+                "version_name": "4.0.1.7 (1420)",
+                "package_path": "BLUUID_APKS/0970/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ]
+    },
+    {
+        "UUID": "278315a1-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Flitsmeister",
+        "UUID_name": "CONFIG",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app nl.flitsmeister, declared as Java field `CONFIG_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `CONFIG_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. ag/b.java supplies this UUID to mf/h.java (BluetoothGattService.getCharacteristic) and initializes its value from the configured VOLUME setting.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.flitsmeister",
+                "version_code": 1058,
+                "version_name": "11.4.1",
+                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CONFIG_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ],
+        "parent_UUID": "278315a0-33ee-9b9c-124d-109d6b0c0a91"
+    },
+    {
+        "UUID": "278315a2-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Flitsmeister",
+        "UUID_name": "BUTTON",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app nl.flitsmeister, declared as Java field `BUTTON_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `BUTTON_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. ag/c.java supplies this UUID to mf/h.java; its methods decode two nibbles into alert-state enums and copy byte-array values.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.flitsmeister",
+                "version_code": 1058,
+                "version_name": "11.4.1",
+                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BUTTON_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ],
+        "parent_UUID": "278315a0-33ee-9b9c-124d-109d6b0c0a91"
+    },
+    {
+        "UUID": "278315a3-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Flitsmeister",
+        "UUID_name": "ALARM",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app nl.flitsmeister, declared as Java field `ALARM_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `ALARM_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. ag/a.java supplies this UUID to mf/h.java; its logger is named AlarmCharacteristic and its methods update alarm notification state.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.flitsmeister",
+                "version_code": 1058,
+                "version_name": "11.4.1",
+                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ALARM_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ],
+        "parent_UUID": "278315a0-33ee-9b9c-124d-109d6b0c0a91"
+    },
+    {
+        "UUID": "27831580-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Flitsmeister",
+        "UUID_name": "MOTION_SERVICE",
+        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `MOTION_SERVICE_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `MOTION_SERVICE_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.neptis.yanosik.mobi.android v4.0.1.7 (1420) (versionCode 3401420), declared in Java package `i.q.b.k.a.r.e` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. vf/a.java passes this UUID to mf/o.java (BluetoothGatt.getService) and constructs wf/a.java as its child wrapper. SapheOnePlus code labels this wrapper MotionService.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.flitsmeister",
+                "version_code": 1058,
+                "version_name": "11.4.1",
+                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `MOTION_SERVICE_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 3401420,
+                "version_name": "4.0.1.7 (1420)",
+                "package_path": "BLUUID_APKS/0970/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ]
+    },
+    {
+        "UUID": "27831581-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Flitsmeister",
+        "UUID_name": "Motion State",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app nl.flitsmeister, declared as Java field `MOTION_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `MOTION_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. wf/a.java supplies this UUID to mf/h.java (BluetoothGattService.getCharacteristic); the same class defines PARKED, STOPPED, and DRIVING values.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.flitsmeister",
+                "version_code": 1058,
+                "version_name": "11.4.1",
+                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `MOTION_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ],
+        "parent_UUID": "27831580-33ee-9b9c-124d-109d6b0c0a91"
+    },
+    {
+        "UUID": "27831570-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Flitsmeister",
+        "UUID_name": "BATTERY_SERVICE",
+        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `BATTERY_SERVICE_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `BATTERY_SERVICE_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.neptis.yanosik.mobi.android v4.0.1.7 (1420) (versionCode 3401420), declared in Java package `i.q.b.k.a.r.a` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. nf/a.java passes this UUID to mf/o.java, whose constructor calls BluetoothGatt.getService(UUID.fromString(...)); nf/a.java constructs of/a.java as its child wrapper.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.flitsmeister",
+                "version_code": 1058,
+                "version_name": "11.4.1",
+                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BATTERY_SERVICE_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 3401420,
+                "version_name": "4.0.1.7 (1420)",
+                "package_path": "BLUUID_APKS/0970/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ]
+    },
+    {
+        "UUID": "27831571-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Flitsmeister",
+        "UUID_name": "VOLTAGE",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app nl.flitsmeister, declared as Java field `VOLTAGE_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `VOLTAGE_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. of/a.java supplies this UUID to mf/h.java (BluetoothGattService.getCharacteristic). Its logger is named VoltageCharacteristic and its messages describe battery voltage.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.flitsmeister",
+                "version_code": 1058,
+                "version_name": "11.4.1",
+                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `VOLTAGE_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ],
+        "parent_UUID": "27831570-33ee-9b9c-124d-109d6b0c0a91"
+    },
+    {
+        "UUID": "27831530-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Flitsmeister",
+        "UUID_name": "FM_DEVICE_SERVICE / SAPHE_SERVICE / Peripheral Authentication",
+        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `FM_DEVICE_SERVICE_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `FM_DEVICE_SERVICE_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.neptis.yanosik.mobi.android v4.0.1.7 (1420) (versionCode 3401420), in Java field `SAPHE_SERVICE_UUID`, declared in Java package `i.q.b` (third-party SDK). Classification source: field-name:SAPHE_SERVICE_UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. pf/a.java passes this UUID to mf/o.java, whose constructor calls BluetoothGatt.getService(UUID.fromString(...)); pf/a.java constructs qf/a.java, qf/b.java, and qf/c.java child wrappers. com/saphe/bluetooth/d.java also sets it as a ScanFilter service UUID; SapheOnePlus code labels this flow readPeripheralAuthCharacteristics.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.flitsmeister",
+                "version_code": 1058,
+                "version_name": "11.4.1",
+                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `FM_DEVICE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 3401420,
+                "version_name": "4.0.1.7 (1420)",
+                "package_path": "BLUUID_APKS/0970/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SAPHE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ]
+    },
+    {
+        "UUID": "27831531-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Saphe",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Custom GATT characteristic in the peripheral authentication service.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. qf/a.java supplies this UUID to mf/h.java; that wrapper resolves it with BluetoothGattService.getCharacteristic(UUID.fromString(...)). pf/a.java passes its service wrapper to the characteristic constructor.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ],
+        "parent_UUID": "27831530-33ee-9b9c-124d-109d6b0c0a91"
+    },
+    {
+        "UUID": "27831532-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Saphe",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Custom GATT characteristic in the peripheral authentication service.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. qf/b.java supplies this UUID to mf/h.java; that wrapper resolves it with BluetoothGattService.getCharacteristic(UUID.fromString(...)). pf/a.java passes its service wrapper to the characteristic constructor.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ],
+        "parent_UUID": "27831530-33ee-9b9c-124d-109d6b0c0a91"
+    },
+    {
+        "UUID": "27831533-33ee-9b9c-124d-109d6b0c0a91",
+        "company": "Flitsmeister",
+        "UUID_name": "WATCHDOG",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app nl.flitsmeister, declared as Java field `WATCHDOG_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `WATCHDOG_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Exact-build DEX evidence for pl.neptis.yanosik.mobi.android v4.0.16.1 (versionCode 6001499), from the target-only simple_jadx recovery tree. The UUID is declared in the com.saphe.bluetooth implementation; classification follows the app's BluetoothGatt API usage. qf/c.java supplies this UUID to mf/h.java; that wrapper resolves it with BluetoothGattService.getCharacteristic(UUID.fromString(...)). pf/a.java passes its service wrapper to the characteristic constructor.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "nl.flitsmeister",
+                "version_code": 1058,
+                "version_name": "11.4.1",
+                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WATCHDOG_UUID`."
+            },
+            {
+                "package_id": "pl.neptis.yanosik.mobi.android",
+                "version_code": 6001499,
+                "version_name": "4.0.16.1",
+                "package_path": "AndroZoo/apks/dc/pl.neptis.yanosik.mobi.android_DC500E746BFA6E65A50DE14A1E8F358E0123AEE12800628A1C231491D4149AD1.apk",
+                "description": "Exact APK build SHA-256 dc500e746bfa6e65a50de14a1e8f358e0123aee12800628a1c231491d4149ad1; analyzed from this build's target-specific DEX recovery tree."
+            }
+        ],
+        "parent_UUID": "27831530-33ee-9b9c-124d-109d6b0c0a91"
+    },
+    {
         "UUID": "27831543-33ee-9b9c-124d-109d6b0c0a91",
         "company": "Flitsmeister",
         "UUID_name": "ALARM",
@@ -52533,104 +53144,6 @@
                 "version_name": "11.4.1",
                 "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ALARM_UUID`."
-            }
-        ]
-    },
-    {
-        "UUID": "278315a3-33ee-9b9c-124d-109d6b0c0a91",
-        "company": "Flitsmeister",
-        "UUID_name": "ALARM",
-        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `ALARM_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `ALARM_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "nl.flitsmeister",
-                "version_code": 1058,
-                "version_name": "11.4.1",
-                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ALARM_UUID`."
-            }
-        ]
-    },
-    {
-        "UUID": "27831570-33ee-9b9c-124d-109d6b0c0a91",
-        "company": "Flitsmeister",
-        "UUID_name": "BATTERY_SERVICE",
-        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `BATTERY_SERVICE_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `BATTERY_SERVICE_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.neptis.yanosik.mobi.android v4.0.1.7 (1420) (versionCode 3401420), declared in Java package `i.q.b.k.a.r.a` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "nl.flitsmeister",
-                "version_code": 1058,
-                "version_name": "11.4.1",
-                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BATTERY_SERVICE_UUID`."
-            },
-            {
-                "package_id": "pl.neptis.yanosik.mobi.android",
-                "version_code": 3401420,
-                "version_name": "4.0.1.7 (1420)",
-                "package_path": "BLUUID_APKS/0970/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
-        "UUID": "278315a2-33ee-9b9c-124d-109d6b0c0a91",
-        "company": "Flitsmeister",
-        "UUID_name": "BUTTON",
-        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `BUTTON_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `BUTTON_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "nl.flitsmeister",
-                "version_code": 1058,
-                "version_name": "11.4.1",
-                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BUTTON_UUID`."
             }
         ]
     },
@@ -52693,35 +53206,6 @@
         ]
     },
     {
-        "UUID": "278315a1-33ee-9b9c-124d-109d6b0c0a91",
-        "company": "Flitsmeister",
-        "UUID_name": "CONFIG",
-        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `CONFIG_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `CONFIG_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "nl.flitsmeister",
-                "version_code": 1058,
-                "version_name": "11.4.1",
-                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CONFIG_UUID`."
-            }
-        ]
-    },
-    {
         "UUID": "27831544-33ee-9b9c-124d-109d6b0c0a91",
         "company": "Flitsmeister",
         "UUID_name": "DISPLAY",
@@ -52747,115 +53231,6 @@
                 "version_name": "11.4.1",
                 "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `DISPLAY_UUID`."
-            }
-        ]
-    },
-    {
-        "UUID": "27831530-33ee-9b9c-124d-109d6b0c0a91",
-        "company": "Flitsmeister",
-        "UUID_name": "FM_DEVICE_SERVICE / SAPHE_SERVICE",
-        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `FM_DEVICE_SERVICE_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `FM_DEVICE_SERVICE_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.neptis.yanosik.mobi.android v4.0.1.7 (1420) (versionCode 3401420), in Java field `SAPHE_SERVICE_UUID`, declared in Java package `i.q.b` (third-party SDK). Classification source: field-name:SAPHE_SERVICE_UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "nl.flitsmeister",
-                "version_code": 1058,
-                "version_name": "11.4.1",
-                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `FM_DEVICE_SERVICE_UUID`."
-            },
-            {
-                "package_id": "pl.neptis.yanosik.mobi.android",
-                "version_code": 3401420,
-                "version_name": "4.0.1.7 (1420)",
-                "package_path": "BLUUID_APKS/0970/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SAPHE_SERVICE_UUID`."
-            }
-        ]
-    },
-    {
-        "UUID": "27831580-33ee-9b9c-124d-109d6b0c0a91",
-        "company": "Flitsmeister",
-        "UUID_name": "MOTION_SERVICE",
-        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `MOTION_SERVICE_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `MOTION_SERVICE_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.neptis.yanosik.mobi.android v4.0.1.7 (1420) (versionCode 3401420), declared in Java package `i.q.b.k.a.r.e` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "nl.flitsmeister",
-                "version_code": 1058,
-                "version_name": "11.4.1",
-                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `MOTION_SERVICE_UUID`."
-            },
-            {
-                "package_id": "pl.neptis.yanosik.mobi.android",
-                "version_code": 3401420,
-                "version_name": "4.0.1.7 (1420)",
-                "package_path": "BLUUID_APKS/0970/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
-        "UUID": "27831581-33ee-9b9c-124d-109d6b0c0a91",
-        "company": "Flitsmeister",
-        "UUID_name": "MOTION",
-        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `MOTION_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `MOTION_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "nl.flitsmeister",
-                "version_code": 1058,
-                "version_name": "11.4.1",
-                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `MOTION_UUID`."
             }
         ]
     },
@@ -52889,46 +53264,6 @@
         ]
     },
     {
-        "UUID": "278315a0-33ee-9b9c-124d-109d6b0c0a91",
-        "company": "Flitsmeister",
-        "UUID_name": "RA_SERVICE",
-        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `RA_SERVICE_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `RA_SERVICE_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.neptis.yanosik.mobi.android v4.0.1.7 (1420) (versionCode 3401420), declared in Java package `i.q.b.k.c.c.a` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "nl.flitsmeister",
-                "version_code": 1058,
-                "version_name": "11.4.1",
-                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `RA_SERVICE_UUID`."
-            },
-            {
-                "package_id": "pl.neptis.yanosik.mobi.android",
-                "version_code": 3401420,
-                "version_name": "4.0.1.7 (1420)",
-                "package_path": "BLUUID_APKS/0970/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c/155b996bac49ce58e31356e1f3ad32d771e27f540f7ff263a3a1a935ea4a8d1c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
         "UUID": "27831542-33ee-9b9c-124d-109d6b0c0a91",
         "company": "Flitsmeister",
         "UUID_name": "REPORT",
@@ -52954,64 +53289,6 @@
                 "version_name": "11.4.1",
                 "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `REPORT_UUID`."
-            }
-        ]
-    },
-    {
-        "UUID": "27831571-33ee-9b9c-124d-109d6b0c0a91",
-        "company": "Flitsmeister",
-        "UUID_name": "VOLTAGE",
-        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `VOLTAGE_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `VOLTAGE_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "nl.flitsmeister",
-                "version_code": 1058,
-                "version_name": "11.4.1",
-                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `VOLTAGE_UUID`."
-            }
-        ]
-    },
-    {
-        "UUID": "27831533-33ee-9b9c-124d-109d6b0c0a91",
-        "company": "Flitsmeister",
-        "UUID_name": "WATCHDOG",
-        "UUID_purpose": "Custom GATT Service observed in Android app nl.flitsmeister, declared as Java field `WATCHDOG_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of nl.flitsmeister v11.4.1 (versionCode 1058), in Java field `WATCHDOG_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/x/nl.flitsmeister/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "nl.flitsmeister",
-                "version_code": 1058,
-                "version_name": "11.4.1",
-                "package_path": "BLUUID_APKS/0027/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90/ee256290a6c5679948bce82051b5186dd80acf8f4b68fa7c6801fefc4ef9ec90.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `WATCHDOG_UUID`."
             }
         ]
     },
@@ -59230,6 +59507,140 @@
         ]
     },
     {
+        "UUID": "2021",
+        "company": "Vulog",
+        "UUID_name": "BOOTING_DATA",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.vulog.android.carsharing.vancouver, declared as Java field `A`. Classification determined by usage:getCharacteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.vulog.android.carsharing.vancouver v9.7 (versionCode 1601574943), in Java field `A`. Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ubnt.umobile v2.31.8 (versionCode 23108000), in Java field `BOOTING_DATA_UUID`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of ee.mtakso.client vCA.100.1 (versionCode 2579), in Java field `A`, declared in Java package `com.vulog.carshare.ble` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.vulog.carshare.ff.beambikes.prod v2.1 (versionCode 25), in Java field `w`. Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.gopoppy.app v29.0.6 (versionCode 544), in Java field `x`, declared in Java package `a.a.a.a` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.vulog.carshare.oa.originenergy.prod v1.6 (versionCode 36), in Java field `A`. Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.vulog.carshare.mol v3.13 (versionCode 223), in Java field `A`. Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.free2move.app v2.23.0 (versionCode 985), in Java field `A`, declared in Java package `com.vulog.carshare.ble` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ubnt.easyunifi v10.10.3 (versionCode 101003000), in Java field `f63055e`, declared in Java package `mi` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ubnt.unifi.protect v1.19.1 (versionCode 391), in Java field `BOOTING_DATA_UUID`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/ubnt/com.ubnt.unifi.protect/download/1.19.1",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "None",
+                "submitter": "Claude (Opus 4.7)",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (French carsharing platform — provides BLE-based vehicle access to Modo carshare in Vancouver and other operators)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.vulog.android.carsharing.vancouver",
+                "version_code": 1601574943,
+                "version_name": "9.7",
+                "package_path": "BLUUID_APKS/0066/039739f4b28063234c613523a05c540a5c927f56be83f6536812c518ed0b01b3/039739f4b28063234c613523a05c540a5c927f56be83f6536812c518ed0b01b3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `A`."
+            },
+            {
+                "package_id": "com.ubnt.umobile",
+                "version_code": 23108000,
+                "version_name": "2.31.8",
+                "package_path": "BLUUID_APKS/0181/e642057e0b337b04a9d8e0081da97a4d15f3c1bee0669ea032c1a176bd2f6712/e642057e0b337b04a9d8e0081da97a4d15f3c1bee0669ea032c1a176bd2f6712.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BOOTING_DATA_UUID`."
+            },
+            {
+                "package_id": "ee.mtakso.client",
+                "version_code": 2579,
+                "version_name": "CA.100.1",
+                "package_path": "BLUUID_APKS/0216/7fe91ccaaf8513f3735f950d1c28aa195cbb7d04d878769d0042be8706f106d1/7fe91ccaaf8513f3735f950d1c28aa195cbb7d04d878769d0042be8706f106d1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `A`."
+            },
+            {
+                "package_id": "com.vulog.carshare.ff.beambikes.prod",
+                "version_code": 25,
+                "version_name": "2.1",
+                "package_path": "BLUUID_APKS/0237/4fd23ed277a372a7c3a63f7b3945e22bfa5b1180fc786bce56fe235975e47752/4fd23ed277a372a7c3a63f7b3945e22bfa5b1180fc786bce56fe235975e47752.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `w`."
+            },
+            {
+                "package_id": "com.gopoppy.app",
+                "version_code": 544,
+                "version_name": "29.0.6",
+                "package_path": "BLUUID_APKS/0292/8044d579d9d51d797ff995b7161fec9d4dce64ac003bb00ecde7a577359c5268/8044d579d9d51d797ff995b7161fec9d4dce64ac003bb00ecde7a577359c5268.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `x`."
+            },
+            {
+                "package_id": "com.vulog.carshare.oa.originenergy.prod",
+                "version_code": 36,
+                "version_name": "1.6",
+                "package_path": "BLUUID_APKS/0329/06e635adb8d3410acdaf2d9b6d123527bfe993297cb4d16c75f2d2ad0cecc309/06e635adb8d3410acdaf2d9b6d123527bfe993297cb4d16c75f2d2ad0cecc309.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `A`."
+            },
+            {
+                "package_id": "com.vulog.carshare.mol",
+                "version_code": 223,
+                "version_name": "3.13",
+                "package_path": "BLUUID_APKS/0462/68e44ceea2d529d94393e00f64142795ec3a1fb62dc223ac1772e0a420bb8222/68e44ceea2d529d94393e00f64142795ec3a1fb62dc223ac1772e0a420bb8222.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `A`."
+            },
+            {
+                "package_id": "com.free2move.app",
+                "version_code": 985,
+                "version_name": "2.23.0",
+                "package_path": "BLUUID_APKS/0488/aad3b2e48dd8b49fde00431b5813199479553aa499c434f450ca1a722ed59433/aad3b2e48dd8b49fde00431b5813199479553aa499c434f450ca1a722ed59433.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `A`."
+            },
+            {
+                "package_id": "com.ubnt.easyunifi",
+                "version_code": 101003000,
+                "version_name": "10.10.3",
+                "package_path": "BLUUID_APKS/0852/57dd5cda8b1f80c745baa1ff7f8f11454c4acc698f46035467bc937e7f799809/57dd5cda8b1f80c745baa1ff7f8f11454c4acc698f46035467bc937e7f799809.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f63055e`."
+            },
+            {
+                "package_id": "com.ubnt.unifi.protect",
+                "version_code": 391,
+                "version_name": "1.19.1",
+                "package_path": "BLUUID_APKS/0880/4e8d7c69475e983931c9765fbf67b19ce14046fa3ddf894c0eaafcda4e6b1211/4e8d7c69475e983931c9765fbf67b19ce14046fa3ddf894c0eaafcda4e6b1211.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BOOTING_DATA_UUID`."
+            }
+        ],
+        "parent_UUID": "1911"
+    },
+    {
         "UUID": "27aec9b2-658c-4170-3382-000000000001",
         "company": "Sena Technologies, Inc.",
         "UUID_name": "SMAI_SERVICE_PARCEL_UUID_TX",
@@ -61369,6 +61780,80 @@
                 "version_name": "10.3.0",
                 "package_path": "BLUUID_APKS/0399/9bc1af257fac0ac6a651b1c1da6931cbac94bc3364f804d7fdbf16f701eae017/9bc1af257fac0ac6a651b1c1da6931cbac94bc3364f804d7fdbf16f701eae017.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SONY_GATT_RX_UUID`."
+            }
+        ]
+    },
+    {
+        "UUID": "203b9729-4d3f-4898-8fb1-1ed1e6759229",
+        "company": "Soundbrenner",
+        "UUID_name": "Permanent Modality / Metronome Settings",
+        "UUID_purpose": "Core metronome characteristic named 'Permanent Modality' and 'Metronome Settings' in different profile objects.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX com/soundbrenner/bluetooth/bledevices/profile/CoreProfile.java:104 assigns the UUID to a named SbBleCharacteristic nested under MetronomeService. The same UUID is exposed under both labels.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ],
+        "parent_UUID": "f3f6ce01-b257-4336-acd8-3010817837e4"
+    },
+    {
+        "UUID": "277356c3-abaf-457c-a0b2-54b52db21f97",
+        "company": "Soundbrenner",
+        "UUID_name": "Tuning Profile Setting",
+        "UUID_purpose": "Core tuner profile setting characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX com/soundbrenner/bluetooth/bledevices/profile/CoreProfile.java:852-861 defines TuningProfileSetting as a named characteristic nested under TunerService.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ],
+        "parent_UUID": "af7da518-f5f6-46d7-8ed1-546c33daf83b"
+    },
+    {
+        "UUID": "252aeb30-c6ec-43ec-8072-5b08f13dae36",
+        "company": "Soundbrenner",
+        "UUID_name": "System Operation",
+        "UUID_purpose": "Operation-profile characteristic shared by Core, Core 2, and Spark. Candidate parent services: 77ef8bb5-7d4d-4a66-bd64-3f93cc01ccda, c2000ab3-2547-0915-bf66-f6d82d11e8f1, 5aaa5dc8-2fb6-0ed9-6c71-e25a9f8734ab.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX CoreProfile.java, Core2Profile.java, and SparkProfile.java each define this named characteristic under that model's OperationService and assign the same UUID. The parent_UUID field is omitted because the APK gives three distinct parent service UUIDs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
             }
         ]
     },
@@ -74811,14 +75296,18 @@
         "UUID": "29802065-f973-4062-8b79-0d8b1c6c4551",
         "company": "Third-party SDK code (declared in Java package `q6` — distinct from host com.bushnell.golf; Phase-4 identification needed)",
         "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
                 "description": "Found in decompiled DEX of com.bushnell.golf v1.9.5 (versionCode 31), declared in Java package `q6` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 29802065-f973-4062-8b79-0d8b1c6c4551 is used as a characteristic UUID. Source profile compiled from ProXMDevice.kt. Literal defined at simple_jadx/sources/wd/e.java:125. Paired lookup at simple_jadx/sources/be/sa.java:2161 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1060c99e-d979-43c4-a525-70a8f67ff137.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -74827,9 +75316,17 @@
                 "version_code": 31,
                 "version_name": "1.9.5",
                 "package_path": "BLUUID_APKS/0055/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
-        ]
+        ],
+        "parent_UUID": "1060c99e-d979-43c4-a525-70a8f67ff137"
     },
     {
         "UUID": "2e8c0002-2d91-5533-3117-59380a40af8f",
@@ -82629,140 +83126,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SOLO_UL_SERVICE_UUID`."
             }
         ]
-    },
-    {
-        "UUID": "2021",
-        "company": "Vulog",
-        "UUID_name": "BOOTING_DATA",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.vulog.android.carsharing.vancouver, declared as Java field `A`. Classification determined by usage:getCharacteristic.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.vulog.android.carsharing.vancouver v9.7 (versionCode 1601574943), in Java field `A`. Classification source: usage:getCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.ubnt.umobile v2.31.8 (versionCode 23108000), in Java field `BOOTING_DATA_UUID`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of ee.mtakso.client vCA.100.1 (versionCode 2579), in Java field `A`, declared in Java package `com.vulog.carshare.ble` (third-party SDK). Classification source: usage:getCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.vulog.carshare.ff.beambikes.prod v2.1 (versionCode 25), in Java field `w`. Classification source: usage:getCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.gopoppy.app v29.0.6 (versionCode 544), in Java field `x`, declared in Java package `a.a.a.a` (third-party SDK). Classification source: usage:getCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.vulog.carshare.oa.originenergy.prod v1.6 (versionCode 36), in Java field `A`. Classification source: usage:getCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.vulog.carshare.mol v3.13 (versionCode 223), in Java field `A`. Classification source: usage:getCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.free2move.app v2.23.0 (versionCode 985), in Java field `A`, declared in Java package `com.vulog.carshare.ble` (third-party SDK). Classification source: usage:getCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.ubnt.easyunifi v10.10.3 (versionCode 101003000), in Java field `f63055e`, declared in Java package `mi` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.ubnt.unifi.protect v1.19.1 (versionCode 391), in Java field `BOOTING_DATA_UUID`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/ubnt/com.ubnt.unifi.protect/download/1.19.1",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "None",
-                "submitter": "Claude (Opus 4.7)",
-                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (French carsharing platform — provides BLE-based vehicle access to Modo carshare in Vancouver and other operators)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.vulog.android.carsharing.vancouver",
-                "version_code": 1601574943,
-                "version_name": "9.7",
-                "package_path": "BLUUID_APKS/0066/039739f4b28063234c613523a05c540a5c927f56be83f6536812c518ed0b01b3/039739f4b28063234c613523a05c540a5c927f56be83f6536812c518ed0b01b3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `A`."
-            },
-            {
-                "package_id": "com.ubnt.umobile",
-                "version_code": 23108000,
-                "version_name": "2.31.8",
-                "package_path": "BLUUID_APKS/0181/e642057e0b337b04a9d8e0081da97a4d15f3c1bee0669ea032c1a176bd2f6712/e642057e0b337b04a9d8e0081da97a4d15f3c1bee0669ea032c1a176bd2f6712.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BOOTING_DATA_UUID`."
-            },
-            {
-                "package_id": "ee.mtakso.client",
-                "version_code": 2579,
-                "version_name": "CA.100.1",
-                "package_path": "BLUUID_APKS/0216/7fe91ccaaf8513f3735f950d1c28aa195cbb7d04d878769d0042be8706f106d1/7fe91ccaaf8513f3735f950d1c28aa195cbb7d04d878769d0042be8706f106d1.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `A`."
-            },
-            {
-                "package_id": "com.vulog.carshare.ff.beambikes.prod",
-                "version_code": 25,
-                "version_name": "2.1",
-                "package_path": "BLUUID_APKS/0237/4fd23ed277a372a7c3a63f7b3945e22bfa5b1180fc786bce56fe235975e47752/4fd23ed277a372a7c3a63f7b3945e22bfa5b1180fc786bce56fe235975e47752.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `w`."
-            },
-            {
-                "package_id": "com.gopoppy.app",
-                "version_code": 544,
-                "version_name": "29.0.6",
-                "package_path": "BLUUID_APKS/0292/8044d579d9d51d797ff995b7161fec9d4dce64ac003bb00ecde7a577359c5268/8044d579d9d51d797ff995b7161fec9d4dce64ac003bb00ecde7a577359c5268.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `x`."
-            },
-            {
-                "package_id": "com.vulog.carshare.oa.originenergy.prod",
-                "version_code": 36,
-                "version_name": "1.6",
-                "package_path": "BLUUID_APKS/0329/06e635adb8d3410acdaf2d9b6d123527bfe993297cb4d16c75f2d2ad0cecc309/06e635adb8d3410acdaf2d9b6d123527bfe993297cb4d16c75f2d2ad0cecc309.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `A`."
-            },
-            {
-                "package_id": "com.vulog.carshare.mol",
-                "version_code": 223,
-                "version_name": "3.13",
-                "package_path": "BLUUID_APKS/0462/68e44ceea2d529d94393e00f64142795ec3a1fb62dc223ac1772e0a420bb8222/68e44ceea2d529d94393e00f64142795ec3a1fb62dc223ac1772e0a420bb8222.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `A`."
-            },
-            {
-                "package_id": "com.free2move.app",
-                "version_code": 985,
-                "version_name": "2.23.0",
-                "package_path": "BLUUID_APKS/0488/aad3b2e48dd8b49fde00431b5813199479553aa499c434f450ca1a722ed59433/aad3b2e48dd8b49fde00431b5813199479553aa499c434f450ca1a722ed59433.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `A`."
-            },
-            {
-                "package_id": "com.ubnt.easyunifi",
-                "version_code": 101003000,
-                "version_name": "10.10.3",
-                "package_path": "BLUUID_APKS/0852/57dd5cda8b1f80c745baa1ff7f8f11454c4acc698f46035467bc937e7f799809/57dd5cda8b1f80c745baa1ff7f8f11454c4acc698f46035467bc937e7f799809.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f63055e`."
-            },
-            {
-                "package_id": "com.ubnt.unifi.protect",
-                "version_code": 391,
-                "version_name": "1.19.1",
-                "package_path": "BLUUID_APKS/0880/4e8d7c69475e983931c9765fbf67b19ce14046fa3ddf894c0eaafcda4e6b1211/4e8d7c69475e983931c9765fbf67b19ce14046fa3ddf894c0eaafcda4e6b1211.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BOOTING_DATA_UUID`."
-            }
-        ],
-        "parent_UUID": "1911"
     },
     {
         "UUID": "2011",

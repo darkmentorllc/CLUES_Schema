@@ -22578,6 +22578,105 @@
         ]
     },
     {
+        "UUID": "60288aad-02e7-43d3-aa2b-226379396615",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 1ce95b6c-f868-4329-8927-9e22e7651a5c by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 60288aad-02e7-43d3-aa2b-226379396615 is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:169. Paired lookup at simple_jadx/sources/be/rl.java:5687 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1ce95b6c-f868-4329-8927-9e22e7651a5c.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "1ce95b6c-f868-4329-8927-9e22e7651a5c"
+    },
+    {
+        "UUID": "6e410001-b5a3-f393-e0a9-e50e24dcca9e",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT service used by the target app's Bushnell device communication code; the exact feature is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 6e410001-b5a3-f393-e0a9-e50e24dcca9e is used as a service UUID. Source profile compiled from TourHybridDevice.kt. Literal defined at simple_jadx/sources/wd/f.java:47. Paired lookup at simple_jadx/sources/be/wf.java:4764 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ]
+    },
+    {
+        "UUID": "6e410002-b5a3-f393-e0a9-e50e24dcca9e",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 6e410001-b5a3-f393-e0a9-e50e24dcca9e by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 6e410002-b5a3-f393-e0a9-e50e24dcca9e is used as a characteristic UUID. Source profile compiled from TourHybridDevice.kt. Literal defined at simple_jadx/sources/wd/f.java:48. Paired lookup at simple_jadx/sources/be/wf.java:4764 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 6e410001-b5a3-f393-e0a9-e50e24dcca9e.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "6e410001-b5a3-f393-e0a9-e50e24dcca9e"
+    },
+    {
+        "UUID": "6e410003-b5a3-f393-e0a9-e50e24dcca9e",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 6e410001-b5a3-f393-e0a9-e50e24dcca9e by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 6e410003-b5a3-f393-e0a9-e50e24dcca9e is used as a characteristic UUID. Source profile compiled from TourHybridDevice.kt. Literal defined at simple_jadx/sources/wd/f.java:49. Paired lookup at simple_jadx/sources/be/wf.java:4763 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 6e410001-b5a3-f393-e0a9-e50e24dcca9e.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "6e410001-b5a3-f393-e0a9-e50e24dcca9e"
+    },
+    {
         "UUID": "638a1001-7bde-3e25-ffc5-9de9b2a0197a",
         "company": "Third-party SDK code (declared in Java package `defpackage` — distinct from host com.kinomap.tunturiroutes; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -24116,6 +24215,10 @@
             {
                 "description": "Found in decompiled DEX of com.sahibinden v5.34.3 (versionCode 1655), declared in Java package `com.feiyutech.lib.gimbal.ble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Target source ue1/d.java:600-604 retrieves this characteristic under the Nordic UART service. The service and standard RX/TX UUIDs are excluded from staging.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -24475,6 +24578,13 @@
                 "version_name": "5.34.3",
                 "package_path": "AndroZoo/apks/00/com.sahibinden_00CFFE072C098EBC56DE6F386F36BAF058503484B68F748883C24AA1547F1889.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.ultrahuman.android",
+                "version_code": 301050000,
+                "version_name": "3.1.5.0.0",
+                "package_path": "AndroZoo/apks/60/com.ultrahuman.android_602046F7C465C2862C246A7665D9B065DFC5CB04C0324EEEE84FEB2C13315685.apk",
+                "description": "Package and version verified from the target APK with aapt dump badging."
             }
         ],
         "parent_UUID": "6e400001-b5a3-f393-e0a9-e50e24dcca9e"
@@ -61142,6 +61252,155 @@
             }
         ],
         "parent_UUID": "69401001-b5a3-f393-e0a9-e50e24dcca99"
+    },
+    {
+        "UUID": "68100001-27d6-11ec-9621-0242ac130002",
+        "company": "Happiest Baby",
+        "UUID_name": "SCALE_CONTROL_SERVICE",
+        "UUID_purpose": "Happiest Baby scale control service. This service groups serial-number, time, tare, system-status, and history-deletion operations.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Manual review of the target APK's decompiled DEX (com.happiestbaby.hbi v2.8.0, versionCode 5736). BleCharacteristicData.java:146-150, 166-180, and 206-210 constructs this UUID as the serviceUUID argument for scale operation pairs. The constructor parameters are explicitly named serviceUUID and characteristicUUID; BluetoothPeripheral.java:853-860 resolves the first UUID with getService and the second with getCharacteristic.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.happiestbaby.hbi",
+                "version_code": 5736,
+                "version_name": "2.8.0",
+                "package_path": "AndroZoo/apks/0a/com.happiestbaby.hbi_0A9F8D7C08165080DDDEFBD9F1D1A8DE36210110CA3897306A2C7C2C869D6ACC.apk",
+                "description": "Detected in the target APK and confirmed by manual source review."
+            }
+        ]
+    },
+    {
+        "UUID": "68100002-27d6-11ec-9621-0242ac130002",
+        "company": "Happiest Baby",
+        "UUID_name": "SCALE_SET_TARE_CHARACTERISTIC",
+        "UUID_purpose": "Scale tare-setting characteristic under service 68100001; SetTareUseCaseImpl writes the tare command through it.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "68100001-27d6-11ec-9621-0242ac130002",
+        "evidence_array": [
+            {
+                "description": "Manual review of the target APK's decompiled DEX (com.happiestbaby.hbi v2.8.0, versionCode 5736). BleCharacteristicData.java:171-175 pairs this UUID as characteristicUUID under service 68100001. SetTareUseCaseImpl$execute$1.java:103-109 writes tare bytes using the corresponding data object.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.happiestbaby.hbi",
+                "version_code": 5736,
+                "version_name": "2.8.0",
+                "package_path": "AndroZoo/apks/0a/com.happiestbaby.hbi_0A9F8D7C08165080DDDEFBD9F1D1A8DE36210110CA3897306A2C7C2C869D6ACC.apk",
+                "description": "Detected in the target APK and confirmed by manual source review."
+            }
+        ]
+    },
+    {
+        "UUID": "68100003-27d6-11ec-9621-0242ac130002",
+        "company": "Happiest Baby",
+        "UUID_name": "SCALE_SET_TIME_CHARACTERISTIC",
+        "UUID_purpose": "Scale time-setting characteristic under service 68100001; SetTimeUseCaseImpl writes encoded time bytes through it.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "68100001-27d6-11ec-9621-0242ac130002",
+        "evidence_array": [
+            {
+                "description": "Manual review of the target APK's decompiled DEX (com.happiestbaby.hbi v2.8.0, versionCode 5736). BleCharacteristicData.java:166-170 pairs this UUID as characteristicUUID under service 68100001. SetTimeUseCaseImpl$execute$1.java:101-109 writes encoded time bytes using that data object.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.happiestbaby.hbi",
+                "version_code": 5736,
+                "version_name": "2.8.0",
+                "package_path": "AndroZoo/apks/0a/com.happiestbaby.hbi_0A9F8D7C08165080DDDEFBD9F1D1A8DE36210110CA3897306A2C7C2C869D6ACC.apk",
+                "description": "Detected in the target APK and confirmed by manual source review."
+            }
+        ]
+    },
+    {
+        "UUID": "68100004-27d6-11ec-9621-0242ac130002",
+        "company": "Happiest Baby",
+        "UUID_name": "SCALE_DELETE_HISTORY_CHARACTERISTIC",
+        "UUID_purpose": "Scale history-deletion characteristic under service 68100001; DeleteHistoryUseCaseImpl sends a one-byte delete command through it.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "68100001-27d6-11ec-9621-0242ac130002",
+        "evidence_array": [
+            {
+                "description": "Manual review of the target APK's decompiled DEX (com.happiestbaby.hbi v2.8.0, versionCode 5736). BleCharacteristicData.java:206-210 pairs this UUID as characteristicUUID under service 68100001. DeleteHistoryUseCaseImpl$execute$1.java:103-109 sends byte {1} using the matching data object.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.happiestbaby.hbi",
+                "version_code": 5736,
+                "version_name": "2.8.0",
+                "package_path": "AndroZoo/apks/0a/com.happiestbaby.hbi_0A9F8D7C08165080DDDEFBD9F1D1A8DE36210110CA3897306A2C7C2C869D6ACC.apk",
+                "description": "Detected in the target APK and confirmed by manual source review."
+            }
+        ]
+    },
+    {
+        "UUID": "68100005-27d6-11ec-9621-0242ac130002",
+        "company": "Happiest Baby",
+        "UUID_name": "SCALE_SERIAL_NUMBER_CHARACTERISTIC",
+        "UUID_purpose": "Scale serial-number read characteristic under service 68100001.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "68100001-27d6-11ec-9621-0242ac130002",
+        "evidence_array": [
+            {
+                "description": "Manual review of the target APK's decompiled DEX (com.happiestbaby.hbi v2.8.0, versionCode 5736). BleCharacteristicData.java:146-150 pairs this UUID as characteristicUUID under service 68100001. ReadSerialNumberImpl$execute$1.java:136-143 reads through the corresponding data object.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.happiestbaby.hbi",
+                "version_code": 5736,
+                "version_name": "2.8.0",
+                "package_path": "AndroZoo/apks/0a/com.happiestbaby.hbi_0A9F8D7C08165080DDDEFBD9F1D1A8DE36210110CA3897306A2C7C2C869D6ACC.apk",
+                "description": "Detected in the target APK and confirmed by manual source review."
+            }
+        ]
+    },
+    {
+        "UUID": "68100006-27d6-11ec-9621-0242ac130002",
+        "company": "Happiest Baby",
+        "UUID_name": "SCALE_SYSTEM_STATUS_CHARACTERISTIC",
+        "UUID_purpose": "Scale system-status characteristic under service 68100001; ObserveSystemStatusUseCaseImpl subscribes to it.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "68100001-27d6-11ec-9621-0242ac130002",
+        "evidence_array": [
+            {
+                "description": "Manual review of the target APK's decompiled DEX (com.happiestbaby.hbi v2.8.0, versionCode 5736). BleCharacteristicData.java:176-180 pairs this UUID as characteristicUUID under service 68100001. ObserveSystemStatusUseCaseImpl$execute$1.java:155-161 observes through the corresponding data object.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.happiestbaby.hbi",
+                "version_code": 5736,
+                "version_name": "2.8.0",
+                "package_path": "AndroZoo/apks/0a/com.happiestbaby.hbi_0A9F8D7C08165080DDDEFBD9F1D1A8DE36210110CA3897306A2C7C2C869D6ACC.apk",
+                "description": "Detected in the target APK and confirmed by manual source review."
+            }
+        ]
     },
     {
         "UUID": "65786365-6c70-6f69-6e74-2e636f820001",
@@ -104896,6 +105155,1100 @@
         "parent_UUID": "4cc49cc9-bde6-4b43-8c51-93785dd7873e"
     },
     {
+        "UUID": "6e400001-b5a3-f393-e0a9-e50e24dcca1e",
+        "company": "Sciener",
+        "UUID_name": "WRISTBAND_PROFILE",
+        "UUID_purpose": "GATT Service observed in Android app es.mobail.stay_free but declared in third-party SDK package `com.smartlock.bl.sdk.api`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of es.mobail.stay_free v2.6.5 (versionCode 84), declared in Java package `com.smartlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of space.smarteroffice.owner v1.2.5 (versionCode 2578), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.keratronik.pda.android.vector v5.3.7 (versionCode 5307), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.bmhconnect.smart v1.2.2 (versionCode 8), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.staffhub v4.1.5 (versionCode 19), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hawiot.smart v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.vistacana v1.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sifely.smartlockapp v1.5.0 (versionCode 47), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hoteldev.assist v1.3.8 (versionCode 17), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sifely.smartlock v1.9.0 (versionCode 38), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of space.smartos.ntvm v1.5.2 (versionCode 1183), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.jnf.accesscontrol v2.027 (versionCode 2027), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tthotel.guest v1.3.4 (versionCode 24), declared in Java package `c3` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sciener.btlock v8.1.0 (versionCode 230), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.supplier.tool v1.0.0 (versionCode 3), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.keratronik.pda.android.juwentusgpsonline v6.0.26 (versionCode 41016026), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.keratronik.pda.android.swopcar v1.3.64 (versionCode 1364), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tongtongsuo.app v7.1.2 (versionCode 248), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of io.autonest.app v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ttology.global v1.2.0 (versionCode 6), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of vn.neoLock v2.81 (versionCode 194), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.jadco v1.1.0 (versionCode 2), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.one v8.0.19 (versionCode 37), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sciener.hotela v3.7.6 (versionCode 65), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.rpsinfocom.justrack v2.87.0 (versionCode 260), in Java field `X0`, declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: usage:getService.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.telemko.telemkotrack v2.81.0 (versionCode 253), in Java field `X0`, declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: usage:getService.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tracking.techtonika v1.0.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.rpsinfocom.justrack",
+                "description": "Verified current Google Play listing for com.rpsinfocom.justrack. This listing does not establish that archived APK version 2.87.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.telemko.telemkotrack",
+                "description": "Verified current Google Play listing for com.telemko.telemkotrack. This listing does not establish that archived APK version 2.81.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.excel.smartlock v1.4.0 (versionCode 12), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of travel.goki.app v1.122.1 (versionCode 21220100), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Target APK DEX: BluetoothImpl assigns this UUID to a1 under the d1-true branch and passes a1 to BluetoothGatt.getService (BluetoothImpl.java:436-439,463). This profile is on the wristband path; the decompiled target contains no assignment to d1, so activation in this build is unconfirmed. The exact UUID ends in ...cca1e, not Nordic NUS's documented ...cca9e; it is treated here as a Sciener-specific variant, not as Nordic UART Service.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "Target APK source: simple_jadx/sources/com/ttlock/bl/sdk/api/BluetoothImpl.java:437 assigns this UUID to a1, which is passed to BluetoothGatt.getService at line 463.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "es.mobail.stay_free",
+                "version_code": 84,
+                "version_name": "2.6.5",
+                "package_path": "BLUUID_APKS/0073/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "space.smarteroffice.owner",
+                "version_code": 2578,
+                "version_name": "1.2.5",
+                "package_path": "BLUUID_APKS/0101/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "pl.keratronik.pda.android.vector",
+                "version_code": 5307,
+                "version_name": "5.3.7",
+                "package_path": "BLUUID_APKS/0107/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
+            },
+            {
+                "package_id": "com.bmhconnect.smart",
+                "version_code": 8,
+                "version_name": "1.2.2",
+                "package_path": "BLUUID_APKS/0181/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
+            },
+            {
+                "package_id": "com.mosino.staffhub",
+                "version_code": 19,
+                "version_name": "4.1.5",
+                "package_path": "BLUUID_APKS/0208/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.hawiot.smart",
+                "version_code": 20506,
+                "version_name": "2.5.6",
+                "package_path": "BLUUID_APKS/0223/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.mosino.vistacana",
+                "version_code": 1,
+                "version_name": "1.0",
+                "package_path": "BLUUID_APKS/0242/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.sifely.smartlockapp",
+                "version_code": 47,
+                "version_name": "1.5.0",
+                "package_path": "BLUUID_APKS/0257/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.hoteldev.assist",
+                "version_code": 17,
+                "version_name": "1.3.8",
+                "package_path": "BLUUID_APKS/0324/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.sifely.smartlock",
+                "version_code": 38,
+                "version_name": "1.9.0",
+                "package_path": "BLUUID_APKS/0418/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
+            },
+            {
+                "package_id": "space.smartos.ntvm",
+                "version_code": 1183,
+                "version_name": "1.5.2",
+                "package_path": "BLUUID_APKS/0546/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.jnf.accesscontrol",
+                "version_code": 2027,
+                "version_name": "2.027",
+                "package_path": "BLUUID_APKS/0597/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.tthotel.guest",
+                "version_code": 24,
+                "version_name": "1.3.4",
+                "package_path": "BLUUID_APKS/0661/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.sciener.btlock",
+                "version_code": 230,
+                "version_name": "8.1.0",
+                "package_path": "BLUUID_APKS/0668/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
+            },
+            {
+                "package_id": "com.supplier.tool",
+                "version_code": 3,
+                "version_name": "1.0.0",
+                "package_path": "BLUUID_APKS/0672/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "pl.keratronik.pda.android.juwentusgpsonline",
+                "version_code": 41016026,
+                "version_name": "6.0.26",
+                "package_path": "BLUUID_APKS/0712/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
+            },
+            {
+                "package_id": "pl.keratronik.pda.android.swopcar",
+                "version_code": 1364,
+                "version_name": "1.3.64",
+                "package_path": "BLUUID_APKS/0728/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
+            },
+            {
+                "package_id": "com.tongtongsuo.app",
+                "version_code": 248,
+                "version_name": "7.1.2",
+                "package_path": "BLUUID_APKS/0761/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
+            },
+            {
+                "package_id": "io.autonest.app",
+                "version_code": 20506,
+                "version_name": "2.5.6",
+                "package_path": "BLUUID_APKS/0763/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.ttology.global",
+                "version_code": 6,
+                "version_name": "1.2.0",
+                "package_path": "BLUUID_APKS/0809/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "vn.neoLock",
+                "version_code": 194,
+                "version_name": "2.81",
+                "package_path": "BLUUID_APKS/0922/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.mosino.jadco",
+                "version_code": 2,
+                "version_name": "1.1.0",
+                "package_path": "BLUUID_APKS/0925/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.mosino.one",
+                "version_code": 37,
+                "version_name": "8.0.19",
+                "package_path": "BLUUID_APKS/0961/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.sciener.hotela",
+                "version_code": 65,
+                "version_name": "3.7.6",
+                "package_path": "BLUUID_APKS/0966/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.rpsinfocom.justrack",
+                "version_code": 260,
+                "version_name": "2.87.0",
+                "package_path": "AndroZoo/apks/bd/com.rpsinfocom.justrack_BD48FD6F2F1E9F58E3F25C77331A34A99B94D2B6C88C9A233B58C34C5DDC1EF1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `X0`."
+            },
+            {
+                "package_id": "com.telemko.telemkotrack",
+                "version_code": 253,
+                "version_name": "2.81.0",
+                "package_path": "AndroZoo/apks/31/com.telemko.telemkotrack_313774EAB21E6A835E93FF6E1E6D09AA47A00236F6D10213D96ECA35B7148D53.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `X0`."
+            },
+            {
+                "package_id": "com.tracking.techtonika",
+                "version_code": 1,
+                "version_name": "1.0.0",
+                "package_path": "AndroZoo/apks/61/com.tracking.techtonika_611E828DA28E341A8FB451B0E61DFD8A82193E98B6E40D1487757C6AB5CF7911.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.excel.smartlock",
+                "version_code": 12,
+                "version_name": "1.4.0",
+                "package_path": "AndroZoo/apks/00/com.excel.smartlock_005ACAFD13475A07AD85822138459C864930A18BB125EEC503E73EA220E052CE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
+            },
+            {
+                "package_id": "travel.goki.app",
+                "version_code": 21220100,
+                "version_name": "1.122.1",
+                "package_path": "AndroZoo/apks/00/travel.goki.app_00A012EC428F2B78F4CC17A395DBA8F9D61E383B5E531F2E8B45856F07C2264D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.rbsmartlockapp",
+                "version_code": 778,
+                "version_name": "1.1.38",
+                "package_path": "AndroZoo/apks/3d/com.rbsmartlockapp_3DAFE46E8913410B25ED02823A775AADFE46CC775A9E007CE7854897FDDE5755.apk",
+                "description": "Target SHA-256 3dafe46e8913410b25ed02823a775aadfe46cc775a9e007ce7854897fdde5755; conditional wristband profile in com.ttlock.bl.sdk."
+            },
+            {
+                "package_id": "com.desi.roof",
+                "version_code": 774,
+                "version_name": "1.1.38",
+                "package_path": "AndroZoo/apks/32/com.desi.roof_3250121F7C1F2156034DA1A8356CA3D6DC76C9DE9F9A286985B64FAF3C8E566B.apk",
+                "description": "DESi Smart; APK SHA-256 verified as 3250121f7c1f2156034da1a8356ca3d6dc76c9de9f9a286985b64faf3c8e566b; target-only GATT review."
+            }
+        ]
+    },
+    {
+        "UUID": "6e400002-b5a3-f393-e0a9-e50e24dcca1e",
+        "company": "Sciener",
+        "UUID_name": "WRISTBAND_WRITE / BONG_WRITE",
+        "UUID_purpose": "GATT Characteristic observed in Android app es.mobail.stay_free but declared in third-party SDK package `com.smartlock.bl.sdk.api`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of es.mobail.stay_free v2.6.5 (versionCode 84), declared in Java package `com.smartlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of space.smarteroffice.owner v1.2.5 (versionCode 2578), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.keratronik.pda.android.vector v5.3.7 (versionCode 5307), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.bmhconnect.smart v1.2.2 (versionCode 8), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.staffhub v4.1.5 (versionCode 19), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hawiot.smart v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.vistacana v1.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sifely.smartlockapp v1.5.0 (versionCode 47), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hoteldev.assist v1.3.8 (versionCode 17), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sifely.smartlock v1.9.0 (versionCode 38), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of space.smartos.ntvm v1.5.2 (versionCode 1183), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.jnf.accesscontrol v2.027 (versionCode 2027), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tthotel.guest v1.3.4 (versionCode 24), declared in Java package `c3` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sciener.btlock v8.1.0 (versionCode 230), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.supplier.tool v1.0.0 (versionCode 3), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.keratronik.pda.android.juwentusgpsonline v6.0.26 (versionCode 41016026), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.keratronik.pda.android.swopcar v1.3.64 (versionCode 1364), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tongtongsuo.app v7.1.2 (versionCode 248), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of io.autonest.app v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ttology.global v1.2.0 (versionCode 6), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of vn.neoLock v2.81 (versionCode 194), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.jadco v1.1.0 (versionCode 2), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.one v8.0.19 (versionCode 37), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sciener.hotela v3.7.6 (versionCode 65), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.rpsinfocom.justrack v2.87.0 (versionCode 260), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.telemko.telemkotrack v2.81.0 (versionCode 253), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tracking.techtonika v1.0.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.rpsinfocom.justrack",
+                "description": "Verified current Google Play listing for com.rpsinfocom.justrack. This listing does not establish that archived APK version 2.87.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.telemko.telemkotrack",
+                "description": "Verified current Google Play listing for com.telemko.telemkotrack. This listing does not establish that archived APK version 2.81.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.excel.smartlock v1.4.0 (versionCode 12), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of travel.goki.app v1.122.1 (versionCode 21220100), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Target APK DEX: BluetoothImpl assigns this UUID to b1; on service discovery the b1 characteristic is stored as the write target, and the send path calls BluetoothGatt.writeCharacteristic on it (BluetoothImpl.java:439,475; synthetic setter at :1792; write path at :3597). The profile branch is conditional on d1; activation is unconfirmed.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "Target APK source: simple_jadx/sources/com/ttlock/bl/sdk/api/BluetoothImpl.java:439 assigns this UUID to b1; line 475 compares b1 against each characteristic under a1 (service 6e400001...dcca1e).",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "es.mobail.stay_free",
+                "version_code": 84,
+                "version_name": "2.6.5",
+                "package_path": "BLUUID_APKS/0073/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "space.smarteroffice.owner",
+                "version_code": 2578,
+                "version_name": "1.2.5",
+                "package_path": "BLUUID_APKS/0101/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "pl.keratronik.pda.android.vector",
+                "version_code": 5307,
+                "version_name": "5.3.7",
+                "package_path": "BLUUID_APKS/0107/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_WRITE`."
+            },
+            {
+                "package_id": "com.bmhconnect.smart",
+                "version_code": 8,
+                "version_name": "1.2.2",
+                "package_path": "BLUUID_APKS/0181/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_WRITE`."
+            },
+            {
+                "package_id": "com.mosino.staffhub",
+                "version_code": 19,
+                "version_name": "4.1.5",
+                "package_path": "BLUUID_APKS/0208/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.hawiot.smart",
+                "version_code": 20506,
+                "version_name": "2.5.6",
+                "package_path": "BLUUID_APKS/0223/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.mosino.vistacana",
+                "version_code": 1,
+                "version_name": "1.0",
+                "package_path": "BLUUID_APKS/0242/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.sifely.smartlockapp",
+                "version_code": 47,
+                "version_name": "1.5.0",
+                "package_path": "BLUUID_APKS/0257/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.hoteldev.assist",
+                "version_code": 17,
+                "version_name": "1.3.8",
+                "package_path": "BLUUID_APKS/0324/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.sifely.smartlock",
+                "version_code": 38,
+                "version_name": "1.9.0",
+                "package_path": "BLUUID_APKS/0418/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_WRITE`."
+            },
+            {
+                "package_id": "space.smartos.ntvm",
+                "version_code": 1183,
+                "version_name": "1.5.2",
+                "package_path": "BLUUID_APKS/0546/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.jnf.accesscontrol",
+                "version_code": 2027,
+                "version_name": "2.027",
+                "package_path": "BLUUID_APKS/0597/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.tthotel.guest",
+                "version_code": 24,
+                "version_name": "1.3.4",
+                "package_path": "BLUUID_APKS/0661/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.sciener.btlock",
+                "version_code": 230,
+                "version_name": "8.1.0",
+                "package_path": "BLUUID_APKS/0668/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_WRITE`."
+            },
+            {
+                "package_id": "com.supplier.tool",
+                "version_code": 3,
+                "version_name": "1.0.0",
+                "package_path": "BLUUID_APKS/0672/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "pl.keratronik.pda.android.juwentusgpsonline",
+                "version_code": 41016026,
+                "version_name": "6.0.26",
+                "package_path": "BLUUID_APKS/0712/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_WRITE`."
+            },
+            {
+                "package_id": "pl.keratronik.pda.android.swopcar",
+                "version_code": 1364,
+                "version_name": "1.3.64",
+                "package_path": "BLUUID_APKS/0728/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_WRITE`."
+            },
+            {
+                "package_id": "com.tongtongsuo.app",
+                "version_code": 248,
+                "version_name": "7.1.2",
+                "package_path": "BLUUID_APKS/0761/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_WRITE`."
+            },
+            {
+                "package_id": "io.autonest.app",
+                "version_code": 20506,
+                "version_name": "2.5.6",
+                "package_path": "BLUUID_APKS/0763/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.ttology.global",
+                "version_code": 6,
+                "version_name": "1.2.0",
+                "package_path": "BLUUID_APKS/0809/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "vn.neoLock",
+                "version_code": 194,
+                "version_name": "2.81",
+                "package_path": "BLUUID_APKS/0922/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.mosino.jadco",
+                "version_code": 2,
+                "version_name": "1.1.0",
+                "package_path": "BLUUID_APKS/0925/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.mosino.one",
+                "version_code": 37,
+                "version_name": "8.0.19",
+                "package_path": "BLUUID_APKS/0961/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.sciener.hotela",
+                "version_code": 65,
+                "version_name": "3.7.6",
+                "package_path": "BLUUID_APKS/0966/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.rpsinfocom.justrack",
+                "version_code": 260,
+                "version_name": "2.87.0",
+                "package_path": "AndroZoo/apks/bd/com.rpsinfocom.justrack_BD48FD6F2F1E9F58E3F25C77331A34A99B94D2B6C88C9A233B58C34C5DDC1EF1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.telemko.telemkotrack",
+                "version_code": 253,
+                "version_name": "2.81.0",
+                "package_path": "AndroZoo/apks/31/com.telemko.telemkotrack_313774EAB21E6A835E93FF6E1E6D09AA47A00236F6D10213D96ECA35B7148D53.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.tracking.techtonika",
+                "version_code": 1,
+                "version_name": "1.0.0",
+                "package_path": "AndroZoo/apks/61/com.tracking.techtonika_611E828DA28E341A8FB451B0E61DFD8A82193E98B6E40D1487757C6AB5CF7911.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.excel.smartlock",
+                "version_code": 12,
+                "version_name": "1.4.0",
+                "package_path": "AndroZoo/apks/00/com.excel.smartlock_005ACAFD13475A07AD85822138459C864930A18BB125EEC503E73EA220E052CE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_WRITE`."
+            },
+            {
+                "package_id": "travel.goki.app",
+                "version_code": 21220100,
+                "version_name": "1.122.1",
+                "package_path": "AndroZoo/apks/00/travel.goki.app_00A012EC428F2B78F4CC17A395DBA8F9D61E383B5E531F2E8B45856F07C2264D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.rbsmartlockapp",
+                "version_code": 778,
+                "version_name": "1.1.38",
+                "package_path": "AndroZoo/apks/3d/com.rbsmartlockapp_3DAFE46E8913410B25ED02823A775AADFE46CC775A9E007CE7854897FDDE5755.apk",
+                "description": "Target SHA-256 3dafe46e8913410b25ed02823a775aadfe46cc775a9e007ce7854897fdde5755; conditional wristband profile in com.ttlock.bl.sdk."
+            },
+            {
+                "package_id": "com.desi.roof",
+                "version_code": 774,
+                "version_name": "1.1.38",
+                "package_path": "AndroZoo/apks/32/com.desi.roof_3250121F7C1F2156034DA1A8356CA3D6DC76C9DE9F9A286985B64FAF3C8E566B.apk",
+                "description": "DESi Smart; APK SHA-256 verified as 3250121f7c1f2156034da1a8356ca3d6dc76c9de9f9a286985b64faf3c8e566b; target-only GATT review."
+            }
+        ],
+        "parent_UUID": "6e400001-b5a3-f393-e0a9-e50e24dcca1e"
+    },
+    {
+        "UUID": "6e400003-b5a3-f393-e0a9-e50e24dcca1e",
+        "company": "Sciener",
+        "UUID_name": "WRISTBAND_NOTIFY / BONG_READ",
+        "UUID_purpose": "GATT Characteristic observed in Android app es.mobail.stay_free but declared in third-party SDK package `com.smartlock.bl.sdk.api`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of es.mobail.stay_free v2.6.5 (versionCode 84), declared in Java package `com.smartlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of space.smarteroffice.owner v1.2.5 (versionCode 2578), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.keratronik.pda.android.vector v5.3.7 (versionCode 5307), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.bmhconnect.smart v1.2.2 (versionCode 8), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.staffhub v4.1.5 (versionCode 19), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hawiot.smart v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.vistacana v1.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sifely.smartlockapp v1.5.0 (versionCode 47), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hoteldev.assist v1.3.8 (versionCode 17), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sifely.smartlock v1.9.0 (versionCode 38), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of space.smartos.ntvm v1.5.2 (versionCode 1183), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.jnf.accesscontrol v2.027 (versionCode 2027), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tthotel.guest v1.3.4 (versionCode 24), declared in Java package `c3` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sciener.btlock v8.1.0 (versionCode 230), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.supplier.tool v1.0.0 (versionCode 3), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.keratronik.pda.android.juwentusgpsonline v6.0.26 (versionCode 41016026), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of pl.keratronik.pda.android.swopcar v1.3.64 (versionCode 1364), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tongtongsuo.app v7.1.2 (versionCode 248), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of io.autonest.app v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ttology.global v1.2.0 (versionCode 6), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of vn.neoLock v2.81 (versionCode 194), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.jadco v1.1.0 (versionCode 2), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mosino.one v8.0.19 (versionCode 37), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.sciener.hotela v3.7.6 (versionCode 65), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.rpsinfocom.justrack v2.87.0 (versionCode 260), in Java field `Z0`, declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.telemko.telemkotrack v2.81.0 (versionCode 253), in Java field `Z0`, declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tracking.techtonika v1.0.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.rpsinfocom.justrack",
+                "description": "Verified current Google Play listing for com.rpsinfocom.justrack. This listing does not establish that archived APK version 2.87.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.telemko.telemkotrack",
+                "description": "Verified current Google Play listing for com.telemko.telemkotrack. This listing does not establish that archived APK version 2.81.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.excel.smartlock v1.4.0 (versionCode 12), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of travel.goki.app v1.122.1 (versionCode 21220100), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Target APK DEX: BluetoothImpl assigns this UUID to c1; on service discovery it enables notifications and writes the CCCD for c1 (BluetoothImpl.java:438,476-480). The profile branch is conditional on d1; activation is unconfirmed.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "Target APK source: simple_jadx/sources/com/ttlock/bl/sdk/api/BluetoothImpl.java:438 assigns this UUID to c1; lines 476-480 match c1 and enable characteristic notifications under a1 (service 6e400001...dcca1e).",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "es.mobail.stay_free",
+                "version_code": 84,
+                "version_name": "2.6.5",
+                "package_path": "BLUUID_APKS/0073/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "space.smarteroffice.owner",
+                "version_code": 2578,
+                "version_name": "1.2.5",
+                "package_path": "BLUUID_APKS/0101/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "pl.keratronik.pda.android.vector",
+                "version_code": 5307,
+                "version_name": "5.3.7",
+                "package_path": "BLUUID_APKS/0107/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_READ`."
+            },
+            {
+                "package_id": "com.bmhconnect.smart",
+                "version_code": 8,
+                "version_name": "1.2.2",
+                "package_path": "BLUUID_APKS/0181/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_READ`."
+            },
+            {
+                "package_id": "com.mosino.staffhub",
+                "version_code": 19,
+                "version_name": "4.1.5",
+                "package_path": "BLUUID_APKS/0208/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.hawiot.smart",
+                "version_code": 20506,
+                "version_name": "2.5.6",
+                "package_path": "BLUUID_APKS/0223/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.mosino.vistacana",
+                "version_code": 1,
+                "version_name": "1.0",
+                "package_path": "BLUUID_APKS/0242/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.sifely.smartlockapp",
+                "version_code": 47,
+                "version_name": "1.5.0",
+                "package_path": "BLUUID_APKS/0257/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.hoteldev.assist",
+                "version_code": 17,
+                "version_name": "1.3.8",
+                "package_path": "BLUUID_APKS/0324/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.sifely.smartlock",
+                "version_code": 38,
+                "version_name": "1.9.0",
+                "package_path": "BLUUID_APKS/0418/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_READ`."
+            },
+            {
+                "package_id": "space.smartos.ntvm",
+                "version_code": 1183,
+                "version_name": "1.5.2",
+                "package_path": "BLUUID_APKS/0546/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.jnf.accesscontrol",
+                "version_code": 2027,
+                "version_name": "2.027",
+                "package_path": "BLUUID_APKS/0597/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.tthotel.guest",
+                "version_code": 24,
+                "version_name": "1.3.4",
+                "package_path": "BLUUID_APKS/0661/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.sciener.btlock",
+                "version_code": 230,
+                "version_name": "8.1.0",
+                "package_path": "BLUUID_APKS/0668/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_READ`."
+            },
+            {
+                "package_id": "com.supplier.tool",
+                "version_code": 3,
+                "version_name": "1.0.0",
+                "package_path": "BLUUID_APKS/0672/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "pl.keratronik.pda.android.juwentusgpsonline",
+                "version_code": 41016026,
+                "version_name": "6.0.26",
+                "package_path": "BLUUID_APKS/0712/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_READ`."
+            },
+            {
+                "package_id": "pl.keratronik.pda.android.swopcar",
+                "version_code": 1364,
+                "version_name": "1.3.64",
+                "package_path": "BLUUID_APKS/0728/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_READ`."
+            },
+            {
+                "package_id": "com.tongtongsuo.app",
+                "version_code": 248,
+                "version_name": "7.1.2",
+                "package_path": "BLUUID_APKS/0761/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_READ`."
+            },
+            {
+                "package_id": "io.autonest.app",
+                "version_code": 20506,
+                "version_name": "2.5.6",
+                "package_path": "BLUUID_APKS/0763/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.ttology.global",
+                "version_code": 6,
+                "version_name": "1.2.0",
+                "package_path": "BLUUID_APKS/0809/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "vn.neoLock",
+                "version_code": 194,
+                "version_name": "2.81",
+                "package_path": "BLUUID_APKS/0922/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.mosino.jadco",
+                "version_code": 2,
+                "version_name": "1.1.0",
+                "package_path": "BLUUID_APKS/0925/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.mosino.one",
+                "version_code": 37,
+                "version_name": "8.0.19",
+                "package_path": "BLUUID_APKS/0961/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.sciener.hotela",
+                "version_code": 65,
+                "version_name": "3.7.6",
+                "package_path": "BLUUID_APKS/0966/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.rpsinfocom.justrack",
+                "version_code": 260,
+                "version_name": "2.87.0",
+                "package_path": "AndroZoo/apks/bd/com.rpsinfocom.justrack_BD48FD6F2F1E9F58E3F25C77331A34A99B94D2B6C88C9A233B58C34C5DDC1EF1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `Z0`."
+            },
+            {
+                "package_id": "com.telemko.telemkotrack",
+                "version_code": 253,
+                "version_name": "2.81.0",
+                "package_path": "AndroZoo/apks/31/com.telemko.telemkotrack_313774EAB21E6A835E93FF6E1E6D09AA47A00236F6D10213D96ECA35B7148D53.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `Z0`."
+            },
+            {
+                "package_id": "com.tracking.techtonika",
+                "version_code": 1,
+                "version_name": "1.0.0",
+                "package_path": "AndroZoo/apks/61/com.tracking.techtonika_611E828DA28E341A8FB451B0E61DFD8A82193E98B6E40D1487757C6AB5CF7911.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.excel.smartlock",
+                "version_code": 12,
+                "version_name": "1.4.0",
+                "package_path": "AndroZoo/apks/00/com.excel.smartlock_005ACAFD13475A07AD85822138459C864930A18BB125EEC503E73EA220E052CE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BONG_READ`."
+            },
+            {
+                "package_id": "travel.goki.app",
+                "version_code": 21220100,
+                "version_name": "1.122.1",
+                "package_path": "AndroZoo/apks/00/travel.goki.app_00A012EC428F2B78F4CC17A395DBA8F9D61E383B5E531F2E8B45856F07C2264D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.rbsmartlockapp",
+                "version_code": 778,
+                "version_name": "1.1.38",
+                "package_path": "AndroZoo/apks/3d/com.rbsmartlockapp_3DAFE46E8913410B25ED02823A775AADFE46CC775A9E007CE7854897FDDE5755.apk",
+                "description": "Target SHA-256 3dafe46e8913410b25ed02823a775aadfe46cc775a9e007ce7854897fdde5755; conditional wristband profile in com.ttlock.bl.sdk."
+            },
+            {
+                "package_id": "com.desi.roof",
+                "version_code": 774,
+                "version_name": "1.1.38",
+                "package_path": "AndroZoo/apks/32/com.desi.roof_3250121F7C1F2156034DA1A8356CA3D6DC76C9DE9F9A286985B64FAF3C8E566B.apk",
+                "description": "DESi Smart; APK SHA-256 verified as 3250121f7c1f2156034da1a8356ca3d6dc76c9de9f9a286985b64faf3c8e566b; target-only GATT review."
+            }
+        ],
+        "parent_UUID": "6e400001-b5a3-f393-e0a9-e50e24dcca1e"
+    },
+    {
         "UUID": "688b9509-5bf6-409b-b7aa-2991e2dca437",
         "company": "Sensyne Health Co Limited",
         "UUID_name": "SENSYNEHEALTH_PROXY_WRITE_CHARACTERISTIC",
@@ -105524,6 +106877,78 @@
                 "version_name": "7.3.0",
                 "package_path": "BLUUID_APKS/0264/b5449f9462d63b96a159d4ec354c33abd8c335eb125b3aec2bdaa2b0a9dd70d6/b5449f9462d63b96a159d4ec354c33abd8c335eb125b3aec2bdaa2b0a9dd70d6.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `b`."
+            }
+        ]
+    },
+    {
+        "UUID": "659cadd6-bcc6-4f12-a470-fe351e4de17d",
+        "company": "Soundbrenner",
+        "UUID_name": "Multilink Awareness",
+        "UUID_purpose": "Operation-profile characteristic shared by Core, Core 2, and Spark. Candidate parent services: 77ef8bb5-7d4d-4a66-bd64-3f93cc01ccda, c2000ab3-2547-0915-bf66-f6d82d11e8f1, 5aaa5dc8-2fb6-0ed9-6c71-e25a9f8734ab.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX CoreProfile.java, Core2Profile.java, and SparkProfile.java each define this named characteristic under that model's OperationService and assign the same UUID. The parent_UUID field is omitted because the APK gives three distinct parent service UUIDs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ]
+    },
+    {
+        "UUID": "6d869fa1-f69c-418e-9988-e7352744bda0",
+        "company": "Soundbrenner",
+        "UUID_name": "Time Setting",
+        "UUID_purpose": "Operation-profile characteristic shared by Core, Core 2, and Spark. Candidate parent services: 77ef8bb5-7d4d-4a66-bd64-3f93cc01ccda, c2000ab3-2547-0915-bf66-f6d82d11e8f1, 5aaa5dc8-2fb6-0ed9-6c71-e25a9f8734ab.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX CoreProfile.java, Core2Profile.java, and SparkProfile.java each define this named characteristic under that model's OperationService and assign the same UUID. The parent_UUID field is omitted because the APK gives three distinct parent service UUIDs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ]
+    },
+    {
+        "UUID": "6f38750c-a173-4b48-86fb-de110c36a08f",
+        "company": "Soundbrenner",
+        "UUID_name": "Error",
+        "UUID_purpose": "Operation-profile characteristic shared by Core, Core 2, and Spark. Candidate parent services: 77ef8bb5-7d4d-4a66-bd64-3f93cc01ccda, c2000ab3-2547-0915-bf66-f6d82d11e8f1, 5aaa5dc8-2fb6-0ed9-6c71-e25a9f8734ab.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX CoreProfile.java, Core2Profile.java, and SparkProfile.java each define this named characteristic under that model's OperationService and assign the same UUID. The parent_UUID field is omitted because the APK gives three distinct parent service UUIDs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
             }
         ]
     },
@@ -131079,1032 +132504,6 @@
         ]
     },
     {
-        "UUID": "6e400001-b5a3-f393-e0a9-e50e24dcca1e",
-        "company": "Third-party SDK code (declared in Java package `com.smartlock.bl.sdk.api` — distinct from host es.mobail.stay_free; Phase-4 identification needed)",
-        "UUID_name": "BONG_SERVICE",
-        "UUID_purpose": "GATT Service observed in Android app es.mobail.stay_free but declared in third-party SDK package `com.smartlock.bl.sdk.api`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of es.mobail.stay_free v2.6.5 (versionCode 84), declared in Java package `com.smartlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of space.smarteroffice.owner v1.2.5 (versionCode 2578), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.keratronik.pda.android.vector v5.3.7 (versionCode 5307), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.bmhconnect.smart v1.2.2 (versionCode 8), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.staffhub v4.1.5 (versionCode 19), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.hawiot.smart v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.vistacana v1.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sifely.smartlockapp v1.5.0 (versionCode 47), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.hoteldev.assist v1.3.8 (versionCode 17), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sifely.smartlock v1.9.0 (versionCode 38), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of space.smartos.ntvm v1.5.2 (versionCode 1183), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.jnf.accesscontrol v2.027 (versionCode 2027), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tthotel.guest v1.3.4 (versionCode 24), declared in Java package `c3` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sciener.btlock v8.1.0 (versionCode 230), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.supplier.tool v1.0.0 (versionCode 3), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.keratronik.pda.android.juwentusgpsonline v6.0.26 (versionCode 41016026), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.keratronik.pda.android.swopcar v1.3.64 (versionCode 1364), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tongtongsuo.app v7.1.2 (versionCode 248), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of io.autonest.app v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.ttology.global v1.2.0 (versionCode 6), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of vn.neoLock v2.81 (versionCode 194), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.jadco v1.1.0 (versionCode 2), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.one v8.0.19 (versionCode 37), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sciener.hotela v3.7.6 (versionCode 65), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.rpsinfocom.justrack v2.87.0 (versionCode 260), in Java field `X0`, declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: usage:getService.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.telemko.telemkotrack v2.81.0 (versionCode 253), in Java field `X0`, declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: usage:getService.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tracking.techtonika v1.0.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.rpsinfocom.justrack",
-                "description": "Verified current Google Play listing for com.rpsinfocom.justrack. This listing does not establish that archived APK version 2.87.0 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.telemko.telemkotrack",
-                "description": "Verified current Google Play listing for com.telemko.telemkotrack. This listing does not establish that archived APK version 2.81.0 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "description": "Found in decompiled DEX of com.excel.smartlock v1.4.0 (versionCode 12), in Java field `BONG_SERVICE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: field-name:BONG_SERVICE.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Found in decompiled DEX of travel.goki.app v1.122.1 (versionCode 21220100), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "es.mobail.stay_free",
-                "version_code": 84,
-                "version_name": "2.6.5",
-                "package_path": "BLUUID_APKS/0073/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "space.smarteroffice.owner",
-                "version_code": 2578,
-                "version_name": "1.2.5",
-                "package_path": "BLUUID_APKS/0101/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "pl.keratronik.pda.android.vector",
-                "version_code": 5307,
-                "version_name": "5.3.7",
-                "package_path": "BLUUID_APKS/0107/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
-            },
-            {
-                "package_id": "com.bmhconnect.smart",
-                "version_code": 8,
-                "version_name": "1.2.2",
-                "package_path": "BLUUID_APKS/0181/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
-            },
-            {
-                "package_id": "com.mosino.staffhub",
-                "version_code": 19,
-                "version_name": "4.1.5",
-                "package_path": "BLUUID_APKS/0208/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.hawiot.smart",
-                "version_code": 20506,
-                "version_name": "2.5.6",
-                "package_path": "BLUUID_APKS/0223/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.mosino.vistacana",
-                "version_code": 1,
-                "version_name": "1.0",
-                "package_path": "BLUUID_APKS/0242/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sifely.smartlockapp",
-                "version_code": 47,
-                "version_name": "1.5.0",
-                "package_path": "BLUUID_APKS/0257/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.hoteldev.assist",
-                "version_code": 17,
-                "version_name": "1.3.8",
-                "package_path": "BLUUID_APKS/0324/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sifely.smartlock",
-                "version_code": 38,
-                "version_name": "1.9.0",
-                "package_path": "BLUUID_APKS/0418/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
-            },
-            {
-                "package_id": "space.smartos.ntvm",
-                "version_code": 1183,
-                "version_name": "1.5.2",
-                "package_path": "BLUUID_APKS/0546/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.jnf.accesscontrol",
-                "version_code": 2027,
-                "version_name": "2.027",
-                "package_path": "BLUUID_APKS/0597/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.tthotel.guest",
-                "version_code": 24,
-                "version_name": "1.3.4",
-                "package_path": "BLUUID_APKS/0661/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sciener.btlock",
-                "version_code": 230,
-                "version_name": "8.1.0",
-                "package_path": "BLUUID_APKS/0668/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
-            },
-            {
-                "package_id": "com.supplier.tool",
-                "version_code": 3,
-                "version_name": "1.0.0",
-                "package_path": "BLUUID_APKS/0672/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "pl.keratronik.pda.android.juwentusgpsonline",
-                "version_code": 41016026,
-                "version_name": "6.0.26",
-                "package_path": "BLUUID_APKS/0712/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
-            },
-            {
-                "package_id": "pl.keratronik.pda.android.swopcar",
-                "version_code": 1364,
-                "version_name": "1.3.64",
-                "package_path": "BLUUID_APKS/0728/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
-            },
-            {
-                "package_id": "com.tongtongsuo.app",
-                "version_code": 248,
-                "version_name": "7.1.2",
-                "package_path": "BLUUID_APKS/0761/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
-            },
-            {
-                "package_id": "io.autonest.app",
-                "version_code": 20506,
-                "version_name": "2.5.6",
-                "package_path": "BLUUID_APKS/0763/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.ttology.global",
-                "version_code": 6,
-                "version_name": "1.2.0",
-                "package_path": "BLUUID_APKS/0809/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "vn.neoLock",
-                "version_code": 194,
-                "version_name": "2.81",
-                "package_path": "BLUUID_APKS/0922/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.mosino.jadco",
-                "version_code": 2,
-                "version_name": "1.1.0",
-                "package_path": "BLUUID_APKS/0925/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.mosino.one",
-                "version_code": 37,
-                "version_name": "8.0.19",
-                "package_path": "BLUUID_APKS/0961/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sciener.hotela",
-                "version_code": 65,
-                "version_name": "3.7.6",
-                "package_path": "BLUUID_APKS/0966/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.rpsinfocom.justrack",
-                "version_code": 260,
-                "version_name": "2.87.0",
-                "package_path": "AndroZoo/apks/bd/com.rpsinfocom.justrack_BD48FD6F2F1E9F58E3F25C77331A34A99B94D2B6C88C9A233B58C34C5DDC1EF1.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `X0`."
-            },
-            {
-                "package_id": "com.telemko.telemkotrack",
-                "version_code": 253,
-                "version_name": "2.81.0",
-                "package_path": "AndroZoo/apks/31/com.telemko.telemkotrack_313774EAB21E6A835E93FF6E1E6D09AA47A00236F6D10213D96ECA35B7148D53.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `X0`."
-            },
-            {
-                "package_id": "com.tracking.techtonika",
-                "version_code": 1,
-                "version_name": "1.0.0",
-                "package_path": "AndroZoo/apks/61/com.tracking.techtonika_611E828DA28E341A8FB451B0E61DFD8A82193E98B6E40D1487757C6AB5CF7911.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.excel.smartlock",
-                "version_code": 12,
-                "version_name": "1.4.0",
-                "package_path": "AndroZoo/apks/00/com.excel.smartlock_005ACAFD13475A07AD85822138459C864930A18BB125EEC503E73EA220E052CE.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_SERVICE`."
-            },
-            {
-                "package_id": "travel.goki.app",
-                "version_code": 21220100,
-                "version_name": "1.122.1",
-                "package_path": "AndroZoo/apks/00/travel.goki.app_00A012EC428F2B78F4CC17A395DBA8F9D61E383B5E531F2E8B45856F07C2264D.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
-        "UUID": "6e400002-b5a3-f393-e0a9-e50e24dcca1e",
-        "company": "Third-party SDK code (declared in Java package `com.smartlock.bl.sdk.api` — distinct from host es.mobail.stay_free; Phase-4 identification needed)",
-        "UUID_name": "BONG_WRITE",
-        "UUID_purpose": "GATT Service observed in Android app es.mobail.stay_free but declared in third-party SDK package `com.smartlock.bl.sdk.api`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of es.mobail.stay_free v2.6.5 (versionCode 84), declared in Java package `com.smartlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of space.smarteroffice.owner v1.2.5 (versionCode 2578), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.keratronik.pda.android.vector v5.3.7 (versionCode 5307), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.bmhconnect.smart v1.2.2 (versionCode 8), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.staffhub v4.1.5 (versionCode 19), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.hawiot.smart v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.vistacana v1.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sifely.smartlockapp v1.5.0 (versionCode 47), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.hoteldev.assist v1.3.8 (versionCode 17), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sifely.smartlock v1.9.0 (versionCode 38), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of space.smartos.ntvm v1.5.2 (versionCode 1183), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.jnf.accesscontrol v2.027 (versionCode 2027), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tthotel.guest v1.3.4 (versionCode 24), declared in Java package `c3` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sciener.btlock v8.1.0 (versionCode 230), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.supplier.tool v1.0.0 (versionCode 3), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.keratronik.pda.android.juwentusgpsonline v6.0.26 (versionCode 41016026), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.keratronik.pda.android.swopcar v1.3.64 (versionCode 1364), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tongtongsuo.app v7.1.2 (versionCode 248), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of io.autonest.app v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.ttology.global v1.2.0 (versionCode 6), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of vn.neoLock v2.81 (versionCode 194), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.jadco v1.1.0 (versionCode 2), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.one v8.0.19 (versionCode 37), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sciener.hotela v3.7.6 (versionCode 65), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.rpsinfocom.justrack v2.87.0 (versionCode 260), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.telemko.telemkotrack v2.81.0 (versionCode 253), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tracking.techtonika v1.0.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.rpsinfocom.justrack",
-                "description": "Verified current Google Play listing for com.rpsinfocom.justrack. This listing does not establish that archived APK version 2.87.0 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.telemko.telemkotrack",
-                "description": "Verified current Google Play listing for com.telemko.telemkotrack. This listing does not establish that archived APK version 2.81.0 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "description": "Found in decompiled DEX of com.excel.smartlock v1.4.0 (versionCode 12), in Java field `BONG_WRITE`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Found in decompiled DEX of travel.goki.app v1.122.1 (versionCode 21220100), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "es.mobail.stay_free",
-                "version_code": 84,
-                "version_name": "2.6.5",
-                "package_path": "BLUUID_APKS/0073/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "space.smarteroffice.owner",
-                "version_code": 2578,
-                "version_name": "1.2.5",
-                "package_path": "BLUUID_APKS/0101/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "pl.keratronik.pda.android.vector",
-                "version_code": 5307,
-                "version_name": "5.3.7",
-                "package_path": "BLUUID_APKS/0107/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_WRITE`."
-            },
-            {
-                "package_id": "com.bmhconnect.smart",
-                "version_code": 8,
-                "version_name": "1.2.2",
-                "package_path": "BLUUID_APKS/0181/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_WRITE`."
-            },
-            {
-                "package_id": "com.mosino.staffhub",
-                "version_code": 19,
-                "version_name": "4.1.5",
-                "package_path": "BLUUID_APKS/0208/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.hawiot.smart",
-                "version_code": 20506,
-                "version_name": "2.5.6",
-                "package_path": "BLUUID_APKS/0223/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.mosino.vistacana",
-                "version_code": 1,
-                "version_name": "1.0",
-                "package_path": "BLUUID_APKS/0242/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sifely.smartlockapp",
-                "version_code": 47,
-                "version_name": "1.5.0",
-                "package_path": "BLUUID_APKS/0257/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.hoteldev.assist",
-                "version_code": 17,
-                "version_name": "1.3.8",
-                "package_path": "BLUUID_APKS/0324/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sifely.smartlock",
-                "version_code": 38,
-                "version_name": "1.9.0",
-                "package_path": "BLUUID_APKS/0418/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_WRITE`."
-            },
-            {
-                "package_id": "space.smartos.ntvm",
-                "version_code": 1183,
-                "version_name": "1.5.2",
-                "package_path": "BLUUID_APKS/0546/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.jnf.accesscontrol",
-                "version_code": 2027,
-                "version_name": "2.027",
-                "package_path": "BLUUID_APKS/0597/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.tthotel.guest",
-                "version_code": 24,
-                "version_name": "1.3.4",
-                "package_path": "BLUUID_APKS/0661/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sciener.btlock",
-                "version_code": 230,
-                "version_name": "8.1.0",
-                "package_path": "BLUUID_APKS/0668/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_WRITE`."
-            },
-            {
-                "package_id": "com.supplier.tool",
-                "version_code": 3,
-                "version_name": "1.0.0",
-                "package_path": "BLUUID_APKS/0672/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "pl.keratronik.pda.android.juwentusgpsonline",
-                "version_code": 41016026,
-                "version_name": "6.0.26",
-                "package_path": "BLUUID_APKS/0712/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_WRITE`."
-            },
-            {
-                "package_id": "pl.keratronik.pda.android.swopcar",
-                "version_code": 1364,
-                "version_name": "1.3.64",
-                "package_path": "BLUUID_APKS/0728/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_WRITE`."
-            },
-            {
-                "package_id": "com.tongtongsuo.app",
-                "version_code": 248,
-                "version_name": "7.1.2",
-                "package_path": "BLUUID_APKS/0761/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_WRITE`."
-            },
-            {
-                "package_id": "io.autonest.app",
-                "version_code": 20506,
-                "version_name": "2.5.6",
-                "package_path": "BLUUID_APKS/0763/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.ttology.global",
-                "version_code": 6,
-                "version_name": "1.2.0",
-                "package_path": "BLUUID_APKS/0809/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "vn.neoLock",
-                "version_code": 194,
-                "version_name": "2.81",
-                "package_path": "BLUUID_APKS/0922/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.mosino.jadco",
-                "version_code": 2,
-                "version_name": "1.1.0",
-                "package_path": "BLUUID_APKS/0925/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.mosino.one",
-                "version_code": 37,
-                "version_name": "8.0.19",
-                "package_path": "BLUUID_APKS/0961/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sciener.hotela",
-                "version_code": 65,
-                "version_name": "3.7.6",
-                "package_path": "BLUUID_APKS/0966/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.rpsinfocom.justrack",
-                "version_code": 260,
-                "version_name": "2.87.0",
-                "package_path": "AndroZoo/apks/bd/com.rpsinfocom.justrack_BD48FD6F2F1E9F58E3F25C77331A34A99B94D2B6C88C9A233B58C34C5DDC1EF1.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.telemko.telemkotrack",
-                "version_code": 253,
-                "version_name": "2.81.0",
-                "package_path": "AndroZoo/apks/31/com.telemko.telemkotrack_313774EAB21E6A835E93FF6E1E6D09AA47A00236F6D10213D96ECA35B7148D53.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.tracking.techtonika",
-                "version_code": 1,
-                "version_name": "1.0.0",
-                "package_path": "AndroZoo/apks/61/com.tracking.techtonika_611E828DA28E341A8FB451B0E61DFD8A82193E98B6E40D1487757C6AB5CF7911.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.excel.smartlock",
-                "version_code": 12,
-                "version_name": "1.4.0",
-                "package_path": "AndroZoo/apks/00/com.excel.smartlock_005ACAFD13475A07AD85822138459C864930A18BB125EEC503E73EA220E052CE.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_WRITE`."
-            },
-            {
-                "package_id": "travel.goki.app",
-                "version_code": 21220100,
-                "version_name": "1.122.1",
-                "package_path": "AndroZoo/apks/00/travel.goki.app_00A012EC428F2B78F4CC17A395DBA8F9D61E383B5E531F2E8B45856F07C2264D.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
-        "UUID": "6e400003-b5a3-f393-e0a9-e50e24dcca1e",
-        "company": "Third-party SDK code (declared in Java package `com.smartlock.bl.sdk.api` — distinct from host es.mobail.stay_free; Phase-4 identification needed)",
-        "UUID_name": "BONG_READ",
-        "UUID_purpose": "GATT Service observed in Android app es.mobail.stay_free but declared in third-party SDK package `com.smartlock.bl.sdk.api`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of es.mobail.stay_free v2.6.5 (versionCode 84), declared in Java package `com.smartlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of space.smarteroffice.owner v1.2.5 (versionCode 2578), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.keratronik.pda.android.vector v5.3.7 (versionCode 5307), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.bmhconnect.smart v1.2.2 (versionCode 8), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.staffhub v4.1.5 (versionCode 19), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.hawiot.smart v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.vistacana v1.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sifely.smartlockapp v1.5.0 (versionCode 47), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.hoteldev.assist v1.3.8 (versionCode 17), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sifely.smartlock v1.9.0 (versionCode 38), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of space.smartos.ntvm v1.5.2 (versionCode 1183), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.jnf.accesscontrol v2.027 (versionCode 2027), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tthotel.guest v1.3.4 (versionCode 24), declared in Java package `c3` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sciener.btlock v8.1.0 (versionCode 230), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.supplier.tool v1.0.0 (versionCode 3), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.keratronik.pda.android.juwentusgpsonline v6.0.26 (versionCode 41016026), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of pl.keratronik.pda.android.swopcar v1.3.64 (versionCode 1364), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tongtongsuo.app v7.1.2 (versionCode 248), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of io.autonest.app v2.5.6 (versionCode 20506), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.ttology.global v1.2.0 (versionCode 6), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of vn.neoLock v2.81 (versionCode 194), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.jadco v1.1.0 (versionCode 2), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mosino.one v8.0.19 (versionCode 37), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.sciener.hotela v3.7.6 (versionCode 65), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.rpsinfocom.justrack v2.87.0 (versionCode 260), in Java field `Z0`, declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.telemko.telemkotrack v2.81.0 (versionCode 253), in Java field `Z0`, declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tracking.techtonika v1.0.0 (versionCode 1), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.rpsinfocom.justrack",
-                "description": "Verified current Google Play listing for com.rpsinfocom.justrack. This listing does not establish that archived APK version 2.87.0 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.telemko.telemkotrack",
-                "description": "Verified current Google Play listing for com.telemko.telemkotrack. This listing does not establish that archived APK version 2.81.0 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "description": "Found in decompiled DEX of com.excel.smartlock v1.4.0 (versionCode 12), in Java field `BONG_READ`, declared in Java package `com.ttlock.bl.sdk.service` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Found in decompiled DEX of travel.goki.app v1.122.1 (versionCode 21220100), declared in Java package `com.ttlock.bl.sdk.api` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "es.mobail.stay_free",
-                "version_code": 84,
-                "version_name": "2.6.5",
-                "package_path": "BLUUID_APKS/0073/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9/75b7711986eb10af5ec58eb74fda7b5ae94d8efaed8ab17569fca7b885a5add9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "space.smarteroffice.owner",
-                "version_code": 2578,
-                "version_name": "1.2.5",
-                "package_path": "BLUUID_APKS/0101/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d/03b7d42cdddbbab905a899b1280a6a80abcaee9c076ac9a2796b644fdde82a2d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "pl.keratronik.pda.android.vector",
-                "version_code": 5307,
-                "version_name": "5.3.7",
-                "package_path": "BLUUID_APKS/0107/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060/8d539c4d43251cc65aefcb6241a24f32ad03c239dbb0c886bd2847fe87242060.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_READ`."
-            },
-            {
-                "package_id": "com.bmhconnect.smart",
-                "version_code": 8,
-                "version_name": "1.2.2",
-                "package_path": "BLUUID_APKS/0181/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec/e14540cf4a14babd5b0dbf9d3204161124200f05c6ffa04633078292232e20ec.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_READ`."
-            },
-            {
-                "package_id": "com.mosino.staffhub",
-                "version_code": 19,
-                "version_name": "4.1.5",
-                "package_path": "BLUUID_APKS/0208/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372/98257e18d3d092d8c254bf92fd104430bf17fa3110f4300f5317b9228b359372.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.hawiot.smart",
-                "version_code": 20506,
-                "version_name": "2.5.6",
-                "package_path": "BLUUID_APKS/0223/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8/221731250c94e149ed315e64795e4508b43d774e08ed4eb98a939bddaa3c05e8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.mosino.vistacana",
-                "version_code": 1,
-                "version_name": "1.0",
-                "package_path": "BLUUID_APKS/0242/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2/4ec80b81d06b45a2183248d0192c7898bc31322a090a0fa2dcb3cc30930aadf2.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sifely.smartlockapp",
-                "version_code": 47,
-                "version_name": "1.5.0",
-                "package_path": "BLUUID_APKS/0257/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb/3ff13cf0027b14e60fcd74d2eb40d3d391617b2c23a28d1437962ad6961465fb.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.hoteldev.assist",
-                "version_code": 17,
-                "version_name": "1.3.8",
-                "package_path": "BLUUID_APKS/0324/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738/09f8c54c3a93639b2c39a75415ce0778cc7965950c8fb6e3bc41880f7bc9f738.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sifely.smartlock",
-                "version_code": 38,
-                "version_name": "1.9.0",
-                "package_path": "BLUUID_APKS/0418/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b/b5a0b2c8e1a30997fc5db5f941d4b5de510939f3bbf54f0fb33294b22db9e45b.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_READ`."
-            },
-            {
-                "package_id": "space.smartos.ntvm",
-                "version_code": 1183,
-                "version_name": "1.5.2",
-                "package_path": "BLUUID_APKS/0546/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d/085932c54f305a204177bad08bfa9c5e08b41065e8914bcfc13fbe46a5388e0d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.jnf.accesscontrol",
-                "version_code": 2027,
-                "version_name": "2.027",
-                "package_path": "BLUUID_APKS/0597/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b/90846212ef72d304c7094550f88cb8adf01bea5d726e7fe51d73b64c4e07ee3b.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.tthotel.guest",
-                "version_code": 24,
-                "version_name": "1.3.4",
-                "package_path": "BLUUID_APKS/0661/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257/eb39b783143749846a890ae8169ceb44ea407689a5118a6a2249fd7e7d4b3257.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sciener.btlock",
-                "version_code": 230,
-                "version_name": "8.1.0",
-                "package_path": "BLUUID_APKS/0668/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655/53541bde5285325415eb7d3bd1c042427a6c09e1cf3709b6aa1eb3c81c46f655.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_READ`."
-            },
-            {
-                "package_id": "com.supplier.tool",
-                "version_code": 3,
-                "version_name": "1.0.0",
-                "package_path": "BLUUID_APKS/0672/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940/4e5d6df660f181a9c2b997c310645240da7059220f0c10d0cb0073601df54940.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "pl.keratronik.pda.android.juwentusgpsonline",
-                "version_code": 41016026,
-                "version_name": "6.0.26",
-                "package_path": "BLUUID_APKS/0712/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed/3aea867f06e7c6e690e12218bff805bfe72a6bd737ffd94d8c2394a3cc30c8ed.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_READ`."
-            },
-            {
-                "package_id": "pl.keratronik.pda.android.swopcar",
-                "version_code": 1364,
-                "version_name": "1.3.64",
-                "package_path": "BLUUID_APKS/0728/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a/c825883ea427694e08706411f06811cc8e23601aac488f913a1445522c15483a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_READ`."
-            },
-            {
-                "package_id": "com.tongtongsuo.app",
-                "version_code": 248,
-                "version_name": "7.1.2",
-                "package_path": "BLUUID_APKS/0761/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6/50067bbf8e335ede2de83ccd56fa6b3b54e540b4704897fa8b08ffc2de7228b6.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_READ`."
-            },
-            {
-                "package_id": "io.autonest.app",
-                "version_code": 20506,
-                "version_name": "2.5.6",
-                "package_path": "BLUUID_APKS/0763/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178/436725d7676da1db9cad73776d8546b7152e1ea74b4320c78e86aaf33e6ed178.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.ttology.global",
-                "version_code": 6,
-                "version_name": "1.2.0",
-                "package_path": "BLUUID_APKS/0809/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4/c9cf89c45df27dce8da0d8a9a847fba064649c51606286bf039330d4eb274bd4.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "vn.neoLock",
-                "version_code": 194,
-                "version_name": "2.81",
-                "package_path": "BLUUID_APKS/0922/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04/bbe034aba2f23ecb789223e2d38fe16fedff1e5e943778af65fa51e7a2e35c04.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.mosino.jadco",
-                "version_code": 2,
-                "version_name": "1.1.0",
-                "package_path": "BLUUID_APKS/0925/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545/1b7d0a828980aab30661bd2846f652a9f590e9da7e7db92f1d5cb8169d772545.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.mosino.one",
-                "version_code": 37,
-                "version_name": "8.0.19",
-                "package_path": "BLUUID_APKS/0961/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5/a99a156c30ba59c927f6d2506a3c5b0f5192120573619d5914f51c054905e8b5.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.sciener.hotela",
-                "version_code": 65,
-                "version_name": "3.7.6",
-                "package_path": "BLUUID_APKS/0966/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9/7a6ddd9b38b53f3f2bb94e1fc5a4c933e00e44a21579fbfd9f72337ef65017e9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.rpsinfocom.justrack",
-                "version_code": 260,
-                "version_name": "2.87.0",
-                "package_path": "AndroZoo/apks/bd/com.rpsinfocom.justrack_BD48FD6F2F1E9F58E3F25C77331A34A99B94D2B6C88C9A233B58C34C5DDC1EF1.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `Z0`."
-            },
-            {
-                "package_id": "com.telemko.telemkotrack",
-                "version_code": 253,
-                "version_name": "2.81.0",
-                "package_path": "AndroZoo/apks/31/com.telemko.telemkotrack_313774EAB21E6A835E93FF6E1E6D09AA47A00236F6D10213D96ECA35B7148D53.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `Z0`."
-            },
-            {
-                "package_id": "com.tracking.techtonika",
-                "version_code": 1,
-                "version_name": "1.0.0",
-                "package_path": "AndroZoo/apks/61/com.tracking.techtonika_611E828DA28E341A8FB451B0E61DFD8A82193E98B6E40D1487757C6AB5CF7911.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.excel.smartlock",
-                "version_code": 12,
-                "version_name": "1.4.0",
-                "package_path": "AndroZoo/apks/00/com.excel.smartlock_005ACAFD13475A07AD85822138459C864930A18BB125EEC503E73EA220E052CE.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BONG_READ`."
-            },
-            {
-                "package_id": "travel.goki.app",
-                "version_code": 21220100,
-                "version_name": "1.122.1",
-                "package_path": "AndroZoo/apks/00/travel.goki.app_00A012EC428F2B78F4CC17A395DBA8F9D61E383B5E531F2E8B45856F07C2264D.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
         "UUID": "63cdff40-0401-4214-9262-344900881197",
         "company": "Third-party SDK code (declared in Java package `com.tklabs.able.devices.ableRemote` — distinct from host com.adt.sosecure.android; Phase-4 identification needed)",
         "UUID_name": "ABLE_SERVICE",
@@ -136079,14 +136478,18 @@
         "UUID": "6b364a16-a76b-4aa8-a094-2ce87b9fe45c",
         "company": "Third-party SDK code (declared in Java package `q6` — distinct from host com.bushnell.golf; Phase-4 identification needed)",
         "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
                 "description": "Found in decompiled DEX of com.bushnell.golf v1.9.5 (versionCode 31), declared in Java package `q6` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): 6b364a16-a76b-4aa8-a094-2ce87b9fe45c is used as a characteristic UUID. Source profile compiled from ProXMDevice.kt. Literal defined at simple_jadx/sources/wd/e.java:108. Paired lookup at simple_jadx/sources/be/sa.java:2143 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 5357546c-ca6f-41a0-b53c-e272dab7f5d1.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -136095,9 +136498,17 @@
                 "version_code": 31,
                 "version_name": "1.9.5",
                 "package_path": "BLUUID_APKS/0055/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
-        ]
+        ],
+        "parent_UUID": "5357546c-ca6f-41a0-b53c-e272dab7f5d1"
     },
     {
         "UUID": "6da3efe1-3a17-462d-85e6-a5730f756b7b",
@@ -144848,6 +145259,185 @@
                 "version_name": "5.11.0.7264.release/5.11.0",
                 "package_path": "BLUUID_APKS/0785/0e6e576c7db5a862fc2b18d4b657102149e6de99918d311766c5b4b82c0273c1/0e6e576c7db5a862fc2b18d4b657102149e6de99918d311766c5b4b82c0273c1.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `LocalManagementSDPUUID`."
+            }
+        ]
+    },
+    {
+        "UUID": "61080001-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "company": "Whoop, Inc.",
+        "UUID_name": "GEN_4",
+        "UUID_purpose": "Gen 4 (Harvard) wearable GATT service.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:90 initializes this UUID. simple_jadx/sources/it0/v.java:145 groups the service ID with the profile's five characteristic UUIDs. The recovered BLE path in x22/g.java compares profile service IDs with discovered BluetoothGattService UUIDs for Puffin; qj0/e.java names the four other profile service constants.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "61080002-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "company": "Whoop, Inc.",
+        "UUID_name": "GEN_4_CMD_TO_STRAP",
+        "UUID_purpose": "Gen 4 (Harvard) wearable GATT characteristic for commands sent to the strap.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "61080001-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:91 initializes this UUID. simple_jadx/sources/it0/v.java:145 places its named getter in the CMD_TO_STRAP slot of the Gen 4 (Harvard) profile. The Puffin BLE implementation resolves corresponding profile getters with BluetoothGattService.getCharacteristic; qj0/d.java also maps this category to the matching UUID for the four non-Puffin profiles.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "61080003-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "company": "Whoop, Inc.",
+        "UUID_name": "GEN_4_CMD_FROM_STRAP",
+        "UUID_purpose": "Gen 4 (Harvard) wearable GATT characteristic for commands received from the strap.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "61080001-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:92 initializes this UUID. simple_jadx/sources/it0/v.java:145 places its named getter in the CMD_FROM_STRAP slot of the Gen 4 (Harvard) profile. The Puffin BLE implementation resolves corresponding profile getters with BluetoothGattService.getCharacteristic; qj0/d.java also maps this category to the matching UUID for the four non-Puffin profiles.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "61080004-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "company": "Whoop, Inc.",
+        "UUID_name": "GEN_4_EVENTS_FROM_STRAP",
+        "UUID_purpose": "Gen 4 (Harvard) wearable GATT characteristic for events received from the strap.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "61080001-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:93 initializes this UUID. simple_jadx/sources/it0/v.java:145 places its named getter in the EVENTS_FROM_STRAP slot of the Gen 4 (Harvard) profile. The Puffin BLE implementation resolves corresponding profile getters with BluetoothGattService.getCharacteristic; qj0/d.java also maps this category to the matching UUID for the four non-Puffin profiles.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "61080005-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "company": "Whoop, Inc.",
+        "UUID_name": "GEN_4_DATA_FROM_STRAP",
+        "UUID_purpose": "Gen 4 (Harvard) wearable GATT characteristic for data received from the strap.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "61080001-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:94 initializes this UUID. simple_jadx/sources/it0/v.java:145 places its named getter in the DATA_FROM_STRAP slot of the Gen 4 (Harvard) profile. The Puffin BLE implementation resolves corresponding profile getters with BluetoothGattService.getCharacteristic; qj0/d.java also maps this category to the matching UUID for the four non-Puffin profiles.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "61080007-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "company": "Whoop, Inc.",
+        "UUID_name": "GEN_4_MEMFAULT",
+        "UUID_purpose": "Gen 4 (Harvard) wearable GATT characteristic for MemFault data.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "61080001-8d6d-82b8-614a-1c8cb0f8dcc6",
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:95 initializes this UUID. simple_jadx/sources/it0/v.java:145 places its named getter in the MEMFAULT slot of the Gen 4 (Harvard) profile. The Puffin BLE implementation resolves corresponding profile getters with BluetoothGattService.getCharacteristic; qj0/d.java also maps this category to the matching UUID for the four non-Puffin profiles.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Characteristic'."
             }
         ]
     },

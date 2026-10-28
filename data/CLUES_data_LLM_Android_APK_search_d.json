@@ -961,6 +961,14 @@
                 "URL": "https://github.com/apache/mynewt-mcumgr/blob/master/transport/smp-bluetooth.md",
                 "description": "Phase-4 ownership review of the exact 128-bit UUID in reviewed c27_apache_mynewt_mcumgr_smp protocol source and Android DEX evidence attributes this UUID to Apache Mynewt. The vendor page establishes the product/protocol context; the exact UUID attribution also uses the cited DEX fields.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of co.level.app v2.5.0.56 (versionCode 61220056), as UUID constant `b` in Java class `p000_.b24`; field `b` in `p000_.b24` is passed to `BluetoothGattService.getCharacteristic` in `p000_.xx9`, in the SMP service context `8d53dc1d-1db7-4cd3-868b-8a527460aa84`. Manual cross-file trace (the static extractor did not resolve this reference). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Target source contains this SMP transport UUID. Zephyr documentation defines it as the SMP characteristic used by the GATT transport.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -1117,6 +1125,20 @@
                 "version_name": "2.2.0",
                 "package_path": "AndroZoo/apks/1b/de.fior_gentz.neurotronic_1BCEC693F4E37D591060C3A7FD934B7C86A38B221FD9AEB216F2405F714A23C2.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SMP_CHAR_UUID`."
+            },
+            {
+                "package_id": "co.level.app",
+                "version_code": 61220056,
+                "version_name": "2.5.0.56",
+                "package_path": "AndroZoo/apks/9f/co.level.app_9FF252AD09365A855BF668512E66CEAA88ECA62E3F220C9BB6732CA2A39AF232.apk",
+                "description": "Manually confirmed from decompiled DEX after the automated scan missed a cross-file reference; usage 'GATT Characteristic'; field `b` in `p000_.b24` is passed to `BluetoothGattService.getCharacteristic` in `p000_.xx9`, in the SMP service context `8d53dc1d-1db7-4cd3-868b-8a527460aa84`."
+            },
+            {
+                "package_id": "com.ultrahuman.android",
+                "version_code": 301050000,
+                "version_name": "3.1.5.0.0",
+                "package_path": "AndroZoo/apks/60/com.ultrahuman.android_602046F7C465C2862C246A7665D9B065DFC5CB04C0324EEEE84FEB2C13315685.apk",
+                "description": "Package and version verified from the target APK with aapt dump badging."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -30751,6 +30773,105 @@
         "parent_UUID": "f9ed6165-faa8-4f2d-8b82-dc67d3444b0f"
     },
     {
+        "UUID": "d20a0001-9f22-11ec-8d3d-0242ac130004",
+        "company": "Happiest Baby",
+        "UUID_name": "SCALE_LOG_TRANSFER_SERVICE",
+        "UUID_purpose": "Happiest Baby scale log-transfer service. Its characteristic pairs are declared in BleCharacteristicData and used by the log collection flow.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Manual review of the target APK's decompiled DEX (com.happiestbaby.hbi v2.8.0, versionCode 5736). BleCharacteristicData.java:191-205 constructs this UUID as serviceUUID for log-transfer characteristic pairs. ScaleCollectLogsUseCaseImpl.java:160-198 uses two of those characteristic data objects for log commands and received log data.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.happiestbaby.hbi",
+                "version_code": 5736,
+                "version_name": "2.8.0",
+                "package_path": "AndroZoo/apks/0a/com.happiestbaby.hbi_0A9F8D7C08165080DDDEFBD9F1D1A8DE36210110CA3897306A2C7C2C869D6ACC.apk",
+                "description": "Detected in the target APK and confirmed by manual source review."
+            }
+        ]
+    },
+    {
+        "UUID": "d20a0002-9f22-11ec-8d3d-0242ac130004",
+        "company": "Happiest Baby",
+        "UUID_name": "SCALE_LOG_TRANSFER_COMMAND_CHARACTERISTIC",
+        "UUID_purpose": "Scale log-transfer command characteristic under service d20a0001; ScaleCollectLogsUseCaseImpl writes commands to start or resume log reading.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "d20a0001-9f22-11ec-8d3d-0242ac130004",
+        "evidence_array": [
+            {
+                "description": "Manual review of the target APK's decompiled DEX (com.happiestbaby.hbi v2.8.0, versionCode 5736). BleCharacteristicData.java:191-195 pairs this UUID as characteristicUUID under service d20a0001, and its o() accessor maps to that pair at lines 282-288. ScaleCollectLogsUseCaseImpl.java:160-173 writes log-reading command bytes through it.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.happiestbaby.hbi",
+                "version_code": 5736,
+                "version_name": "2.8.0",
+                "package_path": "AndroZoo/apks/0a/com.happiestbaby.hbi_0A9F8D7C08165080DDDEFBD9F1D1A8DE36210110CA3897306A2C7C2C869D6ACC.apk",
+                "description": "Detected in the target APK and confirmed by manual source review."
+            }
+        ]
+    },
+    {
+        "UUID": "d20a0003-9f22-11ec-8d3d-0242ac130004",
+        "company": "Happiest Baby",
+        "UUID_name": "SCALE_LOG_DATA_CHARACTERISTIC",
+        "UUID_purpose": "Scale log-data characteristic under service d20a0001; ScaleCollectLogsUseCaseImpl receives log data through its stream callback.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "d20a0001-9f22-11ec-8d3d-0242ac130004",
+        "evidence_array": [
+            {
+                "description": "Manual review of the target APK's decompiled DEX (com.happiestbaby.hbi v2.8.0, versionCode 5736). BleCharacteristicData.java:196-200 pairs this UUID as characteristicUUID under service d20a0001, and its f() accessor maps to that pair at lines 250-252. ScaleCollectLogsUseCaseImpl.java:187-198 uses it with a callback that accumulates returned log bytes.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.happiestbaby.hbi",
+                "version_code": 5736,
+                "version_name": "2.8.0",
+                "package_path": "AndroZoo/apks/0a/com.happiestbaby.hbi_0A9F8D7C08165080DDDEFBD9F1D1A8DE36210110CA3897306A2C7C2C869D6ACC.apk",
+                "description": "Detected in the target APK and confirmed by manual source review."
+            }
+        ]
+    },
+    {
+        "UUID": "d20a0004-9f22-11ec-8d3d-0242ac130004",
+        "company": "Happiest Baby",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Declared as a characteristic under service d20a0001 in the target's BLE data model, but no use site or semantic name was found in this APK's available decompiled Java.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "d20a0001-9f22-11ec-8d3d-0242ac130004",
+        "evidence_array": [
+            {
+                "description": "Manual review of the target APK's decompiled DEX (com.happiestbaby.hbi v2.8.0, versionCode 5736). BleCharacteristicData.java:201-205 pairs this UUID as characteristicUUID under service d20a0001. A search of all 31,156 decompiled Java files found no use of its holder f77758p outside this declaration; retained with an Unknown name because the typed BLE data model establishes its characteristic role.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.happiestbaby.hbi",
+                "version_code": 5736,
+                "version_name": "2.8.0",
+                "package_path": "AndroZoo/apks/0a/com.happiestbaby.hbi_0A9F8D7C08165080DDDEFBD9F1D1A8DE36210110CA3897306A2C7C2C869D6ACC.apk",
+                "description": "Detected in the target APK and confirmed by manual source review."
+            }
+        ]
+    },
+    {
         "UUID": "d426e5ec-562b-d9af-1d40-f12b121e0731",
         "company": "Harman Professional",
         "UUID_name": "JBL_WRITE_SHORT_CHARACTERISTIC",
@@ -34718,6 +34839,61 @@
         ]
     },
     {
+        "UUID": "d445fe01-d139-9a5d-6707-1cc6a58b6303",
+        "company": "SPIA Cycling Inc.",
+        "UUID_name": "GEN3_POWER_METER",
+        "UUID_purpose": "Gen3 power meter GATT service.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.stagescycling.stages v4.1.2 (versionCode 300400303): PowerMeterGen3Service.java:15 initializes SERVICE_UUID; CyclingPowerService.java:20 aliases it as STAGES_GEN3_POWER_METER_SERVICE_UUID; Gen3 ControlPointCommand.java:183 uses getService(). UUID=d445fe01-d139-9a5d-6707-1cc6a58b6303",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The APK embeds English Terms of Service at assets/flutter_assets/assets/documents/legal_information/terms_of_service.en.html, identifying the operator as SPIA Cycling Inc., doing business as Stages Cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.stagescycling.stages",
+                "version_code": 300400303,
+                "version_name": "4.1.2",
+                "package_path": "AndroZoo/apks/24/com.stagescycling.stages_24A8114796369FBA151EA3686032BC058E73AD8F547FAC957315F40D79506735.apk"
+            }
+        ]
+    },
+    {
+        "UUID": "d445fe02-d139-9a5d-6707-1cc6a58b6303",
+        "company": "SPIA Cycling Inc.",
+        "UUID_name": "GEN3_POWER_METER_CONTROL_POINT",
+        "UUID_purpose": "Gen3 power meter control point characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.stagescycling.stages v4.1.2 (versionCode 300400303): PowerMeterGen3Service.java:18 initializes POWER_METER_CONTROL_POINT_UUID; Gen3 ControlPointCommand.java:185 gets and line 192 writes the characteristic. UUID=d445fe02-d139-9a5d-6707-1cc6a58b6303",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The APK embeds English Terms of Service at assets/flutter_assets/assets/documents/legal_information/terms_of_service.en.html, identifying the operator as SPIA Cycling Inc., doing business as Stages Cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.stagescycling.stages",
+                "version_code": 300400303,
+                "version_name": "4.1.2",
+                "package_path": "AndroZoo/apks/24/com.stagescycling.stages_24A8114796369FBA151EA3686032BC058E73AD8F547FAC957315F40D79506735.apk"
+            }
+        ],
+        "parent_UUID": "d445fe01-d139-9a5d-6707-1cc6a58b6303"
+    },
+    {
         "UUID": "dcff0002-b574-3b39-a8ea-e179e8642c4b",
         "company": "Third-party SDK code (declared in Java package `com.polycontrol.protocols.mwm` — distinct from host com.siemens.accessmobile; Phase-4 identification needed)",
         "UUID_name": "MWM_TX_CHAR",
@@ -35580,6 +35756,30 @@
                 "version_name": "10.3.0",
                 "package_path": "BLUUID_APKS/0399/9bc1af257fac0ac6a651b1c1da6931cbac94bc3364f804d7fdbf16f701eae017/9bc1af257fac0ac6a651b1c1da6931cbac94bc3364f804d7fdbf16f701eae017.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SONY_GATT_SERVICE_UUID`."
+            }
+        ]
+    },
+    {
+        "UUID": "d14c26a9-59fe-4d31-be8f-77606116cc5c",
+        "company": "Soundbrenner",
+        "UUID_name": "Settings",
+        "UUID_purpose": "Operation-profile characteristic shared by Core, Core 2, and Spark. Candidate parent services: 77ef8bb5-7d4d-4a66-bd64-3f93cc01ccda, c2000ab3-2547-0915-bf66-f6d82d11e8f1, 5aaa5dc8-2fb6-0ed9-6c71-e25a9f8734ab.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX CoreProfile.java, Core2Profile.java, and SparkProfile.java each define this named characteristic under that model's OperationService and assign the same UUID. The parent_UUID field is omitted because the APK gives three distinct parent service UUIDs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
             }
         ]
     },
@@ -47274,14 +47474,18 @@
         "UUID": "d36b132c-3007-49e0-ad10-541aadd446de",
         "company": "Third-party SDK code (declared in Java package `q6` — distinct from host com.bushnell.golf; Phase-4 identification needed)",
         "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
                 "description": "Found in decompiled DEX of com.bushnell.golf v1.9.5 (versionCode 31), declared in Java package `q6` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): d36b132c-3007-49e0-ad10-541aadd446de is used as a characteristic UUID. Source profile compiled from ProXMDevice.kt. Literal defined at simple_jadx/sources/wd/e.java:123. Paired lookup at simple_jadx/sources/be/sa.java:2159 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1060c99e-d979-43c4-a525-70a8f67ff137.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -47290,22 +47494,34 @@
                 "version_code": 31,
                 "version_name": "1.9.5",
                 "package_path": "BLUUID_APKS/0055/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
-        ]
+        ],
+        "parent_UUID": "1060c99e-d979-43c4-a525-70a8f67ff137"
     },
     {
         "UUID": "db9ba21c-06e8-4670-8456-5e4f1f663965",
         "company": "Third-party SDK code (declared in Java package `q6` — distinct from host com.bushnell.golf; Phase-4 identification needed)",
         "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.bushnell.golf but declared in third-party SDK package `q6`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
                 "description": "Found in decompiled DEX of com.bushnell.golf v1.9.5 (versionCode 31), declared in Java package `q6` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): db9ba21c-06e8-4670-8456-5e4f1f663965 is used as a characteristic UUID. Source profile compiled from ProXMDevice.kt. Literal defined at simple_jadx/sources/wd/e.java:117. Paired lookup at simple_jadx/sources/be/sa.java:2152 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: e5526af1-18c9-474a-a80d-70c7f725e833.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -47314,9 +47530,17 @@
                 "version_code": 31,
                 "version_name": "1.9.5",
                 "package_path": "BLUUID_APKS/0055/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9/a4c8707c9b9679bacdfbc0c0f44087141eaf366780e7aa36eea72b55fd4f0ce9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
-        ]
+        ],
+        "parent_UUID": "e5526af1-18c9-474a-a80d-70c7f725e833"
     },
     {
         "UUID": "d44bc439-abfd-45a2-b575-925416129610",

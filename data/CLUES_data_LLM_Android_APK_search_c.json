@@ -2857,7 +2857,7 @@
     {
         "UUID": "c5d70002-c45d-4f12-8693-7ef838e96446",
         "company": "Beeline Ltd.",
-        "UUID_name": "Unknown",
+        "UUID_name": "TX",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app co.beeline, declared as Java field `uuidFromString2`. Classification determined by cross-file usage:getCharacteristic(uuidFromString2).",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -2871,6 +2871,15 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (UK — Beeline Velo 2 cycling navigation device + Beeline Moto II motorcycle GPS; Bluetooth-paired smart compass)"
+            },
+            {
+                "description": "Exact target APK evidence: simple_jadx/sources/defpackage/we0.java:18 defines TX as this UUID. q35.java:11-16 constructs kb5(TRANSMISSION, TX); kb5.java:9-13 maps those arguments to fields a/b and kb5.java:48-50 labels them serviceUuid/characteristicUuid. Raw classes.dex string-pool inspection independently found the literal.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=co.beeline",
+                "description": "Official Google Play listing for package co.beeline identifies the app as Beeline and the developer as Relish Technologies Ltd. It describes compatibility with Beeline Velo and Moto devices.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -2880,6 +2889,13 @@
                 "version_name": "3.3.1014",
                 "package_path": "BLUUID_APKS/0086/ee78f877d160e0a664d9c0ee2aef4add08a7a3ce2f202d39dab8b317104b6f2b/ee78f877d160e0a664d9c0ee2aef4add08a7a3ce2f202d39dab8b317104b6f2b.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidFromString2`."
+            },
+            {
+                "package_id": "co.beeline",
+                "version_code": 14118,
+                "version_name": "4.2.8191",
+                "package_path": "AndroZoo/apks/04/co.beeline_0476FABB53F18516B9AA9723B5962F647754FD31FEB8061A1BF96DA94317398B.apk",
+                "description": "aapt-confirmed package/version; APK SHA-256 0476fabb53f18516b9aa9723b5962f647754fd31feb8061a1bf96da94317398b"
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -2887,7 +2903,7 @@
     {
         "UUID": "c5d70003-c45d-4f12-8693-7ef838e96446",
         "company": "Beeline Ltd.",
-        "UUID_name": "Unknown",
+        "UUID_name": "RX",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app co.beeline, declared as Java field `uuidFromString3`. Classification determined by cross-file usage:getCharacteristic(uuidFromString3).",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -2901,6 +2917,15 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (UK — Beeline Velo 2 cycling navigation device + Beeline Moto II motorcycle GPS; Bluetooth-paired smart compass)"
+            },
+            {
+                "description": "Exact target APK evidence: simple_jadx/sources/defpackage/we0.java:19 defines RX as this UUID. q35.java:17-21 constructs kb5(TRANSMISSION, RX); kb5.java:9-13 maps those arguments to fields a/b and kb5.java:48-50 labels them serviceUuid/characteristicUuid. Raw classes.dex string-pool inspection independently found the literal.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=co.beeline",
+                "description": "Official Google Play listing for package co.beeline identifies the app as Beeline and the developer as Relish Technologies Ltd. It describes compatibility with Beeline Velo and Moto devices.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -2910,6 +2935,13 @@
                 "version_name": "3.3.1014",
                 "package_path": "BLUUID_APKS/0086/ee78f877d160e0a664d9c0ee2aef4add08a7a3ce2f202d39dab8b317104b6f2b/ee78f877d160e0a664d9c0ee2aef4add08a7a3ce2f202d39dab8b317104b6f2b.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidFromString3`."
+            },
+            {
+                "package_id": "co.beeline",
+                "version_code": 14118,
+                "version_name": "4.2.8191",
+                "package_path": "AndroZoo/apks/04/co.beeline_0476FABB53F18516B9AA9723B5962F647754FD31FEB8061A1BF96DA94317398B.apk",
+                "description": "aapt-confirmed package/version; APK SHA-256 0476fabb53f18516b9aa9723b5962f647754fd31feb8061a1bf96da94317398b"
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -8736,7 +8768,7 @@
     {
         "UUID": "c5d70001-c45d-4f12-8693-7ef838e96446",
         "company": "Beeline Ltd.",
-        "UUID_name": "Unknown",
+        "UUID_name": "TRANSMISSION",
         "UUID_purpose": "Custom GATT Service observed in Android app co.beeline, declared as Java field `uuidFromString`. Classification determined by file-level-default.",
         "UUID_usage_array": [
             "GATT Service"
@@ -8750,6 +8782,15 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (UK — Beeline Velo 2 cycling navigation device + Beeline Moto II motorcycle GPS; Bluetooth-paired smart compass)"
+            },
+            {
+                "description": "Exact target APK evidence: simple_jadx/sources/defpackage/ll0.java:20 defines TRANSMISSION as this UUID. q35.java:11-21 pairs that value with the TX and RX enums using kb5; kb5.java:9-13 maps the constructor arguments to fields a/b and kb5.java:48-50 labels them serviceUuid/characteristicUuid. Raw classes.dex string-pool inspection independently found the literal.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=co.beeline",
+                "description": "Official Google Play listing for package co.beeline identifies the app as Beeline and the developer as Relish Technologies Ltd. It describes compatibility with Beeline Velo and Moto devices.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -8759,6 +8800,13 @@
                 "version_name": "3.3.1014",
                 "package_path": "BLUUID_APKS/0086/ee78f877d160e0a664d9c0ee2aef4add08a7a3ce2f202d39dab8b317104b6f2b/ee78f877d160e0a664d9c0ee2aef4add08a7a3ce2f202d39dab8b317104b6f2b.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidFromString`."
+            },
+            {
+                "package_id": "co.beeline",
+                "version_code": 14118,
+                "version_name": "4.2.8191",
+                "package_path": "AndroZoo/apks/04/co.beeline_0476FABB53F18516B9AA9723B5962F647754FD31FEB8061A1BF96DA94317398B.apk",
+                "description": "aapt-confirmed package/version; APK SHA-256 0476fabb53f18516b9aa9723b5962f647754fd31feb8061a1bf96da94317398b"
             }
         ]
     },
@@ -12606,6 +12654,156 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `m`."
             }
         ]
+    },
+    {
+        "UUID": "c29bf6a9-2f4d-4a4e-9f8f-5a2899a0619d",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 1ce95b6c-f868-4329-8927-9e22e7651a5c by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): c29bf6a9-2f4d-4a4e-9f8f-5a2899a0619d is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:203. Paired lookup at simple_jadx/sources/be/rl.java:5712 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1ce95b6c-f868-4329-8927-9e22e7651a5c.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "1ce95b6c-f868-4329-8927-9e22e7651a5c"
+    },
+    {
+        "UUID": "c8fd6bea-c200-4c91-8fa2-fdbaa3ea3d95",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 1ce95b6c-f868-4329-8927-9e22e7651a5c by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): c8fd6bea-c200-4c91-8fa2-fdbaa3ea3d95 is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:167. Paired lookup at simple_jadx/sources/be/rl.java:5682 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1ce95b6c-f868-4329-8927-9e22e7651a5c.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "1ce95b6c-f868-4329-8927-9e22e7651a5c"
+    },
+    {
+        "UUID": "ca7a8573-df61-40f7-aaf2-f49c5a0479af",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 1ce95b6c-f868-4329-8927-9e22e7651a5c by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): ca7a8573-df61-40f7-aaf2-f49c5a0479af is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:208. Paired lookup at simple_jadx/sources/be/rl.java:5702 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1ce95b6c-f868-4329-8927-9e22e7651a5c.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "1ce95b6c-f868-4329-8927-9e22e7651a5c"
+    },
+    {
+        "UUID": "cba45a90-f101-11ec-ad8b-0800200c9a66",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service a0c52a20-f101-11ec-ad8b-0800200c9a66 by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): cba45a90-f101-11ec-ad8b-0800200c9a66 is used as a characteristic UUID. Source profile compiled from WingmanMiniDevice.kt. Literal defined at simple_jadx/sources/wd/l.java:59. Paired lookup at simple_jadx/sources/be/xq.java:2051 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: a0c52a20-f101-11ec-ad8b-0800200c9a66.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "a0c52a20-f101-11ec-ad8b-0800200c9a66"
+    },
+    {
+        "UUID": "cb655635-cf14-48f0-9165-a90a0712bb09",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service a32cfb89-7976-48e6-b278-08ebc0fe1ee5 by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): cb655635-cf14-48f0-9165-a90a0712bb09 is used as a characteristic UUID. Source profile compiled from WingmanMiniDevice.kt. Literal defined at simple_jadx/sources/wd/l.java:65. Paired lookup at simple_jadx/sources/be/xq.java:2058 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: a32cfb89-7976-48e6-b278-08ebc0fe1ee5.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "a32cfb89-7976-48e6-b278-08ebc0fe1ee5"
+    },
+    {
+        "UUID": "c99c3fc3-5993-4b61-9566-562bdc3ae03a",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service afa49c93-6a0c-497c-a6e5-f11362463628 by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): c99c3fc3-5993-4b61-9566-562bdc3ae03a is used as a characteristic UUID. Source profile compiled from WingmanViewSpeakerDevice.kt. Literal defined at simple_jadx/sources/wd/n.java:98. Paired lookup at simple_jadx/sources/be/xq.java:2036 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: afa49c93-6a0c-497c-a6e5-f11362463628.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "afa49c93-6a0c-497c-a6e5-f11362463628"
     },
     {
         "UUID": "ca9e",
@@ -48594,6 +48792,54 @@
                 "version_name": "17.2.11",
                 "package_path": "BLUUID_APKS/0126/54c8a3ffc853be29aa727cedfb0ef20abde14259a562026edb3b434ba1544c46/54c8a3ffc853be29aa727cedfb0ef20abde14259a562026edb3b434ba1544c46.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaFirmwareVersionCharacteristicUUID`."
+            }
+        ]
+    },
+    {
+        "UUID": "c2000ab3-2547-0915-bf66-f6d82d11e8f1",
+        "company": "Soundbrenner",
+        "UUID_name": "Operation (Core 2)",
+        "UUID_purpose": "Core 2 model operation GATT service.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX com/soundbrenner/bluetooth/bledevices/profile/Core2Profile.java:594-598 defines OperationService as SbBleService, names it 'Operation Service', and assigns this UUID.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ]
+    },
+    {
+        "UUID": "ccb2986e-1b2d-4c29-9cf8-25cdf8fe44fc",
+        "company": "Soundbrenner",
+        "UUID_name": "Pulse",
+        "UUID_purpose": "Pulse model GATT service.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX com/soundbrenner/bluetooth/bledevices/profile/PulseProfile.java:107-111 defines PulseService as SbBleService, names it 'Pulse Service', and assigns this UUID.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
             }
         ]
     },

@@ -3645,7 +3645,7 @@
     {
         "UUID": "ff01",
         "company": "Contec Medical Systems Co., Ltd. (SpO2 / BP / BC / HTD BLE medical devices)",
-        "UUID_name": "Unknown",
+        "UUID_name": "WRITE_COMMAND",
         "UUID_purpose": "GATT Characteristic observed in Android app com.aitmed.care but declared in third-party SDK package `com.contec.spo2.code.c` as Java field `i`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(i).",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -5077,6 +5077,10 @@
             {
                 "description": "Found in decompiled DEX of com.kitty.hok v4.6.9.7 (versionCode 40609071), in Java field `UUID_TX`, declared in Java package `com.juanvision.device.receiver.bluetooth.controller` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `ZzzGattAttributes.java:44` defines WRITE_COMMAND; `NutDeviceController.java:350-357, 497-544` passes it with SERVICE_OAUTH and writes commands, while `getCharact` at lines 633-650 resolves the service/characteristic pair.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -6709,343 +6713,350 @@
                 "version_code": 26,
                 "version_name": "1.0.6",
                 "package_path": "AndroZoo/apks/d0/com.adctoday.bp_D019C8CE05CB37D4FB845B6FA268977F985ED97A76FABA227BD722BA94E89ADB.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.alveo.lite",
                 "version_code": 34,
                 "version_name": "1.0.9",
                 "package_path": "AndroZoo/apks/f2/com.alveo.lite_F2890F55D19CA29569970EE6DB9C8254A8A719C2B6C878B1B0D9B64EAFDBFB08.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `c`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
             },
             {
                 "package_id": "com.alveo.alveoasha",
                 "version_code": 25,
                 "version_name": "1.0.2",
                 "package_path": "AndroZoo/apks/a9/com.alveo.alveoasha_A92BCE7F0CA7661FC84F605E982609844BA632BEDB42E5C42B8404525E039DF3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `c`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
             },
             {
                 "package_id": "com.aitmed.care",
                 "version_code": 137,
                 "version_name": "2.0.1",
                 "package_path": "AndroZoo/apks/7b/com.aitmed.care_7BC4138734DF4DA07995FA87507F3A46B73B2691D51C3332DB7A0729839F678C.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `k`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `k`."
             },
             {
                 "package_id": "com.aitmed.prod",
                 "version_code": 168,
                 "version_name": "2.0.8",
                 "package_path": "AndroZoo/apks/70/com.aitmed.prod_705203603CD1D092A796DE373F2847CA1E37E4D2266077011C0310D452BC2197.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `k`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `k`."
             },
             {
                 "package_id": "com.cerashealth.ceras",
                 "version_code": 71,
                 "version_name": "1.2.22",
                 "package_path": "AndroZoo/apks/e5/com.cerashealth.ceras_E55F333A0431504EDBE867E9D1991F0A6847B865FDFE6C72033D3C1BE954671B.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.aldi_project",
                 "version_code": 79,
                 "version_name": "1.0.77",
                 "package_path": "AndroZoo/apks/45/com.aldi_project_4536038C856F7290F4D1B71C10B8234CFCDC69C8832AA93D458E90BF1493B343.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `Q`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `Q`."
             },
             {
                 "package_id": "com.accuniq.bpc",
                 "version_code": 2026081302,
                 "version_name": "1.0.33",
                 "package_path": "AndroZoo/apks/bc/com.accuniq.bpc_BC2CF18433383FC153380E269526E2D19211919B521DCB1BDE95418E3FC7F39C.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.cerashealth.imhomev2",
                 "version_code": 63,
                 "version_name": "1.0.10",
                 "package_path": "AndroZoo/apks/65/com.cerashealth.imhomev2_6575A7D600E01BD71A5946528BA970FCFA1E930807DEF10777EE797B5BF4BCAD.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.chi.chi_patient_app",
                 "version_code": 2022,
                 "version_name": "2.0.22",
                 "package_path": "AndroZoo/apks/54/com.chi.chi_patient_app_54327BEE8E4AC2C3EF65B9D8C9C226ABF395E395541A4E85A005694FA4DBF32E.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SP70B_80A_BT_AND_NEBULIZER_WRITE_CHARACTERISTIC`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SP70B_80A_BT_AND_NEBULIZER_WRITE_CHARACTERISTIC`."
             },
             {
                 "package_id": "com.chi.patientapp.clinic",
                 "version_code": 1023,
                 "version_name": "1.2.3",
                 "package_path": "AndroZoo/apks/a4/com.chi.patientapp.clinic_A45FC5A8B02EF0AD8EAD951A4897B2DC2E71CADA42BEB7CA41EA726B25B85D62.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SP70B_80A_BT_AND_NEBULIZER_WRITE_CHARACTERISTIC`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SP70B_80A_BT_AND_NEBULIZER_WRITE_CHARACTERISTIC`."
             },
             {
                 "package_id": "com.fit.alveo",
                 "version_code": 78,
                 "version_name": "2.9.2",
                 "package_path": "AndroZoo/apks/d9/com.fit.alveo_D9A45316DC189721FDECF2BB2184C8CC6A0040FB45E1C7A5A18524340E14755A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
             },
             {
                 "package_id": "com.chi.patientapp.dev",
                 "version_code": 197138,
                 "version_name": "3.2.18-000",
                 "package_path": "AndroZoo/apks/a2/com.chi.patientapp.dev_A231A035887825CDE4DD2C5259891BE15811646AF5CF7DD8B3C63E001EF0208E.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SP70B_80A_BT_AND_NEBULIZER_WRITE_CHARACTERISTIC`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SP70B_80A_BT_AND_NEBULIZER_WRITE_CHARACTERISTIC`."
             },
             {
                 "package_id": "com.lifesense.meraw",
                 "version_code": 44,
                 "version_name": "1.6.23",
                 "package_path": "AndroZoo/apks/11/com.lifesense.meraw_11E59DF69BF5ADE1936AC3B9C1F939DFC7473BB0FEE412463E8A70B733B28D1D.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.lifesense.health",
                 "version_code": 6,
                 "version_name": "2.0.5",
                 "package_path": "AndroZoo/apks/75/com.lifesense.health_753B2DD5DC68B816146CD136FDEACF1ED1D80ED851D4E562E66EAEF8B21CC99A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.md.alveo",
                 "version_code": 87,
                 "version_name": "2.9.5",
                 "package_path": "AndroZoo/apks/1a/com.md.alveo_1A3B90C26CA42B6E0FEE9F52D62C74F2C913EB50CF5DDD82170AB45E669F8C41.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
             },
             {
                 "package_id": "com.biofourmis.ipmpatient",
                 "version_code": 14468,
                 "version_name": "25.13.0",
                 "package_path": "AndroZoo/apks/b5/com.biofourmis.ipmpatient_B54ABAA7E1CA93D025B91B40DBC3959042AA3BCCFC090E9BA4BF20DAD8237C98.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.corsanohealth.cellpoint",
                 "version_code": 13,
                 "version_name": "1.0",
                 "package_path": "AndroZoo/apks/21/com.corsanohealth.cellpoint_21887DADE0F7E1991C2F731F9C33CE66A3F2FF6F4B7B952A09C7B80F457CF9B4.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.remetrichealth.rpm",
                 "version_code": 160,
                 "version_name": "1.6.0",
                 "package_path": "AndroZoo/apks/d3/com.remetrichealth.rpm_D3520173038F8123BEFBB54F4A96B10BD928CDB7F5672174716DEFDD906CDB31.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `a`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `a`."
             },
             {
                 "package_id": "com.somatix.watcher",
                 "version_code": 30063,
                 "version_name": "5.8.5",
                 "package_path": "AndroZoo/apks/1d/com.somatix.watcher_1DB56A79199371DF0AE2BDE8004D93C4E47105769F2F48E4FF4DDC95D760E2CE.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
             },
             {
                 "package_id": "com.nurecausa.drtrustscaleconnect",
                 "version_code": 177,
                 "version_name": "7.3.6",
                 "package_path": "AndroZoo/apks/e0/com.nurecausa.drtrustscaleconnect_E0480397984ACCE3A25F2503F21175810D339E550750867BA9B311CF75553ED7.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `s`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `s`."
             },
             {
                 "package_id": "com.rpmhealthcare.westmed",
                 "version_code": 148,
                 "version_name": "4.6.8",
                 "package_path": "AndroZoo/apks/1b/com.rpmhealthcare.westmed_1BCADFD3B28FC94E165B686C14F3D7889D9CB29A3DADAE7FA946B0681E672E40.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `PO60_WRITE_CHARACTERISTIC_UUID / CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PO60_WRITE_CHARACTERISTIC_UUID / CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.tma.epokratis",
                 "version_code": 168,
                 "version_name": "4.0.258",
                 "package_path": "AndroZoo/apks/49/com.tma.epokratis_49AEA1CADCE14FC7872C0B4169AD7E8A8F96D176EB336E4ED54AC8216FCB74F8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `k`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `k`."
             },
             {
                 "package_id": "com.hansjin.drdiary_android",
                 "version_code": 2077003,
                 "version_name": "2.77.3",
                 "package_path": "AndroZoo/apks/5f/com.hansjin.drdiary_android_5FA3621A7797D52EADC1FE47A51E01C85102849B57DFDF92EC2F2D6255A883AB.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.viatom.vihealth",
                 "version_code": 334,
                 "version_name": "2.75.66",
                 "package_path": "AndroZoo/apks/f8/com.viatom.vihealth_F87F0B9E9C2AAFF011214DACEF495E65FCA89549FEB7FFBD28ED1D2A9EE8A2F3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidFromString2`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidFromString2`."
             },
             {
                 "package_id": "com.wow.hopecare",
                 "version_code": 48,
                 "version_name": "2.18.1",
                 "package_path": "AndroZoo/apks/1b/com.wow.hopecare_1BF533607A4FF64FB63EAC429EA13EE3E7F85B0168BB0BB325C15BEED8886A5C.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "eu.vidavo.vida24app",
                 "version_code": 128,
                 "version_name": "1.8.22",
                 "package_path": "AndroZoo/apks/a7/eu.vidavo.vida24app_A7BB1BAE9E91C8EC8F1447C221DF3854A45FE018B21716112A4817F11A678DF7.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `PO60_CUSTOM_CHARACTERISTIC_WRITE_NO_RESPONSE`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PO60_CUSTOM_CHARACTERISTIC_WRITE_NO_RESPONSE`."
             },
             {
                 "package_id": "com.vivalnk.feverscout",
                 "version_code": 238,
                 "version_name": "2.3.1.238",
                 "package_path": "AndroZoo/apks/39/com.vivalnk.feverscout_394F68591AEE27424D3A3CF6CA5D237E5A10D94103B04D5624232B806CD53ABE.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.lstllc.apps.android.mcare",
                 "version_code": 291,
                 "version_name": "2.114",
                 "package_path": "AndroZoo/apks/bd/com.lstllc.apps.android.mcare_BDFCBF3FB5FEF815D5A5C7A98C54EA87F390FB7994BFA653FCCCF09351A9D59A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.ventechsolutions.myFHB",
                 "version_code": 1044,
                 "version_name": "1.116.0",
                 "package_path": "AndroZoo/apks/f8/com.ventechsolutions.myFHB_F89CFAC13EE67A889E0537D3EF82C48614794FAFFF4529CA9D30DF3FA8221332.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.beebirdhome.home",
                 "version_code": 110,
                 "version_name": "110.1.13",
                 "package_path": "AndroZoo/apks/7c/com.beebirdhome.home_7CC8AE4A3E3CBE43F81D7BC4AEEB361135484C62AD0C9575F3F1B1614502DC14.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI / BLUFI_WRITE_UUID / writeCharacteristic`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI / BLUFI_WRITE_UUID / writeCharacteristic`."
             },
             {
                 "package_id": "com.vivalnk.vitalsmonitor",
                 "version_code": 399,
                 "version_name": "3.5.3",
                 "package_path": "AndroZoo/apks/a1/com.vivalnk.vitalsmonitor_A158FFDC05FF6D7196AC1CD037C33D941173EBA30FB6C49E68B86332BC6F667A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.swisscloudportal.corsano",
                 "version_code": 35,
                 "version_name": "0.34",
                 "package_path": "AndroZoo/apks/a7/com.swisscloudportal.corsano_A7C081A3871D78A04BADB392556323456FB41CF5777EAB503DD11FC79B978D88.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "de.qurasoft.saniq",
                 "version_code": 2022052386,
                 "version_name": "1.12.3",
                 "package_path": "AndroZoo/apks/c0/de.qurasoft.saniq_C052CBCCBE4B0E103EF49E9E7B040A526E76DBA82E015B6D74655B4AA7F21F39.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `WRITE_CHARACTERISTIC`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WRITE_CHARACTERISTIC`."
             },
             {
                 "package_id": "org.seadvocacy.docsrchout",
                 "version_code": 200,
                 "version_name": "3.21.5",
                 "package_path": "AndroZoo/apks/f7/org.seadvocacy.docsrchout_F77ACAB12416A466DE5813AE18DFFD8E620C51272E56EDF05D0E87EEF5D7EDDF.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.yuwell.uhealth",
                 "version_code": 3113,
                 "version_name": "3.1.13",
                 "package_path": "AndroZoo/apks/7f/com.yuwell.uhealth_7FE7C134C78C4CD18867815A1C0C825EC64C077CF854D12EA107999ABAF0F682.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `URINE_CONTEC_WRITE`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `URINE_CONTEC_WRITE`."
             },
             {
                 "package_id": "com.swisscloudportal.corsanotrials",
                 "version_code": 517,
                 "version_name": "1.22.1",
                 "package_path": "AndroZoo/apks/a8/com.swisscloudportal.corsanotrials_A819D87CB125ED3D90BFB6FF6E7DAB94B0834CF6CDD5ACD44C939FC3A873362B.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "gs.telemon.mobile",
                 "version_code": 142,
                 "version_name": "1.7.0",
                 "package_path": "AndroZoo/apks/63/gs.telemon.mobile_63E0E088CEAB22C2043E101BD0DBA7E457997ED667462EB5E34B995CE22DF8C1.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `k`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `k`."
             },
             {
                 "package_id": "vigo.life.android",
                 "version_code": 123,
                 "version_name": "4.14.0-Release",
                 "package_path": "AndroZoo/apks/6f/vigo.life.android_6F1FD2C4FE291C0DE5FFD4382D78DC0C1A1AB9B9B02D3AEA012CB16B1E456C8F.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "com.nineteenlabs.gale",
                 "version_code": 120050002,
                 "version_name": "r.1.20.2.prd-BYOD-9-gbb64ae8ff",
                 "package_path": "AndroZoo/apks/25/com.nineteenlabs.gale_25F86270927B773FE7704A1ED665B66FDFA63D91AE6F2FE8FBED1EFBA5A632FB.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `WRITE_UUID`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WRITE_UUID`."
             },
             {
                 "package_id": "com.simshine.elliecam",
                 "version_code": 147,
                 "version_name": "1.1.7",
                 "package_path": "AndroZoo/apks/00/com.simshine.elliecam_000B065741F6F53E95101EB57EB9E138229EF6CF318ECCFA3749E5BF05077019.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f16043q`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f16043q`."
             },
             {
                 "package_id": "com.femmto.app",
                 "version_code": 1031,
                 "version_name": "4.1.0",
                 "package_path": "AndroZoo/apks/00/com.femmto.app_000E2F8FC0DB35DF06C2EBE1473D3A5EA028E69BE8B0D02F2DA4B28C3F34BDDD.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_WRITE_BLUFI`."
             },
             {
                 "package_id": "jp.anima.app",
                 "version_code": 96,
                 "version_name": "2.5.5",
                 "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BLE_UUID_NOTIFICATION`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BLE_UUID_NOTIFICATION`."
             },
             {
                 "package_id": "com.RHPConnect",
                 "version_code": 121,
                 "version_name": "7.02.12.4",
                 "package_path": "AndroZoo/apks/00/com.RHPConnect_0027E02172661A1FBBFA071CC684F41BCF5A4A0E80089719C0DE489820822A86.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `PROFILE_F_UUID`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PROFILE_F_UUID`."
             },
             {
                 "package_id": "com.urbanclap.urbanclap",
                 "version_code": 716,
                 "version_name": "7.6.77",
                 "package_path": "AndroZoo/apks/00/com.urbanclap.urbanclap_0041553A86BC9F1CB853A270D0DD3865AD146EBCC1FCCD11238A6755D41F3FA8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `b`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `b`."
             },
             {
                 "package_id": "chief.health",
                 "version_code": 402,
                 "version_name": "1.3.48",
                 "package_path": "AndroZoo/apks/00/chief.health_0048A5B4549791DA7CFF23BFA9091C37194B281442A461B69793B17D0E73FA06.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `u`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `u`."
             },
             {
                 "package_id": "vip.qdpower.volta",
                 "version_code": 313,
                 "version_name": "3.1.3",
                 "package_path": "AndroZoo/apks/00/vip.qdpower.volta_005CF6F7F4398B857043C0A572181AAC7E86E8F561C891C1097C0E1DE47B57A3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_WRITE_CHARACTERISTIC`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_WRITE_CHARACTERISTIC`."
             },
             {
                 "package_id": "com.coveiot.android.lefit",
                 "version_code": 3,
                 "version_name": "1.0.2",
                 "package_path": "AndroZoo/apks/00/com.coveiot.android.lefit_009DDC5BA3B0895F398DA1748FDA6DC14CAAE4C6815A27C7CE0DF8E7F98FCAEE.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f32722s`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f32722s`."
             },
             {
                 "package_id": "com.kitty.hok",
                 "version_code": 40609071,
                 "version_name": "4.6.9.7",
                 "package_path": "AndroZoo/apks/00/com.kitty.hok_00ECF33B47FDF6C22CC6C7C487038E3097B2B06B41AE4E3D299BC9EE5170267E.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_TX`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_TX`."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Exact-build use: WRITE_COMMAND is fetched as a characteristic under SERVICE_OAUTH and written/notified."
             }
         ],
         "parent_UUID": "49535343-1e4d-4bd9-ba61-23c647249616"
@@ -7053,7 +7064,7 @@
     {
         "UUID": "ff02",
         "company": "Third-party SDK code (declared in Java package `com.contec.spo2.code.c` — distinct from host com.aitmed.care; Phase-4 identification needed)",
-        "UUID_name": "RST_VCOM / UUID_BY_WRITE_3432 / CHARACTERISTIC_WRITE",
+        "UUID_name": "RST_VCOM / UUID_BY_WRITE_3432 / CHARACTERISTIC_WRITE / OAUTH_WRITE_PWD",
         "UUID_purpose": "GATT Characteristic observed in Android app com.aitmed.care but declared in third-party SDK package `com.contec.spo2.code.c` as Java field `READ_CH_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(READ_CH_ID).",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -8376,6 +8387,10 @@
             {
                 "description": "Found in decompiled DEX of com.coveiot.android.lefit v1.0.2 (versionCode 3), in Java field `f47632r`, declared in Java package `com.htsmart.wristband2.a.c` (third-party SDK). Classification source: usage:getCharacteristic.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `ZzzGattAttributes.java:34` defines OAUTH_WRITE_PWD; `NutDeviceController.java:560-567` fetches and writes it in writeDFUMode, and lines 928-936 handle its write result. The shared getCharact helper resolves its parent service as 0xFF00.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -10205,6 +10220,13 @@
                 "version_name": "1.0.2",
                 "package_path": "AndroZoo/apks/00/com.coveiot.android.lefit_009DDC5BA3B0895F398DA1748FDA6DC14CAAE4C6815A27C7CE0DF8E7F98FCAEE.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f47632r`."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Exact-build use: OAUTH_WRITE_PWD is fetched and written as a characteristic under SERVICE_OAUTH."
             }
         ],
         "parent_UUID": "49535343-1e4d-4bd9-ba61-23c647249616"
@@ -11926,6 +11948,10 @@
             },
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The app JavaScript bundle defines ACCELEROMETER_CHS_UUID = \"fff3\"; HBC function 36202 compares incoming characteristic UUIDs against it and emits AccelerometerUpdated. CUSTOM_SERVICE_UUID = \"fff0\" is declared with it in HBC function 3034, but the parent relationship is inferred from this shared configuration rather than a direct GATT lookup. APK SHA-256: 104d08be3044e50c7b31526146001663b47f84af3425b3715eaa0b14cdb1d3da. App attribution: https://play.google.com/store/apps/details?id=starshipproduct.perifitmainapp.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -14477,6 +14503,13 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `g`."
+            },
+            {
+                "package_id": "starshipproduct.perifitmainapp",
+                "version_code": 10001932,
+                "version_name": "4.162.1",
+                "package_path": "AndroZoo/apks/10/starshipproduct.perifitmainapp_104D08BE3044E50C7B31526146001663B47F84AF3425B3715EAA0B14CDB1D3DA.apk",
+                "description": "Perifit Care app."
             }
         ],
         "parent_UUID": "49535343-1e4d-4bd9-ba61-23c647249616"
@@ -20582,7 +20615,7 @@
     {
         "UUID": "fc20",
         "company": "Third-party SDK code (declared in Java package `com.ly.heart_library` — distinct from host com.fitmtetrix.sevenminutes; Phase-4 identification needed)",
-        "UUID_name": "UUID_OLDBAND_NOTIFYFC20",
+        "UUID_name": "UUID_OLDBAND_NOTIFYFC20 / OLDBAND_NOTIFY_FC20",
         "UUID_purpose": "GATT Characteristic observed in Android app com.fitmtetrix.sevenminutes but declared in third-party SDK package `com.ly.heart_library` as Java field `BRACELETREAD_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -20616,6 +20649,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=cn.fitcare.heartool",
                 "description": "Verified current Google Play listing for cn.fitcare.heartool. This listing does not establish that archived APK version 2.0.5 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "FBKBleUuids.java:44 defines UUID_OLDBAND_NOTIFYFC20; FBKProtocolOldTracker.java:134 enables notifications for it and :191 compares an incoming BluetoothGattCharacteristic UUID against it.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -20660,6 +20697,13 @@
                 "version_name": "2.0.5",
                 "package_path": "AndroZoo/apks/d1/cn.fitcare.heartool_D14243E2CB34882F2863DFB656A841003D1A54D6A4677C7E3B8E70CCB3216F80.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_OLDBAND_NOTIFYFC20`."
+            },
+            {
+                "package_id": "net.punchlab.app",
+                "version_code": 463,
+                "version_name": "4.8.36",
+                "package_path": "AndroZoo/apks/fa/net.punchlab.app_FA7B6AD4C21F13547DDB81B32FC76CC3E8092D97D1EA1DFD774CD7106321845D.apk",
+                "description": "Detected by apk-clues-extract scan; usage GATT Characteristic; Java field `UUID_OLDBAND_NOTIFYFC20`."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -20667,7 +20711,7 @@
     {
         "UUID": "fc22",
         "company": "Third-party SDK code (declared in Java package `com.ly.heart_library` — distinct from host com.fitmtetrix.sevenminutes; Phase-4 identification needed)",
-        "UUID_name": "UUID_OLDBAND_NOTIFYFC22",
+        "UUID_name": "OLDBAND_OLDSCALE_NOTIFY_FC22",
         "UUID_purpose": "GATT Characteristic observed in Android app com.fitmtetrix.sevenminutes but declared in third-party SDK package `com.ly.heart_library` as Java field `BRACELETNOTIFY_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -20701,6 +20745,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=cn.fitcare.heartool",
                 "description": "Verified current Google Play listing for cn.fitcare.heartool. This listing does not establish that archived APK version 2.0.5 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "FBKBleUuids.java:45 and :48 define UUID_OLDBAND_NOTIFYFC22 and UUID_OLDSCALE_NOTIFY as aliases; FBKProtocolOldTracker.java:201 compares a BluetoothGattCharacteristic UUID against the old-band alias, and chooseDeviceUuid selects the old-scale alias (:165).",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -20745,6 +20793,13 @@
                 "version_name": "2.0.5",
                 "package_path": "AndroZoo/apks/d1/cn.fitcare.heartool_D14243E2CB34882F2863DFB656A841003D1A54D6A4677C7E3B8E70CCB3216F80.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_OLDBAND_NOTIFYFC22`."
+            },
+            {
+                "package_id": "net.punchlab.app",
+                "version_code": 463,
+                "version_name": "4.8.36",
+                "package_path": "AndroZoo/apks/fa/net.punchlab.app_FA7B6AD4C21F13547DDB81B32FC76CC3E8092D97D1EA1DFD774CD7106321845D.apk",
+                "description": "Detected by apk-clues-extract scan; usage GATT Characteristic; Java field `UUID_OLDBAND_NOTIFYFC22 / UUID_OLDSCALE_NOTIFY`."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -35097,6 +35152,10 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Hong Kong toy/robotics maker; RoboRemoteBlue Android app for BLE-controlled WowWee robotic toys)"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `ZzzGattAttributes.java:33` defines OAUTH_READ_RANDOM; `NutDeviceController.java:428-435, 480-482` checks/enables it, and `onCharacteristicChanged` at lines 756-788 consumes its value. `setDeviceNotification` resolves the characteristic through getCharact under SERVICE_OAUTH.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -35190,6 +35249,13 @@
                 "version_name": "3.0",
                 "package_path": "BLUUID_APKS/0993/e96835a9ea558c5a4711598ec942d92daac6f1c1bc853ca3bb5a752240bffbc3/e96835a9ea558c5a4711598ec942d92daac6f1c1bc853ca3bb5a752240bffbc3.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `kDeviceNuvotonBootloader_TransferFirmwareStatusCharacteristicUUID`."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Exact-build use: OAUTH_READ_RANDOM is selected as a notification characteristic under SERVICE_OAUTH."
             }
         ],
         "parent_UUID": "000001ff-3c17-d293-8e48-14fe2e4da212"
@@ -40981,7 +41047,7 @@
     {
         "UUID": "ffd1",
         "company": "Realtek Semiconductor (RealSil DFU SDK — HID-over-GATT OTA path for HID peripherals on RTL87xx)",
-        "UUID_name": "REALSIL_HOGP_OTA_FFD1",
+        "UUID_name": "OTA_CONTROL_ENTER_OTA_MODE",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.noise.sphere, declared as Java field `a`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -42044,6 +42110,10 @@
             {
                 "description": "Found in decompiled DEX of com.coveiot.android.lefit v1.0.2 (versionCode 3), in Java field `f52383a`, declared in Java package `com.realsil.sdk.dfu.n` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Target APK source: N7/h.java:36-40 defines this SIG-base UUID; N7/b.java:817-823 passes the corresponding field to BluetoothGattService.getCharacteristic and logs its protocol role.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -43522,14 +43592,20 @@
                 "version_code": 1070,
                 "version_name": "2.0.2",
                 "package_path": "AndroZoo/apks/00/com.yowu.yowumobile_002A0106C5F8448FDB24E4E4D0E2D930AE2744103E2A17CD053388F25859E85F.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f39882a`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f39882a`."
             },
             {
                 "package_id": "com.coveiot.android.lefit",
                 "version_code": 3,
                 "version_name": "1.0.2",
                 "package_path": "AndroZoo/apks/00/com.coveiot.android.lefit_009DDC5BA3B0895F398DA1748FDA6DC14CAAE4C6815A27C7CE0DF8E7F98FCAEE.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f52383a`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f52383a`."
+            },
+            {
+                "package_id": "com.pavlok3.core",
+                "version_code": 934,
+                "version_name": "2.5.18",
+                "package_path": "AndroZoo/apks/fa/com.pavlok3.core_FA1368275A44E788A653DAF023F63E99D5A43D48987F8848C737B152F6E98E7B.apk"
             }
         ],
         "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
@@ -43537,7 +43613,7 @@
     {
         "UUID": "ffd2",
         "company": "Realtek Semiconductor (RealSil DFU SDK — HID-over-GATT OTA path for HID peripherals on RTL87xx)",
-        "UUID_name": "REALSIL_HOGP_OTA_FFD2",
+        "UUID_name": "REALSIL_HOGP_OTA_FFD2 / OTA_MAC_ADDR",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.noise.sphere, declared as Java field `b`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -44274,6 +44350,10 @@
             {
                 "description": "Found in decompiled DEX of com.coveiot.android.lefit v1.0.2 (versionCode 3), in Java field `f52384b`, declared in Java package `com.realsil.sdk.dfu.n` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f52402b).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Target APK source: N7/h.java:36-40 defines this SIG-base UUID; N7/b.java:829-835 passes the corresponding field to BluetoothGattService.getCharacteristic and logs its protocol role.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -45312,6 +45392,12 @@
                 "version_name": "1.0.2",
                 "package_path": "AndroZoo/apks/00/com.coveiot.android.lefit_009DDC5BA3B0895F398DA1748FDA6DC14CAAE4C6815A27C7CE0DF8E7F98FCAEE.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f52384b`."
+            },
+            {
+                "package_id": "com.pavlok3.core",
+                "version_code": 934,
+                "version_name": "2.5.18",
+                "package_path": "AndroZoo/apks/fa/com.pavlok3.core_FA1368275A44E788A653DAF023F63E99D5A43D48987F8848C737B152F6E98E7B.apk"
             }
         ],
         "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
@@ -45319,7 +45405,7 @@
     {
         "UUID": "ffd5",
         "company": "Consmart / qh-tek (Chinese smart-home BLE module vendor)",
-        "UUID_name": "Unknown",
+        "UUID_name": "OTA_PATCH_EXTENSION_VERSION",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.noise.sphere, declared as Java field `e`. Classification determined by naming-convention. Phase-4 SDK identification: Consmart BLE notification protocol — 3-UUID family ffd0/ffd4/ffd5 with field names CONSMART_BLE_NOTIFICATION_SERVICE_DATA / CONSMART_BLE_NOTIFICATION_CHARACTERISTICS_DATA / CONSMART_BLE_WRITE_SERVICE_DATA. Used by Noise Sphere, Ryze, and Techlife Pro apps..",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -46085,6 +46171,10 @@
             {
                 "description": "Found in decompiled DEX of com.coveiot.android.lefit v1.0.2 (versionCode 3), in Java field `f52359e`, declared in Java package `com.realsil.sdk.dfu.q` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f52405e).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Target APK source: N7/h.java:36-40 defines this SIG-base UUID; N7/b.java:849-855 passes the corresponding field to BluetoothGattService.getCharacteristic and logs its protocol role.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -47101,70 +47191,76 @@
                 "version_code": 26,
                 "version_name": "1.1.4",
                 "package_path": "AndroZoo/apks/61/com.aimakeji.ebaohealth.xxx_6132EFADF381C701611FA3CD0FAE09E9D2E8E8B2FDCB124353C33BE76AB516C7.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f951e`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f951e`."
             },
             {
                 "package_id": "com.elitevine.valecus",
                 "version_code": 44,
                 "version_name": "1.0",
                 "package_path": "AndroZoo/apks/af/com.elitevine.valecus_AF91F284448252C0D99C6593A8584EB5B863744A4DC36A819EEDAFFF9EC0FEBD.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `e`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `e`."
             },
             {
                 "package_id": "com.companion.wear",
                 "version_code": 27,
                 "version_name": "1.1.1.2",
                 "package_path": "AndroZoo/apks/a6/com.companion.wear_A6F274617F9742B693C8A5F6B481069C36145CCEB60952EC36739C197DFE9F94.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `OTA_PATCH_EXTENSION_VERSION_CHARACTERISTIC_UUID`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `OTA_PATCH_EXTENSION_VERSION_CHARACTERISTIC_UUID`."
             },
             {
                 "package_id": "com.habitsv2",
                 "version_code": 212,
                 "version_name": "12.0.5",
                 "package_path": "AndroZoo/apks/64/com.habitsv2_640C0E73423A50D2350EE6C5E2D9904F48033A5BB9D14AD70843F8BA0B794962.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f1220e`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f1220e`."
             },
             {
                 "package_id": "com.innova.flutter_checkmed",
                 "version_code": 586,
                 "version_name": "1.5.86",
                 "package_path": "AndroZoo/apks/73/com.innova.flutter_checkmed_73985FBD81B281D5ED645A588413A61CF1455D439DCD9B2FECF57EC92B124FF0.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f1274e`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f1274e`."
             },
             {
                 "package_id": "com.mydayda.myhk",
                 "version_code": 43,
                 "version_name": "1.0.7",
                 "package_path": "AndroZoo/apks/05/com.mydayda.myhk_05D778B829D41FEE921B442C52034181C228669771909B633099E19DC61E6A4D.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f5121e`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f5121e`."
             },
             {
                 "package_id": "com.nurecausa.drtrustscaleconnect",
                 "version_code": 177,
                 "version_name": "7.3.6",
                 "package_path": "AndroZoo/apks/e0/com.nurecausa.drtrustscaleconnect_E0480397984ACCE3A25F2503F21175810D339E550750867BA9B311CF75553ED7.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `e`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `e`."
             },
             {
                 "package_id": "connected.healthcare.checkupasia",
                 "version_code": 146,
                 "version_name": "50.8.21",
                 "package_path": "AndroZoo/apks/e1/connected.healthcare.checkupasia_E1C83F82D2A8A82C69523DE74A7F6BB68B85FC9258F4793A9B90E7F6E78A7103.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `e`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `e`."
             },
             {
                 "package_id": "com.yowu.yowumobile",
                 "version_code": 1070,
                 "version_name": "2.0.2",
                 "package_path": "AndroZoo/apks/00/com.yowu.yowumobile_002A0106C5F8448FDB24E4E4D0E2D930AE2744103E2A17CD053388F25859E85F.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f38835e`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f38835e`."
             },
             {
                 "package_id": "com.coveiot.android.lefit",
                 "version_code": 3,
                 "version_name": "1.0.2",
                 "package_path": "AndroZoo/apks/00/com.coveiot.android.lefit_009DDC5BA3B0895F398DA1748FDA6DC14CAAE4C6815A27C7CE0DF8E7F98FCAEE.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f52359e`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f52359e`."
+            },
+            {
+                "package_id": "com.pavlok3.core",
+                "version_code": 934,
+                "version_name": "2.5.18",
+                "package_path": "AndroZoo/apks/fa/com.pavlok3.core_FA1368275A44E788A653DAF023F63E99D5A43D48987F8848C737B152F6E98E7B.apk"
             }
         ],
         "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
@@ -50507,7 +50603,7 @@
     {
         "UUID": "ffd3",
         "company": "Realtek Semiconductor (RealSil DFU SDK — HID-over-GATT OTA path for HID peripherals on RTL87xx)",
-        "UUID_name": "REALSIL_HOGP_OTA_FFD3",
+        "UUID_name": "REALSIL_HOGP_OTA_FFD3 / OTA_READ_PATCH",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.noise.sphere, declared as Java field `c`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -51272,6 +51368,10 @@
             {
                 "description": "Found in decompiled DEX of com.coveiot.android.lefit v1.0.2 (versionCode 3), in Java field `f52357c`, declared in Java package `com.realsil.sdk.dfu.q` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f52403c).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Target APK source: N7/h.java:36-40 defines this SIG-base UUID; N7/b.java:835-841 passes the corresponding field to BluetoothGattService.getCharacteristic and logs its protocol role.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -52359,6 +52459,12 @@
                 "version_name": "1.0.2",
                 "package_path": "AndroZoo/apks/00/com.coveiot.android.lefit_009DDC5BA3B0895F398DA1748FDA6DC14CAAE4C6815A27C7CE0DF8E7F98FCAEE.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f52357c`."
+            },
+            {
+                "package_id": "com.pavlok3.core",
+                "version_code": 934,
+                "version_name": "2.5.18",
+                "package_path": "AndroZoo/apks/fa/com.pavlok3.core_FA1368275A44E788A653DAF023F63E99D5A43D48987F8848C737B152F6E98E7B.apk"
             }
         ],
         "parent_UUID": "00006287-3c17-d293-8e48-14fe2e4da212"
@@ -52366,7 +52472,7 @@
     {
         "UUID": "ffd4",
         "company": "Consmart / qh-tek (Chinese smart-home BLE module vendor)",
-        "UUID_name": "CONSMART_BLE_NOTIFICATION_CHARACTERISTICS_DATA",
+        "UUID_name": "CONSMART_BLE_NOTIFICATION_CHARACTERISTICS_DATA / OTA_READ_APP",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.noise.sphere, declared as Java field `d`. Classification determined by naming-convention. Phase-4 SDK identification: Consmart BLE notification protocol — 3-UUID family ffd0/ffd4/ffd5 with field names CONSMART_BLE_NOTIFICATION_SERVICE_DATA / CONSMART_BLE_NOTIFICATION_CHARACTERISTICS_DATA / CONSMART_BLE_WRITE_SERVICE_DATA. Used by Noise Sphere, Ryze, and Techlife Pro apps..",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -53192,6 +53298,10 @@
             {
                 "description": "Found in decompiled DEX of com.coveiot.android.lefit v1.0.2 (versionCode 3), in Java field `f52358d`, declared in Java package `com.realsil.sdk.dfu.q` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f52404d).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Target APK source: N7/h.java:36-40 defines this SIG-base UUID; N7/b.java:842-848 passes the corresponding field to BluetoothGattService.getCharacteristic and logs its protocol role.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -54377,6 +54487,12 @@
                 "version_name": "1.0.2",
                 "package_path": "AndroZoo/apks/00/com.coveiot.android.lefit_009DDC5BA3B0895F398DA1748FDA6DC14CAAE4C6815A27C7CE0DF8E7F98FCAEE.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f52358d`."
+            },
+            {
+                "package_id": "com.pavlok3.core",
+                "version_code": 934,
+                "version_name": "2.5.18",
+                "package_path": "AndroZoo/apks/fa/com.pavlok3.core_FA1368275A44E788A653DAF023F63E99D5A43D48987F8848C737B152F6E98E7B.apk"
             }
         ],
         "parent_UUID": "00006287-3c17-d293-8e48-14fe2e4da212"
@@ -54819,7 +54935,7 @@
     {
         "UUID": "ffa0",
         "company": "Texas Instruments BLE-Stack SimpleProfile example (widely copied by Chinese CC2541-based BLE module makers)",
-        "UUID_name": "aaa065",
+        "UUID_name": "BBPOS_BLUETOOTH_SID",
         "UUID_purpose": "Custom GATT Service observed in Android app branded.com.publicansmanhasset, declared as Java field `aaa065`. Classification determined by usage:getService. Shared-SDK signal: this UUID appeared in many host apps whose package vendors don't share any token, so the original SDK vendor isn't visible from the host-app side. Phase-4 identification (scripts/list_shared_sdk_clusters.py) will upgrade this record. Phase-4 SDK identification: 0xFFA0-0xFFA3 are example service+char UUIDs from TI's BLE-Stack SimpleProfile sample (the demo TI shipped with the CC2540/CC2541 SDK). Hundreds of Chinese BLE module vendors copied these verbatim into shipping products without re-allocating UUIDs. The accompanying example uses them as an Accelerometer Service. The actual host vendor varies per product..",
         "UUID_usage_array": [
             "GATT Service"
@@ -59656,6 +59772,15 @@
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `ModoGuardian.java:45-56,92-104` matches service UUID 0xFFA0 before selecting and writing characteristic 0xFFA1; `Bluetooth/ServicioBLE.java:600-602` resolves the same UUID with BluetoothGatt.getService before retrieving 0xFFA7.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "URL": "https://stripe.com/files/docs/terminal/c2xbt_product_sheet.pdf",
+                "description": "In target APK com.derickio.homebase360 v2.2.10, com.stripe.stripeterminal.internal.common.discovery.BbposBluetoothScanner labels FFA0 as BBPOS_BLUETOOTH_SID / BLUETOOTH_SERVICE_ID and uses it in ScanFilter.Builder.setServiceUuid; com.stripe.bbpos.bbdevice.ccc067zz.onServicesDiscovered retrieves the GATT service with getService(FFA0). The linked Stripe-hosted product sheet identifies BBPOS Limited as the reader maker; it does not itself document the UUID assignment.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -67022,6 +67147,20 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Manually recovered from short UUID comparisons: 0xFFA0 is used as a GATT service in guardian and motion-notification flows."
+            },
+            {
+                "package_id": "com.derickio.homebase360",
+                "version_code": 60,
+                "version_name": "2.2.10",
+                "package_path": "AndroZoo/apks/38/com.derickio.homebase360_38AA6A95111BAA17779509EC3F3DA9B7F33BF2EDB6175097A94BBDDF029286C8.apk",
+                "description": "Target-only manual review of the packaged BBPOS reader GATT profile; APK SHA-256 verified."
             }
         ]
     },
@@ -67143,7 +67282,7 @@
     {
         "UUID": "ffa1",
         "company": "Texas Instruments BLE-Stack SimpleProfile example (widely copied by Chinese CC2541-based BLE module makers)",
-        "UUID_name": "aaa066",
+        "UUID_name": "GUARDIAN_MOTION_CONTROL / BBPOS_READER_RX_DATA",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app branded.com.publicansmanhasset, declared as Java field `aaa066`. Classification determined by usage:getCharacteristic. Shared-SDK signal: this UUID appeared in many host apps whose package vendors don't share any token, so the original SDK vendor isn't visible from the host-app side. Phase-4 identification (scripts/list_shared_sdk_clusters.py) will upgrade this record. Phase-4 SDK identification: 0xFFA0-0xFFA3 are example service+char UUIDs from TI's BLE-Stack SimpleProfile sample (the demo TI shipped with the CC2540/CC2541 SDK). Hundreds of Chinese BLE module vendors copied these verbatim into shipping products without re-allocating UUIDs. The accompanying example uses them as an Accelerometer Service. The actual host vendor varies per product..",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -71891,6 +72030,15 @@
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `ModoGuardian.java:49-60,96-104` enumerates characteristics from the 0xFFA0 service, matches UUID text containing `ffa1`, stores the result as characteristicMotion, sets values 0x02/0x00, and writes it.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "URL": "https://stripe.com/files/docs/terminal/c2xbt_product_sheet.pdf",
+                "description": "In target APK com.derickio.homebase360 v2.2.10, com.stripe.bbpos.bbdevice.ccc067zz.onServicesDiscovered resolves FFA1 with BluetoothGattService.getCharacteristic, enables notifications on that characteristic, and enables its 0x2902 descriptor. Its onCharacteristicChanged callback forwards the characteristic value bytes to the reader input stream. RX_DATA is a conservative name from that observed data flow. The linked Stripe-hosted product sheet identifies BBPOS Limited as the reader maker; it does not itself document the UUID assignment.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -79145,6 +79293,20 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Manually recovered from getUuid().toString().contains(\"ffa1\") and characteristic write use; parent is the enumerated 0xFFA0 service."
+            },
+            {
+                "package_id": "com.derickio.homebase360",
+                "version_code": 60,
+                "version_name": "2.2.10",
+                "package_path": "AndroZoo/apks/38/com.derickio.homebase360_38AA6A95111BAA17779509EC3F3DA9B7F33BF2EDB6175097A94BBDDF029286C8.apk",
+                "description": "Target-only manual review of the packaged BBPOS reader GATT profile; APK SHA-256 verified."
             }
         ],
         "parent_UUID": "ffa0"
@@ -79152,7 +79314,7 @@
     {
         "UUID": "ffa2",
         "company": "Texas Instruments BLE-Stack SimpleProfile example (widely copied by Chinese CC2541-based BLE module makers)",
-        "UUID_name": "aaa067",
+        "UUID_name": "BBPOS_READER_TX_DATA",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app branded.com.publicansmanhasset, declared as Java field `aaa067`. Classification determined by usage:getCharacteristic. Shared-SDK signal: this UUID appeared in many host apps whose package vendors don't share any token, so the original SDK vendor isn't visible from the host-app side. Phase-4 identification (scripts/list_shared_sdk_clusters.py) will upgrade this record. Phase-4 SDK identification: 0xFFA0-0xFFA3 are example service+char UUIDs from TI's BLE-Stack SimpleProfile sample (the demo TI shipped with the CC2540/CC2541 SDK). Hundreds of Chinese BLE module vendors copied these verbatim into shipping products without re-allocating UUIDs. The accompanying example uses them as an Accelerometer Service. The actual host vendor varies per product..",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -83888,6 +84050,11 @@
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://stripe.com/files/docs/terminal/c2xbt_product_sheet.pdf",
+                "description": "In target APK com.derickio.homebase360 v2.2.10, com.stripe.bbpos.bbdevice.ccc067zz.onServicesDiscovered resolves FFA2 with BluetoothGattService.getCharacteristic and stores it as the outbound characteristic. The writer sets its value from protocol payload bytes and calls BluetoothGatt.writeCharacteristic, splitting longer messages into 18-byte chunks. TX_DATA is a conservative name from that observed data flow. The linked Stripe-hosted product sheet identifies BBPOS Limited as the reader maker; it does not itself document the UUID assignment.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -91121,6 +91288,13 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.derickio.homebase360",
+                "version_code": 60,
+                "version_name": "2.2.10",
+                "package_path": "AndroZoo/apks/38/com.derickio.homebase360_38AA6A95111BAA17779509EC3F3DA9B7F33BF2EDB6175097A94BBDDF029286C8.apk",
+                "description": "Target-only manual review of the packaged BBPOS reader GATT profile; APK SHA-256 verified."
             }
         ],
         "parent_UUID": "ffa0"
@@ -95787,6 +95961,11 @@
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://stripe.com/files/docs/terminal/c2xbt_product_sheet.pdf",
+                "description": "In target APK com.derickio.homebase360 v2.2.10, com.stripe.bbpos.bbdevice.ccc067zz.onServicesDiscovered calls BluetoothGattService.getCharacteristic(FFA3) and stores the result, but no read, write, or notification operation on that field is present in the decompiled source. The linked Stripe-hosted product sheet identifies BBPOS Limited as the reader maker; it does not itself document the UUID assignment.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -102894,6 +103073,13 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.derickio.homebase360",
+                "version_code": 60,
+                "version_name": "2.2.10",
+                "package_path": "AndroZoo/apks/38/com.derickio.homebase360_38AA6A95111BAA17779509EC3F3DA9B7F33BF2EDB6175097A94BBDDF029286C8.apk",
+                "description": "Target-only manual review of the packaged BBPOS reader GATT profile; APK SHA-256 verified."
             }
         ],
         "parent_UUID": "ffa0"
@@ -106957,7 +107143,7 @@
     {
         "UUID": "ffa7",
         "company": "Antilost (inferred from package id)",
-        "UUID_name": "Unknown",
+        "UUID_name": "MOTION_NOTIFICATION",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app com.antilost.clickfinder. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -106966,6 +107152,10 @@
             {
                 "description": "Found in decompiled DEX of com.antilost.clickfinder v1.07 (versionCode 8). Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `Bluetooth/ServicioBLE.java:601-602` enables notifications on the resolved characteristic and retrieves it with `getService(0xFFA0).getCharacteristic(0xFFA7)`; lines 643-656 discover/store 0xFFA7, and lines 414-417 handle the event as motion.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -106975,6 +107165,13 @@
                 "version_name": "1.07",
                 "package_path": "BLUUID_APKS/0366/1fc66047d3c7948278a0da3869f46639db1537ee562cdb6cb6e1a4a627c557df/1fc66047d3c7948278a0da3869f46639db1537ee562cdb6cb6e1a4a627c557df.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Manually recovered from explicit getCharacteristic(0xFFA7), notification enable, and motion-event handling."
             }
         ],
         "parent_UUID": "ffa0"
@@ -111821,6 +112018,10 @@
             {
                 "description": "Found in decompiled DEX of com.glassbiller.techside_native v4.2.22 (versionCode 83), in Java field `UUID_CHARACTERISTIC_READ_CONN_INTERVAL`, declared in Java package `com.squareup.cardreader.ble` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Exact target APK SHA-256 6bc9b62fe06cb18e83fadda6264f7dd324155b5efcfe6f069e567e6e01398824; decompiled source com.squareup.cardreader.ble.R12Gatt.java declares UUID_CHARACTERISTIC_READ_CONN_INTERVAL and assigns fb973fb2-e496-4954-8fdc-cc49455a5ca7. R12Gatt.LCR_CHARACTERISTICS includes this value.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -111963,6 +112164,12 @@
                 "version_name": "4.2.22",
                 "package_path": "AndroZoo/apks/00/com.glassbiller.techside_native_0063FBFC7BD75B44727F814BA604B8724D549A76732F67569A0F249A946BC1AF.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_CHARACTERISTIC_READ_CONN_INTERVAL`."
+            },
+            {
+                "package_id": "com.acuityscheduling.app.android",
+                "version_code": 1788445294,
+                "version_name": "97.0.0",
+                "package_path": "AndroZoo/apks/6b/com.acuityscheduling.app.android_6BC9B62FE06CB18E83FADDA6264F7DD324155B5EFCFE6F069E567E6E01398824.apk"
             }
         ],
         "parent_UUID": "4362f634-04e8-4f03-b07f-434f0d7551e0"
@@ -118339,6 +118546,56 @@
             }
         ],
         "parent_UUID": "a76eb9e0-f3ac-4990-84cf-3a94d2426b2b"
+    },
+    {
+        "UUID": "f9aade80-819c-4da9-aee7-6aedc5346c83",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 1ce95b6c-f868-4329-8927-9e22e7651a5c by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): f9aade80-819c-4da9-aee7-6aedc5346c83 is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:186. Paired lookup at simple_jadx/sources/be/xq.java:2059 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1ce95b6c-f868-4329-8927-9e22e7651a5c.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "1ce95b6c-f868-4329-8927-9e22e7651a5c"
+    },
+    {
+        "UUID": "fff4c81c-a768-4cf0-a26c-8387ae18e790",
+        "company": "Bushnell Outdoor Products",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Proprietary GATT characteristic used under service 1ce95b6c-f868-4329-8927-9e22e7651a5c by the target app's Bushnell device communication code; the exact function is not named in this build.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): fff4c81c-a768-4cf0-a26c-8387ae18e790 is used as a characteristic UUID. Source profile compiled from WingmanHdDevice.kt. Literal defined at simple_jadx/sources/wd/k.java:174. Paired lookup at simple_jadx/sources/be/rl.java:5692 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: 1ce95b6c-f868-4329-8927-9e22e7651a5c.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
+            }
+        ],
+        "parent_UUID": "1ce95b6c-f868-4329-8927-9e22e7651a5c"
     },
     {
         "UUID": "ff36",
@@ -127020,7 +127277,7 @@
     {
         "UUID": "fff4",
         "company": "Texas Instruments BLE-Stack SimpleProfile example (widely copied by Chinese CC2541-based BLE module makers)",
-        "UUID_name": "TI_SIMPLEPROFILE_CHAR4",
+        "UUID_name": "TI_SIMPLEPROFILE_CHAR4 / LOCK_NOTIFY / CHAR_AUTH",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app digifit.android.virtuagym.pro.forgefit24, declared as Java field `f12492c`. Classification determined by naming-convention.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -129157,6 +129414,19 @@
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Target APK DEX: BluetoothImpl assigns fff4 to c1 and enables local GATT notifications for c1; electricmeter.api.GattCallbackHelper names the same UUID_NODIFY and enables notifications/CCCD (BluetoothImpl.java:438,476-480; electricmeter/api/GattCallbackHelper.java:61-64,362-364). The source spelling is NODIFY; normalized here to NOTIFY.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "Target APK source: simple_jadx/sources/com/ttlock/bl/sdk/watermeter/api/WaterGattCallbackHelper.java:25 and electricmeter/api/GattCallbackHelper.java:61 set UUID_NODIFY to 0xfff4 (source spelling); BluetoothImpl.java:476-480 matches c1 (0xfff4) and enables notifications.",
+                "submitter": "GPT-6 Luna",
+                "URL": "https://docs.rs/ttlock-core/latest/src/ttlock_core/policy.rs.html"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `MusicLoader.java:39,107` defines CHAR_AUTH_UUID as 0xFFF4; `MusicLoader.java:196-203` gets it from the 0xFFF0 service. `GestionBle.java:761-769` independently finds 0xFFF4 under 0xFFF0 and writes a device command.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -132582,6 +132852,27 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.rbsmartlockapp",
+                "version_code": 778,
+                "version_name": "1.1.38",
+                "package_path": "AndroZoo/apks/3d/com.rbsmartlockapp_3DAFE46E8913410B25ED02823A775AADFE46CC775A9E007CE7854897FDDE5755.apk",
+                "description": "Target SHA-256 3dafe46e8913410b25ed02823a775aadfe46cc775a9e007ce7854897fdde5755; observed in com.ttlock.bl.sdk GATT handling."
+            },
+            {
+                "package_id": "com.desi.roof",
+                "version_code": 774,
+                "version_name": "1.1.38",
+                "package_path": "AndroZoo/apks/32/com.desi.roof_3250121F7C1F2156034DA1A8356CA3D6DC76C9DE9F9A286985B64FAF3C8E566B.apk",
+                "description": "DESi Smart; APK SHA-256 verified as 3250121f7c1f2156034da1a8356ca3d6dc76c9de9f9a286985b64faf3c8e566b; target-only GATT review."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Exact-build use: CHAR_AUTH_UUID is retrieved from SRV_CUSTOM_UUID (0xFFF0)."
             }
         ],
         "parent_UUID": "ffd0"
@@ -156654,7 +156945,7 @@
     {
         "UUID": "ffe0",
         "company": "JNHuaMao Technology (HM-10 BLE module; ffe0+ffe1 also used by many CC2541-based HM-10 clones)",
-        "UUID_name": "QINGNIU_WSP_SERVICE",
+        "UUID_name": "QINGNIU_WSP_SERVICE / SERVICE_PHONE_ALERT",
         "UUID_purpose": "GATT Service (QINGNIU_WSP_SERVICE) from Qingniu Scale SDK — WSP scale primary service. The Qingniu SDK is shipped by many Chinese smart-scale OEMs (the host APK digifit.android.virtuagym.pro.forgefit24 integrates it for third-party scale support).",
         "UUID_usage_array": [
             "GATT Service"
@@ -160697,6 +160988,14 @@
             },
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `ZzzGattAttributes.java:38` names 0xFFE0 SERVICE_PHONE_ALERT; `Bluetooth/ServicioBLE.java:618` resolves it with BluetoothGatt.getService before retrieving characteristic 0xFFE1 and enabling its descriptor notification.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): ffe0 is used as a service UUID. Source profile compiled from WingMan.kt. Literal defined at simple_jadx/sources/wd/h.java:43. Paired lookup at simple_jadx/sources/yd/g.java:451 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -166650,6 +166949,20 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `a`."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Exact-build use: the BLE callback resolves 0xFFE0 as a service before retrieving 0xFFE1."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
         ]
     },
@@ -167030,7 +167343,7 @@
     {
         "UUID": "ffe1",
         "company": "JNHuaMao Technology (HM-10 BLE module; ffe0+ffe1 also used by many CC2541-based HM-10 clones)",
-        "UUID_name": "BIRD_AIR_COMMAND_UUID",
+        "UUID_name": "CHARACTERISTIC_KEY_PRESS / PHONE_ALERT",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app digifit.android.virtuagym.pro.forgefit24. No Java field-name hint available (likely an obfuscated identifier). Shared-SDK signal: this UUID appeared in many host apps whose package vendors don't share any token, so the original SDK vendor isn't visible from the host-app side. Phase-4 identification (scripts/list_shared_sdk_clusters.py) will upgrade this record. Phase-4 SDK identification: 0xFFE0 service + 0xFFE1 transparent-UART characteristic is the canonical HM-10 BLE module GATT layout. JNHuaMao Technology designed the HM-10 around the TI CC2541; the same UUIDs are reused by clone modules from many vendors (HM-11, AT-09, JDY-08, etc.). Apps that talk to HM-10 or any of its clones carry these..",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -171193,6 +171506,14 @@
             },
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `MusicLoader.java:38,108` names 0xFFE1 CHARACTERISTIC_KEY_PRESS_UUID; `Bluetooth/ServicioBLE.java:284-286` handles its notification value and lines 617-618 enable notifications under 0xFFE0. The Nut SDK also labels this value PHONE_ALERT in `ZzzGattAttributes.java:39`.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "Found in target com.bushnell.golf v3.0.6 (versionCode 80): ffe1 is used as a characteristic UUID. Source profile compiled from WingMan.kt. Literal defined at simple_jadx/sources/wd/h.java:46. Paired lookup at simple_jadx/sources/yd/g.java:451 goes through ae.d.D0; ae/d.java:67 names its arguments serviceUUID and characteristicUUID; vd/y.java:149-160 maps them to BluetoothGatt.getService and BluetoothGattService.getCharacteristic. Paired service UUID: ffe0.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -177321,6 +177642,20 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f9120b`."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Exact-build use: 0xFFE1 is handled as a key-press notification characteristic under 0xFFE0."
+            },
+            {
+                "package_id": "com.bushnell.golf",
+                "version_code": 80,
+                "version_name": "3.0.6",
+                "package_path": "AndroZoo/apks/c0/com.bushnell.golf_C0C616C0C3578AA66261D9A14AC7138F8A554F8EE7D60F3B1EEC6738D08DF503.apk",
+                "description": "Target-build-only evidence reviewed from the simple_jadx source tree; canonical CLUES data was not modified."
             }
         ],
         "parent_UUID": "ffe0"
@@ -189350,6 +189685,15 @@
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in assets/index.android.bundle (Hermes HBC v96) for com.mbltecnologia.mechanicmanual v1.62.1 (versionCode 151). BleContextProvider assigns 0000fff1-0000-1000-8000-00805f9b34fb to a closure slot used as the second argument to monitorCharacteristicForService and readCharacteristicForService; the first argument is the fff0 service. This identifies it as the incoming OBD-II data characteristic. Classification source: Hermes decompile API-usage trace.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/developer?id=MBL+Tecnologia+LTDA",
+                "description": "Google Play lists Mechanics Manual under MBL Tecnologia LTDA; used for APK publisher attribution.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -196709,6 +197053,13 @@
                 "version_name": "4.6.9.7",
                 "package_path": "AndroZoo/apks/00/com.kitty.hok_00ECF33B47FDF6C22CC6C7C487038E3097B2B06B41AE4E3D299BC9EE5170267E.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_4G_TX`."
+            },
+            {
+                "package_id": "com.mbltecnologia.mechanicmanual",
+                "version_code": 151,
+                "version_name": "1.62.1",
+                "package_path": "AndroZoo/apks/5e/com.mbltecnologia.mechanicmanual_5EB9A007638C71438D63662C94AC580BA2AAD08DF6D9966F0586DDCF819BF38B.apk",
+                "description": "Observed in assets/index.android.bundle (Hermes HBC v96) as the read/monitor characteristic for service fff0."
             }
         ],
         "parent_UUID": "ffe0"
@@ -196716,7 +197067,7 @@
     {
         "UUID": "fff2",
         "company": "Texas Instruments BLE-Stack SimpleProfile example (widely copied by Chinese CC2541-based BLE module makers)",
-        "UUID_name": "TI_SIMPLEPROFILE_CHAR2",
+        "UUID_name": "TI_SIMPLEPROFILE_CHAR2 / LOCK_WRITE / MAC Address",
         "UUID_purpose": "Custom GATT Characteristic observed in Android app digifit.android.virtuagym.pro.forgefit24. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -201489,6 +201840,28 @@
             },
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Target APK DEX: BluetoothImpl assigns fff2 to b1 and the GATT callback selects b1 as the write characteristic; electricmeter.api.GattCallbackHelper names the same UUID_WRITE and stores the matching characteristic for outbound writes (BluetoothImpl.java:439,475; electricmeter/api/GattCallbackHelper.java:60-63,361).",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "Target APK source: simple_jadx/sources/com/ttlock/bl/sdk/watermeter/api/WaterGattCallbackHelper.java:24 and electricmeter/api/GattCallbackHelper.java:60 set UUID_WRITE to 0xfff2; BluetoothImpl.java:475 matches b1 (0xfff2) while iterating characteristics under service a1 (0x1910).",
+                "submitter": "GPT-6 Luna",
+                "URL": "https://docs.rs/ttlock-core/latest/src/ttlock_core/policy.rs.html"
+            },
+            {
+                "description": "Found in assets/index.android.bundle (Hermes HBC v96) for com.mbltecnologia.mechanicmanual v1.62.1 (versionCode 151). BleContextProvider assigns 0000fff2-0000-1000-8000-00805f9b34fb to a closure slot used as the second argument to writeCharacteristicWithoutResponseForService; the first argument is the fff0 service. The code encodes outgoing ELM327 commands for this write. Classification source: Hermes decompile API-usage trace.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/developer?id=MBL+Tecnologia+LTDA",
+                "description": "Google Play lists Mechanics Manual under MBL Tecnologia LTDA; used for APK publisher attribution.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The app JavaScript bundle defines MAC_CHS_UUID = \"fff2\"; HBC function 41649 passes it to BLE manager read with CUSTOM_SERVICE_UUID = \"fff0\". APK SHA-256: 104d08be3044e50c7b31526146001663b47f84af3425b3715eaa0b14cdb1d3da. App attribution: https://play.google.com/store/apps/details?id=starshipproduct.perifitmainapp.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -208219,6 +208592,34 @@
                 "version_name": "4.6.9.7",
                 "package_path": "AndroZoo/apks/00/com.kitty.hok_00ECF33B47FDF6C22CC6C7C487038E3097B2B06B41AE4E3D299BC9EE5170267E.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_4G_RX`."
+            },
+            {
+                "package_id": "com.rbsmartlockapp",
+                "version_code": 778,
+                "version_name": "1.1.38",
+                "package_path": "AndroZoo/apks/3d/com.rbsmartlockapp_3DAFE46E8913410B25ED02823A775AADFE46CC775A9E007CE7854897FDDE5755.apk",
+                "description": "Target SHA-256 3dafe46e8913410b25ed02823a775aadfe46cc775a9e007ce7854897fdde5755; observed in com.ttlock.bl.sdk GATT handling."
+            },
+            {
+                "package_id": "com.desi.roof",
+                "version_code": 774,
+                "version_name": "1.1.38",
+                "package_path": "AndroZoo/apks/32/com.desi.roof_3250121F7C1F2156034DA1A8356CA3D6DC76C9DE9F9A286985B64FAF3C8E566B.apk",
+                "description": "DESi Smart; APK SHA-256 verified as 3250121f7c1f2156034da1a8356ca3d6dc76c9de9f9a286985b64faf3c8e566b; target-only GATT review."
+            },
+            {
+                "package_id": "com.mbltecnologia.mechanicmanual",
+                "version_code": 151,
+                "version_name": "1.62.1",
+                "package_path": "AndroZoo/apks/5e/com.mbltecnologia.mechanicmanual_5EB9A007638C71438D63662C94AC580BA2AAD08DF6D9966F0586DDCF819BF38B.apk",
+                "description": "Observed in assets/index.android.bundle (Hermes HBC v96) as the command write characteristic for service fff0."
+            },
+            {
+                "package_id": "starshipproduct.perifitmainapp",
+                "version_code": 10001932,
+                "version_name": "4.162.1",
+                "package_path": "AndroZoo/apks/10/starshipproduct.perifitmainapp_104D08BE3044E50C7B31526146001663B47F84AF3425B3715EAA0B14CDB1D3DA.apk",
+                "description": "Perifit Care app."
             }
         ],
         "parent_UUID": "ffe0"
@@ -213455,7 +213856,7 @@
     {
         "UUID": "fff0",
         "company": "Texas Instruments BLE-Stack SimpleProfile example (widely copied by Chinese CC2541-based BLE module makers)",
-        "UUID_name": "TI_SIMPLEPROFILE_SERVICE",
+        "UUID_name": "TI_SIMPLEPROFILE_SERVICE / SRV_CUSTOM",
         "UUID_purpose": "Custom GATT Service observed in Android app digifit.android.virtuagym.pro.forgefit24, declared as Java field `f12491a`. Classification determined by naming-convention. Shared-SDK signal: this UUID appeared in many host apps whose package vendors don't share any token, so the original SDK vendor isn't visible from the host-app side. Phase-4 identification (scripts/list_shared_sdk_clusters.py) will upgrade this record. Phase-4 SDK identification: 0xFFF0+0xFFF1 are example service+characteristic UUIDs from TI's BLE-Stack SimpleProfile sample. Copied verbatim by many cheap Chinese BLE modules (alongside the FFAx and FFEx ranges) without proper SIG allocation. The actual host vendor varies..",
         "UUID_usage_array": [
             "GATT Service"
@@ -213560,8 +213961,8 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "description": "Found in decompiled DEX of com.us.thinkcarpro v2.9.1 (versionCode 93), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.us.thinkcarpro v2.9.1 (versionCode 93), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: usage:getService.",
+                "submitter": "GPT-6 Sol"
             },
             {
                 "description": "Found in decompiled DEX of com.us.bt200 v1.4.1 (versionCode 22), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: file-level-default.",
@@ -213949,8 +214350,8 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "description": "Found in decompiled DEX of com.us.thinkdiag.mini v2.9.2 (versionCode 92), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.us.thinkdiag.mini v2.9.2 (versionCode 92), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: usage:getService.",
+                "submitter": "GPT-6 Sol"
             },
             {
                 "description": "Found in decompiled DEX of com.phyla.phyla v2024.01.23-9261 (versionCode 9261), in Java field `uuidFromString`. Classification source: naming-convention.",
@@ -216545,8 +216946,8 @@
                 "submitter": "Claude (Opus 4.7)"
             },
             {
-                "description": "Found in decompiled DEX of com.us.thinkdriver v2.9.1 (versionCode 93), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Found in decompiled DEX of com.us.thinkdriver v2.9.1 (versionCode 93), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: usage:getService.",
+                "submitter": "GPT-6 Sol"
             },
             {
                 "description": "Found in decompiled DEX of com.coachcare.twentylighterCoachCare v2.55.000 (versionCode 255000), in Java field `UUID_IBT_SERVICES_1`, declared in Java package `com.qn.device.constant` (third-party SDK). Classification source: field-name:UUID_IBT_SERVICES_1.",
@@ -218504,19 +218905,7 @@
                 "submitter": "GPT-6 Sol"
             },
             {
-                "description": "Found in decompiled DEX of com.us.thinkdriver v2.9.1 (versionCode 93), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: usage:getService.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
                 "description": "Found in decompiled DEX of com.us.thinkcar.tcma v1.3.3 (versionCode 13), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: usage:getService.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.us.thinkdiag.mini v2.9.2 (versionCode 92), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: usage:getService.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.us.thinkcarpro v2.9.1 (versionCode 93), in Java field `a`, declared in Java package `j.e0.a.a.b` (third-party SDK). Classification source: usage:getService.",
                 "submitter": "GPT-6 Sol"
             },
             {
@@ -218949,6 +219338,23 @@
             },
             {
                 "description": "GPT-6 Luna review: this UUID is reused by unrelated BLE profiles; a unique owner or global semantic name cannot be inferred from the UUID alone.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `MusicLoader.java:43,106` defines SRV_CUSTOM_UUID as 0xFFF0; `MusicLoader.java:196` resolves it with BluetoothGatt.getService, and `GestionBle.java:761-769` also locates it before selecting 0xFFF4.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "Found in assets/index.android.bundle (Hermes HBC v96) for com.mbltecnologia.mechanicmanual v1.62.1 (versionCode 151). BleContextProvider assigns 0000fff0-0000-1000-8000-00805f9b34fb to a closure slot used as the first argument to monitorCharacteristicForService, readCharacteristicForService, and writeCharacteristicWithoutResponseForService. The surrounding app code initializes an ELM327 connection. Classification source: Hermes decompile API-usage trace.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/developer?id=MBL+Tecnologia+LTDA",
+                "description": "Google Play lists Mechanics Manual under MBL Tecnologia LTDA; used for APK publisher attribution.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The app JavaScript bundle defines CUSTOM_SERVICE_UUID = \"fff0\"; HBC function 41649 passes it as the service UUID to the BLE manager read operation, paired with characteristic fff2. APK SHA-256: 104d08be3044e50c7b31526146001663b47f84af3425b3715eaa0b14cdb1d3da. App attribution: https://play.google.com/store/apps/details?id=starshipproduct.perifitmainapp.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -226890,6 +227296,27 @@
                 "version_name": "4.6.9.7",
                 "package_path": "AndroZoo/apks/00/com.kitty.hok_00ECF33B47FDF6C22CC6C7C487038E3097B2B06B41AE4E3D299BC9EE5170267E.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_SERVICE_4G_TRANSPARENT`."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Exact-build use: SRV_CUSTOM_UUID is passed to BluetoothGatt.getService."
+            },
+            {
+                "package_id": "com.mbltecnologia.mechanicmanual",
+                "version_code": 151,
+                "version_name": "1.62.1",
+                "package_path": "AndroZoo/apks/5e/com.mbltecnologia.mechanicmanual_5EB9A007638C71438D63662C94AC580BA2AAD08DF6D9966F0586DDCF819BF38B.apk",
+                "description": "Observed in assets/index.android.bundle (Hermes HBC v96) as the service UUID for the app's ELM327/OBD-II BLE workflow."
+            },
+            {
+                "package_id": "starshipproduct.perifitmainapp",
+                "version_code": 10001932,
+                "version_name": "4.162.1",
+                "package_path": "AndroZoo/apks/10/starshipproduct.perifitmainapp_104D08BE3044E50C7B31526146001663B47F84AF3425B3715EAA0B14CDB1D3DA.apk",
+                "description": "Perifit Care app."
             }
         ]
     },
@@ -237743,6 +238170,175 @@
         "parent_UUID": "91c10d9c-aaef-42bd-b6d6-8a648c19213d"
     },
     {
+        "UUID": "f3f6ce01-b257-4336-acd8-3010817837e4",
+        "company": "Soundbrenner",
+        "UUID_name": "Metronome",
+        "UUID_purpose": "Core model metronome GATT service.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX com/soundbrenner/bluetooth/bledevices/profile/CoreProfile.java:251-253 defines MetronomeService as SbBleService, names it 'Metronome Service', and assigns this UUID.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ]
+    },
+    {
+        "UUID": "f88e020c-7d7a-4745-8351-d5a32ea27b31",
+        "company": "Soundbrenner",
+        "UUID_name": "UI Navigation",
+        "UUID_purpose": "Operation-profile characteristic shared by Core, Core 2, and Spark. Candidate parent services: 77ef8bb5-7d4d-4a66-bd64-3f93cc01ccda, c2000ab3-2547-0915-bf66-f6d82d11e8f1, 5aaa5dc8-2fb6-0ed9-6c71-e25a9f8734ab.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX CoreProfile.java, Core2Profile.java, and SparkProfile.java each define this named characteristic under that model's OperationService and assign the same UUID. The parent_UUID field is omitted because the APK gives three distinct parent service UUIDs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ]
+    },
+    {
+        "UUID": "fa231229-45a6-1244-6708-c7601c75a13d",
+        "company": "Soundbrenner",
+        "UUID_name": "Android Notification",
+        "UUID_purpose": "Operation-profile characteristic shared by Core, Core 2, and Spark. Candidate parent services: 77ef8bb5-7d4d-4a66-bd64-3f93cc01ccda, c2000ab3-2547-0915-bf66-f6d82d11e8f1, 5aaa5dc8-2fb6-0ed9-6c71-e25a9f8734ab.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX CoreProfile.java, Core2Profile.java, and SparkProfile.java each define this named characteristic under that model's OperationService and assign the same UUID. The parent_UUID field is omitted because the APK gives three distinct parent service UUIDs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ]
+    },
+    {
+        "UUID": "fafafaf9-3ab6-5611-4545-d6712f5221fe",
+        "company": "Soundbrenner",
+        "UUID_name": "Practice Tracking",
+        "UUID_purpose": "Operation-profile characteristic shared by Core, Core 2, and Spark. Candidate parent services: 77ef8bb5-7d4d-4a66-bd64-3f93cc01ccda, c2000ab3-2547-0915-bf66-f6d82d11e8f1, 5aaa5dc8-2fb6-0ed9-6c71-e25a9f8734ab.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX CoreProfile.java, Core2Profile.java, and SparkProfile.java each define this named characteristic under that model's OperationService and assign the same UUID. The parent_UUID field is omitted because the APK gives three distinct parent service UUIDs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ]
+    },
+    {
+        "UUID": "fb130939-37b6-5621-4505-d6712d52f13e",
+        "company": "Soundbrenner",
+        "UUID_name": "App Dock",
+        "UUID_purpose": "Operation-profile characteristic shared by Core, Core 2, and Spark. Candidate parent services: 77ef8bb5-7d4d-4a66-bd64-3f93cc01ccda, c2000ab3-2547-0915-bf66-f6d82d11e8f1, 5aaa5dc8-2fb6-0ed9-6c71-e25a9f8734ab.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX CoreProfile.java, Core2Profile.java, and SparkProfile.java each define this named characteristic under that model's OperationService and assign the same UUID. The parent_UUID field is omitted because the APK gives three distinct parent service UUIDs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ]
+    },
+    {
+        "UUID": "ffb5c754-bd9c-439e-822c-f676806b1331",
+        "company": "Soundbrenner",
+        "UUID_name": "LED and Haptic Effect Preview",
+        "UUID_purpose": "Operation-profile characteristic shared by Core, Core 2, and Spark. Candidate parent services: 77ef8bb5-7d4d-4a66-bd64-3f93cc01ccda, c2000ab3-2547-0915-bf66-f6d82d11e8f1, 5aaa5dc8-2fb6-0ed9-6c71-e25a9f8734ab.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX CoreProfile.java, Core2Profile.java, and SparkProfile.java each define this named characteristic under that model's OperationService and assign the same UUID. The parent_UUID field is omitted because the APK gives three distinct parent service UUIDs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ]
+    },
+    {
+        "UUID": "fbaf40a5-ccd9-4e41-88f6-ef56c0ba299d",
+        "company": "Soundbrenner",
+        "UUID_name": "RxData",
+        "UUID_purpose": "Pulse data receive characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "JADX com/soundbrenner/bluetooth/bledevices/profile/PulseProfile.java:56-64 defines RxData as a named characteristic nested under PulseService.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.soundbrenner.pulse",
+                "version_code": 204,
+                "version_name": "1.32.9",
+                "package_path": "AndroZoo/apks/2d/com.soundbrenner.pulse_2DFDF165FDE8376FEE4A88D9504EC75A03448CBFB23496B641D7BAFF7582774D.apk",
+                "description": "Target-only review of APK SHA-256 2dfdf165fde8376fee4a88d9504ec75a03448cbfb23496b641d7baff7582774d."
+            }
+        ],
+        "parent_UUID": "ccb2986e-1b2d-4c29-9cf8-25cdf8fe44fc"
+    },
+    {
         "UUID": "f0447684-3673-4178-91f6-846c85642fc1",
         "company": "Spaceflow s.r.o.",
         "UUID_name": "CAN_CREATE_VISIT",
@@ -243506,6 +244102,10 @@
             {
                 "description": "Found in decompiled DEX of jp.anima.app v2.5.5 (versionCode 96), in Java field `BLE_UUID_SERVICE`. Classification source: field-name:BLE_UUID_SERVICE.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in exact build com.automatismoschacon.inthesk v3.6.2 (versionCode 167), decompiled DEX: `ZzzGattAttributes.java:31` defines SERVICE_OAUTH; `NutDeviceController.java:352-357` passes it as the service argument, and `getCharact` at lines 633-650 resolves it with BluetoothGatt.getService.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -244194,6 +244794,13 @@
                 "version_name": "2.5.5",
                 "package_path": "AndroZoo/apks/00/jp.anima.app_00190F66F8486241AF689214B119F6C7F6922F3C80D67B5F694685C9A28AF612.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BLE_UUID_SERVICE`."
+            },
+            {
+                "package_id": "com.automatismoschacon.inthesk",
+                "version_code": 167,
+                "version_name": "3.6.2",
+                "package_path": "AndroZoo/apks/53/com.automatismoschacon.inthesk_531027BA02395A246C12AB49EF16B16CD041012817D3E6EC841A36CC3BA51119.apk",
+                "description": "Exact-build use: SERVICE_OAUTH is the service UUID passed into the controller’s getCharact/getService path."
             }
         ]
     },
@@ -251095,6 +251702,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=cn.fitcare.heartool",
                 "description": "Verified current Google Play listing for cn.fitcare.heartool. This listing does not establish that archived APK version 2.0.5 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "FBKBleUuids.java:47 defines UUID_OLDBAND_WRITE; chooseDeviceUuid returns it for the OldTracker write path (:129, :137), so it is used as the selected characteristic UUID.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -251139,6 +251750,13 @@
                 "version_name": "2.0.5",
                 "package_path": "AndroZoo/apks/d1/cn.fitcare.heartool_D14243E2CB34882F2863DFB656A841003D1A54D6A4677C7E3B8E70CCB3216F80.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_OLDBAND_WRITE`."
+            },
+            {
+                "package_id": "net.punchlab.app",
+                "version_code": 463,
+                "version_name": "4.8.36",
+                "package_path": "AndroZoo/apks/fa/net.punchlab.app_FA7B6AD4C21F13547DDB81B32FC76CC3E8092D97D1EA1DFD774CD7106321845D.apk",
+                "description": "Detected by apk-clues-extract scan; usage GATT Characteristic; Java field `UUID_OLDBAND_WRITE`."
             }
         ]
     },
@@ -251536,6 +252154,10 @@
                 "URL": "https://play.google.com/store/apps/details?id=cn.fitcare.heartool",
                 "description": "Verified current Google Play listing for cn.fitcare.heartool. This listing does not establish that archived APK version 2.0.5 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "FBKBleUuids.java:49 defines UUID_OLDSCALE_WRITE; chooseDeviceUuid returns it for the OldScale write path (:135), so it is used as the selected characteristic UUID.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -251559,6 +252181,13 @@
                 "version_name": "2.0.5",
                 "package_path": "AndroZoo/apks/d1/cn.fitcare.heartool_D14243E2CB34882F2863DFB656A841003D1A54D6A4677C7E3B8E70CCB3216F80.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_OLDSCALE_WRITE`."
+            },
+            {
+                "package_id": "net.punchlab.app",
+                "version_code": 463,
+                "version_name": "4.8.36",
+                "package_path": "AndroZoo/apks/fa/net.punchlab.app_FA7B6AD4C21F13547DDB81B32FC76CC3E8092D97D1EA1DFD774CD7106321845D.apk",
+                "description": "Detected by apk-clues-extract scan; usage GATT Characteristic; Java field `UUID_OLDSCALE_WRITE`."
             }
         ]
     },
@@ -265574,6 +266203,54 @@
         ]
     },
     {
+        "UUID": "ffcx",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Dynamically addressed debug-characteristic family in the target DFU client (UUID16 values 0xFFC0–0xFFCF)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Target APK source: Q7/a.java:262-273 constructs each value from 0xFFC0 through 0xFFCF with P8/b.java:172-174 and calls getCharacteristic for each. The loop logs found/not-found debug characteristics. This is an exact family pattern; the APK does not establish which members a device exposes or a unique owner.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.pavlok3.core",
+                "version_code": 934,
+                "version_name": "2.5.18",
+                "package_path": "AndroZoo/apks/fa/com.pavlok3.core_FA1368275A44E788A653DAF023F63E99D5A43D48987F8848C737B152F6E98E7B.apk"
+            }
+        ],
+        "regex": true
+    },
+    {
+        "UUID": "ffex",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Dynamically addressed image-version characteristic family in the target DFU clients (UUID16 values 0xFFE0–0xFFEF)",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Target APK source: Q7/a.java:275-286 constructs and probes 0xFFE0 through 0xFFEF with getCharacteristic; N7/b.java:863-875 separately probes 0xFFE0–0xFFEE under the OTA service and logs found image-version characteristics. P8/b.java:172-174 constructs the SIG-base UUID. The schema X wildcard exactly represents this full nibble range; individual device presence and a single parent service are not established.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.pavlok3.core",
+                "version_code": 934,
+                "version_name": "2.5.18",
+                "package_path": "AndroZoo/apks/fa/com.pavlok3.core_FA1368275A44E788A653DAF023F63E99D5A43D48987F8848C737B152F6E98E7B.apk"
+            }
+        ],
+        "regex": true
+    },
+    {
         "UUID": "fb349b5f-8000-0080-0010-0000feda0003",
         "company": "Unknown",
         "UUID_name": "Unknown",
@@ -267620,6 +268297,185 @@
                 "version_name": "1.16.1",
                 "package_path": "BLUUID_APKS/0957/2bdb5d3f60373f95b9e67e87dffe95ba2cae7846cdbab5c8d04cf0c8ec921b63/2bdb5d3f60373f95b9e67e87dffe95ba2cae7846cdbab5c8d04cf0c8ec921b63.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "fd4b0001-cce1-4033-93ce-002d5875f58a",
+        "company": "Whoop, Inc.",
+        "UUID_name": "MAVERICK",
+        "UUID_purpose": "Maverick / Goose wearable GATT service.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:96 initializes this UUID. simple_jadx/sources/it0/v.java:158 groups the service ID with the profile's five characteristic UUIDs. The recovered BLE path in x22/g.java compares profile service IDs with discovered BluetoothGattService UUIDs for Puffin; qj0/e.java names the four other profile service constants.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "fd4b0002-cce1-4033-93ce-002d5875f58a",
+        "company": "Whoop, Inc.",
+        "UUID_name": "MAVERICK_CMD_TO_STRAP",
+        "UUID_purpose": "Maverick / Goose wearable GATT characteristic for commands sent to the strap.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "fd4b0001-cce1-4033-93ce-002d5875f58a",
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:97 initializes this UUID. simple_jadx/sources/it0/v.java:158 places its named getter in the CMD_TO_STRAP slot of the Maverick / Goose profile. The Puffin BLE implementation resolves corresponding profile getters with BluetoothGattService.getCharacteristic; qj0/d.java also maps this category to the matching UUID for the four non-Puffin profiles.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "fd4b0003-cce1-4033-93ce-002d5875f58a",
+        "company": "Whoop, Inc.",
+        "UUID_name": "MAVERICK_CMD_FROM_STRAP",
+        "UUID_purpose": "Maverick / Goose wearable GATT characteristic for commands received from the strap.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "fd4b0001-cce1-4033-93ce-002d5875f58a",
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:98 initializes this UUID. simple_jadx/sources/it0/v.java:158 places its named getter in the CMD_FROM_STRAP slot of the Maverick / Goose profile. The Puffin BLE implementation resolves corresponding profile getters with BluetoothGattService.getCharacteristic; qj0/d.java also maps this category to the matching UUID for the four non-Puffin profiles.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "fd4b0004-cce1-4033-93ce-002d5875f58a",
+        "company": "Whoop, Inc.",
+        "UUID_name": "MAVERICK_EVENTS_FROM_STRAP",
+        "UUID_purpose": "Maverick / Goose wearable GATT characteristic for events received from the strap.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "fd4b0001-cce1-4033-93ce-002d5875f58a",
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:99 initializes this UUID. simple_jadx/sources/it0/v.java:158 places its named getter in the EVENTS_FROM_STRAP slot of the Maverick / Goose profile. The Puffin BLE implementation resolves corresponding profile getters with BluetoothGattService.getCharacteristic; qj0/d.java also maps this category to the matching UUID for the four non-Puffin profiles.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "fd4b0005-cce1-4033-93ce-002d5875f58a",
+        "company": "Whoop, Inc.",
+        "UUID_name": "MAVERICK_DATA_FROM_STRAP",
+        "UUID_purpose": "Maverick / Goose wearable GATT characteristic for data received from the strap.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "fd4b0001-cce1-4033-93ce-002d5875f58a",
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:100 initializes this UUID. simple_jadx/sources/it0/v.java:158 places its named getter in the DATA_FROM_STRAP slot of the Maverick / Goose profile. The Puffin BLE implementation resolves corresponding profile getters with BluetoothGattService.getCharacteristic; qj0/d.java also maps this category to the matching UUID for the four non-Puffin profiles.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "fd4b0007-cce1-4033-93ce-002d5875f58a",
+        "company": "Whoop, Inc.",
+        "UUID_name": "MAVERICK_MEMFAULT",
+        "UUID_purpose": "Maverick / Goose wearable GATT characteristic for MemFault data.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "fd4b0001-cce1-4033-93ce-002d5875f58a",
+        "evidence_array": [
+            {
+                "description": "Recovered source simple_jadx/sources/it0/w.java:101 initializes this UUID. simple_jadx/sources/it0/v.java:158 places its named getter in the MEMFAULT slot of the Maverick / Goose profile. The Puffin BLE implementation resolves corresponding profile getters with BluetoothGattService.getCharacteristic; qj0/d.java also maps this category to the matching UUID for the four non-Puffin profiles.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.whoop.android",
+                "description": "Google Play listing for package com.whoop.android identifies the developer as Whoop, Inc.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.whoop.android",
+                "version_code": 591726,
+                "version_name": "5.469.0",
+                "package_path": "AndroZoo/apks/75/com.whoop.android_754298790F642A1132510D934B8B39B4F6F38D5E572FE93E8391380D3610123F.apk",
+                "description": "Detected by target-only APK clue review; usage 'GATT Characteristic'."
             }
         ]
     },
