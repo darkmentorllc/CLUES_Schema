@@ -1506,6 +1506,15 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (US PropTech; Livly Resident apartment tenant-experience app — BLE for smart access)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.livly.android.livly_resident.circuit v2023.15.0 (versionCode 1575537180), in Java field `ALLEGION_SCHLAGE_INTEGRATION_ID`. Classification source: field-name:ALLEGION_SCHLAGE_INTEGRATION_ID.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (US PropTech; Livly Resident apartment tenant-experience app — BLE for smart access)"
             }
         ],
         "android_info_array": [
@@ -1549,6 +1558,13 @@
                 "version_code": 1575542943,
                 "version_name": "2024.2.1",
                 "package_path": "BLUUID_APKS/0999/22bb3b5254ec0a799f0df2bcadbf4fa48f9cb584a88b27995648026adefbeea5/22bb3b5254ec0a799f0df2bcadbf4fa48f9cb584a88b27995648026adefbeea5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ALLEGION_SCHLAGE_INTEGRATION_ID`."
+            },
+            {
+                "package_id": "com.livly.android.livly_resident.circuit",
+                "version_code": 1575537180,
+                "version_name": "2023.15.0",
+                "package_path": "AndroZoo/apks/01/com.livly.android.livly_resident.circuit_015894A5990EF3855CDDB58E00C1ABC346CA21E1DCAA87E714B2E5DEB353E21F.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ALLEGION_SCHLAGE_INTEGRATION_ID`."
             }
         ],
@@ -22090,6 +22106,71 @@
                 "URL": "https://github.com/hcrlab/Kubi/blob/master/app/src/main/java/com/revolverobotics/kubiapi/Kubi.java#L1493",
                 "description": "GPT-6 Luna SDK review: Kubi telepresence robot BLE profile. The same 12 UUIDs occur in three distinct host package IDs. Public Kubi source code maps every UUID and name. The 2015 Revolve Robotics release documents Zoom mobile integration via the Kubi API; the staging records do not prove which exact library artifact carried the class.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ingrails.noble_academy_secondary_boarding_school v3.10.1 (versionCode 254), in Java field `REGISTER_WRITE1P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE1P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.iron.hlegz v1.14.1.13 (versionCode 55), in Java field `f48285i`, declared in Java package `kt` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f48285i).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.mark.nvwev v1.4.77.3 (versionCode 5), in Java field `f33857i`, declared in Java package `is` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f33857i).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.learnol.xpoia v1.12.1.1 (versionCode 23), in Java field `f96345i`, declared in Java package `ws` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f96345i).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.infiprep.senthilcoachingacademy v1.4.52 (versionCode 38), in Java field `REGISTER_WRITE1P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE1P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.diy18.oubjl v1.4.79.8 (versionCode 4), in Java field `f46154i`, declared in Java package `ts` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f46154i).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.edmodoworld.parents.app v1.1.0 (versionCode 100100), in Java field `REGISTER_WRITE1P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE1P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.pseudobrookite.connect v1.1.6.47 (versionCode 11647), in Java field `REGISTER_WRITE1P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE1P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.hodor.gvknm v1.4.93.2 (versionCode 14), in Java field `f82491i`, declared in Java package `wr` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f82491i).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.popularcowbird.connect v1.1.6.46 (versionCode 11646), in Java field `REGISTER_WRITE1P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE1P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.lenord.hbkia v1.17.0.1 (versionCode 53), in Java field `f101321i`, declared in Java package `yt` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f101321i).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.overscribble.connect v1.1.6.58 (versionCode 11658), in Java field `REGISTER_WRITE1P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE1P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.app.testseries.missioninstituteprayagraj v01.01.143 (versionCode 143), in Java field `f21108i`, declared in Java package `hl` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f21108i).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.siddannadalawayi.learners v3.17.0 (versionCode 402), in Java field `f60241i`, declared in Java package `tg` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f60241i).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ga.englishawy v1.19 (versionCode 22), in Java field `REGISTER_WRITE1P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE1P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Kubi telepresence robot; shipped via Zoom Android SDK)"
             }
         ],
         "android_info_array": [
@@ -48713,6 +48794,111 @@
                 "version_name": "3.10.0",
                 "package_path": "AndroZoo/apks/00/com.exportsiseasy.learners_00F91DBFDBF94BA649E701ED6E697B1E25B40B15B81EC82C1C240B9BD986178A.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f59738i`."
+            },
+            {
+                "package_id": "com.ingrails.noble_academy_secondary_boarding_school",
+                "version_code": 254,
+                "version_name": "3.10.1",
+                "package_path": "AndroZoo/apks/01/com.ingrails.noble_academy_secondary_boarding_school_010556F7DD278CDDC4893171098BEE8F6B555919A6029947BAC5C98749D514DE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE1P_UUID`."
+            },
+            {
+                "package_id": "co.iron.hlegz",
+                "version_code": 55,
+                "version_name": "1.14.1.13",
+                "package_path": "AndroZoo/apks/01/co.iron.hlegz_011F8C8835E19B3C681D2F60DD8DD7EC129421974025C3A75FC9AAF609ED2DAE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f48285i`."
+            },
+            {
+                "package_id": "co.mark.nvwev",
+                "version_code": 5,
+                "version_name": "1.4.77.3",
+                "package_path": "AndroZoo/apks/01/co.mark.nvwev_0127A0B84C6B85A8AD172C08231EDBAC6142B4C7D42AB9155FAE08466D7B63D1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f33857i`."
+            },
+            {
+                "package_id": "co.learnol.xpoia",
+                "version_code": 23,
+                "version_name": "1.12.1.1",
+                "package_path": "AndroZoo/apks/01/co.learnol.xpoia_012E0D1ABE0D85BC71FBC2418EAF714DF3338ACC0F36A2314EDEF27540D74B34.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f96345i`."
+            },
+            {
+                "package_id": "com.infiprep.senthilcoachingacademy",
+                "version_code": 38,
+                "version_name": "1.4.52",
+                "package_path": "AndroZoo/apks/01/com.infiprep.senthilcoachingacademy_0139D4404B3FDD543120BC99757063C03CB1F8AF3AE2A7EF842F62958CE69A31.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE1P_UUID`."
+            },
+            {
+                "package_id": "co.diy18.oubjl",
+                "version_code": 4,
+                "version_name": "1.4.79.8",
+                "package_path": "AndroZoo/apks/01/co.diy18.oubjl_0143AF603A4300E4DC159AE6431F628D81A2D7C44F0D9F289304C15AE6AEFF6A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f46154i`."
+            },
+            {
+                "package_id": "com.edmodoworld.parents.app",
+                "version_code": 100100,
+                "version_name": "1.1.0",
+                "package_path": "AndroZoo/apks/01/com.edmodoworld.parents.app_0147C24ECD1166CD4336ED2DB5D2E667A547191BA736EE251112C66D482DE3CB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE1P_UUID`."
+            },
+            {
+                "package_id": "com.pseudobrookite.connect",
+                "version_code": 11647,
+                "version_name": "1.1.6.47",
+                "package_path": "AndroZoo/apks/01/com.pseudobrookite.connect_0174EE71D92277DCE98B1D4E6285351AF4A6A038EE647AA4685FFC917A07E63E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE1P_UUID`."
+            },
+            {
+                "package_id": "co.hodor.gvknm",
+                "version_code": 14,
+                "version_name": "1.4.93.2",
+                "package_path": "AndroZoo/apks/01/co.hodor.gvknm_01786B1F455BE6D1C80D6BBD6F3B771B695CAA302BB7A9F7147671BCFC643AD0.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f82491i`."
+            },
+            {
+                "package_id": "com.popularcowbird.connect",
+                "version_code": 11646,
+                "version_name": "1.1.6.46",
+                "package_path": "AndroZoo/apks/01/com.popularcowbird.connect_0183C78170FA757EE2707C3A624DEAFB706B3B6CAA36A11E3D152FBBD3C137EA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE1P_UUID`."
+            },
+            {
+                "package_id": "co.lenord.hbkia",
+                "version_code": 53,
+                "version_name": "1.17.0.1",
+                "package_path": "AndroZoo/apks/01/co.lenord.hbkia_01B70FF662BC9742685375F8B518DECC33DC1ACD91AE7F4DAE5EDDC17B8A628A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f101321i`."
+            },
+            {
+                "package_id": "com.overscribble.connect",
+                "version_code": 11658,
+                "version_name": "1.1.6.58",
+                "package_path": "AndroZoo/apks/01/com.overscribble.connect_01BEBE81E7DF23BC97B8423A6C0E7ACB138FA1B6D7A841C6A6983839D4FFDB45.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE1P_UUID`."
+            },
+            {
+                "package_id": "com.app.testseries.missioninstituteprayagraj",
+                "version_code": 143,
+                "version_name": "01.01.143",
+                "package_path": "AndroZoo/apks/01/com.app.testseries.missioninstituteprayagraj_01CDC4BEC1D21BA7376D81B54EF4C3BFFB079A185D5109B35B37DD226EDB4E51.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f21108i`."
+            },
+            {
+                "package_id": "com.siddannadalawayi.learners",
+                "version_code": 402,
+                "version_name": "3.17.0",
+                "package_path": "AndroZoo/apks/01/com.siddannadalawayi.learners_01D531AC65D59078F0B22659DC73BB597196517C40651340222B3AEE3A98085A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f60241i`."
+            },
+            {
+                "package_id": "com.ga.englishawy",
+                "version_code": 22,
+                "version_name": "1.19",
+                "package_path": "AndroZoo/apks/01/com.ga.englishawy_01E59DE140FDF9A36F6035E46DC8A9D9050088DBE8F48FBC0973B2E3E7CE3E5C.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE1P_UUID`."
             }
         ],
         "parent_UUID": "2a001800-2803-2801-2800-1d9ff2d5c442"
@@ -64427,6 +64613,71 @@
                 "URL": "https://github.com/hcrlab/Kubi/blob/master/app/src/main/java/com/revolverobotics/kubiapi/Kubi.java#L1493",
                 "description": "GPT-6 Luna SDK review: Kubi telepresence robot BLE profile. The same 12 UUIDs occur in three distinct host package IDs. Public Kubi source code maps every UUID and name. The 2015 Revolve Robotics release documents Zoom mobile integration via the Kubi API; the staging records do not prove which exact library artifact carried the class.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ingrails.noble_academy_secondary_boarding_school v3.10.1 (versionCode 254), in Java field `REGISTER_WRITE2P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE2P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.iron.hlegz v1.14.1.13 (versionCode 55), in Java field `f48286j`, declared in Java package `kt` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f48286j).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.mark.nvwev v1.4.77.3 (versionCode 5), in Java field `f33858j`, declared in Java package `is` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f33858j).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.learnol.xpoia v1.12.1.1 (versionCode 23), in Java field `f96346j`, declared in Java package `ws` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f96346j).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.infiprep.senthilcoachingacademy v1.4.52 (versionCode 38), in Java field `REGISTER_WRITE2P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE2P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.diy18.oubjl v1.4.79.8 (versionCode 4), in Java field `f46155j`, declared in Java package `ts` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f46155j).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.edmodoworld.parents.app v1.1.0 (versionCode 100100), in Java field `REGISTER_WRITE2P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE2P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.pseudobrookite.connect v1.1.6.47 (versionCode 11647), in Java field `REGISTER_WRITE2P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE2P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.hodor.gvknm v1.4.93.2 (versionCode 14), in Java field `f82492j`, declared in Java package `wr` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f82492j).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.popularcowbird.connect v1.1.6.46 (versionCode 11646), in Java field `REGISTER_WRITE2P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE2P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.lenord.hbkia v1.17.0.1 (versionCode 53), in Java field `f101322j`, declared in Java package `yt` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f101322j).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.overscribble.connect v1.1.6.58 (versionCode 11658), in Java field `REGISTER_WRITE2P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE2P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.app.testseries.missioninstituteprayagraj v01.01.143 (versionCode 143), in Java field `f21109j`, declared in Java package `hl` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f21109j).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.siddannadalawayi.learners v3.17.0 (versionCode 402), in Java field `f60242j`, declared in Java package `tg` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f60242j).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ga.englishawy v1.19 (versionCode 22), in Java field `REGISTER_WRITE2P_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(REGISTER_WRITE2P_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Kubi telepresence robot; shipped via Zoom Android SDK)"
             }
         ],
         "android_info_array": [
@@ -91050,6 +91301,111 @@
                 "version_name": "3.10.0",
                 "package_path": "AndroZoo/apks/00/com.exportsiseasy.learners_00F91DBFDBF94BA649E701ED6E697B1E25B40B15B81EC82C1C240B9BD986178A.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f59739j`."
+            },
+            {
+                "package_id": "com.ingrails.noble_academy_secondary_boarding_school",
+                "version_code": 254,
+                "version_name": "3.10.1",
+                "package_path": "AndroZoo/apks/01/com.ingrails.noble_academy_secondary_boarding_school_010556F7DD278CDDC4893171098BEE8F6B555919A6029947BAC5C98749D514DE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE2P_UUID`."
+            },
+            {
+                "package_id": "co.iron.hlegz",
+                "version_code": 55,
+                "version_name": "1.14.1.13",
+                "package_path": "AndroZoo/apks/01/co.iron.hlegz_011F8C8835E19B3C681D2F60DD8DD7EC129421974025C3A75FC9AAF609ED2DAE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f48286j`."
+            },
+            {
+                "package_id": "co.mark.nvwev",
+                "version_code": 5,
+                "version_name": "1.4.77.3",
+                "package_path": "AndroZoo/apks/01/co.mark.nvwev_0127A0B84C6B85A8AD172C08231EDBAC6142B4C7D42AB9155FAE08466D7B63D1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f33858j`."
+            },
+            {
+                "package_id": "co.learnol.xpoia",
+                "version_code": 23,
+                "version_name": "1.12.1.1",
+                "package_path": "AndroZoo/apks/01/co.learnol.xpoia_012E0D1ABE0D85BC71FBC2418EAF714DF3338ACC0F36A2314EDEF27540D74B34.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f96346j`."
+            },
+            {
+                "package_id": "com.infiprep.senthilcoachingacademy",
+                "version_code": 38,
+                "version_name": "1.4.52",
+                "package_path": "AndroZoo/apks/01/com.infiprep.senthilcoachingacademy_0139D4404B3FDD543120BC99757063C03CB1F8AF3AE2A7EF842F62958CE69A31.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE2P_UUID`."
+            },
+            {
+                "package_id": "co.diy18.oubjl",
+                "version_code": 4,
+                "version_name": "1.4.79.8",
+                "package_path": "AndroZoo/apks/01/co.diy18.oubjl_0143AF603A4300E4DC159AE6431F628D81A2D7C44F0D9F289304C15AE6AEFF6A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f46155j`."
+            },
+            {
+                "package_id": "com.edmodoworld.parents.app",
+                "version_code": 100100,
+                "version_name": "1.1.0",
+                "package_path": "AndroZoo/apks/01/com.edmodoworld.parents.app_0147C24ECD1166CD4336ED2DB5D2E667A547191BA736EE251112C66D482DE3CB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE2P_UUID`."
+            },
+            {
+                "package_id": "com.pseudobrookite.connect",
+                "version_code": 11647,
+                "version_name": "1.1.6.47",
+                "package_path": "AndroZoo/apks/01/com.pseudobrookite.connect_0174EE71D92277DCE98B1D4E6285351AF4A6A038EE647AA4685FFC917A07E63E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE2P_UUID`."
+            },
+            {
+                "package_id": "co.hodor.gvknm",
+                "version_code": 14,
+                "version_name": "1.4.93.2",
+                "package_path": "AndroZoo/apks/01/co.hodor.gvknm_01786B1F455BE6D1C80D6BBD6F3B771B695CAA302BB7A9F7147671BCFC643AD0.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f82492j`."
+            },
+            {
+                "package_id": "com.popularcowbird.connect",
+                "version_code": 11646,
+                "version_name": "1.1.6.46",
+                "package_path": "AndroZoo/apks/01/com.popularcowbird.connect_0183C78170FA757EE2707C3A624DEAFB706B3B6CAA36A11E3D152FBBD3C137EA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE2P_UUID`."
+            },
+            {
+                "package_id": "co.lenord.hbkia",
+                "version_code": 53,
+                "version_name": "1.17.0.1",
+                "package_path": "AndroZoo/apks/01/co.lenord.hbkia_01B70FF662BC9742685375F8B518DECC33DC1ACD91AE7F4DAE5EDDC17B8A628A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f101322j`."
+            },
+            {
+                "package_id": "com.overscribble.connect",
+                "version_code": 11658,
+                "version_name": "1.1.6.58",
+                "package_path": "AndroZoo/apks/01/com.overscribble.connect_01BEBE81E7DF23BC97B8423A6C0E7ACB138FA1B6D7A841C6A6983839D4FFDB45.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE2P_UUID`."
+            },
+            {
+                "package_id": "com.app.testseries.missioninstituteprayagraj",
+                "version_code": 143,
+                "version_name": "01.01.143",
+                "package_path": "AndroZoo/apks/01/com.app.testseries.missioninstituteprayagraj_01CDC4BEC1D21BA7376D81B54EF4C3BFFB079A185D5109B35B37DD226EDB4E51.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f21109j`."
+            },
+            {
+                "package_id": "com.siddannadalawayi.learners",
+                "version_code": 402,
+                "version_name": "3.17.0",
+                "package_path": "AndroZoo/apks/01/com.siddannadalawayi.learners_01D531AC65D59078F0B22659DC73BB597196517C40651340222B3AEE3A98085A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f60242j`."
+            },
+            {
+                "package_id": "com.ga.englishawy",
+                "version_code": 22,
+                "version_name": "1.19",
+                "package_path": "AndroZoo/apks/01/com.ga.englishawy_01E59DE140FDF9A36F6035E46DC8A9D9050088DBE8F48FBC0973B2E3E7CE3E5C.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REGISTER_WRITE2P_UUID`."
             }
         ],
         "parent_UUID": "2a001800-2803-2801-2800-1d9ff2d5c442"
@@ -106760,6 +107116,71 @@
                 "URL": "https://github.com/hcrlab/Kubi/blob/master/app/src/main/java/com/revolverobotics/kubiapi/Kubi.java#L1493",
                 "description": "GPT-6 Luna SDK review: Kubi telepresence robot BLE profile. The same 12 UUIDs occur in three distinct host package IDs. Public Kubi source code maps every UUID and name. The 2015 Revolve Robotics release documents Zoom mobile integration via the Kubi API; the staging records do not prove which exact library artifact carried the class.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ingrails.noble_academy_secondary_boarding_school v3.10.1 (versionCode 254), in Java field `SERVO_HORIZONTAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_HORIZONTAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.iron.hlegz v1.14.1.13 (versionCode 55), in Java field `f48287k`, declared in Java package `kt` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f48287k).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.mark.nvwev v1.4.77.3 (versionCode 5), in Java field `f33859k`, declared in Java package `is` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f33859k).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.learnol.xpoia v1.12.1.1 (versionCode 23), in Java field `f96347k`, declared in Java package `ws` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f96347k).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.infiprep.senthilcoachingacademy v1.4.52 (versionCode 38), in Java field `SERVO_HORIZONTAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_HORIZONTAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.diy18.oubjl v1.4.79.8 (versionCode 4), in Java field `f46156k`, declared in Java package `ts` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f46156k).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.edmodoworld.parents.app v1.1.0 (versionCode 100100), in Java field `SERVO_HORIZONTAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_HORIZONTAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.pseudobrookite.connect v1.1.6.47 (versionCode 11647), in Java field `SERVO_HORIZONTAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_HORIZONTAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.hodor.gvknm v1.4.93.2 (versionCode 14), in Java field `f82493k`, declared in Java package `wr` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f82493k).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.popularcowbird.connect v1.1.6.46 (versionCode 11646), in Java field `SERVO_HORIZONTAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_HORIZONTAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.lenord.hbkia v1.17.0.1 (versionCode 53), in Java field `f101323k`, declared in Java package `yt` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f101323k).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.overscribble.connect v1.1.6.58 (versionCode 11658), in Java field `SERVO_HORIZONTAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_HORIZONTAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.app.testseries.missioninstituteprayagraj v01.01.143 (versionCode 143), in Java field `f21110k`, declared in Java package `hl` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f21110k).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.siddannadalawayi.learners v3.17.0 (versionCode 402), in Java field `f60243k`, declared in Java package `tg` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f60243k).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ga.englishawy v1.19 (versionCode 22), in Java field `SERVO_HORIZONTAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_HORIZONTAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Kubi telepresence robot; shipped via Zoom Android SDK)"
             }
         ],
         "android_info_array": [
@@ -133376,6 +133797,111 @@
                 "version_name": "3.10.0",
                 "package_path": "AndroZoo/apks/00/com.exportsiseasy.learners_00F91DBFDBF94BA649E701ED6E697B1E25B40B15B81EC82C1C240B9BD986178A.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f59740k`."
+            },
+            {
+                "package_id": "com.ingrails.noble_academy_secondary_boarding_school",
+                "version_code": 254,
+                "version_name": "3.10.1",
+                "package_path": "AndroZoo/apks/01/com.ingrails.noble_academy_secondary_boarding_school_010556F7DD278CDDC4893171098BEE8F6B555919A6029947BAC5C98749D514DE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_HORIZONTAL_UUID`."
+            },
+            {
+                "package_id": "co.iron.hlegz",
+                "version_code": 55,
+                "version_name": "1.14.1.13",
+                "package_path": "AndroZoo/apks/01/co.iron.hlegz_011F8C8835E19B3C681D2F60DD8DD7EC129421974025C3A75FC9AAF609ED2DAE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f48287k`."
+            },
+            {
+                "package_id": "co.mark.nvwev",
+                "version_code": 5,
+                "version_name": "1.4.77.3",
+                "package_path": "AndroZoo/apks/01/co.mark.nvwev_0127A0B84C6B85A8AD172C08231EDBAC6142B4C7D42AB9155FAE08466D7B63D1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f33859k`."
+            },
+            {
+                "package_id": "co.learnol.xpoia",
+                "version_code": 23,
+                "version_name": "1.12.1.1",
+                "package_path": "AndroZoo/apks/01/co.learnol.xpoia_012E0D1ABE0D85BC71FBC2418EAF714DF3338ACC0F36A2314EDEF27540D74B34.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f96347k`."
+            },
+            {
+                "package_id": "com.infiprep.senthilcoachingacademy",
+                "version_code": 38,
+                "version_name": "1.4.52",
+                "package_path": "AndroZoo/apks/01/com.infiprep.senthilcoachingacademy_0139D4404B3FDD543120BC99757063C03CB1F8AF3AE2A7EF842F62958CE69A31.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_HORIZONTAL_UUID`."
+            },
+            {
+                "package_id": "co.diy18.oubjl",
+                "version_code": 4,
+                "version_name": "1.4.79.8",
+                "package_path": "AndroZoo/apks/01/co.diy18.oubjl_0143AF603A4300E4DC159AE6431F628D81A2D7C44F0D9F289304C15AE6AEFF6A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f46156k`."
+            },
+            {
+                "package_id": "com.edmodoworld.parents.app",
+                "version_code": 100100,
+                "version_name": "1.1.0",
+                "package_path": "AndroZoo/apks/01/com.edmodoworld.parents.app_0147C24ECD1166CD4336ED2DB5D2E667A547191BA736EE251112C66D482DE3CB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_HORIZONTAL_UUID`."
+            },
+            {
+                "package_id": "com.pseudobrookite.connect",
+                "version_code": 11647,
+                "version_name": "1.1.6.47",
+                "package_path": "AndroZoo/apks/01/com.pseudobrookite.connect_0174EE71D92277DCE98B1D4E6285351AF4A6A038EE647AA4685FFC917A07E63E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_HORIZONTAL_UUID`."
+            },
+            {
+                "package_id": "co.hodor.gvknm",
+                "version_code": 14,
+                "version_name": "1.4.93.2",
+                "package_path": "AndroZoo/apks/01/co.hodor.gvknm_01786B1F455BE6D1C80D6BBD6F3B771B695CAA302BB7A9F7147671BCFC643AD0.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f82493k`."
+            },
+            {
+                "package_id": "com.popularcowbird.connect",
+                "version_code": 11646,
+                "version_name": "1.1.6.46",
+                "package_path": "AndroZoo/apks/01/com.popularcowbird.connect_0183C78170FA757EE2707C3A624DEAFB706B3B6CAA36A11E3D152FBBD3C137EA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_HORIZONTAL_UUID`."
+            },
+            {
+                "package_id": "co.lenord.hbkia",
+                "version_code": 53,
+                "version_name": "1.17.0.1",
+                "package_path": "AndroZoo/apks/01/co.lenord.hbkia_01B70FF662BC9742685375F8B518DECC33DC1ACD91AE7F4DAE5EDDC17B8A628A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f101323k`."
+            },
+            {
+                "package_id": "com.overscribble.connect",
+                "version_code": 11658,
+                "version_name": "1.1.6.58",
+                "package_path": "AndroZoo/apks/01/com.overscribble.connect_01BEBE81E7DF23BC97B8423A6C0E7ACB138FA1B6D7A841C6A6983839D4FFDB45.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_HORIZONTAL_UUID`."
+            },
+            {
+                "package_id": "com.app.testseries.missioninstituteprayagraj",
+                "version_code": 143,
+                "version_name": "01.01.143",
+                "package_path": "AndroZoo/apks/01/com.app.testseries.missioninstituteprayagraj_01CDC4BEC1D21BA7376D81B54EF4C3BFFB079A185D5109B35B37DD226EDB4E51.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f21110k`."
+            },
+            {
+                "package_id": "com.siddannadalawayi.learners",
+                "version_code": 402,
+                "version_name": "3.17.0",
+                "package_path": "AndroZoo/apks/01/com.siddannadalawayi.learners_01D531AC65D59078F0B22659DC73BB597196517C40651340222B3AEE3A98085A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f60243k`."
+            },
+            {
+                "package_id": "com.ga.englishawy",
+                "version_code": 22,
+                "version_name": "1.19",
+                "package_path": "AndroZoo/apks/01/com.ga.englishawy_01E59DE140FDF9A36F6035E46DC8A9D9050088DBE8F48FBC0973B2E3E7CE3E5C.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_HORIZONTAL_UUID`."
             }
         ],
         "parent_UUID": "2a001800-2803-2801-2800-1d9ff2d5c442"
@@ -149086,6 +149612,71 @@
                 "URL": "https://github.com/hcrlab/Kubi/blob/master/app/src/main/java/com/revolverobotics/kubiapi/Kubi.java#L1493",
                 "description": "GPT-6 Luna SDK review: Kubi telepresence robot BLE profile. The same 12 UUIDs occur in three distinct host package IDs. Public Kubi source code maps every UUID and name. The 2015 Revolve Robotics release documents Zoom mobile integration via the Kubi API; the staging records do not prove which exact library artifact carried the class.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ingrails.noble_academy_secondary_boarding_school v3.10.1 (versionCode 254), in Java field `SERVO_VERTICAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_VERTICAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.iron.hlegz v1.14.1.13 (versionCode 55), in Java field `f48288l`, declared in Java package `kt` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f48288l).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.mark.nvwev v1.4.77.3 (versionCode 5), in Java field `f33860l`, declared in Java package `is` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f33860l).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.learnol.xpoia v1.12.1.1 (versionCode 23), in Java field `f96348l`, declared in Java package `ws` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f96348l).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.infiprep.senthilcoachingacademy v1.4.52 (versionCode 38), in Java field `SERVO_VERTICAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_VERTICAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.diy18.oubjl v1.4.79.8 (versionCode 4), in Java field `f46157l`, declared in Java package `ts` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f46157l).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.edmodoworld.parents.app v1.1.0 (versionCode 100100), in Java field `SERVO_VERTICAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_VERTICAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.pseudobrookite.connect v1.1.6.47 (versionCode 11647), in Java field `SERVO_VERTICAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_VERTICAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.hodor.gvknm v1.4.93.2 (versionCode 14), in Java field `f82494l`, declared in Java package `wr` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f82494l).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.popularcowbird.connect v1.1.6.46 (versionCode 11646), in Java field `SERVO_VERTICAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_VERTICAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of co.lenord.hbkia v1.17.0.1 (versionCode 53), in Java field `f101324l`, declared in Java package `yt` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f101324l).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.overscribble.connect v1.1.6.58 (versionCode 11658), in Java field `SERVO_VERTICAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_VERTICAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.app.testseries.missioninstituteprayagraj v01.01.143 (versionCode 143), in Java field `f21111l`, declared in Java package `hl` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f21111l).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.siddannadalawayi.learners v3.17.0 (versionCode 402), in Java field `f60244l`, declared in Java package `tg` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f60244l).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.ga.englishawy v1.19 (versionCode 22), in Java field `SERVO_VERTICAL_UUID`, declared in Java package `com.revolverobotics.kubisdk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SERVO_VERTICAL_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Kubi telepresence robot; shipped via Zoom Android SDK)"
             }
         ],
         "android_info_array": [
@@ -175702,6 +176293,111 @@
                 "version_name": "3.10.0",
                 "package_path": "AndroZoo/apks/00/com.exportsiseasy.learners_00F91DBFDBF94BA649E701ED6E697B1E25B40B15B81EC82C1C240B9BD986178A.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f59741l`."
+            },
+            {
+                "package_id": "com.ingrails.noble_academy_secondary_boarding_school",
+                "version_code": 254,
+                "version_name": "3.10.1",
+                "package_path": "AndroZoo/apks/01/com.ingrails.noble_academy_secondary_boarding_school_010556F7DD278CDDC4893171098BEE8F6B555919A6029947BAC5C98749D514DE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_VERTICAL_UUID`."
+            },
+            {
+                "package_id": "co.iron.hlegz",
+                "version_code": 55,
+                "version_name": "1.14.1.13",
+                "package_path": "AndroZoo/apks/01/co.iron.hlegz_011F8C8835E19B3C681D2F60DD8DD7EC129421974025C3A75FC9AAF609ED2DAE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f48288l`."
+            },
+            {
+                "package_id": "co.mark.nvwev",
+                "version_code": 5,
+                "version_name": "1.4.77.3",
+                "package_path": "AndroZoo/apks/01/co.mark.nvwev_0127A0B84C6B85A8AD172C08231EDBAC6142B4C7D42AB9155FAE08466D7B63D1.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f33860l`."
+            },
+            {
+                "package_id": "co.learnol.xpoia",
+                "version_code": 23,
+                "version_name": "1.12.1.1",
+                "package_path": "AndroZoo/apks/01/co.learnol.xpoia_012E0D1ABE0D85BC71FBC2418EAF714DF3338ACC0F36A2314EDEF27540D74B34.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f96348l`."
+            },
+            {
+                "package_id": "com.infiprep.senthilcoachingacademy",
+                "version_code": 38,
+                "version_name": "1.4.52",
+                "package_path": "AndroZoo/apks/01/com.infiprep.senthilcoachingacademy_0139D4404B3FDD543120BC99757063C03CB1F8AF3AE2A7EF842F62958CE69A31.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_VERTICAL_UUID`."
+            },
+            {
+                "package_id": "co.diy18.oubjl",
+                "version_code": 4,
+                "version_name": "1.4.79.8",
+                "package_path": "AndroZoo/apks/01/co.diy18.oubjl_0143AF603A4300E4DC159AE6431F628D81A2D7C44F0D9F289304C15AE6AEFF6A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f46157l`."
+            },
+            {
+                "package_id": "com.edmodoworld.parents.app",
+                "version_code": 100100,
+                "version_name": "1.1.0",
+                "package_path": "AndroZoo/apks/01/com.edmodoworld.parents.app_0147C24ECD1166CD4336ED2DB5D2E667A547191BA736EE251112C66D482DE3CB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_VERTICAL_UUID`."
+            },
+            {
+                "package_id": "com.pseudobrookite.connect",
+                "version_code": 11647,
+                "version_name": "1.1.6.47",
+                "package_path": "AndroZoo/apks/01/com.pseudobrookite.connect_0174EE71D92277DCE98B1D4E6285351AF4A6A038EE647AA4685FFC917A07E63E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_VERTICAL_UUID`."
+            },
+            {
+                "package_id": "co.hodor.gvknm",
+                "version_code": 14,
+                "version_name": "1.4.93.2",
+                "package_path": "AndroZoo/apks/01/co.hodor.gvknm_01786B1F455BE6D1C80D6BBD6F3B771B695CAA302BB7A9F7147671BCFC643AD0.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f82494l`."
+            },
+            {
+                "package_id": "com.popularcowbird.connect",
+                "version_code": 11646,
+                "version_name": "1.1.6.46",
+                "package_path": "AndroZoo/apks/01/com.popularcowbird.connect_0183C78170FA757EE2707C3A624DEAFB706B3B6CAA36A11E3D152FBBD3C137EA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_VERTICAL_UUID`."
+            },
+            {
+                "package_id": "co.lenord.hbkia",
+                "version_code": 53,
+                "version_name": "1.17.0.1",
+                "package_path": "AndroZoo/apks/01/co.lenord.hbkia_01B70FF662BC9742685375F8B518DECC33DC1ACD91AE7F4DAE5EDDC17B8A628A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f101324l`."
+            },
+            {
+                "package_id": "com.overscribble.connect",
+                "version_code": 11658,
+                "version_name": "1.1.6.58",
+                "package_path": "AndroZoo/apks/01/com.overscribble.connect_01BEBE81E7DF23BC97B8423A6C0E7ACB138FA1B6D7A841C6A6983839D4FFDB45.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_VERTICAL_UUID`."
+            },
+            {
+                "package_id": "com.app.testseries.missioninstituteprayagraj",
+                "version_code": 143,
+                "version_name": "01.01.143",
+                "package_path": "AndroZoo/apks/01/com.app.testseries.missioninstituteprayagraj_01CDC4BEC1D21BA7376D81B54EF4C3BFFB079A185D5109B35B37DD226EDB4E51.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f21111l`."
+            },
+            {
+                "package_id": "com.siddannadalawayi.learners",
+                "version_code": 402,
+                "version_name": "3.17.0",
+                "package_path": "AndroZoo/apks/01/com.siddannadalawayi.learners_01D531AC65D59078F0B22659DC73BB597196517C40651340222B3AEE3A98085A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f60244l`."
+            },
+            {
+                "package_id": "com.ga.englishawy",
+                "version_code": 22,
+                "version_name": "1.19",
+                "package_path": "AndroZoo/apks/01/com.ga.englishawy_01E59DE140FDF9A36F6035E46DC8A9D9050088DBE8F48FBC0973B2E3E7CE3E5C.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVO_VERTICAL_UUID`."
             }
         ],
         "parent_UUID": "2a001800-2803-2801-2800-1d9ff2d5c442"
@@ -177060,6 +177756,26 @@
             {
                 "description": "Found in decompiled DEX of com.laramiepeakyoga v2.65048.1 (versionCode 65048001), in Java field `POWER_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:POWER_STATE_CHARACTERISTIC.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hooffinancial v2.71022.0 (versionCode 71022000), in Java field `POWER_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:POWER_STATE_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.codeforceoswego v2.65048.0 (versionCode 65048000), in Java field `POWER_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:POWER_STATE_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cupcakemenyc v2.55469.0 (versionCode 55469000), in Java field `POWER_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:POWER_STATE_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mysportsclips v2.67157.0 (versionCode 67157000), in Java field `POWER_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:POWER_STATE_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.quantazone.store v2.68159.1 (versionCode 68159001), in Java field `POWER_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:POWER_STATE_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -177103,6 +177819,41 @@
                 "version_code": 65048001,
                 "version_name": "2.65048.1",
                 "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `POWER_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.hooffinancial",
+                "version_code": 71022000,
+                "version_name": "2.71022.0",
+                "package_path": "AndroZoo/apks/01/com.hooffinancial_011FC40AADBC9128394D8C7A9609946C4483D5E498DA8FAF77284F2C4C232FC2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `POWER_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.codeforceoswego",
+                "version_code": 65048000,
+                "version_name": "2.65048.0",
+                "package_path": "AndroZoo/apks/01/com.codeforceoswego_019149CC0EC6F499D848AA1300C5B735041E26639C6049A090ED3885C619BF94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `POWER_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.cupcakemenyc",
+                "version_code": 55469000,
+                "version_name": "2.55469.0",
+                "package_path": "AndroZoo/apks/01/com.cupcakemenyc_01A7B53BF188A6C59DF75E2B3E6320BD9AB65F4AF23F354EB115D1C239013B12.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `POWER_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.mysportsclips",
+                "version_code": 67157000,
+                "version_name": "2.67157.0",
+                "package_path": "AndroZoo/apks/01/com.mysportsclips_01BDACF55B0308BA80953BD7C78DD0FB7EFE85FDEB7F3EADDB031E799B697A94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `POWER_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.quantazone.store",
+                "version_code": 68159001,
+                "version_name": "2.68159.1",
+                "package_path": "AndroZoo/apks/01/com.quantazone.store_01C40B2C170BA590971BCF33167524A3FEF43F0DAD723197B69CAE1A00E4E9CE.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `POWER_STATE_CHARACTERISTIC`."
             }
         ],
@@ -177212,6 +177963,64 @@
             }
         ],
         "parent_UUID": "9876"
+    },
+    {
+        "UUID": "9c21bf11-9f9b-4c7e-bee1-9a3c3086a4a1",
+        "company": "EDC Corporation",
+        "UUID_name": "GUID_LOWER_MERION",
+        "UUID_purpose": "Custom GATT Service observed in Android app com.aimsparking.aimsmobile, declared as Java field `GUID_LOWER_MERION`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.aimsparking.aimsmobile v5.0.2.101 (versionCode 2778), in Java field `GUID_LOWER_MERION`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://www.aimsparking.com/aims-mobile-privacy-policy/",
+                "description": "Publisher attribution for com.aimsparking.aimsmobile: AIMS Mobile's official Android privacy policy explicitly says EDC Corporation owns and operates development of the Android app. This source is not a verified download of the scanned historical APK.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.aimsparking.aimsmobile",
+                "version_code": 2778,
+                "version_name": "5.0.2.101",
+                "package_path": "AndroZoo/apks/01/com.aimsparking.aimsmobile_0149FD803D6B19E40D50DAE51B7D5AF187E5CA119A62F9477F018943A490FA7A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GUID_LOWER_MERION`."
+            }
+        ]
+    },
+    {
+        "UUID": "9e46cc9c-c24c-4f9e-9313-f47022a79f13",
+        "company": "EDC Corporation",
+        "UUID_name": "GUID_UID",
+        "UUID_purpose": "Custom GATT Service observed in Android app com.aimsparking.aimsmobile, declared as Java field `GUID_UID`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.aimsparking.aimsmobile v5.0.2.101 (versionCode 2778), in Java field `GUID_UID`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://www.aimsparking.com/aims-mobile-privacy-policy/",
+                "description": "Publisher attribution for com.aimsparking.aimsmobile: AIMS Mobile's official Android privacy policy explicitly says EDC Corporation owns and operates development of the Android app. This source is not a verified download of the scanned historical APK.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.aimsparking.aimsmobile",
+                "version_code": 2778,
+                "version_name": "5.0.2.101",
+                "package_path": "AndroZoo/apks/01/com.aimsparking.aimsmobile_0149FD803D6B19E40D50DAE51B7D5AF187E5CA119A62F9477F018943A490FA7A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GUID_UID`."
+            }
+        ]
     },
     {
         "UUID": "9535",
@@ -184727,6 +185536,19 @@
                 "URL": "https://apkpure.net/legendbrands/com.legendbrands.colemanandroidapp.googleplay/download/1.0.0",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mcnex.albatross v1.0.08 (versionCode 8), in Java field `CODELESS_INBOUND_COMMAND_UUID`, declared in Java package `com.diasemi.codelesslib` (third-party SDK). Classification source: cross-file usage:getCharacteristic(CODELESS_INBOUND_COMMAND_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "SDK attribution reviewed by GPT-6 Luna: Attribute the SDK profile to Renesas Electronics (legacy Dialog namespace). This is a confirmed one-host SDK result, not a cross-host cluster.",
+                "submitter": "GPT-6 Luna",
+                "URL": "https://github.com/renesas/codeless-lib-android"
+            },
+            {
+                "description": "Source review for com.mcnex.albatross: CodelessManager passes CODELESS_INBOUND_COMMAND_UUID to codelessService.getCharacteristic; current final role Service is false. AndroZoo/apks_jadx/01/com.mcnex.albatross_014FD94EB3BCAB8397E856C11D940CD1952630C5DDF4F845FCF16DEA0023DBA8.apk.jadx.tar.xz!sources/com/diasemi/codelesslib/CodelessProfile.java:721 (CODELESS_INBOUND_COMMAND_UUID is 914f8fb9….) AndroZoo/apks_jadx/01/com.mcnex.albatross_014FD94EB3BCAB8397E856C11D940CD1952630C5DDF4F845FCF16DEA0023DBA8.apk.jadx.tar.xz!sources/com/diasemi/codelesslib/CodelessManager.java:1124 (codelessService.getCharacteristic(CODELESS_INBOUND_COMMAND_UUID) is the receiver.)",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -184742,6 +185564,13 @@
                 "version_code": 8,
                 "version_name": "3.530.8",
                 "package_path": "BLUUID_APKS/0950/98e1fd5152d7d749f629cad744ef2387bb0cf985ec904be79d4f65b20a61de07/98e1fd5152d7d749f629cad744ef2387bb0cf985ec904be79d4f65b20a61de07.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CODELESS_INBOUND_COMMAND_UUID`."
+            },
+            {
+                "package_id": "com.mcnex.albatross",
+                "version_code": 8,
+                "version_name": "1.0.08",
+                "package_path": "AndroZoo/apks/01/com.mcnex.albatross_014FD94EB3BCAB8397E856C11D940CD1952630C5DDF4F845FCF16DEA0023DBA8.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CODELESS_INBOUND_COMMAND_UUID`."
             }
         ],
@@ -188320,6 +189149,10 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Chinese audio brand; Bluetooth earphones with EQ/ANC/burn-in via iKF GLearPhone Android app)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.stt.android v6.13.8 (versionCode 6013008), in Java field `f`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -188343,6 +189176,13 @@
                 "version_name": "2.1.3",
                 "package_path": "BLUUID_APKS/0281/f87fe60960e62378186618752b7a3bb87016f326a1c31b5783d6a6869fef3d4b/f87fe60960e62378186618752b7a3bb87016f326a1c31b5783d6a6869fef3d4b.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BES_TOTA_CHARACTERISTI_OTA_UUID`."
+            },
+            {
+                "package_id": "com.stt.android",
+                "version_code": 6013008,
+                "version_name": "6.13.8",
+                "package_path": "AndroZoo/apks/01/com.stt.android_01C47769676827AA7DFB89E30A57F2C8B21C5CAEDDDAFADA1D99C1B2F3371A9B.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f`."
             }
         ],
         "parent_UUID": "00001100-d102-11e1-9b23-00025b00a5a5"
@@ -190289,6 +191129,15 @@
                 "URL": "https://play.google.com/store/apps/details?id=datosapp.datos_healthad.com.telesheba",
                 "description": "Verified current Google Play listing for datosapp.datos_healthad.com.telesheba. This listing does not establish that archived APK version 26.1.1.67 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.skyhealth.glucosebuddyfree v5.36.9582 (versionCode 9582), in Java field `SETTINGS_UNITS_UUID_STRING`, declared in Java package `com.agamatrix.ambtsdk.lib` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (US glucose-meter manufacturer; com.agamatrix.ambtsdk Android SDK; OEM-shipped in Sensyne DBm-Health)"
             }
         ],
         "android_info_array": [
@@ -190557,6 +191406,13 @@
                 "version_name": "24.2.0.90",
                 "package_path": "AndroZoo/apks/b0/datosapp.datos_healthad.com.natali_B022DC8FBD55CC37F907002DBD8E79F496C2166F72A652C15F481A374F15B930.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SETTINGS_UNITS_UUID_STRING`."
+            },
+            {
+                "package_id": "com.skyhealth.glucosebuddyfree",
+                "version_code": 9582,
+                "version_name": "5.36.9582",
+                "package_path": "AndroZoo/apks/01/com.skyhealth.glucosebuddyfree_012DAA83B82309A1444D602FF9D3171C3DAFA108A6F7411E343B3330E22A81F2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SETTINGS_UNITS_UUID_STRING`."
             }
         ],
         "parent_UUID": "00a215bd-9b02-4e5a-9a65-98f1095f4755"
@@ -190826,6 +191682,35 @@
         "parent_UUID": "138c35b6-23a0-459c-9869-acb9228be64f"
     },
     {
+        "UUID": "961f0001-d2d6-43e3-a417-3bb8217e0e01",
+        "company": "Nimoh Scientific Limited",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.nimoh.ballistics, declared as Java field `J`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.nimoh.ballistics v4.1.2 (versionCode 69), in Java field `J`. Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://www.nimoh-ballistics.com/",
+                "description": "Publisher attribution for com.nimoh.ballistics: Nimoh's official website says Nimoh Ballistics is a trading name of Nimoh Scientific Limited. This source is not a verified download of the scanned historical APK.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nimoh.ballistics",
+                "version_code": 69,
+                "version_name": "4.1.2",
+                "package_path": "AndroZoo/apks/01/com.nimoh.ballistics_01FBD68972B0E8423A609B07AE80D2C636DFE73F59382F1DA371A69B9147AC17.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `J`."
+            }
+        ]
+    },
+    {
         "UUID": "9660ab73-7b23-4e12-9412-27a2e175d170",
         "company": "O2 Centro Wellness",
         "UUID_name": "Unknown",
@@ -190842,6 +191727,10 @@
                 "URL": "https://chrome-stats.com/d/com.technogym.myo?hl=pt",
                 "description": "Publisher attribution for com.technogym.myo: Package-specific Google Play-derived metadata names O2 Centro Wellness as publisher; this appears to be the branded app publisher for the shared Technogym package namespace. This source does not establish that it distributes the scanned APK build.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.optilifeeastwichita v6.5.4 (versionCode 19), in Java field `f6077k`, declared in Java package `av` (third-party SDK). Classification source: cross-file usage:getService(f6077k).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -190851,6 +191740,71 @@
                 "version_name": "7.36.2",
                 "package_path": "AndroZoo/apks/00/com.technogym.myo_00ACA4EB44746CF3AA97901B4C26272A13F6022684D0EBCED90D3682A6587BC1.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f12302b`."
+            },
+            {
+                "package_id": "com.optilifeeastwichita",
+                "version_code": 19,
+                "version_name": "6.5.4",
+                "package_path": "AndroZoo/apks/01/com.optilifeeastwichita_019148341A8388CFFF6A39BA31373E4C4A6AD8F93870F2E55411BBE4C3B6CAEA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f6077k`."
+            }
+        ]
+    },
+    {
+        "UUID": "948c0c57-4a19-43a1-98c6-30eed1eba44a",
+        "company": "OMNYS SRL",
+        "UUID_name": "CRT_ENABLE_REFUEL",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.cubogas.fuelmaker, declared as Java field `CRT_ENABLE_REFUEL`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.cubogas.fuelmaker v1.0.1 (versionCode 1000100), in Java field `CRT_ENABLE_REFUEL`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cubogas.fuelmaker",
+                "description": "Publisher attribution for com.cubogas.fuelmaker: Google Play names OMNYS SRL as publisher. The app description says it manages Cubogas Fuel Maker refueling points, and Cubogas materials identify Fuel Maker as a Cubogas product. Treat this as app-publisher evidence only; UUID protocol ownership may instead belong to the Cubogas equipment maker. This source is not a verified download of the scanned historical APK.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cubogas.fuelmaker",
+                "version_code": 1000100,
+                "version_name": "1.0.1",
+                "package_path": "AndroZoo/apks/01/com.cubogas.fuelmaker_01B7E177FBF9B279734CF4FCFC7F10F04527C7C7F040A3AA9740BFFA3E334DDE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CRT_ENABLE_REFUEL`."
+            }
+        ]
+    },
+    {
+        "UUID": "90823652-983a-4b9a-80c5-7ef6a3fc0ebf",
+        "company": "OMNYS SRL",
+        "UUID_name": "CRT_NETWORK_CONFIG",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.cubogas.fuelmaker, declared as Java field `CRT_NETWORK_CONFIG`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.cubogas.fuelmaker v1.0.1 (versionCode 1000100), in Java field `CRT_NETWORK_CONFIG`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cubogas.fuelmaker",
+                "description": "Publisher attribution for com.cubogas.fuelmaker: Google Play names OMNYS SRL as publisher. The app description says it manages Cubogas Fuel Maker refueling points, and Cubogas materials identify Fuel Maker as a Cubogas product. Treat this as app-publisher evidence only; UUID protocol ownership may instead belong to the Cubogas equipment maker. This source is not a verified download of the scanned historical APK.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cubogas.fuelmaker",
+                "version_code": 1000100,
+                "version_name": "1.0.1",
+                "package_path": "AndroZoo/apks/01/com.cubogas.fuelmaker_01B7E177FBF9B279734CF4FCFC7F10F04527C7C7F040A3AA9740BFFA3E334DDE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CRT_NETWORK_CONFIG`."
             }
         ]
     },
@@ -191863,10 +192817,10 @@
     {
         "UUID": "97b7fc02-f2ab-4dd0-afd8-8e6d8516a512",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerDeviceInformation`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicGoPowerDeviceInformation",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerDeviceInformation`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -191888,6 +192842,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.rvmaster.jayco v3.14.0 (versionCode 19348), in Java field `uuidCharacteristicGoPowerDeviceInformation`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicGoPowerDeviceInformation`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -191925,16 +192891,23 @@
                 "version_name": "3.14.0",
                 "package_path": "BLUUID_APKS/0760/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicGoPowerDeviceInformation`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicGoPowerDeviceInformation`."
             }
         ]
     },
     {
         "UUID": "97b7fc07-f2ab-4dd0-afd8-8e6d8516a512",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerModel`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicGoPowerModel",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerModel`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -191956,6 +192929,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.rvmaster.jayco v3.14.0 (versionCode 19348), in Java field `uuidCharacteristicGoPowerModel`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicGoPowerModel`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -191993,16 +192978,23 @@
                 "version_name": "3.14.0",
                 "package_path": "BLUUID_APKS/0760/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicGoPowerModel`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicGoPowerModel`."
             }
         ]
     },
     {
         "UUID": "97b7fc03-f2ab-4dd0-afd8-8e6d8516a512",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerSerial`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicGoPowerSerial",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerSerial`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -192024,6 +193016,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.rvmaster.jayco v3.14.0 (versionCode 19348), in Java field `uuidCharacteristicGoPowerSerial`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicGoPowerSerial`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -192061,16 +193065,23 @@
                 "version_name": "3.14.0",
                 "package_path": "BLUUID_APKS/0760/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicGoPowerSerial`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicGoPowerSerial`."
             }
         ]
     },
     {
         "UUID": "97b7fc01-f2ab-4dd0-afd8-8e6d8516a512",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerSolarCommand`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicGoPowerSolarCommand",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerSolarCommand`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -192092,6 +193103,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.rvmaster.jayco v3.14.0 (versionCode 19348), in Java field `uuidCharacteristicGoPowerSolarCommand`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicGoPowerSolarCommand`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -192129,16 +193152,23 @@
                 "version_name": "3.14.0",
                 "package_path": "BLUUID_APKS/0760/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicGoPowerSolarCommand`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicGoPowerSolarCommand`."
             }
         ]
     },
     {
         "UUID": "97b7fc05-f2ab-4dd0-afd8-8e6d8516a512",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerSolarHistory`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicGoPowerSolarHistory",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerSolarHistory`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -192160,6 +193190,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.rvmaster.jayco v3.14.0 (versionCode 19348), in Java field `uuidCharacteristicGoPowerSolarHistory`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicGoPowerSolarHistory`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -192197,16 +193239,23 @@
                 "version_name": "3.14.0",
                 "package_path": "BLUUID_APKS/0760/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicGoPowerSolarHistory`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicGoPowerSolarHistory`."
             }
         ]
     },
     {
         "UUID": "97b7fc04-f2ab-4dd0-afd8-8e6d8516a512",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerSolarStatus`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicGoPowerSolarStatus",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicGoPowerSolarStatus`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -192228,6 +193277,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.rvmaster.jayco v3.14.0 (versionCode 19348), in Java field `uuidCharacteristicGoPowerSolarStatus`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicGoPowerSolarStatus`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -192265,16 +193326,23 @@
                 "version_name": "3.14.0",
                 "package_path": "BLUUID_APKS/0760/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicGoPowerSolarStatus`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicGoPowerSolarStatus`."
             }
         ]
     },
     {
         "UUID": "98863e01-244d-40c7-b123-084715e1ed13",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicInverterCommand`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicInverterCommand",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicInverterCommand`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -192296,6 +193364,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.rvmaster.jayco v3.14.0 (versionCode 19348), in Java field `uuidCharacteristicInverterCommand`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicInverterCommand`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -192333,16 +193413,23 @@
                 "version_name": "3.14.0",
                 "package_path": "BLUUID_APKS/0760/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicInverterCommand`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicInverterCommand`."
             }
         ]
     },
     {
         "UUID": "98863e03-244d-40c7-b123-084715e1ed13",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicInverterEnergy`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicInverterEnergy",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicInverterEnergy`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -192364,6 +193451,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.rvmaster.jayco v3.14.0 (versionCode 19348), in Java field `uuidCharacteristicInverterEnergy`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicInverterEnergy`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -192401,16 +193500,23 @@
                 "version_name": "3.14.0",
                 "package_path": "BLUUID_APKS/0760/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicInverterEnergy`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicInverterEnergy`."
             }
         ]
     },
     {
         "UUID": "98863e02-244d-40c7-b123-084715e1ed13",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicInverterStatus`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicInverterStatus",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicInverterStatus`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -192432,6 +193538,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.rvmaster.jayco v3.14.0 (versionCode 19348), in Java field `uuidCharacteristicInverterStatus`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicInverterStatus`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -192469,6 +193587,13 @@
                 "version_name": "3.14.0",
                 "package_path": "BLUUID_APKS/0760/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicInverterStatus`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicInverterStatus`."
             }
         ]
     },
@@ -197586,6 +198711,10 @@
             {
                 "description": "Found in decompiled DEX of com.igogoon.bozzapp v25.11 (versionCode 9), in Java field `buttonCharacteristic`, declared in Java package `co.movatic.movaticble.movatic` (third-party SDK). Classification source: usage:getCharacteristic.",
                 "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mobi.android v1.7 (versionCode 8), in Java field `PIN_CHARACTERISTIC_UUID`, declared in Java package `com.joyride.ui.ride` (third-party SDK). Classification source: field-name:PIN_CHARACTERISTIC_UUID.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -197609,6 +198738,13 @@
                 "version_name": "25.11",
                 "package_path": "AndroZoo/apks/0e/com.igogoon.bozzapp_0E228F7BF5860D29E2C1235F46FF11DA50222CDCBEA7DA0F52FD41196B895D81.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `buttonCharacteristic`."
+            },
+            {
+                "package_id": "com.mobi.android",
+                "version_code": 8,
+                "version_name": "1.7",
+                "package_path": "AndroZoo/apks/01/com.mobi.android_01667DE8578CBE777C6593DC8B016A977FEC13F5217C851D16F6A9C871BF72B4.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PIN_CHARACTERISTIC_UUID`."
             }
         ],
         "parent_UUID": "00001523-e513-11e5-9260-0002a5d5c51b"
@@ -197634,6 +198770,10 @@
             {
                 "description": "Found in decompiled DEX of com.emiletao.android v1.6 (versionCode 7), in Java field `WRITE_CHARACTERISTIC_UUID`, declared in Java package `com.joyride.common.ui.ble` (third-party SDK). Classification source: field-name:WRITE_CHARACTERISTIC_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mobi.android v1.7 (versionCode 8), in Java field `WRITE_CHARACTERISTIC_UUID`, declared in Java package `com.joyride.ui.ride` (third-party SDK). Classification source: cross-file usage:getCharacteristic(WRITE_CHARACTERISTIC_UUID).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -197649,6 +198789,13 @@
                 "version_code": 7,
                 "version_name": "1.6",
                 "package_path": "BLUUID_APKS/0544/034b70bacd6a208a08972db3bf8b785107f825ca210be18a862ef9a651a58736/034b70bacd6a208a08972db3bf8b785107f825ca210be18a862ef9a651a58736.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WRITE_CHARACTERISTIC_UUID`."
+            },
+            {
+                "package_id": "com.mobi.android",
+                "version_code": 8,
+                "version_name": "1.7",
+                "package_path": "AndroZoo/apks/01/com.mobi.android_01667DE8578CBE777C6593DC8B016A977FEC13F5217C851D16F6A9C871BF72B4.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WRITE_CHARACTERISTIC_UUID`."
             }
         ],
@@ -197700,6 +198847,10 @@
             {
                 "description": "Found in decompiled DEX of com.emiletao.android v1.6 (versionCode 7), in Java field `MSG_COUNT_CHARACTERISTIC_UUID`, declared in Java package `com.joyride.common.ui.ble` (third-party SDK). Classification source: field-name:MSG_COUNT_CHARACTERISTIC_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mobi.android v1.7 (versionCode 8), in Java field `MSG_COUNT_CHARACTERISTIC_UUID`, declared in Java package `com.joyride.ui.ride` (third-party SDK). Classification source: field-name:MSG_COUNT_CHARACTERISTIC_UUID.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -197715,6 +198866,13 @@
                 "version_code": 7,
                 "version_name": "1.6",
                 "package_path": "BLUUID_APKS/0544/034b70bacd6a208a08972db3bf8b785107f825ca210be18a862ef9a651a58736/034b70bacd6a208a08972db3bf8b785107f825ca210be18a862ef9a651a58736.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `MSG_COUNT_CHARACTERISTIC_UUID`."
+            },
+            {
+                "package_id": "com.mobi.android",
+                "version_code": 8,
+                "version_name": "1.7",
+                "package_path": "AndroZoo/apks/01/com.mobi.android_01667DE8578CBE777C6593DC8B016A977FEC13F5217C851D16F6A9C871BF72B4.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `MSG_COUNT_CHARACTERISTIC_UUID`."
             }
         ],
@@ -197948,6 +199106,10 @@
             {
                 "description": "Found in decompiled DEX of com.taramazanec.app v4.0.18 (versionCode 4018), in Java field `SERVING_UNIT_ML_ID`, declared in Java package `com.appstreet.repository.util` (third-party SDK). Classification source: field-name:SERVING_UNIT_ML_ID.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.all44fitt.app v2.6.11 (versionCode 2611), in Java field `SERVING_UNIT_ML_ID`, declared in Java package `com.appstreet.repository.util` (third-party SDK). Classification source: field-name:SERVING_UNIT_ML_ID.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -197956,6 +199118,13 @@
                 "version_code": 4018,
                 "version_name": "4.0.18",
                 "package_path": "AndroZoo/apks/00/com.taramazanec.app_002B16A688ABF38D321C3A019E2D7E92A560B6DBD246DAB39F5BB3C238087595.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVING_UNIT_ML_ID`."
+            },
+            {
+                "package_id": "com.all44fitt.app",
+                "version_code": 2611,
+                "version_name": "2.6.11",
+                "package_path": "AndroZoo/apks/01/com.all44fitt.app_0186B764C8789326BBD805EEE46584458B67A90AAD7C903012F82D95DC4F792A.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVING_UNIT_ML_ID`."
             }
         ]
@@ -198122,6 +199291,30 @@
         "parent_UUID": "dfaf46e7-04f9-471c-8438-a72612619be9"
     },
     {
+        "UUID": "9b9f70d0-3b95-4717-997f-2f4b79f603d8",
+        "company": "Third-party SDK code (declared in Java package `com.content` — distinct from host com.uob.mightyth2; Phase-4 identification needed)",
+        "UUID_name": "WALKME_APP_KEY_iOS",
+        "UUID_purpose": "GATT Service observed in Android app com.uob.mightyth2 but declared in third-party SDK package `com.content` as Java field `WALKME_APP_KEY_iOS`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.uob.mightyth2 v19.8.5 (versionCode 26073116), in Java field `WALKME_APP_KEY_iOS`, declared in Java package `com.content` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.uob.mightyth2",
+                "version_code": 26073116,
+                "version_name": "19.8.5",
+                "package_path": "AndroZoo/apks/01/com.uob.mightyth2_01DE6BB646D52870191949365A2096EB8C310FAA09E441932BFC9799D767BF9E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `WALKME_APP_KEY_iOS`."
+            }
+        ]
+    },
+    {
         "UUID": "98b208c3-018b-4322-aca6-681e5865cf78",
         "company": "Third-party SDK code (declared in Java package `com.daimler.mm.bluetooth.le.internal.peripheral.health` — distinct from host com.mbusa.mmusa.android; Phase-4 identification needed)",
         "UUID_name": "STRESS_RATE_CHARACTERISTIC",
@@ -198169,6 +199362,31 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
             }
         ]
+    },
+    {
+        "UUID": "98607b38-6a5f-4d76-b830-2b30b81cc5e2",
+        "company": "Third-party SDK code (declared in Java package `com.digitax.protocols.Bluetooth` — distinct from host de.mpcsoftware.TarisMobile2; Phase-4 identification needed)",
+        "UUID_name": "GATT_CUSTOM_READONLY_CHARACTERISTIC",
+        "UUID_purpose": "GATT Characteristic observed in Android app de.mpcsoftware.TarisMobile2 but declared in third-party SDK package `com.digitax.protocols.Bluetooth` as Java field `GATT_CUSTOM_READONLY_CHARACTERISTIC`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:GATT_CUSTOM_READONLY_CHARACTERISTIC.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of de.mpcsoftware.TarisMobile2 v1.19.0 (versionCode 191), in Java field `GATT_CUSTOM_READONLY_CHARACTERISTIC`, declared in Java package `com.digitax.protocols.Bluetooth` (third-party SDK). Classification source: field-name:GATT_CUSTOM_READONLY_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.mpcsoftware.TarisMobile2",
+                "version_code": 191,
+                "version_name": "1.19.0",
+                "package_path": "AndroZoo/apks/01/de.mpcsoftware.TarisMobile2_016C764F3822606DD0D6601857EA8D4DC7D23F72250A8D3BB131A4D0E9A03F37.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `GATT_CUSTOM_READONLY_CHARACTERISTIC`."
+            }
+        ],
+        "parent_UUID": "d21617fb-794a-4c37-9974-6d96c6bcbbc2"
     },
     {
         "UUID": "95e81861-47b6-c216-a125-403009d6f03e",
@@ -199605,6 +200823,30 @@
             }
         ],
         "parent_UUID": "ff01"
+    },
+    {
+        "UUID": "9f0f4273-7a60-4b14-815c-1b331a6291d4",
+        "company": "Third-party SDK code (declared in Java package `com.shhotels` — distinct from host com.shgroup.baccarat; Phase-4 identification needed)",
+        "UUID_name": "ONE_HOTELS_BRAND_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.shgroup.baccarat but declared in third-party SDK package `com.shhotels` as Java field `ONE_HOTELS_BRAND_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:ONE_HOTELS_BRAND_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.shgroup.baccarat v2.36 (versionCode 57), in Java field `ONE_HOTELS_BRAND_ID`, declared in Java package `com.shhotels` (third-party SDK). Classification source: field-name:ONE_HOTELS_BRAND_ID.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.shgroup.baccarat",
+                "version_code": 57,
+                "version_name": "2.36",
+                "package_path": "AndroZoo/apks/01/com.shgroup.baccarat_01618F09431FAB505BD26610124581F7FBE4BCD4EB337CC9FB8B19DD70A3FA53.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `ONE_HOTELS_BRAND_ID`."
+            }
+        ]
     },
     {
         "UUID": "956e06c0-de50-47a1-ad73-05be858193a0",
@@ -201259,6 +202501,10 @@
             {
                 "description": "Found in decompiled DEX of xl.HoursOfService v4.05.011 (versionCode 405011), in Java field `SERVICE_UUID`, declared in Java package `ecm.processors.harpbt` (third-party SDK). Classification source: usage:getService.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of te.HoursOfService v1.222 (versionCode 222), in Java field `SERVICE_UUID`, declared in Java package `ecm.processors.harpbt` (third-party SDK). Classification source: usage:getService.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -201365,6 +202611,13 @@
                 "version_code": 405011,
                 "version_name": "4.05.011",
                 "package_path": "AndroZoo/apks/00/xl.HoursOfService_00896263568F9379EB46CDE3A62EDBE1CA984A1DA23A15C33F446EE742D70D3D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SERVICE_UUID`."
+            },
+            {
+                "package_id": "te.HoursOfService",
+                "version_code": 222,
+                "version_name": "1.222",
+                "package_path": "AndroZoo/apks/01/te.HoursOfService_0137A42941E889EDA938A76C0C8726C1CE716538C71228ABA70DAAE23FF5BC98.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SERVICE_UUID`."
             }
         ]
@@ -207356,6 +208609,30 @@
                 "version_name": "6.7.0",
                 "package_path": "BLUUID_APKS/0128/9011b1551b9c36b9346c9c2f1c12105fa53277fb5d5bb11c5b5f203c151c7246/9011b1551b9c36b9346c9c2f1c12105fa53277fb5d5bb11c5b5f203c151c7246.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `MASTER_SERVICE_RECORD_UUID`."
+            }
+        ]
+    },
+    {
+        "UUID": "95717dcd-a623-4caf-a426-8e5c80c240d7",
+        "company": "Wireless (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Custom GATT Service observed in Android app wireless.basic, declared as Java field `o9`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of wireless.basic v1.6.1 (versionCode 87), in Java field `o9`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "wireless.basic",
+                "version_code": 87,
+                "version_name": "1.6.1",
+                "package_path": "AndroZoo/apks/01/wireless.basic_014ACD244C57C587CCBB845E0A9C68B253546122643EB1A3A21A28D94D2FBF15.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `o9`."
             }
         ]
     },

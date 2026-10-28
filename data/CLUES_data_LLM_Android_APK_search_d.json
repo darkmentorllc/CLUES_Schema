@@ -969,6 +969,10 @@
             {
                 "description": "Target source contains this SMP transport UUID. Zephyr documentation defines it as the SMP characteristic used by the GATT transport.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `SMP_CHAR_UUID`, declared in Java package `io.runtime.mcumgr.ble` (third-party SDK). Classification source: field-name:SMP_CHAR_UUID.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -1139,6 +1143,13 @@
                 "version_name": "3.1.5.0.0",
                 "package_path": "AndroZoo/apks/60/com.ultrahuman.android_602046F7C465C2862C246A7665D9B065DFC5CB04C0324EEEE84FEB2C13315685.apk",
                 "description": "Package and version verified from the target APK with aapt dump badging."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SMP_CHAR_UUID`."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -9187,6 +9198,10 @@
                 "URL": "https://www.nxp.jp/docs/en/application-note/AN11846.pdf",
                 "description": "GPT-6 Luna SDK review: NXP QPP defines 9600 as RX/write client-to-server and 9601 as TX/notify server-to-client. Pair occurs in four unrelated apps. Attribute the canonical QPP mapping to NXP, not authorship of every host app or downstream device.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zydtech.yamato v1.2.2 (versionCode 25), in Java field `uuid_notify_cha`, declared in Java package `cn.com.heaton.blelibrary.ble` (third-party SDK). Classification source: field-name:uuid_notify_cha.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -9749,6 +9764,13 @@
                 "version_name": "Unknown",
                 "package_path": "AndroZoo/apks/00/com.diamondmattress.control_00E30C5B4493E60BC41FBBC6A855FFC4F836BD687428EF56DC0B4AD266C819CE.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_CHARACTERISTIC_READ_W1`."
+            },
+            {
+                "package_id": "com.zydtech.yamato",
+                "version_code": 25,
+                "version_name": "1.2.2",
+                "package_path": "AndroZoo/apks/01/com.zydtech.yamato_01338CE5D99C81C2BAE05A9E65210C816EE9FBE229E4CE839E4ACA02055EA48E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuid_notify_cha`."
             }
         ],
         "parent_UUID": "6e400001-b5a3-f393-e0a9-e50e24dcca9e"
@@ -10824,6 +10846,10 @@
                 "URL": "https://www.nxp.jp/docs/en/application-note/AN11846.pdf",
                 "description": "GPT-6 Luna SDK review: NXP QPP defines 9600 as RX/write client-to-server and 9601 as TX/notify server-to-client. Pair occurs in four unrelated apps. Attribute the canonical QPP mapping to NXP, not authorship of every host app or downstream device.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zydtech.yamato v1.2.2 (versionCode 25), in Java field `uuid_write_cha`, declared in Java package `cn.com.heaton.blelibrary.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(uuid_write_cha).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -11407,6 +11433,13 @@
                 "version_name": "Unknown",
                 "package_path": "AndroZoo/apks/00/com.diamondmattress.control_00E30C5B4493E60BC41FBBC6A855FFC4F836BD687428EF56DC0B4AD266C819CE.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_CHARACTERISTIC_WRITE_W1`."
+            },
+            {
+                "package_id": "com.zydtech.yamato",
+                "version_code": 25,
+                "version_name": "1.2.2",
+                "package_path": "AndroZoo/apks/01/com.zydtech.yamato_01338CE5D99C81C2BAE05A9E65210C816EE9FBE229E4CE839E4ACA02055EA48E.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuid_write_cha`."
             }
         ],
         "parent_UUID": "f000ffc0-0451-4000-b000-000000000000"
@@ -12148,6 +12181,42 @@
                 "URL": "https://developer.sumup.com/terminal-payments/sdks/android/readers/",
                 "description": "GPT-6 Luna SDK review: Likely SumUp Android reader SDK GATT profile: the exact same 20 UUID records are present in two distinct host packages and their DEX evidence names com.sumup.reader.core.pinplus.transport. SumUp primary docs confirm the Android SDK handles Bluetooth readers including legacy PIN+, but do not list the UUIDs. Keep bc2f4cc6-aaef-4351-9034-d66268e328f0 Unknown; a different public product manual assigns that UUID to Blue Creation BC Smart, so ownership/name needs direct firmware or SDK context.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.caisse.enregistreuse2 v1.1.69 (versionCode 69), in Java field `PINCSR_DATA_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_DATA_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m684022ba75ad41908d35aad545358c78.jollof v2.90984.0 (versionCode 90984000), in Java field `PINCSR_DATA_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_DATA_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hooffinancial v2.71022.0 (versionCode 71022000), in Java field `PINCSR_DATA_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_DATA_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.com.vjazzestudio v2.83110.30 (versionCode 83110030), in Java field `PINCSR_DATA_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_DATA_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.net.iawellbeing v2.80091.7 (versionCode 80091007), in Java field `PINCSR_DATA_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_DATA_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.codeforceoswego v2.65048.0 (versionCode 65048000), in Java field `PINCSR_DATA_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_DATA_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cupcakemenyc v2.55469.0 (versionCode 55469000), in Java field `PINCSR_DATA_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_DATA_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mysportsclips v2.67157.0 (versionCode 67157000), in Java field `PINCSR_DATA_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_DATA_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.quantazone.store v2.68159.1 (versionCode 68159001), in Java field `PINCSR_DATA_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_DATA_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -13256,6 +13325,69 @@
                 "version_name": "2.65048.1",
                 "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_DATA_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.caisse.enregistreuse2",
+                "version_code": 69,
+                "version_name": "1.1.69",
+                "package_path": "AndroZoo/apks/01/com.caisse.enregistreuse2_0117493D5FD82F3D453888815BE9EC53E00E7B1EB6FE0DF8A7DB0BBA412305BE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_DATA_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "branded.m684022ba75ad41908d35aad545358c78.jollof",
+                "version_code": 90984000,
+                "version_name": "2.90984.0",
+                "package_path": "AndroZoo/apks/01/branded.m684022ba75ad41908d35aad545358c78.jollof_011AD8B538CDB456D533821E2DD8188A9ADD1D84EFDE2C806D0D1097D94FD34D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_DATA_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.hooffinancial",
+                "version_code": 71022000,
+                "version_name": "2.71022.0",
+                "package_path": "AndroZoo/apks/01/com.hooffinancial_011FC40AADBC9128394D8C7A9609946C4483D5E498DA8FAF77284F2C4C232FC2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_DATA_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "branded.com.vjazzestudio",
+                "version_code": 83110030,
+                "version_name": "2.83110.30",
+                "package_path": "AndroZoo/apks/01/branded.com.vjazzestudio_014A567BEA3D08B7E3E227C33441F24F961589D458BD8A896AA050DB4BA1D848.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_DATA_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "branded.net.iawellbeing",
+                "version_code": 80091007,
+                "version_name": "2.80091.7",
+                "package_path": "AndroZoo/apks/01/branded.net.iawellbeing_017E8C3AE5E8ACBD7A57F24F628357BEA4D42691F5975CFCC9F5D2537B4CF08F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_DATA_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.codeforceoswego",
+                "version_code": 65048000,
+                "version_name": "2.65048.0",
+                "package_path": "AndroZoo/apks/01/com.codeforceoswego_019149CC0EC6F499D848AA1300C5B735041E26639C6049A090ED3885C619BF94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_DATA_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.cupcakemenyc",
+                "version_code": 55469000,
+                "version_name": "2.55469.0",
+                "package_path": "AndroZoo/apks/01/com.cupcakemenyc_01A7B53BF188A6C59DF75E2B3E6320BD9AB65F4AF23F354EB115D1C239013B12.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_DATA_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.mysportsclips",
+                "version_code": 67157000,
+                "version_name": "2.67157.0",
+                "package_path": "AndroZoo/apks/01/com.mysportsclips_01BDACF55B0308BA80953BD7C78DD0FB7EFE85FDEB7F3EADDB031E799B697A94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_DATA_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.quantazone.store",
+                "version_code": 68159001,
+                "version_name": "2.68159.1",
+                "package_path": "AndroZoo/apks/01/com.quantazone.store_01C40B2C170BA590971BCF33167524A3FEF43F0DAD723197B69CAE1A00E4E9CE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_DATA_CHARACTERISTIC`."
             }
         ],
         "parent_UUID": "11a7a236-d841-42d1-a99c-061c6e909bf9"
@@ -13925,6 +14057,42 @@
                 "URL": "https://developer.sumup.com/terminal-payments/sdks/android/readers/",
                 "description": "GPT-6 Luna SDK review: Likely SumUp Android reader SDK GATT profile: the exact same 20 UUID records are present in two distinct host packages and their DEX evidence names com.sumup.reader.core.pinplus.transport. SumUp primary docs confirm the Android SDK handles Bluetooth readers including legacy PIN+, but do not list the UUIDs. Keep bc2f4cc6-aaef-4351-9034-d66268e328f0 Unknown; a different public product manual assigns that UUID to Blue Creation BC Smart, so ownership/name needs direct firmware or SDK context.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.caisse.enregistreuse2 v1.1.69 (versionCode 69), in Java field `PINCSR_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_STATE_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m684022ba75ad41908d35aad545358c78.jollof v2.90984.0 (versionCode 90984000), in Java field `PINCSR_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_STATE_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hooffinancial v2.71022.0 (versionCode 71022000), in Java field `PINCSR_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_STATE_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.com.vjazzestudio v2.83110.30 (versionCode 83110030), in Java field `PINCSR_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_STATE_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.net.iawellbeing v2.80091.7 (versionCode 80091007), in Java field `PINCSR_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_STATE_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.codeforceoswego v2.65048.0 (versionCode 65048000), in Java field `PINCSR_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_STATE_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cupcakemenyc v2.55469.0 (versionCode 55469000), in Java field `PINCSR_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_STATE_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mysportsclips v2.67157.0 (versionCode 67157000), in Java field `PINCSR_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_STATE_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.quantazone.store v2.68159.1 (versionCode 68159001), in Java field `PINCSR_STATE_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PINCSR_STATE_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -15033,6 +15201,69 @@
                 "version_name": "2.65048.1",
                 "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.caisse.enregistreuse2",
+                "version_code": 69,
+                "version_name": "1.1.69",
+                "package_path": "AndroZoo/apks/01/com.caisse.enregistreuse2_0117493D5FD82F3D453888815BE9EC53E00E7B1EB6FE0DF8A7DB0BBA412305BE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "branded.m684022ba75ad41908d35aad545358c78.jollof",
+                "version_code": 90984000,
+                "version_name": "2.90984.0",
+                "package_path": "AndroZoo/apks/01/branded.m684022ba75ad41908d35aad545358c78.jollof_011AD8B538CDB456D533821E2DD8188A9ADD1D84EFDE2C806D0D1097D94FD34D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.hooffinancial",
+                "version_code": 71022000,
+                "version_name": "2.71022.0",
+                "package_path": "AndroZoo/apks/01/com.hooffinancial_011FC40AADBC9128394D8C7A9609946C4483D5E498DA8FAF77284F2C4C232FC2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "branded.com.vjazzestudio",
+                "version_code": 83110030,
+                "version_name": "2.83110.30",
+                "package_path": "AndroZoo/apks/01/branded.com.vjazzestudio_014A567BEA3D08B7E3E227C33441F24F961589D458BD8A896AA050DB4BA1D848.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "branded.net.iawellbeing",
+                "version_code": 80091007,
+                "version_name": "2.80091.7",
+                "package_path": "AndroZoo/apks/01/branded.net.iawellbeing_017E8C3AE5E8ACBD7A57F24F628357BEA4D42691F5975CFCC9F5D2537B4CF08F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.codeforceoswego",
+                "version_code": 65048000,
+                "version_name": "2.65048.0",
+                "package_path": "AndroZoo/apks/01/com.codeforceoswego_019149CC0EC6F499D848AA1300C5B735041E26639C6049A090ED3885C619BF94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.cupcakemenyc",
+                "version_code": 55469000,
+                "version_name": "2.55469.0",
+                "package_path": "AndroZoo/apks/01/com.cupcakemenyc_01A7B53BF188A6C59DF75E2B3E6320BD9AB65F4AF23F354EB115D1C239013B12.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.mysportsclips",
+                "version_code": 67157000,
+                "version_name": "2.67157.0",
+                "package_path": "AndroZoo/apks/01/com.mysportsclips_01BDACF55B0308BA80953BD7C78DD0FB7EFE85FDEB7F3EADDB031E799B697A94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_STATE_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.quantazone.store",
+                "version_code": 68159001,
+                "version_name": "2.68159.1",
+                "package_path": "AndroZoo/apks/01/com.quantazone.store_01C40B2C170BA590971BCF33167524A3FEF43F0DAD723197B69CAE1A00E4E9CE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PINCSR_STATE_CHARACTERISTIC`."
             }
         ],
         "parent_UUID": "11a7a236-d841-42d1-a99c-061c6e909bf9"
@@ -15153,6 +15384,10 @@
             {
                 "description": "Found in decompiled DEX of com.cbfitnesspro v2.83110.0 (versionCode 83110000), in Java field `BUILD_ID`, declared in Java package `com.newrelic.agent.android` (third-party SDK). Classification source: field-name:BUILD_ID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.com.vjazzestudio v2.83110.30 (versionCode 83110030), in Java field `BUILD_ID`, declared in Java package `com.newrelic.agent.android` (third-party SDK). Classification source: field-name:BUILD_ID.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -15168,6 +15403,13 @@
                 "version_code": 83110000,
                 "version_name": "2.83110.0",
                 "package_path": "BLUUID_APKS/0683/4f0eaf4130eca3772cd8f7166478b3092bc5da569553458cbc53a6c01b23407e/4f0eaf4130eca3772cd8f7166478b3092bc5da569553458cbc53a6c01b23407e.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BUILD_ID`."
+            },
+            {
+                "package_id": "branded.com.vjazzestudio",
+                "version_code": 83110030,
+                "version_name": "2.83110.30",
+                "package_path": "AndroZoo/apks/01/branded.com.vjazzestudio_014A567BEA3D08B7E3E227C33441F24F961589D458BD8A896AA050DB4BA1D848.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BUILD_ID`."
             }
         ],
@@ -15204,6 +15446,26 @@
             },
             {
                 "description": "Found in decompiled DEX of com.laramiepeakyoga v2.65048.1 (versionCode 65048001), in Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:READ_FROM_PERIPHERAL_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hooffinancial v2.71022.0 (versionCode 71022000), in Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:READ_FROM_PERIPHERAL_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.codeforceoswego v2.65048.0 (versionCode 65048000), in Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:READ_FROM_PERIPHERAL_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cupcakemenyc v2.55469.0 (versionCode 55469000), in Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:READ_FROM_PERIPHERAL_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mysportsclips v2.67157.0 (versionCode 67157000), in Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:READ_FROM_PERIPHERAL_CHARACTERISTIC.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.quantazone.store v2.68159.1 (versionCode 68159001), in Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: field-name:READ_FROM_PERIPHERAL_CHARACTERISTIC.",
                 "submitter": "GPT-6.1 Terra"
             }
         ],
@@ -15248,6 +15510,41 @@
                 "version_code": 65048001,
                 "version_name": "2.65048.1",
                 "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.hooffinancial",
+                "version_code": 71022000,
+                "version_name": "2.71022.0",
+                "package_path": "AndroZoo/apks/01/com.hooffinancial_011FC40AADBC9128394D8C7A9609946C4483D5E498DA8FAF77284F2C4C232FC2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.codeforceoswego",
+                "version_code": 65048000,
+                "version_name": "2.65048.0",
+                "package_path": "AndroZoo/apks/01/com.codeforceoswego_019149CC0EC6F499D848AA1300C5B735041E26639C6049A090ED3885C619BF94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.cupcakemenyc",
+                "version_code": 55469000,
+                "version_name": "2.55469.0",
+                "package_path": "AndroZoo/apks/01/com.cupcakemenyc_01A7B53BF188A6C59DF75E2B3E6320BD9AB65F4AF23F354EB115D1C239013B12.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.mysportsclips",
+                "version_code": 67157000,
+                "version_name": "2.67157.0",
+                "package_path": "AndroZoo/apks/01/com.mysportsclips_01BDACF55B0308BA80953BD7C78DD0FB7EFE85FDEB7F3EADDB031E799B697A94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`."
+            },
+            {
+                "package_id": "com.quantazone.store",
+                "version_code": 68159001,
+                "version_name": "2.68159.1",
+                "package_path": "AndroZoo/apks/01/com.quantazone.store_01C40B2C170BA590971BCF33167524A3FEF43F0DAD723197B69CAE1A00E4E9CE.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `READ_FROM_PERIPHERAL_CHARACTERISTIC`."
             }
         ],
@@ -34343,6 +34640,35 @@
         "parent_UUID": "138c35b6-23a0-459c-9869-acb9228be64f"
     },
     {
+        "UUID": "d96f0775-73ad-45be-9dbf-5e250bde37a3",
+        "company": "OMNYS SRL",
+        "UUID_name": "CRT_REFUEL_STATUS",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.cubogas.fuelmaker, declared as Java field `CRT_REFUEL_STATUS`. Classification determined by file-level-default.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.cubogas.fuelmaker v1.0.1 (versionCode 1000100), in Java field `CRT_REFUEL_STATUS`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cubogas.fuelmaker",
+                "description": "Publisher attribution for com.cubogas.fuelmaker: Google Play names OMNYS SRL as publisher. The app description says it manages Cubogas Fuel Maker refueling points, and Cubogas materials identify Fuel Maker as a Cubogas product. Treat this as app-publisher evidence only; UUID protocol ownership may instead belong to the Cubogas equipment maker. This source is not a verified download of the scanned historical APK.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cubogas.fuelmaker",
+                "version_code": 1000100,
+                "version_name": "1.0.1",
+                "package_path": "AndroZoo/apks/01/com.cubogas.fuelmaker_01B7E177FBF9B279734CF4FCFC7F10F04527C7C7F040A3AA9740BFFA3E334DDE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CRT_REFUEL_STATUS`."
+            }
+        ]
+    },
+    {
         "UUID": "d24ccea2-d5be-4b3a-9348-2f6d47975d7e",
         "company": "OMRON HEALTHCARE Co., Ltd.",
         "UUID_name": "IWELLNESS_CLINIC",
@@ -38522,6 +38848,10 @@
                 "URL": "https://chrome-stats.com/d/com.technogym.myo?hl=pt",
                 "description": "Publisher attribution for com.technogym.myo: Package-specific Google Play-derived metadata names O2 Centro Wellness as publisher; this appears to be the branded app publisher for the shared Technogym package namespace. This source does not establish that it distributes the scanned APK build.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.optilifeeastwichita v6.5.4 (versionCode 19), declared in Java package `zu` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -38538,6 +38868,13 @@
                 "version_name": "7.36.2",
                 "package_path": "AndroZoo/apks/00/com.technogym.myo_00ACA4EB44746CF3AA97901B4C26272A13F6022684D0EBCED90D3682A6587BC1.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f12418c`."
+            },
+            {
+                "package_id": "com.optilifeeastwichita",
+                "version_code": 19,
+                "version_name": "6.5.4",
+                "package_path": "AndroZoo/apks/01/com.optilifeeastwichita_019148341A8388CFFF6A39BA31373E4C4A6AD8F93870F2E55411BBE4C3B6CAEA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
             }
         ]
     },
@@ -39091,6 +39428,54 @@
         ]
     },
     {
+        "UUID": "d5913036-2d8a-41ee-85b9-4e361aa5c8a7",
+        "company": "Third-party SDK code (declared in Java package `av` — distinct from host com.optilifeeastwichita; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service observed in Android app com.optilifeeastwichita but declared in third-party SDK package `av` as Java field `I`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.optilifeeastwichita v6.5.4 (versionCode 19), in Java field `I`, declared in Java package `av` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.optilifeeastwichita",
+                "version_code": 19,
+                "version_name": "6.5.4",
+                "package_path": "AndroZoo/apks/01/com.optilifeeastwichita_019148341A8388CFFF6A39BA31373E4C4A6AD8F93870F2E55411BBE4C3B6CAEA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `I`."
+            }
+        ]
+    },
+    {
+        "UUID": "d77d1f02-af92-40aa-ac82-c7b794fcddaa",
+        "company": "Third-party SDK code (declared in Java package `com.activeblu.ablibrary` — distinct from host com.indsci.inetnowsync; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.indsci.inetnowsync but declared in third-party SDK package `com.activeblu.ablibrary` as Java field `f2555w`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(f2555w).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.indsci.inetnowsync v7.6.1.2 (versionCode 62), in Java field `f2555w`, declared in Java package `com.activeblu.ablibrary` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f2555w).",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.indsci.inetnowsync",
+                "version_code": 62,
+                "version_name": "7.6.1.2",
+                "package_path": "AndroZoo/apks/01/com.indsci.inetnowsync_01FF69C1A44B46501350C9811EF9641824C3D984D276355B8C522F210897826D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f2555w`."
+            }
+        ]
+    },
+    {
         "UUID": "d5dcbb7b-7d7e-4361-98a7-6b109025af1c",
         "company": "Third-party SDK code (declared in Java package `com.agamatrix.ambtsdk.lib` — distinct from host com.sensynehealth.dbmhealth; Phase-4 identification needed)",
         "UUID_name": "AUTH_SERVICE_UUID_STRING",
@@ -39127,6 +39512,15 @@
                 "URL": "https://play.google.com/store/apps/details?id=datosapp.datos_healthad.com.telesheba",
                 "description": "Verified current Google Play listing for datosapp.datos_healthad.com.telesheba. This listing does not establish that archived APK version 26.1.1.67 is available to download.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.skyhealth.glucosebuddyfree v5.36.9582 (versionCode 9582), in Java field `AUTH_SERVICE_UUID_STRING`, declared in Java package `com.agamatrix.ambtsdk.lib` (third-party SDK). Classification source: field-name:AUTH_SERVICE_UUID_STRING.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (US glucose-meter manufacturer; com.agamatrix.ambtsdk Android SDK; OEM-shipped in Sensyne DBm-Health)"
             }
         ],
         "android_info_array": [
@@ -39170,6 +39564,13 @@
                 "version_code": 90,
                 "version_name": "24.2.0.90",
                 "package_path": "AndroZoo/apks/b0/datosapp.datos_healthad.com.natali_B022DC8FBD55CC37F907002DBD8E79F496C2166F72A652C15F481A374F15B930.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AUTH_SERVICE_UUID_STRING`."
+            },
+            {
+                "package_id": "com.skyhealth.glucosebuddyfree",
+                "version_code": 9582,
+                "version_name": "5.36.9582",
+                "package_path": "AndroZoo/apks/01/com.skyhealth.glucosebuddyfree_012DAA83B82309A1444D602FF9D3171C3DAFA108A6F7411E343B3330E22A81F2.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AUTH_SERVICE_UUID_STRING`."
             }
         ]
@@ -39439,6 +39840,10 @@
                 "URL": "https://apkpure.net/eBestIoT/com.eBestIoT.main/download/5.7",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.reigndesign.embonor.pos v1.2.4099 (versionCode 8165), in Java field `SCS_ASSET_TRACK_REQ_DATA_CHARACTERISTIC`, declared in Java package `com.wdtl.scs.scscommunicationsdk.internal` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SCS_ASSET_TRACK_REQ_DATA_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -39462,6 +39867,13 @@
                 "version_name": "5.7",
                 "package_path": "BLUUID_APKS/0649/f8a415dc12104ed81ce652918687fa94479a6fc527fe4f81cba8c5702a699477/f8a415dc12104ed81ce652918687fa94479a6fc527fe4f81cba8c5702a699477.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.reigndesign.embonor.pos",
+                "version_code": 8165,
+                "version_name": "1.2.4099",
+                "package_path": "AndroZoo/apks/01/com.reigndesign.embonor.pos_01BE4E2D6BDB4159640FCB269A26E33F5E9657E215DD6851E19B952ECC28B41D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SCS_ASSET_TRACK_REQ_DATA_CHARACTERISTIC`."
             }
         ],
         "parent_UUID": "00001523-1212-efde-1523-785feabcd127"
@@ -39501,6 +39913,10 @@
                 "URL": "https://apkpure.net/eBestIoT/com.eBestIoT.main/download/5.7",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.reigndesign.embonor.pos v1.2.4099 (versionCode 8165), in Java field `SCS_ASSET_TRACK_COOLER_MODEL_CHARACTERISTIC`, declared in Java package `com.wdtl.scs.scscommunicationsdk.internal` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SCS_ASSET_TRACK_COOLER_MODEL_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -39524,6 +39940,13 @@
                 "version_name": "5.7",
                 "package_path": "BLUUID_APKS/0649/f8a415dc12104ed81ce652918687fa94479a6fc527fe4f81cba8c5702a699477/f8a415dc12104ed81ce652918687fa94479a6fc527fe4f81cba8c5702a699477.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.reigndesign.embonor.pos",
+                "version_code": 8165,
+                "version_name": "1.2.4099",
+                "package_path": "AndroZoo/apks/01/com.reigndesign.embonor.pos_01BE4E2D6BDB4159640FCB269A26E33F5E9657E215DD6851E19B952ECC28B41D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SCS_ASSET_TRACK_COOLER_MODEL_CHARACTERISTIC`."
             }
         ],
         "parent_UUID": "00001523-1212-efde-1523-785feabcd127"
@@ -39563,6 +39986,10 @@
                 "URL": "https://apkpure.net/eBestIoT/com.eBestIoT.main/download/5.7",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.reigndesign.embonor.pos v1.2.4099 (versionCode 8165), in Java field `SCS_DIAGNOSTIC_TX_CHARACTERISTIC`, declared in Java package `com.wdtl.scs.scscommunicationsdk.internal` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SCS_DIAGNOSTIC_TX_CHARACTERISTIC).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -39586,6 +40013,13 @@
                 "version_name": "5.7",
                 "package_path": "BLUUID_APKS/0649/f8a415dc12104ed81ce652918687fa94479a6fc527fe4f81cba8c5702a699477/f8a415dc12104ed81ce652918687fa94479a6fc527fe4f81cba8c5702a699477.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.reigndesign.embonor.pos",
+                "version_code": 8165,
+                "version_name": "1.2.4099",
+                "package_path": "AndroZoo/apks/01/com.reigndesign.embonor.pos_01BE4E2D6BDB4159640FCB269A26E33F5E9657E215DD6851E19B952ECC28B41D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SCS_DIAGNOSTIC_TX_CHARACTERISTIC`."
             }
         ],
         "parent_UUID": "00001523-1212-efde-1523-785feabcd127"
@@ -39762,6 +40196,30 @@
         ]
     },
     {
+        "UUID": "d21617fb-794a-4c37-9974-6d96c6bcbbc2",
+        "company": "Third-party SDK code (declared in Java package `com.digitax.protocols.Bluetooth` — distinct from host de.mpcsoftware.TarisMobile2; Phase-4 identification needed)",
+        "UUID_name": "GATT_CUSTOM_READONLY_SERVICE",
+        "UUID_purpose": "GATT Service observed in Android app de.mpcsoftware.TarisMobile2 but declared in third-party SDK package `com.digitax.protocols.Bluetooth` as Java field `GATT_CUSTOM_READONLY_SERVICE`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:GATT_CUSTOM_READONLY_SERVICE.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of de.mpcsoftware.TarisMobile2 v1.19.0 (versionCode 191), in Java field `GATT_CUSTOM_READONLY_SERVICE`, declared in Java package `com.digitax.protocols.Bluetooth` (third-party SDK). Classification source: field-name:GATT_CUSTOM_READONLY_SERVICE.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.mpcsoftware.TarisMobile2",
+                "version_code": 191,
+                "version_name": "1.19.0",
+                "package_path": "AndroZoo/apks/01/de.mpcsoftware.TarisMobile2_016C764F3822606DD0D6601857EA8D4DC7D23F72250A8D3BB131A4D0E9A03F37.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `GATT_CUSTOM_READONLY_SERVICE`."
+            }
+        ]
+    },
+    {
         "UUID": "d6f1d96d-594c-4c53-b1c6-244a1dfde6d8",
         "company": "Third-party SDK code (declared in Java package `com.drscentsdk.Util` — distinct from host com.drscent; Phase-4 identification needed)",
         "UUID_name": "OTA_SERVICE",
@@ -39819,9 +40277,9 @@
         "UUID": "dc67d5fd-e3b6-4f35-8969-01057317d789",
         "company": "Third-party SDK code (declared in Java package `com.gallagher.security.mobileaccess` — distinct from host com.om.edificio; Phase-4 identification needed)",
         "UUID_name": "DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID",
-        "UUID_purpose": "GATT Service observed in Android app com.om.edificio but declared in third-party SDK package `com.gallagher.security.mobileaccess` as Java field `DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID).",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.om.edificio but declared in third-party SDK package `com.gallagher.security.mobileaccess` as Java field `DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID).",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -40047,6 +40505,26 @@
             {
                 "description": "Found in decompiled DEX of com.lane.pallas v5.437.0 (versionCode 142), in Java field `DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID`, declared in Java package `com.gallagher.security.mobileaccess` (third-party SDK). Classification source: field-name:DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.kadans.android v1.1 (versionCode 12), in Java field `DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID`, declared in Java package `com.gallagher.security.mobileaccess` (third-party SDK). Classification source: cross-file usage:getCharacteristic(DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of uk.co.hproperties.twentyfen v11.4.0 (versionCode 16252), in Java field `DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID`, declared in Java package `com.gallagher.security.mobileaccess` (third-party SDK). Classification source: field-name:DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review for com.kadans.android: DefaultBluetoothConnection obtains the UUID with service.getCharacteristic and configures write type; the current Service role in the companion app is false. AndroZoo/apks_jadx/01/com.kadans.android_018A6D59ABE2F458DF8D4B8490D502B6D14561209CB91AEE49B005C655B6D3C5.apk.jadx.tar.xz!sources/com/gallagher/security/mobileaccess/Util.java:41 (DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID is the target.) AndroZoo/apks_jadx/01/com.kadans.android_018A6D59ABE2F458DF8D4B8490D502B6D14561209CB91AEE49B005C655B6D3C5.apk.jadx.tar.xz!sources/com/gallagher/security/mobileaccess/DefaultBluetoothConnection.java:354 (service.getCharacteristic(DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID).) AndroZoo/apks_jadx/01/com.kadans.android_018A6D59ABE2F458DF8D4B8490D502B6D14561209CB91AEE49B005C655B6D3C5.apk.jadx.tar.xz!sources/com/gallagher/security/mobileaccess/DefaultBluetoothConnection.java:356 (The returned characteristic receives setWriteType(1).)",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review for uk.co.hproperties.twentyfen: GallagherVendorBluetoothService exposes this UUID from getCharacteristicUuidFromDoorServiceUuid; the source labels the current Service role unsupported. AndroZoo/apks_jadx/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk.jadx.tar.xz!sources/com/gallagher/security/mobileaccess/GallagherVendorBluetoothService.java:25 (DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID is the target.) AndroZoo/apks_jadx/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk.jadx.tar.xz!sources/com/gallagher/security/mobileaccess/GallagherVendorBluetoothService.java:77 (The method is getCharacteristicUuidFromDoorServiceUuid.) AndroZoo/apks_jadx/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk.jadx.tar.xz!sources/com/gallagher/security/mobileaccess/GallagherVendorBluetoothService.java:79 (The characteristic UUID method returns this target UUID.)",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Gallagher DefaultBluetoothConnection invokes service.getCharacteristic with this UUID and configures the result for writes; the prior GATT Service role is contradicted in the reviewed SDK path. AndroZoo/apks_jadx/01/com.kadans.android_018A6D59ABE2F458DF8D4B8490D502B6D14561209CB91AEE49B005C655B6D3C5.apk.jadx.tar.xz!sources/com/gallagher/security/mobileaccess/Util.java:41. AndroZoo/apks_jadx/01/com.kadans.android_018A6D59ABE2F458DF8D4B8490D502B6D14561209CB91AEE49B005C655B6D3C5.apk.jadx.tar.xz!sources/com/gallagher/security/mobileaccess/DefaultBluetoothConnection.java:354,356. AndroZoo/apks_jadx/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk.jadx.tar.xz!sources/com/gallagher/security/mobileaccess/GallagherVendorBluetoothService.java:25,77,79.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -40434,6 +40912,20 @@
                 "version_name": "5.437.0",
                 "package_path": "AndroZoo/apks/00/com.lane.pallas_0084CA13D0AF9DAE01EB0CE53C0193FB3A57A16A4DC3E93154752B395D7CC06F.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID`."
+            },
+            {
+                "package_id": "com.kadans.android",
+                "version_code": 12,
+                "version_name": "1.1",
+                "package_path": "AndroZoo/apks/01/com.kadans.android_018A6D59ABE2F458DF8D4B8490D502B6D14561209CB91AEE49B005C655B6D3C5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID`."
+            },
+            {
+                "package_id": "uk.co.hproperties.twentyfen",
+                "version_code": 16252,
+                "version_name": "11.4.0",
+                "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DOOR_SERVICE_SERIAL_DATA_TRANSFER_UUID`."
             }
         ]
     },
@@ -44702,6 +45194,30 @@
                 "version_name": "2025.9.1",
                 "package_path": "AndroZoo/apks/dc/health.all_DC469DE251D8BA4CB2860C99EDBF0FD4E3C3FA4582C40B188691344CC97B0E1C.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BAND_REMINDER_BEDTIME`."
+            }
+        ]
+    },
+    {
+        "UUID": "ded9d913-6692-4a12-87d5-6f2764762b2b",
+        "company": "Third-party SDK code (declared in Java package `com.latch.android` — distinct from host com.getflamingo.INTROCleveland; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service observed in Android app com.getflamingo.INTROCleveland but declared in third-party SDK package `com.latch.android` as Java field `d`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.getflamingo.INTROCleveland v7.3.10 (versionCode 1784553949), in Java field `d`, declared in Java package `com.latch.android` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.getflamingo.INTROCleveland",
+                "version_code": 1784553949,
+                "version_name": "7.3.10",
+                "package_path": "AndroZoo/apks/01/com.getflamingo.INTROCleveland_01C25783650B2928586B4223178AE77DCA990ECD4E43E72B690B97E3C50A9251.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `d`."
             }
         ]
     },
@@ -51996,6 +52512,42 @@
                 "URL": "https://developer.sumup.com/terminal-payments/sdks/android/readers/",
                 "description": "GPT-6 Luna SDK review: Likely SumUp Android reader SDK GATT profile: the exact same 20 UUID records are present in two distinct host packages and their DEX evidence names com.sumup.reader.core.pinplus.transport. SumUp primary docs confirm the Android SDK handles Bluetooth readers including legacy PIN+, but do not list the UUIDs. Keep bc2f4cc6-aaef-4351-9034-d66268e328f0 Unknown; a different public product manual assigns that UUID to Blue Creation BC Smart, so ownership/name needs direct firmware or SDK context.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.caisse.enregistreuse2 v1.1.69 (versionCode 69), in Java field `BP_55_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.util` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m684022ba75ad41908d35aad545358c78.jollof v2.90984.0 (versionCode 90984000), in Java field `BP_55_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hooffinancial v2.71022.0 (versionCode 71022000), in Java field `BP_55_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.com.vjazzestudio v2.83110.30 (versionCode 83110030), in Java field `BP_55_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.net.iawellbeing v2.80091.7 (versionCode 80091007), in Java field `BP_55_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.codeforceoswego v2.65048.0 (versionCode 65048000), in Java field `BP_55_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cupcakemenyc v2.55469.0 (versionCode 55469000), in Java field `BP_55_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mysportsclips v2.67157.0 (versionCode 67157000), in Java field `BP_55_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.quantazone.store v2.68159.1 (versionCode 68159001), in Java field `BP_55_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -53104,6 +53656,69 @@
                 "version_name": "2.65048.1",
                 "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BP_55_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.caisse.enregistreuse2",
+                "version_code": 69,
+                "version_name": "1.1.69",
+                "package_path": "AndroZoo/apks/01/com.caisse.enregistreuse2_0117493D5FD82F3D453888815BE9EC53E00E7B1EB6FE0DF8A7DB0BBA412305BE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BP_55_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.m684022ba75ad41908d35aad545358c78.jollof",
+                "version_code": 90984000,
+                "version_name": "2.90984.0",
+                "package_path": "AndroZoo/apks/01/branded.m684022ba75ad41908d35aad545358c78.jollof_011AD8B538CDB456D533821E2DD8188A9ADD1D84EFDE2C806D0D1097D94FD34D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BP_55_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.hooffinancial",
+                "version_code": 71022000,
+                "version_name": "2.71022.0",
+                "package_path": "AndroZoo/apks/01/com.hooffinancial_011FC40AADBC9128394D8C7A9609946C4483D5E498DA8FAF77284F2C4C232FC2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BP_55_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.com.vjazzestudio",
+                "version_code": 83110030,
+                "version_name": "2.83110.30",
+                "package_path": "AndroZoo/apks/01/branded.com.vjazzestudio_014A567BEA3D08B7E3E227C33441F24F961589D458BD8A896AA050DB4BA1D848.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BP_55_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.net.iawellbeing",
+                "version_code": 80091007,
+                "version_name": "2.80091.7",
+                "package_path": "AndroZoo/apks/01/branded.net.iawellbeing_017E8C3AE5E8ACBD7A57F24F628357BEA4D42691F5975CFCC9F5D2537B4CF08F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BP_55_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.codeforceoswego",
+                "version_code": 65048000,
+                "version_name": "2.65048.0",
+                "package_path": "AndroZoo/apks/01/com.codeforceoswego_019149CC0EC6F499D848AA1300C5B735041E26639C6049A090ED3885C619BF94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BP_55_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.cupcakemenyc",
+                "version_code": 55469000,
+                "version_name": "2.55469.0",
+                "package_path": "AndroZoo/apks/01/com.cupcakemenyc_01A7B53BF188A6C59DF75E2B3E6320BD9AB65F4AF23F354EB115D1C239013B12.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BP_55_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.mysportsclips",
+                "version_code": 67157000,
+                "version_name": "2.67157.0",
+                "package_path": "AndroZoo/apks/01/com.mysportsclips_01BDACF55B0308BA80953BD7C78DD0FB7EFE85FDEB7F3EADDB031E799B697A94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BP_55_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.quantazone.store",
+                "version_code": 68159001,
+                "version_name": "2.68159.1",
+                "package_path": "AndroZoo/apks/01/com.quantazone.store_01C40B2C170BA590971BCF33167524A3FEF43F0DAD723197B69CAE1A00E4E9CE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BP_55_PIN_SERVICE_UUID`."
             }
         ]
     },
@@ -53784,6 +54399,42 @@
                 "URL": "https://developer.sumup.com/terminal-payments/sdks/android/readers/",
                 "description": "GPT-6 Luna SDK review: Likely SumUp Android reader SDK GATT profile: the exact same 20 UUID records are present in two distinct host packages and their DEX evidence names com.sumup.reader.core.pinplus.transport. SumUp primary docs confirm the Android SDK handles Bluetooth readers including legacy PIN+, but do not list the UUIDs. Keep bc2f4cc6-aaef-4351-9034-d66268e328f0 Unknown; a different public product manual assigns that UUID to Blue Creation BC Smart, so ownership/name needs direct firmware or SDK context.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.caisse.enregistreuse2 v1.1.69 (versionCode 69), in Java field `AIR_LITE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.util` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m684022ba75ad41908d35aad545358c78.jollof v2.90984.0 (versionCode 90984000), in Java field `AIR_LITE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hooffinancial v2.71022.0 (versionCode 71022000), in Java field `AIR_LITE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.com.vjazzestudio v2.83110.30 (versionCode 83110030), in Java field `AIR_LITE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.net.iawellbeing v2.80091.7 (versionCode 80091007), in Java field `AIR_LITE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.codeforceoswego v2.65048.0 (versionCode 65048000), in Java field `AIR_LITE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cupcakemenyc v2.55469.0 (versionCode 55469000), in Java field `AIR_LITE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mysportsclips v2.67157.0 (versionCode 67157000), in Java field `AIR_LITE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.quantazone.store v2.68159.1 (versionCode 68159001), in Java field `AIR_LITE_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -54913,6 +55564,69 @@
                 "version_name": "2.65048.1",
                 "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.caisse.enregistreuse2",
+                "version_code": 69,
+                "version_name": "1.1.69",
+                "package_path": "AndroZoo/apks/01/com.caisse.enregistreuse2_0117493D5FD82F3D453888815BE9EC53E00E7B1EB6FE0DF8A7DB0BBA412305BE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.m684022ba75ad41908d35aad545358c78.jollof",
+                "version_code": 90984000,
+                "version_name": "2.90984.0",
+                "package_path": "AndroZoo/apks/01/branded.m684022ba75ad41908d35aad545358c78.jollof_011AD8B538CDB456D533821E2DD8188A9ADD1D84EFDE2C806D0D1097D94FD34D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.hooffinancial",
+                "version_code": 71022000,
+                "version_name": "2.71022.0",
+                "package_path": "AndroZoo/apks/01/com.hooffinancial_011FC40AADBC9128394D8C7A9609946C4483D5E498DA8FAF77284F2C4C232FC2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.com.vjazzestudio",
+                "version_code": 83110030,
+                "version_name": "2.83110.30",
+                "package_path": "AndroZoo/apks/01/branded.com.vjazzestudio_014A567BEA3D08B7E3E227C33441F24F961589D458BD8A896AA050DB4BA1D848.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.net.iawellbeing",
+                "version_code": 80091007,
+                "version_name": "2.80091.7",
+                "package_path": "AndroZoo/apks/01/branded.net.iawellbeing_017E8C3AE5E8ACBD7A57F24F628357BEA4D42691F5975CFCC9F5D2537B4CF08F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.codeforceoswego",
+                "version_code": 65048000,
+                "version_name": "2.65048.0",
+                "package_path": "AndroZoo/apks/01/com.codeforceoswego_019149CC0EC6F499D848AA1300C5B735041E26639C6049A090ED3885C619BF94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.cupcakemenyc",
+                "version_code": 55469000,
+                "version_name": "2.55469.0",
+                "package_path": "AndroZoo/apks/01/com.cupcakemenyc_01A7B53BF188A6C59DF75E2B3E6320BD9AB65F4AF23F354EB115D1C239013B12.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.mysportsclips",
+                "version_code": 67157000,
+                "version_name": "2.67157.0",
+                "package_path": "AndroZoo/apks/01/com.mysportsclips_01BDACF55B0308BA80953BD7C78DD0FB7EFE85FDEB7F3EADDB031E799B697A94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.quantazone.store",
+                "version_code": 68159001,
+                "version_name": "2.68159.1",
+                "package_path": "AndroZoo/apks/01/com.quantazone.store_01C40B2C170BA590971BCF33167524A3FEF43F0DAD723197B69CAE1A00E4E9CE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_SERVICE_UUID`."
             }
         ]
     },
@@ -55573,6 +56287,42 @@
                 "URL": "https://developer.sumup.com/terminal-payments/sdks/android/readers/",
                 "description": "GPT-6 Luna SDK review: Likely SumUp Android reader SDK GATT profile: the exact same 20 UUID records are present in two distinct host packages and their DEX evidence names com.sumup.reader.core.pinplus.transport. SumUp primary docs confirm the Android SDK handles Bluetooth readers including legacy PIN+, but do not list the UUIDs. Keep bc2f4cc6-aaef-4351-9034-d66268e328f0 Unknown; a different public product manual assigns that UUID to Blue Creation BC Smart, so ownership/name needs direct firmware or SDK context.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.caisse.enregistreuse2 v1.1.69 (versionCode 69), in Java field `AIR_LITE_V2_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.util` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m684022ba75ad41908d35aad545358c78.jollof v2.90984.0 (versionCode 90984000), in Java field `AIR_LITE_V2_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hooffinancial v2.71022.0 (versionCode 71022000), in Java field `AIR_LITE_V2_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.com.vjazzestudio v2.83110.30 (versionCode 83110030), in Java field `AIR_LITE_V2_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.net.iawellbeing v2.80091.7 (versionCode 80091007), in Java field `AIR_LITE_V2_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.codeforceoswego v2.65048.0 (versionCode 65048000), in Java field `AIR_LITE_V2_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cupcakemenyc v2.55469.0 (versionCode 55469000), in Java field `AIR_LITE_V2_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mysportsclips v2.67157.0 (versionCode 67157000), in Java field `AIR_LITE_V2_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.quantazone.store v2.68159.1 (versionCode 68159001), in Java field `AIR_LITE_V2_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -56667,6 +57417,69 @@
                 "version_name": "2.65048.1",
                 "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_V2_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.caisse.enregistreuse2",
+                "version_code": 69,
+                "version_name": "1.1.69",
+                "package_path": "AndroZoo/apks/01/com.caisse.enregistreuse2_0117493D5FD82F3D453888815BE9EC53E00E7B1EB6FE0DF8A7DB0BBA412305BE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_V2_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.m684022ba75ad41908d35aad545358c78.jollof",
+                "version_code": 90984000,
+                "version_name": "2.90984.0",
+                "package_path": "AndroZoo/apks/01/branded.m684022ba75ad41908d35aad545358c78.jollof_011AD8B538CDB456D533821E2DD8188A9ADD1D84EFDE2C806D0D1097D94FD34D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_V2_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.hooffinancial",
+                "version_code": 71022000,
+                "version_name": "2.71022.0",
+                "package_path": "AndroZoo/apks/01/com.hooffinancial_011FC40AADBC9128394D8C7A9609946C4483D5E498DA8FAF77284F2C4C232FC2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_V2_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.com.vjazzestudio",
+                "version_code": 83110030,
+                "version_name": "2.83110.30",
+                "package_path": "AndroZoo/apks/01/branded.com.vjazzestudio_014A567BEA3D08B7E3E227C33441F24F961589D458BD8A896AA050DB4BA1D848.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_V2_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.net.iawellbeing",
+                "version_code": 80091007,
+                "version_name": "2.80091.7",
+                "package_path": "AndroZoo/apks/01/branded.net.iawellbeing_017E8C3AE5E8ACBD7A57F24F628357BEA4D42691F5975CFCC9F5D2537B4CF08F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_V2_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.codeforceoswego",
+                "version_code": 65048000,
+                "version_name": "2.65048.0",
+                "package_path": "AndroZoo/apks/01/com.codeforceoswego_019149CC0EC6F499D848AA1300C5B735041E26639C6049A090ED3885C619BF94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_V2_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.cupcakemenyc",
+                "version_code": 55469000,
+                "version_name": "2.55469.0",
+                "package_path": "AndroZoo/apks/01/com.cupcakemenyc_01A7B53BF188A6C59DF75E2B3E6320BD9AB65F4AF23F354EB115D1C239013B12.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_V2_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.mysportsclips",
+                "version_code": 67157000,
+                "version_name": "2.67157.0",
+                "package_path": "AndroZoo/apks/01/com.mysportsclips_01BDACF55B0308BA80953BD7C78DD0FB7EFE85FDEB7F3EADDB031E799B697A94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_V2_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.quantazone.store",
+                "version_code": 68159001,
+                "version_name": "2.68159.1",
+                "package_path": "AndroZoo/apks/01/com.quantazone.store_01C40B2C170BA590971BCF33167524A3FEF43F0DAD723197B69CAE1A00E4E9CE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_LITE_V2_SERVICE_UUID`."
             }
         ]
     },
@@ -57339,6 +58152,42 @@
                 "URL": "https://developer.sumup.com/terminal-payments/sdks/android/readers/",
                 "description": "GPT-6 Luna SDK review: Likely SumUp Android reader SDK GATT profile: the exact same 20 UUID records are present in two distinct host packages and their DEX evidence names com.sumup.reader.core.pinplus.transport. SumUp primary docs confirm the Android SDK handles Bluetooth readers including legacy PIN+, but do not list the UUIDs. Keep bc2f4cc6-aaef-4351-9034-d66268e328f0 Unknown; a different public product manual assigns that UUID to Blue Creation BC Smart, so ownership/name needs direct firmware or SDK context.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.caisse.enregistreuse2 v1.1.69 (versionCode 69), in Java field `AIR_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.util` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m684022ba75ad41908d35aad545358c78.jollof v2.90984.0 (versionCode 90984000), in Java field `AIR_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hooffinancial v2.71022.0 (versionCode 71022000), in Java field `AIR_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.com.vjazzestudio v2.83110.30 (versionCode 83110030), in Java field `AIR_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.net.iawellbeing v2.80091.7 (versionCode 80091007), in Java field `AIR_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.codeforceoswego v2.65048.0 (versionCode 65048000), in Java field `AIR_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cupcakemenyc v2.55469.0 (versionCode 55469000), in Java field `AIR_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mysportsclips v2.67157.0 (versionCode 67157000), in Java field `AIR_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.quantazone.store v2.68159.1 (versionCode 68159001), in Java field `AIR_PIN_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -58454,6 +59303,69 @@
                 "version_name": "2.65048.1",
                 "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.caisse.enregistreuse2",
+                "version_code": 69,
+                "version_name": "1.1.69",
+                "package_path": "AndroZoo/apks/01/com.caisse.enregistreuse2_0117493D5FD82F3D453888815BE9EC53E00E7B1EB6FE0DF8A7DB0BBA412305BE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.m684022ba75ad41908d35aad545358c78.jollof",
+                "version_code": 90984000,
+                "version_name": "2.90984.0",
+                "package_path": "AndroZoo/apks/01/branded.m684022ba75ad41908d35aad545358c78.jollof_011AD8B538CDB456D533821E2DD8188A9ADD1D84EFDE2C806D0D1097D94FD34D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.hooffinancial",
+                "version_code": 71022000,
+                "version_name": "2.71022.0",
+                "package_path": "AndroZoo/apks/01/com.hooffinancial_011FC40AADBC9128394D8C7A9609946C4483D5E498DA8FAF77284F2C4C232FC2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.com.vjazzestudio",
+                "version_code": 83110030,
+                "version_name": "2.83110.30",
+                "package_path": "AndroZoo/apks/01/branded.com.vjazzestudio_014A567BEA3D08B7E3E227C33441F24F961589D458BD8A896AA050DB4BA1D848.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.net.iawellbeing",
+                "version_code": 80091007,
+                "version_name": "2.80091.7",
+                "package_path": "AndroZoo/apks/01/branded.net.iawellbeing_017E8C3AE5E8ACBD7A57F24F628357BEA4D42691F5975CFCC9F5D2537B4CF08F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.codeforceoswego",
+                "version_code": 65048000,
+                "version_name": "2.65048.0",
+                "package_path": "AndroZoo/apks/01/com.codeforceoswego_019149CC0EC6F499D848AA1300C5B735041E26639C6049A090ED3885C619BF94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.cupcakemenyc",
+                "version_code": 55469000,
+                "version_name": "2.55469.0",
+                "package_path": "AndroZoo/apks/01/com.cupcakemenyc_01A7B53BF188A6C59DF75E2B3E6320BD9AB65F4AF23F354EB115D1C239013B12.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.mysportsclips",
+                "version_code": 67157000,
+                "version_name": "2.67157.0",
+                "package_path": "AndroZoo/apks/01/com.mysportsclips_01BDACF55B0308BA80953BD7C78DD0FB7EFE85FDEB7F3EADDB031E799B697A94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_PIN_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.quantazone.store",
+                "version_code": 68159001,
+                "version_name": "2.68159.1",
+                "package_path": "AndroZoo/apks/01/com.quantazone.store_01C40B2C170BA590971BCF33167524A3FEF43F0DAD723197B69CAE1A00E4E9CE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_PIN_SERVICE_UUID`."
             }
         ]
     },
@@ -59114,6 +60026,42 @@
                 "URL": "https://developer.sumup.com/terminal-payments/sdks/android/readers/",
                 "description": "GPT-6 Luna SDK review: Likely SumUp Android reader SDK GATT profile: the exact same 20 UUID records are present in two distinct host packages and their DEX evidence names com.sumup.reader.core.pinplus.transport. SumUp primary docs confirm the Android SDK handles Bluetooth readers including legacy PIN+, but do not list the UUIDs. Keep bc2f4cc6-aaef-4351-9034-d66268e328f0 Unknown; a different public product manual assigns that UUID to Blue Creation BC Smart, so ownership/name needs direct firmware or SDK context.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of com.caisse.enregistreuse2 v1.1.69 (versionCode 69), in Java field `AIR_V3_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.util` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m684022ba75ad41908d35aad545358c78.jollof v2.90984.0 (versionCode 90984000), in Java field `AIR_V3_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hooffinancial v2.71022.0 (versionCode 71022000), in Java field `AIR_V3_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.com.vjazzestudio v2.83110.30 (versionCode 83110030), in Java field `AIR_V3_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.net.iawellbeing v2.80091.7 (versionCode 80091007), in Java field `AIR_V3_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.codeforceoswego v2.65048.0 (versionCode 65048000), in Java field `AIR_V3_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cupcakemenyc v2.55469.0 (versionCode 55469000), in Java field `AIR_V3_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mysportsclips v2.67157.0 (versionCode 67157000), in Java field `AIR_V3_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.quantazone.store v2.68159.1 (versionCode 68159001), in Java field `AIR_V3_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -60208,6 +61156,69 @@
                 "version_name": "2.65048.1",
                 "package_path": "AndroZoo/apks/00/com.laramiepeakyoga_00DE70DF9C57E03E9E3C7B59C2301E8CAA2AFE1AD4AE9AD1FB9B1D373BEA4CBF.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V3_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.caisse.enregistreuse2",
+                "version_code": 69,
+                "version_name": "1.1.69",
+                "package_path": "AndroZoo/apks/01/com.caisse.enregistreuse2_0117493D5FD82F3D453888815BE9EC53E00E7B1EB6FE0DF8A7DB0BBA412305BE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V3_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.m684022ba75ad41908d35aad545358c78.jollof",
+                "version_code": 90984000,
+                "version_name": "2.90984.0",
+                "package_path": "AndroZoo/apks/01/branded.m684022ba75ad41908d35aad545358c78.jollof_011AD8B538CDB456D533821E2DD8188A9ADD1D84EFDE2C806D0D1097D94FD34D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V3_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.hooffinancial",
+                "version_code": 71022000,
+                "version_name": "2.71022.0",
+                "package_path": "AndroZoo/apks/01/com.hooffinancial_011FC40AADBC9128394D8C7A9609946C4483D5E498DA8FAF77284F2C4C232FC2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V3_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.com.vjazzestudio",
+                "version_code": 83110030,
+                "version_name": "2.83110.30",
+                "package_path": "AndroZoo/apks/01/branded.com.vjazzestudio_014A567BEA3D08B7E3E227C33441F24F961589D458BD8A896AA050DB4BA1D848.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V3_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.net.iawellbeing",
+                "version_code": 80091007,
+                "version_name": "2.80091.7",
+                "package_path": "AndroZoo/apks/01/branded.net.iawellbeing_017E8C3AE5E8ACBD7A57F24F628357BEA4D42691F5975CFCC9F5D2537B4CF08F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V3_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.codeforceoswego",
+                "version_code": 65048000,
+                "version_name": "2.65048.0",
+                "package_path": "AndroZoo/apks/01/com.codeforceoswego_019149CC0EC6F499D848AA1300C5B735041E26639C6049A090ED3885C619BF94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V3_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.cupcakemenyc",
+                "version_code": 55469000,
+                "version_name": "2.55469.0",
+                "package_path": "AndroZoo/apks/01/com.cupcakemenyc_01A7B53BF188A6C59DF75E2B3E6320BD9AB65F4AF23F354EB115D1C239013B12.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V3_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.mysportsclips",
+                "version_code": 67157000,
+                "version_name": "2.67157.0",
+                "package_path": "AndroZoo/apks/01/com.mysportsclips_01BDACF55B0308BA80953BD7C78DD0FB7EFE85FDEB7F3EADDB031E799B697A94.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V3_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.quantazone.store",
+                "version_code": 68159001,
+                "version_name": "2.68159.1",
+                "package_path": "AndroZoo/apks/01/com.quantazone.store_01C40B2C170BA590971BCF33167524A3FEF43F0DAD723197B69CAE1A00E4E9CE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V3_SERVICE_UUID`."
             }
         ]
     },
@@ -60809,6 +61820,22 @@
             },
             {
                 "description": "Found in decompiled DEX of com.thepinkroomhtx v2.114732.0 (versionCode 105575732), in Java field `AIR_V4_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.util` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.caisse.enregistreuse2 v1.1.69 (versionCode 69), in Java field `AIR_V4_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.util` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.m684022ba75ad41908d35aad545358c78.jollof v2.90984.0 (versionCode 90984000), in Java field `AIR_V4_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.com.vjazzestudio v2.83110.30 (versionCode 83110030), in Java field `AIR_V4_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of branded.net.iawellbeing v2.80091.7 (versionCode 80091007), in Java field `AIR_V4_SERVICE_UUID`, declared in Java package `com.sumup.reader.core.pinplus.transport` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
             }
         ],
@@ -61819,6 +62846,34 @@
                 "version_code": 105575732,
                 "version_name": "2.114732.0",
                 "package_path": "AndroZoo/apks/00/com.thepinkroomhtx_00CB0260712D1A8CF008117F5E1EA09656DD17BA9DFB35EE0970F4C21F7E3C41.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V4_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.caisse.enregistreuse2",
+                "version_code": 69,
+                "version_name": "1.1.69",
+                "package_path": "AndroZoo/apks/01/com.caisse.enregistreuse2_0117493D5FD82F3D453888815BE9EC53E00E7B1EB6FE0DF8A7DB0BBA412305BE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V4_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.m684022ba75ad41908d35aad545358c78.jollof",
+                "version_code": 90984000,
+                "version_name": "2.90984.0",
+                "package_path": "AndroZoo/apks/01/branded.m684022ba75ad41908d35aad545358c78.jollof_011AD8B538CDB456D533821E2DD8188A9ADD1D84EFDE2C806D0D1097D94FD34D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V4_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.com.vjazzestudio",
+                "version_code": 83110030,
+                "version_name": "2.83110.30",
+                "package_path": "AndroZoo/apks/01/branded.com.vjazzestudio_014A567BEA3D08B7E3E227C33441F24F961589D458BD8A896AA050DB4BA1D848.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V4_SERVICE_UUID`."
+            },
+            {
+                "package_id": "branded.net.iawellbeing",
+                "version_code": 80091007,
+                "version_name": "2.80091.7",
+                "package_path": "AndroZoo/apks/01/branded.net.iawellbeing_017E8C3AE5E8ACBD7A57F24F628357BEA4D42691F5975CFCC9F5D2537B4CF08F.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIR_V4_SERVICE_UUID`."
             }
         ]

@@ -2494,6 +2494,10 @@
             {
                 "description": "Found in decompiled DEX of com.informationapps.criton.kolbe v6.2.0 (versionCode 1166), in Java field `CUSTOMER_ID`, declared in Java package `pt.beware.common` (third-party SDK). Classification source: field-name:CUSTOMER_ID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Distinct APK build AndroZoo/apks/01/com.informationapps.criton.mangoesResort_01216598F8FFC2568F65B630CDAB70A75954D00F95DC34EDEDB7C4CF22E30A8B.apk: Found in decompiled DEX of com.informationapps.criton.mangoesResort v6.2.0 (versionCode 1152), in Java field `CUSTOMER_ID`, declared in Java package `pt.beware.common` (third-party SDK). Classification source: field-name:CUSTOMER_ID.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -3314,6 +3318,13 @@
                 "version_code": 1166,
                 "version_name": "6.2.0",
                 "package_path": "BLUUID_APKS/0994/756e3dd3973d95195828fb36836b5676d35a76a23196060912b814f6f35d68d0/756e3dd3973d95195828fb36836b5676d35a76a23196060912b814f6f35d68d0.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CUSTOMER_ID`."
+            },
+            {
+                "package_id": "com.informationapps.criton.mangoesResort",
+                "version_code": 1152,
+                "version_name": "6.2.0",
+                "package_path": "AndroZoo/apks/01/com.informationapps.criton.mangoesResort_01216598F8FFC2568F65B630CDAB70A75954D00F95DC34EDEDB7C4CF22E30A8B.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CUSTOMER_ID`."
             }
         ],
@@ -9475,6 +9486,19 @@
             {
                 "description": "Found in decompiled DEX of it.emplate.waves v2022.40 (versionCode 228), in Java field `SECURE_WRITE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.indoora.automechanika v1.3.0 (versionCode 130), in Java field `SECURE_WRITE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of uk.co.hproperties.twentyfen v11.4.0 (versionCode 16252), in Java field `SECURE_WRITE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
             }
         ],
         "android_info_array": [
@@ -10141,6 +10165,20 @@
                 "version_code": 228,
                 "version_name": "2022.40",
                 "package_path": "AndroZoo/apks/00/it.emplate.waves_005FDC0FF5FF8451AAA74D791FDFAE6E2DDA3576045938472C49A580CFD3A9D3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_WRITE`."
+            },
+            {
+                "package_id": "com.indoora.automechanika",
+                "version_code": 130,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/com.indoora.automechanika_0164CCA1F354280205DDF55BB2DC4F2E53D7F80FAF71C57E1FBE9ECA8AB97E20.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_WRITE`."
+            },
+            {
+                "package_id": "uk.co.hproperties.twentyfen",
+                "version_code": 16252,
+                "version_name": "11.4.0",
+                "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_WRITE`."
             }
         ],
@@ -10635,6 +10673,19 @@
             {
                 "description": "Found in decompiled DEX of it.emplate.waves v2022.40 (versionCode 228), in Java field `SECURE_RESPONSE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.indoora.automechanika v1.3.0 (versionCode 130), in Java field `SECURE_RESPONSE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of uk.co.hproperties.twentyfen v11.4.0 (versionCode 16252), in Java field `SECURE_RESPONSE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
             }
         ],
         "android_info_array": [
@@ -11301,6 +11352,20 @@
                 "version_code": 228,
                 "version_name": "2022.40",
                 "package_path": "AndroZoo/apks/00/it.emplate.waves_005FDC0FF5FF8451AAA74D791FDFAE6E2DDA3576045938472C49A580CFD3A9D3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_RESPONSE`."
+            },
+            {
+                "package_id": "com.indoora.automechanika",
+                "version_code": 130,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/com.indoora.automechanika_0164CCA1F354280205DDF55BB2DC4F2E53D7F80FAF71C57E1FBE9ECA8AB97E20.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_RESPONSE`."
+            },
+            {
+                "package_id": "uk.co.hproperties.twentyfen",
+                "version_code": 16252,
+                "version_name": "11.4.0",
+                "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_RESPONSE`."
             }
         ],
@@ -11795,6 +11860,19 @@
             {
                 "description": "Found in decompiled DEX of it.emplate.waves v2022.40 (versionCode 228), in Java field `SECURE_LAST_PROCESSED_REQUEST_TOKEN`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.indoora.automechanika v1.3.0 (versionCode 130), in Java field `SECURE_LAST_PROCESSED_REQUEST_TOKEN`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of uk.co.hproperties.twentyfen v11.4.0 (versionCode 16252), in Java field `SECURE_LAST_PROCESSED_REQUEST_TOKEN`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
             }
         ],
         "android_info_array": [
@@ -12461,6 +12539,20 @@
                 "version_code": 228,
                 "version_name": "2022.40",
                 "package_path": "AndroZoo/apks/00/it.emplate.waves_005FDC0FF5FF8451AAA74D791FDFAE6E2DDA3576045938472C49A580CFD3A9D3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_LAST_PROCESSED_REQUEST_TOKEN`."
+            },
+            {
+                "package_id": "com.indoora.automechanika",
+                "version_code": 130,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/com.indoora.automechanika_0164CCA1F354280205DDF55BB2DC4F2E53D7F80FAF71C57E1FBE9ECA8AB97E20.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_LAST_PROCESSED_REQUEST_TOKEN`."
+            },
+            {
+                "package_id": "uk.co.hproperties.twentyfen",
+                "version_code": 16252,
+                "version_name": "11.4.0",
+                "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_LAST_PROCESSED_REQUEST_TOKEN`."
             }
         ],
@@ -12955,6 +13047,19 @@
             {
                 "description": "Found in decompiled DEX of it.emplate.waves v2022.40 (versionCode 228), in Java field `SECURE_CONTROL_POINT`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.indoora.automechanika v1.3.0 (versionCode 130), in Java field `SECURE_CONTROL_POINT`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of uk.co.hproperties.twentyfen v11.4.0 (versionCode 16252), in Java field `SECURE_CONTROL_POINT`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
             }
         ],
         "android_info_array": [
@@ -13621,6 +13726,20 @@
                 "version_code": 228,
                 "version_name": "2022.40",
                 "package_path": "AndroZoo/apks/00/it.emplate.waves_005FDC0FF5FF8451AAA74D791FDFAE6E2DDA3576045938472C49A580CFD3A9D3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_CONTROL_POINT`."
+            },
+            {
+                "package_id": "com.indoora.automechanika",
+                "version_code": 130,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/com.indoora.automechanika_0164CCA1F354280205DDF55BB2DC4F2E53D7F80FAF71C57E1FBE9ECA8AB97E20.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_CONTROL_POINT`."
+            },
+            {
+                "package_id": "uk.co.hproperties.twentyfen",
+                "version_code": 16252,
+                "version_name": "11.4.0",
+                "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SECURE_CONTROL_POINT`."
             }
         ],
@@ -18829,6 +18948,55 @@
             {
                 "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.bodytecharuba v11.6.10 (versionCode 4300815), in Java field `f9043b`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.squmatgymsl v12.2.3 (versionCode 4300873), in Java field `f25982b`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.sportclubdoit v10.4.9 (versionCode 4300593), in Java field `f13370b`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.nul40fitbv v12.0.4 (versionCode 4300851), in Java field `f26290b`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.sportcentrumbalili v12.4.4 (versionCode 4300888), in Java field `f26023b`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.fitbaar v10.0.5 (versionCode 4300509), in Java field `f11835b`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.fitwithm v11.0.5 (versionCode 4300641), in Java field `f11911b`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.welstory.welplus v1.01.17 (versionCode 67), in Java field `UUID_HEIGHT_SCALE_READ`, declared in Java package `com.qn.device.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.aequumclub v11.5.8 (versionCode 4300788), in Java field `f9943b`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.personaltrainingastensomeren v12.0.4 (versionCode 4300851), in Java field `f26290b`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Shanghai) — Yolanda smart-scale BLE SDK"
+            },
+            {
+                "description": "Source review, digifit.android.virtuagym.pro.squmatgymsl: constant f25982b=abf1; manager selects service f25981a then service.getCharacteristic(abf1) AndroZoo/apks_jadx/01/digifit.android.virtuagym.pro.squmatgymsl_01024FB85E4C2FF3710E61F4CD02CDA9E4A826E27A61F52B281DF8B81FF90C76.apk.jadx.tar.xz!sources/com/qingniu/heightscale/constant/HeightScaleConstant.java:12,15; sources/com/qingniu/heightscale/ble/HeightScaleBleManager.java:111-125.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review, com.welstory.welplus: labels abf0 as service and abf1 as read characteristic AndroZoo/apks_jadx/01/com.welstory.welplus_0184355B885FB5C49FF23001CB2765D762C180A66274BF608E83401C78499093.apk.jadx.tar.xz!sources/com/qn/device/constant/QNBleConst.java:8-10.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -21330,6 +21498,69 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f9043b`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.squmatgymsl",
+                "version_code": 4300873,
+                "version_name": "12.2.3",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.squmatgymsl_01024FB85E4C2FF3710E61F4CD02CDA9E4A826E27A61F52B281DF8B81FF90C76.apk",
+                "description": "Detected by apk-clues-extract scan; role details are in source-review evidence; Java field `f25982b`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportclubdoit",
+                "version_code": 4300593,
+                "version_name": "10.4.9",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.sportclubdoit_012926AD25979414C7DB74D8BDFA93D98876B0F68A73AFFEA65FDE9C44C41681.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f13370b`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.nul40fitbv",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.nul40fitbv_013C9C90C3DDB1939AD8EDB5F896BF3541401B4B4965FF71C6397C226FCACA85.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f26290b`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportcentrumbalili",
+                "version_code": 4300888,
+                "version_name": "12.4.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.sportcentrumbalili_0170DEC4BAF2E8FC5057C1B91E23F60387A36C9FFD28A4AE58F4B62C70AAAD3C.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f26023b`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.fitbaar",
+                "version_code": 4300509,
+                "version_name": "10.0.5",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.fitbaar_018248E40C4E3AE4AA3936F61CB0C2E62C528A4594B6F4C295A86F2002FAF558.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f11835b`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.fitwithm",
+                "version_code": 4300641,
+                "version_name": "11.0.5",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.fitwithm_0182A273C66A4A3A8888B7AAC801B875D4157251B095DCE3B44FF6B667BEB926.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f11911b`."
+            },
+            {
+                "package_id": "com.welstory.welplus",
+                "version_code": 67,
+                "version_name": "1.01.17",
+                "package_path": "AndroZoo/apks/01/com.welstory.welplus_0184355B885FB5C49FF23001CB2765D762C180A66274BF608E83401C78499093.apk",
+                "description": "Detected by apk-clues-extract scan; role details are in source-review evidence; Java field `UUID_HEIGHT_SCALE_READ`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.aequumclub",
+                "version_code": 4300788,
+                "version_name": "11.5.8",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.aequumclub_018737CC982F90D271244A504DDDE0672D4330D647699071EE01BCF359338497.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f9943b`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.personaltrainingastensomeren",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.personaltrainingastensomeren_01FCD6CD4BE8DAA168AE2F1F6B8B53E140453BE0CEEDC4C3AF95DD360AE83348.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f26290b`."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -23225,6 +23456,55 @@
             {
                 "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.bodytecharuba v11.6.10 (versionCode 4300815), in Java field `c`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.squmatgymsl v12.2.3 (versionCode 4300873), in Java field `f25983c`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.sportclubdoit v10.4.9 (versionCode 4300593), in Java field `f13371c`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.nul40fitbv v12.0.4 (versionCode 4300851), in Java field `f26291c`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.sportcentrumbalili v12.4.4 (versionCode 4300888), in Java field `f26024c`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.fitbaar v10.0.5 (versionCode 4300509), in Java field `f11836c`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.fitwithm v11.0.5 (versionCode 4300641), in Java field `c`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.welstory.welplus v1.01.17 (versionCode 67), in Java field `UUID_HEIGHT_SCALE_WRITE`, declared in Java package `com.qn.device.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.aequumclub v11.5.8 (versionCode 4300788), in Java field `c`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.personaltrainingastensomeren v12.0.4 (versionCode 4300851), in Java field `f26291c`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Shanghai) — Yolanda smart-scale BLE SDK"
+            },
+            {
+                "description": "Source review, digifit.android.virtuagym.pro.squmatgymsl: constant f25983c=abf2; manager invokes service.getCharacteristic(abf2) AndroZoo/apks_jadx/01/digifit.android.virtuagym.pro.squmatgymsl_01024FB85E4C2FF3710E61F4CD02CDA9E4A826E27A61F52B281DF8B81FF90C76.apk.jadx.tar.xz!sources/com/qingniu/heightscale/constant/HeightScaleConstant.java:12,15; sources/com/qingniu/heightscale/ble/HeightScaleBleManager.java:111-125.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review, com.welstory.welplus: labels abf2 as write characteristic and abf0 as service AndroZoo/apks_jadx/01/com.welstory.welplus_0184355B885FB5C49FF23001CB2765D762C180A66274BF608E83401C78499093.apk.jadx.tar.xz!sources/com/qn/device/constant/QNBleConst.java:8-10.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -25684,6 +25964,69 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `c`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.squmatgymsl",
+                "version_code": 4300873,
+                "version_name": "12.2.3",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.squmatgymsl_01024FB85E4C2FF3710E61F4CD02CDA9E4A826E27A61F52B281DF8B81FF90C76.apk",
+                "description": "Detected by apk-clues-extract scan; role details are in source-review evidence; Java field `f25983c`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportclubdoit",
+                "version_code": 4300593,
+                "version_name": "10.4.9",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.sportclubdoit_012926AD25979414C7DB74D8BDFA93D98876B0F68A73AFFEA65FDE9C44C41681.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f13371c`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.nul40fitbv",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.nul40fitbv_013C9C90C3DDB1939AD8EDB5F896BF3541401B4B4965FF71C6397C226FCACA85.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f26291c`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportcentrumbalili",
+                "version_code": 4300888,
+                "version_name": "12.4.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.sportcentrumbalili_0170DEC4BAF2E8FC5057C1B91E23F60387A36C9FFD28A4AE58F4B62C70AAAD3C.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f26024c`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.fitbaar",
+                "version_code": 4300509,
+                "version_name": "10.0.5",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.fitbaar_018248E40C4E3AE4AA3936F61CB0C2E62C528A4594B6F4C295A86F2002FAF558.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f11836c`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.fitwithm",
+                "version_code": 4300641,
+                "version_name": "11.0.5",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.fitwithm_0182A273C66A4A3A8888B7AAC801B875D4157251B095DCE3B44FF6B667BEB926.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `c`."
+            },
+            {
+                "package_id": "com.welstory.welplus",
+                "version_code": 67,
+                "version_name": "1.01.17",
+                "package_path": "AndroZoo/apks/01/com.welstory.welplus_0184355B885FB5C49FF23001CB2765D762C180A66274BF608E83401C78499093.apk",
+                "description": "Detected by apk-clues-extract scan; role details are in source-review evidence; Java field `UUID_HEIGHT_SCALE_WRITE`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.aequumclub",
+                "version_code": 4300788,
+                "version_name": "11.5.8",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.aequumclub_018737CC982F90D271244A504DDDE0672D4330D647699071EE01BCF359338497.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `c`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.personaltrainingastensomeren",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.personaltrainingastensomeren_01FCD6CD4BE8DAA168AE2F1F6B8B53E140453BE0CEEDC4C3AF95DD360AE83348.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f26291c`."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -26477,6 +26820,42 @@
             {
                 "URL": "https://github.com/Jieli-Tech/android-bt-demo/blob/main/ATTConnect/README.md",
                 "description": "GPT-6 Luna SDK review: JieLi RCSP/OTA BLE channel. Seven host package IDs contain the pair. Direct DEX from com.eshooter.aces exposes com.jieli.jl_bt_ota.constant.BluetoothConstant.UUID_WRITE=AE01 and UUID_NOTIFICATION=AE02, alongside AE00 service. Official JieLi sources corroborate AE01 write and AE02 read/notify.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.squmatgymsl v12.2.3 (versionCode 4300873), in Java field `JIE_LI_CHARACTERISTIC_AE01`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: cross-file usage:getCharacteristic(JIE_LI_CHARACTERISTIC_AE01).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.legend.hiwtchMax.app v2.0.29 (versionCode 112), in Java field `UUID_WRITE`, declared in Java package `com.jieli.bluetooth_connect.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.nul40fitbv v12.0.4 (versionCode 4300851), in Java field `JIE_LI_CHARACTERISTIC_AE01`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: cross-file usage:getCharacteristic(JIE_LI_CHARACTERISTIC_AE01).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.sportcentrumbalili v12.4.4 (versionCode 4300888), in Java field `JIE_LI_CHARACTERISTIC_AE01`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: cross-file usage:getCharacteristic(JIE_LI_CHARACTERISTIC_AE01).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.aequumclub v11.5.8 (versionCode 4300788), in Java field `JIE_LI_CHARACTERISTIC_AE01`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: cross-file usage:getCharacteristic(JIE_LI_CHARACTERISTIC_AE01).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.stt.android v6.13.8 (versionCode 6013008), in Java field `b`, declared in Java package `defpackage` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.elinkthings.ailink.health v2.34.02 (versionCode 2340280), in Java field `UUID_WRITE`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.personaltrainingastensomeren v12.0.4 (versionCode 4300851), in Java field `JIE_LI_CHARACTERISTIC_AE01`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: cross-file usage:getCharacteristic(JIE_LI_CHARACTERISTIC_AE01).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review, com.legend.hiwtchMax.app: AE00 is service; AE01 write characteristic and AE02 notification characteristic are fetched from that service AndroZoo/apks_jadx/01/com.legend.hiwtchMax.app_01344CB127C3F234B5CA31FF86F1D4E403ADB129D23C01942D486CFAC4528349.apk.jadx.tar.xz!sources/com/jieli/bluetooth_connect/constant/BluetoothConstant.java:49-51; sources/com/jieli/ble/BleManager.java:328-338.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -27586,6 +27965,62 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `JIE_LI_CHARACTERISTIC_AE01`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.squmatgymsl",
+                "version_code": 4300873,
+                "version_name": "12.2.3",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.squmatgymsl_01024FB85E4C2FF3710E61F4CD02CDA9E4A826E27A61F52B281DF8B81FF90C76.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE01`."
+            },
+            {
+                "package_id": "com.legend.hiwtchMax.app",
+                "version_code": 112,
+                "version_name": "2.0.29",
+                "package_path": "AndroZoo/apks/01/com.legend.hiwtchMax.app_01344CB127C3F234B5CA31FF86F1D4E403ADB129D23C01942D486CFAC4528349.apk",
+                "description": "Detected by apk-clues-extract scan; role details are in source-review evidence; Java field `UUID_WRITE`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.nul40fitbv",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.nul40fitbv_013C9C90C3DDB1939AD8EDB5F896BF3541401B4B4965FF71C6397C226FCACA85.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE01`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportcentrumbalili",
+                "version_code": 4300888,
+                "version_name": "12.4.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.sportcentrumbalili_0170DEC4BAF2E8FC5057C1B91E23F60387A36C9FFD28A4AE58F4B62C70AAAD3C.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE01`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.aequumclub",
+                "version_code": 4300788,
+                "version_name": "11.5.8",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.aequumclub_018737CC982F90D271244A504DDDE0672D4330D647699071EE01BCF359338497.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE01`."
+            },
+            {
+                "package_id": "com.stt.android",
+                "version_code": 6013008,
+                "version_name": "6.13.8",
+                "package_path": "AndroZoo/apks/01/com.stt.android_01C47769676827AA7DFB89E30A57F2C8B21C5CAEDDDAFADA1D99C1B2F3371A9B.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `b`."
+            },
+            {
+                "package_id": "com.elinkthings.ailink.health",
+                "version_code": 2340280,
+                "version_name": "2.34.02",
+                "package_path": "AndroZoo/apks/01/com.elinkthings.ailink.health_01CEA43B3A9E04A387FE90B60D3A13CE63D3D9EFF3B8823C418045FA30E33D7F.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `UUID_WRITE`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.personaltrainingastensomeren",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.personaltrainingastensomeren_01FCD6CD4BE8DAA168AE2F1F6B8B53E140453BE0CEEDC4C3AF95DD360AE83348.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE01`."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -28375,6 +28810,54 @@
             {
                 "URL": "https://github.com/Jieli-Tech/android-bt-demo/blob/main/ATTConnect/README.md",
                 "description": "GPT-6 Luna SDK review: JieLi RCSP/OTA BLE channel. Seven host package IDs contain the pair. Direct DEX from com.eshooter.aces exposes com.jieli.jl_bt_ota.constant.BluetoothConstant.UUID_WRITE=AE01 and UUID_NOTIFICATION=AE02, alongside AE00 service. Official JieLi sources corroborate AE01 write and AE02 read/notify.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.squmatgymsl v12.2.3 (versionCode 4300873), in Java field `JIE_LI_CHARACTERISTIC_AE02`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.legend.hiwtchMax.app v2.0.29 (versionCode 112), in Java field `UUID_NOTIFICATION`, declared in Java package `com.jieli.bluetooth_connect.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.nul40fitbv v12.0.4 (versionCode 4300851), in Java field `JIE_LI_CHARACTERISTIC_AE02`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.sportcentrumbalili v12.4.4 (versionCode 4300888), in Java field `JIE_LI_CHARACTERISTIC_AE02`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.aequumclub v11.5.8 (versionCode 4300788), in Java field `JIE_LI_CHARACTERISTIC_AE02`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zddz.app.lampcontrol v1.482 (versionCode 44), in Java field `BLE_UUID_NOTIFICATION`. Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.stt.android v6.13.8 (versionCode 6013008), in Java field `c`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getCharacteristic(c).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.elinkthings.ailink.health v2.34.02 (versionCode 2340280), in Java field `UUID_NOTIFICATION`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.personaltrainingastensomeren v12.0.4 (versionCode 4300851), in Java field `JIE_LI_CHARACTERISTIC_AE02`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cratoni2 v1.4.1 (versionCode 20251224), in Java field `NOTIFICATION_UUID_HELMET`, declared in Java package `com.storm.app.config` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review, com.legend.hiwtchMax.app: AE02 notification characteristic after matching service AE00 AndroZoo/apks_jadx/01/com.legend.hiwtchMax.app_01344CB127C3F234B5CA31FF86F1D4E403ADB129D23C01942D486CFAC4528349.apk.jadx.tar.xz!sources/com/jieli/bluetooth_connect/constant/BluetoothConstant.java:49-51; sources/com/jieli/ble/BleManager.java:328-338.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review, com.zddz.app.lampcontrol: notification call uses service ff00 and characteristic ae02 AndroZoo/apks_jadx/01/com.zddz.app.lampcontrol_01AA721A286CD20AD06708817F5DCAEF595909885FD236EADC2EE1549CCE7383.apk.jadx.tar.xz!sources/com/zddz/app/lampcontrol/activity/NewMainActivity.java:493-495.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -29477,6 +29960,76 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `JIE_LI_CHARACTERISTIC_AE02`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.squmatgymsl",
+                "version_code": 4300873,
+                "version_name": "12.2.3",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.squmatgymsl_01024FB85E4C2FF3710E61F4CD02CDA9E4A826E27A61F52B281DF8B81FF90C76.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE02`."
+            },
+            {
+                "package_id": "com.legend.hiwtchMax.app",
+                "version_code": 112,
+                "version_name": "2.0.29",
+                "package_path": "AndroZoo/apks/01/com.legend.hiwtchMax.app_01344CB127C3F234B5CA31FF86F1D4E403ADB129D23C01942D486CFAC4528349.apk",
+                "description": "Detected by apk-clues-extract scan; role details are in source-review evidence; Java field `UUID_NOTIFICATION`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.nul40fitbv",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.nul40fitbv_013C9C90C3DDB1939AD8EDB5F896BF3541401B4B4965FF71C6397C226FCACA85.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE02`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportcentrumbalili",
+                "version_code": 4300888,
+                "version_name": "12.4.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.sportcentrumbalili_0170DEC4BAF2E8FC5057C1B91E23F60387A36C9FFD28A4AE58F4B62C70AAAD3C.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE02`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.aequumclub",
+                "version_code": 4300788,
+                "version_name": "11.5.8",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.aequumclub_018737CC982F90D271244A504DDDE0672D4330D647699071EE01BCF359338497.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE02`."
+            },
+            {
+                "package_id": "com.zddz.app.lampcontrol",
+                "version_code": 44,
+                "version_name": "1.482",
+                "package_path": "AndroZoo/apks/01/com.zddz.app.lampcontrol_01AA721A286CD20AD06708817F5DCAEF595909885FD236EADC2EE1549CCE7383.apk",
+                "description": "Detected by apk-clues-extract scan; role details are in source-review evidence; Java field `BLE_UUID_NOTIFICATION`."
+            },
+            {
+                "package_id": "com.stt.android",
+                "version_code": 6013008,
+                "version_name": "6.13.8",
+                "package_path": "AndroZoo/apks/01/com.stt.android_01C47769676827AA7DFB89E30A57F2C8B21C5CAEDDDAFADA1D99C1B2F3371A9B.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `c`."
+            },
+            {
+                "package_id": "com.elinkthings.ailink.health",
+                "version_code": 2340280,
+                "version_name": "2.34.02",
+                "package_path": "AndroZoo/apks/01/com.elinkthings.ailink.health_01CEA43B3A9E04A387FE90B60D3A13CE63D3D9EFF3B8823C418045FA30E33D7F.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `UUID_NOTIFICATION`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.personaltrainingastensomeren",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.personaltrainingastensomeren_01FCD6CD4BE8DAA168AE2F1F6B8B53E140453BE0CEEDC4C3AF95DD360AE83348.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE02`."
+            },
+            {
+                "package_id": "com.cratoni2",
+                "version_code": 20251224,
+                "version_name": "1.4.1",
+                "package_path": "AndroZoo/apks/01/com.cratoni2_01FFD7BCF5979C0875E248CA2AA0E4A2F513DE10D6B1713246A06F402DEBE825.apk",
+                "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `NOTIFICATION_UUID_HELMET`."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -56033,6 +56586,51 @@
             {
                 "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.bodytecharuba v11.6.10 (versionCode 4300815), in Java field `JIE_LI_SERVICE_AE00`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.squmatgymsl v12.2.3 (versionCode 4300873), in Java field `JIE_LI_SERVICE_AE00`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.legend.hiwtchMax.app v2.0.29 (versionCode 112), in Java field `UUID_SERVICE`, declared in Java package `com.jieli.bluetooth_connect.constant` (third-party SDK). Classification source: cross-file usage:getService(UUID_SERVICE).",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.nul40fitbv v12.0.4 (versionCode 4300851), in Java field `JIE_LI_SERVICE_AE00`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.sportcentrumbalili v12.4.4 (versionCode 4300888), in Java field `JIE_LI_SERVICE_AE00`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.aequumclub v11.5.8 (versionCode 4300788), in Java field `JIE_LI_SERVICE_AE00`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zddz.app.lampcontrol v1.482 (versionCode 44), in Java field `BLE_UUID_SERVICE`. Classification source: field-name:BLE_UUID_SERVICE.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.stt.android v6.13.8 (versionCode 6013008), in Java field `a`, declared in Java package `defpackage` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.elinkthings.ailink.health v2.34.02 (versionCode 2340280), in Java field `UUID_SERVICE`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: field-name:UUID_SERVICE.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.personaltrainingastensomeren v12.0.4 (versionCode 4300851), in Java field `JIE_LI_SERVICE_AE00`, declared in Java package `com.jieli.jl_bt_ota.constant` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cratoni2 v1.4.1 (versionCode 20251224), in Java field `SERVICE_UUID_HELMET`, declared in Java package `com.storm.app.config` (third-party SDK). Classification source: field-name:SERVICE_UUID_HELMET.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Korean biometric / access-control vendor; com.supremainc.android.libsupremaac SDK)"
             }
         ],
         "android_info_array": [
@@ -57617,6 +58215,76 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JIE_LI_SERVICE_AE00`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.squmatgymsl",
+                "version_code": 4300873,
+                "version_name": "12.2.3",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.squmatgymsl_01024FB85E4C2FF3710E61F4CD02CDA9E4A826E27A61F52B281DF8B81FF90C76.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JIE_LI_SERVICE_AE00`."
+            },
+            {
+                "package_id": "com.legend.hiwtchMax.app",
+                "version_code": 112,
+                "version_name": "2.0.29",
+                "package_path": "AndroZoo/apks/01/com.legend.hiwtchMax.app_01344CB127C3F234B5CA31FF86F1D4E403ADB129D23C01942D486CFAC4528349.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_SERVICE`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.nul40fitbv",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.nul40fitbv_013C9C90C3DDB1939AD8EDB5F896BF3541401B4B4965FF71C6397C226FCACA85.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JIE_LI_SERVICE_AE00`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportcentrumbalili",
+                "version_code": 4300888,
+                "version_name": "12.4.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.sportcentrumbalili_0170DEC4BAF2E8FC5057C1B91E23F60387A36C9FFD28A4AE58F4B62C70AAAD3C.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JIE_LI_SERVICE_AE00`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.aequumclub",
+                "version_code": 4300788,
+                "version_name": "11.5.8",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.aequumclub_018737CC982F90D271244A504DDDE0672D4330D647699071EE01BCF359338497.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JIE_LI_SERVICE_AE00`."
+            },
+            {
+                "package_id": "com.zddz.app.lampcontrol",
+                "version_code": 44,
+                "version_name": "1.482",
+                "package_path": "AndroZoo/apks/01/com.zddz.app.lampcontrol_01AA721A286CD20AD06708817F5DCAEF595909885FD236EADC2EE1549CCE7383.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `BLE_UUID_SERVICE`."
+            },
+            {
+                "package_id": "com.stt.android",
+                "version_code": 6013008,
+                "version_name": "6.13.8",
+                "package_path": "AndroZoo/apks/01/com.stt.android_01C47769676827AA7DFB89E30A57F2C8B21C5CAEDDDAFADA1D99C1B2F3371A9B.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `a`."
+            },
+            {
+                "package_id": "com.elinkthings.ailink.health",
+                "version_code": 2340280,
+                "version_name": "2.34.02",
+                "package_path": "AndroZoo/apks/01/com.elinkthings.ailink.health_01CEA43B3A9E04A387FE90B60D3A13CE63D3D9EFF3B8823C418045FA30E33D7F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_SERVICE`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.personaltrainingastensomeren",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.personaltrainingastensomeren_01FCD6CD4BE8DAA168AE2F1F6B8B53E140453BE0CEEDC4C3AF95DD360AE83348.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `JIE_LI_SERVICE_AE00`."
+            },
+            {
+                "package_id": "com.cratoni2",
+                "version_code": 20251224,
+                "version_name": "1.4.1",
+                "package_path": "AndroZoo/apks/01/com.cratoni2_01FFD7BCF5979C0875E248CA2AA0E4A2F513DE10D6B1713246A06F402DEBE825.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SERVICE_UUID_HELMET`."
             }
         ]
     },
@@ -67251,6 +67919,19 @@
             {
                 "description": "Found in decompiled DEX of it.emplate.waves v2022.40 (versionCode 228), in Java field `PROXIMITY`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: cross-file usage:getCharacteristic(PROXIMITY).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.indoora.automechanika v1.3.0 (versionCode 130), in Java field `PROXIMITY`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of uk.co.hproperties.twentyfen v11.4.0 (versionCode 16252), in Java field `PROXIMITY`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
             }
         ],
         "android_info_array": [
@@ -68057,6 +68738,20 @@
                 "version_code": 228,
                 "version_name": "2022.40",
                 "package_path": "AndroZoo/apks/00/it.emplate.waves_005FDC0FF5FF8451AAA74D791FDFAE6E2DDA3576045938472C49A580CFD3A9D3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `PROXIMITY`."
+            },
+            {
+                "package_id": "com.indoora.automechanika",
+                "version_code": 130,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/com.indoora.automechanika_0164CCA1F354280205DDF55BB2DC4F2E53D7F80FAF71C57E1FBE9ECA8AB97E20.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `PROXIMITY`."
+            },
+            {
+                "package_id": "uk.co.hproperties.twentyfen",
+                "version_code": 16252,
+                "version_name": "11.4.0",
+                "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `PROXIMITY`."
             }
         ]
@@ -68639,6 +69334,19 @@
             {
                 "description": "Found in decompiled DEX of it.emplate.waves v2022.40 (versionCode 228), in Java field `TIMERS`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: cross-file usage:getCharacteristic(TIMERS).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.indoora.automechanika v1.3.0 (versionCode 130), in Java field `TIMERS`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of uk.co.hproperties.twentyfen v11.4.0 (versionCode 16252), in Java field `TIMERS`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
             }
         ],
         "android_info_array": [
@@ -69445,6 +70153,20 @@
                 "version_code": 228,
                 "version_name": "2022.40",
                 "package_path": "AndroZoo/apks/00/it.emplate.waves_005FDC0FF5FF8451AAA74D791FDFAE6E2DDA3576045938472C49A580CFD3A9D3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `TIMERS`."
+            },
+            {
+                "package_id": "com.indoora.automechanika",
+                "version_code": 130,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/com.indoora.automechanika_0164CCA1F354280205DDF55BB2DC4F2E53D7F80FAF71C57E1FBE9ECA8AB97E20.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `TIMERS`."
+            },
+            {
+                "package_id": "uk.co.hproperties.twentyfen",
+                "version_code": 16252,
+                "version_name": "11.4.0",
+                "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `TIMERS`."
             }
         ]
@@ -70027,6 +70749,19 @@
             {
                 "description": "Found in decompiled DEX of it.emplate.waves v2022.40 (versionCode 228), in Java field `CONTROL`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: cross-file usage:getCharacteristic(CONTROL).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.indoora.automechanika v1.3.0 (versionCode 130), in Java field `CONTROL`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of uk.co.hproperties.twentyfen v11.4.0 (versionCode 16252), in Java field `CONTROL`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
             }
         ],
         "android_info_array": [
@@ -70834,6 +71569,20 @@
                 "version_name": "2022.40",
                 "package_path": "AndroZoo/apks/00/it.emplate.waves_005FDC0FF5FF8451AAA74D791FDFAE6E2DDA3576045938472C49A580CFD3A9D3.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CONTROL`."
+            },
+            {
+                "package_id": "com.indoora.automechanika",
+                "version_code": 130,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/com.indoora.automechanika_0164CCA1F354280205DDF55BB2DC4F2E53D7F80FAF71C57E1FBE9ECA8AB97E20.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CONTROL`."
+            },
+            {
+                "package_id": "uk.co.hproperties.twentyfen",
+                "version_code": 16252,
+                "version_name": "11.4.0",
+                "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CONTROL`."
             }
         ]
     },
@@ -71395,6 +72144,19 @@
             {
                 "description": "Found in decompiled DEX of it.emplate.waves v2022.40 (versionCode 228), in Java field `SECURE_CONFIGURATION_SERVICE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SECURE_CONFIGURATION_SERVICE).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.indoora.automechanika v1.3.0 (versionCode 130), in Java field `SECURE_CONFIGURATION_SERVICE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of uk.co.hproperties.twentyfen v11.4.0 (versionCode 16252), in Java field `SECURE_CONFIGURATION_SERVICE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
             }
         ],
         "android_info_array": [
@@ -72167,6 +72929,20 @@
                 "version_name": "2022.40",
                 "package_path": "AndroZoo/apks/00/it.emplate.waves_005FDC0FF5FF8451AAA74D791FDFAE6E2DDA3576045938472C49A580CFD3A9D3.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SECURE_CONFIGURATION_SERVICE`."
+            },
+            {
+                "package_id": "com.indoora.automechanika",
+                "version_code": 130,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/com.indoora.automechanika_0164CCA1F354280205DDF55BB2DC4F2E53D7F80FAF71C57E1FBE9ECA8AB97E20.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SECURE_CONFIGURATION_SERVICE`."
+            },
+            {
+                "package_id": "uk.co.hproperties.twentyfen",
+                "version_code": 16252,
+                "version_name": "11.4.0",
+                "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SECURE_CONFIGURATION_SERVICE`."
             }
         ]
     },
@@ -72728,6 +73504,19 @@
             {
                 "description": "Found in decompiled DEX of it.emplate.waves v2022.40 (versionCode 228), in Java field `SENSORS_SERVICE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: cross-file usage:getCharacteristic(SENSORS_SERVICE).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.indoora.automechanika v1.3.0 (versionCode 130), in Java field `SENSORS_SERVICE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of uk.co.hproperties.twentyfen v11.4.0 (versionCode 16252), in Java field `SENSORS_SERVICE`, declared in Java package `com.kontakt.sdk.android.ble.spec` (third-party SDK). Classification source: ambiguous-usage.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
             }
         ],
         "android_info_array": [
@@ -73499,6 +74288,20 @@
                 "version_code": 228,
                 "version_name": "2022.40",
                 "package_path": "AndroZoo/apks/00/it.emplate.waves_005FDC0FF5FF8451AAA74D791FDFAE6E2DDA3576045938472C49A580CFD3A9D3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SENSORS_SERVICE`."
+            },
+            {
+                "package_id": "com.indoora.automechanika",
+                "version_code": 130,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/com.indoora.automechanika_0164CCA1F354280205DDF55BB2DC4F2E53D7F80FAF71C57E1FBE9ECA8AB97E20.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SENSORS_SERVICE`."
+            },
+            {
+                "package_id": "uk.co.hproperties.twentyfen",
+                "version_code": 16252,
+                "version_name": "11.4.0",
+                "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SENSORS_SERVICE`."
             }
         ]
@@ -74094,6 +74897,10 @@
             {
                 "description": "Found in decompiled DEX of com.moko.bxp.tag v1.0.4 (versionCode 5), in Java field `CHAR_DISCONNECT`. Classification source: cross-file usage:getCharacteristic(CHAR_DISCONNECT).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.bingbao.anyloop v1.7.3 (versionCode 29), in Java field `f11793i`, declared in Java package `com.topstep.fitcloud.sdk.v2.features` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f11793i).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -74124,6 +74931,13 @@
                 "version_name": "1.0.4",
                 "package_path": "BLUUID_APKS/0884/3c5069620306d7703e55a8c4dc2cd7a7183dbb47378c1cc5ef9882d02402443c/3c5069620306d7703e55a8c4dc2cd7a7183dbb47378c1cc5ef9882d02402443c.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHAR_DISCONNECT`."
+            },
+            {
+                "package_id": "com.bingbao.anyloop",
+                "version_code": 29,
+                "version_name": "1.7.3",
+                "package_path": "AndroZoo/apks/01/com.bingbao.anyloop_01FF023187F551A6D26065D9D909E56BC3560D6ABC5699C8E4C8FFC1491DFFF3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f11793i`."
             }
         ],
         "parent_UUID": "aa00"
@@ -75038,6 +75852,35 @@
             }
         ],
         "parent_UUID": "028c3d3a-447d-43cb-938c-698e01e3e385"
+    },
+    {
+        "UUID": "aee56a6d-88aa-4b56-af98-ce34e57f18d4",
+        "company": "Melitta Single Portions GmbH & Co. KG",
+        "UUID_name": "DATA_API_CLIENT_ID",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.msp.avoury, declared as Java field `DATA_API_CLIENT_ID`. Classification determined by field-name:DATA_API_CLIENT_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.msp.avoury v1.7.4 (versionCode 98), in Java field `DATA_API_CLIENT_ID`. Classification source: field-name:DATA_API_CLIENT_ID.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.msp.avoury",
+                "description": "Publisher attribution for com.msp.avoury: The Google Play listing identifies this package's publisher as Melitta Single Portions; Avoury's legal imprint gives the same entity. The official quick guide confirms the Avoury app connects to the tea machine over Bluetooth. This source is not a verified download of the scanned historical APK.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.msp.avoury",
+                "version_code": 98,
+                "version_name": "1.7.4",
+                "package_path": "AndroZoo/apks/01/com.msp.avoury_01E28CF4FD54E0CBC2719CCF847A10A714B2996BE981EA207D0AF785BDE97263.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DATA_API_CLIENT_ID`."
+            }
+        ]
     },
     {
         "UUID": "a00a",
@@ -76472,6 +77315,35 @@
         "parent_UUID": "cd335528-624a-4363-b361-f62342001d00"
     },
     {
+        "UUID": "a19affb7-d3c7-4818-a0cd-389b51aee6b4",
+        "company": "OMNYS SRL",
+        "UUID_name": "SRV_AUTH",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.cubogas.fuelmaker, declared as Java field `SRV_AUTH`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.cubogas.fuelmaker v1.0.1 (versionCode 1000100), in Java field `SRV_AUTH`. Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cubogas.fuelmaker",
+                "description": "Publisher attribution for com.cubogas.fuelmaker: Google Play names OMNYS SRL as publisher. The app description says it manages Cubogas Fuel Maker refueling points, and Cubogas materials identify Fuel Maker as a Cubogas product. Treat this as app-publisher evidence only; UUID protocol ownership may instead belong to the Cubogas equipment maker. This source is not a verified download of the scanned historical APK.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cubogas.fuelmaker",
+                "version_code": 1000100,
+                "version_name": "1.0.1",
+                "package_path": "AndroZoo/apks/01/com.cubogas.fuelmaker_01B7E177FBF9B279734CF4FCFC7F10F04527C7C7F040A3AA9740BFFA3E334DDE.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SRV_AUTH`."
+            }
+        ]
+    },
+    {
         "UUID": "a701",
         "company": "OPPO",
         "UUID_name": "APOLLO_DEVICE_DFU_INDICATE",
@@ -77754,6 +78626,10 @@
             {
                 "description": "Found in decompiled DEX of com.femmto.app v4.1.0 (versionCode 1031), in Java field `SERVICE_UUID_SCALE_WIFI`, declared in Java package `com.aojmedical.plugin.ble.device.a` (third-party SDK). Classification source: field-name:SERVICE_UUID_SCALE_WIFI.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.elinkthings.ailink.health v2.34.02 (versionCode 2340280), in Java field `SERVICE_UUID`. Classification source: field-name:SERVICE_UUID.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -78008,6 +78884,13 @@
                 "version_name": "4.1.0",
                 "package_path": "AndroZoo/apks/00/com.femmto.app_000E2F8FC0DB35DF06C2EBE1473D3A5EA028E69BE8B0D02F2DA4B28C3F34BDDD.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SERVICE_UUID_SCALE_WIFI`."
+            },
+            {
+                "package_id": "com.elinkthings.ailink.health",
+                "version_code": 2340280,
+                "version_name": "2.34.02",
+                "package_path": "AndroZoo/apks/01/com.elinkthings.ailink.health_01CEA43B3A9E04A387FE90B60D3A13CE63D3D9EFF3B8823C418045FA30E33D7F.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SERVICE_UUID`."
             }
         ]
     },
@@ -82681,6 +83564,47 @@
             {
                 "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.bodytecharuba v11.6.10 (versionCode 4300815), in Java field `a`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.squmatgymsl v12.2.3 (versionCode 4300873), in Java field `f25981a`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.sportclubdoit v10.4.9 (versionCode 4300593), in Java field `f13369a`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.nul40fitbv v12.0.4 (versionCode 4300851), in Java field `f26289a`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.sportcentrumbalili v12.4.4 (versionCode 4300888), in Java field `f26022a`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.fitbaar v10.0.5 (versionCode 4300509), in Java field `f11834a`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.fitwithm v11.0.5 (versionCode 4300641), in Java field `f11910a`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.welstory.welplus v1.01.17 (versionCode 67), in Java field `UUID_HEIGHT_SCALE_SERVICES`, declared in Java package `com.qn.device.constant` (third-party SDK). Classification source: field-name:UUID_HEIGHT_SCALE_SERVICES.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.aequumclub v11.5.8 (versionCode 4300788), in Java field `a`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.personaltrainingastensomeren v12.0.4 (versionCode 4300851), in Java field `f26289a`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Shanghai) — Yolanda smart-scale BLE SDK"
             }
         ],
         "android_info_array": [
@@ -85196,6 +86120,69 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `a`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.squmatgymsl",
+                "version_code": 4300873,
+                "version_name": "12.2.3",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.squmatgymsl_01024FB85E4C2FF3710E61F4CD02CDA9E4A826E27A61F52B281DF8B81FF90C76.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f25981a`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportclubdoit",
+                "version_code": 4300593,
+                "version_name": "10.4.9",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.sportclubdoit_012926AD25979414C7DB74D8BDFA93D98876B0F68A73AFFEA65FDE9C44C41681.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f13369a`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.nul40fitbv",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.nul40fitbv_013C9C90C3DDB1939AD8EDB5F896BF3541401B4B4965FF71C6397C226FCACA85.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f26289a`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportcentrumbalili",
+                "version_code": 4300888,
+                "version_name": "12.4.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.sportcentrumbalili_0170DEC4BAF2E8FC5057C1B91E23F60387A36C9FFD28A4AE58F4B62C70AAAD3C.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f26022a`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.fitbaar",
+                "version_code": 4300509,
+                "version_name": "10.0.5",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.fitbaar_018248E40C4E3AE4AA3936F61CB0C2E62C528A4594B6F4C295A86F2002FAF558.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f11834a`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.fitwithm",
+                "version_code": 4300641,
+                "version_name": "11.0.5",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.fitwithm_0182A273C66A4A3A8888B7AAC801B875D4157251B095DCE3B44FF6B667BEB926.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f11910a`."
+            },
+            {
+                "package_id": "com.welstory.welplus",
+                "version_code": 67,
+                "version_name": "1.01.17",
+                "package_path": "AndroZoo/apks/01/com.welstory.welplus_0184355B885FB5C49FF23001CB2765D762C180A66274BF608E83401C78499093.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_HEIGHT_SCALE_SERVICES`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.aequumclub",
+                "version_code": 4300788,
+                "version_name": "11.5.8",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.aequumclub_018737CC982F90D271244A504DDDE0672D4330D647699071EE01BCF359338497.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `a`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.personaltrainingastensomeren",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.personaltrainingastensomeren_01FCD6CD4BE8DAA168AE2F1F6B8B53E140453BE0CEEDC4C3AF95DD360AE83348.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f26289a`."
             }
         ]
     },
@@ -86005,10 +86992,10 @@
     {
         "UUID": "a7d32401-3197-4131-b345-9a995ffb5d2d",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.bmpro, declared as Java field `uuidCharacteristicLoadSheddingConfiguration`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicLoadSheddingConfiguration",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.bmpro, declared as Java field `uuidCharacteristicLoadSheddingConfiguration`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -86018,6 +87005,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.1.0 (versionCode 18314), in Java field `uuidCharacteristicLoadSheddingConfiguration`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicLoadSheddingConfiguration`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -86034,16 +87033,23 @@
                 "version_name": "1.1.0",
                 "package_path": "BLUUID_APKS/0508/bbb38f789b98108e46e1c9d7ec5cd8d3432f8993d950492a3f0b09c824894514/bbb38f789b98108e46e1c9d7ec5cd8d3432f8993d950492a3f0b09c824894514.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicLoadSheddingConfiguration`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicLoadSheddingConfiguration`."
             }
         ]
     },
     {
         "UUID": "a7d32402-3197-4131-b345-9a995ffb5d2d",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.bmpro, declared as Java field `uuidCharacteristicLoadSheddingStatus`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicLoadSheddingStatus",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.bmpro, declared as Java field `uuidCharacteristicLoadSheddingStatus`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -86053,6 +87059,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.1.0 (versionCode 18314), in Java field `uuidCharacteristicLoadSheddingStatus`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicLoadSheddingStatus`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -86069,16 +87087,23 @@
                 "version_name": "1.1.0",
                 "package_path": "BLUUID_APKS/0508/bbb38f789b98108e46e1c9d7ec5cd8d3432f8993d950492a3f0b09c824894514/bbb38f789b98108e46e1c9d7ec5cd8d3432f8993d950492a3f0b09c824894514.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicLoadSheddingStatus`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicLoadSheddingStatus`."
             }
         ]
     },
     {
         "UUID": "aaf94c01-906b-49e8-8b5b-b5f412986d26",
         "company": "Setec Pty Ltd",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicAuthentication`. Classification determined by file-level-default.",
+        "UUID_name": "uuidCharacteristicAuthentication",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app au.com.setec.rvmaster, declared as Java field `uuidCharacteristicAuthentication`. Classification determined by file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -86100,6 +87125,18 @@
             {
                 "description": "Found in decompiled DEX of au.com.setec.rvmaster.jayco v3.14.0 (versionCode 19348), in Java field `uuidCharacteristicAuthentication`. Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of au.com.setec.bmpro.mobile v1.3.0 (versionCode 18552), in Java field `uuidCharacteristicAuthentication`. Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "GPT-6 Luna reviewed AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz: GattCharacteristicsKt.java, GattCharacteristics.java and RequestExtensionsKt identify this UUID as a characteristic; the parent GATT service is not established.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source-reviewed shard 01 correction: Current extractor assigned GATT Service from a weak file-level default despite source-reviewed Setec profile fields and characteristic operations. Candidate field names are used only where the old value was Unknown; existing meaningful names are retained. AndroZoo/apks_jadx/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk.jadx.tar.xz!GattCharacteristicsKt.java, GattCharacteristics.java, RequestExtensionsKt.java.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -86137,6 +87174,13 @@
                 "version_name": "3.14.0",
                 "package_path": "BLUUID_APKS/0760/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f/92a4ff3362b6ea97f44adfe56e3f77223f5b09e5779dec56d7f4b5282f62832f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidCharacteristicAuthentication`."
+            },
+            {
+                "package_id": "au.com.setec.bmpro.mobile",
+                "version_code": 18552,
+                "version_name": "1.3.0",
+                "package_path": "AndroZoo/apks/01/au.com.setec.bmpro.mobile_01F5599344C98E5BA5F3C5825F74ED458812DDBEBB6BC6F4B7BF09D4C33E3365.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidCharacteristicAuthentication`."
             }
         ]
     },
@@ -90381,6 +91425,23 @@
             {
                 "description": "Found in decompiled DEX of com.technogym.myo v7.36.2 (versionCode 4041), in Java field `f19480b`, declared in Java package `lf` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.technogym.mywellness.uopfitness v6.7.8 (versionCode 6), in Java field `f44426f`, declared in Java package `qv` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.optilifeeastwichita v6.5.4 (versionCode 19), in Java field `f42665f`, declared in Java package `uu` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Distinct APK build AndroZoo/apks/01/com.technogym.mywellness.benefitness_01B659B7A1EC1FA8317D524527D9A018703485B0288522188620B7BD4CD1323A.apk: Found in decompiled DEX of com.technogym.mywellness.benefitness v6.7.3 (versionCode 5), in Java field `f42626f`, declared in Java package `nu` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "URL": "None",
+                "submitter": "GPT-6.1 Terra",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (TGEquipment login BLE protocol; com.technogym.sdk.btlelogin Android SDK)"
             }
         ],
         "android_info_array": [
@@ -91377,6 +92438,27 @@
                 "version_name": "7.36.2",
                 "package_path": "AndroZoo/apks/00/com.technogym.myo_00ACA4EB44746CF3AA97901B4C26272A13F6022684D0EBCED90D3682A6587BC1.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f19480b`."
+            },
+            {
+                "package_id": "com.technogym.mywellness.uopfitness",
+                "version_code": 6,
+                "version_name": "6.7.8",
+                "package_path": "AndroZoo/apks/01/com.technogym.mywellness.uopfitness_014712F3A84FEAE8C9BB8D23D0B040ED4DE1F664518B7ABE7F8F440C6BD50FAF.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f44426f`."
+            },
+            {
+                "package_id": "com.optilifeeastwichita",
+                "version_code": 19,
+                "version_name": "6.5.4",
+                "package_path": "AndroZoo/apks/01/com.optilifeeastwichita_019148341A8388CFFF6A39BA31373E4C4A6AD8F93870F2E55411BBE4C3B6CAEA.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f42665f`."
+            },
+            {
+                "package_id": "com.technogym.mywellness.benefitness",
+                "version_code": 5,
+                "version_name": "6.7.3",
+                "package_path": "AndroZoo/apks/01/com.technogym.mywellness.benefitness_01B659B7A1EC1FA8317D524527D9A018703485B0288522188620B7BD4CD1323A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f42626f`."
             }
         ]
     },
@@ -92699,6 +93781,10 @@
             {
                 "description": "Found in decompiled DEX of uk.co.bentley.mybentley v5.20.1 (versionCode 221634), in Java field `e`, declared in Java package `org.antlr.v4.runtime.atn` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zoyi.channel.desk.android v10.12.0 (versionCode 399), in Java field `f87433e`, declared in Java package `p330ir` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -92876,6 +93962,13 @@
                 "version_name": "5.20.1",
                 "package_path": "AndroZoo/apks/00/uk.co.bentley.mybentley_007E798944CDB67C3A4BFB9B302B6EF0C74BCFD96DEE798A820F6C6B477EC418.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `e`."
+            },
+            {
+                "package_id": "com.zoyi.channel.desk.android",
+                "version_code": 399,
+                "version_name": "10.12.0",
+                "package_path": "AndroZoo/apks/01/com.zoyi.channel.desk.android_01379F1A5B5D397FEC90529717384690247E75E78258551896970E154FEE9429.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f87433e`."
             }
         ]
     },
@@ -95727,6 +96820,30 @@
         ]
     },
     {
+        "UUID": "a3009475-1a23-45e0-9b91-1b283b973771",
+        "company": "Third-party SDK code (declared in Java package `com.bisner.android.data.network` — distinct from host com.kadans.android; Phase-4 identification needed)",
+        "UUID_name": "APP_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.kadans.android but declared in third-party SDK package `com.bisner.android.data.network` as Java field `APP_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:APP_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.kadans.android v1.1 (versionCode 12), in Java field `APP_ID`, declared in Java package `com.bisner.android.data.network` (third-party SDK). Classification source: field-name:APP_ID.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.kadans.android",
+                "version_code": 12,
+                "version_name": "1.1",
+                "package_path": "AndroZoo/apks/01/com.kadans.android_018A6D59ABE2F458DF8D4B8490D502B6D14561209CB91AEE49B005C655B6D3C5.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `APP_ID`."
+            }
+        ]
+    },
+    {
         "UUID": "a2cab708-40ef-4dbb-8711-ea371a40b757",
         "company": "Third-party SDK code (declared in Java package `com.blackramlabs.alexandria` — distinct from host com.gpstuner.tqapp; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -97663,6 +98780,30 @@
         ]
     },
     {
+        "UUID": "a47c4c0f-19f4-4cb7-b2c6-9ada062c399c",
+        "company": "Third-party SDK code (declared in Java package `com.newrelic.agent.android` — distinct from host com.hooffinancial; Phase-4 identification needed)",
+        "UUID_name": "BUILD_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.hooffinancial but declared in third-party SDK package `com.newrelic.agent.android` as Java field `BUILD_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:BUILD_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.hooffinancial v2.71022.0 (versionCode 71022000), in Java field `BUILD_ID`, declared in Java package `com.newrelic.agent.android` (third-party SDK). Classification source: field-name:BUILD_ID.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hooffinancial",
+                "version_code": 71022000,
+                "version_name": "2.71022.0",
+                "package_path": "AndroZoo/apks/01/com.hooffinancial_011FC40AADBC9128394D8C7A9609946C4483D5E498DA8FAF77284F2C4C232FC2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BUILD_ID`."
+            }
+        ]
+    },
+    {
         "UUID": "af9ad783-ea61-4f21-b867-7f0bcd5b59df",
         "company": "Third-party SDK code (declared in Java package `com.newrelic.agent.android` — distinct from host com.onlife.regence; Phase-4 identification needed)",
         "UUID_name": "BUILD_ID",
@@ -98214,6 +99355,30 @@
             {
                 "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.bodytecharuba v11.6.10 (versionCode 4300815), in Java field `g`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.squmatgymsl v12.2.3 (versionCode 4300873), in Java field `f25987g`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.nul40fitbv v12.0.4 (versionCode 4300851), in Java field `f26295g`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.sportcentrumbalili v12.4.4 (versionCode 4300888), in Java field `f26028g`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of com.welstory.welplus v1.01.17 (versionCode 67), in Java field `UUID_HEIGHT_SCALE_COMPAT_SERVICES`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: field-name:UUID_HEIGHT_SCALE_COMPAT_SERVICES.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.aequumclub v11.5.8 (versionCode 4300788), in Java field `g`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in decompiled DEX of digifit.android.virtuagym.pro.personaltrainingastensomeren v12.0.4 (versionCode 4300851), in Java field `f26295g`, declared in Java package `com.qingniu.heightscale.constant` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -98286,6 +99451,48 @@
                 "version_name": "11.6.10",
                 "package_path": "AndroZoo/apks/00/digifit.android.virtuagym.pro.bodytecharuba_00EAA24E91211AFD59F6497D010CAE8712FD464B33C468235B848C54C14C2DD5.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `g`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.squmatgymsl",
+                "version_code": 4300873,
+                "version_name": "12.2.3",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.squmatgymsl_01024FB85E4C2FF3710E61F4CD02CDA9E4A826E27A61F52B281DF8B81FF90C76.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f25987g`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.nul40fitbv",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.nul40fitbv_013C9C90C3DDB1939AD8EDB5F896BF3541401B4B4965FF71C6397C226FCACA85.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f26295g`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportcentrumbalili",
+                "version_code": 4300888,
+                "version_name": "12.4.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.sportcentrumbalili_0170DEC4BAF2E8FC5057C1B91E23F60387A36C9FFD28A4AE58F4B62C70AAAD3C.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f26028g`."
+            },
+            {
+                "package_id": "com.welstory.welplus",
+                "version_code": 67,
+                "version_name": "1.01.17",
+                "package_path": "AndroZoo/apks/01/com.welstory.welplus_0184355B885FB5C49FF23001CB2765D762C180A66274BF608E83401C78499093.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_HEIGHT_SCALE_COMPAT_SERVICES`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.aequumclub",
+                "version_code": 4300788,
+                "version_name": "11.5.8",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.aequumclub_018737CC982F90D271244A504DDDE0672D4330D647699071EE01BCF359338497.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `g`."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.personaltrainingastensomeren",
+                "version_code": 4300851,
+                "version_name": "12.0.4",
+                "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.personaltrainingastensomeren_01FCD6CD4BE8DAA168AE2F1F6B8B53E140453BE0CEEDC4C3AF95DD360AE83348.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f26295g`."
             }
         ]
     },
@@ -102514,6 +103721,30 @@
         "parent_UUID": "bd984507-f885-4645-befa-d89d032242e4"
     },
     {
+        "UUID": "a1b8c6d4-e5f7-48a9-b0c1-d2e3f4a5b6c7",
+        "company": "Third-party SDK code (declared in Java package `defpackage` — distinct from host com.usekimono.android.jd; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service observed in Android app com.usekimono.android.jd but declared in third-party SDK package `defpackage` as Java field `c`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getService(c).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.usekimono.android.jd v2.240.1 (versionCode 18740001), in Java field `c`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getService(c).",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.usekimono.android.jd",
+                "version_code": 18740001,
+                "version_name": "2.240.1",
+                "package_path": "AndroZoo/apks/01/com.usekimono.android.jd_01DF21AEEB20941D47008C6177CA010BC29732B7256E84214D13915FB7F4ACD9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `c`."
+            }
+        ]
+    },
+    {
         "UUID": "aca45bd9-be4c-48a1-9e67-2203dca07c89",
         "company": "Third-party SDK code (declared in Java package `defpackage` — distinct from host com.zyxel.multyx; Phase-4 identification needed)",
         "UUID_name": "ZYXEL_PROXY_SERVICE",
@@ -102782,6 +104013,10 @@
             {
                 "description": "Found in decompiled DEX of com.asus.asusinstantguard v1.0.0.1.19 (versionCode 27), in Java field `uuidFromString3`, declared in Java package `d2` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.bingbao.anyloop v1.7.3 (versionCode 29), in Java field `f11792h`, declared in Java package `com.topstep.fitcloud.sdk.v2.features` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f11792h).",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -102819,6 +104054,13 @@
                 "version_name": "1.0.0.1.19",
                 "package_path": "BLUUID_APKS/0989/341a5e73458b012d14ea9cdc0290ef7539b73888cc89cc8c8ca740fa3233b574/341a5e73458b012d14ea9cdc0290ef7539b73888cc89cc8c8ca740fa3233b574.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidFromString3`."
+            },
+            {
+                "package_id": "com.bingbao.anyloop",
+                "version_code": 29,
+                "version_name": "1.7.3",
+                "package_path": "AndroZoo/apks/01/com.bingbao.anyloop_01FF023187F551A6D26065D9D909E56BC3560D6ABC5699C8E4C8FFC1491DFFF3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f11792h`."
             }
         ],
         "parent_UUID": "ab00"
@@ -109277,6 +110519,10 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (formerly MonBuilding)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.monbuilding.app.h7 v4.1.6 (versionCode 3354), in Java field `f26280b`, declared in Java package `groovyjarjarantlr4.v4.runtime.atn` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6.1 Terra"
             }
         ],
         "android_info_array": [
@@ -110132,6 +111378,13 @@
                 "version_code": 3360,
                 "version_name": "4.2.0",
                 "package_path": "BLUUID_APKS/0977/81cb4036a40f260b9d7079637cd2d1371e70f8a88baad07a92f6e6e8879b914f/81cb4036a40f260b9d7079637cd2d1371e70f8a88baad07a92f6e6e8879b914f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f26280b`."
+            },
+            {
+                "package_id": "com.monbuilding.app.h7",
+                "version_code": 3354,
+                "version_name": "4.1.6",
+                "package_path": "AndroZoo/apks/01/com.monbuilding.app.h7_01BDFBCA815B6CFAD651A8576B052BF6E68150398231B088DEB83A75A42C28C2.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f26280b`."
             }
         ]
