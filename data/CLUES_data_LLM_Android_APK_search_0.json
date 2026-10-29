@@ -58147,6 +58147,30 @@
         ]
     },
     {
+        "UUID": "03cffbfe-b23a-4c8f-bf57-9591b4d59119",
+        "company": "Atmoph (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.atmoph.remote, version 2.3.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.atmoph.remote",
+                "version_code": 2030400,
+                "version_name": "2.3.4",
+                "package_path": "AndroZoo/apks/03/com.atmoph.remote_03E9BCBBE3BA3A1E137E48300BCC502028E902A9E07A99E5708D218404561C68.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "0150",
         "company": "Ava AG",
         "UUID_name": "MODEL_NUMBER_STRING_BOOTLOADER",
@@ -192632,6 +192656,64 @@
         ]
     },
     {
+        "UUID": "00000402-f53f-420f-aebe-6d1e2cab6f20",
+        "company": "Gallagher Group (New Zealand) — Mobile Connect access-control credential app (Bluetooth credentials for Gallagher Command Centre, FIDO Certified)",
+        "UUID_name": "CurrentEventChara",
+        "UUID_purpose": "GATT characteristic confirmed in Android app source.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.gallagher.am.mobile.android.dashboard, version 1.1.257.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in com.gallagher.am.mobile.android.dashboard. Its parent service in this app is 00000400-f53f-420f-aebe-6d1e2cab6f20.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.gallagher.am.mobile.android.dashboard",
+                "version_code": 101257,
+                "version_name": "1.1.257",
+                "package_path": "AndroZoo/apks/03/com.gallagher.am.mobile.android.dashboard_03A36935764F5A0BE2EDA364D1C28E49AFA2971A687D49044392AB38F9DDD932.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ],
+        "parent_UUID": "00000400-f53f-420f-aebe-6d1e2cab6f20"
+    },
+    {
+        "UUID": "00000403-f53f-420f-aebe-6d1e2cab6f20",
+        "company": "Gallagher Group (New Zealand) — Mobile Connect access-control credential app (Bluetooth credentials for Gallagher Command Centre, FIDO Certified)",
+        "UUID_name": "AffinityEventChara",
+        "UUID_purpose": "GATT characteristic confirmed in Android app source.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.gallagher.am.mobile.android.dashboard, version 1.1.257.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in com.gallagher.am.mobile.android.dashboard. Its parent service in this app is 00000400-f53f-420f-aebe-6d1e2cab6f20.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.gallagher.am.mobile.android.dashboard",
+                "version_code": 101257,
+                "version_name": "1.1.257",
+                "package_path": "AndroZoo/apks/03/com.gallagher.am.mobile.android.dashboard_03A36935764F5A0BE2EDA364D1C28E49AFA2971A687D49044392AB38F9DDD932.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ],
+        "parent_UUID": "00000400-f53f-420f-aebe-6d1e2cab6f20"
+    },
+    {
         "UUID": "00000401-f53f-420f-aebe-6d1e2cab6f20",
         "company": "Gallagher Group",
         "UUID_name": "Unknown",
@@ -192833,6 +192915,35 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidFromString30`."
             }
         ]
+    },
+    {
+        "UUID": "00000a09-f53f-420f-aebe-6d1e2cab6f20",
+        "company": "Gallagher Group (New Zealand) — Mobile Connect access-control credential app (Bluetooth credentials for Gallagher Command Centre, FIDO Certified)",
+        "UUID_name": "SecondarySerialChara",
+        "UUID_purpose": "GATT characteristic confirmed in Android app source.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.gallagher.am.mobile.android.dashboard, version 1.1.257.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in com.gallagher.am.mobile.android.dashboard. Its parent service in this app is 00000a00-f53f-420f-aebe-6d1e2cab6f20.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.gallagher.am.mobile.android.dashboard",
+                "version_code": 101257,
+                "version_name": "1.1.257",
+                "package_path": "AndroZoo/apks/03/com.gallagher.am.mobile.android.dashboard_03A36935764F5A0BE2EDA364D1C28E49AFA2971A687D49044392AB38F9DDD932.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ],
+        "parent_UUID": "00000a00-f53f-420f-aebe-6d1e2cab6f20"
     },
     {
         "UUID": "00000a02-f53f-420f-aebe-6d1e2cab6f20",
@@ -206405,6 +206516,78 @@
         ]
     },
     {
+        "UUID": "079c0001-e6b5-4c33-b0a3-f136a774a02e",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "TAG_CONFIG_CMD_CHAR",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "079c0002-e6b5-4c33-b0a3-f136a774a02e",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "TAG_CONFIG_RESP_CHAR",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "079c0000-e6b5-4c33-b0a3-f136a774a02e",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "TAG_CONFIG_SERVICE",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "000002fd-3c17-d293-8e48-14fe2e4da212",
         "company": "Third-party SDK code (declared in Java package `com.realsil.sdk.bbpro.core.gatt` — distinct from host com.yc.denverfit2; Phase-4 identification needed)",
         "UUID_name": "BBPRO_SERVICE_UUID",
@@ -213201,6 +213384,246 @@
                 "version_name": "1.0.3",
                 "package_path": "BLUUID_APKS/0416/4f53340a0bda82ada1560a7348d2ae0ba37b20f81601e5247a094049758e54fd/4f53340a0bda82ada1560a7348d2ae0ba37b20f81601e5247a094049758e54fd.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `PHOTO_SERVICE_UUID`."
+            }
+        ]
+    },
+    {
+        "UUID": "0d02",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "AL_CHARA",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0c00",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "Heart Rate Measurement",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0902",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "PHOTODIODE_CHARA",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0b02",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "SYSTEM_CHARA_UUID / SPO2_CHARA_UUID / UUID_SPO2_MEASUREMENT",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0f02",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "UUID_ACC_MEASUREMENT / AC_CHARA_UUID / UUID_ACCELEROMETER_MEASUREMENT",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0a02",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "VIB_CHARA",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0f01",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "AC_SERVICE",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0d01",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "AL_SERVICE",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0901",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "BLACKB_SERVICE",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0a01",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "VIB_SERVICE",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT service; not independently verified."
             }
         ]
     },
@@ -221811,6 +222234,102 @@
                 "version_name": "1.2.0",
                 "package_path": "AndroZoo/apks/00/com.primelab.node_008E15A0293D21B2AC86153F2909E45A7702D122B08A0C968FB4F0FBA46238A4.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `OCTX_OFFLINE_SERVICE`."
+            }
+        ]
+    },
+    {
+        "UUID": "05e1d74f-01b9-427b-b817-48464f8af5cb",
+        "company": "Primepark (inferred from package id)",
+        "UUID_name": "ISSUE_ACCRUALS_ID",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app ru.primepark.android, version 3.0.15. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "ru.primepark.android",
+                "version_code": 63,
+                "version_name": "3.0.15",
+                "package_path": "AndroZoo/apks/02/ru.primepark.android_0241C16A751573642664DD9E24A48809341B381FFAEFDDC6E65C5C9B13D5CC56.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0ad2855c-6f27-4ce8-9c84-7a1bd4508bf9",
+        "company": "Primepark (inferred from package id)",
+        "UUID_name": "ISSUE_CLEANING_AFTER_RENOVATION_ID",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app ru.primepark.android, version 3.0.15. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "ru.primepark.android",
+                "version_code": 63,
+                "version_name": "3.0.15",
+                "package_path": "AndroZoo/apks/02/ru.primepark.android_0241C16A751573642664DD9E24A48809341B381FFAEFDDC6E65C5C9B13D5CC56.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "08953eb8-b303-4abd-9261-d28dead4ee9d",
+        "company": "Primepark (inferred from package id)",
+        "UUID_name": "ISSUE_CLEANING_SPRING_CLEANING_ID",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app ru.primepark.android, version 3.0.15. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "ru.primepark.android",
+                "version_code": 63,
+                "version_name": "3.0.15",
+                "package_path": "AndroZoo/apks/02/ru.primepark.android_0241C16A751573642664DD9E24A48809341B381FFAEFDDC6E65C5C9B13D5CC56.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0890d4bc-24d9-4fec-96a1-12b7050c39d6",
+        "company": "Primepark (inferred from package id)",
+        "UUID_name": "ISSUE_PARKING_SERVICE_CHANGE_ID",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app ru.primepark.android, version 3.0.15. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "ru.primepark.android",
+                "version_code": 63,
+                "version_name": "3.0.15",
+                "package_path": "AndroZoo/apks/02/ru.primepark.android_0241C16A751573642664DD9E24A48809341B381FFAEFDDC6E65C5C9B13D5CC56.apk",
+                "description": "Possible GATT service; not independently verified."
             }
         ]
     },
@@ -236790,6 +237309,178 @@
         ]
     },
     {
+        "UUID": "00004368-6176-6544-6f55-73756172697b",
+        "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
+        "UUID_name": "DUMB_READ",
+        "UUID_purpose": "GATT characteristic confirmed in Android app source.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app br.com.beansoftwares.xtay, version 1.0.33.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in br.com.beansoftwares.xtay.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "br.com.beansoftwares.xtay",
+                "version_code": 37,
+                "version_name": "1.0.33",
+                "package_path": "AndroZoo/apks/03/br.com.beansoftwares.xtay_03FCAE150257F0F0EF3F11BCBFE32A20D30758148F9E80F3DDC3B1E2CFB3CD3A.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ]
+    },
+    {
+        "UUID": "00004368-6176-6544-6f55-73756172696b",
+        "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
+        "UUID_name": "READ_SIGNATURE_0",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app br.com.beansoftwares.xtay, version 1.0.33. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "br.com.beansoftwares.xtay",
+                "version_code": 37,
+                "version_name": "1.0.33",
+                "package_path": "AndroZoo/apks/03/br.com.beansoftwares.xtay_03FCAE150257F0F0EF3F11BCBFE32A20D30758148F9E80F3DDC3B1E2CFB3CD3A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "00004368-6176-6544-6f55-73756172696c",
+        "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
+        "UUID_name": "READ_SIGNATURE_1",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app br.com.beansoftwares.xtay, version 1.0.33. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "br.com.beansoftwares.xtay",
+                "version_code": 37,
+                "version_name": "1.0.33",
+                "package_path": "AndroZoo/apks/03/br.com.beansoftwares.xtay_03FCAE150257F0F0EF3F11BCBFE32A20D30758148F9E80F3DDC3B1E2CFB3CD3A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "00004368-6176-6544-6f55-73756172696d",
+        "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
+        "UUID_name": "READ_SIGNATURE_2",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app br.com.beansoftwares.xtay, version 1.0.33. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "br.com.beansoftwares.xtay",
+                "version_code": 37,
+                "version_name": "1.0.33",
+                "package_path": "AndroZoo/apks/03/br.com.beansoftwares.xtay_03FCAE150257F0F0EF3F11BCBFE32A20D30758148F9E80F3DDC3B1E2CFB3CD3A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "00004368-6176-6544-6f55-73756172696e",
+        "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
+        "UUID_name": "READ_SIGNATURE_3",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app br.com.beansoftwares.xtay, version 1.0.33. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "br.com.beansoftwares.xtay",
+                "version_code": 37,
+                "version_name": "1.0.33",
+                "package_path": "AndroZoo/apks/03/br.com.beansoftwares.xtay_03FCAE150257F0F0EF3F11BCBFE32A20D30758148F9E80F3DDC3B1E2CFB3CD3A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "00004368-6176-6544-6f55-73756172696a",
+        "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
+        "UUID_name": "WRITE_FEEDBACK_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app br.com.beansoftwares.xtay, version 1.0.33. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "br.com.beansoftwares.xtay",
+                "version_code": 37,
+                "version_name": "1.0.33",
+                "package_path": "AndroZoo/apks/03/br.com.beansoftwares.xtay_03FCAE150257F0F0EF3F11BCBFE32A20D30758148F9E80F3DDC3B1E2CFB3CD3A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "00004368-6176-6544-6f55-73756172697a",
+        "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
+        "UUID_name": "WRITE_NONCE_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app br.com.beansoftwares.xtay, version 1.0.33. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "br.com.beansoftwares.xtay",
+                "version_code": 37,
+                "version_name": "1.0.33",
+                "package_path": "AndroZoo/apks/03/br.com.beansoftwares.xtay_03FCAE150257F0F0EF3F11BCBFE32A20D30758148F9E80F3DDC3B1E2CFB3CD3A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "0100fab1-0df1-ee99-4044-ce17a517dade",
         "company": "Third-party SDK code (declared in Java package `c.b.a.b.b.a.a.e` — distinct from host com.djit.apps.edjing.scratch; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -237762,6 +238453,102 @@
                 "version_name": "1.12.0",
                 "package_path": "BLUUID_APKS/0792/f9d9b2a06e2f7282b4e27880c480e8235b6deebfa765d6c5ce32af5486a10f99/f9d9b2a06e2f7282b4e27880c480e8235b6deebfa765d6c5ce32af5486a10f99.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "00006666-d102-e111-9b23-00025b00a5c7",
+        "company": "Third-party SDK code (declared in Java package `com.a4x.ble` — distinct from host com.mb.eooeies; Phase-4 identification needed)",
+        "UUID_name": "eooeies_1756807380329_0o00OoO0O",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mb.eooeies, version 1.0.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mb.eooeies",
+                "version_code": 202502044,
+                "version_name": "1.0.4",
+                "package_path": "AndroZoo/apks/03/com.mb.eooeies_036A0338E7F44212F59E20865F0BDDA2F74C93BBBBE461ADDF93AC283D117FEF.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "00007777-d102-e111-9b23-00025b00a5c7",
+        "company": "Third-party SDK code (declared in Java package `com.a4x.ble` — distinct from host com.mb.eooeies; Phase-4 identification needed)",
+        "UUID_name": "eooeies_1756807380329_o00OoO0o",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mb.eooeies, version 1.0.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mb.eooeies",
+                "version_code": 202502044,
+                "version_name": "1.0.4",
+                "package_path": "AndroZoo/apks/03/com.mb.eooeies_036A0338E7F44212F59E20865F0BDDA2F74C93BBBBE461ADDF93AC283D117FEF.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "00006566-d102-e111-9b23-00025b00a5c7",
+        "company": "Third-party SDK code (declared in Java package `com.a4x.ble` — distinct from host com.mb.eooeies; Phase-4 identification needed)",
+        "UUID_name": "eooeies_1756807380329_o00OoO0",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mb.eooeies, version 1.0.4. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mb.eooeies",
+                "version_code": 202502044,
+                "version_name": "1.0.4",
+                "package_path": "AndroZoo/apks/03/com.mb.eooeies_036A0338E7F44212F59E20865F0BDDA2F74C93BBBBE461ADDF93AC283D117FEF.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "00010000-0001-11e1-ac36-0002a5d5c51b",
+        "company": "Third-party SDK code (declared in Java package `com.a4x.ble` — distinct from host com.mb.eooeies; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mb.eooeies, version 1.0.4. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mb.eooeies",
+                "version_code": 202502044,
+                "version_name": "1.0.4",
+                "package_path": "AndroZoo/apks/03/com.mb.eooeies_036A0338E7F44212F59E20865F0BDDA2F74C93BBBBE461ADDF93AC283D117FEF.apk",
+                "description": "Possible GATT service; not independently verified."
             }
         ]
     },
@@ -240905,6 +241692,30 @@
                 "version_name": "3.40.0",
                 "package_path": "BLUUID_APKS/0480/1b6cfa5c14c82f69248cba93e44d950ad6dd280e686b609630527616c4d1157a/1b6cfa5c14c82f69248cba93e44d950ad6dd280e686b609630527616c4d1157a.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `OAUTH_CLIENT_ID_PROD`."
+            }
+        ]
+    },
+    {
+        "UUID": "0d27ffff-f0d4-469d-afd3-605a6ebbdb13",
+        "company": "Third-party SDK code (declared in Java package `com.dexatek.smarthomesdk.def` — distinct from host com.antico.uvlight; Phase-4 identification needed)",
+        "UUID_name": "DK_BASE",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.antico.uvlight, version 5.90.900. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.antico.uvlight",
+                "version_code": 202510201,
+                "version_name": "5.90.900",
+                "package_path": "AndroZoo/apks/03/com.antico.uvlight_039C2A2638CB146D3DA606A7145468A140021B04F646C4274CEEF39BA5302279.apk",
+                "description": "Possible GATT characteristic; not independently verified."
             }
         ]
     },
@@ -255124,6 +255935,198 @@
         ]
     },
     {
+        "UUID": "04472b11-7e3d-4827-b1bb-e103255e50b9",
+        "company": "Third-party SDK code (declared in Java package `d.h.a.q.f` — distinct from host com.iottag.atlas; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.iottag.atlas, version 2.8.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.iottag.atlas",
+                "version_code": 19,
+                "version_name": "2.8.4",
+                "package_path": "AndroZoo/apks/03/com.iottag.atlas_0313BC07DF2832A826A36B31E2570219578DF41D337A97A6CB4F2D3E226083BA.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "04472b12-7e3d-4827-b1bb-e103255e50b9",
+        "company": "Third-party SDK code (declared in Java package `d.h.a.q.f` — distinct from host com.iottag.atlas; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.iottag.atlas, version 2.8.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.iottag.atlas",
+                "version_code": 19,
+                "version_name": "2.8.4",
+                "package_path": "AndroZoo/apks/03/com.iottag.atlas_0313BC07DF2832A826A36B31E2570219578DF41D337A97A6CB4F2D3E226083BA.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "04472b13-7e3d-4827-b1bb-e103255e50b9",
+        "company": "Third-party SDK code (declared in Java package `d.h.a.q.f` — distinct from host com.iottag.atlas; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.iottag.atlas, version 2.8.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.iottag.atlas",
+                "version_code": 19,
+                "version_name": "2.8.4",
+                "package_path": "AndroZoo/apks/03/com.iottag.atlas_0313BC07DF2832A826A36B31E2570219578DF41D337A97A6CB4F2D3E226083BA.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "04472b14-7e3d-4827-b1bb-e103255e50b9",
+        "company": "Third-party SDK code (declared in Java package `d.h.a.q.f` — distinct from host com.iottag.atlas; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.iottag.atlas, version 2.8.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.iottag.atlas",
+                "version_code": 19,
+                "version_name": "2.8.4",
+                "package_path": "AndroZoo/apks/03/com.iottag.atlas_0313BC07DF2832A826A36B31E2570219578DF41D337A97A6CB4F2D3E226083BA.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "04472b15-7e3d-4827-b1bb-e103255e50b9",
+        "company": "Third-party SDK code (declared in Java package `d.h.a.q.f` — distinct from host com.iottag.atlas; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.iottag.atlas, version 2.8.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.iottag.atlas",
+                "version_code": 19,
+                "version_name": "2.8.4",
+                "package_path": "AndroZoo/apks/03/com.iottag.atlas_0313BC07DF2832A826A36B31E2570219578DF41D337A97A6CB4F2D3E226083BA.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "04472b16-7e3d-4827-b1bb-e103255e50b9",
+        "company": "Third-party SDK code (declared in Java package `d.h.a.q.f` — distinct from host com.iottag.atlas; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.iottag.atlas, version 2.8.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.iottag.atlas",
+                "version_code": 19,
+                "version_name": "2.8.4",
+                "package_path": "AndroZoo/apks/03/com.iottag.atlas_0313BC07DF2832A826A36B31E2570219578DF41D337A97A6CB4F2D3E226083BA.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "04472b17-7e3d-4827-b1bb-e103255e50b9",
+        "company": "Third-party SDK code (declared in Java package `d.h.a.q.f` — distinct from host com.iottag.atlas; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.iottag.atlas, version 2.8.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.iottag.atlas",
+                "version_code": 19,
+                "version_name": "2.8.4",
+                "package_path": "AndroZoo/apks/03/com.iottag.atlas_0313BC07DF2832A826A36B31E2570219578DF41D337A97A6CB4F2D3E226083BA.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "04472b18-7e3d-4827-b1bb-e103255e50b9",
+        "company": "Third-party SDK code (declared in Java package `d.h.a.q.f` — distinct from host com.iottag.atlas; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.iottag.atlas, version 2.8.4. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.iottag.atlas",
+                "version_code": 19,
+                "version_name": "2.8.4",
+                "package_path": "AndroZoo/apks/03/com.iottag.atlas_0313BC07DF2832A826A36B31E2570219578DF41D337A97A6CB4F2D3E226083BA.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "0000cccc-5555-8888-2299-ba0987654321",
         "company": "Third-party SDK code (declared in Java package `d.o.a` — distinct from host com.provenpac.intellirehab; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -260233,6 +261236,30 @@
         ]
     },
     {
+        "UUID": "0535bac6-11e5-4e9c-9b07-056d6ea0aa28",
+        "company": "Third-party SDK code (declared in Java package `p023j1` — distinct from host com.htc.vivephoneservice; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.htc.vivephoneservice, version 3.00.1349786. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.htc.vivephoneservice",
+                "version_code": 155349792,
+                "version_name": "3.00.1349786",
+                "package_path": "AndroZoo/apks/02/com.htc.vivephoneservice_02A6D72518EDA982C23F91411C2E2A10C2B8B796A7C9AA36857A5A0E7827FE01.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "04ff0000-f101-11e6-88f7-bcee7b9b269f",
         "company": "Third-party SDK code (declared in Java package `p101l4` — distinct from host com.ortovox.lvs; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -260787,6 +261814,93 @@
             }
         ],
         "parent_UUID": "05938e91-454c-44a8-a3ab-148e2dc33759"
+    },
+    {
+        "UUID": "0000fd8a-0020-1000-8000-00805f9b34fb",
+        "company": "Third-party SDK code (declared in Java package `p257v4` — distinct from host com.signify.masterconnect; Phase-4 identification needed)",
+        "UUID_name": "f61529m0",
+        "UUID_purpose": "GATT characteristic confirmed in Android app source.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.signify.masterconnect, version 2.5.3-b15867. Its initial role was corrected during source review.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in com.signify.masterconnect. Its parent service in this app is fd8a.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.signify.masterconnect",
+                "version_code": 503,
+                "version_name": "2.5.3-b15867",
+                "package_path": "AndroZoo/apks/03/com.signify.masterconnect_03680E856083705DCD8369103489E358634644404E0F9A167DED028E8F1CE5E1.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ],
+        "parent_UUID": "fd8a"
+    },
+    {
+        "UUID": "0000fd8a-0021-1000-8000-00805f9b34fb",
+        "company": "Third-party SDK code (declared in Java package `p257v4` — distinct from host com.signify.masterconnect; Phase-4 identification needed)",
+        "UUID_name": "f61530n0",
+        "UUID_purpose": "GATT characteristic confirmed in Android app source.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.signify.masterconnect, version 2.5.3-b15867. Its initial role was corrected during source review.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in com.signify.masterconnect. Its parent service in this app is fd8a.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.signify.masterconnect",
+                "version_code": 503,
+                "version_name": "2.5.3-b15867",
+                "package_path": "AndroZoo/apks/03/com.signify.masterconnect_03680E856083705DCD8369103489E358634644404E0F9A167DED028E8F1CE5E1.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ],
+        "parent_UUID": "fd8a"
+    },
+    {
+        "UUID": "0000fd8a-0024-1000-8000-00805f9b34fb",
+        "company": "Third-party SDK code (declared in Java package `p257v4` — distinct from host com.signify.masterconnect; Phase-4 identification needed)",
+        "UUID_name": "f61531o0",
+        "UUID_purpose": "GATT characteristic confirmed in Android app source.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.signify.masterconnect, version 2.5.3-b15867. Its initial role was corrected during source review.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in com.signify.masterconnect. Its parent service in this app is fd8a.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.signify.masterconnect",
+                "version_code": 503,
+                "version_name": "2.5.3-b15867",
+                "package_path": "AndroZoo/apks/03/com.signify.masterconnect_03680E856083705DCD8369103489E358634644404E0F9A167DED028E8F1CE5E1.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ],
+        "parent_UUID": "fd8a"
     },
     {
         "UUID": "00000009-0000-1000-8000-008025000000",
@@ -279763,6 +280877,417 @@
                 "version_name": "3.71.65",
                 "package_path": "AndroZoo/apks/3b/it.advancedprocessing.advancedmonitor_3B6DC3CB9E378935E5C9E16A0C4419B54673A34F209969F6B84AE85E579E2932.apk",
                 "description": "Detected by apk-clues-extract managed-code scan; usage 'GATT Characteristic'; C# field `CHARACTERISTIC_READ_WRITE`."
+            }
+        ]
+    },
+    {
+        "UUID": "01ff0100-ba5e-f4ee-5ca1-eb1e5e4b1ce1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.dynogeek.galotmotorsports, version 7.02. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.deliverydodo.business, version 4.32.5. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.dynogeek.cecil, version 7.04. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dynogeek.galotmotorsports",
+                "version_code": 36,
+                "version_name": "7.02",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.galotmotorsports_03917B0BB9FECA66155E7E89DF650D264B7D6A59996BAD750AE9A03B956547EB.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.deliverydodo.business",
+                "version_code": 43205,
+                "version_name": "4.32.5",
+                "package_path": "AndroZoo/apks/03/com.deliverydodo.business_03B193F26186DEB1CC5D1779F6A6936BC8AA3D6092B54A933605DB3F71143F0A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.dynogeek.cecil",
+                "version_code": 32,
+                "version_name": "7.04",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.cecil_03F6E4CBD3A3E008196D2A7C88C8861440AC4E0AA8DEF398C93B4E32BB925260.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "01ff0101-ba5e-f4ee-5ca1-eb1e5e4b1ce1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.dynogeek.galotmotorsports, version 7.02. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.deliverydodo.business, version 4.32.5. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.dynogeek.cecil, version 7.04. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dynogeek.galotmotorsports",
+                "version_code": 36,
+                "version_name": "7.02",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.galotmotorsports_03917B0BB9FECA66155E7E89DF650D264B7D6A59996BAD750AE9A03B956547EB.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.deliverydodo.business",
+                "version_code": 43205,
+                "version_name": "4.32.5",
+                "package_path": "AndroZoo/apks/03/com.deliverydodo.business_03B193F26186DEB1CC5D1779F6A6936BC8AA3D6092B54A933605DB3F71143F0A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.dynogeek.cecil",
+                "version_code": 32,
+                "version_name": "7.04",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.cecil_03F6E4CBD3A3E008196D2A7C88C8861440AC4E0AA8DEF398C93B4E32BB925260.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "01ff0102-ba5e-f4ee-5ca1-eb1e5e4b1ce1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.dynogeek.galotmotorsports, version 7.02. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.deliverydodo.business, version 4.32.5. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.dynogeek.cecil, version 7.04. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dynogeek.galotmotorsports",
+                "version_code": 36,
+                "version_name": "7.02",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.galotmotorsports_03917B0BB9FECA66155E7E89DF650D264B7D6A59996BAD750AE9A03B956547EB.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.deliverydodo.business",
+                "version_code": 43205,
+                "version_name": "4.32.5",
+                "package_path": "AndroZoo/apks/03/com.deliverydodo.business_03B193F26186DEB1CC5D1779F6A6936BC8AA3D6092B54A933605DB3F71143F0A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.dynogeek.cecil",
+                "version_code": 32,
+                "version_name": "7.04",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.cecil_03F6E4CBD3A3E008196D2A7C88C8861440AC4E0AA8DEF398C93B4E32BB925260.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "03040004-2aae-4d26-ad62-03e9a8637ebd",
+        "company": "Unknown",
+        "UUID_name": "NONCE",
+        "UUID_purpose": "GATT characteristic identified in Android app source; some app-specific roles are unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.risesoftware.center21, version 23.01.100. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app in.qcity.qconnect, version 1.57.0.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in in.qcity.qconnect.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.risesoftware.center21",
+                "version_code": 600907,
+                "version_name": "23.01.100",
+                "package_path": "AndroZoo/apks/02/com.risesoftware.center21_02912613C626AC9CEB757E187C802BA3CA972D82012457A7DE0EC4F2FB0A7741.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "in.qcity.qconnect",
+                "version_code": 148,
+                "version_name": "1.57.0",
+                "package_path": "AndroZoo/apks/03/in.qcity.qconnect_03AD415DBEE34326FD126020B086CE45FAD30A7B02CFEA38E143146D47693929.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ]
+    },
+    {
+        "UUID": "03040005-2aae-4d26-ad62-03e9a8637ebd",
+        "company": "Unknown",
+        "UUID_name": "COMMAND",
+        "UUID_purpose": "GATT characteristic identified in Android app source; some app-specific roles are unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.risesoftware.center21, version 23.01.100. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app in.qcity.qconnect, version 1.57.0.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in in.qcity.qconnect.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.risesoftware.center21",
+                "version_code": 600907,
+                "version_name": "23.01.100",
+                "package_path": "AndroZoo/apks/02/com.risesoftware.center21_02912613C626AC9CEB757E187C802BA3CA972D82012457A7DE0EC4F2FB0A7741.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "in.qcity.qconnect",
+                "version_code": 148,
+                "version_name": "1.57.0",
+                "package_path": "AndroZoo/apks/03/in.qcity.qconnect_03AD415DBEE34326FD126020B086CE45FAD30A7B02CFEA38E143146D47693929.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ]
+    },
+    {
+        "UUID": "03040101-2aae-4d26-ad62-03e9a8637ebd",
+        "company": "Unknown",
+        "UUID_name": "ROAMING",
+        "UUID_purpose": "GATT characteristic identified in Android app source; some app-specific roles are unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.risesoftware.center21, version 23.01.100. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app in.qcity.qconnect, version 1.57.0.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in in.qcity.qconnect. Its parent service in this app is fdb1.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.risesoftware.center21",
+                "version_code": 600907,
+                "version_name": "23.01.100",
+                "package_path": "AndroZoo/apks/02/com.risesoftware.center21_02912613C626AC9CEB757E187C802BA3CA972D82012457A7DE0EC4F2FB0A7741.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "in.qcity.qconnect",
+                "version_code": 148,
+                "version_name": "1.57.0",
+                "package_path": "AndroZoo/apks/03/in.qcity.qconnect_03AD415DBEE34326FD126020B086CE45FAD30A7B02CFEA38E143146D47693929.apk",
+                "description": "Source review confirmed a GATT characteristic. Parent service in this app: fdb1."
+            }
+        ]
+    },
+    {
+        "UUID": "03040103-2aae-4d26-ad62-03e9a8637ebd",
+        "company": "Unknown",
+        "UUID_name": "CHALLENGE",
+        "UUID_purpose": "GATT characteristic identified in Android app source; some app-specific roles are unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.risesoftware.center21, version 23.01.100. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app in.qcity.qconnect, version 1.57.0.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in in.qcity.qconnect. Its parent service in this app is fdb1.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.risesoftware.center21",
+                "version_code": 600907,
+                "version_name": "23.01.100",
+                "package_path": "AndroZoo/apks/02/com.risesoftware.center21_02912613C626AC9CEB757E187C802BA3CA972D82012457A7DE0EC4F2FB0A7741.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "in.qcity.qconnect",
+                "version_code": 148,
+                "version_name": "1.57.0",
+                "package_path": "AndroZoo/apks/03/in.qcity.qconnect_03AD415DBEE34326FD126020B086CE45FAD30A7B02CFEA38E143146D47693929.apk",
+                "description": "Source review confirmed a GATT characteristic. Parent service in this app: fdb1."
+            }
+        ]
+    },
+    {
+        "UUID": "03040202-2aae-4d26-ad62-03e9a8637ebd",
+        "company": "Unknown",
+        "UUID_name": "ADMIN_OTA_STATUS",
+        "UUID_purpose": "GATT characteristic identified in Android app source; some app-specific roles are unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.risesoftware.center21, version 23.01.100. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app in.qcity.qconnect, version 1.57.0.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in in.qcity.qconnect.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.risesoftware.center21",
+                "version_code": 600907,
+                "version_name": "23.01.100",
+                "package_path": "AndroZoo/apks/02/com.risesoftware.center21_02912613C626AC9CEB757E187C802BA3CA972D82012457A7DE0EC4F2FB0A7741.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "in.qcity.qconnect",
+                "version_code": 148,
+                "version_name": "1.57.0",
+                "package_path": "AndroZoo/apks/03/in.qcity.qconnect_03AD415DBEE34326FD126020B086CE45FAD30A7B02CFEA38E143146D47693929.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ]
+    },
+    {
+        "UUID": "03040301-2aae-4d26-ad62-03e9a8637ebd",
+        "company": "Unknown",
+        "UUID_name": "HEALTH",
+        "UUID_purpose": "GATT characteristic identified in Android app source; some app-specific roles are unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.risesoftware.center21, version 23.01.100. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app in.qcity.qconnect, version 1.57.0.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in in.qcity.qconnect.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.risesoftware.center21",
+                "version_code": 600907,
+                "version_name": "23.01.100",
+                "package_path": "AndroZoo/apks/02/com.risesoftware.center21_02912613C626AC9CEB757E187C802BA3CA972D82012457A7DE0EC4F2FB0A7741.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "in.qcity.qconnect",
+                "version_code": 148,
+                "version_name": "1.57.0",
+                "package_path": "AndroZoo/apks/03/in.qcity.qconnect_03AD415DBEE34326FD126020B086CE45FAD30A7B02CFEA38E143146D47693929.apk",
+                "description": "Source review confirmed a GATT characteristic."
+            }
+        ]
+    },
+    {
+        "UUID": "03040304-2aae-4d26-ad62-03e9a8637ebd",
+        "company": "Unknown",
+        "UUID_name": "DIAGNOSTIC",
+        "UUID_purpose": "GATT characteristic identified in Android app source; some app-specific roles are unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.risesoftware.center21, version 23.01.100. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app in.qcity.qconnect, version 1.57.0.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in in.qcity.qconnect.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.risesoftware.center21",
+                "version_code": 600907,
+                "version_name": "23.01.100",
+                "package_path": "AndroZoo/apks/02/com.risesoftware.center21_02912613C626AC9CEB757E187C802BA3CA972D82012457A7DE0EC4F2FB0A7741.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "in.qcity.qconnect",
+                "version_code": 148,
+                "version_name": "1.57.0",
+                "package_path": "AndroZoo/apks/03/in.qcity.qconnect_03AD415DBEE34326FD126020B086CE45FAD30A7B02CFEA38E143146D47693929.apk",
+                "description": "Source review confirmed a GATT characteristic."
             }
         ]
     },
