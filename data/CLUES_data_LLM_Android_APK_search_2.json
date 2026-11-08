@@ -6620,7 +6620,37 @@
         ]
     },
     {
-        "UUID": "275ddae2-4c69-4638-97d4-d5ba8e9e05d1",
+        "UUID": "26eb001e-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "26eb000d-b012-49a8-b1f8-394fb2032b0f"
+    },
+    {
+        "UUID": "2330f10b-d28c-4b0e-89c7-8dbd05dfa491",
         "company": "Atmoph (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
@@ -6644,7 +6674,7 @@
         ]
     },
     {
-        "UUID": "2330f10b-d28c-4b0e-89c7-8dbd05dfa491",
+        "UUID": "275ddae2-4c69-4638-97d4-d5ba8e9e05d1",
         "company": "Atmoph (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
@@ -51488,6 +51518,355 @@
         ]
     },
     {
+        "UUID": "26eb001a-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT service on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt service in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb001b-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "26eb001a-b012-49a8-b1f8-394fb2032b0f"
+    },
+    {
+        "UUID": "26eb000e-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb0010-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb0011-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb0012-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb0013-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb0014-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb0015-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb0016-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb0017-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb001c-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Casio",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/izivkov/CasioGShockSmartSync/blob/ac7c53eed253800c34f7302f50f73750f8e61e37/notes/notes.txt#L75-L110",
+                "description": "Reported as a GATT characteristic on a Casio GB-5600 watch.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
         "UUID": "25ae1444-05d3-4c5b-8281-93d4e07420cf",
         "company": "Ceska sporitelna, a.s.",
         "UUID_name": "characteristicForIndicate",
@@ -51943,9 +52322,9 @@
         "parent_UUID": "8b3da2c6-b586-490f-9012-132af6d2202b"
     },
     {
-        "UUID": "2d3ed80e-0fd6-4dad-988a-d1738931fd19",
+        "UUID": "22230d9d-648f-466d-999e-59f6b516c192",
         "company": "Controlpoint (inferred from package id)",
-        "UUID_name": "GUID_POST_PHOTO",
+        "UUID_name": "GUID_REPLACEMENT_PHOTO",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -51967,9 +52346,9 @@
         ]
     },
     {
-        "UUID": "22230d9d-648f-466d-999e-59f6b516c192",
+        "UUID": "2d3ed80e-0fd6-4dad-988a-d1738931fd19",
         "company": "Controlpoint (inferred from package id)",
-        "UUID_name": "GUID_REPLACEMENT_PHOTO",
+        "UUID_name": "GUID_POST_PHOTO",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -54662,30 +55041,6 @@
         ]
     },
     {
-        "UUID": "2d51",
-        "company": "Jcdecaux (inferred from package id)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.jcdecaux.vls.maribor, version 3.3.1. Its GATT service role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.jcdecaux.vls.maribor",
-                "version_code": 3030199,
-                "version_name": "3.3.1",
-                "package_path": "AndroZoo/apks/02/com.jcdecaux.vls.maribor_029F25A654ACBDCB9AB130EC8B842C513E55D530A21D13FA49EB9B4C2B40A221.apk",
-                "description": "Possible GATT service; not independently verified."
-            }
-        ]
-    },
-    {
         "UUID": "2d43",
         "company": "Jcdecaux (inferred from package id)",
         "UUID_name": "Unknown",
@@ -54735,6 +55090,30 @@
     },
     {
         "UUID": "2d50",
+        "company": "Jcdecaux (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.jcdecaux.vls.maribor, version 3.3.1. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.jcdecaux.vls.maribor",
+                "version_code": 3030199,
+                "version_name": "3.3.1",
+                "package_path": "AndroZoo/apks/02/com.jcdecaux.vls.maribor_029F25A654ACBDCB9AB130EC8B842C513E55D530A21D13FA49EB9B4C2B40A221.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "2d51",
         "company": "Jcdecaux (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
@@ -57896,6 +58275,31 @@
         ]
     },
     {
+        "UUID": "20ea9329-4492-4512-9821-55ebf375b531",
+        "company": "Niceforyou (inferred from package id)",
+        "UUID_name": "Event channel characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.niceforyou.industrial.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.niceforyou.industrial",
+                "version_code": 37100,
+                "version_name": "N3.7.1-24",
+                "package_path": "AndroZoo/apks/04/com.niceforyou.industrial_04527AC0C0E363F4298A854C940F7D001CDABBB50F3DF8272DA95DB1B1D94B21.apk",
+                "description": "Source review identified a gatt characteristic in com.niceforyou.industrial."
+            }
+        ],
+        "parent_UUID": "79ceffa8-cb5c-4b03-a6c5-8e8282928067"
+    },
+    {
         "UUID": "288ec0fa-3768-4104-887e-479271a2f2d5",
         "company": "Third-party SDK code (declared in Java package `com.digitalaz.dhealth` — distinct from host com.ouderenzorg; Phase-4 identification needed)",
         "UUID_name": "CLIENT_ID",
@@ -58524,30 +58928,6 @@
         ]
     },
     {
-        "UUID": "2d569a8b-162f-4449-9d1d-d4760f7ba431",
-        "company": "Primepark (inferred from package id)",
-        "UUID_name": "ISSUE_CAR_WASHING_ENGINE_ID",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app ru.primepark.android, version 3.0.15. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "ru.primepark.android",
-                "version_code": 63,
-                "version_name": "3.0.15",
-                "package_path": "AndroZoo/apks/02/ru.primepark.android_0241C16A751573642664DD9E24A48809341B381FFAEFDDC6E65C5C9B13D5CC56.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
         "UUID": "2a514eb6-ec52-4641-b9a7-a266f6faae5e",
         "company": "Primepark (inferred from package id)",
         "UUID_name": "ISSUE_HELP_RECEIVE_PARCEL_ID",
@@ -58575,6 +58955,30 @@
         "UUID": "2ba94579-c787-468f-b318-51575c182e00",
         "company": "Primepark (inferred from package id)",
         "UUID_name": "ISSUE_PARKING_VALET_CHANGE_ID",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app ru.primepark.android, version 3.0.15. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "ru.primepark.android",
+                "version_code": 63,
+                "version_name": "3.0.15",
+                "package_path": "AndroZoo/apks/02/ru.primepark.android_0241C16A751573642664DD9E24A48809341B381FFAEFDDC6E65C5C9B13D5CC56.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "2d569a8b-162f-4449-9d1d-d4760f7ba431",
+        "company": "Primepark (inferred from package id)",
+        "UUID_name": "ISSUE_CAR_WASHING_ENGINE_ID",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -73356,30 +73760,6 @@
         ]
     },
     {
-        "UUID": "21a07e05-1fbf-4bf6-b484-d319b8282a1c",
-        "company": "Third-party SDK code (declared in Java package `com.walabot.home.ble` — distinct from host com.bridgera.defall; Phase-4 identification needed)",
-        "UUID_name": "CHAR_DATA_IN",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.bridgera.defall, version 2.1. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.bridgera.defall",
-                "version_code": 15,
-                "version_name": "2.1",
-                "package_path": "AndroZoo/apks/03/com.bridgera.defall_03C8B7B6F063CAF980CE05B83E47D349591386E413DBD51C04D472EDE58F27A0.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
         "UUID": "21a07e04-1fbf-4bf6-b484-d319b8282a1c",
         "company": "Third-party SDK code (declared in Java package `com.walabot.home.ble` — distinct from host com.bridgera.defall; Phase-4 identification needed)",
         "UUID_name": "SERVICE_WALABOT_HOME",
@@ -73460,6 +73840,30 @@
             }
         ],
         "parent_UUID": "21a07e04-1fbf-4bf6-b484-d319b8282a1c"
+    },
+    {
+        "UUID": "21a07e05-1fbf-4bf6-b484-d319b8282a1c",
+        "company": "Third-party SDK code (declared in Java package `com.walabot.home.ble` — distinct from host com.bridgera.defall; Phase-4 identification needed)",
+        "UUID_name": "CHAR_DATA_IN",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.bridgera.defall, version 2.1. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bridgera.defall",
+                "version_code": 15,
+                "version_name": "2.1",
+                "package_path": "AndroZoo/apks/03/com.bridgera.defall_03C8B7B6F063CAF980CE05B83E47D349591386E413DBD51C04D472EDE58F27A0.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
     },
     {
         "UUID": "2001",
@@ -74742,6 +75146,30 @@
         ]
     },
     {
+        "UUID": "273e5107-6b90-4779-83b8-b8bf1dadac35",
+        "company": "Third-party SDK code (declared in Java package `jp.co.tanita.comm.ble` — distinct from host clubwise.com.energym; Phase-4 identification needed)",
+        "UUID_name": "NO_ENCRYPT_RX_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app clubwise.com.energym, version 3.6.8. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "clubwise.com.energym",
+                "version_code": 227,
+                "version_name": "3.6.8",
+                "package_path": "AndroZoo/apks/03/clubwise.com.energym_03C602F5CE0A6F46C8BF0A3E03FAF094B88882BDCDFAEBD69C84372F7193B42C.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "273e5108-6b90-4779-83b8-b8bf1dadac35",
         "company": "Third-party SDK code (declared in Java package `jp.co.tanita.comm.ble` — distinct from host clubwise.com.energym; Phase-4 identification needed)",
         "UUID_name": "DEFAULT_ENCRYPT_RX_CHARACTERISTIC",
@@ -74790,57 +75218,33 @@
         ]
     },
     {
-        "UUID": "273e510f-6b90-4779-83b8-b8bf1dadac35",
-        "company": "Third-party SDK code (declared in Java package `jp.co.tanita.comm.ble` — distinct from host clubwise.com.energym; Phase-4 identification needed)",
-        "UUID_name": "ENCRYPT_TX_CHARACTERISTIC",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app clubwise.com.energym, version 3.6.8. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "clubwise.com.energym",
-                "version_code": 227,
-                "version_name": "3.6.8",
-                "package_path": "AndroZoo/apks/03/clubwise.com.energym_03C602F5CE0A6F46C8BF0A3E03FAF094B88882BDCDFAEBD69C84372F7193B42C.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "273e5107-6b90-4779-83b8-b8bf1dadac35",
-        "company": "Third-party SDK code (declared in Java package `jp.co.tanita.comm.ble` — distinct from host clubwise.com.energym; Phase-4 identification needed)",
-        "UUID_name": "NO_ENCRYPT_RX_CHARACTERISTIC",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app clubwise.com.energym, version 3.6.8. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "clubwise.com.energym",
-                "version_code": 227,
-                "version_name": "3.6.8",
-                "package_path": "AndroZoo/apks/03/clubwise.com.energym_03C602F5CE0A6F46C8BF0A3E03FAF094B88882BDCDFAEBD69C84372F7193B42C.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
         "UUID": "273e510e-6b90-4779-83b8-b8bf1dadac35",
         "company": "Third-party SDK code (declared in Java package `jp.co.tanita.comm.ble` — distinct from host clubwise.com.energym; Phase-4 identification needed)",
         "UUID_name": "NO_ENCRYPT_TX_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app clubwise.com.energym, version 3.6.8. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "clubwise.com.energym",
+                "version_code": 227,
+                "version_name": "3.6.8",
+                "package_path": "AndroZoo/apks/03/clubwise.com.energym_03C602F5CE0A6F46C8BF0A3E03FAF094B88882BDCDFAEBD69C84372F7193B42C.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "273e510f-6b90-4779-83b8-b8bf1dadac35",
+        "company": "Third-party SDK code (declared in Java package `jp.co.tanita.comm.ble` — distinct from host clubwise.com.energym; Phase-4 identification needed)",
+        "UUID_name": "ENCRYPT_TX_CHARACTERISTIC",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -80686,6 +81090,55 @@
         ]
     },
     {
+        "UUID": "23455100-8322-1805-a3da-78e4000c659c",
+        "company": "Tripletree (inferred from package id)",
+        "UUID_name": "ETAPE service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.tripletree.levisauditor.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.tripletree.levisauditor",
+                "version_code": 68,
+                "version_name": "1.0.01.20.2025",
+                "package_path": "AndroZoo/apks/05/com.tripletree.levisauditor_0548023868435C8D56B990C3621773EAB2132F5BAD123B273B2626384A2FA611.apk",
+                "description": "Source review identified a gatt service in com.tripletree.levisauditor."
+            }
+        ]
+    },
+    {
+        "UUID": "23455102-8322-1805-a3da-78e4000c659c",
+        "company": "Tripletree (inferred from package id)",
+        "UUID_name": "ETAPE reading characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.tripletree.levisauditor.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.tripletree.levisauditor",
+                "version_code": 68,
+                "version_name": "1.0.01.20.2025",
+                "package_path": "AndroZoo/apks/05/com.tripletree.levisauditor_0548023868435C8D56B990C3621773EAB2132F5BAD123B273B2626384A2FA611.apk",
+                "description": "Source review identified a gatt characteristic in com.tripletree.levisauditor."
+            }
+        ],
+        "parent_UUID": "23455100-8322-1805-a3da-78e4000c659c"
+    },
+    {
         "UUID": "2ce161d8-f0ba-48ba-814f-dfcde9b36263",
         "company": "Uber Technologies, Inc.",
         "UUID_name": "JUMP",
@@ -81035,6 +81488,79 @@
         ]
     },
     {
+        "UUID": "26eb0019-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb001d-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "2c07",
+        "company": "Unknown",
+        "UUID_name": "Get bind state characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.puwell.petv.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.puwell.petv",
+                "version_code": 1050201,
+                "version_name": "1.5.2.1",
+                "package_path": "AndroZoo/apks/04/com.puwell.petv_0439FCB29A74AB00CECFE2898948AEE5463B21ED807B4CA2C89BF9CC296EF71E.apk",
+                "description": "Source review identified a gatt characteristic in com.puwell.petv."
+            }
+        ],
+        "parent_UUID": "a00b"
+    },
+    {
         "UUID": "2f234454-cf6d-4a0f-adf2-f4911ba9ffa6",
         "company": "Unknown",
         "UUID_name": "Unknown",
@@ -81080,6 +81606,78 @@
                 "version_name": "2.6.540",
                 "package_path": "BLUUID_APKS/0752/d3e712c16c3ea5b08922bc5a3610e5873c18ba3ad48ed14c3f40c44c8fd6616d/d3e712c16c3ea5b08922bc5a3610e5873c18ba3ad48ed14c3f40c44c8fd6616d.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `RADBEACON_DEFAULT_UUID`."
+            }
+        ]
+    },
+    {
+        "UUID": "2054053f-f6ff-4d17-9568-fdfb57a17894",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.twofortyfouram.locale.x; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.twofortyfouram.locale.x",
+                "version_code": 100020293,
+                "version_name": "10.2.293",
+                "package_path": "AndroZoo/apks/04/com.twofortyfouram.locale.x_04945FEA217511090F540FFB35616A9F19CF49C35648F32D9734285348257790.apk",
+                "description": "The extractor suggests a gatt service in com.twofortyfouram.locale.x; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "26eb0018-b012-49a8-b1f8-394fb2032b0f",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "280c65ee-d462-45f1-a169-5f4ad3ed9210",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.goldendream.display",
+                "version_code": 2401103,
+                "version_name": "24.0.1.103",
+                "package_path": "AndroZoo/apks/05/com.goldendream.display_0569BE97A2EDD2B319DB075A3CB06CD5B5E497DBD354B08E16525A358E23D0B9.apk",
+                "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified."
             }
         ]
     },
@@ -85520,7 +86118,7 @@
         ]
     },
     {
-        "UUID": "2b6d8263-5a3b-4436-8d9e-80adffa26ecd",
+        "UUID": "2b6d6fb5-5a3b-4436-8d9e-80adffa26ecd",
         "company": "Zonith (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
@@ -85568,7 +86166,7 @@
         ]
     },
     {
-        "UUID": "2b6d6fb5-5a3b-4436-8d9e-80adffa26ecd",
+        "UUID": "2b6d8263-5a3b-4436-8d9e-80adffa26ecd",
         "company": "Zonith (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
@@ -85592,7 +86190,7 @@
         ]
     },
     {
-        "UUID": "2b6d6fb5-5a3b-4436-8d9e-80adffa26ec1",
+        "UUID": "2b6d6fb5-5a3b-4436-8d9e-80adffa26ec0",
         "company": "Zonith (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
@@ -85616,7 +86214,7 @@
         ]
     },
     {
-        "UUID": "2b6d6fb5-5a3b-4436-8d9e-80adffa26ec0",
+        "UUID": "2b6d6fb5-5a3b-4436-8d9e-80adffa26ec1",
         "company": "Zonith (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",

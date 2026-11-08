@@ -9365,6 +9365,55 @@
         ]
     },
     {
+        "UUID": "56eb6ad2-2521-11ed-861d-0242ac120002",
+        "company": "Amazon.com Services, Inc.",
+        "UUID_name": "Provisioning Service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.amazon.signage.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.amazon.signage",
+                "version_code": 26020501,
+                "version_name": "1.3.1",
+                "package_path": "AndroZoo/apks/04/com.amazon.signage_0447E889EC274D9753800270B06776FC7D705B45ED971DFBF1D34621BF88E8D2.apk",
+                "description": "Source review identified a gatt service in com.amazon.signage."
+            }
+        ]
+    },
+    {
+        "UUID": "55cdb48e-5afd-11ef-b864-0242ac120002",
+        "company": "Amazon.com Services, Inc.",
+        "UUID_name": "Provisioning Status V1",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.amazon.signage.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.amazon.signage",
+                "version_code": 26020501,
+                "version_name": "1.3.1",
+                "package_path": "AndroZoo/apks/04/com.amazon.signage_0447E889EC274D9753800270B06776FC7D705B45ED971DFBF1D34621BF88E8D2.apk",
+                "description": "Source review identified a gatt characteristic in com.amazon.signage."
+            }
+        ],
+        "parent_UUID": "56eb6ad2-2521-11ed-861d-0242ac120002"
+    },
+    {
         "UUID": "5589f185-f792-41ee-89cf-efb71cf911ec",
         "company": "Amazon.com Services, Inc..",
         "UUID_name": "ALEXA_APP_VOICE_CORE_ANDROID",
@@ -9858,7 +9907,7 @@
         "parent_UUID": "4e615266-dcc1-4d10-a741-b1634e983d8d"
     },
     {
-        "UUID": "5a388825-de5b-45bf-8864-16be820fc169",
+        "UUID": "530bcd10-f723-4203-8222-0e135022d394",
         "company": "Atmoph (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
@@ -9882,7 +9931,7 @@
         ]
     },
     {
-        "UUID": "530bcd10-f723-4203-8222-0e135022d394",
+        "UUID": "5a388825-de5b-45bf-8864-16be820fc169",
         "company": "Atmoph (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
@@ -45095,30 +45144,6 @@
         ]
     },
     {
-        "UUID": "5ba338e3-f2ac-4286-a54a-8d4ec2053662",
-        "company": "Controlpoint (inferred from package id)",
-        "UUID_name": "GUID_BOLT_GRADE",
-        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app uk.co.controlpoint.smarttorque, version 1.45.0. Its GATT service role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "uk.co.controlpoint.smarttorque",
-                "version_code": 63,
-                "version_name": "1.45.0",
-                "package_path": "AndroZoo/apks/02/uk.co.controlpoint.smarttorque_02D13ADE37FE38842B9DEBCE70E96298E59102789AB81BA3551CBA98F2004429.apk",
-                "description": "Possible GATT service; not independently verified."
-            }
-        ]
-    },
-    {
         "UUID": "50381e12-4222-4bcb-85de-317a3cddefee",
         "company": "Controlpoint (inferred from package id)",
         "UUID_name": "GUID_FLANGE_FACE_BACK_PHOTO",
@@ -45146,6 +45171,30 @@
         "UUID": "556d7419-2306-44de-aad8-6c0d36129788",
         "company": "Controlpoint (inferred from package id)",
         "UUID_name": "GUID_JOB_REFERENCE",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app uk.co.controlpoint.smarttorque, version 1.45.0. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "uk.co.controlpoint.smarttorque",
+                "version_code": 63,
+                "version_name": "1.45.0",
+                "package_path": "AndroZoo/apks/02/uk.co.controlpoint.smarttorque_02D13ADE37FE38842B9DEBCE70E96298E59102789AB81BA3551CBA98F2004429.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "5ba338e3-f2ac-4286-a54a-8d4ec2053662",
+        "company": "Controlpoint (inferred from package id)",
+        "UUID_name": "GUID_BOLT_GRADE",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -62166,6 +62215,56 @@
         ]
     },
     {
+        "UUID": "54a7a8cc-5c0d-11e7-907b-a6006ad3dba0",
+        "company": "Geberit (inferred from package id)",
+        "UUID_name": "HS2 output characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.geberit.setapp2015.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.geberit.setapp2015",
+                "version_code": 3685453,
+                "version_name": "4.0.2",
+                "package_path": "AndroZoo/apks/05/com.geberit.setapp2015_05E5DC7B527851898D5BDF8819D955D4F1084177DD3CC023CBF850C43A6EB0A7.apk",
+                "description": "Source review identified a gatt characteristic in com.geberit.setapp2015."
+            }
+        ],
+        "parent_UUID": "aedaf67a-2ff1-11e7-93ae-92361f002671"
+    },
+    {
+        "UUID": "54a7aa98-5c0d-11e7-907b-a6006ad3dba0",
+        "company": "Geberit (inferred from package id)",
+        "UUID_name": "HS2 input characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.geberit.setapp2015.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.geberit.setapp2015",
+                "version_code": 3685453,
+                "version_name": "4.0.2",
+                "package_path": "AndroZoo/apks/05/com.geberit.setapp2015_05E5DC7B527851898D5BDF8819D955D4F1084177DD3CC023CBF850C43A6EB0A7.apk",
+                "description": "Source review identified a gatt characteristic in com.geberit.setapp2015."
+            }
+        ],
+        "parent_UUID": "aedaf67a-2ff1-11e7-93ae-92361f002671"
+    },
+    {
         "UUID": "59338f05-cf61-40d4-ab0e-007460385719",
         "company": "Gogoro Inc.",
         "UUID_name": "Unknown",
@@ -71145,9 +71244,9 @@
         ]
     },
     {
-        "UUID": "5052494d-2dab-0341-6972-53454e41424d",
+        "UUID": "5052494d-2dab-0341-6972-53454e41424c",
         "company": "Sena Technologies, Inc. (US/Korea — motorcycle/sports communicator helmets; Sena Neo Industrial app for industrial BLE intercoms)",
-        "UUID_name": "NOT_CONNECTED_BT_ADV_SERVICE_APP_ON_TEST",
+        "UUID_name": "NOT_CONNECTED_BT_ADV_SERVICE_APP",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -71169,9 +71268,9 @@
         ]
     },
     {
-        "UUID": "5052494d-2dab-0341-6972-53454e41424c",
+        "UUID": "5052494d-2dab-0341-6972-53454e41424d",
         "company": "Sena Technologies, Inc. (US/Korea — motorcycle/sports communicator helmets; Sena Neo Industrial app for industrial BLE intercoms)",
-        "UUID_name": "NOT_CONNECTED_BT_ADV_SERVICE_APP",
+        "UUID_name": "NOT_CONNECTED_BT_ADV_SERVICE_APP_ON_TEST",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -78798,6 +78897,78 @@
                 "version_name": "8.8.2",
                 "package_path": "BLUUID_APKS/0545/8df016dc4b6a6e8e0c9e3dd07fc342249c7883932403c194418ed1657b8e71cd/8df016dc4b6a6e8e0c9e3dd07fc342249c7883932403c194418ed1657b8e71cd.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CAN_READ_IMPORTANT_CONTACTS`."
+            }
+        ]
+    },
+    {
+        "UUID": "5446e255-d711-11e4-b9d6-1681e6b88ec1",
+        "company": "Starkey (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
+            }
+        ]
+    },
+    {
+        "UUID": "5446e448-d711-11e4-b9d6-1681e6b88ec1",
+        "company": "Starkey (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
+            }
+        ]
+    },
+    {
+        "UUID": "57d682ff-60e2-46e8-baf9-d963415ac3c3",
+        "company": "Starkey (inferred from package id)",
+        "UUID_name": "Device type characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
             }
         ]
     },
@@ -98410,6 +98581,222 @@
         ]
     },
     {
+        "UUID": "5446ec0e-d711-11e4-b9d6-1681e6b88ec1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt service in com.starkey.myaudibel.release."
+            }
+        ]
+    },
+    {
+        "UUID": "503a5d70-b443-466e-9aeb-c342802b184e",
+        "company": "Unknown",
+        "UUID_name": "OTA data characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.asiaudio.threedme.android.bt.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.asiaudio.threedme.android.bt",
+                "version_code": 343,
+                "version_name": "3.6.28",
+                "package_path": "AndroZoo/apks/04/com.asiaudio.threedme.android.bt_04B4048672C49E5A6B57490103B1BC672093ACFEDED65385D2D75D2879EF0B7D.apk",
+                "description": "Source review identified a gatt characteristic in com.asiaudio.threedme.android.bt."
+            }
+        ]
+    },
+    {
+        "UUID": "5446daa2-d711-11e4-b9d6-1681e6b88ec1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
+            }
+        ]
+    },
+    {
+        "UUID": "5446e63c-d711-11e4-b9d6-1681e6b88ec1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
+            }
+        ]
+    },
+    {
+        "UUID": "5446ea24-d711-11e4-b9d6-1681e6b88ec1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
+            }
+        ]
+    },
+    {
+        "UUID": "5446fb18-d711-11e4-b9d6-1681e6b88ec1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
+            }
+        ]
+    },
+    {
+        "UUID": "5df82d26-a203-4042-8416-f360faee44b4",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "54a32df3-00a2-44d6-b4b2-756b6d3fe090",
+        "company": "Unknown",
+        "UUID_name": "BLE IPC service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.puwell.petv.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.puwell.petv",
+                "version_code": 1050201,
+                "version_name": "1.5.2.1",
+                "package_path": "AndroZoo/apks/04/com.puwell.petv_0439FCB29A74AB00CECFE2898948AEE5463B21ED807B4CA2C89BF9CC296EF71E.apk",
+                "description": "Source review identified a gatt service in com.puwell.petv."
+            }
+        ]
+    },
+    {
+        "UUID": "5446e254-d711-11e4-b9d6-1681e6b88ec1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt service in com.starkey.myaudibel.release."
+            }
+        ]
+    },
+    {
         "UUID": "500d8e40-be34-11e4-9b24-0002a5d5c51b",
         "company": "Unknown",
         "UUID_name": "Unknown",
@@ -98458,6 +98845,78 @@
             }
         ],
         "parent_UUID": "4484fae0-be34-11e4-851e-0002a5d5c51b"
+    },
+    {
+        "UUID": "59994ce2-ba92-4fe6-be82-84b98195945b",
+        "company": "Unknown",
+        "UUID_name": "LONG_FRAME_NOTIFICATION_characteristic",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.expanscience.vitalitens; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.expanscience.vitalitens",
+                "version_code": 1149,
+                "version_name": "2.3",
+                "package_path": "AndroZoo/apks/04/com.expanscience.vitalitens_043BBA6187E12E28039217A2B92596D62E564F34D55AC0342102E80AA6EAD4D1.apk",
+                "description": "The extractor suggests a gatt characteristic in com.expanscience.vitalitens; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "59994ce0-ba92-4fe6-be82-84b98195945b",
+        "company": "Unknown",
+        "UUID_name": "LONG_FRAME_NOTIFICATION_service",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.expanscience.vitalitens; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.expanscience.vitalitens",
+                "version_code": 1149,
+                "version_name": "2.3",
+                "package_path": "AndroZoo/apks/04/com.expanscience.vitalitens_043BBA6187E12E28039217A2B92596D62E564F34D55AC0342102E80AA6EAD4D1.apk",
+                "description": "The extractor suggests a gatt service in com.expanscience.vitalitens; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "59994ce1-ba92-4fe6-be82-84b98195945b",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.expanscience.vitalitens; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.expanscience.vitalitens",
+                "version_code": 1149,
+                "version_name": "2.3",
+                "package_path": "AndroZoo/apks/04/com.expanscience.vitalitens_043BBA6187E12E28039217A2B92596D62E564F34D55AC0342102E80AA6EAD4D1.apk",
+                "description": "The extractor suggests a gatt service in com.expanscience.vitalitens; the role is unverified."
+            }
+        ]
     },
     {
         "UUID": "5eed628e-0390-11e5-8418-1697f925ec7b",

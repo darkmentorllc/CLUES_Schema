@@ -8139,6 +8139,56 @@
         "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
     },
     {
+        "UUID": "168a4a58-2116-4aed-83f3-72414a68fd8b",
+        "company": "Alarm (inferred from package id)",
+        "UUID_name": "CONNECT_RESULT_UUID",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.alarm.alarmmobile.android.g1group",
+                "version_code": 2102,
+                "version_name": "5.10.2",
+                "package_path": "AndroZoo/apks/04/com.alarm.alarmmobile.android.g1group_04C93E133347B56AE7B1227AF2F3DECB33CB9B794F1D063201FC48B83529131F.apk",
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group."
+            }
+        ],
+        "parent_UUID": "49ed65c8-0650-440c-9305-f1928add75cc"
+    },
+    {
+        "UUID": "1d64908b-bdf9-4d25-9f08-8e4d1b2eea67",
+        "company": "Alarm (inferred from package id)",
+        "UUID_name": "PAKE_3_UUID",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.alarm.alarmmobile.android.g1group",
+                "version_code": 2102,
+                "version_name": "5.10.2",
+                "package_path": "AndroZoo/apks/04/com.alarm.alarmmobile.android.g1group_04C93E133347B56AE7B1227AF2F3DECB33CB9B794F1D063201FC48B83529131F.apk",
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group."
+            }
+        ],
+        "parent_UUID": "70271b5d-9a24-431c-9d57-b4d8178be632"
+    },
+    {
         "UUID": "1602",
         "company": "Third-party SDK code (declared in Java package `com.zjw.zhbraceletsdk.service` — distinct from host com.linwear.ogglobe; Phase-4 identification needed)",
         "UUID_name": "UUID_THEME_WRITE / f13185OooO0o",
@@ -8971,6 +9021,31 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SCAN_WIFI_NETWORKS_RESULTS_READY_UUID`."
             }
         ]
+    },
+    {
+        "UUID": "1914e894-5604-11ef-b864-0242ac120002",
+        "company": "Amazon.com Services, Inc.",
+        "UUID_name": "Provisioning Info V1",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.amazon.signage.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.amazon.signage",
+                "version_code": 26020501,
+                "version_name": "1.3.1",
+                "package_path": "AndroZoo/apks/04/com.amazon.signage_0447E889EC274D9753800270B06776FC7D705B45ED971DFBF1D34621BF88E8D2.apk",
+                "description": "Source review identified a gatt characteristic in com.amazon.signage."
+            }
+        ],
+        "parent_UUID": "56eb6ad2-2521-11ed-861d-0242ac120002"
     },
     {
         "UUID": "154f0121-d5eb-46b6-a56a-ba4e9372e581",
@@ -18672,9 +18747,9 @@
         "parent_UUID": "2960398a-c284-4a8a-a7b6-72af9e9d4274"
     },
     {
-        "UUID": "1f0923fb-86b4-4f6f-9887-605dbb42ff01",
+        "UUID": "1f0923fb-86b4-4f6f-9887-605dbb42ff00",
         "company": "Central (inferred from package id)",
-        "UUID_name": "thingNameCharacteristic",
+        "UUID_name": "thingNameService",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -18696,9 +18771,9 @@
         ]
     },
     {
-        "UUID": "1f0923fb-86b4-4f6f-9887-605dbb42ff00",
+        "UUID": "1f0923fb-86b4-4f6f-9887-605dbb42ff01",
         "company": "Central (inferred from package id)",
-        "UUID_name": "thingNameService",
+        "UUID_name": "thingNameCharacteristic",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -18810,9 +18885,9 @@
         "parent_UUID": "8b3da2c6-b586-490f-9012-132af6d2202b"
     },
     {
-        "UUID": "1a999402-7c54-4d9b-859b-ab6ce60d2287",
+        "UUID": "14d37d02-23cb-4eff-884e-b8bb12816a5a",
         "company": "Controlpoint (inferred from package id)",
-        "UUID_name": "GUID_FLANGE_DIAMETER_VALUE",
+        "UUID_name": "GUID_OPTION_YES",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -18834,9 +18909,9 @@
         ]
     },
     {
-        "UUID": "14d37d02-23cb-4eff-884e-b8bb12816a5a",
+        "UUID": "1a999402-7c54-4d9b-859b-ab6ce60d2287",
         "company": "Controlpoint (inferred from package id)",
-        "UUID_name": "GUID_OPTION_YES",
+        "UUID_name": "GUID_FLANGE_DIAMETER_VALUE",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -34442,486 +34517,6 @@
         ]
     },
     {
-        "UUID": "1b4e0019-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_ADV_MODE",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0003-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_ADV_PERIOD",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0025-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_CMD",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e001b-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_GSENSOR_THS",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0012-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_LORA_APPEUI",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0011-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_LORA_APPKEY",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0015-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_LORA_APPSKEY",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0013-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_LORA_DEVADDR",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0010-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_LORA_JOINMODE",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0014-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_LORA_NWKSKEY",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0017-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_LORA_TX_PWR",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0016-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_LORA_UPLINK_PERIOD",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e001a-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_NEW_ADV_INTERVAL_U32",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0018-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_NEW_ADV_INTERVAL",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0007-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_PROX_POWER",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e000a-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_PROX_REPORT",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0009-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_PROX_SAMPLERATE",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0008-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_PROX_THRESHHOLD",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e0004-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_RESET",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "1b4e000d-b298-46bd-841a-6d1cb464322b",
-        "company": "Ingics (inferred from package id)",
-        "UUID_name": "IBS02_CONFIG_TOF_MODE",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ingics.tag.igstagconfig",
-                "version_code": 20230613,
-                "version_name": "0.13.12",
-                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
         "UUID": "1b4e0001-b298-46bd-841a-6d1cb464322b",
         "company": "Ingics (inferred from package id)",
         "UUID_name": "IBS02_CONFIG_TX_PWR_LVLS",
@@ -34970,9 +34565,153 @@
         ]
     },
     {
+        "UUID": "1b4e0003-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_ADV_PERIOD",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0004-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_RESET",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "1b4e0005-b298-46bd-841a-6d1cb464322b",
         "company": "Ingics (inferred from package id)",
         "UUID_name": "IBS02_CONFIG_USER_DATA",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0007-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_PROX_POWER",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0008-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_PROX_THRESHHOLD",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0009-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_PROX_SAMPLERATE",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e000a-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_PROX_REPORT",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -35042,9 +34781,9 @@
         ]
     },
     {
-        "UUID": "1b4e0022-b298-46bd-841a-6d1cb464322b",
+        "UUID": "1b4e000d-b298-46bd-841a-6d1cb464322b",
         "company": "Ingics (inferred from package id)",
-        "UUID_name": "OKEY_MAJOR",
+        "UUID_name": "IBS02_CONFIG_TOF_MODE",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -35066,9 +34805,321 @@
         ]
     },
     {
-        "UUID": "1b4e0024-b298-46bd-841a-6d1cb464322b",
+        "UUID": "1b4e0010-b298-46bd-841a-6d1cb464322b",
         "company": "Ingics (inferred from package id)",
-        "UUID_name": "OKEY_MEAS_TX",
+        "UUID_name": "IBS02_CONFIG_LORA_JOINMODE",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0011-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_LORA_APPKEY",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0012-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_LORA_APPEUI",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0013-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_LORA_DEVADDR",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0014-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_LORA_NWKSKEY",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0015-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_LORA_APPSKEY",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0016-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_LORA_UPLINK_PERIOD",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0017-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_LORA_TX_PWR",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0018-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_NEW_ADV_INTERVAL",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0019-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_ADV_MODE",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e001a-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_NEW_ADV_INTERVAL_U32",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e001b-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_GSENSOR_THS",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0021-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "OKEY_UUID",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0022-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "OKEY_MAJOR",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -35114,9 +35165,33 @@
         ]
     },
     {
-        "UUID": "1b4e0021-b298-46bd-841a-6d1cb464322b",
+        "UUID": "1b4e0024-b298-46bd-841a-6d1cb464322b",
         "company": "Ingics (inferred from package id)",
-        "UUID_name": "OKEY_UUID",
+        "UUID_name": "OKEY_MEAS_TX",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.ingics.tag.igstagconfig, version 0.13.12. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ingics.tag.igstagconfig",
+                "version_code": 20230613,
+                "version_name": "0.13.12",
+                "package_path": "AndroZoo/apks/02/com.ingics.tag.igstagconfig_022D4EE5C3E96F37CD003FBAE64386E9FD5FBE4BF9C17AC93E4F6061D9B40507.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b4e0025-b298-46bd-841a-6d1cb464322b",
+        "company": "Ingics (inferred from package id)",
+        "UUID_name": "IBS02_CONFIG_CMD",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -39890,6 +39965,249 @@
         "parent_UUID": "cd335528-624a-4363-b361-f62342001d00"
     },
     {
+        "UUID": "10000001-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario color characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "00000004-48e5-4f0e-a5d1-8e717860ee99"
+    },
+    {
+        "UUID": "10000002-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario timer characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "10000003-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario hour-range characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "10000005-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Configuration scenario characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "10000006-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "LED model characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "10000007-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Configuration time characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "00000100-48e5-4f0e-a5d1-8e717860ee99"
+    },
+    {
+        "UUID": "10000009-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Device-control password characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "00000101-48e5-4f0e-a5d1-8e717860ee99"
+    },
+    {
+        "UUID": "10000010-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Password-change characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "10000008-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "10000011-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "12345678-1234-5678-1234-56789abcde03",
         "company": "NumLake Tech Limited",
         "UUID_name": "EKEN_PROXY_NOTIFY_CHARACTERISTIC",
@@ -41666,6 +41984,126 @@
             }
         ],
         "parent_UUID": "127face1-cb21-11e5-93d0-0002a5d5c51b"
+    },
+    {
+        "UUID": "18ca85fb-0001-4888-a286-22da8087a207",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "SNO110_BLUETOOTH_CHARACTERISTIC_SCHEDULER_ENABLED",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt characteristic in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "18ca85fb-0002-4888-a286-22da8087a207",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "SNO110_BLUETOOTH_CHARACTERISTIC_SCHEDULER_NUMBER_OF_ENTRIES",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt characteristic in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "18ca85fb-0004-4888-a286-22da8087a207",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "SNO110_BLUETOOTH_CHARACTERISTIC_SCHEDULER_FADE_TIME",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt characteristic in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "18ca85fb-0005-4888-a286-22da8087a207",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "SNO110_BLUETOOTH_CHARACTERISTIC_SCHEDULER_MAX_DIM_STEPS",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt characteristic in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "18ca85fb-1001-4888-a286-22da8087a207",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "SNO110_BLUETOOTH_CHARACTERISTIC_SCHEDULER_ASTRO_CLOCK_ENABLED",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt characteristic in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
     },
     {
         "UUID": "1fbcbbfe-063d-411c-a1bd-67d758e804ed",
@@ -43478,6 +43916,30 @@
                 "version_name": "1.1.38",
                 "package_path": "AndroZoo/apks/32/com.desi.roof_3250121F7C1F2156034DA1A8356CA3D6DC76C9DE9F9A286985B64FAF3C8E566B.apk",
                 "description": "DESi Smart; APK SHA-256 verified as 3250121f7c1f2156034da1a8356ca3d6dc76c9de9f9a286985b64faf3c8e566b; target-only GATT review."
+            }
+        ]
+    },
+    {
+        "UUID": "1711",
+        "company": "Sciener (TTLock smart-lock SDK - com.ttlock.bl.sdk; UUID 73631912-... is ASCII 'scienerisfirst')",
+        "UUID_name": "UUID_SERVICE_R2",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.sciener.btlock; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.sciener.btlock",
+                "version_code": 287,
+                "version_name": "9.8.260721",
+                "package_path": "AndroZoo/apks/04/com.sciener.btlock_043F3E83C2761801D73FA75B4511877A8C81FB61C431BCDB3DA9C443DB606785.apk",
+                "description": "The extractor suggests a gatt service in com.sciener.btlock; the role is unverified."
             }
         ]
     },
@@ -55016,7 +55478,7 @@
         "parent_UUID": "00a6c6f7-204c-8b3e-2858-39545db01fe0"
     },
     {
-        "UUID": "1b1fd50f-a928-4ed4-9a3c-9aa8775de575",
+        "UUID": "1b1fd50f-a928-4ed4-9a3c-9aa8775d0001",
         "company": "Third-party SDK code (declared in Java package `kr.kysco.mytown.core` — distinct from host net.gntalk.oitalk; Phase-4 identification needed)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
@@ -55040,7 +55502,7 @@
         ]
     },
     {
-        "UUID": "1b1fd50f-a928-4ed4-9a3c-9aa8775d0001",
+        "UUID": "1b1fd50f-a928-4ed4-9a3c-9aa8775de575",
         "company": "Third-party SDK code (declared in Java package `kr.kysco.mytown.core` — distinct from host net.gntalk.oitalk; Phase-4 identification needed)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
@@ -75814,6 +76276,129 @@
         ]
     },
     {
+        "UUID": "12e868e7-c926-4906-96c8-a7ee81d4b1b3",
+        "company": "Unknown",
+        "UUID_name": "OTA device ID characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.asiaudio.threedme.android.bt.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.asiaudio.threedme.android.bt",
+                "version_code": 343,
+                "version_name": "3.6.28",
+                "package_path": "AndroZoo/apks/04/com.asiaudio.threedme.android.bt_04B4048672C49E5A6B57490103B1BC672093ACFEDED65385D2D75D2879EF0B7D.apk",
+                "description": "Source review identified a gatt characteristic in com.asiaudio.threedme.android.bt."
+            }
+        ]
+    },
+    {
+        "UUID": "1f40eaf8-aab4-14a3-f1ba-f61f35cddbaa",
+        "company": "Unknown",
+        "UUID_name": "Keyboard service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.app.smartkeyboard.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.app.smartkeyboard",
+                "version_code": 55,
+                "version_name": "V1.1.3",
+                "package_path": "AndroZoo/apks/04/com.app.smartkeyboard_0420B52C1706264A6B23CA363F206A2830A9B534ED129FEC8EDEEC6DB2098B37.apk",
+                "description": "Source review identified a gatt service in com.app.smartkeyboard."
+            }
+        ]
+    },
+    {
+        "UUID": "1f400001-aab4-14a3-f1ba-f61f35cddbaa",
+        "company": "Unknown",
+        "UUID_name": "Write characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.app.smartkeyboard.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.app.smartkeyboard",
+                "version_code": 55,
+                "version_name": "V1.1.3",
+                "package_path": "AndroZoo/apks/04/com.app.smartkeyboard_0420B52C1706264A6B23CA363F206A2830A9B534ED129FEC8EDEEC6DB2098B37.apk",
+                "description": "Source review identified a gatt characteristic in com.app.smartkeyboard."
+            }
+        ],
+        "parent_UUID": "1f40eaf8-aab4-14a3-f1ba-f61f35cddbaa"
+    },
+    {
+        "UUID": "1f400002-aab4-14a3-f1ba-f61f35cddbaa",
+        "company": "Unknown",
+        "UUID_name": "Read characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.app.smartkeyboard.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.app.smartkeyboard",
+                "version_code": 55,
+                "version_name": "V1.1.3",
+                "package_path": "AndroZoo/apks/04/com.app.smartkeyboard_0420B52C1706264A6B23CA363F206A2830A9B534ED129FEC8EDEEC6DB2098B37.apk",
+                "description": "Source review identified a gatt characteristic in com.app.smartkeyboard."
+            }
+        ],
+        "parent_UUID": "1f40eaf8-aab4-14a3-f1ba-f61f35cddbaa"
+    },
+    {
+        "UUID": "1f400003-aab4-14a3-f1ba-f61f35cddbaa",
+        "company": "Unknown",
+        "UUID_name": "Keyboard dial write characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.app.smartkeyboard.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.app.smartkeyboard",
+                "version_code": 55,
+                "version_name": "V1.1.3",
+                "package_path": "AndroZoo/apks/04/com.app.smartkeyboard_0420B52C1706264A6B23CA363F206A2830A9B534ED129FEC8EDEEC6DB2098B37.apk",
+                "description": "Source review identified a gatt characteristic in com.app.smartkeyboard."
+            }
+        ],
+        "parent_UUID": "1f40eaf8-aab4-14a3-f1ba-f61f35cddbaa"
+    },
+    {
         "UUID": "12345678-1234-5678-1234-56789abcdef0",
         "company": "Unknown",
         "UUID_name": "Unknown",
@@ -75863,6 +76448,30 @@
         "parent_UUID": "12345678-1234-5678-1234-56789abcdef0"
     },
     {
+        "UUID": "169b52a0-b7fd-40da-998c-dd9238327e55",
+        "company": "Unknown",
+        "UUID_name": "OTA service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.asiaudio.threedme.android.bt.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.asiaudio.threedme.android.bt",
+                "version_code": 343,
+                "version_name": "3.6.28",
+                "package_path": "AndroZoo/apks/04/com.asiaudio.threedme.android.bt_04B4048672C49E5A6B57490103B1BC672093ACFEDED65385D2D75D2879EF0B7D.apk",
+                "description": "Source review identified a gatt service in com.asiaudio.threedme.android.bt."
+            }
+        ]
+    },
+    {
         "UUID": "15d708b2-0384-4b29-b10b-18b9b0406d12",
         "company": "Unknown",
         "UUID_name": "HEALTH_KIOSK",
@@ -75898,6 +76507,54 @@
                 "version_name": "1.57.0",
                 "package_path": "AndroZoo/apks/03/in.qcity.qconnect_03AD415DBEE34326FD126020B086CE45FAD30A7B02CFEA38E143146D47693929.apk",
                 "description": "Source review confirmed a GATT characteristic. Parent service in this app: fdb1."
+            }
+        ]
+    },
+    {
+        "UUID": "1a1c59d1-7ced-409a-87f6-fa7580cadadb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.goldendream.display",
+                "version_code": 2401103,
+                "version_name": "24.0.1.103",
+                "package_path": "AndroZoo/apks/05/com.goldendream.display_0569BE97A2EDD2B319DB075A3CB06CD5B5E497DBD354B08E16525A358E23D0B9.apk",
+                "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1e5c8b13-1f86-4784-ad7b-d8552791c7a4",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.twofortyfouram.locale.x; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.twofortyfouram.locale.x",
+                "version_code": 100020293,
+                "version_name": "10.2.293",
+                "package_path": "AndroZoo/apks/04/com.twofortyfouram.locale.x_04945FEA217511090F540FFB35616A9F19CF49C35648F32D9734285348257790.apk",
+                "description": "The extractor suggests a gatt service in com.twofortyfouram.locale.x; the role is unverified."
             }
         ]
     },

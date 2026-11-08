@@ -46911,6 +46911,55 @@
         ]
     },
     {
+        "UUID": "fa4970e4-a64c-11ef-b864-0242ac120002",
+        "company": "Amazon.com Services, Inc.",
+        "UUID_name": "Remote Control Service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.amazon.signage.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.amazon.signage",
+                "version_code": 26020501,
+                "version_name": "1.3.1",
+                "package_path": "AndroZoo/apks/04/com.amazon.signage_0447E889EC274D9753800270B06776FC7D705B45ED971DFBF1D34621BF88E8D2.apk",
+                "description": "Source review identified a gatt service in com.amazon.signage."
+            }
+        ]
+    },
+    {
+        "UUID": "fa49726a-a64c-11ef-b864-0242ac120002",
+        "company": "Amazon.com Services, Inc.",
+        "UUID_name": "Remote Control Attribute Write",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.amazon.signage.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.amazon.signage",
+                "version_code": 26020501,
+                "version_name": "1.3.1",
+                "package_path": "AndroZoo/apks/04/com.amazon.signage_0447E889EC274D9753800270B06776FC7D705B45ED971DFBF1D34621BF88E8D2.apk",
+                "description": "Source review identified a gatt characteristic in com.amazon.signage."
+            }
+        ],
+        "parent_UUID": "fa4970e4-a64c-11ef-b864-0242ac120002"
+    },
+    {
         "UUID": "f1fb161c-b662-44e0-b72a-6846ac93769e",
         "company": "Amazon.com Services, Inc..",
         "UUID_name": "SCRIBE_EFFECT_ID",
@@ -100428,7 +100477,7 @@
         "parent_UUID": "8d53dc1d-1db7-4cd3-868b-8a527460aa84"
     },
     {
-        "UUID": "f8974030-0a42-11e8-bafb-c71fd9835a50",
+        "UUID": "f1626166-0a40-11e8-934a-07cd1d06dc59",
         "company": "Apulsetech (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
@@ -100452,7 +100501,7 @@
         ]
     },
     {
-        "UUID": "f1626166-0a40-11e8-934a-07cd1d06dc59",
+        "UUID": "f8974030-0a42-11e8-bafb-c71fd9835a50",
         "company": "Apulsetech (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
@@ -131067,6 +131116,106 @@
                 "version_name": "2.8.5",
                 "package_path": "BLUUID_APKS/0516/cd2e293e9a1bbeb5012d058ff2d2f5a1f337c14e9e5561d8ac9154ec80686f3d/cd2e293e9a1bbeb5012d058ff2d2f5a1f337c14e9e5561d8ac9154ec80686f3d.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `FOOD_VALUE_CHARACTERISTIC_3`."
+            }
+        ],
+        "parent_UUID": "f3641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "f3641407-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C4 time distribution",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "f3641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "f3641408-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C4 sequence number",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "f3641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "f3641409-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C4 sequence write",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "f3641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "f364140a-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C4 sequence ACK",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
             }
         ],
         "parent_UUID": "f3641400-00b0-4240-ba50-05ca45bf8abc"
@@ -196607,6 +196756,30 @@
         ]
     },
     {
+        "UUID": "ffffffff-ffff-ffff-ffff-fffffffffff0",
+        "company": "Misa (inferred from package id)",
+        "UUID_name": "BOOKING_SYSTEM_SENDER_ID",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in vn.com.misa.amis; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "vn.com.misa.amis",
+                "version_code": 2026052501,
+                "version_name": "R99.2",
+                "package_path": "AndroZoo/apks/04/vn.com.misa.amis_04AC5B01F03A9784B2337B55AF6233395AE6A7D62E65A9E3EA2F34A668E0770B.apk",
+                "description": "The extractor suggests a gatt characteristic in vn.com.misa.amis; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "fec26ec4-6d71-4442-9f81-55bc21d658d7",
         "company": "Namsung Corp",
         "UUID_name": "CLIENT_CHARACTERISTIC_BSD",
@@ -212388,6 +212561,550 @@
         "parent_UUID": "cd335528-624a-4363-b361-f62342001d00"
     },
     {
+        "UUID": "f3641406-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C4 state mode",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "f9641400-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C5 service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "f9641401-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C5 universe ID",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "f9641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "f9641402-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C5 ACK number",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "f9641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "f9641403-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C5 sequence write",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "f9641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "f9641404-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C5 ACK write",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "f9641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "f9641405-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Scenario C5 mode",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "f9641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fb641400-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Network service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "fb641401-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Network name",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fb641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fb641402-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Network write MAC ID",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fb641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fb641403-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Network read MAC ID",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fb641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fb641405-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Network line number",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fb641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fb641406-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Network configuration array",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fb641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fb641404-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Network products count",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "fd641400-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Plot configuration / weekly battery service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "fd641401-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Plot password",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fd641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fd641402-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Plot battery level",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fd641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fd641403-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Plot firmware version",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fd641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fd641404-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Plot date",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fd641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fd641405-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Plot time",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fd641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "fd641407-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Weekly charge",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ],
+        "parent_UUID": "fd641400-00b0-4240-ba50-05ca45bf8abc"
+    },
+    {
+        "UUID": "f3641405-00b0-4240-ba50-05ca45bf8abc",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "f0001133-0451-4000-b000-000000000000",
         "company": "OPT7",
         "UUID_name": "CUSTOM_CHARACTERISTIC",
@@ -216023,9 +216740,9 @@
         ]
     },
     {
-        "UUID": "f29e33a0-c6ad-45c5-ae19-6a874dc127fc",
+        "UUID": "f1dd3d57-9c08-412e-9a49-70d9405e4ef4",
         "company": "Primepark (inferred from package id)",
-        "UUID_name": "ISSUE_CLEANING_WASHING_WINDOWS_ID",
+        "UUID_name": "ISSUE_PARKING_VALET_CREATE_ID",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -216047,9 +216764,9 @@
         ]
     },
     {
-        "UUID": "f1dd3d57-9c08-412e-9a49-70d9405e4ef4",
+        "UUID": "f29e33a0-c6ad-45c5-ae19-6a874dc127fc",
         "company": "Primepark (inferred from package id)",
-        "UUID_name": "ISSUE_PARKING_VALET_CREATE_ID",
+        "UUID_name": "ISSUE_CLEANING_WASHING_WINDOWS_ID",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -221213,6 +221930,54 @@
             }
         ],
         "parent_UUID": "b670003c-0079-465c-9ba7-6c0539ccd67f"
+    },
+    {
+        "UUID": "ffffffff-ffff-0000-0000-000000000000",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "BLUETOOTH_SCAN_FILTER_SERVICE_MASK",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "ffffffff-ffff-ffff-0000-000000000000",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "ZSC010_BLUETOOTH_SERVICE_MASK",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
     },
     {
         "UUID": "fe486e03-ef4d-fd17-886c-65cf4648efea",
@@ -266921,45 +267686,423 @@
         "regex": true
     },
     {
-        "UUID": "ff0d",
+        "UUID": "f910",
         "company": "Unknown",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT characteristic confirmed in Android app source.",
+        "UUID_name": "Debug service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in Android app com.cado.cadosync, version 2.2.3. Its initial role was corrected during source review.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Source review confirmed a GATT characteristic in com.cado.cadosync. Its parent service in this app is 00ff.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "description": "Found in Android app com.global.iriding.mobile, version 1.8.2.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Source review confirmed a GATT characteristic in com.global.iriding.mobile. Its parent service in this app is fee0.",
+                "description": "Source review identified a gatt service in life.fairconnect.android.mobilityecosystem.",
                 "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
             {
-                "package_id": "com.cado.cadosync",
-                "version_code": 2020301,
-                "version_name": "2.2.3",
-                "package_path": "AndroZoo/apks/02/com.cado.cadosync_02CA92E3ED570C1304DE52BFA05FF6AA438BB839930C3785AE8D5E52D876F11F.apk",
-                "description": "Source review confirmed a GATT characteristic. The app calls it S_1_C_FF0D. Parent service in this app: 00ff."
-            },
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt service in life.fairconnect.android.mobilityecosystem."
+            }
+        ]
+    },
+    {
+        "UUID": "f911",
+        "company": "Unknown",
+        "UUID_name": "Actual acceleration",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
             {
-                "package_id": "com.global.iriding.mobile",
-                "version_code": 132,
-                "version_name": "1.8.2",
-                "package_path": "AndroZoo/apks/03/com.global.iriding.mobile_032CF6B007CB8F9148ECD1E6C1E1C68D111EC3546085075B9118D492146EDF4D.apk",
-                "description": "Source review confirmed a GATT characteristic. The app calls it UUID_CHAR_TEST. Parent service in this app: fee0."
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "f910"
+    },
+    {
+        "UUID": "f912",
+        "company": "Unknown",
+        "UUID_name": "Restart",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "f910"
+    },
+    {
+        "UUID": "f921",
+        "company": "Unknown",
+        "UUID_name": "Check acceleration",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "f910"
+    },
+    {
+        "UUID": "fb10",
+        "company": "Unknown",
+        "UUID_name": "Device number service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt service in life.fairconnect.android.mobilityecosystem."
+            }
+        ]
+    },
+    {
+        "UUID": "fb11",
+        "company": "Unknown",
+        "UUID_name": "Factory reset",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "fb10"
+    },
+    {
+        "UUID": "fb12",
+        "company": "Unknown",
+        "UUID_name": "Device number",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "fb10"
+    },
+    {
+        "UUID": "fb13",
+        "company": "Unknown",
+        "UUID_name": "Device model",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "fb10"
+    },
+    {
+        "UUID": "fc10",
+        "company": "Unknown",
+        "UUID_name": "Track service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt service in life.fairconnect.android.mobilityecosystem."
+            }
+        ]
+    },
+    {
+        "UUID": "fc11",
+        "company": "Unknown",
+        "UUID_name": "Track enable",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "fc10"
+    },
+    {
+        "UUID": "fc12",
+        "company": "Unknown",
+        "UUID_name": "Track moving",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "fc10"
+    },
+    {
+        "UUID": "fc13",
+        "company": "Unknown",
+        "UUID_name": "Track information",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "fc10"
+    },
+    {
+        "UUID": "fc14",
+        "company": "Unknown",
+        "UUID_name": "Track data",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "fc10"
+    },
+    {
+        "UUID": "fc15",
+        "company": "Unknown",
+        "UUID_name": "Track total",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "fc10"
+    },
+    {
+        "UUID": "fc16",
+        "company": "Unknown",
+        "UUID_name": "Track start time",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "fc10"
+    },
+    {
+        "UUID": "fc17",
+        "company": "Unknown",
+        "UUID_name": "Track hysteresis",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "life.fairconnect.android.mobilityecosystem",
+                "version_code": 11404,
+                "version_name": "1.0.14",
+                "package_path": "AndroZoo/apks/04/life.fairconnect.android.mobilityecosystem_049CC29CE69B02A067321FCCF635F7B9EDC4D9C1997481BE56DE5BC9E897F99F.apk",
+                "description": "Source review identified a gatt characteristic in life.fairconnect.android.mobilityecosystem."
+            }
+        ],
+        "parent_UUID": "fc10"
+    },
+    {
+        "UUID": "fe71fd47-fcba-47b2-b450-883b91240625",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
             }
         ]
     },
@@ -267076,6 +268219,121 @@
                 "version_name": "1.4(192).111",
                 "package_path": "AndroZoo/apks/69/com.camdiab.fx_alert.mgdl_696FA79CF05D2608923460490B4F66A40101FE80D840CD351823DE50BC94B126.apk",
                 "description": "Exact CamAPS FX build scanned; GATT observation retained, owner unresolved."
+            }
+        ]
+    },
+    {
+        "UUID": "ff0d",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT characteristic confirmed in Android app source.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.cado.cadosync, version 2.2.3. Its initial role was corrected during source review.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in com.cado.cadosync. Its parent service in this app is 00ff.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in Android app com.global.iriding.mobile, version 1.8.2.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review confirmed a GATT characteristic in com.global.iriding.mobile. Its parent service in this app is fee0.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cado.cadosync",
+                "version_code": 2020301,
+                "version_name": "2.2.3",
+                "package_path": "AndroZoo/apks/02/com.cado.cadosync_02CA92E3ED570C1304DE52BFA05FF6AA438BB839930C3785AE8D5E52D876F11F.apk",
+                "description": "Source review confirmed a GATT characteristic. The app calls it S_1_C_FF0D. Parent service in this app: 00ff."
+            },
+            {
+                "package_id": "com.global.iriding.mobile",
+                "version_code": 132,
+                "version_name": "1.8.2",
+                "package_path": "AndroZoo/apks/03/com.global.iriding.mobile_032CF6B007CB8F9148ECD1E6C1E1C68D111EC3546085075B9118D492146EDF4D.apk",
+                "description": "Source review confirmed a GATT characteristic. The app calls it UUID_CHAR_TEST. Parent service in this app: fee0."
+            }
+        ]
+    },
+    {
+        "UUID": "fe53ab12-02d0-334d-b424-0002a5d5c51b",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.fleetclient; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.fleetclient",
+                "version_code": 250,
+                "version_name": "5.8.3.0",
+                "package_path": "AndroZoo/apks/04/com.fleetclient_04671110F3DCFAF7FF7C067DDE45728C554E6FCB9CA2E8099234E95DE60F93A4.apk",
+                "description": "The extractor suggests a gatt characteristic in com.fleetclient; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "ffa5",
+        "company": "Unknown",
+        "UUID_name": "UUID_CHARACTERISTIC_ACC_Z",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.transcore.android.commuterLink; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.transcore.android.commuterLink",
+                "version_code": 25102108,
+                "version_name": "4.7",
+                "package_path": "AndroZoo/apks/04/com.transcore.android.commuterLink_046931BAC40866FE5E0C56638CED317C3D1CA0391438307F37CACD930A846390.apk",
+                "description": "The extractor suggests a gatt characteristic in com.transcore.android.commuterLink; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "f18c119b-9e4f-4166-a672-fbab43a35ccb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.twofortyfouram.locale.x; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.twofortyfouram.locale.x",
+                "version_code": 100020293,
+                "version_name": "10.2.293",
+                "package_path": "AndroZoo/apks/04/com.twofortyfouram.locale.x_04945FEA217511090F540FFB35616A9F19CF49C35648F32D9734285348257790.apk",
+                "description": "The extractor suggests a gatt service in com.twofortyfouram.locale.x; the role is unverified."
             }
         ]
     },
@@ -269109,6 +270367,30 @@
                 "version_name": "1.16.1",
                 "package_path": "BLUUID_APKS/0957/2bdb5d3f60373f95b9e67e87dffe95ba2cae7846cdbab5c8d04cf0c8ec921b63/2bdb5d3f60373f95b9e67e87dffe95ba2cae7846cdbab5c8d04cf0c8ec921b63.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "f618",
+        "company": "Waterworld (inferred from package id)",
+        "UUID_name": "SERVICE_UUID / UUID_SERVICE",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.waterworld.vfitpro.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.waterworld.vfitpro",
+                "version_code": 249,
+                "version_name": "2.3.05",
+                "package_path": "AndroZoo/apks/04/com.waterworld.vfitpro_04C7757B43EA92D197BDFF7310C8AB69BDB4B5A0AA0E41D5A98479C932AF0DA2.apk",
+                "description": "Source review identified a gatt service in com.waterworld.vfitpro."
             }
         ]
     },

@@ -4362,6 +4362,80 @@
         "parent_UUID": "000001ff-3c17-d293-8e48-14fe2e4da212"
     },
     {
+        "UUID": "e9e2ece3-f02a-4deb-ba95-5f0b0f91c244",
+        "company": "Alarm (inferred from package id)",
+        "UUID_name": "SERVICE_UUID",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.alarm.alarmmobile.android.g1group.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.alarm.alarmmobile.android.g1group",
+                "version_code": 2102,
+                "version_name": "5.10.2",
+                "package_path": "AndroZoo/apks/04/com.alarm.alarmmobile.android.g1group_04C93E133347B56AE7B1227AF2F3DECB33CB9B794F1D063201FC48B83529131F.apk",
+                "description": "Source review identified a gatt service in com.alarm.alarmmobile.android.g1group."
+            }
+        ]
+    },
+    {
+        "UUID": "effea5ca-736f-11ee-b962-0242ac120002",
+        "company": "Alarm (inferred from package id)",
+        "UUID_name": "SCAN_STATUS_UUID",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.alarm.alarmmobile.android.g1group",
+                "version_code": 2102,
+                "version_name": "5.10.2",
+                "package_path": "AndroZoo/apks/04/com.alarm.alarmmobile.android.g1group_04C93E133347B56AE7B1227AF2F3DECB33CB9B794F1D063201FC48B83529131F.apk",
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group."
+            }
+        ],
+        "parent_UUID": "e9e2ece3-f02a-4deb-ba95-5f0b0f91c244"
+    },
+    {
+        "UUID": "effea5ca-abcd-11ee-b962-0242ac120002",
+        "company": "Alarm (inferred from package id)",
+        "UUID_name": "SCAN_CHUNK_COUNT",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.alarm.alarmmobile.android.g1group",
+                "version_code": 2102,
+                "version_name": "5.10.2",
+                "package_path": "AndroZoo/apks/04/com.alarm.alarmmobile.android.g1group_04C93E133347B56AE7B1227AF2F3DECB33CB9B794F1D063201FC48B83529131F.apk",
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group."
+            }
+        ],
+        "parent_UUID": "e9e2ece3-f02a-4deb-ba95-5f0b0f91c244"
+    },
+    {
         "UUID": "e49a25e0-f69a-11e8-8eb2-f2801f1b9fd1",
         "company": "Nexxbase Marketing Private Limited",
         "UUID_name": "FirmwareUpdateCharacterUUID / CHARACTERISTIC_WRITE_FIFO / CHARACTERISTIC_WRITE_FIFO / BLE_UUID_WRITE",
@@ -8584,7 +8658,7 @@
         "parent_UUID": "19b10000-e8f2-537e-4f6c-d104768a1214"
     },
     {
-        "UUID": "ec812b51-ae67-4cf3-8272-3967b3fc22a0",
+        "UUID": "e6f3269f-a0ce-49fa-9c46-8edbc02e0711",
         "company": "Atmoph (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
@@ -8632,7 +8706,7 @@
         ]
     },
     {
-        "UUID": "e6f3269f-a0ce-49fa-9c46-8edbc02e0711",
+        "UUID": "ec812b51-ae67-4cf3-8272-3967b3fc22a0",
         "company": "Atmoph (inferred from package id)",
         "UUID_name": "Unknown",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
@@ -8714,6 +8788,707 @@
             }
         ],
         "parent_UUID": "530aa649-17e6-4d62-9f20-9e393b177e63"
+    },
+    {
+        "UUID": "e300",
+        "company": "Third-party SDK code (declared in Java package `eh` — distinct from host com.adssecurity.adsaniware; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service observed in Android app com.adssecurity.adsaniware but declared in third-party SDK package `eh`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.adssecurity.adsaniware v6.38.3.405.pr. (versionCode 6380305), declared in Java package `eh` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.alarmnet.tc2 v6.38.3.405.pr. (versionCode 6380305), declared in Java package `eh` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.adssecurity.adsaniware",
+                "version_code": 6380305,
+                "version_name": "6.38.3.405.pr.",
+                "package_path": "BLUUID_APKS/0119/aa3860c9700319910ab5a7acad85bbd57042720b1d1b0baa8bc834c19a7841df/aa3860c9700319910ab5a7acad85bbd57042720b1d1b0baa8bc834c19a7841df.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            },
+            {
+                "package_id": "com.alarmnet.tc2",
+                "version_code": 6380305,
+                "version_name": "6.38.3.405.pr.",
+                "package_path": "BLUUID_APKS/0493/9896083a8d8399a83d865ea3ffc7187355b0fd65411582fa3e8ef06382bd4a74/9896083a8d8399a83d865ea3ffc7187355b0fd65411582fa3e8ef06382bd4a74.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "e302",
+        "company": "BioCorp",
+        "UUID_name": "Send key",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e300"
+    },
+    {
+        "UUID": "e340",
+        "company": "BioCorp",
+        "UUID_name": "BCSD power-management service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt service in com.careinnovations.growlink."
+            }
+        ]
+    },
+    {
+        "UUID": "e341",
+        "company": "BioCorp",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e340"
+    },
+    {
+        "UUID": "e350",
+        "company": "BioCorp",
+        "UUID_name": "BCSD device-information service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt service in com.careinnovations.growlink."
+            }
+        ]
+    },
+    {
+        "UUID": "e351",
+        "company": "BioCorp",
+        "UUID_name": "manufacturerName",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e350"
+    },
+    {
+        "UUID": "e352",
+        "company": "BioCorp",
+        "UUID_name": "modelNumber",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e350"
+    },
+    {
+        "UUID": "e353",
+        "company": "BioCorp",
+        "UUID_name": "serialNumber",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e350"
+    },
+    {
+        "UUID": "e354",
+        "company": "BioCorp",
+        "UUID_name": "hardwareRevision",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e350"
+    },
+    {
+        "UUID": "e355",
+        "company": "BioCorp",
+        "UUID_name": "firmwareRevision",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e350"
+    },
+    {
+        "UUID": "e356",
+        "company": "BioCorp",
+        "UUID_name": "softwareRevision",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e350"
+    },
+    {
+        "UUID": "e357",
+        "company": "BioCorp",
+        "UUID_name": "hardwareSerialNumber",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e350"
+    },
+    {
+        "UUID": "e360",
+        "company": "BioCorp",
+        "UUID_name": "BCSD injection-events service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt service in com.careinnovations.growlink."
+            }
+        ]
+    },
+    {
+        "UUID": "e361",
+        "company": "BioCorp",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e360"
+    },
+    {
+        "UUID": "e362",
+        "company": "BioCorp",
+        "UUID_name": "Injection event records",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e360"
+    },
+    {
+        "UUID": "e370",
+        "company": "BioCorp",
+        "UUID_name": "BCSD trace-events service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt service in com.careinnovations.growlink."
+            }
+        ]
+    },
+    {
+        "UUID": "e371",
+        "company": "BioCorp",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e370"
+    },
+    {
+        "UUID": "e380",
+        "company": "BioCorp",
+        "UUID_name": "BCSD error-events service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt service in com.careinnovations.growlink."
+            }
+        ]
+    },
+    {
+        "UUID": "e381",
+        "company": "BioCorp",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e380"
+    },
+    {
+        "UUID": "e382",
+        "company": "BioCorp",
+        "UUID_name": "Error event records",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e380"
+    },
+    {
+        "UUID": "e390",
+        "company": "BioCorp",
+        "UUID_name": "BCSD configuration service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt service in com.careinnovations.growlink."
+            }
+        ]
+    },
+    {
+        "UUID": "e391",
+        "company": "BioCorp",
+        "UUID_name": "Configuration command",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e390"
+    },
+    {
+        "UUID": "e3a0",
+        "company": "BioCorp",
+        "UUID_name": "BCSD status service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt service in com.careinnovations.growlink."
+            }
+        ]
+    },
+    {
+        "UUID": "e3a1",
+        "company": "BioCorp",
+        "UUID_name": "Device status",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e3a0"
+    },
+    {
+        "UUID": "e3b0",
+        "company": "BioCorp",
+        "UUID_name": "BCSD time service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt service in com.careinnovations.growlink."
+            }
+        ]
+    },
+    {
+        "UUID": "e3b1",
+        "company": "BioCorp",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e3b0"
+    },
+    {
+        "UUID": "e3b3",
+        "company": "BioCorp",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt characteristic in com.careinnovations.growlink."
+            }
+        ],
+        "parent_UUID": "e3b0"
+    },
+    {
+        "UUID": "e310",
+        "company": "BioCorp",
+        "UUID_name": "BCSD session-seed service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.careinnovations.growlink.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.careinnovations.growlink",
+                "version_code": 1147,
+                "version_name": "2.6.1",
+                "package_path": "AndroZoo/apks/04/com.careinnovations.growlink_049E8856B17F4E9215FA3601FE6729A8FFBE46D684C1AE28CEE208C29C88F1E5.apk",
+                "description": "Source review identified a gatt service in com.careinnovations.growlink."
+            }
+        ]
     },
     {
         "UUID": "e0ab0dd2-88bf-11e5-a9da-24a074e98014",
@@ -13109,9 +13884,105 @@
         ]
     },
     {
+        "UUID": "e5c19991-5961-e32f-7d52-6f56d8db2d99",
+        "company": "Bluerailways (inferred from package id)",
+        "UUID_name": "CHARACTERISTIC_USER_DESCRIPTION",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.bluerailways.ian.bluerailways, version 4.02. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bluerailways.ian.bluerailways",
+                "version_code": 14,
+                "version_name": "4.02",
+                "package_path": "AndroZoo/apks/03/com.bluerailways.ian.bluerailways_037176C0FC8AB97A62A5063F5F8036F26FE0D977DA5F7B6F2344DF7742AC5493.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "e5c19992-5961-e32f-7d52-6f56d8db2d99",
+        "company": "Bluerailways (inferred from package id)",
+        "UUID_name": "TRAIN_NAME",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.bluerailways.ian.bluerailways, version 4.02. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bluerailways.ian.bluerailways",
+                "version_code": 14,
+                "version_name": "4.02",
+                "package_path": "AndroZoo/apks/03/com.bluerailways.ian.bluerailways_037176C0FC8AB97A62A5063F5F8036F26FE0D977DA5F7B6F2344DF7742AC5493.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "e5c19993-5961-e32f-7d52-6f56d8db2d99",
         "company": "Bluerailways (inferred from package id)",
         "UUID_name": "ACC_DEC_MAX_SETTINGS",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.bluerailways.ian.bluerailways, version 4.02. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bluerailways.ian.bluerailways",
+                "version_code": 14,
+                "version_name": "4.02",
+                "package_path": "AndroZoo/apks/03/com.bluerailways.ian.bluerailways_037176C0FC8AB97A62A5063F5F8036F26FE0D977DA5F7B6F2344DF7742AC5493.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "e5c19994-5961-e32f-7d52-6f56d8db2d99",
+        "company": "Bluerailways (inferred from package id)",
+        "UUID_name": "TRAIN_SETSPEED",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.bluerailways.ian.bluerailways, version 4.02. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bluerailways.ian.bluerailways",
+                "version_code": 14,
+                "version_name": "4.02",
+                "package_path": "AndroZoo/apks/03/com.bluerailways.ian.bluerailways_037176C0FC8AB97A62A5063F5F8036F26FE0D977DA5F7B6F2344DF7742AC5493.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "e5c19995-5961-e32f-7d52-6f56d8db2d99",
+        "company": "Bluerailways (inferred from package id)",
+        "UUID_name": "TRAIN_NAME2",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -13160,102 +14031,6 @@
         "UUID": "e5c19997-5961-e32f-7d52-6f56d8db2d99",
         "company": "Bluerailways (inferred from package id)",
         "UUID_name": "AUX_WRITE",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.bluerailways.ian.bluerailways, version 4.02. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.bluerailways.ian.bluerailways",
-                "version_code": 14,
-                "version_name": "4.02",
-                "package_path": "AndroZoo/apks/03/com.bluerailways.ian.bluerailways_037176C0FC8AB97A62A5063F5F8036F26FE0D977DA5F7B6F2344DF7742AC5493.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "e5c19991-5961-e32f-7d52-6f56d8db2d99",
-        "company": "Bluerailways (inferred from package id)",
-        "UUID_name": "CHARACTERISTIC_USER_DESCRIPTION",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.bluerailways.ian.bluerailways, version 4.02. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.bluerailways.ian.bluerailways",
-                "version_code": 14,
-                "version_name": "4.02",
-                "package_path": "AndroZoo/apks/03/com.bluerailways.ian.bluerailways_037176C0FC8AB97A62A5063F5F8036F26FE0D977DA5F7B6F2344DF7742AC5493.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "e5c19995-5961-e32f-7d52-6f56d8db2d99",
-        "company": "Bluerailways (inferred from package id)",
-        "UUID_name": "TRAIN_NAME2",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.bluerailways.ian.bluerailways, version 4.02. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.bluerailways.ian.bluerailways",
-                "version_code": 14,
-                "version_name": "4.02",
-                "package_path": "AndroZoo/apks/03/com.bluerailways.ian.bluerailways_037176C0FC8AB97A62A5063F5F8036F26FE0D977DA5F7B6F2344DF7742AC5493.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "e5c19992-5961-e32f-7d52-6f56d8db2d99",
-        "company": "Bluerailways (inferred from package id)",
-        "UUID_name": "TRAIN_NAME",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.bluerailways.ian.bluerailways, version 4.02. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.bluerailways.ian.bluerailways",
-                "version_code": 14,
-                "version_name": "4.02",
-                "package_path": "AndroZoo/apks/03/com.bluerailways.ian.bluerailways_037176C0FC8AB97A62A5063F5F8036F26FE0D977DA5F7B6F2344DF7742AC5493.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "e5c19994-5961-e32f-7d52-6f56d8db2d99",
-        "company": "Bluerailways (inferred from package id)",
-        "UUID_name": "TRAIN_SETSPEED",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -270988,9 +271763,9 @@
         ]
     },
     {
-        "UUID": "e4ca8a30-06a3-3244-91e6-6ca67b35ff04",
+        "UUID": "e4ca8a30-06a3-3244-91e6-6ca67b35ff02",
         "company": "Central (inferred from package id)",
-        "UUID_name": "errorCharacteristic",
+        "UUID_name": "responseCharacteristic",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -271012,9 +271787,9 @@
         ]
     },
     {
-        "UUID": "e4ca8a30-06a3-3244-91e6-6ca67b35ff02",
+        "UUID": "e4ca8a30-06a3-3244-91e6-6ca67b35ff04",
         "company": "Central (inferred from package id)",
-        "UUID_name": "responseCharacteristic",
+        "UUID_name": "errorCharacteristic",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -271060,54 +271835,6 @@
         ]
     },
     {
-        "UUID": "ebf3f4dd-cc8d-40aa-9370-3556c0b10771",
-        "company": "Controlpoint (inferred from package id)",
-        "UUID_name": "GUID_FLANGE_FACE_FRONT_COMPLETE_PHOTO",
-        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app uk.co.controlpoint.smarttorque, version 1.45.0. Its GATT service role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "uk.co.controlpoint.smarttorque",
-                "version_code": 63,
-                "version_name": "1.45.0",
-                "package_path": "AndroZoo/apks/02/uk.co.controlpoint.smarttorque_02D13ADE37FE38842B9DEBCE70E96298E59102789AB81BA3551CBA98F2004429.apk",
-                "description": "Possible GATT service; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "ef37c01c-832e-494b-a6ba-d18e9ab7673a",
-        "company": "Controlpoint (inferred from package id)",
-        "UUID_name": "GUID_REMOVE_BOLT_PHOTO",
-        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app uk.co.controlpoint.smarttorque, version 1.45.0. Its GATT service role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "uk.co.controlpoint.smarttorque",
-                "version_code": 63,
-                "version_name": "1.45.0",
-                "package_path": "AndroZoo/apks/02/uk.co.controlpoint.smarttorque_02D13ADE37FE38842B9DEBCE70E96298E59102789AB81BA3551CBA98F2004429.apk",
-                "description": "Possible GATT service; not independently verified."
-            }
-        ]
-    },
-    {
         "UUID": "e3face14-00c4-4e5c-a465-90812f975c92",
         "company": "Controlpoint (inferred from package id)",
         "UUID_name": "GUID_REPLACEMENT_BOLT_PACK_BARCODE",
@@ -271135,6 +271862,54 @@
         "UUID": "eba42659-552b-4b1b-b14c-f19dbf2ae5ce",
         "company": "Controlpoint (inferred from package id)",
         "UUID_name": "GUID_TORQUE_MODE",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app uk.co.controlpoint.smarttorque, version 1.45.0. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "uk.co.controlpoint.smarttorque",
+                "version_code": 63,
+                "version_name": "1.45.0",
+                "package_path": "AndroZoo/apks/02/uk.co.controlpoint.smarttorque_02D13ADE37FE38842B9DEBCE70E96298E59102789AB81BA3551CBA98F2004429.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "ebf3f4dd-cc8d-40aa-9370-3556c0b10771",
+        "company": "Controlpoint (inferred from package id)",
+        "UUID_name": "GUID_FLANGE_FACE_FRONT_COMPLETE_PHOTO",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app uk.co.controlpoint.smarttorque, version 1.45.0. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "uk.co.controlpoint.smarttorque",
+                "version_code": 63,
+                "version_name": "1.45.0",
+                "package_path": "AndroZoo/apks/02/uk.co.controlpoint.smarttorque_02D13ADE37FE38842B9DEBCE70E96298E59102789AB81BA3551CBA98F2004429.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "ef37c01c-832e-494b-a6ba-d18e9ab7673a",
+        "company": "Controlpoint (inferred from package id)",
+        "UUID_name": "GUID_REMOVE_BOLT_PHOTO",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -302193,9 +302968,9 @@
         ]
     },
     {
-        "UUID": "e79b06fa-4d9e-4785-a6ba-51610a38cd1d",
+        "UUID": "e0ad1815-c0ce-4f7a-8b99-cfd6cbc0a616",
         "company": "Primepark (inferred from package id)",
-        "UUID_name": "ISSUE_GSM_INSTALLATION_ID",
+        "UUID_name": "ISSUE_PARKING_ONES_REMOVE_ID",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -302217,9 +302992,9 @@
         ]
     },
     {
-        "UUID": "e0ad1815-c0ce-4f7a-8b99-cfd6cbc0a616",
+        "UUID": "e79b06fa-4d9e-4785-a6ba-51610a38cd1d",
         "company": "Primepark (inferred from package id)",
-        "UUID_name": "ISSUE_PARKING_ONES_REMOVE_ID",
+        "UUID_name": "ISSUE_GSM_INSTALLATION_ID",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -345697,129 +346472,9 @@
         ]
     },
     {
-        "UUID": "ed03afdf-885b-4373-1002-4d35aef2ed4a",
+        "UUID": "ed03afdf-885b-4373-0004-4d35aef2ed4a",
         "company": "Simp (inferred from package id)",
-        "UUID_name": "CHR_SIB_AUTH",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "net.simp.app",
-                "version_code": 2263,
-                "version_name": "0.2263",
-                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "ed03afdf-885b-4373-1000-4d35aef2ed4a",
-        "company": "Simp (inferred from package id)",
-        "UUID_name": "CHR_SIB_BROADCAST",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "net.simp.app",
-                "version_code": 2263,
-                "version_name": "0.2263",
-                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "ed03afdf-885b-4373-1001-4d35aef2ed4a",
-        "company": "Simp (inferred from package id)",
-        "UUID_name": "CHR_SIB_REPLY",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "net.simp.app",
-                "version_code": 2263,
-                "version_name": "0.2263",
-                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "ed03afdf-885b-4373-000c-4d35aef2ed4a",
-        "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_CHR_LANG",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "net.simp.app",
-                "version_code": 2263,
-                "version_name": "0.2263",
-                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "ed03afdf-885b-4373-000b-4d35aef2ed4a",
-        "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_CHR_LEVEL",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "net.simp.app",
-                "version_code": 2263,
-                "version_name": "0.2263",
-                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "ed03afdf-885b-4373-0006-4d35aef2ed4a",
-        "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_CHR_NAME",
+        "UUID_name": "UUID_CHR_PW",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -345865,81 +346520,9 @@
         ]
     },
     {
-        "UUID": "ed03afdf-885b-4373-000a-4d35aef2ed4a",
+        "UUID": "ed03afdf-885b-4373-0006-4d35aef2ed4a",
         "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_CHR_PIN",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "net.simp.app",
-                "version_code": 2263,
-                "version_name": "0.2263",
-                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "ed03afdf-885b-4373-2002-4d35aef2ed4a",
-        "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_CHR_PIN",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "net.simp.app",
-                "version_code": 2263,
-                "version_name": "0.2263",
-                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "ed03afdf-885b-4373-0004-4d35aef2ed4a",
-        "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_CHR_PW",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "net.simp.app",
-                "version_code": 2263,
-                "version_name": "0.2263",
-                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "ed03afdf-885b-4373-000d-4d35aef2ed4a",
-        "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_CHR_REGIONAL",
+        "UUID_name": "UUID_CHR_NAME",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -346009,6 +346592,174 @@
         ]
     },
     {
+        "UUID": "ed03afdf-885b-4373-000a-4d35aef2ed4a",
+        "company": "Simp (inferred from package id)",
+        "UUID_name": "UUID_CHR_PIN",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "net.simp.app",
+                "version_code": 2263,
+                "version_name": "0.2263",
+                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "ed03afdf-885b-4373-000b-4d35aef2ed4a",
+        "company": "Simp (inferred from package id)",
+        "UUID_name": "UUID_CHR_LEVEL",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "net.simp.app",
+                "version_code": 2263,
+                "version_name": "0.2263",
+                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "ed03afdf-885b-4373-000c-4d35aef2ed4a",
+        "company": "Simp (inferred from package id)",
+        "UUID_name": "UUID_CHR_LANG",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "net.simp.app",
+                "version_code": 2263,
+                "version_name": "0.2263",
+                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "ed03afdf-885b-4373-000d-4d35aef2ed4a",
+        "company": "Simp (inferred from package id)",
+        "UUID_name": "UUID_CHR_REGIONAL",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "net.simp.app",
+                "version_code": 2263,
+                "version_name": "0.2263",
+                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "ed03afdf-885b-4373-1000-4d35aef2ed4a",
+        "company": "Simp (inferred from package id)",
+        "UUID_name": "CHR_SIB_BROADCAST",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "net.simp.app",
+                "version_code": 2263,
+                "version_name": "0.2263",
+                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "ed03afdf-885b-4373-1001-4d35aef2ed4a",
+        "company": "Simp (inferred from package id)",
+        "UUID_name": "CHR_SIB_REPLY",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "net.simp.app",
+                "version_code": 2263,
+                "version_name": "0.2263",
+                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "ed03afdf-885b-4373-1002-4d35aef2ed4a",
+        "company": "Simp (inferred from package id)",
+        "UUID_name": "CHR_SIB_AUTH",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "net.simp.app",
+                "version_code": 2263,
+                "version_name": "0.2263",
+                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "ed03afdf-885b-4373-2001-4d35aef2ed4a",
         "company": "Simp (inferred from package id)",
         "UUID_name": "UUID_CHR_STATE",
@@ -346033,16 +346784,16 @@
         ]
     },
     {
-        "UUID": "ed03afdf-885b-4373-0003-4d35aef2ed4a",
+        "UUID": "ed03afdf-885b-4373-2002-4d35aef2ed4a",
         "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_CHR_SSID",
-        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_name": "UUID_CHR_PIN",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT service role is an unverified inference.",
+                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT characteristic role is an unverified inference.",
                 "submitter": "GPT-6.1 Terra"
             }
         ],
@@ -346052,38 +346803,14 @@
                 "version_code": 2263,
                 "version_name": "0.2263",
                 "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
-                "description": "Possible GATT service; not independently verified."
+                "description": "Possible GATT characteristic; not independently verified."
             }
         ]
     },
     {
-        "UUID": "ed03afdf-885b-4373-0002-4d35aef2ed4a",
+        "UUID": "ed03afdf-885b-4373-0000-4d35aef2ed4a",
         "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_CHR_STATE",
-        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT service role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "net.simp.app",
-                "version_code": 2263,
-                "version_name": "0.2263",
-                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
-                "description": "Possible GATT service; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "ed03afdf-885b-4373-0007-4d35aef2ed4a",
-        "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_CHR_TZ",
+        "UUID_name": "UUID_SERVICE",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -346129,9 +346856,57 @@
         ]
     },
     {
-        "UUID": "ed03afdf-885b-4373-0000-4d35aef2ed4a",
+        "UUID": "ed03afdf-885b-4373-0002-4d35aef2ed4a",
         "company": "Simp (inferred from package id)",
-        "UUID_name": "UUID_SERVICE",
+        "UUID_name": "UUID_CHR_STATE",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "net.simp.app",
+                "version_code": 2263,
+                "version_name": "0.2263",
+                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "ed03afdf-885b-4373-0003-4d35aef2ed4a",
+        "company": "Simp (inferred from package id)",
+        "UUID_name": "UUID_CHR_SSID",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app net.simp.app, version 0.2263. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "net.simp.app",
+                "version_code": 2263,
+                "version_name": "0.2263",
+                "package_path": "AndroZoo/apks/02/net.simp.app_024EBBB43415D08765CA97F8EB33A5949E05CE09E04CF3CD184AD459DE6E5A18.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "ed03afdf-885b-4373-0007-4d35aef2ed4a",
+        "company": "Simp (inferred from package id)",
+        "UUID_name": "UUID_CHR_TZ",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -354023,41 +354798,6 @@
         ]
     },
     {
-        "UUID": "e300",
-        "company": "Third-party SDK code (declared in Java package `eh` — distinct from host com.adssecurity.adsaniware; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app com.adssecurity.adsaniware but declared in third-party SDK package `eh`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.adssecurity.adsaniware v6.38.3.405.pr. (versionCode 6380305), declared in Java package `eh` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.alarmnet.tc2 v6.38.3.405.pr. (versionCode 6380305), declared in Java package `eh` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.adssecurity.adsaniware",
-                "version_code": 6380305,
-                "version_name": "6.38.3.405.pr.",
-                "package_path": "BLUUID_APKS/0119/aa3860c9700319910ab5a7acad85bbd57042720b1d1b0baa8bc834c19a7841df/aa3860c9700319910ab5a7acad85bbd57042720b1d1b0baa8bc834c19a7841df.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            },
-            {
-                "package_id": "com.alarmnet.tc2",
-                "version_code": 6380305,
-                "version_name": "6.38.3.405.pr.",
-                "package_path": "BLUUID_APKS/0493/9896083a8d8399a83d865ea3ffc7187355b0fd65411582fa3e8ef06382bd4a74/9896083a8d8399a83d865ea3ffc7187355b0fd65411582fa3e8ef06382bd4a74.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
-    },
-    {
         "UUID": "ef87acca-4795-45f1-bf38-07c41ab1c954",
         "company": "Third-party SDK code (declared in Java package `f.f.a.a` — distinct from host com.eni.enjoy; Phase-4 identification needed)",
         "UUID_name": "ENI_IBEACON_OUTPUT_NOTIFY_CHARACTERISTIC",
@@ -358448,6 +359188,294 @@
                 "version_name": "1.4",
                 "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "e9413803-acdf-4f55-ae0a-779d35c9487c",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "e04fd025-e85b-11cf-a937-08002b2ec713",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.lunahomeai.baby",
+                "version_code": 22,
+                "version_name": "2025.07.09.1000",
+                "package_path": "AndroZoo/apks/05/com.lunahomeai.baby_0529AD22682AB08C8D01E293698DCCF0E181A72B9C8363CD8982C46B6C16A69D.apk",
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "e04fd026-e85b-11cf-a937-08002b2ec713",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.lunahomeai.baby",
+                "version_code": 22,
+                "version_name": "2025.07.09.1000",
+                "package_path": "AndroZoo/apks/05/com.lunahomeai.baby_0529AD22682AB08C8D01E293698DCCF0E181A72B9C8363CD8982C46B6C16A69D.apk",
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "e04fd027-e85b-11cf-a937-08002b2ec713",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.lunahomeai.baby",
+                "version_code": 22,
+                "version_name": "2025.07.09.1000",
+                "package_path": "AndroZoo/apks/05/com.lunahomeai.baby_0529AD22682AB08C8D01E293698DCCF0E181A72B9C8363CD8982C46B6C16A69D.apk",
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "e04fd028-e85b-11cf-a937-08002b2ec713",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.lunahomeai.baby",
+                "version_code": 22,
+                "version_name": "2025.07.09.1000",
+                "package_path": "AndroZoo/apks/05/com.lunahomeai.baby_0529AD22682AB08C8D01E293698DCCF0E181A72B9C8363CD8982C46B6C16A69D.apk",
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "e04fd029-e85b-11cf-a937-08002b2ec713",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.lunahomeai.baby",
+                "version_code": 22,
+                "version_name": "2025.07.09.1000",
+                "package_path": "AndroZoo/apks/05/com.lunahomeai.baby_0529AD22682AB08C8D01E293698DCCF0E181A72B9C8363CD8982C46B6C16A69D.apk",
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "e04fd02f-e85b-11cf-a937-08002b2ec713",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.lunahomeai.baby",
+                "version_code": 22,
+                "version_name": "2025.07.09.1000",
+                "package_path": "AndroZoo/apks/05/com.lunahomeai.baby_0529AD22682AB08C8D01E293698DCCF0E181A72B9C8363CD8982C46B6C16A69D.apk",
+                "description": "The extractor suggests a gatt characteristic in com.lunahomeai.baby; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "edb187a2-bc25-5963-b106-210f8728d1ea",
+        "company": "Unknown",
+        "UUID_name": "IndicateCharacteristicsUuidV2ForSoundPen",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.hodoolabs.hodooenglish; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hodoolabs.hodooenglish",
+                "version_code": 483,
+                "version_name": "1.67.483.3",
+                "package_path": "AndroZoo/apks/05/com.hodoolabs.hodooenglish_05D39358CAE31FFAF9069E149E3F7BB41CF9C4892F99E834AD5C9FF68EA0149F.apk",
+                "description": "The extractor suggests a gatt characteristic in com.hodoolabs.hodooenglish; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "e397f809-df14-4a4e-9c7e-980ce7cf2628",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.twofortyfouram.locale.x; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.twofortyfouram.locale.x",
+                "version_code": 100020293,
+                "version_name": "10.2.293",
+                "package_path": "AndroZoo/apks/04/com.twofortyfouram.locale.x_04945FEA217511090F540FFB35616A9F19CF49C35648F32D9734285348257790.apk",
+                "description": "The extractor suggests a gatt service in com.twofortyfouram.locale.x; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "e6a29055-00c0-4095-bb6e-f2ead2da1c6c",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.goldendream.display",
+                "version_code": 2401103,
+                "version_name": "24.0.1.103",
+                "package_path": "AndroZoo/apks/05/com.goldendream.display_0569BE97A2EDD2B319DB075A3CB06CD5B5E497DBD354B08E16525A358E23D0B9.apk",
+                "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "efba0afc-7fac-43da-8aec-3a2fd1419c38",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.goldendream.display",
+                "version_code": 2401103,
+                "version_name": "24.0.1.103",
+                "package_path": "AndroZoo/apks/05/com.goldendream.display_0569BE97A2EDD2B319DB075A3CB06CD5B5E497DBD354B08E16525A358E23D0B9.apk",
+                "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "efba7afc-7fac-47da-8aec-4a2fd5489c48",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.goldendream.display",
+                "version_code": 2401103,
+                "version_name": "24.0.1.103",
+                "package_path": "AndroZoo/apks/05/com.goldendream.display_0569BE97A2EDD2B319DB075A3CB06CD5B5E497DBD354B08E16525A358E23D0B9.apk",
+                "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified."
             }
         ]
     },

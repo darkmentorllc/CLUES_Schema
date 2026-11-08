@@ -9030,6 +9030,30 @@
         "parent_UUID": "00001523-1212-efde-1523-785feabcd123"
     },
     {
+        "UUID": "c02b9f2b-3b53-4e73-bb60-327a25836800",
+        "company": "Bloomdiagnostics (inferred from package id)",
+        "UUID_name": "UUID_SERVICE",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.bloomdiagnostics.android.main; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bloomdiagnostics.android.main",
+                "version_code": 712021460,
+                "version_name": "2.3.2",
+                "package_path": "AndroZoo/apks/05/com.bloomdiagnostics.android.main_055253D43DA8A33C589E7799703AE1FF5CC283BF143398DA4AB15BAC7ED29636.apk",
+                "description": "The extractor suggests a gatt service in com.bloomdiagnostics.android.main; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "cc032550-559e-4556-9799-67010c15f562",
         "company": "Cypress / Infineon",
         "UUID_name": "GATT_CREDENTIALS_CHARACTERISTIC",
@@ -46578,9 +46602,9 @@
         ]
     },
     {
-        "UUID": "c763de06-df36-4852-86b4-1c10021da0c8",
+        "UUID": "c6907946-e89a-4dcc-8f9d-fe72a6e00527",
         "company": "Primepark (inferred from package id)",
-        "UUID_name": "ISSUE_SECURITY_BACK_CALL_ID",
+        "UUID_name": "ISSUE_STOREROOM_STORAGE_ID",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -46602,9 +46626,9 @@
         ]
     },
     {
-        "UUID": "c6907946-e89a-4dcc-8f9d-fe72a6e00527",
+        "UUID": "c763de06-df36-4852-86b4-1c10021da0c8",
         "company": "Primepark (inferred from package id)",
-        "UUID_name": "ISSUE_STOREROOM_STORAGE_ID",
+        "UUID_name": "ISSUE_SECURITY_BACK_CALL_ID",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -50031,6 +50055,30 @@
                 "version_name": "2.10.6",
                 "package_path": "BLUUID_APKS/0742/578d31eaf02c712c8743eb22a7256a2ba1d452b58b595ed7f9fc330eaaed4a3c/578d31eaf02c712c8743eb22a7256a2ba1d452b58b595ed7f9fc330eaaed4a3c.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CONNECTOR_BEACON_CONTROL_UUID_DEF`."
+            }
+        ]
+    },
+    {
+        "UUID": "c43b2a46-e802-4ea4-81b1-97987cd33b1c",
+        "company": "Starkey (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
             }
         ]
     },
@@ -60386,6 +60434,55 @@
                 "version_name": "1.4",
                 "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "ca4bb64e-9827-47da-ae5d-fb11f94d94ae",
+        "company": "Unknown",
+        "UUID_name": "ACK characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.matipay.modo.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.matipay.modo",
+                "version_code": 99,
+                "version_name": "3.5.4",
+                "package_path": "AndroZoo/apks/05/com.matipay.modo_0550241BC5A65D3FD88347346A807F96136AB81EE9FA34A6352694519361196A.apk",
+                "description": "Source review identified a gatt characteristic in com.matipay.modo."
+            }
+        ],
+        "parent_UUID": "be99f8dc-8fb6-43f1-890c-f8cdcc1db65e"
+    },
+    {
+        "UUID": "cb909093-3559-4b0c-9a7f-3f1773122fdc",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
             }
         ]
     },

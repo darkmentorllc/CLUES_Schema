@@ -56747,6 +56747,31 @@
         ]
     },
     {
+        "UUID": "030012ac-4202-5ba0-ed11-6aeac24659db",
+        "company": "Amazon.com Services, Inc.",
+        "UUID_name": "Provisioning DSN",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.amazon.signage.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.amazon.signage",
+                "version_code": 26020501,
+                "version_name": "1.3.1",
+                "package_path": "AndroZoo/apks/04/com.amazon.signage_0447E889EC274D9753800270B06776FC7D705B45ED971DFBF1D34621BF88E8D2.apk",
+                "description": "Source review identified a gatt characteristic in com.amazon.signage."
+            }
+        ],
+        "parent_UUID": "56eb6ad2-2521-11ed-861d-0242ac120002"
+    },
+    {
         "UUID": "00c6e132-abc1-46dc-b459-2a1128b15e8d",
         "company": "Amazon.com Services, Inc..",
         "UUID_name": "BANZA",
@@ -213388,105 +213413,9 @@
         ]
     },
     {
-        "UUID": "0d02",
-        "company": "Mais (inferred from package id)",
-        "UUID_name": "AL_CHARA",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.mais.smairtherov2",
-                "version_code": 31,
-                "version_name": "4.0",
-                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "0c00",
-        "company": "Mais (inferred from package id)",
-        "UUID_name": "Heart Rate Measurement",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.mais.smairtherov2",
-                "version_code": 31,
-                "version_name": "4.0",
-                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
         "UUID": "0902",
         "company": "Mais (inferred from package id)",
         "UUID_name": "PHOTODIODE_CHARA",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.mais.smairtherov2",
-                "version_code": 31,
-                "version_name": "4.0",
-                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "0b02",
-        "company": "Mais (inferred from package id)",
-        "UUID_name": "SYSTEM_CHARA_UUID / SPO2_CHARA_UUID / UUID_SPO2_MEASUREMENT",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.mais.smairtherov2",
-                "version_code": 31,
-                "version_name": "4.0",
-                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "0f02",
-        "company": "Mais (inferred from package id)",
-        "UUID_name": "UUID_ACC_MEASUREMENT / AC_CHARA_UUID / UUID_ACCELEROMETER_MEASUREMENT",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -213532,9 +213461,129 @@
         ]
     },
     {
-        "UUID": "0f01",
+        "UUID": "0b02",
         "company": "Mais (inferred from package id)",
-        "UUID_name": "AC_SERVICE",
+        "UUID_name": "SYSTEM_CHARA_UUID / SPO2_CHARA_UUID / UUID_SPO2_MEASUREMENT",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0c00",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "Heart Rate Measurement",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0d02",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "AL_CHARA",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0f02",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "UUID_ACC_MEASUREMENT / AC_CHARA_UUID / UUID_ACCELEROMETER_MEASUREMENT",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0901",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "BLACKB_SERVICE",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mais.smairtherov2",
+                "version_code": 31,
+                "version_name": "4.0",
+                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
+                "description": "Possible GATT service; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "0a01",
+        "company": "Mais (inferred from package id)",
+        "UUID_name": "VIB_SERVICE",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -213580,33 +213629,9 @@
         ]
     },
     {
-        "UUID": "0901",
+        "UUID": "0f01",
         "company": "Mais (inferred from package id)",
-        "UUID_name": "BLACKB_SERVICE",
-        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.mais.smairtherov2, version 4.0. Its GATT service role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.mais.smairtherov2",
-                "version_code": 31,
-                "version_name": "4.0",
-                "package_path": "AndroZoo/apks/02/com.mais.smairtherov2_02646751F67EBC44AABD0B19BAECCC0F1094707A6235C12CEEF8E6FFF6928786.apk",
-                "description": "Possible GATT service; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "0a01",
-        "company": "Mais (inferred from package id)",
-        "UUID_name": "VIB_SERVICE",
+        "UUID_name": "AC_SERVICE",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -213914,6 +213939,80 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `VERSION_INFO_CHAR_UUID`."
             }
         ]
+    },
+    {
+        "UUID": "0000ffe5-0000-1000-8000-00805f9a34fb",
+        "company": "Martinloren (inferred from package id)",
+        "UUID_name": "CustomBluetoothBLE.n",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.martinloren.hscope.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.martinloren.hscope",
+                "version_code": 528,
+                "version_name": "2.4.8",
+                "package_path": "AndroZoo/apks/04/com.martinloren.hscope_049F17A054188629353B7FFBD2814AF46BF57009775B0EAEFD9CDCDD037377D7.apk",
+                "description": "Source review identified a gatt service in com.martinloren.hscope."
+            }
+        ]
+    },
+    {
+        "UUID": "0000ffe4-0000-1000-8000-00805f9a34fb",
+        "company": "Martinloren (inferred from package id)",
+        "UUID_name": "CustomBluetoothBLE.m",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.martinloren.hscope.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.martinloren.hscope",
+                "version_code": 528,
+                "version_name": "2.4.8",
+                "package_path": "AndroZoo/apks/04/com.martinloren.hscope_049F17A054188629353B7FFBD2814AF46BF57009775B0EAEFD9CDCDD037377D7.apk",
+                "description": "Source review identified a gatt characteristic in com.martinloren.hscope."
+            }
+        ],
+        "parent_UUID": "0000ffe5-0000-1000-8000-00805f9a34fb"
+    },
+    {
+        "UUID": "0000ffe9-0000-1000-8000-00805f9a34fb",
+        "company": "Martinloren (inferred from package id)",
+        "UUID_name": "CustomBluetoothBLE.l",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.martinloren.hscope.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.martinloren.hscope",
+                "version_code": 528,
+                "version_name": "2.4.8",
+                "package_path": "AndroZoo/apks/04/com.martinloren.hscope_049F17A054188629353B7FFBD2814AF46BF57009775B0EAEFD9CDCDD037377D7.apk",
+                "description": "Source review identified a gatt characteristic in com.martinloren.hscope."
+            }
+        ],
+        "parent_UUID": "0000ffe5-0000-1000-8000-00805f9a34fb"
     },
     {
         "UUID": "00a215bd-9b02-4e5a-9a65-98f1095f4755",
@@ -219986,6 +220085,606 @@
         ]
     },
     {
+        "UUID": "00737572-6573-686a-6f73-68692e636f6d",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "OTA data ACK characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "01737572-6573-686a-6f73-68692e636f6d",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "OTA control characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt characteristic in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "00000004-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Onyx scenario 4 service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "00000100-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Onyx configuration service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "00000101-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Onyx device-control service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "Source review identified a gatt service in com.nowatt.lighting.app."
+            }
+        ]
+    },
+    {
+        "UUID": "00000001-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "00000002-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "00000003-48e5-4f0e-a5d1-8e717860ee99",
+        "company": "Nowatt (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nowatt.lighting.app",
+                "version_code": 122,
+                "version_name": "1.2",
+                "package_path": "AndroZoo/apks/05/com.nowatt.lighting.app_05C15C7C6CCBA9383EDEE1E8AD6F5C2DB11CE2C120B5C645F13F54081EB7B2CD.apk",
+                "description": "The extractor suggests a gatt service in com.nowatt.lighting.app; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "00001002-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Error characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00001004-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "NXP data characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00001008-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Session list characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00001009-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Session ID characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "0000100c-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Slave battery level characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "0000100d-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Slave revision string characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "0000100e-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Memory characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "0000100f-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "RSSI characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00001010-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "In-session data characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00001011-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Trigger data characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00001012-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Raw sample characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00001015-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Resting heart rate characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00004444-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Slave command characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00007777-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Slave NXP data characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "0000ff11-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Slave error characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt characteristic in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00001000-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Master NXP service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt service in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
+        "UUID": "00001111-74d6-43f8-a4fb-67c98b9ed30e",
+        "company": "Nurvv (inferred from package id)",
+        "UUID_name": "Slave NXP service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.nurvv.android.run.analysis.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nurvv.android.run.analysis",
+                "version_code": 1057007,
+                "version_name": "1.57.7-uat",
+                "package_path": "AndroZoo/apks/05/com.nurvv.android.run.analysis_057B4B4749888FBD70FE6F7346D280BC0D41782C25E7D64C24DA9273ABB5976C.apk",
+                "description": "Source review identified a gatt service in com.nurvv.android.run.analysis."
+            }
+        ]
+    },
+    {
         "UUID": "04d05b73-e46e-4dad-86c4-467ee8209e3d",
         "company": "O2 Centro Wellness",
         "UUID_name": "Unknown",
@@ -222262,9 +222961,9 @@
         ]
     },
     {
-        "UUID": "0ad2855c-6f27-4ce8-9c84-7a1bd4508bf9",
+        "UUID": "08953eb8-b303-4abd-9261-d28dead4ee9d",
         "company": "Primepark (inferred from package id)",
-        "UUID_name": "ISSUE_CLEANING_AFTER_RENOVATION_ID",
+        "UUID_name": "ISSUE_CLEANING_SPRING_CLEANING_ID",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -222286,9 +222985,9 @@
         ]
     },
     {
-        "UUID": "08953eb8-b303-4abd-9261-d28dead4ee9d",
+        "UUID": "0ad2855c-6f27-4ce8-9c84-7a1bd4508bf9",
         "company": "Primepark (inferred from package id)",
-        "UUID_name": "ISSUE_CLEANING_SPRING_CLEANING_ID",
+        "UUID_name": "ISSUE_CLEANING_AFTER_RENOVATION_ID",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -228119,6 +228818,159 @@
         "parent_UUID": "831c4071-7bc8-4a9c-a01c-15df25a4adbc"
     },
     {
+        "UUID": "000018ef-5348-494d-414e-4f5f424c4500",
+        "company": "Third-party SDK code (declared in Java package `com.blackramlabs.alexandria` — distinct from host com.gpstuner.tqapp; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service observed in Android app com.gpstuner.tqapp but declared in third-party SDK package `com.blackramlabs.alexandria`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.gpstuner.tqapp v1.3.2#m-26-gd309c48.m-145-gb1437a24c.m-77-gf46819a (versionCode 100184), declared in Java package `com.blackramlabs.alexandria` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/gpstuner/com.gpstuner.tqapp/download/1.3.2%23m-26-gd309c48.m-145-gb1437a24c.m-77-gf46819a",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.gpstuner.tqapp",
+                "version_code": 100184,
+                "version_name": "1.3.2#m-26-gd309c48.m-145-gb1437a24c.m-77-gf46819a",
+                "package_path": "BLUUID_APKS/0339/de613a0c4a46910f15e1d22830d427bfa30fef5881e09e90bfdab0f87604e9de/de613a0c4a46910f15e1d22830d427bfa30fef5881e09e90bfdab0f87604e9de.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "00002ac1-5348-494d-414e-4f5f424c4500",
+        "company": "Shimano",
+        "UUID_name": "Periodic Information",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/rpad300/KROMI_BIKECONTROL/blob/bd0ae9b7089557e1b76f2935675d82496b802b4f/docs/SHIMANO_STEPS_PROTOCOL.md#L9-L20",
+                "description": "Shimano bicycle information characteristic.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "000018ef-5348-494d-414e-4f5f424c4500"
+    },
+    {
+        "UUID": "00002ac2-5348-494d-414e-4f5f424c4500",
+        "company": "Shimano",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/rpad300/KROMI_BIKECONTROL/blob/bd0ae9b7089557e1b76f2935675d82496b802b4f/docs/SHIMANO_STEPS_PROTOCOL.md#L9-L20",
+                "description": "Shimano bicycle information characteristic.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/OpenBikeControl/bikecontrol/blob/main/lib/bluetooth/devices/shimano/shimano_di2.dart",
+                "description": "Another Shimano client uses this characteristic for D-Fly channel data; its function needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "000018ef-5348-494d-414e-4f5f424c4500"
+    },
+    {
+        "UUID": "00002ac3-5348-494d-414e-4f5f424c4500",
+        "company": "Shimano",
+        "UUID_name": "D-Fly Channel Switch",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/rpad300/KROMI_BIKECONTROL/blob/bd0ae9b7089557e1b76f2935675d82496b802b4f/docs/SHIMANO_STEPS_PROTOCOL.md#L9-L20",
+                "description": "Shimano bicycle information characteristic.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "000018ef-5348-494d-414e-4f5f424c4500"
+    },
+    {
+        "UUID": "00002ac0-5348-494d-414e-4f5f424c4500",
+        "company": "Shimano",
+        "UUID_name": "Feature",
+        "UUID_purpose": "GATT Characteristic reported in public device evidence and referenced by an Android app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/rpad300/KROMI_BIKECONTROL/blob/bd0ae9b7089557e1b76f2935675d82496b802b4f/docs/SHIMANO_STEPS_PROTOCOL.md#L9-L20",
+                "description": "Shimano bicycle information characteristic.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The app references this UUID; public device evidence identifies its gatt characteristic role."
+            }
+        ]
+    },
+    {
         "UUID": "09ed915d-2124-eb11-a813-000d3a33be69",
         "company": "Shopify Inc.",
         "UUID_name": "SOCKET_DEV_ID",
@@ -231082,6 +231934,30 @@
                 "version_name": "3.41.0",
                 "package_path": "BLUUID_APKS/0321/c742288341cec9413269190498c3822a27f15745012b66dc55f5547577d2769f/c742288341cec9413269190498c3822a27f15745012b66dc55f5547577d2769f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `D`."
+            }
+        ]
+    },
+    {
+        "UUID": "0b2be3d9-ba60-429f-b61a-e9b564167c97",
+        "company": "Starkey (inferred from package id)",
+        "UUID_name": "Wicros device type characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
             }
         ]
     },
@@ -237337,6 +238213,30 @@
         ]
     },
     {
+        "UUID": "00004368-6176-6544-6f55-73756172696a",
+        "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
+        "UUID_name": "WRITE_FEEDBACK_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app br.com.beansoftwares.xtay, version 1.0.33. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "br.com.beansoftwares.xtay",
+                "version_code": 37,
+                "version_name": "1.0.33",
+                "package_path": "AndroZoo/apks/03/br.com.beansoftwares.xtay_03FCAE150257F0F0EF3F11BCBFE32A20D30758148F9E80F3DDC3B1E2CFB3CD3A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "00004368-6176-6544-6f55-73756172696b",
         "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
         "UUID_name": "READ_SIGNATURE_0",
@@ -237412,30 +238312,6 @@
         "UUID": "00004368-6176-6544-6f55-73756172696e",
         "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
         "UUID_name": "READ_SIGNATURE_3",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app br.com.beansoftwares.xtay, version 1.0.33. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "br.com.beansoftwares.xtay",
-                "version_code": 37,
-                "version_name": "1.0.33",
-                "package_path": "AndroZoo/apks/03/br.com.beansoftwares.xtay_03FCAE150257F0F0EF3F11BCBFE32A20D30758148F9E80F3DDC3B1E2CFB3CD3A.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "00004368-6176-6544-6f55-73756172696a",
-        "company": "Third-party SDK code (declared in Java package `br.com.library.test.magikey.magikeylibrary.bleManagement` — distinct from host br.com.beansoftwares.xtay; Phase-4 identification needed)",
-        "UUID_name": "WRITE_FEEDBACK_CHARACTERISTIC",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -240254,35 +241130,6 @@
             }
         ],
         "parent_UUID": "00005500-d102-11e1-9b23-74f07d000000"
-    },
-    {
-        "UUID": "000018ef-5348-494d-414e-4f5f424c4500",
-        "company": "Third-party SDK code (declared in Java package `com.blackramlabs.alexandria` — distinct from host com.gpstuner.tqapp; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app com.gpstuner.tqapp but declared in third-party SDK package `com.blackramlabs.alexandria`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.gpstuner.tqapp v1.3.2#m-26-gd309c48.m-145-gb1437a24c.m-77-gf46819a (versionCode 100184), declared in Java package `com.blackramlabs.alexandria` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/gpstuner/com.gpstuner.tqapp/download/1.3.2%23m-26-gd309c48.m-145-gb1437a24c.m-77-gf46819a",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.gpstuner.tqapp",
-                "version_code": 100184,
-                "version_name": "1.3.2#m-26-gd309c48.m-145-gb1437a24c.m-77-gf46819a",
-                "package_path": "BLUUID_APKS/0339/de613a0c4a46910f15e1d22830d427bfa30fef5881e09e90bfdab0f87604e9de/de613a0c4a46910f15e1d22830d427bfa30fef5881e09e90bfdab0f87604e9de.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
-            }
-        ]
     },
     {
         "UUID": "01ff0100-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
@@ -280833,6 +281680,1684 @@
         ]
     },
     {
+        "UUID": "00000000-0000-1000-8000-00805f9b3410",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3411",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3420",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3430",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3431",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3432",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3440",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3441",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3466",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3470",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3471",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3472",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b3473",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00000000-0000-1000-8000-00805f9b34e3",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "00004001-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt service in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "00004012-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004001-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004013-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004001-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004002-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt service in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "00004021-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004022-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004023-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004024-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004025-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004026-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004027-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004028-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004029-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "0000402f-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004091-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004092-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004093-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004094-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004095-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004096-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004002-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004003-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt service in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "00004031-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004003-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004032-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004003-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004033-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004003-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004034-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004003-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004035-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004003-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004004-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt service in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "00004042-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004004-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004043-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004004-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004045-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004004-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004048-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004004-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004005-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt service in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "00004051-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004052-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004053-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004054-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004055-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004057-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004058-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004059-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "0000405a-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "0000405b-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "0000405c-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004005-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004006-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt service in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "00004062-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004006-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004008-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt service in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "00004081-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004008-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "00004082-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "00004008-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "0000400f-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt service in com.cateye.cycling."
+            }
+        ]
+    },
+    {
+        "UUID": "000040f2-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "0000400f-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "000040f4-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "0000400f-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "000040f5-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "0000400f-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "000040ff-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt characteristic in com.cateye.cycling."
+            }
+        ],
+        "parent_UUID": "0000400f-ca7e-4e00-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "0990d720-893f-4365-b03c-0718186506f9",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
+            }
+        ],
+        "parent_UUID": "5446ec0e-d711-11e4-b9d6-1681e6b88ec1"
+    },
+    {
         "UUID": "0000fff2-0000-1000-8000-00805f9b34fb",
         "company": "Unknown",
         "UUID_name": "CHARACTERISTIC_NOTIFY",
@@ -280881,140 +283406,74 @@
         ]
     },
     {
-        "UUID": "01ff0100-ba5e-f4ee-5ca1-eb1e5e4b1ce1",
+        "UUID": "00000000-c919-e493-e74b-a26912e082aa",
         "company": "Unknown",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_name": "SEEBO Service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in Android app com.dynogeek.galotmotorsports, version 7.02. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Found in Android app com.deliverydodo.business, version 4.32.5. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Found in Android app com.dynogeek.cecil, version 7.04. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
+                "description": "Source review identified a gatt service in com.vulkquizappan.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
             {
-                "package_id": "com.dynogeek.galotmotorsports",
-                "version_code": 36,
-                "version_name": "7.02",
-                "package_path": "AndroZoo/apks/03/com.dynogeek.galotmotorsports_03917B0BB9FECA66155E7E89DF650D264B7D6A59996BAD750AE9A03B956547EB.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            },
-            {
-                "package_id": "com.deliverydodo.business",
-                "version_code": 43205,
-                "version_name": "4.32.5",
-                "package_path": "AndroZoo/apks/03/com.deliverydodo.business_03B193F26186DEB1CC5D1779F6A6936BC8AA3D6092B54A933605DB3F71143F0A.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            },
-            {
-                "package_id": "com.dynogeek.cecil",
-                "version_code": 32,
-                "version_name": "7.04",
-                "package_path": "AndroZoo/apks/03/com.dynogeek.cecil_03F6E4CBD3A3E008196D2A7C88C8861440AC4E0AA8DEF398C93B4E32BB925260.apk",
-                "description": "Possible GATT characteristic; not independently verified."
+                "package_id": "com.vulkquizappan",
+                "version_code": 10000,
+                "version_name": "1.0.0",
+                "package_path": "AndroZoo/apks/04/com.vulkquizappan_04DA95956AA295F8954F2C4DAD61C0F59EB3E847512B78400534244A342DE50B.apk",
+                "description": "Source review identified a gatt service in com.vulkquizappan."
             }
         ]
     },
     {
-        "UUID": "01ff0101-ba5e-f4ee-5ca1-eb1e5e4b1ce1",
+        "UUID": "00004001-ceed-1000-8000-00805f9b34fb",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_purpose": "GATT Service identified in Android app code.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in Android app com.dynogeek.galotmotorsports, version 7.02. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Found in Android app com.deliverydodo.business, version 4.32.5. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Found in Android app com.dynogeek.cecil, version 7.04. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
+                "description": "Source review identified a gatt service in com.cateye.cycling.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
             {
-                "package_id": "com.dynogeek.galotmotorsports",
-                "version_code": 36,
-                "version_name": "7.02",
-                "package_path": "AndroZoo/apks/03/com.dynogeek.galotmotorsports_03917B0BB9FECA66155E7E89DF650D264B7D6A59996BAD750AE9A03B956547EB.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            },
-            {
-                "package_id": "com.deliverydodo.business",
-                "version_code": 43205,
-                "version_name": "4.32.5",
-                "package_path": "AndroZoo/apks/03/com.deliverydodo.business_03B193F26186DEB1CC5D1779F6A6936BC8AA3D6092B54A933605DB3F71143F0A.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            },
-            {
-                "package_id": "com.dynogeek.cecil",
-                "version_code": 32,
-                "version_name": "7.04",
-                "package_path": "AndroZoo/apks/03/com.dynogeek.cecil_03F6E4CBD3A3E008196D2A7C88C8861440AC4E0AA8DEF398C93B4E32BB925260.apk",
-                "description": "Possible GATT characteristic; not independently verified."
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "Source review identified a gatt service in com.cateye.cycling."
             }
         ]
     },
     {
-        "UUID": "01ff0102-ba5e-f4ee-5ca1-eb1e5e4b1ce1",
+        "UUID": "0000fe40-cc7a-482a-984a-7f2ed5b3e58f",
         "company": "Unknown",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_name": "service UUID returned by c()",
+        "UUID_purpose": "GATT Service identified in Android app code.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Found in Android app com.dynogeek.galotmotorsports, version 7.02. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Found in Android app com.deliverydodo.business, version 4.32.5. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Found in Android app com.dynogeek.cecil, version 7.04. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
+                "description": "Source review identified a gatt service in com.semtech.android.trackerscanner.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
             {
-                "package_id": "com.dynogeek.galotmotorsports",
-                "version_code": 36,
-                "version_name": "7.02",
-                "package_path": "AndroZoo/apks/03/com.dynogeek.galotmotorsports_03917B0BB9FECA66155E7E89DF650D264B7D6A59996BAD750AE9A03B956547EB.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            },
-            {
-                "package_id": "com.deliverydodo.business",
-                "version_code": 43205,
-                "version_name": "4.32.5",
-                "package_path": "AndroZoo/apks/03/com.deliverydodo.business_03B193F26186DEB1CC5D1779F6A6936BC8AA3D6092B54A933605DB3F71143F0A.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            },
-            {
-                "package_id": "com.dynogeek.cecil",
-                "version_code": 32,
-                "version_name": "7.04",
-                "package_path": "AndroZoo/apks/03/com.dynogeek.cecil_03F6E4CBD3A3E008196D2A7C88C8861440AC4E0AA8DEF398C93B4E32BB925260.apk",
-                "description": "Possible GATT characteristic; not independently verified."
+                "package_id": "com.semtech.android.trackerscanner",
+                "version_code": 55,
+                "version_name": "2.3.0",
+                "package_path": "AndroZoo/apks/04/com.semtech.android.trackerscanner_040D7E97CFF163A48FAA457279CE86D9B3FB3CBA4450778A317B3A955A0D9EB4.apk",
+                "description": "Source review identified a gatt service in com.semtech.android.trackerscanner."
             }
         ]
     },
@@ -281539,6 +283998,408 @@
             }
         ],
         "parent_UUID": "0000fe82-0000-1000-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "0000ff01-0002-0000-6573-828983677977",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.fleetclient; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.fleetclient",
+                "version_code": 250,
+                "version_name": "5.8.3.0",
+                "package_path": "AndroZoo/apks/04/com.fleetclient_04671110F3DCFAF7FF7C067DDE45728C554E6FCB9CA2E8099234E95DE60F93A4.apk",
+                "description": "The extractor suggests a gatt characteristic in com.fleetclient; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "0000ff02-0002-0000-6573-828983677977",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.fleetclient; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.fleetclient",
+                "version_code": 250,
+                "version_name": "5.8.3.0",
+                "package_path": "AndroZoo/apks/04/com.fleetclient_04671110F3DCFAF7FF7C067DDE45728C554E6FCB9CA2E8099234E95DE60F93A4.apk",
+                "description": "The extractor suggests a gatt characteristic in com.fleetclient; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "00004011-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "00004014-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "00004041-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "00004056-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "00004061-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "000040f1-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "000040f3-ca7e-4e00-8000-00805f9b34fb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.cateye.cycling",
+                "version_code": 50,
+                "version_name": "3.1.16.2",
+                "package_path": "AndroZoo/apks/04/com.cateye.cycling_043DB75198A8C784EEE8354B8EDE34002FB715301A341B742D3FE9E517363EBB.apk",
+                "description": "The extractor suggests a gatt service in com.cateye.cycling; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "00112233-4455-6677-8899-aabbccddeeff",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.bookfastpos.forge; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bookfastpos.forge",
+                "version_code": 276,
+                "version_name": "3.7.3",
+                "package_path": "AndroZoo/apks/05/com.bookfastpos.forge_057BD4C0D4C4F27D875C02B22CB30B9CDBC9410960E506EED18F3C9D0688C833.apk",
+                "description": "The extractor suggests a gatt service in com.bookfastpos.forge; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "021c8d96-c24d-400a-bbf4-d4a4117db6e2",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.twofortyfouram.locale.x; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.twofortyfouram.locale.x",
+                "version_code": 100020293,
+                "version_name": "10.2.293",
+                "package_path": "AndroZoo/apks/04/com.twofortyfouram.locale.x_04945FEA217511090F540FFB35616A9F19CF49C35648F32D9734285348257790.apk",
+                "description": "The extractor suggests a gatt service in com.twofortyfouram.locale.x; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "01ff0100-ba5e-f4ee-5ca1-eb1e5e4b1ce1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.dynogeek.galotmotorsports, version 7.02. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.deliverydodo.business, version 4.32.5. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.dynogeek.cecil, version 7.04. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dynogeek.galotmotorsports",
+                "version_code": 36,
+                "version_name": "7.02",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.galotmotorsports_03917B0BB9FECA66155E7E89DF650D264B7D6A59996BAD750AE9A03B956547EB.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.deliverydodo.business",
+                "version_code": 43205,
+                "version_name": "4.32.5",
+                "package_path": "AndroZoo/apks/03/com.deliverydodo.business_03B193F26186DEB1CC5D1779F6A6936BC8AA3D6092B54A933605DB3F71143F0A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.dynogeek.cecil",
+                "version_code": 32,
+                "version_name": "7.04",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.cecil_03F6E4CBD3A3E008196D2A7C88C8861440AC4E0AA8DEF398C93B4E32BB925260.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "01ff0101-ba5e-f4ee-5ca1-eb1e5e4b1ce1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.dynogeek.galotmotorsports, version 7.02. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.deliverydodo.business, version 4.32.5. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.dynogeek.cecil, version 7.04. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dynogeek.galotmotorsports",
+                "version_code": 36,
+                "version_name": "7.02",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.galotmotorsports_03917B0BB9FECA66155E7E89DF650D264B7D6A59996BAD750AE9A03B956547EB.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.deliverydodo.business",
+                "version_code": 43205,
+                "version_name": "4.32.5",
+                "package_path": "AndroZoo/apks/03/com.deliverydodo.business_03B193F26186DEB1CC5D1779F6A6936BC8AA3D6092B54A933605DB3F71143F0A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.dynogeek.cecil",
+                "version_code": 32,
+                "version_name": "7.04",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.cecil_03F6E4CBD3A3E008196D2A7C88C8861440AC4E0AA8DEF398C93B4E32BB925260.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "01ff0102-ba5e-f4ee-5ca1-eb1e5e4b1ce1",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.dynogeek.galotmotorsports, version 7.02. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.deliverydodo.business, version 4.32.5. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Found in Android app com.dynogeek.cecil, version 7.04. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dynogeek.galotmotorsports",
+                "version_code": 36,
+                "version_name": "7.02",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.galotmotorsports_03917B0BB9FECA66155E7E89DF650D264B7D6A59996BAD750AE9A03B956547EB.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.deliverydodo.business",
+                "version_code": 43205,
+                "version_name": "4.32.5",
+                "package_path": "AndroZoo/apks/03/com.deliverydodo.business_03B193F26186DEB1CC5D1779F6A6936BC8AA3D6092B54A933605DB3F71143F0A.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "com.dynogeek.cecil",
+                "version_code": 32,
+                "version_name": "7.04",
+                "package_path": "AndroZoo/apks/03/com.dynogeek.cecil_03F6E4CBD3A3E008196D2A7C88C8861440AC4E0AA8DEF398C93B4E32BB925260.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
     },
     {
         "UUID": "0bd51666-e7cb-469b-8e4d-2742aaaa0100",
@@ -282254,6 +285115,181 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
             }
         ]
+    },
+    {
+        "UUID": "00001529-1212-efde-1523-785feabcd123",
+        "company": "Wincam (inferred from package id)",
+        "UUID_name": "Setting characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ws.WinCam",
+                "version_code": 19,
+                "version_name": "2.4",
+                "package_path": "AndroZoo/apks/04/com.ws.WinCam_0485E0369DBDB67912A6A4C84903BF6F6E5B888966E45C877EC57B73C0F373F6.apk",
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam."
+            }
+        ],
+        "parent_UUID": "1523"
+    },
+    {
+        "UUID": "0000152a-1212-efde-1523-785feabcd123",
+        "company": "Wincam (inferred from package id)",
+        "UUID_name": "Year characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ws.WinCam",
+                "version_code": 19,
+                "version_name": "2.4",
+                "package_path": "AndroZoo/apks/04/com.ws.WinCam_0485E0369DBDB67912A6A4C84903BF6F6E5B888966E45C877EC57B73C0F373F6.apk",
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam."
+            }
+        ],
+        "parent_UUID": "1523"
+    },
+    {
+        "UUID": "0000152b-1212-efde-1523-785feabcd123",
+        "company": "Wincam (inferred from package id)",
+        "UUID_name": "Month/day characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ws.WinCam",
+                "version_code": 19,
+                "version_name": "2.4",
+                "package_path": "AndroZoo/apks/04/com.ws.WinCam_0485E0369DBDB67912A6A4C84903BF6F6E5B888966E45C877EC57B73C0F373F6.apk",
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam."
+            }
+        ],
+        "parent_UUID": "1523"
+    },
+    {
+        "UUID": "0000152c-1212-efde-1523-785feabcd123",
+        "company": "Wincam (inferred from package id)",
+        "UUID_name": "Hour/minute characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ws.WinCam",
+                "version_code": 19,
+                "version_name": "2.4",
+                "package_path": "AndroZoo/apks/04/com.ws.WinCam_0485E0369DBDB67912A6A4C84903BF6F6E5B888966E45C877EC57B73C0F373F6.apk",
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam."
+            }
+        ],
+        "parent_UUID": "1523"
+    },
+    {
+        "UUID": "0000152d-1212-efde-1523-785feabcd123",
+        "company": "Wincam (inferred from package id)",
+        "UUID_name": "Bluetooth version characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ws.WinCam",
+                "version_code": 19,
+                "version_name": "2.4",
+                "package_path": "AndroZoo/apks/04/com.ws.WinCam_0485E0369DBDB67912A6A4C84903BF6F6E5B888966E45C877EC57B73C0F373F6.apk",
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam."
+            }
+        ],
+        "parent_UUID": "1523"
+    },
+    {
+        "UUID": "0000152e-1212-efde-1523-785feabcd123",
+        "company": "Wincam (inferred from package id)",
+        "UUID_name": "BVR version characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ws.WinCam",
+                "version_code": 19,
+                "version_name": "2.4",
+                "package_path": "AndroZoo/apks/04/com.ws.WinCam_0485E0369DBDB67912A6A4C84903BF6F6E5B888966E45C877EC57B73C0F373F6.apk",
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam."
+            }
+        ],
+        "parent_UUID": "1523"
+    },
+    {
+        "UUID": "0000152f-1212-efde-1523-785feabcd123",
+        "company": "Wincam (inferred from package id)",
+        "UUID_name": "SD card error characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ws.WinCam",
+                "version_code": 19,
+                "version_name": "2.4",
+                "package_path": "AndroZoo/apks/04/com.ws.WinCam_0485E0369DBDB67912A6A4C84903BF6F6E5B888966E45C877EC57B73C0F373F6.apk",
+                "description": "Source review identified a gatt characteristic in com.ws.WinCam."
+            }
+        ],
+        "parent_UUID": "1523"
     },
     {
         "UUID": "0d2bee7d-08a0-410b-a389-3bdd55b97322",

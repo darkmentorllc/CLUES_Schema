@@ -1521,6 +1521,129 @@
         ]
     },
     {
+        "UUID": "442f1570-8a00-9a28-cbe1-e1d4212d53eb",
+        "company": "Third-party SDK code (declared in Java package `com.wiki.gb` — distinct from host jp.luxza.granboard; Phase-4 identification needed)",
+        "UUID_name": "RX_SERVICE_UUID_String",
+        "UUID_purpose": "GATT Service observed in Android app jp.luxza.granboard but declared in third-party SDK package `com.wiki.gb` as Java field `RX_SERVICE_UUID_String`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of jp.luxza.granboard v10.7.4 (versionCode 279), in Java field `RX_SERVICE_UUID_String`, declared in Java package `com.wiki.gb` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "jp.luxza.granboard",
+                "version_code": 279,
+                "version_name": "10.7.4",
+                "package_path": "BLUUID_APKS/0062/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `RX_SERVICE_UUID_String`."
+            }
+        ]
+    },
+    {
+        "UUID": "442f1571-8a00-9a28-cbe1-e1d4212d53eb",
+        "company": "Third-party SDK code (declared in Java package `com.wiki.gb` — distinct from host jp.luxza.granboard; Phase-4 identification needed)",
+        "UUID_name": "TX_CHAR_String",
+        "UUID_purpose": "GATT Characteristic observed in Android app jp.luxza.granboard but declared in third-party SDK package `com.wiki.gb` as Java field `TX_CHAR_String`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of jp.luxza.granboard v10.7.4 (versionCode 279), in Java field `TX_CHAR_String`, declared in Java package `com.wiki.gb` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "jp.luxza.granboard",
+                "version_code": 279,
+                "version_name": "10.7.4",
+                "package_path": "BLUUID_APKS/0062/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `TX_CHAR_String`."
+            }
+        ],
+        "parent_UUID": "442f1570-8a00-9a28-cbe1-e1d4212d53eb"
+    },
+    {
+        "UUID": "442f1572-8a00-9a28-cbe1-e1d4212d53eb",
+        "company": "Third-party SDK code (declared in Java package `com.wiki.gb` — distinct from host jp.luxza.granboard; Phase-4 identification needed)",
+        "UUID_name": "RX_CHAR_String",
+        "UUID_purpose": "GATT Characteristic observed in Android app jp.luxza.granboard but declared in third-party SDK package `com.wiki.gb` as Java field `RX_CHAR_String`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of jp.luxza.granboard v10.7.4 (versionCode 279), in Java field `RX_CHAR_String`, declared in Java package `com.wiki.gb` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "jp.luxza.granboard",
+                "version_code": 279,
+                "version_name": "10.7.4",
+                "package_path": "BLUUID_APKS/0062/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `RX_CHAR_String`."
+            }
+        ],
+        "parent_UUID": "442f1570-8a00-9a28-cbe1-e1d4212d53eb"
+    },
+    {
+        "UUID": "442f1573-8a00-9a28-cbe1-e1d4212d53eb",
+        "company": "Agentec (inferred from package id)",
+        "UUID_name": "Indication characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in jp.agentec.saas.abookcheck.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "jp.agentec.saas.abookcheck",
+                "version_code": 76,
+                "version_name": "1.4.530",
+                "package_path": "AndroZoo/apks/04/jp.agentec.saas.abookcheck_048B75447942D43D9313AA08FA77CA937E157F06EDC028EA13A7130B57EB22FE.apk",
+                "description": "Source review identified a gatt characteristic in jp.agentec.saas.abookcheck."
+            }
+        ],
+        "parent_UUID": "442f1570-8a00-9a28-cbe1-e1d4212d53eb"
+    },
+    {
+        "UUID": "442f1574-8a00-9a28-cbe1-e1d4212d53eb",
+        "company": "Agentec (inferred from package id)",
+        "UUID_name": "WRITE_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in jp.agentec.saas.abookcheck; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "jp.agentec.saas.abookcheck",
+                "version_code": 76,
+                "version_name": "1.4.530",
+                "package_path": "AndroZoo/apks/04/jp.agentec.saas.abookcheck_048B75447942D43D9313AA08FA77CA937E157F06EDC028EA13A7130B57EB22FE.apk",
+                "description": "The extractor suggests a gatt characteristic in jp.agentec.saas.abookcheck; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "49535343-fe7d-4be5-8fa9-9fafd205e455",
         "company": "Aigostar (inferred from package id)",
         "UUID_name": "UUID",
@@ -9605,6 +9728,30 @@
                 "version_name": "2.3.5",
                 "package_path": "BLUUID_APKS/0997/07c85048aaffe95b1e9de8e0d1f1a82fd3613550169b2743e381d1fb713ad93b/07c85048aaffe95b1e9de8e0d1f1a82fd3613550169b2743e381d1fb713ad93b.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `a`."
+            }
+        ]
+    },
+    {
+        "UUID": "49ed65c8-0650-440c-9305-f1928add75cc",
+        "company": "Alarm (inferred from package id)",
+        "UUID_name": "SERVICE_UUID",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.alarm.alarmmobile.android.g1group.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.alarm.alarmmobile.android.g1group",
+                "version_code": 2102,
+                "version_name": "5.10.2",
+                "package_path": "AndroZoo/apks/04/com.alarm.alarmmobile.android.g1group_04C93E133347B56AE7B1227AF2F3DECB33CB9B794F1D063201FC48B83529131F.apk",
+                "description": "Source review identified a gatt service in com.alarm.alarmmobile.android.g1group."
             }
         ]
     },
@@ -32525,9 +32672,33 @@
         ]
     },
     {
-        "UUID": "4b1f5564-dbfe-49f7-9876-c9681dda0ef4",
+        "UUID": "41ceed4b-e348-4a17-b1e9-6ac02daa1ecf",
         "company": "Eds (inferred from package id)",
-        "UUID_name": "DATALOGGING_DATAFILE_CHARACTERISTIC",
+        "UUID_name": "FIRMWARE_UPDATE_STATE",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.eds.btflasher.evops, version 1.22.0.18. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.eds.btflasher.evops",
+                "version_code": 17,
+                "version_name": "1.22.0.18",
+                "package_path": "AndroZoo/apks/03/com.eds.btflasher.evops_034ABD633FD0006B0C8A045D1C24CC71202DE918DB51DAAB802DAFE7AF26C215.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "41ceed4b-e348-4a17-b1e9-6ac02daa1edb",
+        "company": "Eds (inferred from package id)",
+        "UUID_name": "FIRMWARE_UPDATE_VERSION",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -32597,33 +32768,9 @@
         ]
     },
     {
-        "UUID": "41ceed4b-e348-4a17-b1e9-6ac02daa1ecf",
+        "UUID": "4b1f5564-dbfe-49f7-9876-c9681dda0ef4",
         "company": "Eds (inferred from package id)",
-        "UUID_name": "FIRMWARE_UPDATE_STATE",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.eds.btflasher.evops, version 1.22.0.18. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.eds.btflasher.evops",
-                "version_code": 17,
-                "version_name": "1.22.0.18",
-                "package_path": "AndroZoo/apks/03/com.eds.btflasher.evops_034ABD633FD0006B0C8A045D1C24CC71202DE918DB51DAAB802DAFE7AF26C215.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "41ceed4b-e348-4a17-b1e9-6ac02daa1edb",
-        "company": "Eds (inferred from package id)",
-        "UUID_name": "FIRMWARE_UPDATE_VERSION",
+        "UUID_name": "DATALOGGING_DATAFILE_CHARACTERISTIC",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -56620,9 +56767,9 @@
         ]
     },
     {
-        "UUID": "46ac8160-71a9-4209-8f73-83b1622ee802",
+        "UUID": "46ac8140-71a9-4209-8f73-83b1622ee802",
         "company": "Third-party SDK code (declared in Java package `com.miriding.blehelper.config` — distinct from host com.global.iriding.mobile; Phase-4 identification needed)",
-        "UUID_name": "UUID_SERVICE_BDS",
+        "UUID_name": "UUID_SERVICE_EDS",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -56668,9 +56815,9 @@
         ]
     },
     {
-        "UUID": "46ac8140-71a9-4209-8f73-83b1622ee802",
+        "UUID": "46ac8160-71a9-4209-8f73-83b1622ee802",
         "company": "Third-party SDK code (declared in Java package `com.miriding.blehelper.config` — distinct from host com.global.iriding.mobile; Phase-4 identification needed)",
-        "UUID_name": "UUID_SERVICE_EDS",
+        "UUID_name": "UUID_SERVICE_BDS",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -56692,9 +56839,9 @@
         ]
     },
     {
-        "UUID": "46ac8174-71a9-4209-8f73-83b1622ee802",
+        "UUID": "46ac8171-71a9-4209-8f73-83b1622ee802",
         "company": "Third-party SDK code (declared in Java package `com.miriding.blehelper.device` — distinct from host com.global.iriding.mobile; Phase-4 identification needed)",
-        "UUID_name": "UUID_BIKE_SERIAL_NUMBER",
+        "UUID_name": "UUID_C_BCS_CP",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -56716,9 +56863,9 @@
         ]
     },
     {
-        "UUID": "46ac8171-71a9-4209-8f73-83b1622ee802",
+        "UUID": "46ac8172-71a9-4209-8f73-83b1622ee802",
         "company": "Third-party SDK code (declared in Java package `com.miriding.blehelper.device` — distinct from host com.global.iriding.mobile; Phase-4 identification needed)",
-        "UUID_name": "UUID_C_BCS_CP",
+        "UUID_name": "UUID_PRODECT_SERIAL_NUMBER / UUID_C_BCS_SAP",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -56764,9 +56911,9 @@
         ]
     },
     {
-        "UUID": "46ac8172-71a9-4209-8f73-83b1622ee802",
+        "UUID": "46ac8174-71a9-4209-8f73-83b1622ee802",
         "company": "Third-party SDK code (declared in Java package `com.miriding.blehelper.device` — distinct from host com.global.iriding.mobile; Phase-4 identification needed)",
-        "UUID_name": "UUID_PRODECT_SERIAL_NUMBER / UUID_C_BCS_SAP",
+        "UUID_name": "UUID_BIKE_SERIAL_NUMBER",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -59010,80 +59157,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `APP_INNER_TEST_SECRET`."
             }
         ]
-    },
-    {
-        "UUID": "442f1570-8a00-9a28-cbe1-e1d4212d53eb",
-        "company": "Third-party SDK code (declared in Java package `com.wiki.gb` — distinct from host jp.luxza.granboard; Phase-4 identification needed)",
-        "UUID_name": "RX_SERVICE_UUID_String",
-        "UUID_purpose": "GATT Service observed in Android app jp.luxza.granboard but declared in third-party SDK package `com.wiki.gb` as Java field `RX_SERVICE_UUID_String`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of jp.luxza.granboard v10.7.4 (versionCode 279), in Java field `RX_SERVICE_UUID_String`, declared in Java package `com.wiki.gb` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "jp.luxza.granboard",
-                "version_code": 279,
-                "version_name": "10.7.4",
-                "package_path": "BLUUID_APKS/0062/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `RX_SERVICE_UUID_String`."
-            }
-        ]
-    },
-    {
-        "UUID": "442f1571-8a00-9a28-cbe1-e1d4212d53eb",
-        "company": "Third-party SDK code (declared in Java package `com.wiki.gb` — distinct from host jp.luxza.granboard; Phase-4 identification needed)",
-        "UUID_name": "TX_CHAR_String",
-        "UUID_purpose": "GATT Characteristic observed in Android app jp.luxza.granboard but declared in third-party SDK package `com.wiki.gb` as Java field `TX_CHAR_String`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of jp.luxza.granboard v10.7.4 (versionCode 279), in Java field `TX_CHAR_String`, declared in Java package `com.wiki.gb` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "jp.luxza.granboard",
-                "version_code": 279,
-                "version_name": "10.7.4",
-                "package_path": "BLUUID_APKS/0062/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `TX_CHAR_String`."
-            }
-        ],
-        "parent_UUID": "442f1570-8a00-9a28-cbe1-e1d4212d53eb"
-    },
-    {
-        "UUID": "442f1572-8a00-9a28-cbe1-e1d4212d53eb",
-        "company": "Third-party SDK code (declared in Java package `com.wiki.gb` — distinct from host jp.luxza.granboard; Phase-4 identification needed)",
-        "UUID_name": "RX_CHAR_String",
-        "UUID_purpose": "GATT Characteristic observed in Android app jp.luxza.granboard but declared in third-party SDK package `com.wiki.gb` as Java field `RX_CHAR_String`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of jp.luxza.granboard v10.7.4 (versionCode 279), in Java field `RX_CHAR_String`, declared in Java package `com.wiki.gb` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "jp.luxza.granboard",
-                "version_code": 279,
-                "version_name": "10.7.4",
-                "package_path": "BLUUID_APKS/0062/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844/694fe568c176ee865640626eb76ac6630169ca1de12d9d62bab6542826e60844.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `RX_CHAR_String`."
-            }
-        ],
-        "parent_UUID": "442f1570-8a00-9a28-cbe1-e1d4212d53eb"
     },
     {
         "UUID": "44ac36bc-6dae-11ea-bc55-0242ac130002",
@@ -66257,6 +66330,1230 @@
         ]
     },
     {
+        "UUID": "43484101-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GGIS_TEMP_MEASUREMENT",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484102-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GGIS_HUMID_MEASUREMENT",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484103-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GGIS_DEV_STATUS",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484104-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GGIS_ERR_STATUS",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484105-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GGIS_TEMP_THRESH",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484106-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GGIS_HUMID_THRESH",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484107-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GGIS_HOURS_OF_USE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484108-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GGIS_NUM_BATT_RECHARGE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484109-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GGIS_LAMP_HOURS",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348410a-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GGIS_ERR_LOG",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348410c-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GDTS_TIME",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348410d-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GCIS_REQ_SPEC_CAL_COEFF",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348410e-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GCIS_RET_SPEC_CAL_COEFF",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348410f-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GCIS_REQ_REF_CAL_COEFF",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484110-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GCIS_RET_REF_CAL_COEFF",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484111-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GCIS_REQ_REF_CAL_MATRIX",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484112-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GCIS_RET_REF_CAL_MATRIX",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484113-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSCIS_NUM_STORED_CONF",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484114-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSCIS_REQ_STORED_CONF_LIST",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484115-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSCIS_RET_STORED_CONF_LIST",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484116-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSCIS_REQ_SCAN_CONF_DATA",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484117-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSCIS_RET_SCAN_CONF_DATA",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484118-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSCIS_ACTIVE_SCAN_CONF",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484119-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_NUM_SD_STORED_SCANS",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348411a-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_SD_STORED_SCAN_IND_LIST",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348411b-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_SD_STORED_SCAN_IND_LIST_DATA",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348411c-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_SET_SCAN_NAME_STUB",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348411d-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_START_SCAN",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348411e-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_CLEAR_SCAN",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "4348411f-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_REQ_SCAN_NAME",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484120-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_RET_SCAN_NAME",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484121-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_REQ_SCAN_TYPE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484122-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_RET_SCAN_TYPE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484123-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_REQ_SCAN_DATE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484124-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_RET_SCAN_DATE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484125-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_REQ_PKT_FMT_VER",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484126-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_RET_PKT_FMT_VER",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484127-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_REQ_SER_SCAN_DATA_STRUCT",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484128-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_RET_SER_SCAN_DATA_STRUCT",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484130-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_ACTIVATE_STATE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484131-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_RETURN_ACTIVATE_STATE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484132-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_SAVE_REFERENCE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484140-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_READ_CURRENT_SCANCONFIG_DATA",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484141-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_RETURN_CURRENT_SCANCONFIG_DATA",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484142-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_WRITE_SCANCONFIG_DATA",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484143-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_RETURN_WRITE_SCANCONFIG_DATA",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484144-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_LAMP_MODE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484145-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_LAMP_DELAY_TIME",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484146-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_SET_PGA",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484147-444c-5020-4e49-52204e616e6f",
+        "company": "Unknown",
+        "UUID_name": "GSDIS_SET_SCAN_AVERAGE",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.agnext.moisturevisioapp",
+                "version_code": 27,
+                "version_name": "v27.0.1",
+                "package_path": "AndroZoo/apks/05/com.agnext.moisturevisioapp_05BC812DB2EB94C6F21DED79075AFE27B8C82E339B9DA9BBEBDA1448EDEA16E3.apk",
+                "description": "Source review identified a gatt characteristic in com.agnext.moisturevisioapp."
+            }
+        ]
+    },
+    {
+        "UUID": "43484152-2dab-2541-6972-6f6861424c45",
+        "company": "Unknown",
+        "UUID_name": "writeNotifyUuid",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.voice.translation.online.translator.group.translate.app.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.voice.translation.online.translator.group.translate.app",
+                "version_code": 47,
+                "version_name": "34.1.9",
+                "package_path": "AndroZoo/apks/04/com.voice.translation.online.translator.group.translate.app_04244DDF11F2C14E30B7BF89815D893EAEF03C64449E2ADD99D2C6BA7F215696.apk",
+                "description": "Source review identified a gatt characteristic in com.voice.translation.online.translator.group.translate.app."
+            }
+        ]
+    },
+    {
         "UUID": "4484fae0-be34-11e4-851e-0002a5d5c51b",
         "company": "Unknown",
         "UUID_name": "Unknown",
@@ -66277,6 +67574,30 @@
                 "version_name": "1.5.1",
                 "package_path": "AndroZoo/apks/18/com.medtronic.diabetes.guardian_1864BF6300B958824ADF4D34BCE3AF98C3CF5ABA4B6163DF969421939FF61857.apk",
                 "description": "Exact Guardian 4 APK directly reviewed; source-backed GATT Service mapping; generic field name, ownership unresolved."
+            }
+        ]
+    },
+    {
+        "UUID": "4a02",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.lotus.smartime2; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.lotus.smartime2",
+                "version_code": 108,
+                "version_name": "1.0.8",
+                "package_path": "AndroZoo/apks/04/com.lotus.smartime2_0426B787C99911411B05910595865AB41722F3937B3BCB23BA5359C3D8E22650.apk",
+                "description": "The extractor suggests a gatt characteristic in com.lotus.smartime2; the role is unverified."
             }
         ]
     },

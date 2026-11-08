@@ -38400,6 +38400,56 @@
         ]
     },
     {
+        "UUID": "a4626073-5598-42d8-969e-383a3f88246c",
+        "company": "Alarm (inferred from package id)",
+        "UUID_name": "CONNECT_STATUS_UUID",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.alarm.alarmmobile.android.g1group",
+                "version_code": 2102,
+                "version_name": "5.10.2",
+                "package_path": "AndroZoo/apks/04/com.alarm.alarmmobile.android.g1group_04C93E133347B56AE7B1227AF2F3DECB33CB9B794F1D063201FC48B83529131F.apk",
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group."
+            }
+        ],
+        "parent_UUID": "49ed65c8-0650-440c-9305-f1928add75cc"
+    },
+    {
+        "UUID": "af0b0ce4-c523-4388-84ec-a78c84c4d60d",
+        "company": "Alarm (inferred from package id)",
+        "UUID_name": "CONNECT_PAYLOAD_UUID",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.alarm.alarmmobile.android.g1group",
+                "version_code": 2102,
+                "version_name": "5.10.2",
+                "package_path": "AndroZoo/apks/04/com.alarm.alarmmobile.android.g1group_04C93E133347B56AE7B1227AF2F3DECB33CB9B794F1D063201FC48B83529131F.apk",
+                "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group."
+            }
+        ],
+        "parent_UUID": "49ed65c8-0650-440c-9305-f1928add75cc"
+    },
+    {
         "UUID": "ab57839b-e6ff-472e-bd19-a640f6135b7f",
         "company": "Third-party SDK code (declared in Java package `com.philosys.libconnectcom` — distinct from host com.mydayda.myhk; Phase-4 identification needed)",
         "UUID_name": "TX_CHAR",
@@ -48737,9 +48787,9 @@
         "parent_UUID": "8b3da2c6-b586-490f-9012-132af6d2202b"
     },
     {
-        "UUID": "a7c390bd-15ed-4aab-a44a-91b48cbeb5b6",
+        "UUID": "a1ab2b01-03a7-4d08-9d31-43ce463be6de",
         "company": "Controlpoint (inferred from package id)",
-        "UUID_name": "GUID_FLANGE_FACE_BACK_COMPLETE_PHOTO",
+        "UUID_name": "GUID_NUMBER_BOLTS",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -48761,9 +48811,9 @@
         ]
     },
     {
-        "UUID": "a1ab2b01-03a7-4d08-9d31-43ce463be6de",
+        "UUID": "a7c390bd-15ed-4aab-a44a-91b48cbeb5b6",
         "company": "Controlpoint (inferred from package id)",
-        "UUID_name": "GUID_NUMBER_BOLTS",
+        "UUID_name": "GUID_FLANGE_FACE_BACK_COMPLETE_PHOTO",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -52001,9 +52051,33 @@
         ]
     },
     {
-        "UUID": "accafb04-1889-42db-8ad5-b96283923060",
+        "UUID": "accafb01-1889-42db-8ad5-b96283923060",
         "company": "Electrolux (inferred from package id)",
-        "UUID_name": "GATT_CLOSE_CHARACTERISTIC",
+        "UUID_name": "GATT_INFO_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.electrolux.ecp.coreapp.frigidaire.na, version 2.90.1.80. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.electrolux.ecp.coreapp.frigidaire.na",
+                "version_code": 164,
+                "version_name": "2.90.1.80",
+                "package_path": "AndroZoo/apks/03/com.electrolux.ecp.coreapp.frigidaire.na_0357DE52593DDB40635F7E33715EAB12795C2DB04D8978498F053A136115A248.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "accafb02-1889-42db-8ad5-b96283923060",
+        "company": "Electrolux (inferred from package id)",
+        "UUID_name": "GATT_SCAN_LIST_CHARACTERISTIC",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -52049,33 +52123,9 @@
         ]
     },
     {
-        "UUID": "accafb01-1889-42db-8ad5-b96283923060",
+        "UUID": "accafb04-1889-42db-8ad5-b96283923060",
         "company": "Electrolux (inferred from package id)",
-        "UUID_name": "GATT_INFO_CHARACTERISTIC",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.electrolux.ecp.coreapp.frigidaire.na, version 2.90.1.80. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.electrolux.ecp.coreapp.frigidaire.na",
-                "version_code": 164,
-                "version_name": "2.90.1.80",
-                "package_path": "AndroZoo/apks/03/com.electrolux.ecp.coreapp.frigidaire.na_0357DE52593DDB40635F7E33715EAB12795C2DB04D8978498F053A136115A248.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "accafb02-1889-42db-8ad5-b96283923060",
-        "company": "Electrolux (inferred from package id)",
-        "UUID_name": "GATT_SCAN_LIST_CHARACTERISTIC",
+        "UUID_name": "GATT_CLOSE_CHARACTERISTIC",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -54367,6 +54417,30 @@
         ]
     },
     {
+        "UUID": "aedaf67a-2ff1-11e7-93ae-92361f002671",
+        "company": "Geberit (inferred from package id)",
+        "UUID_name": "HS2 BLE service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.geberit.setapp2015.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.geberit.setapp2015",
+                "version_code": 3685453,
+                "version_name": "4.0.2",
+                "package_path": "AndroZoo/apks/05/com.geberit.setapp2015_05E5DC7B527851898D5BDF8819D955D4F1084177DD3CC023CBF850C43A6EB0A7.apk",
+                "description": "Source review identified a gatt service in com.geberit.setapp2015."
+            }
+        ]
+    },
+    {
         "UUID": "aa210004-2a75-43c8-9d6f-d757468c80e9",
         "company": "Global (inferred from package id)",
         "UUID_name": "character",
@@ -54387,6 +54461,30 @@
                 "version_name": "1.8.2",
                 "package_path": "AndroZoo/apks/03/com.global.iriding.mobile_032CF6B007CB8F9148ECD1E6C1E1C68D111EC3546085075B9118D492146EDF4D.apk",
                 "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
+        "UUID": "aa210001-2a75-43c8-9d6f-d757468c80e9",
+        "company": "Global (inferred from package id)",
+        "UUID_name": "serviceUUID",
+        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app com.global.iriding.mobile, version 1.8.2. Its GATT service role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.global.iriding.mobile",
+                "version_code": 132,
+                "version_name": "1.8.2",
+                "package_path": "AndroZoo/apks/03/com.global.iriding.mobile_032CF6B007CB8F9148ECD1E6C1E1C68D111EC3546085075B9118D492146EDF4D.apk",
+                "description": "Possible GATT service; not independently verified."
             }
         ]
     },
@@ -54418,30 +54516,6 @@
         "UUID": "aa210003-2a75-43c8-9d6f-d757468c80e9",
         "company": "Global (inferred from package id)",
         "UUID_name": "sendFile",
-        "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app com.global.iriding.mobile, version 1.8.2. Its GATT service role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.global.iriding.mobile",
-                "version_code": 132,
-                "version_name": "1.8.2",
-                "package_path": "AndroZoo/apks/03/com.global.iriding.mobile_032CF6B007CB8F9148ECD1E6C1E1C68D111EC3546085075B9118D492146EDF4D.apk",
-                "description": "Possible GATT service; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "aa210001-2a75-43c8-9d6f-d757468c80e9",
-        "company": "Global (inferred from package id)",
-        "UUID_name": "serviceUUID",
         "UUID_purpose": "Possible GATT service identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Service"
@@ -65475,6 +65549,126 @@
         ]
     },
     {
+        "UUID": "aaf2",
+        "company": "India (inferred from package id)",
+        "UUID_name": "HEADSET_WRITE_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.india.fit; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.india.fit",
+                "version_code": 2026050709,
+                "version_name": "1.3.3",
+                "package_path": "AndroZoo/apks/04/com.india.fit_04E4BB3C85CAD57E807988E8336636BF1D09DC890A820C03FAD8A986F3A8B392.apk",
+                "description": "The extractor suggests a gatt characteristic in com.india.fit; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "aaf3",
+        "company": "India (inferred from package id)",
+        "UUID_name": "HEADSET_INDICATE_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.india.fit; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.india.fit",
+                "version_code": 2026050709,
+                "version_name": "1.3.3",
+                "package_path": "AndroZoo/apks/04/com.india.fit_04E4BB3C85CAD57E807988E8336636BF1D09DC890A820C03FAD8A986F3A8B392.apk",
+                "description": "The extractor suggests a gatt characteristic in com.india.fit; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "aaf4",
+        "company": "India (inferred from package id)",
+        "UUID_name": "HEADSET_CHARACTERISTIC_OTA_WRITE",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.india.fit; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.india.fit",
+                "version_code": 2026050709,
+                "version_name": "1.3.3",
+                "package_path": "AndroZoo/apks/04/com.india.fit_04E4BB3C85CAD57E807988E8336636BF1D09DC890A820C03FAD8A986F3A8B392.apk",
+                "description": "The extractor suggests a gatt characteristic in com.india.fit; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "aaf5",
+        "company": "India (inferred from package id)",
+        "UUID_name": "HEADSET_NOTIFY_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.india.fit; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.india.fit",
+                "version_code": 2026050709,
+                "version_name": "1.3.3",
+                "package_path": "AndroZoo/apks/04/com.india.fit_04E4BB3C85CAD57E807988E8336636BF1D09DC890A820C03FAD8A986F3A8B392.apk",
+                "description": "The extractor suggests a gatt characteristic in com.india.fit; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "aaf1",
+        "company": "India (inferred from package id)",
+        "UUID_name": "HEADSET_SERVICE",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.india.fit; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.india.fit",
+                "version_code": 2026050709,
+                "version_name": "1.3.3",
+                "package_path": "AndroZoo/apks/04/com.india.fit_04E4BB3C85CAD57E807988E8336636BF1D09DC890A820C03FAD8A986F3A8B392.apk",
+                "description": "The extractor suggests a gatt service in com.india.fit; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "a5dc",
         "company": "Innovation Weapons Technologies",
         "UUID_name": "SERVICE_UUID_VAMPIRE_SOLO_OLED240",
@@ -74883,6 +75077,130 @@
         ]
     },
     {
+        "UUID": "a0f03e00-5047-4d53-4c65-6d6f6e616465",
+        "company": "Lightyear_labs (inferred from package id)",
+        "UUID_name": "ResHub service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.pg.lightyear_labs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.pg.lightyear_labs",
+                "version_code": 715,
+                "version_name": "1.5.20",
+                "package_path": "AndroZoo/apks/04/com.pg.lightyear_labs_0490F34A1394260F375380188F994961D0313E96B86D1A5938A4E19E3A53CD7A.apk",
+                "description": "Source review identified a gatt service in com.pg.lightyear_labs."
+            }
+        ]
+    },
+    {
+        "UUID": "a0f03c00-5047-4d53-4c65-6d6f6e616465",
+        "company": "Lightyear_labs (inferred from package id)",
+        "UUID_name": "Command characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.pg.lightyear_labs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.pg.lightyear_labs",
+                "version_code": 715,
+                "version_name": "1.5.20",
+                "package_path": "AndroZoo/apks/04/com.pg.lightyear_labs_0490F34A1394260F375380188F994961D0313E96B86D1A5938A4E19E3A53CD7A.apk",
+                "description": "Source review identified a gatt characteristic in com.pg.lightyear_labs."
+            }
+        ],
+        "parent_UUID": "a0f03e00-5047-4d53-4c65-6d6f6e616465"
+    },
+    {
+        "UUID": "a0f03c01-5047-4d53-4c65-6d6f6e616465",
+        "company": "Lightyear_labs (inferred from package id)",
+        "UUID_name": "Read characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.pg.lightyear_labs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.pg.lightyear_labs",
+                "version_code": 715,
+                "version_name": "1.5.20",
+                "package_path": "AndroZoo/apks/04/com.pg.lightyear_labs_0490F34A1394260F375380188F994961D0313E96B86D1A5938A4E19E3A53CD7A.apk",
+                "description": "Source review identified a gatt characteristic in com.pg.lightyear_labs."
+            }
+        ],
+        "parent_UUID": "a0f03e00-5047-4d53-4c65-6d6f6e616465"
+    },
+    {
+        "UUID": "a0f03c02-5047-4d53-4c65-6d6f6e616465",
+        "company": "Lightyear_labs (inferred from package id)",
+        "UUID_name": "Write characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.pg.lightyear_labs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.pg.lightyear_labs",
+                "version_code": 715,
+                "version_name": "1.5.20",
+                "package_path": "AndroZoo/apks/04/com.pg.lightyear_labs_0490F34A1394260F375380188F994961D0313E96B86D1A5938A4E19E3A53CD7A.apk",
+                "description": "Source review identified a gatt characteristic in com.pg.lightyear_labs."
+            }
+        ],
+        "parent_UUID": "a0f03e00-5047-4d53-4c65-6d6f6e616465"
+    },
+    {
+        "UUID": "a0f03c03-5047-4d53-4c65-6d6f6e616465",
+        "company": "Lightyear_labs (inferred from package id)",
+        "UUID_name": "Status characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.pg.lightyear_labs.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.pg.lightyear_labs",
+                "version_code": 715,
+                "version_name": "1.5.20",
+                "package_path": "AndroZoo/apks/04/com.pg.lightyear_labs_0490F34A1394260F375380188F994961D0313E96B86D1A5938A4E19E3A53CD7A.apk",
+                "description": "Source review identified a gatt characteristic in com.pg.lightyear_labs."
+            }
+        ],
+        "parent_UUID": "a0f03e00-5047-4d53-4c65-6d6f6e616465"
+    },
+    {
         "UUID": "aa432b56-82c7-43b6-9f0a-c728df16076c",
         "company": "LiveWire EV",
         "UUID_name": "NGS_ACTION_REQUEST",
@@ -75851,6 +76169,714 @@
             }
         ],
         "parent_UUID": "de7bf61a-5eac-4cda-94ea-f18212483dd2"
+    },
+    {
+        "UUID": "a970fd31-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Data Rate",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/pariterre/charuconstruction/blob/d5975af6e7eb3d02fc8b594a55b6d1c339dbdae8/charuconstruction/force_sensor/b24_force_sensor.py#L195-L282",
+                "description": "Used by a B24 force-sensor client.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a970fd32-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Resolution",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/pariterre/charuconstruction/blob/d5975af6e7eb3d02fc8b594a55b6d1c339dbdae8/charuconstruction/force_sensor/b24_force_sensor.py#L195-L282",
+                "description": "Used by a B24 force-sensor client.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a970fd33-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Battery Threshold",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a970fd34-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "View PIN",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a970fd35-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Serial Number",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a970fd36-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Data Tag",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a970fd37-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Battery Value",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a970fd38-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "System Zero",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a970fd30-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Configuration PIN service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/pariterre/charuconstruction/blob/d5975af6e7eb3d02fc8b594a55b6d1c339dbdae8/charuconstruction/force_sensor/b24_force_sensor.py#L195-L282",
+                "description": "Used by a B24 force-sensor client.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt service in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a970fd39-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Configuration PIN",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/pariterre/charuconstruction/blob/d5975af6e7eb3d02fc8b594a55b6d1c339dbdae8/charuconstruction/force_sensor/b24_force_sensor.py#L195-L282",
+                "description": "Used by a B24 force-sensor client.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ],
+        "parent_UUID": "a970fd30-a0e8-11e6-bdf4-0800200c9a66"
+    },
+    {
+        "UUID": "a970fd3a-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Model Name",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a970fd3b-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Firmware Version",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9712441-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Status",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/pariterre/charuconstruction/blob/d5975af6e7eb3d02fc8b594a55b6d1c339dbdae8/charuconstruction/force_sensor/b24_force_sensor.py#L195-L282",
+                "description": "Used by a B24 force-sensor client.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9712442-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Data (Engineering Units)",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/pariterre/charuconstruction/blob/d5975af6e7eb3d02fc8b594a55b6d1c339dbdae8/charuconstruction/force_sensor/b24_force_sensor.py#L195-L282",
+                "description": "Used by a B24 force-sensor client.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9712443-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Units",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/pariterre/charuconstruction/blob/d5975af6e7eb3d02fc8b594a55b6d1c339dbdae8/charuconstruction/force_sensor/b24_force_sensor.py#L195-L282",
+                "description": "Used by a B24 force-sensor client.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9717261-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Sensitivity Range",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9717262-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Coefficient (@Index)",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9717263-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Index",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9717264-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Linearisation Repeat",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9717265-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Linearisation Points",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9717266-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Raw Out",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9717267-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Raw Unit",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9717268-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Display Gain",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a9717269-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Display Offset",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a971726a-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Calibration PIN",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a971726b-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Linearisation Units",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a971726c-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Advanced Index",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
+    },
+    {
+        "UUID": "a971726d-a0e8-11e6-bdf4-0800200c9a66",
+        "company": "Mantracourt",
+        "UUID_name": "Advanced Data",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hydrotechnikuk.watchlog",
+                "version_code": 10320,
+                "version_name": "01.06.00",
+                "package_path": "AndroZoo/apks/05/com.hydrotechnikuk.watchlog_05838CD05FF51A5A9E62FD99BE7C32CBDA3962DB2EFD67E422DC0B7C47F2548B.apk",
+                "description": "Source review identified a gatt characteristic in com.hydrotechnikuk.watchlog."
+            }
+        ]
     },
     {
         "UUID": "add60001-50dc-4344-98b2-f171d65cd5bd",
@@ -79714,6 +80740,30 @@
         "parent_UUID": "202b6cfd-96bf-4b63-95b2-b4b794591caa"
     },
     {
+        "UUID": "a2495fae-bbde-4e64-af7f-acbea454d0f4",
+        "company": "Primepark (inferred from package id)",
+        "UUID_name": "ISSUE_PROFILE_ROLE_CREATE_ID",
+        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in Android app ru.primepark.android, version 3.0.15. Its GATT characteristic role is an unverified inference.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "ru.primepark.android",
+                "version_code": 63,
+                "version_name": "3.0.15",
+                "package_path": "AndroZoo/apks/02/ru.primepark.android_0241C16A751573642664DD9E24A48809341B381FFAEFDDC6E65C5C9B13D5CC56.apk",
+                "description": "Possible GATT characteristic; not independently verified."
+            }
+        ]
+    },
+    {
         "UUID": "ad569d63-9982-4a96-b2b6-94ad978658c1",
         "company": "Primepark (inferred from package id)",
         "UUID_name": "ISSUE_CAR_WASHING_OUTSIDE_ID",
@@ -79741,30 +80791,6 @@
         "UUID": "af00a302-49d2-45dd-8a08-caa68c384bfb",
         "company": "Primepark (inferred from package id)",
         "UUID_name": "ISSUE_PARKING_PRIVATE_CHANGE_ID",
-        "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in Android app ru.primepark.android, version 3.0.15. Its GATT characteristic role is an unverified inference.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "ru.primepark.android",
-                "version_code": 63,
-                "version_name": "3.0.15",
-                "package_path": "AndroZoo/apks/02/ru.primepark.android_0241C16A751573642664DD9E24A48809341B381FFAEFDDC6E65C5C9B13D5CC56.apk",
-                "description": "Possible GATT characteristic; not independently verified."
-            }
-        ]
-    },
-    {
-        "UUID": "a2495fae-bbde-4e64-af7f-acbea454d0f4",
-        "company": "Primepark (inferred from package id)",
-        "UUID_name": "ISSUE_PROFILE_ROLE_CREATE_ID",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -86691,6 +87717,174 @@
         ]
     },
     {
+        "UUID": "a55d1c55-004b-0000-0000-000000000000",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "ZSC010_BLUETOOTH_SERVICE_GENERAL_MASK / Zsc010WriteGeneralModeOperation / BLUETOOTH_SCAN_FILTER_SERVICE_UUID / expectedService",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "a55d1c55-004b-0001-0000-000000000000",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "ZSC010_BLUETOOTH_SERVICE_DIM_MASK",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "a55d1c55-004b-0003-0000-000000000000",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "ZSC010_BLUETOOTH_SERVICE_DALI_MASK",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "a55d1c55-004b-0004-0000-000000000000",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "ZSC010_BLUETOOTH_SERVICE_TIME_MASK",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "a55d1c55-004b-0005-0000-000000000000",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "ZSC010_BLUETOOTH_SERVICE_GPS_MASK",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "a55d1c55-004b-0009-0000-000000000000",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "ZSC010_BLUETOOTH_SERVICE_DIAGNOSTICS_MASK",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "a55d1c55-004b-000a-0000-000000000000",
+        "company": "Remoticom (inferred from package id)",
+        "UUID_name": "ZSC010_BLUETOOTH_SERVICE_SECURITY_MASK",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.remoticom.zsc010",
+                "version_code": 80000,
+                "version_name": "0.8.0",
+                "package_path": "AndroZoo/apks/04/com.remoticom.zsc010_04C9041823F0B45F84D2D65DDE4D403F3BBA341257DE49925F60AA1CCFF1D4A9.apk",
+                "description": "The extractor suggests a gatt service in com.remoticom.zsc010; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "a247a39b-0a3d-42c1-80d1-ea762753c6a0",
         "company": "Renesas",
         "UUID_name": "SERVICE_UUID",
@@ -90510,6 +91704,30 @@
                 "version_name": "2.0.39",
                 "package_path": "BLUUID_APKS/0382/5c80a538bc6ee1383ea08054fea15647004367106f1fc53ea8705645cc85aad7/5c80a538bc6ee1383ea08054fea15647004367106f1fc53ea8705645cc85aad7.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SPORTIQ_9AXIS_SERVICE`."
+            }
+        ]
+    },
+    {
+        "UUID": "a287a5f9-0fa3-bc84-2a41-c9da6d85bd4e",
+        "company": "Starkey (inferred from package id)",
+        "UUID_name": "Preferred connection characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
             }
         ]
     },
@@ -97760,9 +98978,9 @@
         ]
     },
     {
-        "UUID": "a76eb9e4-f3ac-4990-84cf-3a94d2426b2b",
+        "UUID": "a76eb9e3-f3ac-4990-84cf-3a94d2426b2b",
         "company": "Third-party SDK code (declared in Java package `com.brother.ptouch.sdk.connection` — distinct from host com.zkipster.android; Phase-4 identification needed)",
-        "UUID_name": "NOTIFY2_CHARACTERISTIC",
+        "UUID_name": "WRITE_WOR_NOTIFY1_CHARACTERISTIC",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -97784,9 +99002,9 @@
         ]
     },
     {
-        "UUID": "a76eb9e3-f3ac-4990-84cf-3a94d2426b2b",
+        "UUID": "a76eb9e4-f3ac-4990-84cf-3a94d2426b2b",
         "company": "Third-party SDK code (declared in Java package `com.brother.ptouch.sdk.connection` — distinct from host com.zkipster.android; Phase-4 identification needed)",
-        "UUID_name": "WRITE_WOR_NOTIFY1_CHARACTERISTIC",
+        "UUID_name": "NOTIFY2_CHARACTERISTIC",
         "UUID_purpose": "Possible GATT characteristic identified in Android app source; the role is unverified.",
         "UUID_usage_array": [
             "GATT Characteristic"
@@ -110082,6 +111300,128 @@
                 "version_name": "1.4",
                 "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "a0370d1b-e805-4dda-b41a-1f011d2a4a7a",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.starkey.myaudibel.release",
+                "version_code": 559,
+                "version_name": "7.0.0",
+                "package_path": "AndroZoo/apks/04/com.starkey.myaudibel.release_040539D4B4BE646DED5EC75394369FC67484503CD68DBCD4010CF4D1D1668355.apk",
+                "description": "Source review identified a gatt characteristic in com.starkey.myaudibel.release."
+            }
+        ],
+        "parent_UUID": "5446ec0e-d711-11e4-b9d6-1681e6b88ec1"
+    },
+    {
+        "UUID": "a00b",
+        "company": "Unknown",
+        "UUID_name": "Network Configuration service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.puwell.petv.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.puwell.petv",
+                "version_code": 1050201,
+                "version_name": "1.5.2.1",
+                "package_path": "AndroZoo/apks/04/com.puwell.petv_0439FCB29A74AB00CECFE2898948AEE5463B21ED807B4CA2C89BF9CC296EF71E.apk",
+                "description": "Source review identified a gatt service in com.puwell.petv."
+            }
+        ]
+    },
+    {
+        "UUID": "a87b6692-0abb-4e91-896d-ea2cf2eaba19",
+        "company": "Unknown",
+        "UUID_name": "Credit notification characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.matipay.modo.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.matipay.modo",
+                "version_code": 99,
+                "version_name": "3.5.4",
+                "package_path": "AndroZoo/apks/05/com.matipay.modo_0550241BC5A65D3FD88347346A807F96136AB81EE9FA34A6352694519361196A.apk",
+                "description": "Source review identified a gatt characteristic in com.matipay.modo."
+            }
+        ],
+        "parent_UUID": "be99f8dc-8fb6-43f1-890c-f8cdcc1db65e"
+    },
+    {
+        "UUID": "a23a9a3d-d162-47aa-b7c7-03db3b13bde3",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
+            }
+        ]
+    },
+    {
+        "UUID": "ada50ce9-67b8-4a97-9d8e-37e1d083156c",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bowerswilkins.splice",
+                "version_code": 5125,
+                "version_name": "2.14.0",
+                "package_path": "AndroZoo/apks/04/com.bowerswilkins.splice_04009B6911A16A36D088A8ADF08931B06BE554C9EBAAA1CA00BC4A8D63B2CC0B.apk",
+                "description": "Source review identified a gatt characteristic in com.bowerswilkins.splice."
             }
         ]
     },

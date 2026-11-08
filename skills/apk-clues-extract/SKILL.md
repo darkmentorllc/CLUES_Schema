@@ -1,7 +1,8 @@
 ---
 name: apk-clues-extract
 description: "Extract vendor-specific GATT Service and Characteristic UUIDs from Android APK / XAPK files and emit a CLUES-formatted JSON (`CLUES_data_LLM_Android.json`) that conforms to `CLUES_schema.json`. Use when the user asks to 'scan APKs for UUIDs', 'extract Bluetooth UUIDs from Android apps', 'build CLUES data from APKs', or 'find GATT services in a folder of APKs'. Takes a path to either an individual APK/XAPK or a directory which it walks recursively. Pre-flights each APK with `aapt dump permissions` and skips any package that does not declare BLUETOOTH / BLUETOOTH_ADMIN / BLUETOOTH_SCAN / BLUETOOTH_CONNECT — never wastes time decompiling a non-BT app. Uses `jadx --no-res --no-debug-info` to decompile DEX and conditionally scans Xamarin/.NET assemblies with ILSpy, then deletes temp output after each file. Do NOT use for iOS apps, for non-(X)APK files (e.g. raw .dex outside an APK), or when the goal is to add UUIDs already known from public sources rather than discover them from an APK."
-version: 1.0
+metadata:
+  version: "1.0"
 ---
 
 # APK CLUES UUID Extractor
@@ -268,6 +269,12 @@ The output JSON conforms to `CLUES_schema.json` and is a flat top-level array of
 Characteristics carry `parent_UUID` only when the parent service is supported by a specific service-to-characteristic relationship, such as a characteristic lookup on the service object. A service and characteristic appearing in the same file or APK is not sufficient evidence. Preserve existing reviewed parent fields when merging; investigate conflicting proposals rather than overwriting them.
 
 Source review must distinguish GATT from RFCOMM/SPP and unrelated UUID-shaped identifiers. A generic `getService` call is not sufficient: confirm the owner and a Bluetooth GATT receiver. BuildConfig hotel and location IDs without independent BLE use are not GATT UUIDs. The extractor may still emit RFCOMM-only values as weak file-level defaults, so inspect their actual dataflow before accepting them.
+
+Search UUID literals case-insensitively during source review. Before concluding that a UUID is absent, check its full and short Bluetooth-base forms, relevant unhyphenated forms, and any JADX temporary-variable aliases; uppercase hexadecimal in source is common.
+
+When the extractor attributes a finding to a managed assembly, review its ILSpy-decompiled C# and relevant BLE call sites; a search of the JADX Java tree cannot establish whether that managed UUID is absent. Identify the source assembly and preserve the decompiled evidence alongside the external review artifact.
+
+Before merging a source review, mechanically validate every detailed citation against the exact APK's extracted archive: the relative source file must exist, every cited line and range must be within that file, and the cited code must support the stated role or parent. Correct path-joining errors and cross-APK or decompiler-name mixups; re-review any finding whose evidence cannot be verified. Keep these detailed citations in the external review artifact.
 
 For example:
 
