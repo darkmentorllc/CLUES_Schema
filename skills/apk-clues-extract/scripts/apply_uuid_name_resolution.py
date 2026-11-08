@@ -34,7 +34,8 @@ Only `UUID_name` is required. The script:
        Phase-4 `Unidentified shared SDK` / `Third-party SDK code` markers,
        replaces it;
      - appends a Phase-5 investigation note to the existing evidence_array
-       if `note` is supplied.
+       if `note` is supplied, credited to this run's submitter label
+       (submitter.py), not to whoever created the record.
 3. Writes the CLUES file back, sorted by UUID for stable diffs.
 4. Prints the Python diff for `KNOWN_SDK_UUIDS` so a curator can paste it
    into `extract_clues.py` and cache the resolution for every future run.
@@ -48,6 +49,7 @@ import sys
 _HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, _HERE)
 from extract_clues import KNOWN_SDK_UUIDS as KSU  # noqa: E402
+from extract_clues import DEFAULT_SUBMITTER  # noqa: E402
 from extract_clues import dedupe_evidence_array  # noqa: E402
 
 INFERRED_PACKAGE_MARKER = "(inferred from package id)"
@@ -102,19 +104,11 @@ def main(argv: list[str]) -> int:
     company_patched = 0
     note_patched = 0
 
-    submitters: dict[str, str] = {}
     for rec in data:
         uuid = (rec.get("UUID") or "").lower()
         if uuid not in mapping:
             continue
         entry = mapping[uuid]
-        # Track first observed submitter so a Phase-5 evidence note can keep
-        # attribution consistent.
-        for ev in rec.get("evidence_array", []):
-            sub = ev.get("submitter")
-            if sub:
-                submitters.setdefault(uuid, sub)
-                break
 
         new_name = entry.get("UUID_name")
         if new_name:
@@ -150,7 +144,8 @@ def main(argv: list[str]) -> int:
         if note:
             rec.setdefault("evidence_array", []).append({
                 "description": f"Phase-5 UUID-name resolution: {note}",
-                "submitter": submitters.get(uuid, "Claude (Opus 4.7)"),
+                # Credit the model doing this run, not whoever created the record.
+                "submitter": DEFAULT_SUBMITTER,
             })
             note_patched += 1
 
@@ -167,7 +162,7 @@ def main(argv: list[str]) -> int:
     sys.stderr.write(
         f"Patched {name_patched} UUID_name, {purpose_patched} UUID_purpose, "
         f"{company_patched} company, {note_patched} evidence notes "
-        f"across {len(mapping)} mapped UUIDs.\n"
+        f"across {len(mapping)} mapped UUIDs (submitter {DEFAULT_SUBMITTER!r}).\n"
     )
 
     # Emit suggested KNOWN_SDK_UUIDS additions for every mapping entry that

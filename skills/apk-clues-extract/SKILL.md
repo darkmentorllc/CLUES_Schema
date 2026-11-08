@@ -1,6 +1,6 @@
 ---
 name: apk-clues-extract
-description: "Extract vendor-specific GATT Service and Characteristic UUIDs from Android APK / XAPK files and emit a CLUES-formatted JSON (`CLUES_data_LLM_Android.json`) that conforms to `CLUES_schema.json`. Use when the user asks to 'scan APKs for UUIDs', 'extract Bluetooth UUIDs from Android apps', 'build CLUES data from APKs', or 'find GATT services in a folder of APKs'. Takes a path to either an individual APK/XAPK or a directory which it walks recursively. Pre-flights each APK with `aapt dump permissions` and skips any package that does not declare BLUETOOTH / BLUETOOTH_ADMIN / BLUETOOTH_SCAN / BLUETOOTH_CONNECT — never wastes time decompiling a non-BT app. Uses `jadx --no-res --no-debug-info` to decompile DEX, deletes the temp output after each file. Do NOT use for iOS apps, for non-(X)APK files (e.g. raw .dex outside an APK), or when the goal is to add UUIDs already known from public sources rather than discover them from an APK."
+description: "Extract vendor-specific GATT Service and Characteristic UUIDs from Android APK / XAPK files and emit a CLUES-formatted JSON (`CLUES_data_LLM_Android.json`) that conforms to `CLUES_schema.json`. Use when the user asks to 'scan APKs for UUIDs', 'extract Bluetooth UUIDs from Android apps', 'build CLUES data from APKs', or 'find GATT services in a folder of APKs'. Takes a path to either an individual APK/XAPK or a directory which it walks recursively. Pre-flights each APK with `aapt dump permissions` and skips any package that does not declare BLUETOOTH / BLUETOOTH_ADMIN / BLUETOOTH_SCAN / BLUETOOTH_CONNECT — never wastes time decompiling a non-BT app. Uses `jadx --no-res --no-debug-info` to decompile DEX and conditionally scans Xamarin/.NET assemblies with ILSpy, then deletes temp output after each file. Do NOT use for iOS apps, for non-(X)APK files (e.g. raw .dex outside an APK), or when the goal is to add UUIDs already known from public sources rather than discover them from an APK."
 version: 1.0
 ---
 
@@ -14,15 +14,20 @@ For each APK it:
 
 1. **Verifies the package requests Bluetooth.** Runs `aapt dump permissions` and looks for `android.permission.BLUETOOTH`, `BLUETOOTH_ADMIN`, `BLUETOOTH_SCAN`, or `BLUETOOTH_CONNECT`. If none are present, the APK is logged as "no BT permissions; skipped" and the skill moves to the next file *without* running jadx — decompiling a non-BT app is wasted time.
 2. **Extracts `package_id`, `version_code`, `version_name`** from `aapt dump badging`. These populate the `android_info_array` for every UUID found in the app.
-3. **Decompiles to a temp dir.** `jadx --no-res --no-debug-info -d <tmpdir> <apk_or_xapk>` (jadx 1.5+ understands `.xapk` natively, so XAPKs do not need to be unzipped first). The `--no-res` flag skips XML resource decoding — UUIDs live in the code, not in the AndroidManifest.
+3. **Decompiles to a temp dir — unless the APK was pre-decompiled.** If `scripts/predecompile_apks.py` already decompiled this exact APK (same name, size and fingerprint; same jadx flags), the script reuses it (a directory entry in place; an archive entry is first unpacked into the temp dir, which takes seconds) and the APK's status line ends in `(predecompiled)`; see [Pre-decompiling a corpus](#pre-decompiling-a-corpus-optional). Otherwise: `jadx --no-res --no-debug-info -d <tmpdir> <apk_or_xapk>` (jadx 1.5+ understands `.xapk` natively, so XAPKs do not need to be unzipped first). The `--no-res` flag skips XML resource decoding — UUIDs live in the code, not in the AndroidManifest.
 4. **Scans decompiled `.java` files for UUID patterns** — regex finds the candidate sites, the script then *reads* the code around each hit rather than relying on the regex alone (per GreyNoise's "regex will not dynamically emulate DEX bytecode" warning):
    - Raw 128-bit UUID string literals (`"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"`) — picks up `UUID.fromString("...")`, `ParcelUuid.fromString("...")`, log strings, JADX deobfuscation hints, etc.
    - For every literal, the script also captures the **LHS Java identifier** of the assignment (`public static final UUID LIBRE3_DATA_SERVICE = UUID.fromString(...)`) — this becomes the `UUID_name` after light cleanup (strip trailing `_UUID` / `Uuid`, drop Java `m`/`s` member prefixes). Minified jadx leftovers (`f7217p`, single-letter aliases) are rejected — those records get `UUID_name: "Unknown"` and a later APK that has the same UUID with a human-meaningful field name will overwrite it.
    - When JADX has moved the semantic label away from the literal, the scanner also recovers names from **lowered enum rows** (`WIFI_CONTROL = new TwinService("WIFI_CONTROL", …, "uuid")`), **nested sealed-object constructors** that pass a UUID temp into `super(...)`, **anonymous singleton-object fields** (`BulkTransfer = new e0() { … UUID.fromString("uuid") … }`), **constructor parameter roles** preserved in another class (`new BluetoothServiceConfiguration(uuid1, uuid2, uuid3, …)` → `notifyCharacteristicUUID` from the callee signature), and **assigned wrapper constructors** where the target field is the best surviving label (`writeCharacteristic = new BleCharacteristic(serviceId, id)`).
    - Then the script performs a **read-the-code usage trace**: for every `(field, uuid)` pair, it searches the whole file for `getService(field)` / `getCharacteristic(field)` / `setCharacteristicNotification(...)` / etc. A hit here is **authoritative** — those calls are how the Android API itself decides what a UUID is, so they beat any naming-convention heuristic.
+   - It also recognizes a narrowly structural cross-file UUID-pair wrapper when the constructor has UUID-typed parameters assigned directly to fields named as a service and a characteristic, and the call site passes a UUID field in those argument positions. The APK-wide constructor name/arity must be unique; ambiguous overloads or class-name collisions are ignored. Direct GATT API and explicit catalog evidence still take precedence.
+   - **Confirmed non-GATT context filters.** Before classification, source-scoped hints suppress known app/client/analytics identifiers and non-BLE protocol constants when no GATT API sink uses the same field. Ambiguous names such as `CLIENT_ID` are restricted to their confirmed Java package and class; ANTLR ATN serialization UUIDs resolve JADX temporary-variable aliases only in `ATNDeserializer`. A direct `getService(...)` / `getCharacteristic(...)` use of the same field wins. Do not add these findings to the global UUID-value denylist unless the UUID value itself is confirmed never to be GATT.
+   - **Cross-file Android GATT sinks and containers.** Trace uniquely resolved fields into explicitly typed Android GATT calls and constructors, including `UUID.fromString(Owner.FIELD)` and chained `getService(...).getCharacteristic(...)`. A uniquely resolved helper method can also pass UUID arguments to typed Android service and characteristic constructors; use a parent only when that helper adds the constructed characteristic to the constructed service, and track local assignments at each call. Nested service/characteristic containers provide weaker scoped evidence when no direct sink resolves the role. Preserve both roles only where independent direct evidence supports both. Short UUID16 values can be reused by different SDKs: never assign an exclusive SDK owner from the value alone when source shows a collision (for example, `ae00` is used by both Jieli and Suprema; `ffe2` and `ffe3` are used by both AILink and Qingniu).
+
+   **Conditional managed-code follow-up.** The same per-APK pass checks the APK ZIP for `assemblies/*.dll` or `assemblies/assemblies.blob`. When present, `scripts/managed_clues.py` reads direct DLLs or the Xamarin assembly store, selects app/UUID-bearing assemblies, decompiles them with `ilspycmd`, and emits only UUIDs with a C# field plus nearby BLE service/characteristic use. It also recognizes a 16-byte advertised service UUID array when the field is used with 128-bit service advertisement handling. DEX and managed records are merged by UUID; hand-curated UUIDs are still excluded. The status and checkpoint state `managed=complete:<n>` separately from the JADX result. A missing ILSpy/liblz4 tool, unsupported assembly store, or decompilation failure yields a retryable `managed_incomplete` status and nonzero process exit, so a .NET APK cannot silently appear fully scanned with zero records. A valid `<apk name>.nonjava.tar.xz` sidecar beside the JADX archive supplies decoded DLLs when present; otherwise the managed pass reads the APK directly. ILSpy still decompiles the DLLs on demand.
 5. **Decides at the file level whether a `.java` file is BLE-relevant.** Two ways a file qualifies (either is enough):
    - **Hard signal:** the file references one of `android.bluetooth.BluetoothGatt*` / `android.bluetooth.le.ScanFilter` / `android.os.ParcelUuid` anywhere.
-   - **Constants-class fallback:** the file contains **≥3 `UUID.fromString("128-bit-literal")` calls** with no BLE imports. This catches "pure constants" classes like Abbott Libre3's `DCSGKSConstants.java` (15 UUIDs, zero `BluetoothGatt*` refs — the BLE-aware code lives in *other* classes that import this one) or Harman's `e2/d.java`. A non-BLE config class with a couple of analytics/telemetry UUIDs in URLs (Adobe Edge, Azure App Insights, OneTrust) won't trigger the fallback because those UUIDs sit inside string concatenations, not `UUID.fromString` calls. A file that hits neither signal is treated as "probably not BLE" — UUIDs in it only survive if a `BluetoothGatt*` identifier sits within ±8 lines of the literal.
+   - **Constants-class fallback:** the file contains **≥3 `UUID.fromString("128-bit-literal")` calls** with no BLE imports. This catches "pure constants" classes like Abbott Libre3's `DCSGKSConstants.java` (15 UUIDs, zero `BluetoothGatt*` refs — the BLE-aware code lives in *other* classes that import this one) or Harman's `e2/d.java`. A non-BLE config class with a couple of analytics/telemetry UUIDs in URLs (Adobe Edge, Azure App Insights, OneTrust) won't trigger the fallback because those UUIDs sit inside string concatenations, not `UUID.fromString` calls. The fallback is also capped: a file with **more than 64** such literals (`MAX_UUID_FROMSTRING_FOR_BLE_FALLBACK`) is a data table, not a GATT profile, and does not qualify. Ubiquiti's com.ubnt.usurvey shows why: its `xe/m.java` is a product/firmware catalog of 1,182 UUID literals, and together with `xe/f.java` (477) it produced 875 false-positive "GATT Service" records before the cap existed. The same 3–64 window applies to the sibling fallback that counts `String NAME = "<uuid>";` constants (GATT catalogs such as Intellimec's `WedgeGattServices.java`). Files with a hard signal are never capped. A file that hits neither signal is treated as "probably not BLE" — UUIDs in it only survive if a `BluetoothGatt*` identifier sits within ±8 lines of the literal.
 6. **Filters Bluetooth-SIG standard UUIDs and already-published member UUIDs and curated CLUES UUIDs.** Any UUID matching the SIG base `0000XXXX-0000-1000-8000-00805F9B34FB` is collapsed to its 16-bit form. Then:
    - UUID16s in the SIG-allocated **standard** ranges (0x0000 / 0x0001–0x012F SDP protocols / 0x1000–0x12FF SDP service classes / 0x1800–0x18FF GATT services / 0x2800–0x29FF declarations & descriptors / 0x2A00–0x2BFF characteristics) are dropped — they are not vendor-specific.
    - UUID16s **already listed in `~/Blue2thprinting/Analysis/public/assigned_numbers/uuids/member_uuids.yaml`** (the SIG's public vendor-allocated UUID16 list) are also dropped from the output — they're already public, so there's no value re-recording them in CLUES_data_LLM. The hits *are* surfaced internally for the company-inference step below.
@@ -30,7 +35,8 @@ For each APK it:
    - UUID16s outside all three filters (typically vendor-internal IDs like `0xE104` or `0x8A21`) and all UUID128s not in curated CLUES are kept.
 7. **Classifies each remaining UUID as Service vs Characteristic.** Cascading decision:
    - **Definitive usage trace (read-the-code):** if the captured field name is passed to `getService(...)` anywhere in the file → Service. Passed to `getCharacteristic(...)` / `writeCharacteristic(...)` / `setCharacteristicNotification(...)` / similar → Characteristic. This is the same authoritative sink set BLEScope uses for its value-set analysis.
-   - **Anchor line:** if no definitive usage trace, look at the UUID's own source line for naming-convention hints (`_SERVICE` / `_CHAR_` / `BluetoothGattService` / `BluetoothGattCharacteristic`).
+   - **Typed UUID-pair constructor:** when another class's uniquely named constructor accepts UUID-typed args and assigns them directly into semantic service and characteristic fields, a matching call-site UUID field inherits that argument-slot role. This fills wrapper layers whose GATT receiver is inside the SDK; direct GATT API and explicit catalog evidence remain stronger.
+   - **Anchor line:** if no stronger usage or typed-pair evidence, look at the UUID's own source line for naming-convention hints (`_SERVICE` / `_CHAR_` / `BluetoothGattService` / `BluetoothGattCharacteristic`).
    - **Window fallback:** if the anchor line doesn't disambiguate, look at the surrounding ±8 lines.
    - **File-level last resort:** if everything is silent (minified field names, e.g. `f15558a`), classify based on whether the file overall mentions `BluetoothGattService`, `BluetoothGattCharacteristic`, or both. Files using only `BluetoothGattCharacteristic` default to Characteristic; otherwise default to Service.
 
@@ -54,16 +60,40 @@ For each APK it:
    - Inside `merge_records` after each per-UUID extend.
    - As a final pass in `save_output` before writing.
    - Inside `apply_apk_url_evidence.py` and `apply_uuid_name_resolution.py` after their append step, so re-running those scripts never restacks the same URL or Phase-5 note.
-7. **Attempts to pair Characteristics with their parent Service** when the Service UUID appears within the same `.java` file. If no parent can be found locally, `parent_UUID` is omitted (allowed by the schema).
+7. **Attempts to pair Characteristics with their parent Service** using a single candidate found in the same `.java` file. When no candidate or multiple local candidates exist, `parent_UUID` is omitted; services from unrelated files are not used to invent a parent.
 8. **Emits one CLUES record per unique UUID.** Each record carries an `android_info_array` entry tagging which package(s) it was found in. When the same UUID turns up in multiple APKs, the entries are merged: the UUID gets a single record with multiple `android_info_array` items.
-9. **Deletes the temp jadx output dir.** Every APK's decompilation is removed before the next one starts. The persistent output is only the JSON file.
+9. **Deletes the temp jadx output dir.** Every APK's decompilation is removed before the next one starts. The persistent output is only the JSON file. (A reused pre-decompiled tree is shared and is never deleted.)
 
 ## Prerequisites — confirm before starting
 
 - **`jadx` ≥ 1.5** must be installed. `brew install jadx`. Earlier versions don't understand `.xapk` and would need a manual `unzip → base.apk` step.
 - **`aapt`** from the Android build-tools must be reachable. `brew install android-commandlinetools` installs it under `/opt/homebrew/share/android-commandlinetools/build-tools/<ver>/aapt`. The script auto-discovers the newest installed `aapt`.
 - **`python3`** (any 3.9+).
-- **Disk space for jadx output.** A single decompilation can produce 1–4× the APK size in `.java` files. The script writes to `$TMPDIR` (or `/tmp` if unset). Make sure the tmpfs has at least 4 GB free before pointing the skill at a folder of fat APKs (e.g. Dexcom Stelo 170 MB → ~600 MB of Java).
+- **For APKs containing Xamarin/.NET assemblies:** `ilspycmd` on PATH (`dotnet tool install --tool-path ~/.local/bin ilspycmd`), or set `APK_CLUES_ILSPYCMD` to its executable. Compressed Xamarin assembly stores also need `liblz4` (`brew install lz4` on macOS). These tools are not invoked for ordinary DEX-only APKs. The script looks for the Homebrew .NET runtime when a tool-path `ilspycmd` needs `DOTNET_ROOT`. On macOS, it defaults `DOTNET_PROCESSOR_COUNT=2` for each ILSpy process to limit CPU use alongside JADX; set the environment variable explicitly if a different limit is appropriate.
+- **Disk space for jadx output.** A single decompilation can produce 1–4× the APK size in `.java` files. The script writes to `$TMPDIR` (or `/tmp` if unset). Make sure the tmpfs has at least 4 GB free before pointing the skill at a folder of fat APKs (e.g. Dexcom Stelo 170 MB → ~600 MB of Java). For a corpus you will process more than once, decompile it once up front instead — see [Pre-decompiling a corpus](#pre-decompiling-a-corpus-optional).
+
+## Pre-decompiling a corpus (optional)
+
+jadx dominates the per-APK cost, and Phases 1, 4 and 5 can each decompile the same APK again. For a corpus you will process more than once, decompile it once up front with `scripts/predecompile_apks.py`; everything that would run jadx then reuses the result:
+
+```bash
+python3 scripts/predecompile_apks.py /media/user/8TB_APKs/AndroZoo/apks/00 \
+    --base /media/user/8TB_APKs/AndroZoo/apks
+# -> /media/user/8TB_APKs/AndroZoo/apks_jadx/00/<apk name>.jadx.tar.xz  (predecompile.json + sources/)
+```
+
+- **Layout.** Output goes to `<BASE>_jadx/`, mirroring BASE; BASE defaults to the directory passed. Pass `--base` at the corpus root so every shard lands in one `apks_jadx/` tree beside `apks/`, not a `00_jadx/` sibling inside it.
+- **One archive per APK.** Each entry is an xz-compressed tar holding `predecompile.json` (first) and jadx's `sources/`. A jadx tree is tens of thousands of small `.java` files. Written straight to the corpus drive, those files stalled its 8 TB drive-managed SMR disks within half an hour: every jadx ended up waiting on the ext4 journal at ~6 writes/s, which also starved everyone else reading APKs from the disk. As loose trees they also take ~20× the space of the archives. jadx therefore writes into `--work-dir` (default: the system temp dir; it should be a local SSD with room for the trees of the APKs in flight, so the driver holds new jobs while it has less than `--min-work-free-gb`, default 20). The driver packs each finished tree and renames the archive into place. `--format dir` writes plain `<apk name>.jadx/` trees in place instead, for an output root on SSD or CMR storage. Readers accept both forms; a directory goes first when both exist.
+- **Non-Java sidecar.** `python3 scripts/predecompiled_nonjava.py --base <BASE> --paths-file <APK-list>` checks the same APKs for Xamarin/.NET DLLs and `assets/index.android.bundle`. For Xamarin assembly stores, it decodes the DLL payloads. When either kind is present it writes one `<apk name>.nonjava.tar.xz` beside the JADX entry, with `nonjava.json` first and the decoded DLLs and/or raw React Native bundle afterward. The metadata binds it to the APK's name, size, and fingerprint; incomplete or stale sidecars are ignored. This stages inputs only: it does not claim ILSpy C# decompilation or Hermes JavaScript recovery. The managed scanner prefers valid staged DLLs and falls back to reading the APK directly. Keep the APK itself for DEX/smali fallback and for any asset type not staged here.
+- **Reuse is automatic.** `extract_clues.py` looks for `<ancestor>_jadx/<rest of path>.jadx[.tar.xz]` under every ancestor directory of each APK, so no flag is needed, and it keeps working if the drive is mounted elsewhere. For trees kept somewhere else, use `--predecompiled-dir DIR` (repeatable) or `$APK_CLUES_PREDECOMPILED_DIRS`. `--no-predecompiled` turns reuse off.
+- **Same result as a live run.** The driver builds its command with `extract_clues.jadx_command()` and decompiles the same target (an XAPK's base APK). Extractor output from a reused tree was byte-identical to a live run's in testing.
+- **Trust rules.** An entry is used only when its `predecompile.json` matches the APK's name, size and fingerprint (SHA-1 of the first 4 MiB plus the size) and the `--show-bad-code` setting. Timeouts, OOMs and failed decompiles never become entries, so those APKs are still decompiled live. Entries are renamed into place only once complete.
+- **Deep Phase 5** decompiles with `--show-bad-code`, a different decompilation stored as `<apk name>.jadx-show-bad-code.tar.xz`; produce those with `predecompile_apks.py --show-bad-code`. Without them, the deep pass decompiles live.
+- **Agents and manual steps.** `run_unit_agents.py`'s evidence script and the Phase 4/5 decompile steps check first: `python3 scripts/predecompiled_cache.py --extract-to <tmpdir> <apk>` prints a directory containing `sources/` (a directory entry itself, or `<tmpdir>` with the archive unpacked into it), or exits 1 if there is none. Without `--extract-to` it prints the entry, which may be an archive.
+- **Scheduling.** The driver fills the machine without over-committing RAM. It runs the largest DEX first and sizes each jadx's threads and `-Xmx` from its DEX. An explicit `-Xmx` matters because jadx's launcher otherwise lets *each* JVM take 70% of RAM. Jobs start while the CPU-slot and heap budgets allow, and a job's heap and all but one of its CPU slots return to the pool the moment its JVM exits; the last slot is held until the tree is packed (defaults: `--jobs` = CPUs, `--cpu-slots` = 1.25 × CPUs, heap = 90% of MemAvailable). A jadx that runs out of heap retries with double. Re-running resumes, skipping APKs that already have a valid entry. `--bt-only` skips the non-Bluetooth APKs that `extract_clues.py` never decompiles.
+- **Sizes.** At the end, or with `--report`, it prints decompiled-source vs. APK vs. DEX ratios for all APKs and for the Bluetooth subset. It covers the sources' apparent size, what they would take on disk as a tree (every small `.java` file rounds up to a 4 KB block), and what the entries actually occupy (`stored`: the archives, plus any directory entries). It writes them to `_predecompile_summary.json` beside the entries.
+- Measured on AndroZoo shard `00` (2026-10-12): 494 of 495 APKs have usable archives. Those 494 APKs total 22.34 GB; jadx produced 60.00 GB of sources (2.685× APK bytes, 3.692× DEX bytes; per-APK median 2.483×, p90 5.881×) in 8,042,971 files. Loose trees would occupy 84.65 GB (3.789× APK bytes); the archives occupy 4.05 GB (0.181× APK bytes, 6.8% of sources). The usable entries account for 20.6 jadx job-hours; one other APK ran out of memory even with a 32 GB heap. At the same ratios, a ~5.4 TB corpus would produce ~14.5 TB of sources in ~1.94 billion files, or ~1.0 TB of archives.
+- APK discovery skips any directory holding `_PREDECOMPILED_JADX_ROOT.json`, so pointing the extractor at a parent of both `apks/` and `apks_jadx/` won't walk millions of `.java` files.
 
 ## How to invoke
 
@@ -102,12 +132,12 @@ After the run, `/tmp/run-0004-new-uuids.json` contains only records whose UUID w
 When the skill is invoked, the agent translates the user's paths into one call to `extract_clues.py`. The full command-line interface:
 
 ```bash
-python3 /Users/user/.claude/skills/apk-clues-extract/scripts/extract_clues.py \
+APK_CLUES_MODEL=<your model id> python3 /Users/user/.claude/skills/apk-clues-extract/scripts/extract_clues.py \
     <path1> [<path2> ...] \
     [--output CLUES_data_LLM_Android_APK_search.json] \
     [--session-output FILE.json]   # write only UUIDs not present in --output at start of run
     [--semantic-upgrades-output FILE.json]  # write Unknown->named / Unknown->company upgrades
-    [--submitter "Claude (Opus 4.7)"] \
+    [--submitter "Claude (Opus 5.5)"] \
     [--parallel N]      # default 1 (serial). N=4 is a good fit for an 8-core box.
     [--progress-interval 100]  # checkpoint progress + Unknown-name count every N APKs
     [--no-resume]       # ignore checkpoint and re-process every APK from scratch
@@ -115,6 +145,8 @@ python3 /Users/user/.claude/skills/apk-clues-extract/scripts/extract_clues.py \
     [--phase5-deep-re]  # run only the deep Phase-5 RE pass on existing Unknown records
     [--phase5-deep-re-output FILE.json]  # optional mapping report from the deep Phase-5 RE pass
     [--keep-tmp]        # only for debugging; default is to wipe the tempdir after each file
+    [--predecompiled-dir DIR]  # extra root of predecompile_apks.py output (repeatable); the default <ancestor>_jadx/ layout needs none
+    [--no-predecompiled]       # always run jadx, ignoring pre-decompiled output
 ```
 
 `<pathN>` can be any mix of APK files, XAPK files, and directories — directories are walked recursively. Duplicates (same APK reached via multiple paths) are skipped via the checkpoint.
@@ -122,7 +154,7 @@ python3 /Users/user/.claude/skills/apk-clues-extract/scripts/extract_clues.py \
 **Worked example** — the agent's bash translation of the slash-command above:
 
 ```bash
-python3 /Users/user/.claude/skills/apk-clues-extract/scripts/extract_clues.py \
+APK_CLUES_MODEL=<your model id> python3 /Users/user/.claude/skills/apk-clues-extract/scripts/extract_clues.py \
     /Volumes/2TB_ExFAT/__BLUUID_APKS/0002 \
     /Volumes/2TB_ExFAT/__BLUUID_APKS/0003 \
     "/Users/user/Downloads/DexcomStelo/Stelo by Dexcom_2.1.0.2972_APKPure.xapk" \
@@ -167,6 +199,8 @@ The agent's flag-handling: it parses the slash-command args, peels off `--phase1
 
 **Targeted re-extraction + deep Phase-5 RE (`--search-unknown`).** Re-runs Phase 1 against only the APKs that originally yielded records with `UUID_name: "Unknown"` (or empty/missing) in the current `--output`, then runs the deep Phase-5 reverse-engineering pass over those same Unknown UUIDs. The target set is derived from each Unknown record's `android_info_array[].package_path` field, deduped to unique APK paths. For each derived APK, the checkpoint's `status: ok:*` is *ignored* (so the APK is re-processed even though it's already in the sidecar), but the rest of the checkpoint is preserved untouched — non-target APKs aren't re-scanned and aren't dropped from the sidecar. This is the right tool when Phase 1's classifier has improved or when the remaining names need behavioral recovery from decompiled code. Positional path args act as a filter when given — only Unknown-record APKs whose absolute path matches or sits under one of those paths are processed. Paths that no longer exist on disk are skipped with a warning. The flag makes the positional path argument optional. Example:
 
+For AndroZoo APKs, `package_path` is stored as `AndroZoo/apks/...` rather than a machine-specific absolute mount path. Keep CLUES evidence descriptions short and human-readable: state what was found, whether its role was source-reviewed or remains an inference, and any app-specific parent needed to explain a disagreement. Do not put long source-file paths, line-number lists, or repeated APK paths in descriptions. Preserve detailed source-review citations separately in the external review artifacts, using relative `AndroZoo/apks_jadx/...` paths; `package_path` remains the concise CLUES provenance. `--search-unknown` resolves relative APK paths on the Linux corpus mount; set `ANDROZOO_ROOT=/path/to/AndroZoo` if that mount moves. Other APK paths retain their input form.
+
 ```bash
 # retry every Unknown-yielding APK in the corpus
 python3 .../extract_clues.py --search-unknown --output data/CLUES_data_LLM_Android_APK_search.json --parallel 4
@@ -183,7 +217,8 @@ The deep Phase-5 portion of `--search-unknown` decompiles each target APK with `
 - Traces obfuscated UUID constants through service-discovery comparisons into `BluetoothGattCharacteristic` alias fields.
 - Classifies service UUIDs from `BluetoothGattService.getUuid().compareTo(...)` and `getService(...)`, correcting Phase-1 file-level defaults when needed.
 - Reads alias behavior: write helpers, `writeCharacteristic`, `readCharacteristic`, `setCharacteristicNotification`, descriptor notification enables, and `onCharacteristicChanged`.
-- Uses nearby UI/log/action strings (`BluConsole`, `EXTRAS_CONSOLE_TEXT`, send-button command paths, proxy PDU flow) to synthesize conservative names such as `ARUBA_BLUCONSOLE_INPUT_CHARACTERISTIC` or to preserve exact recovered field names such as `avion_char_out_uuid`.
+- Uses GATT sinks and nearby UI/log/action strings (`BluConsole`, `EXTRAS_CONSOLE_TEXT`, send-button command paths, proxy PDU flow) to support role classification and preserve exact meaningful field names such as `avion_char_out_uuid`.
+- Behavior alone never creates a `UUID_name` or a host-package-prefixed label. The APK package ID identifies the app, not the owner of every UUID in its bundled code; a UUID may come from a shared third-party SDK. Deep Phase 5 writes a name only when a meaningful UUID field or GATT alias name is recovered from source. Otherwise it can still record a grounded GATT role and evidence while leaving the name Unknown. Existing non-Unknown names are preserved.
 
 Use `--phase5-deep-re` when you want **only** this deep Phase-5 pass against the current `--output` without re-running normal extraction first. It uses the same Unknown-record target derivation and accepts the same optional positional path filter:
 
@@ -195,8 +230,10 @@ python3 .../extract_clues.py /tmp/two-apks \
     --semantic-upgrades-output /tmp/deep_phase5_upgrades.json
 ```
 
+**Deep Phase-5 resumability (checkpoint sidecar).** The deep Phase-5 pass `jadx --show-bad-code`-decompiles one APK at a time — minutes each, hours for a whole corpus — and the recovered names are only applied to `--output` at the very end. To survive an interruption (OOM, reboot, Ctrl-C, a killed process) it checkpoints **per APK** to a JSON-Lines sidecar `<output>.phase5_deep.jsonl`: each finished APK appends one line `{sha, path, status, mapping}` and the line is `fsync`-ed, so at most the single in-flight APK's work is lost. Re-running the *same command* replays the sidecar — APKs already recorded (matched by APK content SHA-1) are skipped and their recovered names restored from disk — so the run resumes from the next un-decompiled APK instead of starting over. A torn final line from a crash mid-append is detected and ignored. On **clean completion** the sidecar is deleted, so a later re-run re-derives the Unknown set fresh (it does not wrongly skip APKs a previous successful run already handled). `--no-resume` discards the sidecar up front and re-decompiles everything. This applies to both `--phase5-deep-re` and the deep-Phase-5 portion of `--search-unknown`. The sidecar is independent of the Phase-1 `.processed.json` checkpoint — and `--phase5-deep-re` deliberately ignores `.processed.json` (a Phase-1 `ok:*` status means "extracted", not "deep-RE'd", so it must not suppress deep Phase-5 targets).
+
 - The default `--output` is `data/CLUES_data_LLM_Android_APK_search.json` (relative to whatever directory the script is run from — typically `CLUES_Schema/`, which is what the agent always passes explicitly). Pre-existing entries in that file are **loaded** at start so re-running on more APKs accumulates results.
-- `--submitter` defaults to the active LLM model name (`Claude (Opus 4.7)` for this skill). Override only if running under a different model.
+- `--submitter` is the label credited on every evidence entry the run writes, so it must name the model actually doing the work. Claude Code does not tell child processes which model is running, so **prefix every script command with `APK_CLUES_MODEL=<your model id>`**, using the exact model ID from your system prompt (`APK_CLUES_MODEL=claude-opus-5-5` → `Claude (Opus 5.5)`). Each Bash call starts a fresh shell, so an earlier `export` does not carry over. `scripts/submitter.py` resolves the label the same way for every script: `APK_CLUES_SUBMITTER` or `CLUES_SUBMITTER` (a finished label, used verbatim), then `APK_CLUES_MODEL`, then the fallback `Claude (Opus 5.5)`; `--submitter` overrides all three for one `extract_clues.py` run. The extractor prints the label at startup (`[*] submitter=…`), so check it. Sub-agent results carry their own label; see **Credit each result to the model that produced it** under the sub-agent architecture.
 - `--keep-tmp` retains the per-APK jadx output (under `$TMPDIR/apk_clues_<pid>_<sha>/`) for manual inspection. Off by default — production runs should delete to save disk.
 
 ## Output format
@@ -213,7 +250,7 @@ The output JSON conforms to `CLUES_schema.json` and is a flat top-level array of
     "evidence_array": [
         {
             "description": "Found in decompiled DEX of com.dexcom.stelo v2.1.0.2972 (XAPK 'Stelo by Dexcom_2.1.0.2972_APKPure.xapk'). Referenced in BluetoothGattService construction.",
-            "submitter": "Claude (Opus 4.7)"
+            "submitter": "Claude (Opus 5.5)"
         }
     ],
     "android_info_array": [
@@ -228,7 +265,11 @@ The output JSON conforms to `CLUES_schema.json` and is a flat top-level array of
 }
 ```
 
-Characteristics carry `parent_UUID` when the parent service was identifiable in the same Java file:
+Characteristics carry `parent_UUID` only when the parent service is supported by a specific service-to-characteristic relationship, such as a characteristic lookup on the service object. A service and characteristic appearing in the same file or APK is not sufficient evidence. Preserve existing reviewed parent fields when merging; investigate conflicting proposals rather than overwriting them.
+
+Source review must distinguish GATT from RFCOMM/SPP and unrelated UUID-shaped identifiers. A generic `getService` call is not sufficient: confirm the owner and a Bluetooth GATT receiver. BuildConfig hotel and location IDs without independent BLE use are not GATT UUIDs. The extractor may still emit RFCOMM-only values as weak file-level defaults, so inspect their actual dataflow before accepting them.
+
+For example:
 
 ```json
 {
@@ -264,6 +305,300 @@ Implications:
 - **For schema validation.** `check-jsonschema` doesn't transparently combine shards. Glob the file pattern when the output is split: `data/CLUES_data_LLM_Android_APK_search_*.json` (see the [Validation](#validation) section below). The pattern works for either form because globs match the single-file basename too when no shards exist.
 - **For child characteristics whose parent service has a UUID starting with a different hex letter.** The child still carries `parent_UUID`, but the parent's record lives in a different shard. This is intentional — the alternative (moving children to follow parents) would defeat the by-UUID bucketing and make `load_clues` non-trivial. Consumers that want parent/child pairing should follow `parent_UUID` after loading the combined dataset.
 - **For Phase 6 self-improvement.** `KNOWN_NON_BLE_UUIDS` and `KNOWN_SDK_JAVA_PACKAGES` updates live in `scripts/extract_clues.py`, not in the data files, so the split doesn't affect Phase 6 at all.
+
+## Resuming across sessions — the processing ledger (START HERE for "continue where we left off")
+
+Weekly top-up runs must survive a **cold start**: a brand-new session with no memory, no
+transcript, no context. That is handled by a **ledger stored beside the APKs**, not in a
+session. Nothing about resumption depends on remembering a previous run.
+
+```
+<apk-repo>/.clues_ledger/
+    README.md       self-describing: what this is + the exact resume commands
+    ledger.jsonl    APPEND-ONLY event log — the source of truth
+    state.json      derived rollup (safe to delete; rebuild with `rollup`)
+```
+
+One ledger per APK repository, so the AndroZoo and BLUUID corpora are tracked separately:
+
+```bash
+SK=<this skill dir>
+python3 $SK/scripts/clues_ledger.py status --repo /media/user/android/AndroZoo
+python3 $SK/scripts/clues_ledger.py status --repo /media/user/android/__BLUUID_APKS
+```
+
+`status` prints an ok / pending / failed / refused / skipped / untouched matrix for every
+phase, so a fresh agent learns the state of the world in one command. `.clues_ledger/README.md`
+restates the resume recipe *inside the repository*, which is what makes this work when the
+agent has no idea the skill exists yet.
+
+### The weekly top-up loop
+
+```bash
+REPO=/media/user/android/AndroZoo
+L="python3 $SK/scripts/clues_ledger.py"
+
+$L scan   --repo "$REPO"                              # register APKs added since last time
+$L status --repo "$REPO"                              # what is left
+$L next   --repo "$REPO" --phase 1 --limit 20 > batch.tsv
+
+# phase 1 (offline Python, no LLM) on JUST those 20 — never the whole corpus. It writes a
+# fresh STAGING file, not the dataset, so phase 1-review can correct it before the merge.
+cut -f3 batch.tsv | sed "s|^|$REPO/|" > batch_paths.txt
+python3 $SK/scripts/extract_clues.py $(cat batch_paths.txt) \
+    --output /tmp/batch.json --parallel 20
+while read sha pkg path; do
+  $L record --repo "$REPO" --apk "$sha" --phase 1 --status ok
+done < batch.tsv
+
+# phase 1-review: one Haiku sub-agent per APK checks its records against its source
+python3 $SK/scripts/plan_agent_work.py --review-file /tmp/batch.json --out review_q.json
+python3 $SK/scripts/run_unit_agents.py --queue review_q.json --results-dir review_results \
+    --apk-host local --apk-roots "$REPO" --ledger-repo "$REPO"
+python3 $SK/scripts/apply_source_review.py /tmp/batch.json review_results \
+    --out /tmp/batch.reviewed.json
+# the curator reads /tmp/batch.reviewed.review_report.md, then the reviewed records merge:
+python3 <CLUES_Schema>/scripts/merge_clues.py /tmp/batch.reviewed.json \
+    --target data/CLUES_data_LLM_Android_APK_search.json
+
+# LLM phases 2-5: one sub-agent per work unit
+python3 $SK/scripts/plan_agent_work.py --target data/CLUES_data_LLM_Android_APK_search.json \
+    --session-file /tmp/batch.reviewed.json --out q.json
+python3 $SK/scripts/run_unit_agents.py --queue q.json --results-dir results \
+    --apk-host local --apk-roots "$REPO" --max-parallel 12 --deadline-minutes 50
+# ...record each completed unit's phase, then apply its results (apply_*.py)
+```
+
+Because phase 1 writes a per-batch staging file here, the ledger (not the extractor's
+`<output>.processed.json` checkpoint beside the dataset) is what records which APKs are done.
+
+`next` sorts by SHA256, so successive batches never overlap even across machines, and a
+half-finished batch simply reappears next time (its phase rows are still `pending`).
+
+### What is and is not per-APK
+
+Record phases 4, 5-shared and 6 with `--scope batch`, not per APK. Their evidence spans
+multiple APKs — a shared-SDK cluster only becomes visible once >=3 unrelated apps carry the
+same UUID — so they cannot complete while looking at one APK. Run them at a batch boundary.
+Phases 1, 1-review, 2, 3 and 5-local are genuinely per-APK.
+
+### Why append-only
+
+Phase work runs as many parallel `claude -p` sub-agents across more than one host. One
+self-contained JSON line per event is safe under concurrent writers; rewriting a single
+state document is not. `state.json` is only a cache — delete it and run `rollup`.
+
+## Sub-agent architecture for phases 1-review and 2-6 (read before running any LLM phase)
+
+Phases 1-review and 2-6 are LLM-driven. They **must not** run as one long inline loop: evidence
+from one APK bleeds into the reasoning about the next (attention dilution), and the
+orchestrator's context fills with decompiled Java it will never need again.
+
+Instead the orchestrator **dispatches one sub-agent per work unit**. A sub-agent
+receives a self-contained brief and returns a small structured result. It never loads
+the canonical corpus.
+
+### Unit granularity is a correctness constraint
+
+"One sub-agent per APK" is the right shape for *APK-scoped* work, but two phases are
+inherently cross-APK and cannot be expressed that way:
+
+| Unit | Phases | Why this unit |
+| --- | --- | --- |
+| `review` | 1-review | One APK build's Phase-1 records, checked against that build's own decompiled source. A UUID's role and parent hold only within one APK's code, so a record with several hosts is reviewed once per host. Split into `review:<pkg>@<sha8>#NofM` above 50 records; the chunks share one staged source tree. See [Phase 1-review](#phase-1-review--check-each-apks-phase-1-records-against-its-source). |
+| `apk` | 2, 3, 5-local | All APK-scoped work for one APK in one agent: its company, its re-download URL, and any Unknown UUID whose **only** host is that APK. Split into `apk:<pkg>#NofM` chunks above 25 Unknown UUIDs. |
+| `cluster` | 4 | Phase 4 identifies a UUID family shared by **>=3 unrelated apps**. The evidence *is* the cross-app sharing, so a per-APK agent cannot see it. The cluster is the smallest correct unit. |
+| `uuid` | 5-shared | A still-Unknown UUID observed in several apps — likewise not attributable to one APK. |
+| `session` | 6 | Aggregate by nature (it patches `extract_clues.py` from the run's lessons). Runs in the orchestrator, not a sub-agent. |
+
+### Configuration — `config/agent_config.yaml`
+
+Model choice, refusal fallback, per-unit parallelism and phase enablement all live in
+that one file. Inspect the resolved configuration with:
+
+```bash
+python3 .../scripts/agent_config.py
+```
+
+It defines `agents.primary` and `agents.fallback`, `refusal.patterns` + `refusal.marker`,
+`units.<type>.max_parallel`, and `phases.<n>.enabled`. Point the skill at a non-Claude
+model by adding a `backends:` entry of `kind: external_command` (a `codex-cli` and a
+`gpt-cli` example ship in the file) and setting `agents.primary.backend` to it.
+
+**Sub-agents are `claude -p` subprocesses, not in-process Agent-tool calls.** That is a
+deliberate choice, and it is what makes exact control possible:
+
+| Need | Mechanism |
+| --- | --- |
+| exact model, not a family | `--model claude-opus-5` (full ids *and* the `opus`/`sonnet`/`haiku` aliases are accepted) |
+| per-unit reasoning effort | `--effort max` |
+| genuinely fresh context per unit | a new process per unit — nothing leaks between APKs |
+| non-Claude backends | swap `command` (a `codex-cli` and a `gpt-cli` example ship in the config) |
+
+**Always pass `--model` explicitly.** Claude Code can transparently fall back from Opus
+to Sonnet once an Opus usage threshold is crossed, so an inherited default would silently
+run some units on a different model and make results non-comparable.
+
+**Distinguish a refusal from an infrastructure failure.** A rate-limited `claude -p` inner
+can exit rc=0 carrying `is_error: true` / `api_error_status: 429`, which looks like a
+successful-but-empty unit. `backends.<name>.error_markers` catches those and retries on the
+*same* agent; only a `refusal.patterns` match triggers the fallback agent.
+
+### Orchestrator loop
+
+```bash
+# 1. plan — loads the 150 MB corpus ONCE, emits bounded per-unit briefs
+python3 .../scripts/plan_agent_work.py \
+    --target data/CLUES_data_LLM_Android_APK_search.json \
+    --session-file "$SESSION" --out work_queue.json
+
+# 2. dispatch — one sub-agent per unit, honouring units.<type>.max_parallel
+# 3. collect — each agent returns a mapping in the shape its apply_*.py expects
+# 4. apply   — apply_company_enrichment / apply_sdk_identification / apply_uuid_name_resolution
+# 5. merge   — new records land via merge_clues.py (never by an agent reading shards)
+python3 CLUES_Schema/scripts/merge_clues.py NEW.json \
+    --target data/CLUES_data_LLM_Android_APK_search.json --report merge_report.json
+```
+
+**Credit each result to the model that produced it.** `run_unit_agents.py` starts every sub-agent with `APK_CLUES_SUBMITTER` set to its model's label and stamps each result file with `_model_used` and `_submitter`. Both name the model that actually answered, read from the `modelUsage` block of the `claude -p` envelope (the entry with the most output tokens), so a refusal fallback or a silent Opus→Sonnet downgrade is credited correctly. Apply results under their own label, not yours: group them by `_submitter` and prefix each group's `apply_*.py` command with it, e.g. `APK_CLUES_SUBMITTER="Claude (Opus 5)" python3 …/apply_uuid_name_resolution.py CLUES.json mapping.json`.
+
+`plan_agent_work.py` delegates unit discovery to the existing `list_*.py` scripts, so
+the queue always matches what the `apply_*.py` scripts consume. Briefs are capped:
+`host_packages` is trimmed to the 8 smallest (with the true total retained as
+`host_packages_total`), because a widely-shared UUID otherwise dragged ~85 KB of host
+records into a single brief.
+
+### Refusal protocol
+
+1. Match each sub-agent result against `refusal.patterns`
+   (`agent_config.py --check-refusal FILE` exits 1 on a match).
+2. On a match, write `refusal.marker` verbatim into the transcript **and** the run
+   report, together with the `unit_id`, so it is greppable afterwards.
+3. Retry that unit under `agents.fallback`, up to `refusal.max_fallback_attempts`.
+4. If `refusal.sticky` is true (the default), every later unit in the run also uses the
+   fallback agent.
+5. A unit still refused after fallback is recorded as `status: refused` and skipped —
+   never silently dropped.
+
+## Phase 1-review — check each APK's Phase-1 records against its source
+
+Phase 1 is regex plus naming heuristics, and its first pass is often wrong in ways only the
+code shows. Codex's GPT-6 Luna source audits of AndroZoo shards 00–03 (October 2026) found
+these classes of error, all of which Phase 1-review checks:
+- non-Bluetooth IDs emitted as GATT UUIDs: App Center, New Relic and OneSignal IDs, OAuth
+  client IDs, signing keys, login and catalog IDs;
+- iBeacon/AltBeacon Region UUIDs and RFCOMM UUIDs emitted as GATT services;
+- whole families of characteristics labelled as services;
+- parents guessed from numbering or from sitting in the same file;
+- a shared 16-bit UUID attributed to the wrong SDK vendor.
+
+Phase 1-review dispatches one sub-agent per APK build. The sub-agent is given that APK's Phase-1
+candidates and its jadx tree as working directory, and re-derives each UUID's verdict, role,
+parent, name and SDK from the code.
+
+**Model: Haiku 5.5 at max effort, with Sonnet 5.5 max as fallback** (`units.review` in
+`config/agent_config.yaml`). On 2026-11-01 both models reviewed 15 shard-03 APKs (179
+records; 87 carried a Luna source decision):
+- Haiku matched Sonnet on every Luna-labelled decision: all 28 non-GATT records rejected
+  (Haiku left 1 as "Unconfirmed"), 40/40 roles, 24/24 parents and 25/25 first-pass role errors
+  fixed. Neither asserted a wrong role or parent.
+- Haiku cost $0.42/APK against $1.48 for Sonnet, with a median of about 6 minutes per APK.
+- Where they differed, Haiku abstained and Sonnet assigned naming-only roles.
+- Both found source-proven roles and parents that Luna had withheld; spot checks confirmed them.
+
+Full results are in `~/Downloads/AndroZoo_CLUES_model_experiment_20261101/RESULTS.md`. Change the
+review prompt (`REVIEW_PROMPT` in `run_unit_agents.py`) only with a re-test like that one.
+
+### When to run it
+
+Right after Phase 1 and **before anything merges into the dataset** or reaches phases 2–5,
+because it can drop records and change their roles. Point it at a Phase-1 file that holds just
+this batch's records: a fresh `--output` staging file, as in [the weekly top-up
+loop](#the-weekly-top-up-loop), or an `--session-output`. The review corrects the batch's
+records. `merge_clues.py` appends new UUIDs verbatim but only unions arrays into UUIDs already
+in the dataset, so it does not rewrite records that are already there.
+
+### Step 1R.1 — plan one unit per APK build
+
+```bash
+python3 $SK/scripts/plan_agent_work.py --review-file /tmp/batch.json --out review_q.json
+```
+
+With `--review-file` the planner builds only review units: one per `package_path`, chunked
+above `units.review.max_candidates_per_unit` (50). `--scope-packages` and `--limit` work as
+for the other phases.
+
+### Step 1R.2 — dispatch
+
+```bash
+# on the corpus box, where the APKs and their jadx archives are (jadx must be on PATH there):
+PATH=$HOME/.local/bin:$PATH python3 $SK/scripts/run_unit_agents.py --queue review_q.json \
+    --results-dir review_results --apk-host local --apk-roots /media/user/8TB_APKs \
+    --ledger-repo <APK repo>
+# from another machine: the driver copies each tree over ssh into --review-workdir
+python3 $SK/scripts/run_unit_agents.py --queue review_q.json --results-dir review_results \
+    --apk-host user@<apk-host> --apk-roots /media/user/8TB_APKs
+```
+
+- **Source staging.** Each tree comes from the APK's predecompiled entry. An archive is unpacked;
+  a directory entry is used in place and never deleted. Without an entry, the tree comes from a
+  live `jadx --no-res --no-debug-info` run, which may be partial. The tree lands in
+  `--review-workdir` (default `$TMPDIR/clues_review`; keep it on an SSD) and is removed after the
+  APK's last unit, unless `--keep-review-sources` is set. The result's `_sources` records where
+  the tree came from.
+- **Read-only agent.** The `claude-cli-review` backend allows `Read`, `Grep`, `Glob` and
+  `grep`/`rg`/`wc`/`ls` through Bash. It has no web access and no edit tools, because the
+  decompiled source is untrusted input.
+- **Validation, repair, escalation.** An answer must return every candidate exactly once, with
+  an allowed `verdict` and `role_basis`. An unusable answer gets one repair turn in the same
+  session (`--resume`, which reuses the cached context). If it is still unusable, the unit runs
+  fresh on the fallback agent. If that also fails, the unit is recorded as `no_json` and retried
+  on the next run. A refusal goes straight to the fallback agent. Review units keep their own
+  refusal flag, separate from the Opus phases.
+- **Time and cost.** `units.review.timeout_s` is 3600 s; the largest experiment unit, 47
+  records, took 18 minutes. Expect about $0.42 and 6 minutes per APK on Haiku, with
+  `max_parallel` 6. Each result carries `_cost_usd` and its `_attempts`.
+- **Ledger.** Each APK is recorded as phase `1-review`. A chunked APK is marked `ok` only when
+  all of its chunks are.
+
+### Step 1R.3 — apply into a new file, read the report, merge
+
+```bash
+python3 $SK/scripts/apply_source_review.py /tmp/batch.json review_results \
+    --out /tmp/batch.reviewed.json
+```
+
+The input is never modified. The script writes four files:
+- `/tmp/batch.reviewed.json`: the reviewed records;
+- `…review_report.md`: every change and its reason, with the agent's file:line citations;
+- `…review_rejected.json`: the dropped records;
+- `…review_names.<model>.json`: the name and company proposals.
+
+The rules, per APK build and UUID:
+
+| Agent verdict | Effect |
+| --- | --- |
+| `Not Bluetooth` / `Other Bluetooth` | That build's `android_info_array` row and its Phase-1 evidence line are removed. A record with no host left goes to the rejected sidecar. |
+| GATT role with `role_basis` `direct_use` / `sdk_wrapper_flow` | `UUID_usage_array` becomes the union of confirmed roles, plus the old roles if some host was not reviewed. The leading role in `UUID_purpose` follows. |
+| GATT role that is only `naming_only`/`none`, or `Unconfirmed` | The extractor's role is kept, and a "role not confirmed" evidence entry is added. |
+| `parent_UUID` | Set only from a source-shown binding. Removed when the APKs disagree, when the record is no longer a characteristic, and when a full review did not confirm the extractor's parent. |
+| `UUID_name`, `sdk_or_company` | Not applied. They become proposals; see below. |
+
+Each reviewed host gets one short, citation-free evidence sentence. It is credited to the model
+that reviewed it (the result's `_submitter`, for example `Claude (Haiku 5.5)`).
+
+Before merging, the curator reads the report. Two parts need a human decision:
+- **Rejected records.** These include ScanFilter-only service UUIDs, which are `Other Bluetooth`
+  under this policy (Luna's too). Keep one by hand, with usage `Advertisement`, if the
+  advertised UUID is worth recording.
+- **Name and company proposals.** Following the keep-or-drop rule for names and companies,
+  keep a model's proposals with
+  `APK_CLUES_SUBMITTER="<that model's label>" python3 $SK/scripts/apply_uuid_name_resolution.py /tmp/batch.reviewed.json <its proposals file>`.
+  They have `cache_in_sdk_table: false`, so one APK's names do not enter `KNOWN_SDK_UUIDS`.
+
+The report's last section lists GATT UUIDs that agents saw but Phase 1 missed. They are not
+added; treat them as Phase 6 material for improving `extract_clues.py`. Then merge with
+`merge_clues.py`, and re-validate the schema (see [Validation](#validation)).
 
 ## Phase 2 — web-enrichment of "(inferred from package id)" records
 
@@ -428,7 +763,7 @@ The script:
 
 - Refuses to commit any mapping entry whose `verified` field isn't `ok` (so the verify gate from Step 3.2 is enforced).
 - For every CLUES record whose `android_info_array` contains a mapped `(package_id, version_name)`, appends one `evidence_array` entry with the URL, the verification status, and a default human-readable description. **Idempotent**: if the URL is already present in `evidence_array`, the entry is skipped — safe to re-run.
-- Inherits the `submitter` from the record's existing evidence entries when the mapping doesn't specify one, so the new URL evidence attributes the same way as the discovery evidence.
+- Credits the new URL evidence to the mapping entry's `submitter` when it names one, otherwise to this run's label (see `--submitter` above), not to whoever created the record.
 - Re-sorts the JSON by UUID and writes back atomically.
 
 Re-validate the schema after applying — the `URL` and `description` fields are both in the CLUES `evidence_array_item` schema, so a clean run should still pass `check-jsonschema`.
@@ -472,7 +807,7 @@ The agent should work through clusters in size order (biggest cluster = most rec
 
 Pick the smallest host APK from `host_packages` (smallest `local_path` filesize) and:
 
-1. **Decompile** with jadx (`--no-res --no-debug-info`).
+1. **Decompile** with jadx (`--no-res --no-debug-info`) — but first run `python3 scripts/predecompiled_cache.py --extract-to <tmpdir> <apk>`: if it prints a directory, that is the APK's pre-decompiled tree (`sources/` inside; treat it as read-only), so skip jadx.
 2. **Find the BLE-handling classes.** Grep the decompiled tree for one of the cluster's UUIDs; the file containing the UUID literal is almost always the SDK's BLE class. JADX leaves a comment `/* JADX INFO: compiled from: <OriginalName>.java */` near the top of every file — that's the unobfuscated source filename and it survives ProGuard. Unique-looking class names (`Kubi.java`, `KubiManager.java`, `LibrePatchService.java`, etc.) are the gold signal.
 3. **Look at the surrounding package's imports.** If the SDK is a sub-library inside a larger framework (e.g. the Kubi BLE code is *inside* the Zoom Android SDK), that parent framework's package will be imported at the top of the BLE file. `import us.zoom.core.helper.ZMLog` is what told us Kubi shipped via Zoom.
 4. **Check resources too.** If the host app uses a UI for the SDK (a "Kubi" checkbox, an "AiDot" toggle), the SDK's brand name will appear in `res/values/strings.xml` or as resource IDs in `R.java`.
@@ -567,10 +902,10 @@ For each entry in `needs_naming`, the agent should follow this cascade — **sto
 
 1. **Public-SDK lookup (cheapest).** If `company` names a public SDK with documented UUIDs (Estimote, Nordic NUS, TI OAD, Microchip ISSC, Tuya/Thingclips, CONTEC SpO2, Skidata MobileFlow, ETI thermalib, …), the SDK's GitHub repo or developer docs almost always has the UUID-to-name mapping. WebSearch for `"<UUID> <SDK name>"` or grep the SDK's public Android repository.
 2. **UUID-shape inference.**
-   - **UUID16 patterns:** 0xFFE0..0xFFE3 are TI SimpleProfile defaults (already cached in `KNOWN_SDK_UUIDS`); 0x18xx and 0x2Axx that escaped the SIG filter often signal a vendor mis-using SIG-reserved ranges and the name follows the SIG convention.
+   - **UUID16 patterns:** FFAx, FFEx and FFFx values are reused by different vendors; do not infer an owner or semantic name from those numbers alone. 0x18xx and 0x2Axx that escaped the SIG filter often signal a vendor mis-using SIG-reserved ranges and the name follows the SIG convention.
    - **UUID128 OUI suffix:** the last 6 hex chars of a UUID128 base often embed an IEEE OUI (e.g. ASSA ABLOY's `00177a`, Sony's `0917cf`). Search the IEEE OUI registry; if the OUI is known, the UUID is almost certainly that vendor's and the name follows the position within their base.
    - **UUID128 family patterns:** when several UUIDs share a fixed suffix (`-xxxx-xxxx-xxxx-aabbccddeeff`), they're a family from one vendor. If the family has 8–32 members, the first 16 bits of the variable segment usually encode `(service<<8 | characteristic)` — and 0x0000/0x0001 endings suggest the canonical Service+TX/RX trio.
-3. **Decompile + grep (most expensive, highest signal).** Pick the smallest `local_path` from `host_packages`, decompile with jadx (`--no-res --no-debug-info -d <tmpdir> <apk>`), and grep the decompiled tree for the UUID literal:
+3. **Decompile + grep (most expensive, highest signal).** Pick the smallest `local_path` from `host_packages`, decompile with jadx (`--no-res --no-debug-info -d <tmpdir> <apk>`) — or, if `python3 scripts/predecompiled_cache.py --extract-to <tmpdir> <apk>` prints a directory, use that pre-decompiled tree in place of `<tmpdir>` — and grep the decompiled tree for the UUID literal:
    ```bash
    grep -rln "<uuid>" /tmpdir/sources/ | head -5
    ```
@@ -587,12 +922,14 @@ python3 /Users/user/.claude/skills/apk-clues-extract/scripts/apply_uuid_name_res
     /tmp/uuid_name_mapping.json
 ```
 
+Set `APK_CLUES_SUBMITTER` to the actual reviewing model before this helper runs. For example, prefix the command with `APK_CLUES_SUBMITTER="GPT-6 Luna"` for Luna-reviewed mappings; do not let a fallback model label miscredit a different worker.
+
 The script:
 
 - Replaces `UUID_name` **only** when the current value is `"Unknown"` — a previously-curated name is never overwritten.
 - Replaces `UUID_purpose` when supplied (always — the static-extractor-generated purpose is intentionally low-quality, so a curator's better description wins).
 - Replaces `company` when supplied **and** the current value is `"Unknown"` / `(inferred from package id)` / a Phase-4 `Unidentified shared SDK` or `Third-party SDK code (declared in Java package ...)` marker. Curated values are protected. The supplied `company` must be the **bare company name**; commentary belongs in `note` (which becomes an evidence entry) or in `UUID_purpose`. `company_sanitizer.sanitize_for_write` auto-strips any parenthetical / em-dash commentary that slips in, emits a stderr `[sanitize]` warning, and tucks the stripped text into a fresh evidence entry — so the data ends up clean even if the mapping wasn't.
-- Appends a `"Phase-5 UUID-name resolution: <note>"` evidence entry when `note` is supplied (attribution inherited from the record's existing evidence_array submitter).
+- Appends a `"Phase-5 UUID-name resolution: <note>"` evidence entry when `note` is supplied (credited to this run's submitter label, not inherited from the record's earlier evidence).
 - Re-sorts the JSON by UUID and writes back atomically.
 - **Prints the Python diff for `KNOWN_SDK_UUIDS`** so a curator can paste the new entries into `extract_clues.py`. Every future Phase-1 run then hits the table directly and never has to re-resolve these UUIDs — preferred over per-record patches, exactly as in Phase 4.
 
@@ -705,13 +1042,14 @@ A clean run prints `ok -- validation done`. Failures usually indicate either a m
 - **No iOS `.ipa` support.** The schema's `android_info_array` is Android-only; iOS UUID extraction is a different skill.
 - **No automatic company-name guessing.** The package_id is captured verbatim into `android_info_array`; populating `company` / `UUID_name` is a human task.
 - **No advertisement-data scraping.** Even though `adv_data_type_array` / `adv_data_type_str_array` are in the schema, the extractor has no way to know from static decompilation whether a UUID actually shows up on the air. Those fields are omitted.
-- **No deobfuscation beyond jadx's defaults.** Heavily obfuscated apps (ProGuard / R8 / DexGuard with string encryption) may hide UUIDs entirely. The script logs the file as "0 UUIDs found" rather than guessing.
+- **No deobfuscation beyond jadx's defaults or ILSpy's managed decompilation.** Heavily obfuscated or encrypted code may hide UUIDs entirely. Managed scanning currently handles direct DLLs and Xamarin assembly stores, literal C# `Guid` fields with nearby BLE use, and narrowly evidenced 16-byte advertised service arrays. Dynamic UUID construction, other native-code formats, and managed code in XAPK splits outside the selected base APK still need manual review.
 - **No value-set analysis / call-graph reconstruction.** UTDallas's [BLEScope](https://github.com/zuosi/BLE-Scope) (Soot-based VSA + backward slicing, ~2019) can recover a UUID that is assembled at runtime from string concatenation, `getString(R.string.foo)` resource lookups, or a `new UUID(longHi, longLo)` constructor. This skill cannot — it is a regex pass over decompiled source. Empirical comparison on `/Volumes/2TB_ExFAT/__BLUUID_APKS/0000` (12 APKs): this skill matched BLEScope on every package where BLEScope produced output, while also picking up the 5 packages where BLEScope crashed (e.g. on kotlinx-coroutine class shapes Soot 2.5 doesn't understand). If you ever encounter an APK that hides UUIDs behind `StringBuilder` concatenation, you'll want BLEScope; for everything else, jadx + regex + file-level scope is faster and more robust.
 - **No mutation of `CLUES_data_human_verified.json`.** The skill only writes `data/CLUES_data_LLM_Android_APK_search.json`. Merging back into the canonical hand-curated file (`data/CLUES_data_human_verified.json`) is a separate review step.
 
 ## Failure modes & resume
 
-- **jadx hangs or OOMs.** Some pathological APKs (very large dex, native obfuscators) make jadx burn 4 GB of heap. The script invokes jadx with a wall-clock timeout (default 30 minutes per APK; configurable via `--jadx-timeout-sec`). Timed-out APKs are logged with `status: jadx_timeout` and skipped.
+- **jadx hangs or OOMs.** The script invokes jadx with a wall-clock timeout (default 30 minutes per APK; configurable via `--jadx-timeout-sec`). An OOM, timeout, or aborted run is reported as `jadx_failed_or_timeout` and remains retryable, even if a partial `sources/` directory exists. A completed JADX exit 3 with its finished-with-errors marker remains a usable partial result.
+- **Managed-code follow-up incomplete.** `managed_incomplete` in the log and `.processed.json` means the APK contained managed assemblies but ILSpy, liblz4, assembly-store parsing, or C# decompilation failed. The command exits nonzero and a normal rerun retries that APK; fix the stated cause before treating zero UUIDs as complete. For a timeout on a large assembly or a busy host, set `APK_CLUES_ILSPY_TIMEOUT_SEC` to a longer per-assembly limit (the default is 180 seconds) for the retry. `--keep-tmp` retains the decompiled C# for manual inspection.
 - **aapt missing.** The script prints `ERROR: aapt not found on PATH or under /opt/homebrew/share/android-commandlinetools/build-tools/*/aapt` and exits 2. Install with `brew install android-commandlinetools`.
 - **Output file already has entries.** The extractor loads them, de-dupes by UUID, and merges `android_info_array`. Re-running the skill on the same folder is safe and idempotent.
 - **Interrupted mid-folder.** The script writes the output file **after each APK**, so killing it (Ctrl-C, OOM, lid-close) loses at most the in-progress APK. The next invocation will re-process that APK because there's no per-package checkpoint other than the JSON itself — and that re-processing is cheap because the merge is idempotent.

@@ -4,8 +4,10 @@ These are the agent **skills** used to auto-generate the `CLUES_data_LLM_*` data
 
 | Skill | What it does | Produces |
 | --- | --- | --- |
-| [`apk-clues-extract/`](apk-clues-extract/) | Decompiles Android APKs with `jadx` and extracts vendor-specific GATT UUIDs from the Java source. | `data/CLUES_data_LLM_Android_APK_search_{0..f}.json` |
+| [`apk-clues-extract/`](apk-clues-extract/) | Decompiles Android APKs with `jadx` (and any Xamarin/.NET assemblies with ILSpy) and extracts vendor-specific GATT UUIDs from the code. A per-APK sub-agent then checks each record against that APK's source before it reaches the dataset. | `data/CLUES_data_LLM_Android_APK_search_{0..f}.json` |
 | [`web-clues-search/`](web-clues-search/) | Researches unidentified BLE/BTC UUID128 values via web search, GitHub Code Search, and OUI/vendor-pattern analysis. | `data/CLUES_data_LLM_web_search.json` |
+
+`apk-clues-extract`'s extraction step is plain Python. Its LLM phases (the per-APK source review and the enrichment phases) dispatch `claude -p` sub-agents, so they need the Claude Code CLI. The extractor's regression tests are in its `tests/` folder; run them with `python3 -m unittest discover -s tests` from inside the skill folder.
 
 ## Installing
 

@@ -43,6 +43,8 @@ import argparse
 import re
 import sys
 
+from submitter import DEFAULT_SUBMITTER
+
 # System markers we must NEVER strip — downstream tooling treats these as
 # placeholders / cluster-identity tokens (see
 # `apply_company_enrichment.py::_company_is_replaceable` and friends).
@@ -137,7 +139,7 @@ def sanitize_for_write(
     company: str,
     *,
     source: str,
-    submitter: str = "Claude (Opus 4.7)",
+    submitter: str | None = None,
     warn: bool = True,
 ) -> tuple[str, dict | None]:
     """Drop-in helper for apply_*.py scripts.
@@ -159,6 +161,8 @@ def sanitize_for_write(
     cleaned, stripped = clean_company(company)
     if stripped is None:
         return cleaned, None
+    if submitter is None:
+        submitter = DEFAULT_SUBMITTER
     if warn:
         sys.stderr.write(
             f"[sanitize] {source}: stripped commentary from company field\n"

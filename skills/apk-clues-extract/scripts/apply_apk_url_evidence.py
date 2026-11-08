@@ -14,7 +14,7 @@ Usage:
             "URL": "https://apkpure.com/stelo-by-dexcom/com.dexcom.stelo/download/2.1.0.2972",
             "verified": "ok",                          # from verify_apk_url.py
             "direct_download": false,                  # from verify_apk_url.py
-            "submitter": "Claude (Opus 4.7)"           # optional, defaults to existing record's submitter
+            "submitter": "<model label>"               # optional; defaults to this run's label (submitter.py)
         },
         ...
     }
@@ -24,7 +24,7 @@ For each record whose android_info_array contains the matching
     {
         "URL":        "<the URL>",
         "description": "APK at this package version is downloadable from <host>; verified <status>, direct download = <true|false>.",
-        "submitter":   "<as supplied or inherited from the first existing evidence entry>"
+        "submitter":   "<as supplied, else this run's label from submitter.py>"
     }
 
 Duplicate URLs (already present in evidence_array) are skipped, so the
@@ -39,10 +39,7 @@ from urllib.parse import urlparse
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, _HERE)
-from extract_clues import dedupe_evidence_array  # noqa: E402
-
-
-DEFAULT_SUBMITTER = "Claude (Opus 4.7)"
+from extract_clues import DEFAULT_SUBMITTER, dedupe_evidence_array  # noqa: E402
 
 
 def add_url_evidence(rec: dict, url: str, status: str, direct: bool, submitter: str | None) -> bool:
@@ -58,12 +55,7 @@ def add_url_evidence(rec: dict, url: str, status: str, direct: bool, submitter: 
     if url.strip().lower() in existing_urls:
         return False
     if submitter is None:
-        # Inherit the submitter from the first existing evidence entry if any.
-        for e in rec["evidence_array"]:
-            if isinstance(e, dict) and e.get("submitter"):
-                submitter = e["submitter"]
-                break
-    if submitter is None:
+        # Credit the model doing this run, not whoever created the record.
         submitter = DEFAULT_SUBMITTER
 
     host = urlparse(url).netloc or "the source"
@@ -136,7 +128,8 @@ def main(argv: list[str]) -> int:
 
     sys.stderr.write(
         f"Added {added} URL evidence entries across {touched} records "
-        f"({len(mapping_raw)} mappings supplied).\n"
+        f"({len(mapping_raw)} mappings supplied; submitter {DEFAULT_SUBMITTER!r} "
+        f"where a mapping names none).\n"
     )
     return 0
 

@@ -1,0 +1,196 @@
+# ============================================================================
+# apk-clues-extract — sub-agent configuration
+#
+# The LLM-driven phases (2-6) dispatch ONE SUB-AGENT PER WORK UNIT so no single
+# context accumulates evidence from many APKs (attention dilution).
+#
+# Sub-agents are `claude -p` SUBPROCESSES, not in-process Agent-tool calls.
+# That choice is deliberate and matters:
+#   * exact model pinning      -> --model claude-opus-5 (full IDs and the
+#                                 opus/sonnet/haiku aliases are both accepted)
+#   * per-unit effort          -> --effort max
+#   * a genuinely fresh context per unit, so nothing leaks between APKs
+#   * trivially repointable at Codex / GPT / a local model (swap `command`)
+#   * the orchestrator stays bash-thin and survives its own context limits
+#
+# Always set --model EXPLICITLY. Claude Code can transparently fall back from
+# Opus to Sonnet once an Opus usage threshold is crossed, which would silently
+# make some units non-comparable with others.
+# ============================================================================
+version: 2
+
+# ---------------------------------------------------------------------------
+# BACKENDS — how one unit of work is executed.
+#   {model} {effort} {max_turns} {prompt_file} {result_file} are substituted.
+#   A backend must write its unit result as JSON to {result_file}.
+# ---------------------------------------------------------------------------
+backends:
+
+  claude-cli:
+    kind: subprocess
+    # --allowedTools takes a COMMA-SEPARATED single token here on purpose: the
+    # variadic form (--allowedTools A B C) swallows the following argument, which
+    # eats a positional prompt. Required flag: a bare `claude -p` DENIES WebSearch, which silently
+    # guts phase 2 (pure web research). Verified 2026-09-27 via
+    # permission_denials:[{tool_name:WebSearch}] in the result envelope.
+    command: ["claude", "-p",
+              "--model", "{model}",
+              "--effort", "{effort}",
+              "--max-turns", "{max_turns}",
+              "--output-format", "json",
+              "--permission-mode", "acceptEdits",
+              "--allowedTools", "WebSearch,WebFetch,Read,Grep,Glob,Bash"]
+    prompt: stdin                 # the unit brief is piped in
+    result: stdout_json
+    # Infrastructure failure (NOT a refusal) -> retried on the SAME agent.
+    # These must match only REAL failures. `claude -p --output-format json` emits
+    # "is_error":false and "api_error_status":null in EVERY successful envelope, so
+    # matching the bare key names retried every healthy unit and doubled the cost.
+    # Observed 2026-09-27: all 65 phase-2 units logged "api/infra error" then
+    # succeeded on retry -- they had never failed.
+    error_markers: ['"is_error":true', '"api_error_status":"', '"subtype":"error', "rate_limit"]
+
+  # Phase 1-review (source review). The driver runs the agent with the APK's jadx
+  # tree as its working directory. That tree is untrusted data, so the agent gets
+  # read-only tools: no web, no edits, and Bash only for grep/rg/wc/ls.
+  claude-cli-review:
+    kind: subprocess
+    command: ["claude", "-p",
+              "--model", "{model}",
+              "--effort", "{effort}",
+              "--max-turns", "{max_turns}",
+              "--output-format", "json",
+              "--allowedTools", "Read,Grep,Glob,Bash(grep:*),Bash(rg:*),Bash(wc:*),Bash(ls:*)",
+              "--disallowedTools", "Edit,Write,NotebookEdit,WebSearch,WebFetch"]
+    prompt: stdin
+    result: stdout_json
+    # An unusable answer gets one repair turn via `--resume <session_id>`, which reuses
+    # the cached context instead of re-reading the source tree.
+    supports_resume: true
+    error_markers: ['"is_error":true', '"api_error_status":"', '"subtype":"error', "rate_limit"]
+
+  codex-cli:
+    kind: subprocess
+    command: ["codex", "exec", "--model", "{model}", "--full-auto", "--file", "{prompt_file}"]
+    prompt: file
+    result: stdout_json
+
+  gpt-cli:
+    kind: subprocess
+    command: ["llm", "-m", "{model}", "-f", "{prompt_file}"]
+    prompt: file
+    result: stdout_json
+
+# ---------------------------------------------------------------------------
+# AGENTS — primary does the work; fallback takes over on a REFUSAL.
+# ---------------------------------------------------------------------------
+agents:
+  primary:
+    name: opus-5-max
+    backend: claude-cli
+    model: claude-opus-5
+    effort: max
+    max_turns: 200
+  fallback:
+    name: opus-4.8-max
+    backend: claude-cli
+    model: claude-opus-4-8
+    effort: max
+    max_turns: 200
+  # Phase 1-review agents, selected by units.review. On 2026-11-01, 15 AndroZoo
+  # shard-03 APKs (179 records, 87 checked by GPT-6 Luna source audits) were reviewed by
+  # both models. Haiku 5.5 max matched Sonnet 5.5 max on every labeled decision
+  # (non-GATT rejections, roles, parents) at $0.42 vs $1.48 per APK. Neither made a
+  # wrong assertion; Haiku abstained more and returned one malformed JSON in 15.
+  # Results: ~/Downloads/AndroZoo_CLUES_model_experiment_20261101/RESULTS.md
+  review_primary:
+    name: haiku-5.5-max
+    backend: claude-cli-review
+    model: claude-haiku-5-5
+    effort: max
+    max_turns: 200
+  review_fallback:
+    name: sonnet-5.5-max
+    backend: claude-cli-review
+    model: claude-sonnet-5-5
+    effort: max
+    max_turns: 200
+
+# ---------------------------------------------------------------------------
+# REFUSAL HANDLING  (distinct from infrastructure errors — see error_markers)
+# ---------------------------------------------------------------------------
+refusal:
+  marker: "💥💥💥OPUS 5 REFUSED💥💥💥"
+  # A refusal must be about DOING THE TASK. The old first pattern was a bare
+  # \bI (can't|cannot|won't)\b, which also matched honest uncertainty -- and the
+  # unit prompt explicitly asks for that ("an honest 'unknown' is far more useful
+  # than a confident guess"). So "I cannot determine the publisher" was scored as a
+  # refusal and burned a fallback retry. Observed twice on 2026-09-27, both matching
+  # the bare phrase 'I cannot'. Every pattern below now requires a refusal OBJECT
+  # (help/assist/comply/proceed/...), never an epistemic verb (determine/verify/find).
+  patterns:
+    - "(?i)\\bI (?:can'?t|cannot|won'?t|will not) (?:help|assist|comply|continue|proceed|engage|participate|support|do that|provide that)\\b"
+    - "(?i)\\bI'?m (?:not able|unable) to (?:help|assist|comply|proceed|continue|do that)\\b"
+    - "(?i)\\b(?:against|violates?) my (?:guidelines|principles|policy|values)\\b"
+    - "(?i)\\bI must (?:decline|refuse)\\b"
+    - "(?i)\\bI'?m sorry,? but I (?:can'?t|cannot|won'?t) (?:help|assist|comply|continue|provide|do)\\b"
+    - "(?i)\\bI (?:don'?t|do not) feel comfortable\\b"
+    - "(?i)\\bnot something I (?:can|am able to) (?:help|assist)\\b"
+  max_fallback_attempts: 1
+  sticky: true        # after the first refusal, later units also use the fallback
+
+# ---------------------------------------------------------------------------
+# WORK UNITS — granularity is a CORRECTNESS constraint, not a preference.
+#   apk      all APK-scoped work for ONE apk in ONE sub-agent (phase 2 company,
+#            phase 3 URL, and any Unknown UUID whose ONLY host is that apk).
+#            Split into #NofM chunks above max_unknowns_per_unit.
+#   cluster  phase 4 identifies a UUID family shared by >=3 UNRELATED apps. The
+#            cross-app sharing IS the evidence, so this cannot be per-apk.
+#   uuid     a still-Unknown UUID seen in several apps — likewise not per-apk.
+#   session  phase 6 is aggregate; it runs in the orchestrator, not a sub-agent.
+#   review   phase 1-review checks ONE APK's Phase-1 records against that APK's
+#            decompiled source. Unlike the units above, it names its own agents:
+#            `agent` does the work, and `fallback_agent` takes over on a refusal or
+#            when the answer is still invalid after one repair turn.
+# ---------------------------------------------------------------------------
+units:
+  review:
+    phases: ["1-review"]
+    agent: review_primary
+    fallback_agent: review_fallback
+    max_parallel: 6
+    max_candidates_per_unit: 50
+    timeout_s: 3600          # the largest experiment unit (47 records) took 18 min
+  apk:
+    phases: ["2", "3", "5-local"]
+    max_parallel: 8
+    max_unknowns_per_unit: 25
+  cluster:
+    phases: ["4"]
+    max_parallel: 4
+  uuid:
+    phases: ["5-shared"]
+    max_parallel: 8
+
+# Cap hosts embedded in a brief. A widely-shared UUID otherwise dragged ~85 KB
+# of host records into one sub-agent, reintroducing the dilution we are avoiding.
+brief_limits:
+  max_hosts_in_brief: 8
+  max_field_names_in_brief: 40
+
+# ---------------------------------------------------------------------------
+# PHASE ENABLEMENT
+# ---------------------------------------------------------------------------
+phases:
+  "1-review": {enabled: true}
+  "2": {enabled: true}
+  "3":
+    enabled: false
+    reason: >
+      apkpure.net now 403s CLI clients and apkpure.com serves a Cloudflare bot
+      challenge in-browser, so only Play-Store tier-4 URLs verify - and those do
+      not pin the analyzed version. package_path already carries the SHA256,
+      which is stronger provenance. Re-enable if a workable mirror appears.
+  "4": {enabled: true}
+  "5": {enabled: true}
+  "6": {enabled: true, runs_in: orchestrator}
