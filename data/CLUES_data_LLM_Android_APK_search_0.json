@@ -154086,7 +154086,7 @@
         "UUID": "0402",
         "company": "Dell Inc.",
         "UUID_name": "EC_SERVICE_FAN_INVENTORY",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.dell.omm, declared as Java field `EC_SERVICE_FAN_INVENTORY_UUID`. Classification determined by field-name:EC_SERVICE_FAN_INVENTORY_UUID.",
+        "UUID_purpose": "Reports the chassis cooling-fan inventory and individual fan details.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -154094,6 +154094,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_SERVICE_FAN_INVENTORY_UUID`. Classification source: field-name:EC_SERVICE_FAN_INVENTORY_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -154190,7 +154194,7 @@
         "UUID": "0206",
         "company": "Dell Inc.",
         "UUID_name": "EC_SERVICE_POWER_ACTION",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.dell.omm, declared as Java field `EC_SERVICE_POWER_ACTION_UUID`. Classification determined by field-name:EC_SERVICE_POWER_ACTION_UUID.",
+        "UUID_purpose": "Controls power actions for a chassis I/O module.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -154198,6 +154202,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_SERVICE_POWER_ACTION_UUID`. Classification source: field-name:EC_SERVICE_POWER_ACTION_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -154214,7 +154222,7 @@
         "UUID": "0306",
         "company": "Dell Inc.",
         "UUID_name": "EC_SERVICE_PSU_CONFIG",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.dell.omm, declared as Java field `EC_SERVICE_PSU_CONFIG_UUID`. Classification determined by field-name:EC_SERVICE_PSU_CONFIG_UUID.",
+        "UUID_purpose": "Reads and changes chassis power configuration and state.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -154222,6 +154230,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_SERVICE_PSU_CONFIG_UUID`. Classification source: field-name:EC_SERVICE_PSU_CONFIG_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -154238,7 +154250,7 @@
         "UUID": "0302",
         "company": "Dell Inc.",
         "UUID_name": "EC_SERVICE_PSU_INVENTORY",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.dell.omm, declared as Java field `EC_SERVICE_PSU_INVENTORY_UUID`. Classification determined by field-name:EC_SERVICE_PSU_INVENTORY_UUID.",
+        "UUID_purpose": "Reports the chassis power-supply inventory and supply details.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -154246,6 +154258,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_SERVICE_PSU_INVENTORY_UUID`. Classification source: field-name:EC_SERVICE_PSU_INVENTORY_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -154262,7 +154278,7 @@
         "UUID": "0608",
         "company": "Dell Inc.",
         "UUID_name": "EC_SERVICE_REDFISH",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.dell.omm, declared as Java field `EC_SERVICE_REDFISH_UUID`. Classification determined by field-name:EC_SERVICE_REDFISH_UUID.",
+        "UUID_purpose": "Carries Redfish management requests to the chassis and returns their status and response data.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -154270,6 +154286,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_SERVICE_REDFISH_UUID`. Classification source: field-name:EC_SERVICE_REDFISH_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -154286,7 +154306,7 @@
         "UUID": "0502",
         "company": "Dell Inc.",
         "UUID_name": "EC_SERVICE_SLED_INVENTORY",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.dell.omm, declared as Java field `EC_SERVICE_SLED_INVENTORY_UUID`. Classification determined by field-name:EC_SERVICE_SLED_INVENTORY_UUID.",
+        "UUID_purpose": "Reports chassis slot and installed compute-sled inventory.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -154294,6 +154314,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_SERVICE_SLED_INVENTORY_UUID`. Classification source: field-name:EC_SERVICE_SLED_INVENTORY_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -154334,7 +154358,7 @@
         "UUID": "0506",
         "company": "Dell Inc.",
         "UUID_name": "EC_TOKEN_SERVICE",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.dell.omm, declared as Java field `EC_TOKEN_SERVICE`. Classification determined by field-name:EC_TOKEN_SERVICE.",
+        "UUID_purpose": "Selects a chassis slot and returns the bearer token used for that sled’s management session.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -154342,6 +154366,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_TOKEN_SERVICE`. Classification source: field-name:EC_TOKEN_SERVICE.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -285850,7 +285878,7 @@
         "UUID": "0000185a-0000-1010-2013-5a454d495441",
         "company": "Unknown",
         "UUID_name": "Presure Measurement Service1",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides Zemita pressure-sensor measurements used by the exercise app to register repetition events.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -285858,6 +285886,10 @@
             {
                 "description": "Automated extraction found this UUID in com.welltizen.exmandemo; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -285874,7 +285906,7 @@
         "UUID": "0000185a-0000-1010-2013-5a454d495465",
         "company": "Unknown",
         "UUID_name": "Presure Measurement Service2",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides Zemita pressure-sensor measurements used by the exercise app to register repetition events.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -285882,6 +285914,10 @@
             {
                 "description": "Automated extraction found this UUID in com.welltizen.exmandemo; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -285898,7 +285934,7 @@
         "UUID": "00005a10-0000-1010-2013-5a454d495441",
         "company": "Unknown",
         "UUID_name": "Pressure Measurement",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports Zemita pressure-sensor measurements; the exercise app uses received events to increment a repetition count.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -285906,6 +285942,10 @@
             {
                 "description": "Automated extraction found this UUID in com.welltizen.exmandemo; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -285922,7 +285962,7 @@
         "UUID": "00005a10-0000-1010-2013-5a454d495465",
         "company": "Unknown",
         "UUID_name": "Pressure Measurement",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports Zemita pressure-sensor measurements; the exercise app uses received events to increment a repetition count.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -285930,6 +285970,10 @@
             {
                 "description": "Automated extraction found this UUID in com.welltizen.exmandemo; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -286498,7 +286542,7 @@
         "UUID": "034ad374-c4fb-47bb-8188-9c6621ea2289",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reads the Bluetooth-to-NFC gateway identifier.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -286506,6 +286550,10 @@
             {
                 "description": "Automated extraction found this UUID in ch.belimo.vavap.app; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -286882,7 +286930,7 @@
         "UUID": "0b00",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Identifies SmartSwitcher devices during discovery by the presence of this advertising service-data UUID.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -286890,6 +286938,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

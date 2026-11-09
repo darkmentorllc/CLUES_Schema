@@ -209413,7 +209413,7 @@
         "UUID": "925c0001-4a18-42e8-9f1b-ad41caedc170",
         "company": "Unknown",
         "UUID_name": "GPS_FUNCTION_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exchanges AirBolt GPS-tracker commands, settings, product and modem information, and firmware-update status.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -209421,6 +209421,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -209437,7 +209441,7 @@
         "UUID": "925c0002-4a18-42e8-9f1b-ad41caedc170",
         "company": "Unknown",
         "UUID_name": "GPS_RX_CHARACTERISTIC",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Accepts AirBolt GPS-tracker requests and settings, including product or modem information, motion detection, and reporting schedules.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -209445,6 +209449,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -209461,7 +209469,7 @@
         "UUID": "925c0003-4a18-42e8-9f1b-ad41caedc170",
         "company": "Unknown",
         "UUID_name": "GPS_TX_CHARACTERISTIC",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Returns AirBolt GPS-tracker replies, including product or modem information and firmware-update status.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -209469,6 +209477,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -209581,7 +209593,7 @@
         "UUID": "956c4130-ddf1-11ed-b16f-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "HAND_PLUS_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides the Rad Golf Hand Plus device interface for golf-round synchronization, device configuration and battery information.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -209589,6 +209601,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -209605,7 +209621,7 @@
         "UUID": "956c4131-ddf1-11ed-b16f-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Transfers firmware update files to the Rad Golf device.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -209613,6 +209629,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -209629,7 +209649,7 @@
         "UUID": "956c4132-ddf1-11ed-b16f-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports requests to announce front, center and back green distances or play a heckle sound, allowing the app to respond to the golf device.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -209637,6 +209657,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -209653,7 +209677,7 @@
         "UUID": "956c4133-ddf1-11ed-b16f-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exchanges settings for the Rad Golf device, including display units, language, time format and phone-notification preferences; it also supports the firmware-check workflow.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -209661,6 +209685,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -209677,7 +209705,7 @@
         "UUID": "956c4134-ddf1-11ed-b16f-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Sends phone call, missed-call, SMS and social-notification text to the Rad Golf device.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -209685,6 +209713,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -209701,7 +209733,7 @@
         "UUID": "956c4135-ddf1-11ed-b16f-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Synchronizes recorded golf rounds and per-hole scores from the Rad Golf device to the app.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -209709,6 +209741,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -209725,7 +209761,7 @@
         "UUID": "956c4138-ddf1-11ed-b16f-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the Rad Golf device battery level so the app can display remaining charge.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -209733,6 +209769,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -209965,7 +210005,7 @@
         "UUID": "9c4f4256-8853-456d-86f5-0d9acfb77321",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports Sound Pro requests for game data or to end the golf round, allowing the app to synchronize round completion.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -209973,6 +210013,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210181,7 +210225,7 @@
         "UUID": "9f220000-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides Sunbeam hub metadata, connection information, and synchronization of the hub’s attached-device table.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -210189,6 +210233,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210205,7 +210253,7 @@
         "UUID": "9f220001-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Notifies clients to resynchronize Sunbeam hub information or its attached-device table.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -210213,6 +210261,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210229,7 +210281,7 @@
         "UUID": "9f220002-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Returns hub information and attached-device table synchronization responses.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -210237,6 +210289,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210253,7 +210309,7 @@
         "UUID": "9f220003-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Accepts requests for hub information and attached-device table synchronization.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -210261,6 +210317,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210277,7 +210337,7 @@
         "UUID": "9f220004-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides legacy compatibility identification during Sunbeam hub connection.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -210285,6 +210345,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210301,7 +210365,7 @@
         "UUID": "9f220005-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the Sunbeam hub’s protocol, hardware, and software versions during connection.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -210309,6 +210373,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210325,7 +210393,7 @@
         "UUID": "9f330000-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Multiplexes readings and controls for attached battery, voltmeter, solar-controller, and power-switch devices over one Sunbeam hub connection.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -210333,6 +210401,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210349,7 +210421,7 @@
         "UUID": "9f330001-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Returns handle-addressed readings and control responses for devices attached to the Sunbeam hub.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -210357,6 +210429,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210373,7 +210449,7 @@
         "UUID": "9f330002-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Sends handle-addressed requests to read or change readings, settings, and controls on devices attached to the Sunbeam hub.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -210381,6 +210457,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210397,7 +210477,7 @@
         "UUID": "9f330003-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports changes in attached-device measurements and status, including battery charge, voltage, and current.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -210405,6 +210485,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210421,7 +210505,7 @@
         "UUID": "9f440000-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides the Sunbeam hub’s display name.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -210429,6 +210513,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -210445,7 +210533,7 @@
         "UUID": "9f440001-8797-4f94-85a5-76c7bccb7575",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the Sunbeam hub’s display name.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -210453,6 +210541,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

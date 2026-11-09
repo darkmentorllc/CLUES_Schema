@@ -51204,7 +51204,7 @@
         "UUID": "d35b1000-e01c-9fac-ba8d-7ce20bdba0c6",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides the Meeble PIR sensor’s initial access handshake.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -51212,6 +51212,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51228,7 +51232,7 @@
         "UUID": "d35b1001-e01c-9fac-ba8d-7ce20bdba0c6",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Requests access to the Meeble PIR sensor and reports whether initialization succeeded.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51236,6 +51240,15 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/Dyldog/Teeth/blob/0ff7f23541971807b9a719e0e2bb932359233ea6/Sources/Teeth/main.swift",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51276,7 +51289,7 @@
         "UUID": "d35b5000-e01c-9fac-ba8d-7ce20bdba0c6",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides voltage readings from the Meeble PIR sensor.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -51284,6 +51297,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51300,7 +51317,7 @@
         "UUID": "d35b5003-e01c-9fac-ba8d-7ce20bdba0c6",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the Meeble PIR sensor’s voltage in millivolts.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51308,6 +51325,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51324,7 +51345,7 @@
         "UUID": "d35bfee0-e01c-9fac-ba8d-7ce20bdba0c6",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides Meeble PIR motion notifications and sensor initialization controls.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -51332,6 +51353,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51396,7 +51421,7 @@
         "UUID": "d35bfee4-e01c-9fac-ba8d-7ce20bdba0c6",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Notifies the app when the Meeble PIR sensor detects movement.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51404,6 +51429,10 @@
             {
                 "description": "Automated extraction found this UUID in com.sunbeamsystem.multidevices; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51684,7 +51713,7 @@
         "UUID": "d5d706b8-0a6d-429b-9f72-84ae6cea80e0",
         "company": "Unknown",
         "UUID_name": "receiveCharacteristic",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Accepts phone-to-scope command packets for Steiner IFS display configuration, device information, and ballistic profiles.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51692,6 +51721,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51708,7 +51741,7 @@
         "UUID": "d5d706b8-0a6d-429b-9f72-84ae6cea80e1",
         "company": "Unknown",
         "UUID_name": "transmitCharacteristic",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Notifies the phone of Steiner IFS command responses, packet acknowledgements, and scope status data.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51716,6 +51749,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51804,7 +51841,7 @@
         "UUID": "d9356541-1163-4587-aa2e-d580df9f75e3",
         "company": "Unknown",
         "UUID_name": "STATUS_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports SMART Analysis instrument battery and charging state, humidity, internal and core temperatures, cuvette presence and connectivity status.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -51812,6 +51849,10 @@
             {
                 "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51852,7 +51893,7 @@
         "UUID": "d973f1e1-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exposes the IndiGo NIR spectrometer image sensor row-start setting.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51860,6 +51901,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51876,7 +51926,7 @@
         "UUID": "d973f1e2-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exposes the IndiGo NIR spectrometer image sensor column-start setting.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51884,6 +51934,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51900,7 +51959,7 @@
         "UUID": "d973f1e3-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exposes the IndiGo NIR spectrometer image sensor row-size setting.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51908,6 +51967,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51924,7 +51992,7 @@
         "UUID": "d973f1e4-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exposes the IndiGo NIR spectrometer image sensor column-size setting.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51932,6 +52000,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51948,7 +52025,7 @@
         "UUID": "d973f1e5-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exposes the IndiGo NIR spectrometer image sensor horizontal-blanking setting.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51956,6 +52033,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51972,7 +52058,7 @@
         "UUID": "d973f1e6-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exposes the IndiGo NIR spectrometer image sensor vertical-blanking setting.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -51980,6 +52066,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -51996,7 +52091,7 @@
         "UUID": "d973f1e7-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exposes the IndiGo NIR spectrometer image sensor shutter-width setting.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52004,6 +52099,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52020,7 +52124,7 @@
         "UUID": "d973f1e8-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exposes the IndiGo NIR spectrometer image sensor global-gain setting.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52028,6 +52132,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52116,7 +52229,7 @@
         "UUID": "d973f1ed-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the IndiGo NIR spectrometer battery-voltage value.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52124,6 +52237,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52140,7 +52262,7 @@
         "UUID": "d973f3e0-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides IndiGo NIR spectrometer scan and configuration commands and device-event notifications.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52148,6 +52270,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52164,7 +52295,7 @@
         "UUID": "d973f3e1-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports IndiGo NIR spectrometer GPIO-button events; the protocol also defines critical-battery, temperature and power-down events.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52172,6 +52303,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52188,7 +52328,7 @@
         "UUID": "d973f3e2-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Controls IndiGo NIR spectrometer acquisition, including UV illumination and triggering a single scan; the protocol also defines configuration and power commands.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52196,6 +52336,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52212,7 +52361,7 @@
         "UUID": "d973f4e0-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides IndiGo NIR spectrometer firmware and hardware versions, serial identity, and wavelength-to-pixel references for interpreting spectra.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52220,6 +52369,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52236,7 +52394,7 @@
         "UUID": "d973f4e1-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the IndiGo NIR spectrometer firmware version.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52244,6 +52402,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52260,7 +52427,7 @@
         "UUID": "d973f4e2-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the IndiGo NIR spectrometer hardware version.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52268,6 +52435,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52284,7 +52460,7 @@
         "UUID": "d973f4e3-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the IndiGo NIR spectrometer serial number.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52292,6 +52468,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52332,7 +52517,7 @@
         "UUID": "d973f4e5-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports wavelength-to-pixel reference point 1, used to interpolate IndiGo NIR spectrometer pixel measurements into a spectrum.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52340,6 +52525,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52356,7 +52550,7 @@
         "UUID": "d973f4e6-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports wavelength-to-pixel reference point 2, used to interpolate IndiGo NIR spectrometer pixel measurements into a spectrum.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52364,6 +52558,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52380,7 +52583,7 @@
         "UUID": "d973f4e7-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports wavelength-to-pixel reference point 3, used to interpolate IndiGo NIR spectrometer pixel measurements into a spectrum.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52388,6 +52591,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -52404,7 +52616,7 @@
         "UUID": "d973f4e8-b19e-11e2-9e96-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports wavelength-to-pixel reference point 4, used to interpolate IndiGo NIR spectrometer pixel measurements into a spectrum.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -52412,6 +52624,15 @@
             {
                 "description": "Automated extraction found this UUID in org.phenoapps.intercross; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PhenoApps/PhenoLib/blob/2a630a30b53e92a28b05b8abdbb3427966a151b5/phenolib/src/main/java/org/phenoapps/viewmodels/spectrometers/IndigoViewModel.kt",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

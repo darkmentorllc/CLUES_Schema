@@ -98363,7 +98363,7 @@
         "UUID": "53a57251-8c50-4ea8-88d8-412ecc75d1e7",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reads the Bluetooth-to-NFC gateway firmware version, used to determine whether a firmware update is required.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -98371,6 +98371,10 @@
             {
                 "description": "Automated extraction found this UUID in ch.belimo.vavap.app; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -98411,7 +98415,7 @@
         "UUID": "55859853-7743-401f-bd5c-53b0294862a6",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exchanges Bluetooth-to-NFC gateway command frames and responses, including NFC tag access, EEPROM transfers, gateway configuration and firmware operations.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -98419,6 +98423,10 @@
             {
                 "description": "Automated extraction found this UUID in ch.belimo.vavap.app; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -98627,7 +98635,7 @@
         "UUID": "5caf73ff-00bd-41a2-9837-a08cfd375b56",
         "company": "Unknown",
         "UUID_name": "updateFirmwareCharacteristicUUID / updateFirmware",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Switches Steiner IFS scopes and LRF rangefinders into their firmware-update bootloader.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -98635,6 +98643,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -98723,7 +98735,7 @@
         "UUID": "5eb0e9b0-e533-66f3-8b94-e78af97cf247",
         "company": "Unknown",
         "UUID_name": "WATCH_PLUS_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides the Rad Golf Watch Plus device interface for golf-round synchronization, device configuration and battery information.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -98731,6 +98743,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -98747,7 +98763,7 @@
         "UUID": "5eb0e9b1-e533-66f3-8b94-e78af97cf247",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Transfers firmware update files to the Rad Golf device.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -98755,6 +98771,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -98771,7 +98791,7 @@
         "UUID": "5eb0e9b2-e533-66f3-8b94-e78af97cf247",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports requests to announce front, center and back green distances or play a heckle sound, allowing the app to respond to the golf device.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -98779,6 +98799,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -98795,7 +98819,7 @@
         "UUID": "5eb0e9b3-e533-66f3-8b94-e78af97cf247",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exchanges settings for the Rad Golf device, including display units, language, time format and phone-notification preferences; it also supports the firmware-check workflow.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -98803,6 +98827,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -98819,7 +98847,7 @@
         "UUID": "5eb0e9b4-e533-66f3-8b94-e78af97cf247",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Sends phone call, missed-call, SMS and social-notification text to the Rad Golf device.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -98827,6 +98855,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -98843,7 +98875,7 @@
         "UUID": "5eb0e9b5-e533-66f3-8b94-e78af97cf247",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Synchronizes recorded golf rounds and per-hole scores from the Rad Golf device to the app.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -98851,6 +98883,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -98867,7 +98903,7 @@
         "UUID": "5eb0e9b8-e533-66f3-8b94-e78af97cf247",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the Rad Golf device battery level so the app can display remaining charge.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -98875,6 +98911,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

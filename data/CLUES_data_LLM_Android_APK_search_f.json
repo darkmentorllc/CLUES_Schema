@@ -266841,7 +266841,7 @@
         "UUID": "f598dbc5-2f01-4ec5-9936-b3d1aa4f957f",
         "company": "Unknown",
         "UUID_name": "HallState",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs Hall-sensor protocol, reports open, closed or latched tamper state.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -266849,6 +266849,20 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_hall/gatt_service_hall.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_hall/sl_gatt_service_hall.c",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -266865,7 +266879,7 @@
         "UUID": "f598dbc5-2f02-4ec5-9936-b3d1aa4f957f",
         "company": "Unknown",
         "UUID_name": "HallFieldStrength",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs Hall-sensor protocol, reports magnetic-field strength in microtesla.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -266873,6 +266887,20 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_hall/gatt_service_hall.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_hall/sl_gatt_service_hall.c",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -266889,7 +266917,7 @@
         "UUID": "f598dbc5-2f03-4ec5-9936-b3d1aa4f957f",
         "company": "Unknown",
         "UUID_name": "HallControlPoint",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs Hall-sensor protocol, accepts a command that resets the latched tamper state.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -266897,6 +266925,20 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_hall/gatt_service_hall.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_hall/sl_gatt_service_hall.c",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -266985,7 +267027,7 @@
         "UUID": "fab0",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides FOBO installation and synchronization commands after the pairing and ownership checks.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -266993,6 +267035,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -267009,7 +267055,7 @@
         "UUID": "fad0",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Accepts authorization for FOBO production or configuration operations.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -267017,6 +267063,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -267033,7 +267083,7 @@
         "UUID": "fad3",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Submits an encrypted authorization token before FOBO production or configuration operations.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -267041,6 +267091,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -267201,7 +267255,7 @@
         "UUID": "fbe0",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides FOBO device pairing, user-ownership authentication, and ownership release.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -267209,6 +267263,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -267225,7 +267283,7 @@
         "UUID": "fbe1",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Submits the encrypted FOBO pairing identifier to complete device pairing.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -267233,6 +267291,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -267249,7 +267311,7 @@
         "UUID": "fbe2",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Notifies the phone of FOBO pairing and ownership-check results, including paired, owned, identifier mismatch, and released states.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -267257,6 +267319,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -267273,7 +267339,7 @@
         "UUID": "fbe3",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Submits an encrypted credential for FOBO user-ownership authentication.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -267281,6 +267347,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -267297,7 +267367,7 @@
         "UUID": "fbe4",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Supplies encrypted FOBO authentication-key material that the phone decrypts for pairing and ownership operations.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -267305,6 +267375,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -267321,7 +267395,7 @@
         "UUID": "fbe5",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Requests release of FOBO device ownership using an encrypted release command.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -267329,6 +267403,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -267513,7 +267591,7 @@
         "UUID": "fee2cfca-2936-43c5-ac1e-e8298ecb37df",
         "company": "Unknown",
         "UUID_name": "RAD_BUTTON_CLICK_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides Sound Pro speaker RAD-button notifications so the app can react to single clicks, double clicks and long presses.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -267521,6 +267599,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

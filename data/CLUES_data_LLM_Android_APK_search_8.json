@@ -19083,7 +19083,7 @@
         "UUID": "8002",
         "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
         "UUID_name": "EC_NETWORKING_DATA_IOM_IPV6_CHARACTERISTIC / DATA1_READ_CH_ID",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.noisefit but declared in third-party SDK package `cn.appscomm.bluetooth` as Java field `f6184c`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_purpose": "Reused by service: Dell reads server boot options, temperatures, IPv6 networking and configuration status, among other management data; NoiseFit and Huawo use it for replies to wearable data and configuration requests.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -19104,6 +19104,10 @@
                 "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -19135,7 +19139,7 @@
         "UUID": "8003",
         "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
         "UUID_name": "EC_APPLY_GROUP_CONFIG_CHAR / DATA2_READ_CH_ID",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.noisefit but declared in third-party SDK package `cn.appscomm.bluetooth` as Java field `f6187f`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(f6187f).",
+        "UUID_purpose": "Reused by service: Dell exchanges networking, health, configuration and Redfish/proxy results; NoiseFit and Huawo write wearable commands and event acknowledgements through this UUID.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -19156,6 +19160,10 @@
                 "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -19187,7 +19195,7 @@
         "UUID": "8004",
         "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
         "UUID_name": "EC_GROUP_CONFIG_JOB_STATUS / DATA2_WRITE_CH_ID",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.noisefit but declared in third-party SDK package `cn.appscomm.bluetooth` as Java field `f6188g`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_purpose": "Reused by service: Dell exchanges location, log sequence, controller inventory and configuration/proxy results; NoiseFit and Huawo receive wearable remote-control events, including music and call-related controls.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -19208,6 +19216,10 @@
                 "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
                 "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -25319,7 +25331,7 @@
         "UUID": "8006",
         "company": "Dell Inc.",
         "UUID_name": "EC_LCL_PAGE_OFFSET_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.dell.omm, declared as Java field `EC_LCL_PAGE_OFFSET_CHARACTERISTIC_UUID`. Classification determined by naming-convention.",
+        "UUID_purpose": "Reused by Dell service for server memory details, network service ports, lifecycle-log offsets/data, or the secure-session key exchange.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -25327,6 +25339,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_LCL_PAGE_OFFSET_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -25344,7 +25360,7 @@
         "UUID": "8007",
         "company": "Dell Inc.",
         "UUID_name": "EC_LCL_LOGS_CRITICAL_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.dell.omm, declared as Java field `EC_LCL_LOGS_CRITICAL_CHARACTERISTIC_UUID`. Classification determined by naming-convention.",
+        "UUID_purpose": "Reused by Dell service for software versions, lifecycle logs, or the server’s secure-handshake completion message.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -25352,6 +25368,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_LCL_LOGS_CRITICAL_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -25369,7 +25389,7 @@
         "UUID": "8008",
         "company": "Dell Inc.",
         "UUID_name": "EC_LCL_LOGS_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.dell.omm, declared as Java field `EC_LCL_LOGS_CHARACTERISTIC_UUID`. Classification determined by naming-convention.",
+        "UUID_purpose": "Reused by Dell service for license information, event-log pagination, lifecycle logs, or the server certificate used by the secure session.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -25377,6 +25397,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_LCL_LOGS_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -25394,7 +25418,7 @@
         "UUID": "8009",
         "company": "Dell Inc.",
         "UUID_name": "SERVER_CERTIFICATE_HASH_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.dell.omm, declared as Java field `SERVER_CERTIFICATE_HASH_CHARACTERISTIC_UUID`. Classification determined by naming-convention.",
+        "UUID_purpose": "Reused by Dell service for the server certificate hash used during certificate validation, or critical system-event-log records.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -25402,6 +25426,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `SERVER_CERTIFICATE_HASH_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -25419,7 +25447,7 @@
         "UUID": "800a",
         "company": "Dell Inc.",
         "UUID_name": "USER_CREDENTIAL_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.dell.omm, declared as Java field `USER_CREDENTIAL_CHARACTERISTIC_UUID`. Classification determined by naming-convention.",
+        "UUID_purpose": "Reused by Dell service for user credentials in the authenticated management session or system-event-log records.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -25427,6 +25455,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `USER_CREDENTIAL_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -25444,7 +25476,7 @@
         "UUID": "800b",
         "company": "Dell Inc.",
         "UUID_name": "AUTH_STATUS_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.dell.omm, declared as Java field `AUTH_STATUS_CHARACTERISTIC_UUID`. Classification determined by cross-file usage:getCharacteristic(AUTH_STATUS_CHARACTERISTIC_UUID).",
+        "UUID_purpose": "Reports authentication status for the Dell server management session.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -25452,6 +25484,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `AUTH_STATUS_CHARACTERISTIC_UUID`. Classification source: cross-file usage:getCharacteristic(AUTH_STATUS_CHARACTERISTIC_UUID).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -25469,7 +25505,7 @@
         "UUID": "800c",
         "company": "Dell Inc.",
         "UUID_name": "ENABLE_WIFI_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.dell.omm, declared as Java field `ENABLE_WIFI_CHARACTERISTIC_UUID`. Classification determined by field-name:ENABLE_WIFI_CHARACTERISTIC_UUID.",
+        "UUID_purpose": "Enables or disables the Dell server’s direct Wi-Fi connection.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -25477,6 +25513,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `ENABLE_WIFI_CHARACTERISTIC_UUID`. Classification source: field-name:ENABLE_WIFI_CHARACTERISTIC_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -25494,7 +25534,7 @@
         "UUID": "800d",
         "company": "Dell Inc.",
         "UUID_name": "WIFI_SSID_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.dell.omm, declared as Java field `WIFI_SSID_CHARACTERISTIC_UUID`. Classification determined by field-name:WIFI_SSID_CHARACTERISTIC_UUID.",
+        "UUID_purpose": "Reports the Dell server’s direct Wi-Fi network name.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -25502,6 +25542,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `WIFI_SSID_CHARACTERISTIC_UUID`. Classification source: field-name:WIFI_SSID_CHARACTERISTIC_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -25519,7 +25563,7 @@
         "UUID": "800e",
         "company": "Dell Inc.",
         "UUID_name": "BLINK_LED_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.dell.omm, declared as Java field `BLINK_LED_CHARACTERISTIC_UUID`. Classification determined by field-name:BLINK_LED_CHARACTERISTIC_UUID.",
+        "UUID_purpose": "Controls the server identification LED so the user can locate the physical server.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -25527,6 +25571,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `BLINK_LED_CHARACTERISTIC_UUID`. Classification source: field-name:BLINK_LED_CHARACTERISTIC_UUID.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -25544,7 +25592,7 @@
         "UUID": "800f",
         "company": "Dell Inc.",
         "UUID_name": "KEEP_ALIVE_CHARACTERISTIC",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.dell.omm, declared as Java field `KEEP_ALIVE_CHARACTERISTIC_UUID`. Classification determined by cross-file usage:getCharacteristic(KEEP_ALIVE_CHARACTERISTIC_UUID).",
+        "UUID_purpose": "Keeps the Dell authenticated Bluetooth management session alive while it is in use.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -25552,6 +25600,10 @@
             {
                 "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `KEEP_ALIVE_CHARACTERISTIC_UUID`. Classification source: cross-file usage:getCharacteristic(KEEP_ALIVE_CHARACTERISTIC_UUID).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -92695,7 +92747,7 @@
         "UUID": "8001e6e3-1e61-4e36-be8d-2f2a08f251cf",
         "company": "Unknown",
         "UUID_name": "FIRMWARE_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides SMART Analysis instrument firmware-version information and firmware-update control and status.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -92703,6 +92755,10 @@
             {
                 "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -93415,7 +93471,7 @@
         "UUID": "8a12f270-ee1a-11eb-85b4-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "LAZER_PRO_PLUS_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides the Rad Golf Watch and Lazer Plus/Pro device interface for golf-round synchronization, device configuration and battery information.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -93423,6 +93479,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -93439,7 +93499,7 @@
         "UUID": "8a12f271-ee1a-11eb-85b4-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Transfers firmware update files and commands that select the active golf course or round on Rad Golf Watch and Lazer Plus/Pro devices.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -93447,6 +93507,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -93463,7 +93527,7 @@
         "UUID": "8a12f272-ee1a-11eb-85b4-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports requests to announce front, center and back green distances or play a heckle sound, allowing the app to respond to the golf device.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -93471,6 +93535,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -93487,7 +93555,7 @@
         "UUID": "8a12f273-ee1a-11eb-85b4-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exchanges settings for the Rad Golf device, including display units, language, time format and phone-notification preferences; it also supports the firmware-check workflow.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -93495,6 +93563,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -93511,7 +93583,7 @@
         "UUID": "8a12f274-ee1a-11eb-85b4-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Sends phone call, missed-call, SMS and social-notification text to the Rad Golf device.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -93519,6 +93591,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -93535,7 +93611,7 @@
         "UUID": "8a12f275-ee1a-11eb-85b4-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Synchronizes recorded golf rounds and per-hole scores from the Rad Golf device to the app.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -93543,6 +93619,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -93559,7 +93639,7 @@
         "UUID": "8a12f278-ee1a-11eb-85b4-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the Rad Golf device battery level so the app can display remaining charge.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -93567,6 +93647,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -93583,7 +93667,7 @@
         "UUID": "8a12f279-ee1a-11eb-85b4-0800200c9a66",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the active golf course on a Rad Golf Lazer Plus/Pro rangefinder so the app can resolve the corresponding course information.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -93591,6 +93675,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -93967,7 +94055,7 @@
         "UUID": "8c8d5ee6-e4ac-43ed-887a-a3a5fa149b6e",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Sends notification text, including phone call and message alerts, from the app to the Sound Pro display.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -93975,6 +94063,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

@@ -80818,7 +80818,7 @@
         "UUID": "24ac9fdf-83b6-4c4b-922a-5f5be41dcd99",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports single-click, double-click and long-press actions on the Sound Pro speaker RAD button to the app.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -80826,6 +80826,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -80938,7 +80942,7 @@
         "UUID": "259d0001-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "LOCK_FUNCTION_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides AirBolt lock state, authenticated unlocking, manual unlock-code setup, and TSA-access configuration.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -80946,6 +80950,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -80962,7 +80970,7 @@
         "UUID": "259d0002-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "DEVICE_STATUS_CHARACTERISTIC",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports whether the AirBolt is locked and whether unlocking was requested; accepts the authenticated unlock command.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -80970,6 +80978,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -80986,7 +80998,7 @@
         "UUID": "259d0004-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "SHUT_DOWN_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Configures the AirBolt lock’s airplane-mode shutdown period.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -80994,6 +81006,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81010,7 +81026,7 @@
         "UUID": "259d0005-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "SHUTDOWN_TIME_PERIOD_CHARACTERISTICS",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Sets the AirBolt lock’s airplane-mode shutdown period using an authenticated command.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -81018,6 +81034,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81034,7 +81054,7 @@
         "UUID": "259d0007-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "MANUAL_LOCK_CHARACTERISTICS",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Sets the AirBolt’s manual unlock-button code using an authenticated command.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -81042,6 +81062,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81058,7 +81082,7 @@
         "UUID": "259d0008-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "CONFIGURATION_CHARACTERISTICS",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Enables or disables the AirBolt lock’s TSA-access setting using an authenticated command.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -81066,6 +81090,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81082,7 +81110,7 @@
         "UUID": "259d0010-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "EVENT_LOG_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides the AirBolt lock’s stored event history, including event codes and timestamps.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -81090,6 +81118,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81106,7 +81138,7 @@
         "UUID": "259d0011-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "NO_OF_RECORDS_CHARACTERISTIC",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports how many lock event-history records are available.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -81114,6 +81146,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81130,7 +81166,7 @@
         "UUID": "259d0012-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "EVENT_LOG_CONTROL_CHARACTERISTIC",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Advances to the next stored lock event-history record using an authenticated command.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -81138,6 +81174,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81154,7 +81194,7 @@
         "UUID": "259d0013-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "EVENT_LOG_RECORD_CHARACTERISTIC",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Returns a stored lock-history record containing its event code and timestamp.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -81162,6 +81202,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81178,7 +81222,7 @@
         "UUID": "259d0016-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "AUTHORISATION_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Authenticates the app to the AirBolt using a secret-key challenge/response exchange and supports replacing the key.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -81186,6 +81230,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81202,7 +81250,7 @@
         "UUID": "259d0017-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "REKEY_CHARACTERISTIC",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Replaces the AirBolt’s authentication key with a new value authenticated using the current key.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -81210,6 +81258,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81226,7 +81278,7 @@
         "UUID": "259d0018-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "CHALLENGE_CODE_CHARACTERISTIC",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Supplies a challenge that the app validates and transforms with its secret key to authenticate access to the AirBolt.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -81234,6 +81286,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81250,7 +81306,7 @@
         "UUID": "259d0019-2ed9-4645-8bda-5267db5cabb7",
         "company": "Unknown",
         "UUID_name": "RESPONSE_CODE_CHARACTERISTIC",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Receives the secret-key response to the AirBolt’s authentication challenge.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -81258,6 +81314,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -81562,7 +81622,7 @@
         "UUID": "2c826a60-d6cb-4b90-8887-d3e61f2633a5",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports a newly entered hole score and optional putt count from the Sound Pro device to the app.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -81570,6 +81630,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

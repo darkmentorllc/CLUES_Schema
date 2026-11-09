@@ -68642,7 +68642,7 @@
         "UUID": "71e30b8c-4131-4703-b0a0-b0bbba75856b",
         "company": "Unknown",
         "UUID_name": "Calibration",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs IMU protocol, accepts a sensor-calibration command and indicates success or error.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -68650,6 +68650,20 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_imu/gatt_service_imu.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_imu/sl_gatt_service_imu.c",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -69218,7 +69232,7 @@
         "UUID": "7b2101bb-7440-4761-815d-b04ed62bcce7",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reads the Bluetooth-to-NFC gateway MAC address.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -69226,6 +69240,10 @@
             {
                 "description": "Automated extraction found this UUID in ch.belimo.vavap.app; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -69314,7 +69332,7 @@
         "UUID": "7ca77f7e-da39-0c00-3168-434a8376b6ca",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Exchanges Sound Pro screen-related controls and reports when phone notifications are enabled or disabled on the device.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -69322,6 +69340,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -69434,7 +69456,7 @@
         "UUID": "7f014cf0-5a4b-a7ab-4c21-92e668e2103f",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Transfers golf-green data files from the app to the Sound Pro display for its green view.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -69442,6 +69464,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

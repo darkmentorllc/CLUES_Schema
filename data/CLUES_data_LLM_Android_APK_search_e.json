@@ -358565,7 +358565,7 @@
         "UUID": "e49a24e0-f69a-11e8-8eb2-f2801f1b9fd1",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Sends LCD firmware update commands and data to the Sound Pro device.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -358573,6 +358573,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -358589,7 +358593,7 @@
         "UUID": "e49a25e1-f69a-11e8-8eb2-f2801f1b9fd1",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Receives replies during a Sound Pro LCD firmware update.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -358597,6 +358601,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -358613,7 +358621,7 @@
         "UUID": "e49a3085-f69a-11e8-8eb2-f2801f1b9fd1",
         "company": "Unknown",
         "UUID_name": "SOUND_PRO_LCD_UPDATE_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides the Sound Pro LCD firmware-update interface, with separate command/data and reply characteristics.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -358621,6 +358629,10 @@
             {
                 "description": "Automated extraction found this UUID in com.radgolf; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359021,7 +359033,7 @@
         "UUID": "ec78ce99-4ba4-4e86-88c3-43f6df00f8da",
         "company": "Unknown",
         "UUID_name": "rangeToTargetMeter",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the Steiner laser rangefinder distance to the target in meters.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359029,6 +359041,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359045,7 +359061,7 @@
         "UUID": "ec78ce99-4ba4-4e86-88c3-43f6df00f8db",
         "company": "Unknown",
         "UUID_name": "compass",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the Steiner LRF X compass heading.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359053,6 +359069,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359069,7 +359089,7 @@
         "UUID": "ec78ce99-4ba4-4e86-88c3-43f6df00f8dc",
         "company": "Unknown",
         "UUID_name": "inclination",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the Steiner LRF X inclination angle.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359077,6 +359097,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359093,7 +359117,7 @@
         "UUID": "ec78ce99-4ba4-4e86-88c3-43f6df00f8e0",
         "company": "Unknown",
         "UUID_name": "measure",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Triggers a Steiner laser-rangefinder measurement or selects its normal, scan, or menu mode; LRF X also reports mode changes.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359101,6 +359125,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359141,7 +359169,7 @@
         "UUID": "ec78ce99-4ba4-4e86-88c3-43f6df00f8e2",
         "company": "Unknown",
         "UUID_name": "brightness",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reads or sets Steiner rangefinder display brightness and exchanges extended settings for declination and display/off timing, plus version queries.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359149,6 +359177,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359165,7 +359197,7 @@
         "UUID": "ec78ce99-4ba4-4e86-88c3-43f6df00f8e3",
         "company": "Unknown",
         "UUID_name": "unitsText",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reads or selects the distance units displayed by the Steiner laser rangefinder.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359173,6 +359205,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359189,7 +359225,7 @@
         "UUID": "ec78ce99-4ba4-4e86-88c3-43f6df00f8e5",
         "company": "Unknown",
         "UUID_name": "writeSerial",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Programs the Steiner laser rangefinder serial number.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359197,6 +359233,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359213,7 +359253,7 @@
         "UUID": "ec78ce99-4ba4-4e86-88c3-43f6df00f8e6",
         "company": "Unknown",
         "UUID_name": "writeGps",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Transfers latitude and longitude coordinates from the phone to the Steiner LRF X rangefinder.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359221,6 +359261,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359501,7 +359545,7 @@
         "UUID": "ee00",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides FOBO tire-monitor configuration, including sensor/system identifiers and reduced-rate operating settings.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -359509,6 +359553,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359525,7 +359573,7 @@
         "UUID": "ee04",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Programs the FOBO tire or sensor identifier during installation.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359533,6 +359581,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359549,7 +359601,7 @@
         "UUID": "ee05",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Configures FOBO tire-pressure alarm limits; the in-car unit uses this field for the front tires.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359557,6 +359609,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359573,7 +359629,7 @@
         "UUID": "ee06",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Configures the rear-tire pressure alarm limits on the FOBO in-car unit.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359581,6 +359637,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359597,7 +359657,7 @@
         "UUID": "ee07",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Configures temperature and battery-voltage alarm thresholds for FOBO tire monitoring.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359605,6 +359665,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359621,7 +359685,7 @@
         "UUID": "ee08",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reads or programs the front-tire sensor identifiers assigned to the FOBO in-car unit.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359629,6 +359693,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359645,7 +359713,7 @@
         "UUID": "ee09",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reads or programs the rear-tire sensor identifiers assigned to the FOBO in-car unit.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359653,6 +359721,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359669,7 +359741,7 @@
         "UUID": "ee0b",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Selects the FOBO tire sensor power operating mode during installation.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359677,6 +359749,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359693,7 +359769,7 @@
         "UUID": "ee0c",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Configures the FOBO tire-monitor sensitivity setting.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359701,6 +359777,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359717,7 +359797,7 @@
         "UUID": "ee0f",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the FOBO tire monitor reduced-rate or slow-mode duration.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359725,6 +359805,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359741,7 +359825,7 @@
         "UUID": "eefe",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides FOBO tire-sensor installation settings, including sensor identity, pressure limits, and power mode.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -359749,6 +359833,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359765,7 +359853,7 @@
         "UUID": "eeff",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides FOBO in-car unit settings for front and rear tire identifiers, pressure alarms, temperature/battery alarms, and sensitivity.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -359773,6 +359861,10 @@
             {
                 "description": "Automated extraction found this UUID in my.com.salutica.fobotire2; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359813,7 +359905,7 @@
         "UUID": "efd658ae-c401-ef33-76e7-91b00019103b",
         "company": "Unknown",
         "UUID_name": "CO2Reading",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs air-quality protocol, reports equivalent-CO2 measurements.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359821,6 +359913,15 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_gas/gatt_service_gas.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -359837,7 +359938,7 @@
         "UUID": "efd658ae-c402-ef33-76e7-91b00019103b",
         "company": "Unknown",
         "UUID_name": "TVOCReading",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs air-quality protocol, reports total volatile organic compound measurements.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -359845,6 +359946,15 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_gas/gatt_service_gas.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

@@ -253649,7 +253649,7 @@
         "UUID": "b7c4b694-bee3-45dd-ba9f-f3b5e994f49a",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs IMU protocol, notifies three-component orientation measurements.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -253657,6 +253657,20 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_imu/gatt_service_imu.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_imu/sl_gatt_service_imu.c",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -253889,7 +253903,7 @@
         "UUID": "ba1e0e9f-4d81-bae3-f748-3ad55da38b46",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs throughput-test protocol, reports the current connection PHY, interval, latency, supervision timeout, and PDU and MTU sizes.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -253897,6 +253911,15 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/throughput_peripheral/throughput_peripheral.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -253913,7 +253936,7 @@
         "UUID": "ba90741d-a3e9-4a63-b48b-70abaccd2d11",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Reports the Bluetooth-to-NFC gateway battery level and charging state.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -253921,6 +253944,10 @@
             {
                 "description": "Automated extraction found this UUID in ch.belimo.vavap.app; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -253961,7 +253988,7 @@
         "UUID": "bbb99e70-fff7-46cf-abc7-2d32c71820f2",
         "company": "Unknown",
         "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs throughput-test protocol, exchanges test data, controls starting and stopping transmission, and reports the measured throughput.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -253969,6 +253996,15 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/throughput_peripheral/throughput_peripheral.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -254057,7 +254093,7 @@
         "UUID": "be57d883-7759-4d4a-9ee9-e1817357ce66",
         "company": "Unknown",
         "UUID_name": "serviceUUID",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides firmware-update bootloader entry for Steiner LRF X and LRF 6K laser rangefinders.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -254065,6 +254101,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -254081,7 +254121,7 @@
         "UUID": "be57d883-7759-4d4a-9ee9-e1817357ce6a",
         "company": "Unknown",
         "UUID_name": "serviceUUID",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Provides Steiner IFS scope command and response exchange for display configuration, device information, and ballistic profiles, plus firmware-update entry.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -254089,6 +254129,10 @@
             {
                 "description": "Automated extraction found this UUID in de.steinerconnect.v1; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

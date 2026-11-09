@@ -59824,7 +59824,7 @@
         "UUID": "c4c1f6e2-4be5-11e5-885d-feff819cdc9f",
         "company": "Unknown",
         "UUID_name": "Acceleration",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs IMU protocol, notifies three-component acceleration measurements.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -59832,6 +59832,20 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_imu/gatt_service_imu.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_imu/sl_gatt_service_imu.c",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [

@@ -75624,7 +75624,7 @@
         "UUID": "19150000-3633-b4ac-c848-025f8b1ee3e0",
         "company": "Unknown",
         "UUID_name": "GPS_OTA_SERVICE",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Prepares the AirBolt GPS tracker to update a selected firmware component.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -75632,6 +75632,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -75648,7 +75652,7 @@
         "UUID": "19150100-3633-b4ac-c848-025f8b1ee3e0",
         "company": "Unknown",
         "UUID_name": "GPS_OTA_CHARACTERISTIC",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "Selects the GPS tracker firmware component to prepare for an over-the-air update.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -75656,6 +75660,10 @@
             {
                 "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -75744,7 +75752,7 @@
         "UUID": "1aa1",
         "company": "Unknown",
         "UUID_name": "WifiCommissioningWrite",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs Wi-Fi provisioning protocol, sends commands for access-point scanning, SSID/security/password configuration and connection control.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -75752,6 +75760,15 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/wiseconnect-wifi-bt-sdk/blob/d6a180df3d49162db08d1b92dafa9b75c4cdce60/utilities/ble_provisioning_apps/windows_based_provisioning_app/Silabs_Connect.py",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -75768,7 +75785,7 @@
         "UUID": "1bb1",
         "company": "Unknown",
         "UUID_name": "WifiCommissioningRead",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs Wi-Fi provisioning protocol, returns firmware version, WLAN connection state and command status.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -75776,6 +75793,15 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/wiseconnect-wifi-bt-sdk/blob/d6a180df3d49162db08d1b92dafa9b75c4cdce60/utilities/ble_provisioning_apps/windows_based_provisioning_app/Silabs_Connect.py",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
@@ -75912,7 +75938,7 @@
         "UUID": "1cc1",
         "company": "Unknown",
         "UUID_name": "WifiCommissioningNotify",
-        "UUID_purpose": "The purpose is unknown.",
+        "UUID_purpose": "In the Silicon Labs Wi-Fi provisioning protocol, notifies Wi-Fi access-point scan results.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -75920,6 +75946,15 @@
             {
                 "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/wiseconnect-wifi-bt-sdk/blob/d6a180df3d49162db08d1b92dafa9b75c4cdce60/utilities/ble_provisioning_apps/windows_based_provisioning_app/Silabs_Connect.py",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
