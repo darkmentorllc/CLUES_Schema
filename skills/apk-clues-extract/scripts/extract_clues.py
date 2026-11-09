@@ -213,6 +213,10 @@ NON_GATT_CLASS_FIELD_HINTS: dict[tuple[str, str], frozenset[str]] = {
     ("zendesk.android.internal.frontendevents", "FrontendEventsRepository"): frozenset({"CLIENT_ID"}),
     ("zendesk.analyticskit.android.model", "AnalyticsSettings"): frozenset({"CLIENT_ID"}),
     ("com.zebra.sdk.comm.internal", "BluetoothUuids"): frozenset({"STATUS_CHANNEL_ID"}),
+    # A source-traced GATT descriptor, outside the service/characteristic schema.
+    ("com.starkey.android.bluetooth", "BluetoothConstantsKt"): frozenset({"SSI_LONG_SIZE_DESCRIPTOR"}),
+    # OpenKey uses this as a test application ID in key material.
+    ("com.keypr.mobilesdk.digitalkey.openkey.internal", "OpenKeyMaterial"): frozenset({"TEST_APP_ID"}),
     # ANTLR's parser ATN serialization versions are UUID-shaped protocol
     # markers. JADX emits each literal into a uuidFromString temp, then
     # assigns that temp to the named constant in a separate statement.
@@ -239,6 +243,16 @@ NON_GATT_CLASS_FIELD_HINTS: dict[tuple[str, str], frozenset[str]] = {
         "MY_UUID_SECURE",
     }),
 }
+
+# Creditcall uses obfuscated a/b/c/d fields for payment processor receipt
+# identifiers. The same short field names occur in unrelated BLE classes;
+# restrict the exclusion to the exact source-backed receipt classes.
+for _receipt_class in (
+    "ChaseReceiptData", "ElavonReceiptData", "FirstDataReceiptData",
+    "GlobalReceiptData", "TsysReceiptData", "UsHeartlandReceiptData",
+    "UsWorldpayReceiptData",
+):
+    NON_GATT_CLASS_FIELD_HINTS[("com.creditcall.chipdnamobile", _receipt_class)] = frozenset({"a", "b", "c", "d"})
 
 # Vise's `GattAttributeResolver` is a mixed Bluetooth lookup table. These three
 # ESDP UUIDs are Classic SDP service-class identifiers, not GATT services; the

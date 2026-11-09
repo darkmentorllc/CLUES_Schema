@@ -13416,6 +13416,30 @@
         "parent_UUID": "13094283-3bb4-12ee-9f21-f5cb37b3472a"
     },
     {
+        "UUID": "1bf08a0f-124c-4aa1-92dc-dd9f4bdb2fd8",
+        "company": "Brand (inferred from package id)",
+        "UUID_name": "CLIENT_ID",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.ce.android.brand.rabano; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ce.android.brand.rabano",
+                "version_code": 10,
+                "version_name": "1.0.6",
+                "package_path": "AndroZoo/apks/95/com.ce.android.brand.rabano_95487A411A8E3EA1EAC3D9ECD17E40E2C7A2BA3479BD51EF46C74B54337F0E76.apk",
+                "description": "The extractor suggests a gatt characteristic in com.ce.android.brand.rabano; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "11110002-1111-1111-1111-111111111111",
         "company": "Broadlink",
         "UUID_name": "IUS_RC",
@@ -18817,6 +18841,31 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CGW_CLIENT_ID`."
             }
         ]
+    },
+    {
+        "UUID": "16c38233-3ca4-44a1-90ee-f2a8d1fdd243",
+        "company": "Cloud (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in cloud.biobeat.STUDY_COLLECT.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "cloud.biobeat.STUDY_COLLECT",
+                "version_code": 30,
+                "version_name": "1.1.1t6",
+                "package_path": "AndroZoo/apks/37/cloud.biobeat.STUDY_COLLECT_37B3013FC5EDFF671DBDE2EEA9FECC331B75B618E5DFBF6A95BC1897462413FC.apk",
+                "description": "Source review identified a gatt characteristic in cloud.biobeat.STUDY_COLLECT."
+            }
+        ],
+        "parent_UUID": "2905b9aa-6b1f-4c49-9c26-9bfc88350290"
     },
     {
         "UUID": "164b5f7f-b72e-4038-a67c-5308082734a9",
@@ -30379,6 +30428,30 @@
         "parent_UUID": "00000000-0000-0000-0000-00137e5a8eef"
     },
     {
+        "UUID": "12f40002-0000-1000-8000-00805f9b34fb",
+        "company": "Dreamteammobile (inferred from package id)",
+        "UUID_name": "GOOGLE_SOUND",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.dreamteammobile.ufind; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dreamteammobile.ufind",
+                "version_code": 68,
+                "version_name": "1.7.1",
+                "package_path": "AndroZoo/apks/95/com.dreamteammobile.ufind_95972B15818D5EC53820F3A1906CED0093D882BC0803CBE78BA5076B08A87707.apk",
+                "description": "The extractor suggests a gatt service in com.dreamteammobile.ufind; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "1f5b5e35-7a0d-45f8-b9ad-4102dbe91592",
         "company": "EDC Corporation",
         "UUID_name": "GUID_HALIFAX",
@@ -31615,20 +31688,24 @@
     {
         "UUID": "10000000-0000-1000-0000-000005320520",
         "company": "EveLab Insight Hong Kong Limited / MeituEve",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.meitu.eve, declared as Java field `f8290f`. Classification determined by file-level-default.",
+        "UUID_name": "Eve data",
+        "UUID_purpose": "GATT Characteristic used by the Meitu Eve app.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.meitu.eve v1.11.0.0 (versionCode 1110000), in Java field `f8290f`. Classification source: file-level-default.",
+                "description": "The Meitu Eve app contains this UUID.",
                 "submitter": "Claude (Opus 4.7)"
             },
             {
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (skin analyzer)"
+            },
+            {
+                "description": "Source review identified this as a GATT characteristic in the Meitu Eve app.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -31637,56 +31714,39 @@
                 "version_code": 1110000,
                 "version_name": "1.11.0.0",
                 "package_path": "BLUUID_APKS/0956/52c0a4a826f7a803a7454825c2460e89c555b5ccf5a9c188056393733c1184f5/52c0a4a826f7a803a7454825c2460e89c555b5ccf5a9c188056393733c1184f5.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f8290f`."
-            }
-        ]
-    },
-    {
-        "UUID": "10000000-0000-0000-1000-000005320520",
-        "company": "EveLab Insight Hong Kong Limited / MeituEve",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.meitu.eve, declared as Java field `f8291g`. Classification determined by file-level-default.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.meitu.eve v1.11.0.0 (versionCode 1110000), in Java field `f8291g`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
+                "description": "Source review identified a GATT characteristic in this app."
             },
-            {
-                "URL": "None",
-                "submitter": "Claude (Opus 4.7)",
-                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (skin analyzer)"
-            }
-        ],
-        "android_info_array": [
             {
                 "package_id": "com.meitu.eve",
                 "version_code": 1110000,
                 "version_name": "1.11.0.0",
-                "package_path": "BLUUID_APKS/0956/52c0a4a826f7a803a7454825c2460e89c555b5ccf5a9c188056393733c1184f5/52c0a4a826f7a803a7454825c2460e89c555b5ccf5a9c188056393733c1184f5.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f8291g`."
+                "package_path": "AndroZoo/apks/42/com.meitu.eve_42254DCF64CFA57191A1DAFC0B653308B1F43229F25B1D46EEA3ADC7A24E6ECC.apk",
+                "description": "Source review identified a GATT characteristic in this app."
             }
-        ]
+        ],
+        "parent_UUID": "10000000-1000-0000-0000-000005320520"
     },
     {
         "UUID": "10000000-0000-1002-0000-000005320520",
         "company": "EveLab Insight Hong Kong Limited / MeituEve",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.meitu.eve, declared as Java field `f8292h`. Classification determined by file-level-default.",
+        "UUID_name": "Eve device information",
+        "UUID_purpose": "GATT Characteristic used by the Meitu Eve app.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.meitu.eve v1.11.0.0 (versionCode 1110000), in Java field `f8292h`. Classification source: file-level-default.",
+                "description": "The Meitu Eve app contains this UUID.",
                 "submitter": "Claude (Opus 4.7)"
             },
             {
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (skin analyzer)"
+            },
+            {
+                "description": "Source review identified this as a GATT characteristic in the Meitu Eve app.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -31695,9 +31755,17 @@
                 "version_code": 1110000,
                 "version_name": "1.11.0.0",
                 "package_path": "BLUUID_APKS/0956/52c0a4a826f7a803a7454825c2460e89c555b5ccf5a9c188056393733c1184f5/52c0a4a826f7a803a7454825c2460e89c555b5ccf5a9c188056393733c1184f5.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f8292h`."
+                "description": "Source review identified a GATT characteristic in this app."
+            },
+            {
+                "package_id": "com.meitu.eve",
+                "version_code": 1110000,
+                "version_name": "1.11.0.0",
+                "package_path": "AndroZoo/apks/42/com.meitu.eve_42254DCF64CFA57191A1DAFC0B653308B1F43229F25B1D46EEA3ADC7A24E6ECC.apk",
+                "description": "Source review identified a GATT characteristic in this app."
             }
-        ]
+        ],
+        "parent_UUID": "10000000-1000-0000-0000-000005320520"
     },
     {
         "UUID": "10000001-1000-0000-0000-000005320520",
@@ -42309,6 +42377,174 @@
         ]
     },
     {
+        "UUID": "18e36944-1e10-4db6-99f9-bfaa5e323d85",
+        "company": "Robert Bosch GmbH",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.convisual.bosch.toolbox2",
+                "version_code": 370,
+                "version_name": "6.21",
+                "package_path": "AndroZoo/apks/95/de.convisual.bosch.toolbox2_950E04BE6643F0F775280A7282A99ECEB69AA183B000D022175538D5F3AEC26A.apk",
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "18e36944-1e10-4db6-99f9-bfaa5e333d85",
+        "company": "Robert Bosch GmbH",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.convisual.bosch.toolbox2",
+                "version_code": 370,
+                "version_name": "6.21",
+                "package_path": "AndroZoo/apks/95/de.convisual.bosch.toolbox2_950E04BE6643F0F775280A7282A99ECEB69AA183B000D022175538D5F3AEC26A.apk",
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "18e36944-1e10-4db6-99f9-bfaa5e343d85",
+        "company": "Robert Bosch GmbH",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.convisual.bosch.toolbox2",
+                "version_code": 370,
+                "version_name": "6.21",
+                "package_path": "AndroZoo/apks/95/de.convisual.bosch.toolbox2_950E04BE6643F0F775280A7282A99ECEB69AA183B000D022175538D5F3AEC26A.apk",
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "18e36944-1e10-4db6-99f9-bfaa5e353d85",
+        "company": "Robert Bosch GmbH",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.convisual.bosch.toolbox2",
+                "version_code": 370,
+                "version_name": "6.21",
+                "package_path": "AndroZoo/apks/95/de.convisual.bosch.toolbox2_950E04BE6643F0F775280A7282A99ECEB69AA183B000D022175538D5F3AEC26A.apk",
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "18e36944-1e10-4db6-99f9-bfaa5e363d85",
+        "company": "Robert Bosch GmbH",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.convisual.bosch.toolbox2",
+                "version_code": 370,
+                "version_name": "6.21",
+                "package_path": "AndroZoo/apks/95/de.convisual.bosch.toolbox2_950E04BE6643F0F775280A7282A99ECEB69AA183B000D022175538D5F3AEC26A.apk",
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "18e36944-1e10-4db6-99f9-bfaa5e373d85",
+        "company": "Robert Bosch GmbH",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.convisual.bosch.toolbox2",
+                "version_code": 370,
+                "version_name": "6.21",
+                "package_path": "AndroZoo/apks/95/de.convisual.bosch.toolbox2_950E04BE6643F0F775280A7282A99ECEB69AA183B000D022175538D5F3AEC26A.apk",
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "18e36944-1e10-4db6-99f9-bfaa5e383d85",
+        "company": "Robert Bosch GmbH",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "de.convisual.bosch.toolbox2",
+                "version_code": 370,
+                "version_name": "6.21",
+                "package_path": "AndroZoo/apks/95/de.convisual.bosch.toolbox2_950E04BE6643F0F775280A7282A99ECEB69AA183B000D022175538D5F3AEC26A.apk",
+                "description": "The extractor suggests a gatt characteristic in de.convisual.bosch.toolbox2; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "1993",
         "company": "Third-party SDK code (declared in Java package `com.mintti.visionsdk.common` — distinct from host com.ziffytech.newdoctapp; Phase-4 identification needed)",
         "UUID_name": "CHARA_TRANSFER",
@@ -49662,88 +49898,6 @@
             }
         ],
         "parent_UUID": "772ae377-b3d2-4f8e-4042-5481d1e0098c"
-    },
-    {
-        "UUID": "1af484ab-c489-4989-b3e2-593813eac63e",
-        "company": "Third-party SDK code (declared in Java package `com.creditcall.chipdnamobile` — distinct from host com.successware21.mobile; Phase-4 identification needed)",
-        "UUID_name": "FPN_PROXY_CHARACTERISTIC",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.successware21.mobile but declared in third-party SDK package `com.creditcall.chipdnamobile` as Java field `c`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.successware21.mobile v3.14.02 (versionCode 5390), in Java field `c`, declared in Java package `com.creditcall.chipdnamobile` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.fpn.fpnmobileapp v1.5.28 (versionCode 363), in Java field `c`, declared in Java package `com.creditcall.chipdnamobile` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: BluetoothLePortComms.java:273 getCharacteristic(c)",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.successware21.mobile",
-                "version_code": 5390,
-                "version_name": "3.14.02",
-                "package_path": "BLUUID_APKS/0223/abb2007039ca81aea2f4eb2e9a5bdeedb8a54c911a8251b0cf20b38daa7ab4b3/abb2007039ca81aea2f4eb2e9a5bdeedb8a54c911a8251b0cf20b38daa7ab4b3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
-            },
-            {
-                "package_id": "com.fpn.fpnmobileapp",
-                "version_code": 363,
-                "version_name": "1.5.28",
-                "package_path": "BLUUID_APKS/0318/c312e6a5c2361717b6e10a7ac22e801fff9f2dda640568b85a0a07968b118b0f/c312e6a5c2361717b6e10a7ac22e801fff9f2dda640568b85a0a07968b118b0f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `c`."
-            }
-        ]
-    },
-    {
-        "UUID": "10ad69ca-488b-4084-a228-85ac7c7dccf6",
-        "company": "Third-party SDK code (declared in Java package `com.creditcall.chipdnamobile` — distinct from host com.successware21.mobile; Phase-4 identification needed)",
-        "UUID_name": "FPN_SERVICE",
-        "UUID_purpose": "GATT Service observed in Android app com.successware21.mobile but declared in third-party SDK package `com.creditcall.chipdnamobile` as Java field `a`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.successware21.mobile v3.14.02 (versionCode 5390), in Java field `a`, declared in Java package `com.creditcall.chipdnamobile` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.fpn.fpnmobileapp v1.5.28 (versionCode 363), in Java field `a`, declared in Java package `com.creditcall.chipdnamobile` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: AcquirerDetails.java:80 write path; Application.java:55 write path; Application.java:56 write path; Base64.java:196 write path; Base64.java:214 write path; Base64.java:241 write path; Base64.java:267 write path; BluetoothLePortComms.java:124 notification subscription",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Deep Phase-5 UUID-name resolution: Deep Phase-5 RE recovered name from UUID-field dataflow, GATT alias usage, and nearby UI/log strings: BluetoothLePortComms.java:124 notification subscription; BluetoothLePortComms.java:137 notification subscription; BluetoothLePortComms.java:269 getService(a); BluetoothLePortComms.java:274 getCharacteristic(b); BluetoothLePortComms.java:97 changed value broadcast/handler",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.successware21.mobile",
-                "version_code": 5390,
-                "version_name": "3.14.02",
-                "package_path": "BLUUID_APKS/0223/abb2007039ca81aea2f4eb2e9a5bdeedb8a54c911a8251b0cf20b38daa7ab4b3/abb2007039ca81aea2f4eb2e9a5bdeedb8a54c911a8251b0cf20b38daa7ab4b3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `a`."
-            },
-            {
-                "package_id": "com.fpn.fpnmobileapp",
-                "version_code": 363,
-                "version_name": "1.5.28",
-                "package_path": "BLUUID_APKS/0318/c312e6a5c2361717b6e10a7ac22e801fff9f2dda640568b85a0a07968b118b0f/c312e6a5c2361717b6e10a7ac22e801fff9f2dda640568b85a0a07968b118b0f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `a`."
-            }
-        ]
     },
     {
         "UUID": "185ec300-3a9b-4873-8985-722700d71326",
@@ -76300,6 +76454,115 @@
         ]
     },
     {
+        "UUID": "17320958-71ed-43f2-b7f3-d053af9455f2",
+        "company": "Unknown",
+        "UUID_name": "Step alert 4 end hour",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.bydemes.medalert.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified a gatt characteristic in com.climax.vestasmarthome.eu.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bydemes.medalert",
+                "version_code": 10,
+                "version_name": "3.0.0",
+                "package_path": "AndroZoo/apks/42/com.bydemes.medalert_425AA954E58C74F4C1C2DF142671AB8D80A617A73789E90FDFFF9C18056D361B.apk",
+                "description": "Source review identified a gatt characteristic in com.bydemes.medalert."
+            },
+            {
+                "package_id": "com.climax.vestasmarthome.eu",
+                "version_code": 179,
+                "version_name": "3.14.0",
+                "package_path": "AndroZoo/apks/42/com.climax.vestasmarthome.eu_4291C06F9AB1A243834D5CB09A7DEECF44B3E15CBB6E88C3A94834C76A8FAE22.apk",
+                "description": "Source review identified a gatt characteristic in com.climax.vestasmarthome.eu."
+            }
+        ]
+    },
+    {
+        "UUID": "1ba31000-26ab-4727-a8ff-0ee25fccbe66",
+        "company": "Unknown",
+        "UUID_name": "Stork camera service",
+        "UUID_purpose": "GATT Service identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt service in com.masimo.masimosafetynet.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.masimo.masimosafetynet",
+                "version_code": 10356012,
+                "version_name": "1.3.5.6",
+                "package_path": "AndroZoo/apks/42/com.masimo.masimosafetynet_421C7D26E213DBC3AA44770B70AB89CB0727528636E597A53BE4B48B9BA446F5.apk",
+                "description": "Source review identified a gatt service in com.masimo.masimosafetynet."
+            }
+        ]
+    },
+    {
+        "UUID": "1ba31002-26ab-4727-a8ff-0ee25fccbe66",
+        "company": "Unknown",
+        "UUID_name": "Stork camera outgoing characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.masimo.masimosafetynet.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.masimo.masimosafetynet",
+                "version_code": 10356012,
+                "version_name": "1.3.5.6",
+                "package_path": "AndroZoo/apks/42/com.masimo.masimosafetynet_421C7D26E213DBC3AA44770B70AB89CB0727528636E597A53BE4B48B9BA446F5.apk",
+                "description": "Source review identified a gatt characteristic in com.masimo.masimosafetynet."
+            }
+        ],
+        "parent_UUID": "1ba31000-26ab-4727-a8ff-0ee25fccbe66"
+    },
+    {
+        "UUID": "1ba31003-26ab-4727-a8ff-0ee25fccbe66",
+        "company": "Unknown",
+        "UUID_name": "Stork camera incoming characteristic",
+        "UUID_purpose": "GATT Characteristic identified in Android app code.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified a gatt characteristic in com.masimo.masimosafetynet.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.masimo.masimosafetynet",
+                "version_code": 10356012,
+                "version_name": "1.3.5.6",
+                "package_path": "AndroZoo/apks/42/com.masimo.masimosafetynet_421C7D26E213DBC3AA44770B70AB89CB0727528636E597A53BE4B48B9BA446F5.apk",
+                "description": "Source review identified a gatt characteristic in com.masimo.masimosafetynet."
+            }
+        ],
+        "parent_UUID": "1ba31000-26ab-4727-a8ff-0ee25fccbe66"
+    },
+    {
         "UUID": "1f40eaf8-aab4-14a3-f1ba-f61f35cddbaa",
         "company": "Unknown",
         "UUID_name": "Keyboard service",
@@ -76511,6 +76774,497 @@
         ]
     },
     {
+        "UUID": "10000000-5e66-4b24-8874-4c09de1c2005",
+        "company": "Unknown",
+        "UUID_name": "SLUMBERBUM_AUDIO_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.santithesloth.android; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.santithesloth.android",
+                "version_code": 32,
+                "version_name": "1.30",
+                "package_path": "AndroZoo/apks/42/com.santithesloth.android_42382ADDCED1C68EBD0DBB1D27AF65F65915D2F7BFAC31BE09834EEF3BB80CDA.apk",
+                "description": "The extractor suggests a gatt characteristic in com.santithesloth.android; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "10001000-5e66-4b24-8874-4c09de1c2005",
+        "company": "Unknown",
+        "UUID_name": "SLUMBERBUM_SETTING_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.santithesloth.android; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.santithesloth.android",
+                "version_code": 32,
+                "version_name": "1.30",
+                "package_path": "AndroZoo/apks/42/com.santithesloth.android_42382ADDCED1C68EBD0DBB1D27AF65F65915D2F7BFAC31BE09834EEF3BB80CDA.apk",
+                "description": "The extractor suggests a gatt characteristic in com.santithesloth.android; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "10002000-5e66-4b24-8874-4c09de1c2005",
+        "company": "Unknown",
+        "UUID_name": "SLUMBERBUM_FILE_COMMAND_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.santithesloth.android; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.santithesloth.android",
+                "version_code": 32,
+                "version_name": "1.30",
+                "package_path": "AndroZoo/apks/42/com.santithesloth.android_42382ADDCED1C68EBD0DBB1D27AF65F65915D2F7BFAC31BE09834EEF3BB80CDA.apk",
+                "description": "The extractor suggests a gatt characteristic in com.santithesloth.android; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "10003000-5e66-4b24-8874-4c09de1c2005",
+        "company": "Unknown",
+        "UUID_name": "SLUMBERBUM_OTA_VERSION_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.santithesloth.android; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.santithesloth.android",
+                "version_code": 32,
+                "version_name": "1.30",
+                "package_path": "AndroZoo/apks/42/com.santithesloth.android_42382ADDCED1C68EBD0DBB1D27AF65F65915D2F7BFAC31BE09834EEF3BB80CDA.apk",
+                "description": "The extractor suggests a gatt characteristic in com.santithesloth.android; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "10d5fc55-52c3-419b-9fb3-c2808cb0fc68",
+        "company": "Unknown",
+        "UUID_name": "PedometerAndFallSensorFunction",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.bydemes.medalert; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "The extractor suggests a gatt characteristic in com.climax.vestasmarthome.eu; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bydemes.medalert",
+                "version_code": 10,
+                "version_name": "3.0.0",
+                "package_path": "AndroZoo/apks/42/com.bydemes.medalert_425AA954E58C74F4C1C2DF142671AB8D80A617A73789E90FDFFF9C18056D361B.apk",
+                "description": "The extractor suggests a gatt characteristic in com.bydemes.medalert; the role is unverified."
+            },
+            {
+                "package_id": "com.climax.vestasmarthome.eu",
+                "version_code": 179,
+                "version_name": "3.14.0",
+                "package_path": "AndroZoo/apks/42/com.climax.vestasmarthome.eu_4291C06F9AB1A243834D5CB09A7DEECF44B3E15CBB6E88C3A94834C76A8FAE22.apk",
+                "description": "The extractor suggests a gatt characteristic in com.climax.vestasmarthome.eu; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "135d6ff8-5599-4515-9c2a-84ba0af43a53",
+        "company": "Unknown",
+        "UUID_name": "TEMPERATURE_CALIBRATION_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.mhealth.insight; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mhealth.insight",
+                "version_code": 110,
+                "version_name": "Insight 9.0",
+                "package_path": "AndroZoo/apks/95/com.mhealth.insight_9540CBD5CB588AA3C84C4FD0F59AC3396792ED1F84906AAB1D7FDF9E2B74580D.apk",
+                "description": "The extractor suggests a gatt characteristic in com.mhealth.insight; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "151aabe5-8140-4894-85e5-326f9ab66d71",
+        "company": "Unknown",
+        "UUID_name": "COSENSOR_FIRMWARE_VERSION_CHAR",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.mhealth.insight; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mhealth.insight",
+                "version_code": 110,
+                "version_name": "Insight 9.0",
+                "package_path": "AndroZoo/apks/95/com.mhealth.insight_9540CBD5CB588AA3C84C4FD0F59AC3396792ED1F84906AAB1D7FDF9E2B74580D.apk",
+                "description": "The extractor suggests a gatt characteristic in com.mhealth.insight; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1520",
+        "company": "Unknown",
+        "UUID_name": "NORMAL_READ_CHAR",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.globics.pininfarina; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.globics.pininfarina",
+                "version_code": 200026,
+                "version_name": "1.0.26",
+                "package_path": "AndroZoo/apks/95/com.globics.pininfarina_9586075AE06BFBB3BA21B01488321E23BAA0378C3E1241FA946FED3FAFBDA759.apk",
+                "description": "The extractor suggests a gatt characteristic in com.globics.pininfarina; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1567de1d-68e0-4cec-8add-a99b8ebc7e89",
+        "company": "Unknown",
+        "UUID_name": "SLOPE_CHARACTERISTIC",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.mhealth.insight; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.mhealth.insight",
+                "version_code": 110,
+                "version_name": "Insight 9.0",
+                "package_path": "AndroZoo/apks/95/com.mhealth.insight_9540CBD5CB588AA3C84C4FD0F59AC3396792ED1F84906AAB1D7FDF9E2B74580D.apk",
+                "description": "The extractor suggests a gatt characteristic in com.mhealth.insight; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1620",
+        "company": "Unknown",
+        "UUID_name": "TELEPHONE_READ_CHAR",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.globics.pininfarina; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.globics.pininfarina",
+                "version_code": 200026,
+                "version_name": "1.0.26",
+                "package_path": "AndroZoo/apks/95/com.globics.pininfarina_9586075AE06BFBB3BA21B01488321E23BAA0378C3E1241FA946FED3FAFBDA759.apk",
+                "description": "The extractor suggests a gatt characteristic in com.globics.pininfarina; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1644",
+        "company": "Unknown",
+        "UUID_name": "OTA_CHARACTERISTIC_UUID_BLE",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.matterport.android.capture.gov; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.matterport.android.capture.gov",
+                "version_code": 3365,
+                "version_name": "2.60.1 (3365)",
+                "package_path": "AndroZoo/apks/42/com.matterport.android.capture.gov_42500E60DAA5670AA5375E5A45A10A5188B318A7A1205D978595F166DB63AEC0.apk",
+                "description": "The extractor suggests a gatt characteristic in com.matterport.android.capture.gov; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1650",
+        "company": "Unknown",
+        "UUID_name": "TELEPHONE_CHAR",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.globics.pininfarina; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.globics.pininfarina",
+                "version_code": 200026,
+                "version_name": "1.0.26",
+                "package_path": "AndroZoo/apks/95/com.globics.pininfarina_9586075AE06BFBB3BA21B01488321E23BAA0378C3E1241FA946FED3FAFBDA759.apk",
+                "description": "The extractor suggests a gatt characteristic in com.globics.pininfarina; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "190e",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in hu.tiborsosdevs.haylou.hello; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "hu.tiborsosdevs.haylou.hello",
+                "version_code": 30719,
+                "version_name": "3.7.19",
+                "package_path": "AndroZoo/apks/37/hu.tiborsosdevs.haylou.hello_378CFAD67925A595AB722BDD157FD7207081D4E15DF032B586D604F78CCB9E14.apk",
+                "description": "The extractor suggests a gatt characteristic in hu.tiborsosdevs.haylou.hello; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "19bac844-b3ea-4948-9506-d6399691bd7a",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Characteristic; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt characteristic in com.joingo.jack; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.joingo.jack",
+                "version_code": 401001,
+                "version_name": "3.2.230810",
+                "package_path": "AndroZoo/apks/37/com.joingo.jack_37D338F05CD8DDDF5E1963D7B94440853829BA86825E31581105CD06743AF17B.apk",
+                "description": "The extractor suggests a gatt characteristic in com.joingo.jack; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "108b5094-4c03-e51c-555e-105d1a1155f0",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.armaniexchange.connected; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.armaniexchange.connected",
+                "version_code": 18853,
+                "version_name": "5.1.20",
+                "package_path": "AndroZoo/apks/37/com.armaniexchange.connected_378DD90FDA340819639B475045873E22B12401953A0B270AA99B5712141D7E93.apk",
+                "description": "The extractor suggests a gatt service in com.armaniexchange.connected; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "11111111-1111-1111-1111-000000000000",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.slicelife.driversapp; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.slicelife.driversapp",
+                "version_code": 30,
+                "version_name": "2.1.2",
+                "package_path": "AndroZoo/apks/95/com.slicelife.driversapp_95952227446BD2FE45FE7373B65F269BAF2212D8DF406875D3B373718AC0DF7E.apk",
+                "description": "The extractor suggests a gatt service in com.slicelife.driversapp; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1500",
+        "company": "Unknown",
+        "UUID_name": "NORMAL_COMM_SERVICE",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.globics.pininfarina; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.globics.pininfarina",
+                "version_code": 200026,
+                "version_name": "1.0.26",
+                "package_path": "AndroZoo/apks/95/com.globics.pininfarina_9586075AE06BFBB3BA21B01488321E23BAA0378C3E1241FA946FED3FAFBDA759.apk",
+                "description": "The extractor suggests a gatt service in com.globics.pininfarina; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1600",
+        "company": "Unknown",
+        "UUID_name": "TELEPHONE_SERVICE",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.globics.pininfarina; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.globics.pininfarina",
+                "version_code": 200026,
+                "version_name": "1.0.26",
+                "package_path": "AndroZoo/apks/95/com.globics.pininfarina_9586075AE06BFBB3BA21B01488321E23BAA0378C3E1241FA946FED3FAFBDA759.apk",
+                "description": "The extractor suggests a gatt service in com.globics.pininfarina; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1900",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.themillionroses.vibes; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.themillionroses.vibes",
+                "version_code": 60969,
+                "version_name": "5.5.0.0 (29437)",
+                "package_path": "AndroZoo/apks/37/com.themillionroses.vibes_37A22939685C1523513EA070933B96DDA7BC2CB2250FB9086673D38FAE164C1D.apk",
+                "description": "The extractor suggests a gatt service in com.themillionroses.vibes; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1903",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.themillionroses.vibes; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.themillionroses.vibes",
+                "version_code": 60969,
+                "version_name": "5.5.0.0 (29437)",
+                "package_path": "AndroZoo/apks/37/com.themillionroses.vibes_37A22939685C1523513EA070933B96DDA7BC2CB2250FB9086673D38FAE164C1D.apk",
+                "description": "The extractor suggests a gatt service in com.themillionroses.vibes; the role is unverified."
+            }
+        ]
+    },
+    {
         "UUID": "1a1c59d1-7ced-409a-87f6-fa7580cadadb",
         "company": "Unknown",
         "UUID_name": "Unknown",
@@ -76531,6 +77285,54 @@
                 "version_name": "24.0.1.103",
                 "package_path": "AndroZoo/apks/05/com.goldendream.display_0569BE97A2EDD2B319DB075A3CB06CD5B5E497DBD354B08E16525A358E23D0B9.apk",
                 "description": "The extractor suggests a gatt service in com.goldendream.display; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1b765411-49d1-413b-b667-2950763a671a",
+        "company": "Unknown",
+        "UUID_name": "IN_PREFS",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.infonow.bofa; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.infonow.bofa",
+                "version_code": 2086100774,
+                "version_name": "25.10.0",
+                "package_path": "AndroZoo/apks/37/com.infonow.bofa_37990C9745D0C2ED961BF859FBC1AD7CB2C6DEB8316E007506AF1AC9E1FC76E0.apk",
+                "description": "The extractor suggests a gatt service in com.infonow.bofa; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "1d86511c-1353-47f8-9123-3df6cde6de95",
+        "company": "Unknown",
+        "UUID_name": "ARGUMENT_EXTENSION",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.appg.aidplayer; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.appg.aidplayer",
+                "version_code": 8,
+                "version_name": "1.0.6a",
+                "package_path": "AndroZoo/apks/95/com.appg.aidplayer_955AB6E25052B55AB9F5D7BDC2D75F5278E24BD08EFBC9B7B1ECA83F9E6A59A0.apk",
+                "description": "The extractor suggests a gatt service in com.appg.aidplayer; the role is unverified."
             }
         ]
     },
@@ -85550,6 +86352,30 @@
                 "version_name": "0.3.748",
                 "package_path": "BLUUID_APKS/0787/6370a8decb92d3e96f4d3dd904a89829829f181128e5484c986d5dd820650a94/6370a8decb92d3e96f4d3dd904a89829829f181128e5484c986d5dd820650a94.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `TEMPERATURE_MISSION_SAMPLE_INJECTION`."
+            }
+        ]
+    },
+    {
+        "UUID": "1f525bbd-28b7-418e-8370-ec82dc3a6917",
+        "company": "Zeller (inferred from package id)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Possible GATT Service; the role remains an extractor inference.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "The extractor suggests a gatt service in com.zeller.zellerapp; the role is unverified.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.zeller.zellerapp",
+                "version_code": 17995,
+                "version_name": "1.1.77",
+                "package_path": "AndroZoo/apks/95/com.zeller.zellerapp_95586BC1595FBE91B6B4B34504D1B9A509015166160E966BD8389CDB3EC8FF7C.apk",
+                "description": "The extractor suggests a gatt service in com.zeller.zellerapp; the role is unverified."
             }
         ]
     },
