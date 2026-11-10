@@ -239,6 +239,34 @@ python3 .../extract_clues.py /tmp/two-apks \
 
 ## Output format
 
+**Functional UUID purposes are required.** Write a concise, human-readable function
+supported by the APK source or a cited GitHub source. A GATT role, app identity,
+parent UUID, source location, discovery method, or field name alone is not a
+purpose. When APK source does not establish the function, search GitHub in Chrome
+and cite the supporting GitHub page in `evidence_array` if it provides the answer.
+If neither source establishes it, write exactly `The purpose is unknown.` Record
+provisional or unsearched status in evidence, not in `UUID_purpose`.
+
+For GitHub fallback, run `python3 /Users/user/Blue2thprinting/Analysis/CLUES_Schema/scripts/UUID_Search_Permutations.py <UUID128>` and search the output forms in Chrome: dashed, undashed, fully byte-reversed undashed, and fully byte-reversed C arrays both with and without spaces. For a Bluetooth-base UUID16, also search its short form with enough product context to distinguish reused values. The script's byte reversal reverses all 16 bytes; it is not the mixed-endian GUID layout. Record each attempted query and any search limitation in the research audit. Do not treat an unsearched form or a blocked search as a negative result.
+
+**Instructions for Luna and other research agents:** For each UUID, follow its
+value from declaration to Bluetooth service/characteristic use and to the
+application operation or packet parser. Describe the specific action or data
+(e.g. "Reports tire pressure from the sensor" or "Writes a lighting schedule to
+the controller"). When the evidence establishes the device's overall function,
+connect the UUID's action to that device in one short sentence; do not substitute
+a generic device description for the UUID's own role. A label such as TX, data,
+characteristic, service, or "role remains an extractor inference" does not by
+itself explain purpose. Do not infer direction, data type, owner, or device
+function without source evidence. Review surrounding consumers, callbacks and
+packet parsers; if the APK does not resolve function, search GitHub in Chrome for
+the exact UUID and cite any page actually used. If searches do not resolve it,
+write exactly `The purpose is unknown.` Keep the search/evidence trail separately.
+The curator must check descriptions against cited evidence and escalate repeated
+low-quality or unsupported Luna results to a stronger model, such as Terra, rather
+than accepting filler.
+
+
 The output JSON conforms to `CLUES_schema.json` and is a flat top-level array of records. A typical record looks like:
 
 ```json
@@ -246,7 +274,7 @@ The output JSON conforms to `CLUES_schema.json` and is a flat top-level array of
     "UUID": "f8083535-849e-531c-c594-30f1f86a4ea5",
     "company": "Unknown",
     "UUID_name": "Unknown",
-    "UUID_purpose": "Custom GATT Service observed in Android app com.dexcom.stelo (Stelo by Dexcom).",
+    "UUID_purpose": "The purpose is unknown.",
     "UUID_usage_array": [ "GATT Service" ],
     "evidence_array": [
         {
@@ -268,13 +296,19 @@ The output JSON conforms to `CLUES_schema.json` and is a flat top-level array of
 
 Characteristics carry `parent_UUID` only when the parent service is supported by a specific service-to-characteristic relationship, such as a characteristic lookup on the service object. A service and characteristic appearing in the same file or APK is not sufficient evidence. Preserve existing reviewed parent fields when merging; investigate conflicting proposals rather than overwriting them.
 
-Source review must distinguish GATT from RFCOMM/SPP and unrelated UUID-shaped identifiers. The current CLUES usage schema does not include GATT descriptors: verify descriptor-shaped values against the actual GATT path and do not emit them as characteristics. In Creditcall receipt classes, processor identifiers use short fields that can collide with unrelated GATT fields: verify the declaring class and exact dataflow, including older APKs, before accepting or correcting such entries. A generic `getService` call is not sufficient: confirm the owner and a Bluetooth GATT receiver. BuildConfig hotel and location IDs without independent BLE use are not GATT UUIDs. The extractor may still emit RFCOMM-only values as weak file-level defaults, so inspect their actual dataflow before accepting them.
+Source review must distinguish GATT from RFCOMM/SPP and unrelated UUID-shaped identifiers. The current CLUES usage schema does not include GATT descriptors: verify descriptor-shaped values against the actual GATT path and do not emit them as characteristics. In Creditcall receipt classes, processor identifiers use short fields that can collide with unrelated GATT fields: verify the declaring class and exact dataflow, including older APKs, before accepting or correcting such entries. A generic `getService` call is not sufficient: confirm the owner and a Bluetooth GATT receiver. BuildConfig hotel and location IDs without independent BLE use are not GATT UUIDs. The extractor may still emit RFCOMM-only values as weak file-level defaults, so inspect their actual dataflow before accepting them. For example, Zeemote JS1 controller discovery passes a ParcelUuid into createRfcommSocketToServiceRecord; that is an SDP service rather than a GATT service.
+
+A UUID used only in `ScanFilter.setServiceUuid`, advertised-service matching, or advertisement parsing is an advertising identifier; that alone does not establish that a GATT service exists on the device. Record advertisement use when supported, and require a typed GATT service lookup, discovery, construction, or equivalent evidence before confirming a GATT Service role. Do not infer a characteristic parent from the advertisement.
 
 Search UUID literals case-insensitively during source review. Before concluding that a UUID is absent, check its full and short Bluetooth-base forms, relevant unhyphenated forms, and any JADX temporary-variable aliases; uppercase hexadecimal in source is common.
+
+Follow lowered Kotlin UUID aliases and feature maps into typed GATT lookups before accepting a role guessed from a nearby service name. The extractor has narrowly source-gated rules for the Kryo Ooler service/characteristic Pair map, the Illuminati SpotModel characteristic map, and SunRADON characteristic getters. Those mappings establish the reviewed app's use; keep firmware-dependent or otherwise conflicting parents app-specific rather than asserting a universal parent. The Riddell configuration writer likewise traces named fields through its typed characteristic lookup. Scoped exclusions cover credential payloads, menu and venue keys, development accounts, messaging and advertising identifiers, and OAuth client identifiers. Direct GATT use still takes precedence; keep exclusions tied to the exact source context.
 
 When the extractor attributes a finding to a managed assembly, review its ILSpy-decompiled C# and relevant BLE call sites; a search of the JADX Java tree cannot establish whether that managed UUID is absent. Identify the source assembly and preserve the decompiled evidence alongside the external review artifact.
 
 Before merging a source review, mechanically validate every detailed citation against the exact APK's extracted archive: the relative source file must exist, every cited line and range must be within that file, and the cited code must support the stated role or parent. Correct path-joining errors and cross-APK or decompiler-name mixups; re-review any finding whose evidence cannot be verified. Keep these detailed citations in the external review artifact.
+
+Join review decisions to the current CLUES records by normalized UUID and exact observing APK, never by list position: sorting and earlier merges can reorder records. If a normalized UUID maps to multiple records, disambiguate the actual SDK or device context from evidence; do not apply a role or parent to an arbitrary match.
 
 For example:
 
@@ -283,7 +317,7 @@ For example:
     "UUID": "f8083536-849e-531c-c594-30f1f86a4ea5",
     "company": "Unknown",
     "UUID_name": "Unknown",
-    "UUID_purpose": "GATT Characteristic under f8083535-849e-531c-c594-30f1f86a4ea5 in com.dexcom.stelo.",
+    "UUID_purpose": "The purpose is unknown.",
     "UUID_usage_array": [ "GATT Characteristic" ],
     "parent_UUID": "f8083535-849e-531c-c594-30f1f86a4ea5",
     "evidence_array": [ ... ],
@@ -586,7 +620,7 @@ The rules, per APK build and UUID:
 | Agent verdict | Effect |
 | --- | --- |
 | `Not Bluetooth` / `Other Bluetooth` | That build's `android_info_array` row and its Phase-1 evidence line are removed. A record with no host left goes to the rejected sidecar. |
-| GATT role with `role_basis` `direct_use` / `sdk_wrapper_flow` | `UUID_usage_array` becomes the union of confirmed roles, plus the old roles if some host was not reviewed. The leading role in `UUID_purpose` follows. |
+| GATT role with `role_basis` `direct_use` / `sdk_wrapper_flow` | `UUID_usage_array` becomes the union of confirmed roles, plus the old roles if some host was not reviewed. Keep the functional `UUID_purpose` independent of the role. |
 | GATT role that is only `naming_only`/`none`, or `Unconfirmed` | The extractor's role is kept, and a "role not confirmed" evidence entry is added. |
 | `parent_UUID` | Set only from a source-shown binding. Removed when the APKs disagree, when the record is no longer a characteristic, and when a full review did not confirm the extractor's parent. |
 | `UUID_name`, `sdk_or_company` | Not applied. They become proposals; see below. |
@@ -837,7 +871,7 @@ Build a mapping JSON keyed by cluster_id:
 }
 ```
 
-> **Company-field rule.** `company` is the **bare company name**. Any descriptive context — product names, what BLE is used for, SDK ancestry, the cluster's blast radius — goes in `note` (folded into UUID_purpose and into KNOWN_SDK_UUIDS for future runs). Don't pack it into `company`. The apply script calls `company_sanitizer.sanitize_for_write` and will auto-strip parenthetical / em-dash commentary, append it to each record's `evidence_array`, and emit a stderr `[sanitize]` warning — the warning means "put it in `note` next time, not in `company`".
+> **Company-field rule.** `company` is the **bare company name**. Any descriptive context — product names, what BLE is used for, SDK ancestry, the cluster's blast radius — goes in `note` (recorded in evidence and in KNOWN_SDK_UUIDS for future runs). Don't pack it into `company`. The apply script calls `company_sanitizer.sanitize_for_write` and will auto-strip parenthetical / em-dash commentary, append it to each record's `evidence_array`, and emit a stderr `[sanitize]` warning — the warning means "put it in `note` next time, not in `company`".
 
 Then:
 
@@ -850,7 +884,7 @@ python3 /Users/user/.claude/skills/apk-clues-extract/scripts/apply_sdk_identific
 The script:
 - Replaces `company` on every record whose UUID is in any mapped cluster
 - Upgrades `UUID_name` from "Unknown" when the mapping supplies a curated name
-- Appends a `Phase-4 SDK identification: <note>.` line to `UUID_purpose`
+- Adds the SDK-identification note to `evidence_array`
 - **Prints to stdout the Python diff to extend `KNOWN_SDK_UUIDS` in `extract_clues.py`** — pasting this into the file means every future Phase-1 run hits the table directly and never has to identify this SDK again.
 
 ### Worked example — Kubi / Zoom
@@ -935,7 +969,7 @@ The script:
 
 - Replaces `UUID_name` **only** when the current value is `"Unknown"` — a previously-curated name is never overwritten.
 - Replaces `UUID_purpose` when supplied (always — the static-extractor-generated purpose is intentionally low-quality, so a curator's better description wins).
-- Replaces `company` when supplied **and** the current value is `"Unknown"` / `(inferred from package id)` / a Phase-4 `Unidentified shared SDK` or `Third-party SDK code (declared in Java package ...)` marker. Curated values are protected. The supplied `company` must be the **bare company name**; commentary belongs in `note` (which becomes an evidence entry) or in `UUID_purpose`. `company_sanitizer.sanitize_for_write` auto-strips any parenthetical / em-dash commentary that slips in, emits a stderr `[sanitize]` warning, and tucks the stripped text into a fresh evidence entry — so the data ends up clean even if the mapping wasn't.
+- Replaces `company` when supplied **and** the current value is `"Unknown"` / `(inferred from package id)` / a Phase-4 `Unidentified shared SDK` or `Third-party SDK code (declared in Java package ...)` marker. Curated values are protected. The supplied `company` must be the **bare company name**; commentary belongs in `note` (which becomes an evidence entry) or another evidence entry. `company_sanitizer.sanitize_for_write` auto-strips any parenthetical / em-dash commentary that slips in, emits a stderr `[sanitize]` warning, and tucks the stripped text into a fresh evidence entry — so the data ends up clean even if the mapping wasn't.
 - Appends a `"Phase-5 UUID-name resolution: <note>"` evidence entry when `note` is supplied (credited to this run's submitter label, not inherited from the record's earlier evidence).
 - Re-sorts the JSON by UUID and writes back atomically.
 - **Prints the Python diff for `KNOWN_SDK_UUIDS`** so a curator can paste the new entries into `extract_clues.py`. Every future Phase-1 run then hits the table directly and never has to re-resolve these UUIDs — preferred over per-record patches, exactly as in Phase 4.

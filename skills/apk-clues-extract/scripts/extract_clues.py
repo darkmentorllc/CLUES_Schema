@@ -213,6 +213,16 @@ NON_GATT_CLASS_FIELD_HINTS: dict[tuple[str, str], frozenset[str]] = {
     ("zendesk.android.internal.frontendevents", "FrontendEventsRepository"): frozenset({"CLIENT_ID"}),
     ("zendesk.analyticskit.android.model", "AnalyticsSettings"): frozenset({"CLIENT_ID"}),
     ("com.zebra.sdk.comm.internal", "BluetoothUuids"): frozenset({"STATUS_CHANNEL_ID"}),
+    # Whirlpool onboarding credential text is characteristic payload, not an attribute UUID.
+    ("com.whirlpool.blegattclient", "GattClient"): frozenset({"accessCredentials"}),
+    # Dexcom Share development registration values, not Bluetooth attributes.
+    ("com.dexcom.common.service.internal.model", "Constants"): frozenset({"TEST_ACCOUNT_ID", "TEST_APP_ID"}),
+    # Allegion test integration values and Polar OAuth client credentials.
+    ("com.allegion.accesssdk.nfc", "BuildConfig"): frozenset({"EXPECTED_CONNECTED_ACCOUNT", "EXPECTED_ACCESS_RIGHT_RESPONSE_ID", "INTEGRATION_ID"}),
+    ("com.inetech.cns.omenu.device.polar", "Polar"): frozenset({"clientId", "clientSecret"}),
+    # Huf lease-token demo document identifiers are payload fields, not GATT UUIDs.
+    ("com.hufsm.secureaccess.api", "LeaseToken"): frozenset({"leaseTokenId", "leaseId", "sorcId"}),
+    ("com.hufsm.secureaccess.ble.model.lease", "LeaseToken"): frozenset({"leaseTokenId", "leaseId", "sorcId"}),
     # A source-traced GATT descriptor, outside the service/characteristic schema.
     ("com.starkey.android.bluetooth", "BluetoothConstantsKt"): frozenset({"SSI_LONG_SIZE_DESCRIPTOR"}),
     # OpenKey uses this as a test application ID in key material.
@@ -243,6 +253,38 @@ NON_GATT_CLASS_FIELD_HINTS: dict[tuple[str, str], frozenset[str]] = {
         "MY_UUID_SECURE",
     }),
 }
+
+# Source-reviewed eSolar menu keys and Nerivio Outlook OAuth identifiers.
+NON_GATT_CLASS_FIELD_HINTS.update({
+    ('app.theranica.fragments.main.settings.preventive.calendar.outlook', 'OutlookAuthManager'): frozenset(['CLIENT_ID', 'REDIRECT_URI', 'redirect_uri']),
+    ('app.theranica.fragments.main.settings.preventive.calendar.outlook', 'OutlookAuthRedirectActivity'): frozenset(['SCHEME']),
+    ('com.saj.connection.net.us', 'NetRemoteConfig'): frozenset(['MENU_ID_BATTERY_ADVANCED_SETTING_AS3', 'MENU_ID_BATTERY_ADVANCED_SETTING_H1', 'MENU_ID_BATTERY_ADVANCED_SETTING_H2', 'MENU_ID_BATTERY_ADVANCED_SETTING_HS3', 'MENU_ID_SELF_TEST_REPORT', 'MENU_ID_US_HIGH_DIESEL_GENERATOR', 'MENU_ID_US_LOW_CHECK_DEVICE', 'MENU_ID_US_LOW_GEN_PORT_SETTING', 'MENU_ID_US_LOW_PARALLEL_SETTING', 'MENU_ID_US_PARALLEL', 'MENU_ID_US_WORK_MODE_LOW_VOLT', 'MENU_ID_YA_FEI_LA_GEN_PORT_SETTING', 'MENU_ID_YA_FEI_LA_PARALLEL_SETTING']),
+})
+
+# Scoped app feature-flag/chat and invoice/country configuration IDs.
+NON_GATT_CLASS_FIELD_HINTS.update({
+    ('com.totem', 'BuildConfig'): frozenset(['CRISP_WEBSITE_ID_EQT', 'CRISP_WEBSITE_ID_INFORMA', 'CRISP_WEBSITE_ID_TOTEM', 'LAUNCH_DARKLY_MOBILE_KEY']),
+    ('ro.digibank.fgo.ui.screens.efactura', 'FgoTransactionToSend'): frozenset(['SPENDING_CATEGORY_ID']),
+    ('ro.itom.fgoro.salt.fgolibrary.domain.model', 'Client'): frozenset(['ROMANIA_ID']),
+    ('ro.itom.fgoro.salt.fgolibrary.domain.model', 'Registry'): frozenset(['INVOICE_REGISTRY_ID', 'PROFORMA_REGISTRY_ID']),
+})
+
+# App-specific messaging, venue, ad SDK and restaurant backend IDs.
+NON_GATT_CLASS_FIELD_HINTS.update({
+    ('com.belico.simpelapp', 'BuildConfig'): frozenset(['SENDBIRD_APP_ID']),
+    ('com.belico.simpelapp.utils', 'GlobalUtil'): frozenset(['str3']),
+    ('com.ce.android.brand.beechrestaurants', 'BEECHRestaurantsProperties'): frozenset(['CLIENT_ID']),
+    ('com.ce.android.brand.minutemanburgers', 'MinuteManBurgersProperties'): frozenset(['CLIENT_ID']),
+    ('com.ce.android.brand.southernroost', 'SouthernRoostProperties'): frozenset(['CLIENT_ID']),
+    ('com.clientmobileapp', 'BuildConfig'): frozenset(['BRAZE_API_KEY_ANDROID', 'BRAZE_API_KEY_IOS', 'SENDBIRD_APP_ID']),
+    ('com.io.wearlynxtracking', 'WearLynxModule'): frozenset(['BLUE_MOUNTAIN_SUMMER_RESORT_GUID', 'SNOW_VALLEY_RESORT_GUID']),
+    ('com.kakao.adfit', 'AdfitSdk'): frozenset(['BUILD_ID']),
+    ('com.wearlynx.slandroidalterrawl', 'SLAndroidAlterraWL'): frozenset(['BLUE_MOUNTAIN_SUMMER_RESORT_GUID', 'SNOW_VALLEY_RESORT_GUID']),
+    ('com.wearlynx.slandroidalterrawl.resortdata', 'SLAlterraWLBots'): frozenset(['mpResortGuid']),
+    ('com.wearlynx.slandroidalterrawl.resortdata', 'SLResortBlueMountainONSummer'): frozenset(['guid']),
+    ('com.wearlynx.slandroidalterrawl.resortdata', 'SLResortSnowValley'): frozenset(['guid']),
+    ('io.te2.defaults', 'BaseNavigationActivity'): frozenset(['STRATTON_ACTIVITIES_CATEGORY', 'TREMBLANT_ACTIVITIES_CATEGORY']),
+})
 
 # Creditcall uses obfuscated a/b/c/d fields for payment processor receipt
 # identifiers. The same short field names occur in unrelated BLE classes;
@@ -1419,6 +1461,76 @@ def _typed_uuid_pair_constructor_roles(text: str) -> dict[tuple[str, int], dict[
     return result
 
 
+def _gardena_api_super_uuid_pairs(text: str) -> list[tuple[str, str]]:
+    """Follow Gardena API subclasses' UUID temporaries into their base slots.
+
+    The scope and verified base assignments matter: adjacent UUID literals or
+    an unrelated ``super`` call do not establish service/characteristic roles.
+    """
+    if _java_package_of(text) != "com.gardena.libraries.bluetooth_watering.api":
+        return []
+    top = re.search(r"\b(?:abstract\s+)?class\s+(ReadCharacteristic|WriteCharacteristic)\b", text)
+    if not top:
+        return []
+    base = top.group(1)
+    arity = 2 if base == "ReadCharacteristic" else 3
+    roles = _typed_uuid_pair_constructor_roles(text).get((base, arity))
+    if roles != {0: "GATT Service", 1: "GATT Characteristic"}:
+        return []
+    braces = dict(_java_brace_spans(text))
+    result: set[tuple[str, str]] = set()
+    for cls in re.finditer(
+        r"\bclass\s+([A-Za-z_$][A-Za-z0-9_$]*)\s+extends\s+"
+        + re.escape(base) + r"\b[^\{;]*\{", text,
+    ):
+        start = cls.end() - 1
+        end = braces.get(start)
+        if end is None:
+            continue
+        for ctor in CONSTRUCTOR_SIG_RE.finditer(text, start + 1, end):
+            if ctor.group(1) != cls.group(1):
+                continue
+            body_start = ctor.end() - 1
+            body_end = braces.get(body_start)
+            if body_end is None or body_end > end:
+                continue
+            body = text[body_start + 1:body_end]
+            values: dict[str, str] = {}
+            # Only simple local UUID assignments are resolved; conflicting
+            # assignments fail closed instead of borrowing another object's temp.
+            conflicts: set[str] = set()
+            for assignment in re.finditer(
+                r'\bUUID\s+(\w+)\s*=\s*UUID\.fromString\("([0-9a-fA-F-]{36})"\)\s*;', body,
+            ):
+                name, raw = assignment.groups()
+                if name in values:
+                    conflicts.add(name)
+                values[name] = normalize_uuid(raw)
+            calls = list(re.finditer(r"\bsuper\s*\(", body))
+            if len(calls) != 1:
+                continue
+            opening = body.find("(", calls[0].start())
+            closing = _find_matching_java_paren(body, opening)
+            if closing is None:
+                continue
+            args = _split_top_level_java_args(body[opening + 1:closing])
+            if len(args) not in {arity, arity + 1}:
+                continue
+            if len(args) == arity + 1 and args[-1].strip() != "null":
+                continue
+            names = [arg.strip() for arg in args[:2]]
+            if any(name not in values or name in conflicts for name in names):
+                continue
+            # Reject mutation after the UUID literal, even if the replacement
+            # is not another fromString assignment.
+            if any(len(re.findall(r"\b" + re.escape(name) + r"\s*=", body)) != 1 for name in names):
+                continue
+            service, characteristic = (values[name] for name in names)
+            if service != characteristic:
+                result.add((service, characteristic))
+    return sorted(result)
+
+
 def _camel_tokens(name: str) -> list[str]:
     return re.findall(r"[A-Z]+(?=[A-Z][a-z]|$)|[A-Z]?[a-z]+|\d+", name)
 
@@ -1863,6 +1975,120 @@ def _field_has_gatt_sink(field: str, source: str) -> bool:
     return bool(_field_usage_roles(field, source))
 
 
+def _mobilytics_owner_uuid_sources(file_texts: dict[str, str]) -> dict[str, set[str]]:
+    """Analytics feature-owner IDs from the verified SOURCE annotation.
+
+    This recognizes source shape, never UUID values or broad Amazon packages.
+    Filtering runs after APK-wide typed GATT recovery so a real endpoint use
+    of the same constant remains authoritative.
+    """
+    result: dict[str, set[str]] = {}
+    for path, text in file_texts.items():
+        if (_java_package_of(text) != "com.amazon.alexa.mobilytics"
+                or not re.search(r"@interface\s+OwnerIdentifier\b", text)
+                or not re.search(r"@Retention\(\s*RetentionPolicy\.SOURCE\s*\)", text)):
+            continue
+        for raw in re.findall(
+            r'\bstatic\s+final\s+String\s+\w+\s*=\s*"([0-9A-Fa-f-]{36})"', text
+        ):
+            result.setdefault(normalize_uuid(raw), set()).add(path)
+    return result
+
+
+def _smartbear_ui_metadata_uuid_sources(
+    file_texts: dict[str, str],
+) -> dict[str, set[str]]:
+    """Find source-verified SmartBear UI metadata catalogs, not GATT profiles.
+
+    Alere PSTMobile embeds these obfuscated SmartBear recording classes:
+    mu = event properties; bs/ry = UI control adapters; mx = event types;
+    nw = Xamarin UI hook names; fh = serialized expression-node factories.
+    Require both the exact package/class and the observed source shape.
+    This is deliberately not a global UUID-value exclusion.
+    """
+    result: dict[str, set[str]] = {}
+    for path, text in file_texts.items():
+        if _java_package_of(text) != "com.smartbear.testing":
+            continue
+        matches: list[str] = []
+        if re.search(r"\bclass\s+(?:mu|bs|ry|mx)\b", text):
+            # The affected classes are UUID constant dictionaries. A real
+            # Android GATT consumer of one of these fields is preserved by
+            # the APK-wide filter after cross-file role recovery below.
+            matches = re.findall(
+                r'\b(?:static\s+final|final\s+static)\s+UUID\s+\w+\s*='
+                r'\s*UUID\.fromString\(\s*"([0-9A-Fa-f-]{36})"\s*\)',
+                text,
+            )
+            if len(matches) < 3:
+                matches = []
+        elif (re.search(r"\bclass\s+nw\s+implements\s+NotificationCallback\b", text)
+                and "android.view.MotionEvent" in text
+                and "android.view.View" in text):
+            # Only hook keys compared as notification names, not arbitrary
+            # UUID strings elsewhere in this otherwise larger recorder.
+            for field, value in re.findall(
+                r'\bstatic\s+final\s+String\s+(\w+)\s*=\s*"([0-9A-Fa-f-]{36})"',
+                text,
+            ):
+                if re.search(
+                    rf"equalsIgnoreCase\(\s*{re.escape(field)}\s*\)"
+                    rf"|\b{re.escape(field)}\.equalsIgnoreCase\(", text,
+                ):
+                    matches.append(value)
+        elif (re.search(r"\bclass\s+fh\s+implements\s+fo\b", text)
+                and "getConstructor(fo.class)" in text
+                and "newInstance(this)" in text):
+            # UUID -> expression evaluator class, used by the serialized
+            # left/right/operation tree factory; not a Bluetooth catalog.
+            matches = re.findall(
+                r'\.put\(\s*UUID\.fromString\(\s*"([0-9A-Fa-f-]{36})"\s*\)'
+                r'\s*,\s*(?:fm|fl|fi)\.class\s*\)', text,
+            )
+        for raw in matches:
+            result.setdefault(normalize_uuid(raw), set()).add(path)
+    return result
+
+
+def _sony_non_gatt_uuid_context(uuid: str, java_package: str | None, source: str) -> bool:
+    """Source-scoped Sony Classic contracts and unmatched-UUID sentinels.
+
+    These are not global value exclusions: an independent direct GATT sink
+    still wins in scan_one_file. The contracts include reversed SDP UUIDs
+    used only by Android's getUuids compatibility workaround.
+    """
+    if java_package == "com.sony.songpal.tandemfamily":
+        return bool(
+            re.search(r"\bclass\s+SppConnectionContract\$(?:Tandem|Fiestable)\b", source)
+            and "SppConnectionContract$DevASpec" in source
+            and "SppConnectionContract$DevBSpec" in source
+        )
+    if (java_package != "com.sony.songpal.ble.client"
+            or uuid != "5b830000-6bc7-4802-8e9a-723ceca4bd8f"):
+        return False
+    if re.search(r"\benum\s+ServiceUuid\b", source):
+        return bool(
+            re.search(r'UNKNOWN_SERVICE\s*\(\s*UUID\.fromString\(\s*"'
+                      + re.escape(uuid) + r'"', source, re.I)
+            and re.search(r"return\s+UNKNOWN_SERVICE\s*;", source)
+        )
+    if not re.search(r"\bclass\s+CharacteristicUuid\b", source):
+        return False
+    # Lowered enum: UNKNOWN constructor -> local -> static enum field;
+    # the lookup's unmatched path returns that field. Empty parent set is
+    # required so a real characteristic merely named UNKNOWN is retained.
+    sentinel = re.search(
+        r'(\w+)\s*=\s*new CharacteristicUuid\(\s*"UNKNOWN"\s*,\s*\d+\s*,'
+        r'\s*UUID\.fromString\(\s*"' + re.escape(uuid) + r'"\s*\)\s*,'
+        r'\s*Unknown\.class\s*,\s*"Unknown"\s*,\s*ServiceUuid\.e\(\)\s*\)\s*;',
+        source, re.I,
+    )
+    if not sentinel:
+        return False
+    alias = re.search(r"\b(\w+)\s*=\s*" + re.escape(sentinel.group(1)) + r"\s*;", source)
+    return bool(alias and re.search(r"return\s+" + re.escape(alias.group(1)) + r"\s*;", source))
+
+
 def _matching_non_gatt_class_field_names(
     java_package: str | None, source: str
 ) -> set[str]:
@@ -1872,13 +2098,15 @@ def _matching_non_gatt_class_field_names(
         package_matches = java_package == package_prefix or bool(
             java_package and java_package.startswith(package_prefix + ".")
         )
+        if not package_matches:
+            continue
         class_matches = bool(
             re.search(
                 rf"\b(?:class|interface|object)\s+{re.escape(class_name)}\b",
                 source,
             )
         )
-        if package_matches and class_matches:
+        if class_matches:
             matches.update(field_names)
     return matches
 
@@ -1899,6 +2127,19 @@ def _non_gatt_scoped_fields_for_uuid(
         return set()
     temp_fields: set[str] = set()
     scoped_fields: set[str] = set()
+    # The feature-flag SDK embeds the UUID-shaped identifier in a mob- key,
+    # so the standard exact-UUID assignment matcher cannot recover its field.
+    if ("LAUNCH_DARKLY_MOBILE_KEY" in known_fields and re.search(
+        r'\bLAUNCH_DARKLY_MOBILE_KEY\s*=\s*"mob-' + re.escape(uuid) + r'"',
+        source, re.IGNORECASE,
+    )):
+        scoped_fields.add("LAUNCH_DARKLY_MOBILE_KEY")
+    # Belico embeds its messaging app ID in a Sendbird API hostname.
+    # Restrict this embedded-string case to the audited SDK class and field.
+    if ("str3" in known_fields and java_package == "com.belico.simpelapp.utils"
+            and re.search(r'\bstr3\s*=\s*"https://api-' + re.escape(uuid)
+                          + r'\.sendbird\.com/v3/users/', source, re.IGNORECASE)):
+        scoped_fields.add("str3")
     for line in source.splitlines():
         assigned = set(_assigned_fields_for_uuid_on_line(line, uuid))
         temp_fields.update(assigned)
@@ -4780,6 +5021,66 @@ def _typed_gatt_method_models(source: str) -> list[dict]:
     return models
 
 
+# Scoped messaging, audio effect and bakery configuration identifiers.
+NON_GATT_CLASS_FIELD_HINTS.update({
+    ("com.seashels.discover", "Singleton"): frozenset({"APP_ID"}),
+    ("com.ce.android.brand.gshmakbakery", "GshmakBakeryProperties"): frozenset({"CLIENT_ID"}),
+    ("com.browan.freeppmobile.jni", "AudioDeviceEffect"): frozenset({"EFFECT_TYPE_NULL"}),
+    ("com.browan.freeppmobile.jni", "AudioDeviceAndroid"): frozenset({"EFFECT_TYPE_NULL"}),
+    ("com.browan.freeppmobile.device.adapter", "LocalAudioDetector"): frozenset({"EFFECT_TYPE_NULL"}),
+})
+
+def _seashels_sendbird_hostname_occurrence(java_package, source, line, uuid):
+    if java_package == "com.seashels.discover.utility" and re.search(r"\bclass\s+AutoConnectStores\b", source):
+        return bool(re.search(r'api-' + re.escape(uuid) + r'\.calls\.sendbird\.com', line, re.I))
+    if java_package == "com.seashels.discover.ui.shopper.account.accountDeletion" and re.search(r"\bclass\s+AccountDeletionActivity\b", source):
+        return bool(re.search(r'https://api-' + re.escape(uuid) + r'\.sendbird\.com/v3/users/', line, re.I))
+    return False
+
+# Scoped edition and beacon-token configuration, not Bluetooth attributes.
+NON_GATT_CLASS_FIELD_HINTS.update({
+    ("com.equiem.equiemandroid", "BuildConfig"): frozenset({"EQUIEM_EDITION_ID", "UBIPARK_BEACON_TOKEN"}),
+    ("com.equiem.equiemandroid", "Config"): frozenset({"editionId"}),
+    ("com.equiem.equiemandroid.module.network", "BuildConfig"): frozenset({"EQUIEM_EDITION_ID"}),
+    ("com.equiem.equiemandroid.module.network", "Config"): frozenset({"editionId"}),
+})
+
+
+def _equiem_edition_id_occurrence(java_package: str, source: str, line: str, uuid: str) -> bool:
+    """Skip edition ID arguments only in the reviewed worker/API call sites."""
+    if re.search(r"getService|getCharacteristic|addService|BluetoothGatt", line):
+        return False
+    scopes = {
+        ("com.equiem.equiemandroid", "MainActivity"): "enqueueRegisterMessagingWorker",
+        ("com.equiem.equiemandroid.repository", "ProfileRepositoryImpl"): "enqueueDeregisterMessagingWorker",
+        ("com.equiem.equiemandroid.messaging", "MessagingService"): "enqueueRegisterMessagingWorker",
+        ("com.equiem.equiemandroid.module.network.di", "ModulesKt"): "new API",
+    }
+    for (package, cls), call in scopes.items():
+        if java_package == package and re.search(r"\bclass\s+" + re.escape(cls) + r"\b", source) and call in line:
+            pattern = re.escape(call) + r'\([^,]+,\s*"' + re.escape(uuid) + r'"\s*,'
+            return bool(re.search(pattern, line, re.I))
+    return False
+
+
+# Source-reviewed configuration and slideshow demo identifiers.
+NON_GATT_CLASS_FIELD_HINTS.update({
+    ("it.appmynet", "BuildConfig"): frozenset({"COMPANY_ID"}),
+    ("com.eegees.app", "EegeesProperties"): frozenset({"CLIENT_ID"}),
+})
+
+
+def _pushd_demo_author_occurrence(java_package: str, source: str, line: str, literal_start: int) -> bool:
+    """Skip only the reviewed slideshow example's author-ID argument."""
+    if java_package != "defpackage" or not re.search(r"\bclass\s+py1\b", source):
+        return False
+    if "com.pushd.client.ui.birthday.gift.ComposableSingletons$SlideshowItemsGridKt" not in source:
+        return False
+    pattern = (r'new\s+TextSlideshowItem\s*\(\s*"[^"\n]*"\s*,\s*'
+               r'(?:java\.util\.)?UUID\.fromString\(\s*"(?P<uuid>[0-9a-fA-F-]{36})"')
+    return any(match.start("uuid") == literal_start for match in re.finditer(pattern, line))
+
+
 def scan_one_file(
     path: str,
     external_constructor_param_maps: dict[tuple[str, int], list[str | None]] | None = None,
@@ -4814,7 +5115,8 @@ def scan_one_file(
     if UUID128_LITERAL_RE.search(text) is None:
         return {}
 
-    file_is_ble = bool(FILE_LEVEL_BLE_RE.search(text))
+    gardena_super_pairs = _gardena_api_super_uuid_pairs(text)
+    file_is_ble = bool(FILE_LEVEL_BLE_RE.search(text)) or bool(gardena_super_pairs)
     if not file_is_ble:
         n_fromstring = len(UUID_FROMSTRING_LITERAL_RE.findall(text))
         if (MIN_UUID_FROMSTRING_FOR_BLE_FALLBACK
@@ -5077,7 +5379,18 @@ def scan_one_file(
             sf_uuid = normalize_uuid(sf.group(2))
             array_uuid_to_name.setdefault(sf_uuid, list_name)
 
+        uuid_line_context = None
+        uuid_line_classification = None
         for m in UUID128_LITERAL_RE.finditer(line):
+            # The schema cannot represent descriptors. Suppress only this
+            # literal occurrence when it is directly passed to getDescriptor;
+            # another service or characteristic use of the same value stays.
+            preceding = lines[max(0, idx - 4):idx]
+            if ("getDescriptor" in line or any("getDescriptor" in prev for prev in preceding)) and re.search(
+                r"\bgetDescriptor\s*\(\s*(?:java\.util\.)?UUID\s*\.\s*fromString\s*\(\s*['\"]$",
+                "\n".join(preceding + [line[:m.start()]]),
+            ):
+                continue
             # This app's DeviceServices class is a mixed display-name lookup,
             # including SDP IDs, units, and many third-party UUIDs. A map row
             # does not show that this app uses the UUID as a GATT attribute.
@@ -5101,15 +5414,24 @@ def scan_one_file(
                 if literal_span in skidata_non_gatt_spans:
                     continue
             uuid = normalize_uuid("-".join(m.groups()))
+            if _pushd_demo_author_occurrence(java_package, text, line, m.start()):
+                continue
+            if _equiem_edition_id_occurrence(java_package, text, line, uuid):
+                continue
+            if _seashels_sendbird_hostname_occurrence(java_package, text, line, uuid):
+                continue
             if uuid in DROP_OUTRIGHT_UUIDS:
                 continue
-            lo = max(0, idx - 8)
-            hi = min(len(lines), idx + 8)
-            window = "\n".join(lines[lo:hi])
-            log_label = _nearby_ble_log_label(lines, idx)
+            if uuid_line_context is None:
+                lo = max(0, idx - 8)
+                hi = min(len(lines), idx + 8)
+                window = "\n".join(lines[lo:hi])
+                log_label = _nearby_ble_log_label(lines, idx)
+                uuid_line_context = (window, log_label, bool(NON_GATT_HINT_RE.search(window)))
+            window, log_label, has_non_gatt_hint = uuid_line_context
             if log_label:
                 nearby_log_label_for.setdefault(uuid, log_label)
-            if NON_GATT_HINT_RE.search(window) and not log_label:
+            if has_non_gatt_hint and not log_label:
                 continue
             assigned_fields = _assigned_fields_for_uuid_on_line(line, uuid)
             # Include named aliases only for exact package/class-scoped
@@ -5128,6 +5450,9 @@ def scan_one_file(
                 _field_has_gatt_sink(field, text) for field in fields_for_scope
             )
             if has_non_gatt_field_name and not has_gatt_sink and not log_label:
+                continue
+            if (not has_gatt_sink
+                    and _sony_non_gatt_uuid_context(uuid, java_package, text)):
                 continue
 
             # Step 0: SQL catalog row (e.g. INSERT INTO Characteristics).
@@ -5162,7 +5487,9 @@ def scan_one_file(
                     cls_source = f"field-name:{lhs_field}"
             if cls is None:
                 # Step 2: anchor/window heuristics (the existing classifier).
-                cls = classify(window, anchor_line=line)
+                if uuid_line_classification is None:
+                    uuid_line_classification = classify(window, anchor_line=line)
+                cls = uuid_line_classification
                 if cls != "Unknown":
                     cls_source = "naming-convention"
             if cls is None or cls == "Unknown":
@@ -5610,12 +5937,22 @@ def scan_one_file(
                 f"constructor-param:{ctor_name}.{param_name}",
             )
 
+    # Gardena's sealed API objects lower their pair into constructor-local
+    # UUID temps followed by super(...); do not resolve temps across objects.
+    for service, characteristic in gardena_super_pairs:
+        for uuid, role in ((service, "GATT Service"), (characteristic, "GATT Characteristic")):
+            if uuid in candidates:
+                merge_role_evidence(candidates[uuid], role, "constructor-pair:GardenaApi.super")
+
     # Final pass: source-verified object flow only. Co-location and matching
     # names do not prove that a particular characteristic belongs to a
     # particular service.
     direct_parent_pairs = _direct_service_characteristic_pairs(
         text, field_to_uuid, candidates
     )
+    for service, characteristic in gardena_super_pairs:
+        if characteristic in candidates and service in candidates:
+            direct_parent_pairs.setdefault(characteristic, []).append(service)
     for uuid, entry in candidates.items():
         entry["parent_candidates"] = (
             direct_parent_pairs.get(uuid, [])
@@ -5883,6 +6220,131 @@ def _indexed_uuid_array_roles(file_texts: dict[str, str]) -> dict[str, set[str]]
                 continue
             roles_by_uuid.setdefault(values[index], set()).update(roles)
     return roles_by_uuid
+
+
+def _kryo_ooler_feature_characteristics(file_texts: dict[str, str]) -> set[str]:
+    """Recover characteristic literals from the source-verified Kryo feature map.
+
+    The map stores (service, characteristic) in Kotlin Pairs. Only apply
+    this narrow rule when the same APK contains the corresponding GATT
+    resolver, whose first and second Pair components feed the two lookups.
+    Parent assignments remain a separate, host-specific review decision.
+    """
+    manager = next((text for path, text in file_texts.items()
+                    if path.replace('\\', '/').endswith('/com/kryoinc/devices/ooler/OolerManager.java')), None)
+    if manager is None:
+        return set()
+    compact = re.sub(r"\s+", "", manager)
+    if not all(token in compact for token in (
+        "newd().c().entrySet()",
+        "gatt.getService((UUID)((Pair)entry.getValue()).c())",
+        "service.getCharacteristic((UUID)((Pair)entry.getValue()).d())",
+    )):
+        return set()
+    profile = next((text for path, text in file_texts.items()
+                    if path.replace('\\', '/').endswith('/com/kryoinc/devices/ooler/d.java')), None)
+    if profile is None or _java_package_of(profile) != "com.kryoinc.devices.ooler" or "BluetoothFeatures" not in profile:
+        return set()
+    literal = r"([0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12})"
+    pair = re.compile(r"\bnew\s+Pair\s*\(\s*this\.[A-Za-z_$][\w$]*\s*,\s*UUID\.fromString\s*\(\s*\"" + literal + r"\"\s*\)\s*\)")
+    return {normalize_uuid(match.group(1)) for match in pair.finditer(profile)}
+
+
+def _spot_model_characteristics(file_texts: dict[str, str]) -> set[str]:
+    """Resolve the source-verified Illuminati SpotModel characteristic map."""
+    def named(suffix: str) -> str | None:
+        return next((text for path, text in file_texts.items() if path.replace('\\', '/').endswith(suffix)), None)
+    model = named('/com/pvimaging/spotdemo/spot/gatt/model/SpotModel.java')
+    device = named('/com/pvimaging/spotdemo/spot/gatt/BtSpotDevice.java')
+    if not model or not device:
+        return set()
+    compact_model = re.sub(r"\s+", "", model)
+    compact_device = re.sub(r"\s+", "", device)
+    if not all(token in compact_model for token in (
+        'CharacterMapput(UUIDservice,UUIDuuid,', 'SERVICE_REVERSE_MAPPING.put(uuid,service)',
+    )) or not all(token in compact_device for token in (
+        'SpotModel.getServiceUuid(uuid)', 'connectedGatt.getService(serviceUuid)',
+        'service.getCharacteristic(uuid)',
+    )):
+        return set()
+    literal = r'([0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12})'
+    symbols: dict[str, set[str]] = {}
+    for path, text in file_texts.items():
+        normalized = path.replace('\\', '/')
+        if '/com/pvimaging/spotdemo/spot/gatt/model/' not in normalized or not normalized.endswith('.java'):
+            continue
+        owner = normalized.rsplit('/', 1)[-1][:-5]
+        temps = {m.group(1): normalize_uuid(m.group(2)) for m in re.finditer(
+            r'\bUUID\s+([A-Za-z_$][\w$]*)\s*=\s*UUID\.fromString\(\s*"' + literal + r'"\s*\)', text)}
+        for field, value in re.findall(
+            r'\b([A-Z][A-Z0-9_]*)\s*=\s*UUID\.fromString\(\s*"' + literal + r'"\s*\)', text
+        ):
+            symbols.setdefault(owner + '.' + field, set()).add(normalize_uuid(value))
+        for field, temp in re.findall(r'\b([A-Z][A-Z0-9_]*)\s*=\s*([A-Za-z_$][\w$]*)\s*;', text):
+            if temp in temps:
+                symbols.setdefault(owner + '.' + field, set()).add(temps[temp])
+        for temp, value in temps.items():
+            if re.fullmatch(r'[A-Z][A-Z0-9_]*', temp):
+                symbols.setdefault(owner + '.' + temp, set()).add(value)
+    for local, owner, field in re.findall(
+        r'\bUUID\s+([A-Za-z_$][\w$]*)\s*=\s*([A-Za-z_$][\w$]*)\.([A-Z][A-Z0-9_]*)\s*;', model
+    ):
+        values = symbols.get(owner + '.' + field, set())
+        symbols.setdefault(local, set()).update(values)
+    found: set[str] = set()
+    for service, characteristic in re.findall(
+        r'\bput(?:\$default)?\s*\(\s*(?:this\s*,\s*)?([A-Za-z_$][\w$.]*)\s*,\s*([A-Za-z_$][\w$.]*)\s*,', model
+    ):
+        services, chars = symbols.get(service, set()), symbols.get(characteristic, set())
+        if len(services) == len(chars) == 1 and services != chars:
+            found.update(chars)
+    return found
+
+
+def _sunradon_typed_characteristics(file_texts: dict[str, str]) -> set[str]:
+    """Resolve SunRADON UUID getters checked against typed GATT characteristics."""
+    def named(suffix: str) -> str | None:
+        return next((text for path, text in file_texts.items() if path.replace('\\', '/').endswith(suffix)), None)
+    utility = named('/com/app/utility/bluetooth/BluetoothUtil.java')
+    device = named('/com/app/service/DeviceService.java')
+    if not utility or not device or '626b8801-39ce-491b-a871-5b9a209eedc8' not in utility.lower():
+        return set()
+    literal = r'([0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12})'
+    fields = dict(re.findall(
+        r'\bUUID\s+(CHARACTERISTIC_[A-Z0-9_]+)\s*=\s*UUID\.fromString\(\s*"' + literal + r'"\s*\)', utility
+    ))
+    variables = set(re.findall(r'\bBluetoothGattCharacteristic\s+([A-Za-z_$][\w$]*)\b', device))
+    result = set()
+    for field, uuid in fields.items():
+        getter = 'get' + field
+        if not re.search(r'\bUUID\s+' + re.escape(getter) + r'\s*\(\s*\)\s*\{\s*return\s+' + re.escape(field) + r'\s*;', utility):
+            continue
+        for variable in variables:
+            if re.search(r'\b' + re.escape(variable) + r'\.getUuid\(\)\s*,\s*BluetoothUtil\.INSTANCE\.' + re.escape(getter) + r'\s*\(', device):
+                result.add(normalize_uuid(uuid))
+                break
+    return result
+
+
+def _riddell_set_pu_characteristics(file_texts: dict[str, str]) -> set[str]:
+    """Resolve exact UUID fields passed to Riddell's typed config writer."""
+    def named(suffix: str) -> str | None:
+        return next((text for path, text in file_texts.items() if path.replace("\\", "/").endswith(suffix)), None)
+    common = named("/com/riddell/alertmonitor/view/utils/CommonUUID.java")
+    caller = named("/com/riddell/alertmonitor/view/activities/BaseBLEActivity.java")
+    service = named("/com/riddell/alertmonitor/livestreaming/LiveStreamingService.java")
+    if not common or not caller or not service:
+        return set()
+    compact = re.sub(r"\s+", "", service)
+    if not all(token in compact for token in (
+        "setPUBLEValues(UUIDuuid,", "getService(UUID.fromString(CommonUUID.CONFIG_SERVICE_UUID))",
+        "service.getCharacteristic(uuid)",
+    )):
+        return set()
+    literal = r'([0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12})'
+    fields = dict(re.findall(r'\bString\s+([A-Za-z_$][\w$]*)\s*=\s*"' + literal + r'"', common))
+    passed = re.findall(r'\bsetPUBLEValues\s*\(\s*UUID\.fromString\s*\(\s*CommonUUID\.([A-Za-z_$][\w$]*)\s*\)', caller)
+    return {normalize_uuid(fields[name]) for name in passed if name in fields}
 
 
 def scan_jadx_output(jadx_out_dir: str) -> dict[str, dict]:
@@ -6942,6 +7404,80 @@ def scan_jadx_output(jadx_out_dir: str) -> dict[str, dict]:
                 if parent != uuid
             ]
 
+    # Mobilytics OwnerIdentifier values identify analytics feature owners,
+    # including fields whose names happen to contain SERVICE or PLATFORM.
+    # Keep any independent typed GATT use recovered across the whole APK.
+    for uuid in _mobilytics_owner_uuid_sources(file_texts):
+        # Direct literals may retain a weaker merged classification than a
+        # field reference. Preserve the same bounded GATT sink evidence used
+        # by the other source-scoped metadata filters above.
+        direct_owner_role = None
+        for sink, role in (("getCharacteristic", "GATT Characteristic"),
+                           ("getService", "GATT Service")):
+            pattern = re.compile(
+                rf"\b{sink}\s*\([^;{{}}]{{0,512}}{re.escape(uuid)}", re.I
+            )
+            if any(pattern.search(text) for text in file_texts.values()):
+                direct_owner_role = role
+                break
+        entry = all_uuids.get(uuid)
+        if entry is not None and direct_owner_role:
+            entry["classification"] = direct_owner_role
+            entry["classification_source"] = "cross-file usage:Mobilytics independent GATT literal"
+            continue
+        if entry is None or classification_source_strength(
+            entry.get("classification_source", "")
+        ) >= 75:
+            continue
+        all_uuids.pop(uuid, None)
+        for other in all_uuids.values():
+            other["parent_candidates"] = [
+                parent for parent in other.get("parent_candidates", [])
+                if parent != uuid
+            ]
+
+    # Suppress SmartBear recording dictionaries only after APK-wide typed
+    # GATT recovery. Removing them in scan_one_file would hide a legitimate
+    # use of a catalog field from an independent GATT consumer in another
+    # source file. Strong role evidence, or any literal outside this exact
+    # SDK package, keeps the UUID; metadata parent guesses are then cleared.
+    smartbear_metadata = _smartbear_ui_metadata_uuid_sources(file_texts)
+    for uuid in smartbear_metadata:
+        entry = all_uuids.get(uuid)
+        if entry is None:
+            continue
+        source = entry.get("classification_source", "")
+        if classification_source_strength(source) >= 75:
+            continue
+        if any(
+            _java_package_of(text) != "com.smartbear.testing"
+            and re.search(re.escape(uuid), text, re.IGNORECASE)
+            for text in file_texts.values()
+        ):
+            continue
+        all_uuids.pop(uuid, None)
+        for other in all_uuids.values():
+            other["parent_candidates"] = [
+                parent for parent in other.get("parent_candidates", [])
+                if parent != uuid
+            ]
+
+    # The Kryo feature map's Pair second component is passed to the typed
+    # GATT characteristic lookup. It outranks file-level and name guesses.
+    for uuid in _kryo_ooler_feature_characteristics(file_texts):
+        if uuid in all_uuids:
+            merge_role_evidence(all_uuids[uuid], "GATT Characteristic", "usage:kryo-feature-pair")
+    for uuid in _spot_model_characteristics(file_texts):
+        if uuid in all_uuids:
+            merge_role_evidence(all_uuids[uuid], "GATT Characteristic", "usage:spot-character-map")
+    for uuid in _sunradon_typed_characteristics(file_texts):
+        if uuid in all_uuids:
+            merge_role_evidence(all_uuids[uuid], "GATT Characteristic", "usage:sunradon-typed-getter")
+
+    for uuid in _riddell_set_pu_characteristics(file_texts):
+        if uuid in all_uuids:
+            merge_role_evidence(all_uuids[uuid], "GATT Characteristic", "usage:riddell-config-writer")
+
     # Pass D: normalize the candidates collected by scan_one_file. These
     # candidates are local evidence (both UUIDs occurred in the same Java
     # file); replacing them with every Service in the APK loses that
@@ -7284,81 +7820,24 @@ def build_record(
         # picks the wrong one for `g`). When the SDK-canonical name contains
         # SERVICE/SVC we mark it as a Service; CHAR/DESCRIPTOR → Characteristic.
         classification = _classification_with_sdk_cache(uuid, classification, cls_source)
-        purpose = (
-            f"{classification} observed in Android app {pkg}. "
-            f"This UUID is in the Phase-4 KNOWN_SDK_UUIDS table — it belongs "
-            f"to a third-party SDK shipped by many host apps. {sdk_hit.get('note', '')}"
-        ).strip()
     elif third_party_sdk_pkg:
-        # Phase-6 cache: if the declaring Java package matches a known SDK
-        # prefix, attribute the UUID to that SDK directly instead of falling
-        # back to the "Phase-4 identification needed" placeholder. This is
-        # how a prior session's Phase-4/5 identification benefits every
-        # future Phase-1 run that hits the same SDK in a fresh APK.
         cached_sdk_company = java_package_known_sdk(third_party_sdk_pkg)
         if cached_sdk_company:
             company_for_record = cached_sdk_company
-            uuid_name_for_record = uuid_name
-            if field_name:
-                purpose = (
-                    f"{classification} observed in Android app {pkg}, "
-                    f"declared in cached third-party SDK package "
-                    f"`{third_party_sdk_pkg}` as Java field `{field_name}`. "
-                    f"Company attributed via Phase-6 KNOWN_SDK_JAVA_PACKAGES cache. "
-                    f"Classification source: {cls_source}."
-                )
-            else:
-                purpose = (
-                    f"{classification} observed in Android app {pkg}, "
-                    f"declared in cached third-party SDK package "
-                    f"`{third_party_sdk_pkg}`. Company attributed via Phase-6 "
-                    f"KNOWN_SDK_JAVA_PACKAGES cache. No Java field-name hint."
-                )
         else:
-            # Single-APK third-party-SDK detection: the UUID was declared in a
-            # Java package that doesn't share any token with the host APK's
-            # package_id. That's strong evidence this is SDK code the host
-            # bundled — the host's vendor token is NOT the right `company`.
-            # Down-grade to an obviously-flagged value so a Phase-4 reviewer
-            # (or a future identification pass) takes a closer look. The exact
-            # declaring-package string is preserved in evidence_array.
             company_for_record = (
                 f"Third-party SDK code (declared in Java package "
                 f"`{third_party_sdk_pkg}` — distinct from host {pkg}; "
                 f"Phase-4 identification needed)"
             )
-            uuid_name_for_record = uuid_name
-            if field_name:
-                purpose = (
-                    f"{classification} observed in Android app {pkg} but "
-                    f"declared in third-party SDK package `{third_party_sdk_pkg}` "
-                    f"as Java field `{field_name}`. The host APK's vendor is "
-                    f"NOT the UUID owner; the SDK author is. "
-                    f"Classification source: {cls_source}."
-                )
-            else:
-                purpose = (
-                    f"{classification} observed in Android app {pkg} but "
-                    f"declared in third-party SDK package `{third_party_sdk_pkg}`. "
-                    f"The host APK's vendor is NOT the UUID owner; the SDK "
-                    f"author is. No Java field-name hint (obfuscated)."
-                )
+        uuid_name_for_record = uuid_name
     else:
         company_for_record = inferred_company
         uuid_name_for_record = uuid_name
-        # Build a UUID_purpose that actually says something useful when we have
-        # a Java field name to work from.
-        if field_name:
-            purpose = (
-                f"Custom {classification} observed in Android app {pkg}, "
-                f"declared as Java field `{field_name}`. "
-                f"Classification determined by {cls_source}."
-            )
-        else:
-            purpose = (
-                f"Custom {classification} observed in Android app {pkg}. "
-                f"No Java field-name hint available (likely an obfuscated identifier)."
-            )
+
+    # Discovery and role are not the UUID's function. Source review can
+    # replace this once a functional purpose is supported by evidence.
+    purpose = "The purpose is unknown."
 
     rec: dict = {
         "UUID": uuid,
@@ -8552,16 +9031,8 @@ def degrade_shared_sdk_companies(records: list[dict]) -> int:
             f"(observed in {len(infos)} unrelated host apps with non-overlapping "
             f"vendor tokens — Phase-4 identification needed)"
         )
-        # Annotate the purpose so the situation is visible to readers.
-        marker_note = (
-            "Shared-SDK signal: this UUID appeared in many host apps whose "
-            "package vendors don't share any token, so the original SDK "
-            "vendor isn't visible from the host-app side. Phase-4 identification "
-            "(scripts/list_shared_sdk_clusters.py) will upgrade this record."
-        )
-        purpose = rec.get("UUID_purpose") or ""
-        if marker_note not in purpose:
-            rec["UUID_purpose"] = (purpose.rstrip() + " " + marker_note).strip()
+        # Attribution uncertainty is already recorded in company; do not
+        # append provenance to the functional UUID purpose.
         degraded += 1
     return degraded
 
@@ -8678,6 +9149,204 @@ def self_test() -> int:
             failures.append("New Relic scoped BUILD_ID hint must yield to direct getCharacteristic use")
     finally:
         os.unlink(tmppath)
+
+    # Real Mobilytics analytics constants include SERVICE-like field names.
+    # Check the exact annotation source shape and APK-wide endpoint overrides.
+    owner_uuid = "00c6e132-abc1-46dc-b459-2a1128b15e8d"
+    owner_fixture = (
+        "package com.amazon.alexa.mobilytics;\n"
+        "import java.lang.annotation.Retention;\n"
+        "import java.lang.annotation.RetentionPolicy;\n"
+        "@Retention(RetentionPolicy.SOURCE)\n"
+        "public @interface OwnerIdentifier {\n"
+        f' public static final String LOCATION_SERVICE_ALL = "{owner_uuid}";\n'
+        "}\n"
+    )
+    owner_consumer = (
+        "package example;\nimport android.bluetooth.BluetoothGattService;\n"
+        "import com.amazon.alexa.mobilytics.OwnerIdentifier;\n"
+        "import java.util.UUID;\nclass Consumer {\n"
+        " Object use(BluetoothGattService service) { return service.getCharacteristic("
+        "UUID.fromString(OwnerIdentifier.LOCATION_SERVICE_ALL)); }\n}\n"
+    )
+    owner_cases = [
+        ({"OwnerIdentifier.java": owner_fixture}, set(), "Mobilytics owner analytics suppression"),
+        ({"OwnerIdentifier.java": owner_fixture,
+          "Consumer.java": owner_consumer}, {owner_uuid}, "Mobilytics typed GATT field override"),
+        ({"OwnerIdentifier.java": owner_fixture,
+          "Consumer.java": owner_consumer.replace(
+              "OwnerIdentifier.LOCATION_SERVICE_ALL", f'"{owner_uuid}"'
+          )}, {owner_uuid}, "Mobilytics direct GATT literal override"),
+        ({"OwnerIdentifier.java": owner_fixture.replace(
+              "package com.amazon.alexa.mobilytics;", "package example;"
+          )}, {owner_uuid}, "Mobilytics exact package scope"),
+        ({"OwnerIdentifier.java": owner_fixture.replace(
+              "@interface OwnerIdentifier", "class OwnerIdentifier"
+          )}, {owner_uuid}, "Mobilytics exact annotation scope"),
+    ]
+    for source_files, expected_uuids, case_name in owner_cases:
+        with _tempfile.TemporaryDirectory() as td:
+            source_dir = os.path.join(td, "sources")
+            os.makedirs(source_dir)
+            for filename, body in source_files.items():
+                with open(os.path.join(source_dir, filename), "w") as fixture:
+                    fixture.write(body)
+            found = scan_jadx_output(td)
+            if set(found) != expected_uuids:
+                failures.append(f"{case_name}: expected {sorted(expected_uuids)}, got {sorted(found)}")
+            if "GATT" in case_name and found.get(owner_uuid, {}).get("classification") != "GATT Characteristic":
+                failures.append(f"{case_name}: typed GATT override must retain characteristic role")
+
+    # SmartBear's UI metadata dictionaries previously became GATT profiles.
+    # Run the APK-wide path so independent typed cross-file GATT uses get
+    # their normal authoritative role before the scoped metadata filter.
+    smartbear_ids = (
+        "33fc031b-cffd-428b-85f5-ef5f289ddf14",
+        "58440155-e6a1-4bbe-a73e-0118e03c2154",
+        "f30d8ee9-a91b-4cfa-8628-1f94fd0dd375",
+    )
+    smartbear_dictionary = (
+        "package com.smartbear.testing;\n"
+        "import java.util.UUID;\n"
+        "public class bs {\n"
+        + "\n".join(
+            f' public static final UUID {field} = UUID.fromString("{uuid}");'
+            for field, uuid in zip(("a", "b", "c"), smartbear_ids)
+        ) + "\n}\n"
+    )
+    smartbear_hooks = (
+        "package com.smartbear.testing;\n"
+        "import android.view.MotionEvent;\nimport android.view.View;\n"
+        "class nw implements NotificationCallback {\n"
+        + "\n".join(
+            f' private static final String {field} = "{uuid}";'
+            for field, uuid in zip(("f", "g", "h"), smartbear_ids)
+        )
+        + "\n boolean check(String name, View view, MotionEvent event) {\n"
+        " return name.equalsIgnoreCase(f) || g.equalsIgnoreCase(name) || name.equalsIgnoreCase(h);\n"
+        " }\n}\n"
+    )
+    smartbear_factory = (
+        "package com.smartbear.testing;\n"
+        "import java.util.UUID;\nclass fh implements fo {\n"
+        " static {\n"
+        + "\n".join(
+            f' map.put(UUID.fromString("{uuid}"), {kind}.class);'
+            for uuid, kind in zip(smartbear_ids, ("fm", "fl", "fi"))
+        )
+        + "\n }\n Object create(Class type) throws Exception {\n"
+        " return type.getConstructor(fo.class).newInstance(this);\n }\n}\n"
+    )
+    smartbear_cases = [
+        ({"bs.java": smartbear_dictionary}, set(), "SmartBear UI adapter catalog"),
+        ({"mu.java": smartbear_dictionary.replace("class bs", "class mu")}, set(), "SmartBear event-property catalog"),
+        ({"ry.java": smartbear_dictionary.replace("class bs", "class ry")}, set(), "SmartBear Xamarin catalog"),
+        ({"mx.java": smartbear_dictionary.replace("class bs", "class mx")}, set(), "SmartBear event-type catalog"),
+        ({"nw.java": smartbear_hooks}, set(), "SmartBear notification hooks"),
+        ({"fh.java": smartbear_factory}, set(), "SmartBear expression factory"),
+        ({"bs.java": smartbear_dictionary.replace("com.smartbear.testing", "example.other")},
+         set(smartbear_ids), "SmartBear package boundary"),
+        ({"Other.java": smartbear_dictionary.replace("class bs", "class Other")},
+         set(smartbear_ids), "SmartBear exact class boundary"),
+        ({"bs.java": smartbear_dictionary.replace("\n}\n", "\n Object lookup(BluetoothGattService service) { return service.getCharacteristic(a); }\n}\n")
+          .replace("import java.util.UUID;", "import java.util.UUID;\nimport android.bluetooth.BluetoothGattService;")},
+         {smartbear_ids[0]}, "SmartBear same-file GATT override"),
+        ({"bs.java": smartbear_dictionary,
+          "ActualGatt.java": "package example.consumer;\nimport com.smartbear.testing.bs;\n"
+             "import android.bluetooth.BluetoothGattService;\nclass ActualGatt {\n"
+             " Object lookup(BluetoothGattService service) { return service.getCharacteristic(bs.a); }\n}\n"},
+         {smartbear_ids[0]}, "SmartBear cross-file GATT override"),
+        ({"bs.java": smartbear_dictionary,
+          "ActualGatt.java": "package example.consumer;\nimport java.util.UUID;\n"
+             "import android.bluetooth.BluetoothGattService;\nclass ActualGatt {\n"
+             f' Object lookup(BluetoothGattService service) {{ return service.getCharacteristic(UUID.fromString("{smartbear_ids[0]}")); }}\n}}\n'},
+         {smartbear_ids[0]}, "SmartBear independent literal retention"),
+    ]
+    for source_files, expected_uuids, case_name in smartbear_cases:
+        with _tempfile.TemporaryDirectory() as td:
+            source_dir = os.path.join(td, "sources")
+            os.makedirs(source_dir)
+            for filename, body in source_files.items():
+                with open(os.path.join(source_dir, filename), "w") as fixture:
+                    fixture.write(body)
+            found = scan_jadx_output(td)
+            if set(found) != expected_uuids:
+                failures.append(f"{case_name}: expected {sorted(expected_uuids)}, got {sorted(found)}")
+            if "GATT override" in case_name:
+                if found.get(smartbear_ids[0], {}).get("classification") != "GATT Characteristic":
+                    failures.append(f"{case_name}: direct GATT role must remain authoritative")
+
+    # Sony's five-UUID Classic contracts satisfy the constants fallback.
+    # Validate source scope, UUID-return methods, reversed aliases, and a
+    # direct GATT override rather than globally excluding those UUID values.
+    sony_contract_ids = (
+        "91819d50-5d72-4478-a001-29eb2c763568",
+        "b9b213ce-eeab-49e4-8fd9-aa478ed1b26b",
+        "6bb2d18e-47aa-d98f-e449-abeece13b2b9",
+        "764cbf0d-bbcb-438f-a8bb-6b92759d6053",
+        "53609d75-926b-bba8-8f43-cbbb0dbf4c76",
+    )
+    sony_contract = (
+        "package com.sony.songpal.tandemfamily;\n"
+        "public class SppConnectionContract$Tandem {\n"
+        " SppConnectionContract$DevASpec devA;\n"
+        " SppConnectionContract$DevBSpec devB;\n"
+        + "\n".join(
+            f' UUID value{i}() {{ return UUID.fromString("{uuid}"); }}'
+            for i, uuid in enumerate(sony_contract_ids)
+        ) + "\n}\n"
+    )
+    sony_unknown = "5b830000-6bc7-4802-8e9a-723ceca4bd8f"
+    sony_service_sentinel = (
+        "package com.sony.songpal.ble.client;\n"
+        "import android.bluetooth.BluetoothGattService;\n"
+        "enum ServiceUuid {\n"
+        f' UNKNOWN_SERVICE(UUID.fromString("{sony_unknown}"));\n'
+        " static ServiceUuid lookup(UUID uuid) { return UNKNOWN_SERVICE; }\n"
+        "}\n"
+    )
+    sony_characteristic_sentinel = (
+        "package com.sony.songpal.ble.client;\n"
+        "import android.bluetooth.BluetoothGattCharacteristic;\n"
+        "class CharacteristicUuid {\n"
+        " static {\n"
+        ' CharacteristicUuid sentinel = new CharacteristicUuid("UNKNOWN", 76, '
+        f'UUID.fromString("{sony_unknown}"), Unknown.class, "Unknown", ServiceUuid.e());\n'
+        " G0 = sentinel;\n"
+        " }\n"
+        " static CharacteristicUuid lookup(UUID uuid) { return G0; }\n"
+        "}\n"
+    )
+    sony_cases = [
+        (sony_contract, set(), "Sony Classic contract"),
+        (sony_contract.replace("$Tandem", "$Fiestable"), set(), "Sony Fiestable contract"),
+        (sony_contract.replace("com.sony.songpal.tandemfamily", "example.unrelated"),
+         set(sony_contract_ids), "Sony exclusion package boundary"),
+        (sony_service_sentinel, set(), "Sony service lookup sentinel"),
+        (sony_characteristic_sentinel, set(), "Sony characteristic lookup sentinel"),
+        (sony_service_sentinel.replace("return UNKNOWN_SERVICE;", "return null;"),
+         {sony_unknown}, "Sony named UNKNOWN without fallback"),
+        (sony_characteristic_sentinel.replace("ServiceUuid.e()", "ServiceUuid.f(realService)"),
+         {sony_unknown}, "Sony UNKNOWN with real parent"),
+        (sony_contract.replace("public class", "import android.bluetooth.BluetoothGattService;\npublic class")
+         .replace(" SppConnectionContract$DevASpec devA;",
+                  f' UUID actualGatt = UUID.fromString("{sony_contract_ids[0]}");\n'
+                  ' Object read(BluetoothGattService service) { return service.getCharacteristic(actualGatt); }\n'
+                  ' SppConnectionContract$DevASpec devA;'),
+         {sony_contract_ids[0]}, "Sony Classic hint yields to GATT sink"),
+    ]
+    for sony_source, expected_uuids, case_name in sony_cases:
+        with _tempfile.NamedTemporaryFile(mode="w", suffix=".java", delete=False) as tf:
+            tf.write(sony_source)
+            tmppath = tf.name
+        try:
+            found = scan_one_file(tmppath)
+            if set(found) != expected_uuids:
+                failures.append(f"{case_name}: expected {sorted(expected_uuids)}, got {sorted(found)}")
+            if case_name.endswith("GATT sink") and found.get(sony_contract_ids[0], {}).get("classification") != "GATT Characteristic":
+                failures.append("Sony Classic override must preserve characteristic role")
+        finally:
+            os.unlink(tmppath)
 
     # Cordova BluetoothSerial's two UUIDs identify classic RFCOMM listening
     # sockets. Three UUID.fromString literals (including the standard SPP UUID)

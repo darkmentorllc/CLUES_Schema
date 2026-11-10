@@ -483,6 +483,10 @@
             {
                 "description": "Found in decompiled DEX of com.udc.mobileCredential v1.0.6 (versionCode 13), in Java field `AIRFOB_SERVICE_DEVICE_SERVICE_UUID`, declared in Java package `com.supremainc.android.libsupremaac` (third-party SDK). Classification source: field-name:AIRFOB_SERVICE_DEVICE_SERVICE_UUID.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.dashr.dashrsprint. In this app, the characteristic belongs to service a000.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -1024,6 +1028,13 @@
                 "version_name": "1.0.6",
                 "package_path": "AndroZoo/apks/00/com.udc.mobileCredential_0055E709577E6D770F396E69DCB65438524D1EDF065F17F44ACBC5F4BF0A1EEC.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIRFOB_SERVICE_DEVICE_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.dashr.dashrsprint",
+                "version_code": 237,
+                "version_name": "6.2.2",
+                "package_path": "AndroZoo/apks/f7/com.dashr.dashrsprint_F7F30FDC351840710D6AE322E8467309F504BCF33A8E6EF923483CBB83C2BA63.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "00009800-0000-1000-8000-00177a000000"
@@ -1368,6 +1379,10 @@
             {
                 "description": "Found in decompiled DEX of com.udc.mobileCredential v1.0.6 (versionCode 13), in Java field `AIRFOB_LIB_VERSION_2_SERVICE_UUID`, declared in Java package `com.supremainc.android.libsupremaac` (third-party SDK). Classification source: field-name:AIRFOB_LIB_VERSION_2_SERVICE_UUID.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.dashr.dashrsprint. In this app, the characteristic belongs to service a000.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -1909,6 +1924,13 @@
                 "version_name": "1.0.6",
                 "package_path": "AndroZoo/apks/00/com.udc.mobileCredential_0055E709577E6D770F396E69DCB65438524D1EDF065F17F44ACBC5F4BF0A1EEC.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `AIRFOB_LIB_VERSION_2_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.dashr.dashrsprint",
+                "version_code": 237,
+                "version_name": "6.2.2",
+                "package_path": "AndroZoo/apks/f7/com.dashr.dashrsprint_F7F30FDC351840710D6AE322E8467309F504BCF33A8E6EF923483CBB83C2BA63.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "00009800-0000-1000-8000-00177a000000"
@@ -14457,7 +14479,8 @@
         "UUID_name": "SERVICE_UUID_BPM_A6",
         "UUID_purpose": "GATT Characteristic observed in Android app com.rpmhealthcare.ghgc but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `SERVICE_UUID_BPM_A6`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:SERVICE_UUID_BPM_A6. Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Characteristic",
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -14749,6 +14772,10 @@
             {
                 "description": "Found in decompiled DEX of com.femmto.app v4.1.0 (versionCode 1031), in Java field `SERVICE_UUID_BPM_A6`, declared in Java package `com.aojmedical.plugin.ble.device.a` (third-party SDK). Classification source: field-name:SERVICE_UUID_BPM_A6.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt service in org.seadvocacy.docsrchout.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -16108,6 +16135,10 @@
             {
                 "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `APOLLO_DEVICE_DFU_WRITE_RESPONSE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in org.seadvocacy.docsrchout. In this app, the characteristic belongs to service a700.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -16653,6 +16684,10 @@
             {
                 "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `APOLLO_DEVICE_DFU_WRITE_WITHOUT_RESPONSE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in org.seadvocacy.docsrchout. In this app, the characteristic belongs to service a700.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -19044,6 +19079,78 @@
             },
             {
                 "description": "Source review, com.welstory.welplus: labels abf0 as service and abf1 as read characteristic AndroZoo/apks_jadx/01/com.welstory.welplus_0184355B885FB5C49FF23001CB2765D762C180A66274BF608E83401C78499093.apk.jadx.tar.xz!sources/com/qn/device/constant/QNBleConst.java:8-10.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.coachcare.prohealthdietionic. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.beachfit. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.activefitsportcenter. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.proaventuras. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.skateagora. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.anytimeenglish. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.raypfit. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.tonbridgeserviceslimited. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.coachcare.awakenweightlossionic. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.coachcare.leanmdappionic. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.fitnessnation. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.sanafit. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.factorygym. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.m4lpt. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.ironhousecobv. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.sportufithoogezand. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.maximumfitnesscenter. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.ludus. In this app, the characteristic belongs to service abf0.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -21609,6 +21716,132 @@
                 "version_name": "12.0.4",
                 "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.personaltrainingastensomeren_01FCD6CD4BE8DAA168AE2F1F6B8B53E140453BE0CEEDC4C3AF95DD360AE83348.apk",
                 "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f26290b`."
+            },
+            {
+                "package_id": "com.coachcare.prohealthdietionic",
+                "version_code": 4739363,
+                "version_name": "2.39.360",
+                "package_path": "AndroZoo/apks/c7/com.coachcare.prohealthdietionic_C7C53C980901729020EBDD2FBDF705D18C5F9005302977A3D8276DBB6CD5389E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.beachfit",
+                "version_code": 4300521,
+                "version_name": "10.1.2",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.beachfit_C713A54147CD2D6456EB19677737F6783A633CDE723908C178A54F856C386AA7.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.activefitsportcenter",
+                "version_code": 4300581,
+                "version_name": "10.4.8",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.activefitsportcenter_C7A8F8157839BCC4AF6A9F068EEE84056D591BC489A38E12BB732B45B5A5EED7.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.proaventuras",
+                "version_code": 4300546,
+                "version_name": "10.3.5",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.proaventuras_C7C304194F7334D03109E7757A1D3DE3B4F903E2927BA8236E10905D2FAA1034.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.skateagora",
+                "version_code": 4300581,
+                "version_name": "10.4.8",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.skateagora_C72712C50B6788AD07C85BA6644017A484301651F7B5C5A10DE95AFC57064C71.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.anytimeenglish",
+                "version_code": 4300605,
+                "version_name": "10.6.3",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.anytimeenglish_C772ECC90ADB4DE0EBA24A0BCC0015EE69F1DB9B7D987358477C3A704526D701.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.raypfit",
+                "version_code": 4300618,
+                "version_name": "10.7.2",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.raypfit_C75287C6ECFB78C69079DB5C82BBC14D8F6B1800D93062009858329E45C970DD.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.tonbridgeserviceslimited",
+                "version_code": 4300641,
+                "version_name": "11.0.5",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.tonbridgeserviceslimited_C782847A56B22187A3C0C7FC822FBB95620D9E73D21651857D211F6BFC669CEE.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.coachcare.awakenweightlossionic",
+                "version_code": 4739363,
+                "version_name": "2.39.360",
+                "package_path": "AndroZoo/apks/dd/com.coachcare.awakenweightlossionic_DDD89559F4931CEA05E8811B8001C2D6DC9384D34BBE1ABA449B2EBAC92DEDBD.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.coachcare.leanmdappionic",
+                "version_code": 3384638,
+                "version_name": "2.38.910",
+                "package_path": "AndroZoo/apks/dd/com.coachcare.leanmdappionic_DDF9412FD59A65A08970858C7991BAD08AD936B3DA45624CBC95419FE62A45BA.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.fitnessnation",
+                "version_code": 4300581,
+                "version_name": "10.4.8",
+                "package_path": "AndroZoo/apks/dd/digifit.android.virtuagym.pro.fitnessnation_DD929026C3C70DE8AC00D6BCA8096FF3C4AF3483AA6B683DB121991745796437.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sanafit",
+                "version_code": 4300581,
+                "version_name": "10.4.8",
+                "package_path": "AndroZoo/apks/dd/digifit.android.virtuagym.pro.sanafit_DDD8F96D7DBDC7B5983D09C246644D41EA389554F17E77B5CF437CC5CB1E3E9E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.factorygym",
+                "version_code": 4300548,
+                "version_name": "10.3.5",
+                "package_path": "AndroZoo/apks/e3/digifit.android.virtuagym.pro.factorygym_E318522FB2DAC76F586620FACC26373AF6800E49DA5113FE1353CB97FF1F68DD.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.m4lpt",
+                "version_code": 4300546,
+                "version_name": "10.3.5",
+                "package_path": "AndroZoo/apks/e3/digifit.android.virtuagym.pro.m4lpt_E3A71DC1B9D8A0BD55E8BFF930B7E8B24E0539E1628B970BAAF4DA9C5F52E72E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.ironhousecobv",
+                "version_code": 4300679,
+                "version_name": "11.2.5",
+                "package_path": "AndroZoo/apks/e3/digifit.android.virtuagym.pro.ironhousecobv_E3E2033B9DF87CE831F0347BE8B83C1B32D72C3D64C491D90D5EF6D189A41C04.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportufithoogezand",
+                "version_code": 4300547,
+                "version_name": "10.3.5",
+                "package_path": "AndroZoo/apks/f7/digifit.android.virtuagym.pro.sportufithoogezand_F701C5003211580CD0BCE8CF4C9C281FD59E5C7F2B139DE5BB2B62076BDB6DF2.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.maximumfitnesscenter",
+                "version_code": 4300581,
+                "version_name": "10.4.8",
+                "package_path": "AndroZoo/apks/f7/digifit.android.virtuagym.pro.maximumfitnesscenter_F704BE03B25C0947E16FBE07412AFE1F1C9761D1A03A75DC9B8957E4B4D33D86.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.ludus",
+                "version_code": 4300679,
+                "version_name": "11.2.5",
+                "package_path": "AndroZoo/apks/f7/digifit.android.virtuagym.pro.ludus_F712C856BCD76AB949D44CFEDE89DEB09CECE941ADBD7C0AE98C78E35C6E4A7E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -23552,6 +23785,78 @@
             },
             {
                 "description": "Source review, com.welstory.welplus: labels abf2 as write characteristic and abf0 as service AndroZoo/apks_jadx/01/com.welstory.welplus_0184355B885FB5C49FF23001CB2765D762C180A66274BF608E83401C78499093.apk.jadx.tar.xz!sources/com/qn/device/constant/QNBleConst.java:8-10.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.coachcare.prohealthdietionic. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.beachfit. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.activefitsportcenter. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.proaventuras. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.skateagora. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.anytimeenglish. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.raypfit. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.tonbridgeserviceslimited. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.coachcare.awakenweightlossionic. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.coachcare.leanmdappionic. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.fitnessnation. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.sanafit. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.factorygym. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.m4lpt. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.ironhousecobv. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.sportufithoogezand. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.maximumfitnesscenter. In this app, the characteristic belongs to service abf0.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in digifit.android.virtuagym.pro.ludus. In this app, the characteristic belongs to service abf0.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -26075,6 +26380,132 @@
                 "version_name": "12.0.4",
                 "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.personaltrainingastensomeren_01FCD6CD4BE8DAA168AE2F1F6B8B53E140453BE0CEEDC4C3AF95DD360AE83348.apk",
                 "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `f26291c`."
+            },
+            {
+                "package_id": "com.coachcare.prohealthdietionic",
+                "version_code": 4739363,
+                "version_name": "2.39.360",
+                "package_path": "AndroZoo/apks/c7/com.coachcare.prohealthdietionic_C7C53C980901729020EBDD2FBDF705D18C5F9005302977A3D8276DBB6CD5389E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.beachfit",
+                "version_code": 4300521,
+                "version_name": "10.1.2",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.beachfit_C713A54147CD2D6456EB19677737F6783A633CDE723908C178A54F856C386AA7.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.activefitsportcenter",
+                "version_code": 4300581,
+                "version_name": "10.4.8",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.activefitsportcenter_C7A8F8157839BCC4AF6A9F068EEE84056D591BC489A38E12BB732B45B5A5EED7.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.proaventuras",
+                "version_code": 4300546,
+                "version_name": "10.3.5",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.proaventuras_C7C304194F7334D03109E7757A1D3DE3B4F903E2927BA8236E10905D2FAA1034.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.skateagora",
+                "version_code": 4300581,
+                "version_name": "10.4.8",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.skateagora_C72712C50B6788AD07C85BA6644017A484301651F7B5C5A10DE95AFC57064C71.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.anytimeenglish",
+                "version_code": 4300605,
+                "version_name": "10.6.3",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.anytimeenglish_C772ECC90ADB4DE0EBA24A0BCC0015EE69F1DB9B7D987358477C3A704526D701.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.raypfit",
+                "version_code": 4300618,
+                "version_name": "10.7.2",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.raypfit_C75287C6ECFB78C69079DB5C82BBC14D8F6B1800D93062009858329E45C970DD.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.tonbridgeserviceslimited",
+                "version_code": 4300641,
+                "version_name": "11.0.5",
+                "package_path": "AndroZoo/apks/c7/digifit.android.virtuagym.pro.tonbridgeserviceslimited_C782847A56B22187A3C0C7FC822FBB95620D9E73D21651857D211F6BFC669CEE.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.coachcare.awakenweightlossionic",
+                "version_code": 4739363,
+                "version_name": "2.39.360",
+                "package_path": "AndroZoo/apks/dd/com.coachcare.awakenweightlossionic_DDD89559F4931CEA05E8811B8001C2D6DC9384D34BBE1ABA449B2EBAC92DEDBD.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.coachcare.leanmdappionic",
+                "version_code": 3384638,
+                "version_name": "2.38.910",
+                "package_path": "AndroZoo/apks/dd/com.coachcare.leanmdappionic_DDF9412FD59A65A08970858C7991BAD08AD936B3DA45624CBC95419FE62A45BA.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.fitnessnation",
+                "version_code": 4300581,
+                "version_name": "10.4.8",
+                "package_path": "AndroZoo/apks/dd/digifit.android.virtuagym.pro.fitnessnation_DD929026C3C70DE8AC00D6BCA8096FF3C4AF3483AA6B683DB121991745796437.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sanafit",
+                "version_code": 4300581,
+                "version_name": "10.4.8",
+                "package_path": "AndroZoo/apks/dd/digifit.android.virtuagym.pro.sanafit_DDD8F96D7DBDC7B5983D09C246644D41EA389554F17E77B5CF437CC5CB1E3E9E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.factorygym",
+                "version_code": 4300548,
+                "version_name": "10.3.5",
+                "package_path": "AndroZoo/apks/e3/digifit.android.virtuagym.pro.factorygym_E318522FB2DAC76F586620FACC26373AF6800E49DA5113FE1353CB97FF1F68DD.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.m4lpt",
+                "version_code": 4300546,
+                "version_name": "10.3.5",
+                "package_path": "AndroZoo/apks/e3/digifit.android.virtuagym.pro.m4lpt_E3A71DC1B9D8A0BD55E8BFF930B7E8B24E0539E1628B970BAAF4DA9C5F52E72E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.ironhousecobv",
+                "version_code": 4300679,
+                "version_name": "11.2.5",
+                "package_path": "AndroZoo/apks/e3/digifit.android.virtuagym.pro.ironhousecobv_E3E2033B9DF87CE831F0347BE8B83C1B32D72C3D64C491D90D5EF6D189A41C04.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.sportufithoogezand",
+                "version_code": 4300547,
+                "version_name": "10.3.5",
+                "package_path": "AndroZoo/apks/f7/digifit.android.virtuagym.pro.sportufithoogezand_F701C5003211580CD0BCE8CF4C9C281FD59E5C7F2B139DE5BB2B62076BDB6DF2.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.maximumfitnesscenter",
+                "version_code": 4300581,
+                "version_name": "10.4.8",
+                "package_path": "AndroZoo/apks/f7/digifit.android.virtuagym.pro.maximumfitnesscenter_F704BE03B25C0947E16FBE07412AFE1F1C9761D1A03A75DC9B8957E4B4D33D86.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "digifit.android.virtuagym.pro.ludus",
+                "version_code": 4300679,
+                "version_name": "11.2.5",
+                "package_path": "AndroZoo/apks/f7/digifit.android.virtuagym.pro.ludus_F712C856BCD76AB949D44CFEDE89DEB09CECE941ADBD7C0AE98C78E35C6E4A7E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -26904,6 +27335,26 @@
             },
             {
                 "description": "Source review, com.legend.hiwtchMax.app: AE00 is service; AE01 write characteristic and AE02 notification characteristic are fetched from that service AndroZoo/apks_jadx/01/com.legend.hiwtchMax.app_01344CB127C3F234B5CA31FF86F1D4E403ADB129D23C01942D486CFAC4528349.apk.jadx.tar.xz!sources/com/jieli/bluetooth_connect/constant/BluetoothConstant.java:49-51; sources/com/jieli/ble/BleManager.java:328-338.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.boAt.hearables. In this app, the characteristic belongs to service ae00.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.sjty.trent. In this app, the characteristic belongs to service ae00.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.watch.bsmart. In this app, the characteristic belongs to service ae00.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.intersales.denverbfh14. In this app, the characteristic belongs to service ae00.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.tllaudio.telluraudio. In this app, the characteristic belongs to service ae00.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -28069,6 +28520,41 @@
                 "version_name": "12.0.4",
                 "package_path": "AndroZoo/apks/01/digifit.android.virtuagym.pro.personaltrainingastensomeren_01FCD6CD4BE8DAA168AE2F1F6B8B53E140453BE0CEEDC4C3AF95DD360AE83348.apk",
                 "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `JIE_LI_CHARACTERISTIC_AE01`."
+            },
+            {
+                "package_id": "com.boAt.hearables",
+                "version_code": 208,
+                "version_name": "1.8.4",
+                "package_path": "AndroZoo/apks/c7/com.boAt.hearables_C7E1B2D30556BCD268C697D148FE575E4B2F260FBAD2FDD3A159BBAD0681DBD7.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.sjty.trent",
+                "version_code": 30,
+                "version_name": "2.2.34",
+                "package_path": "AndroZoo/apks/e3/com.sjty.trent_E3425B27CEB49D89DCC6FD49B58A4DF212464B50D114658B1597DB95EB71BA0A.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.watch.bsmart",
+                "version_code": 29,
+                "version_name": "1.0.19",
+                "package_path": "AndroZoo/apks/e3/com.watch.bsmart_E3D529950DB9206603C9CE80277003F699E69E0CC9F7CE76180D4CDBD3EC1D13.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.intersales.denverbfh14",
+                "version_code": 24120604,
+                "version_name": "3.3.2",
+                "package_path": "AndroZoo/apks/f7/com.intersales.denverbfh14_F76CAFAC22D33D360326DC855BADAC4C0892062F6B0F1267F0C2C0533EB670F3.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.tllaudio.telluraudio",
+                "version_code": 101080,
+                "version_name": "1.0.6",
+                "package_path": "AndroZoo/apks/f7/com.tllaudio.telluraudio_F79C777403199415055BFA5D65B4AE99F83F7287991407AE2E5FE38EC4E93B13.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -28906,6 +29392,22 @@
             },
             {
                 "description": "Source review, com.zddz.app.lampcontrol: notification call uses service ff00 and characteristic ae02 AndroZoo/apks_jadx/01/com.zddz.app.lampcontrol_01AA721A286CD20AD06708817F5DCAEF595909885FD236EADC2EE1549CCE7383.apk.jadx.tar.xz!sources/com/zddz/app/lampcontrol/activity/NewMainActivity.java:493-495.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.boAt.hearables. In this app, the characteristic belongs to service ae00.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.sjty.trent. In this app, the characteristic belongs to service ae00.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.watch.bsmart. In this app, the characteristic belongs to service ae00.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.tllaudio.telluraudio. In this app, the characteristic belongs to service ae00.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -30078,6 +30580,34 @@
                 "version_name": "1.4.1",
                 "package_path": "AndroZoo/apks/01/com.cratoni2_01FFD7BCF5979C0875E248CA2AA0E4A2F513DE10D6B1713246A06F402DEBE825.apk",
                 "description": "Detected by apk-clues-extract scan; role not independently verified in this APK; Java field `NOTIFICATION_UUID_HELMET`."
+            },
+            {
+                "package_id": "com.boAt.hearables",
+                "version_code": 208,
+                "version_name": "1.8.4",
+                "package_path": "AndroZoo/apks/c7/com.boAt.hearables_C7E1B2D30556BCD268C697D148FE575E4B2F260FBAD2FDD3A159BBAD0681DBD7.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.sjty.trent",
+                "version_code": 30,
+                "version_name": "2.2.34",
+                "package_path": "AndroZoo/apks/e3/com.sjty.trent_E3425B27CEB49D89DCC6FD49B58A4DF212464B50D114658B1597DB95EB71BA0A.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.watch.bsmart",
+                "version_code": 29,
+                "version_name": "1.0.19",
+                "package_path": "AndroZoo/apks/e3/com.watch.bsmart_E3D529950DB9206603C9CE80277003F699E69E0CC9F7CE76180D4CDBD3EC1D13.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.tllaudio.telluraudio",
+                "version_code": 101080,
+                "version_name": "1.0.6",
+                "package_path": "AndroZoo/apks/f7/com.tllaudio.telluraudio_F79C777403199415055BFA5D65B4AE99F83F7287991407AE2E5FE38EC4E93B13.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
@@ -30255,7 +30785,8 @@
         "UUID_name": "SERVICE_UUID_PEDOMETER_A5 / PEDOMETER_SERVICE_UUID_A5",
         "UUID_purpose": "GATT Characteristic observed in Android app com.rpmhealthcare.ghgc but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `SERVICE_UUID_PEDOMETER_A5 / PEDOMETER_SERVICE_UUID_A5`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:SERVICE_UUID_PEDOMETER_A5. Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Characteristic",
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -30540,6 +31071,10 @@
             {
                 "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `PEDOMETER_SERVICE_UUID_A5`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt service in org.seadvocacy.docsrchout.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -35475,7 +36010,8 @@
         "UUID_name": "Unknown",
         "UUID_purpose": "GATT Characteristic observed in Android app com.rpmhealthcare.ghgc but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `APOLLO_DEVICE_DFU_SERVICE_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(APOLLO_DEVICE_DFU_SERVICE_UUID). Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Characteristic",
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -35756,6 +36292,10 @@
             {
                 "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `APOLLO_DEVICE_DFU_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: cross-file usage:getCharacteristic(APOLLO_DEVICE_DFU_SERVICE_UUID).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt service in org.seadvocacy.docsrchout.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -36757,6 +37297,14 @@
             {
                 "description": "Target APK source: K7/a.java:19 defines this UUID; com/crrepa/ble/ota/goodix/BleRestoreDeviceServices.java:25-32 compares it to a discovered characteristic UUID and stores the match in notifyCharacteristic. The helper iterates services without identifying a parent service.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.crrepa.band.fitrist.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.watch.bsmart. In this app, the characteristic belongs to service a6ed0401-d344-460a-8075-b9e8ec90d71b.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -37052,6 +37600,20 @@
                 "version_code": 934,
                 "version_name": "2.5.18",
                 "package_path": "AndroZoo/apks/fa/com.pavlok3.core_FA1368275A44E788A653DAF023F63E99D5A43D48987F8848C737B152F6E98E7B.apk"
+            },
+            {
+                "package_id": "com.crrepa.band.fitrist",
+                "version_code": 10362,
+                "version_name": "v2.5.2-346-gcddd84c93",
+                "package_path": "AndroZoo/apks/dd/com.crrepa.band.fitrist_DDF0C0C6BE2BFBA0B049BCA810880570A0EDCC338AF4A2E924ACC080B2DD7573.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.watch.bsmart",
+                "version_code": 29,
+                "version_name": "1.0.19",
+                "package_path": "AndroZoo/apks/e3/com.watch.bsmart_E3D529950DB9206603C9CE80277003F699E69E0CC9F7CE76180D4CDBD3EC1D13.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "00000000-0000-0000-0099-aabbccddeeff"
@@ -37321,6 +37883,14 @@
             },
             {
                 "description": "Target APK source: K7/a.java:20 defines this UUID; com/crrepa/ble/ota/goodix/BleRestoreDeviceServices.java:25-33 compares it to a discovered characteristic UUID and stores the match in writeCharacteristic. The helper iterates services without identifying a parent service.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.crrepa.band.fitrist.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.watch.bsmart. In this app, the characteristic belongs to service a6ed0401-d344-460a-8075-b9e8ec90d71b.",
                 "submitter": "GPT-6 Luna"
             }
         ],
@@ -37617,6 +38187,20 @@
                 "version_code": 934,
                 "version_name": "2.5.18",
                 "package_path": "AndroZoo/apks/fa/com.pavlok3.core_FA1368275A44E788A653DAF023F63E99D5A43D48987F8848C737B152F6E98E7B.apk"
+            },
+            {
+                "package_id": "com.crrepa.band.fitrist",
+                "version_code": 10362,
+                "version_name": "v2.5.2-346-gcddd84c93",
+                "package_path": "AndroZoo/apks/dd/com.crrepa.band.fitrist_DDF0C0C6BE2BFBA0B049BCA810880570A0EDCC338AF4A2E924ACC080B2DD7573.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.watch.bsmart",
+                "version_code": 29,
+                "version_name": "1.0.19",
+                "package_path": "AndroZoo/apks/e3/com.watch.bsmart_E3D529950DB9206603C9CE80277003F699E69E0CC9F7CE76180D4CDBD3EC1D13.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "00000000-0000-0000-0099-aabbccddeeff"
@@ -38463,6 +39047,10 @@
             {
                 "description": "APK source review established this UUID’s function.",
                 "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.stanleyblackanddecker.stanleyalarm. In this app, the characteristic belongs to service 49ed65c8-0650-440c-9305-f1928add75cc.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -38472,6 +39060,13 @@
                 "version_name": "5.10.2",
                 "package_path": "AndroZoo/apks/04/com.alarm.alarmmobile.android.g1group_04C93E133347B56AE7B1227AF2F3DECB33CB9B794F1D063201FC48B83529131F.apk",
                 "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group."
+            },
+            {
+                "package_id": "com.stanleyblackanddecker.stanleyalarm",
+                "version_code": 2207,
+                "version_name": "5.10.6",
+                "package_path": "AndroZoo/apks/e3/com.stanleyblackanddecker.stanleyalarm_E344B2BEB3CB4906AEC291051EA52D8A9AE94AC69B121A26F2065DEE958CE07B.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "49ed65c8-0650-440c-9305-f1928add75cc"
@@ -38492,6 +39087,10 @@
             {
                 "description": "APK source review established this UUID’s function.",
                 "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.stanleyblackanddecker.stanleyalarm. In this app, the characteristic belongs to service 49ed65c8-0650-440c-9305-f1928add75cc.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -38501,6 +39100,13 @@
                 "version_name": "5.10.2",
                 "package_path": "AndroZoo/apks/04/com.alarm.alarmmobile.android.g1group_04C93E133347B56AE7B1227AF2F3DECB33CB9B794F1D063201FC48B83529131F.apk",
                 "description": "Source review identified a gatt characteristic in com.alarm.alarmmobile.android.g1group."
+            },
+            {
+                "package_id": "com.stanleyblackanddecker.stanleyalarm",
+                "version_code": 2207,
+                "version_name": "5.10.6",
+                "package_path": "AndroZoo/apks/e3/com.stanleyblackanddecker.stanleyalarm_E344B2BEB3CB4906AEC291051EA52D8A9AE94AC69B121A26F2065DEE958CE07B.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "49ed65c8-0650-440c-9305-f1928add75cc"
@@ -41166,6 +41772,10 @@
             {
                 "description": "Found in Android app com.apulsetech.sample.bluetooth.rfid.tag_access_sample, version 1.1.1.348. Its GATT characteristic role is an unverified inference.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in redpanda.droid. In this app, the characteristic belongs to service 1101.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -41175,6 +41785,13 @@
                 "version_name": "1.1.1.348",
                 "package_path": "AndroZoo/apks/02/com.apulsetech.sample.bluetooth.rfid.tag_access_sample_02DC33C512F8C7C05ACCD0B05BF28D6CB35E12F206713CB8BF987323CE53269D.apk",
                 "description": "Possible GATT characteristic; not independently verified."
+            },
+            {
+                "package_id": "redpanda.droid",
+                "version_code": 801250523,
+                "version_name": "25.03.250523",
+                "package_path": "AndroZoo/apks/e3/redpanda.droid_E3CF80AF94F048873CAF7E6C8EAD43555B4A36DFF5AB7DCE7716DA066160571E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ]
     },
@@ -47721,7 +48338,8 @@
         "UUID_name": "CHIPSEA_LX_UP_ACK_UUID",
         "UUID_purpose": "Custom GATT Service observed in Android app com.chipsea.btcontrol.en. No Java field-name hint available (likely an obfuscated identifier).",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Service",
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -48052,6 +48670,10 @@
             {
                 "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `DEVICE_A6_WRITE_ACK_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in org.seadvocacy.docsrchout. In this app, the characteristic belongs to service a602.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -54739,6 +55361,14 @@
                 "URL": "https://www.goodix.com/en/docview/GR551x%20DFU%20Application%20Note?objectId=62&objectType=document&version=228",
                 "description": "Goodix GR551x DFU Application Note identifies this UUID as its customized Bluetooth LE OTA Service.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt service in com.brain.vibmatex.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in com.tao.lexgo.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -55056,6 +55686,20 @@
                 "version_name": "3.0.8",
                 "package_path": "AndroZoo/apks/df/com.sickappdevelopersgmbh.vibrator_DF5D0AE30B243C64D49B86126C999D88A27945AF95A290E74D4F1B116AD10B1A.apk",
                 "description": "Target-only DEX reference in classes2.dex, com.component.vf.b; SHA-256 df5d0ae30b243c64d49b86126c999d88a27945af95a290e74d4f1b116ad10b1a."
+            },
+            {
+                "package_id": "com.brain.vibmatex",
+                "version_code": 33,
+                "version_name": "1.2.9",
+                "package_path": "AndroZoo/apks/dd/com.brain.vibmatex_DD2C28DD124D481527483E1E5CAD52369B9FF26861C6C47B2B08237D5ACA37F1.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "com.tao.lexgo",
+                "version_code": 1049,
+                "version_name": "1.0.49",
+                "package_path": "AndroZoo/apks/f7/com.tao.lexgo_F714C2D6FC0BE1C020580F92D3F1E383BF1B294D2A7C6FD289BBDC4DD9B7B028.apk",
+                "description": "Source review identified a gatt service in this app."
             }
         ]
     },
@@ -60771,6 +61415,35 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `a`."
             }
         ]
+    },
+    {
+        "UUID": "a3c87509-8ed3-4bdf-8a39-a01bebede295",
+        "company": "Unknown",
+        "UUID_name": "EDDYSTONE_EID_IDENTITY_KEY",
+        "UUID_purpose": "Supplies Eddystone-EID beacon identity-key material used when associating the beacon with the application account.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review confirmed gatt characteristic use in this app. In this app, the characteristic belongs to service a3c87500-8ed3-4bdf-8a39-a01bebede295.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.babuino.badgeMe",
+                "version_code": 34,
+                "version_name": "2.22.0",
+                "package_path": "AndroZoo/apks/dd/com.babuino.badgeMe_DDB8E7AB262CA0D27A8AA5DF5EDDC17F04EBAECF510E9840B3B1E2F44C942817.apk",
+                "description": "Source review confirmed gatt characteristic use in this app."
+            }
+        ],
+        "parent_UUID": "a3c87500-8ed3-4bdf-8a39-a01bebede295"
     },
     {
         "UUID": "a3c8750c-8ed3-4bdf-8a39-a01bebede295",
@@ -68168,7 +68841,8 @@
         "UUID_name": "Unknown",
         "UUID_purpose": "GATT Characteristic observed in Android app com.greencopper.android.burtonusopen but declared in third-party SDK package `com.kontakt.sdk.android.ble.spec`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Characteristic",
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -68753,6 +69427,18 @@
                 "URL": "None",
                 "submitter": "GPT-6.1 Terra",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
+            },
+            {
+                "description": "Source review identified this as a gatt service in it.fabbricadigitale.sabbioneta.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in io.tixngo.app.ttf.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in it.emplate.malom.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -69574,6 +70260,27 @@
                 "version_name": "11.4.0",
                 "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `PROXIMITY`."
+            },
+            {
+                "package_id": "it.fabbricadigitale.sabbioneta",
+                "version_code": 25,
+                "version_name": "1.2.0",
+                "package_path": "AndroZoo/apks/c7/it.fabbricadigitale.sabbioneta_C71CA6B7A04CBA7B57F22C9E9E342D412AD08E8F6842130B29DAD24B7F89DE03.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "io.tixngo.app.ttf",
+                "version_code": 15,
+                "version_name": "3.2333.1",
+                "package_path": "AndroZoo/apks/dd/io.tixngo.app.ttf_DD6A7C082B262FD21B7D9F9E59ACD65B522258F3507B176E39E6C5501E2AADBF.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "it.emplate.malom",
+                "version_code": 317,
+                "version_name": "2026.14",
+                "package_path": "AndroZoo/apks/f7/it.emplate.malom_F7CB79783C4C46E56E594EA9D5A7D97C947B147AF15FF85E812C5A652064732E.apk",
+                "description": "Source review identified a gatt service in this app."
             }
         ]
     },
@@ -69583,7 +70290,8 @@
         "UUID_name": "Unknown",
         "UUID_purpose": "GATT Characteristic observed in Android app com.greencopper.android.burtonusopen but declared in third-party SDK package `com.kontakt.sdk.android.ble.spec`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Characteristic",
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -70168,6 +70876,18 @@
                 "URL": "None",
                 "submitter": "GPT-6.1 Terra",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
+            },
+            {
+                "description": "Source review identified this as a gatt service in it.fabbricadigitale.sabbioneta.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in io.tixngo.app.ttf.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in it.emplate.malom.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -70989,6 +71709,27 @@
                 "version_name": "11.4.0",
                 "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `TIMERS`."
+            },
+            {
+                "package_id": "it.fabbricadigitale.sabbioneta",
+                "version_code": 25,
+                "version_name": "1.2.0",
+                "package_path": "AndroZoo/apks/c7/it.fabbricadigitale.sabbioneta_C71CA6B7A04CBA7B57F22C9E9E342D412AD08E8F6842130B29DAD24B7F89DE03.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "io.tixngo.app.ttf",
+                "version_code": 15,
+                "version_name": "3.2333.1",
+                "package_path": "AndroZoo/apks/dd/io.tixngo.app.ttf_DD6A7C082B262FD21B7D9F9E59ACD65B522258F3507B176E39E6C5501E2AADBF.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "it.emplate.malom",
+                "version_code": 317,
+                "version_name": "2026.14",
+                "package_path": "AndroZoo/apks/f7/it.emplate.malom_F7CB79783C4C46E56E594EA9D5A7D97C947B147AF15FF85E812C5A652064732E.apk",
+                "description": "Source review identified a gatt service in this app."
             }
         ]
     },
@@ -70998,7 +71739,8 @@
         "UUID_name": "Unknown",
         "UUID_purpose": "GATT Characteristic observed in Android app com.greencopper.android.burtonusopen but declared in third-party SDK package `com.kontakt.sdk.android.ble.spec`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Characteristic",
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -71583,6 +72325,18 @@
                 "URL": "None",
                 "submitter": "GPT-6.1 Terra",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
+            },
+            {
+                "description": "Source review identified this as a gatt service in it.fabbricadigitale.sabbioneta.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in io.tixngo.app.ttf.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in it.emplate.malom.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -72404,6 +73158,27 @@
                 "version_name": "11.4.0",
                 "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CONTROL`."
+            },
+            {
+                "package_id": "it.fabbricadigitale.sabbioneta",
+                "version_code": 25,
+                "version_name": "1.2.0",
+                "package_path": "AndroZoo/apks/c7/it.fabbricadigitale.sabbioneta_C71CA6B7A04CBA7B57F22C9E9E342D412AD08E8F6842130B29DAD24B7F89DE03.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "io.tixngo.app.ttf",
+                "version_code": 15,
+                "version_name": "3.2333.1",
+                "package_path": "AndroZoo/apks/dd/io.tixngo.app.ttf_DD6A7C082B262FD21B7D9F9E59ACD65B522258F3507B176E39E6C5501E2AADBF.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "it.emplate.malom",
+                "version_code": 317,
+                "version_name": "2026.14",
+                "package_path": "AndroZoo/apks/f7/it.emplate.malom_F7CB79783C4C46E56E594EA9D5A7D97C947B147AF15FF85E812C5A652064732E.apk",
+                "description": "Source review identified a gatt service in this app."
             }
         ]
     },
@@ -72413,7 +73188,8 @@
         "UUID_name": "Unknown",
         "UUID_purpose": "GATT Characteristic observed in Android app com.greencopper.android.burtonusopen but declared in third-party SDK package `com.kontakt.sdk.android.ble.spec`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Characteristic",
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -72978,6 +73754,18 @@
                 "URL": "None",
                 "submitter": "GPT-6.1 Terra",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
+            },
+            {
+                "description": "Source review identified this as a gatt service in it.fabbricadigitale.sabbioneta.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in io.tixngo.app.ttf.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in it.emplate.malom.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -73764,6 +74552,27 @@
                 "version_name": "11.4.0",
                 "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SECURE_CONFIGURATION_SERVICE`."
+            },
+            {
+                "package_id": "it.fabbricadigitale.sabbioneta",
+                "version_code": 25,
+                "version_name": "1.2.0",
+                "package_path": "AndroZoo/apks/c7/it.fabbricadigitale.sabbioneta_C71CA6B7A04CBA7B57F22C9E9E342D412AD08E8F6842130B29DAD24B7F89DE03.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "io.tixngo.app.ttf",
+                "version_code": 15,
+                "version_name": "3.2333.1",
+                "package_path": "AndroZoo/apks/dd/io.tixngo.app.ttf_DD6A7C082B262FD21B7D9F9E59ACD65B522258F3507B176E39E6C5501E2AADBF.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "it.emplate.malom",
+                "version_code": 317,
+                "version_name": "2026.14",
+                "package_path": "AndroZoo/apks/f7/it.emplate.malom_F7CB79783C4C46E56E594EA9D5A7D97C947B147AF15FF85E812C5A652064732E.apk",
+                "description": "Source review identified a gatt service in this app."
             }
         ]
     },
@@ -73773,7 +74582,8 @@
         "UUID_name": "Unknown",
         "UUID_purpose": "GATT Characteristic observed in Android app com.greencopper.android.burtonusopen but declared in third-party SDK package `com.kontakt.sdk.android.ble.spec`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Characteristic",
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -74338,6 +75148,18 @@
                 "URL": "None",
                 "submitter": "GPT-6.1 Terra",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name; source: shard 01 source review): (Polish BLE beacon vendor; com.kontakt.sdk.android Android SDK)"
+            },
+            {
+                "description": "Source review identified this as a gatt service in it.fabbricadigitale.sabbioneta.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in io.tixngo.app.ttf.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in it.emplate.malom.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -75124,6 +75946,27 @@
                 "version_name": "11.4.0",
                 "package_path": "AndroZoo/apks/01/uk.co.hproperties.twentyfen_01D2D9797BD5EF76AED9972ADB3A071BB835DE1F4123570DB6D3EA2607EA4F83.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SENSORS_SERVICE`."
+            },
+            {
+                "package_id": "it.fabbricadigitale.sabbioneta",
+                "version_code": 25,
+                "version_name": "1.2.0",
+                "package_path": "AndroZoo/apks/c7/it.fabbricadigitale.sabbioneta_C71CA6B7A04CBA7B57F22C9E9E342D412AD08E8F6842130B29DAD24B7F89DE03.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "io.tixngo.app.ttf",
+                "version_code": 15,
+                "version_name": "3.2333.1",
+                "package_path": "AndroZoo/apks/dd/io.tixngo.app.ttf_DD6A7C082B262FD21B7D9F9E59ACD65B522258F3507B176E39E6C5501E2AADBF.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "it.emplate.malom",
+                "version_code": 317,
+                "version_name": "2026.14",
+                "package_path": "AndroZoo/apks/f7/it.emplate.malom_F7CB79783C4C46E56E594EA9D5A7D97C947B147AF15FF85E812C5A652064732E.apk",
+                "description": "Source review identified a gatt service in this app."
             }
         ]
     },
@@ -75911,6 +76754,14 @@
             {
                 "description": "Found in decompiled DEX of com.bingbao.anyloop v1.7.3 (versionCode 29), in Java field `f11793i`, declared in Java package `com.topstep.fitcloud.sdk.v2.features` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f11793i).",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.ufanet.apostolkotlin. In this app, the characteristic belongs to service 00aa.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.intersales.denverbfh14. In this app, the characteristic belongs to service aa01.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -75948,6 +76799,20 @@
                 "version_name": "1.7.3",
                 "package_path": "AndroZoo/apks/01/com.bingbao.anyloop_01FF023187F551A6D26065D9D909E56BC3560D6ABC5699C8E4C8FFC1491DFFF3.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f11793i`."
+            },
+            {
+                "package_id": "com.ufanet.apostolkotlin",
+                "version_code": 19,
+                "version_name": "1.1.4",
+                "package_path": "AndroZoo/apks/e3/com.ufanet.apostolkotlin_E3412C090CA374CDCB4671EBFB35F9131ACD75B4FF991DFD898F61B6F8B9559D.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "com.intersales.denverbfh14",
+                "version_code": 24120604,
+                "version_name": "3.3.2",
+                "package_path": "AndroZoo/apks/f7/com.intersales.denverbfh14_F76CAFAC22D33D360326DC855BADAC4C0892062F6B0F1267F0C2C0533EB670F3.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "aa00"
@@ -76055,6 +76920,10 @@
             {
                 "description": "Found in decompiled DEX of com.moko.mklora v1.1.2 (versionCode 24), in Java field `CHAR_STORAGE_DATA_NOTIFY / CHAR_PARAMS / SERVICE_ADV`. Classification source: cross-file usage:getCharacteristic(CHAR_STORAGE_DATA_NOTIFY).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.ufanet.apostolkotlin. In this app, the characteristic belongs to service 00aa.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -76078,6 +76947,13 @@
                 "version_name": "1.1.2",
                 "package_path": "BLUUID_APKS/0845/1521889b9cc254dff5fecc0b4485a33c1723611d5eb0a7284d745dbfc637f653/1521889b9cc254dff5fecc0b4485a33c1723611d5eb0a7284d745dbfc637f653.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHAR_STORAGE_DATA_NOTIFY / CHAR_PARAMS / SERVICE_ADV`."
+            },
+            {
+                "package_id": "com.ufanet.apostolkotlin",
+                "version_code": 19,
+                "version_name": "1.1.4",
+                "package_path": "AndroZoo/apks/e3/com.ufanet.apostolkotlin_E3412C090CA374CDCB4671EBFB35F9131ACD75B4FF991DFD898F61B6F8B9559D.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "aa00"
@@ -76102,6 +76978,10 @@
             {
                 "description": "Found in decompiled DEX of com.moko.mklora v1.1.2 (versionCode 24), in Java field `CHAR_PARAMS / SERVICE_ADV / CHAR_LOG`. Classification source: cross-file usage:getCharacteristic(CHAR_PARAMS).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.ufanet.apostolkotlin. In this app, the characteristic belongs to service 00aa.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -76125,6 +77005,13 @@
                 "version_name": "1.1.2",
                 "package_path": "BLUUID_APKS/0845/1521889b9cc254dff5fecc0b4485a33c1723611d5eb0a7284d745dbfc637f653/1521889b9cc254dff5fecc0b4485a33c1723611d5eb0a7284d745dbfc637f653.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHAR_PARAMS / SERVICE_ADV / CHAR_LOG`."
+            },
+            {
+                "package_id": "com.ufanet.apostolkotlin",
+                "version_code": 19,
+                "version_name": "1.1.4",
+                "package_path": "AndroZoo/apks/e3/com.ufanet.apostolkotlin_E3412C090CA374CDCB4671EBFB35F9131ACD75B4FF991DFD898F61B6F8B9559D.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "aa00"
@@ -76153,6 +77040,10 @@
             {
                 "description": "Found in decompiled DEX of com.moko.bxp.tag v1.0.4 (versionCode 5), in Java field `CHAR_ACC`. Classification source: cross-file usage:getCharacteristic(CHAR_ACC).",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.ufanet.apostolkotlin. In this app, the characteristic belongs to service 00aa.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -76183,6 +77074,13 @@
                 "version_name": "1.0.4",
                 "package_path": "BLUUID_APKS/0884/3c5069620306d7703e55a8c4dc2cd7a7183dbb47378c1cc5ef9882d02402443c/3c5069620306d7703e55a8c4dc2cd7a7183dbb47378c1cc5ef9882d02402443c.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHAR_ACC`."
+            },
+            {
+                "package_id": "com.ufanet.apostolkotlin",
+                "version_code": 19,
+                "version_name": "1.1.4",
+                "package_path": "AndroZoo/apks/e3/com.ufanet.apostolkotlin_E3412C090CA374CDCB4671EBFB35F9131ACD75B4FF991DFD898F61B6F8B9559D.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "aa00"
@@ -80206,7 +81104,8 @@
         "UUID_name": "DEVICE_WIFI_SERVICE_UUID / SERVICE_UUID_SCALE_WIFI",
         "UUID_purpose": "GATT Service observed in Android app com.rpmhealthcare.ghgc but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `SERVICE_UUID_SCALE_WIFI`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:SERVICE_UUID_SCALE_WIFI. Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Service",
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
@@ -80491,6 +81390,14 @@
             {
                 "description": "Found in decompiled DEX of com.elinkthings.ailink.health v2.34.02 (versionCode 2340280), in Java field `SERVICE_UUID`. Classification source: field-name:SERVICE_UUID.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.malide.tpms.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in org.nexleaf.coldtrace.trek. In this app, the characteristic belongs to service fff0.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -80752,6 +81659,20 @@
                 "version_name": "2.34.02",
                 "package_path": "AndroZoo/apks/01/com.elinkthings.ailink.health_01CEA43B3A9E04A387FE90B60D3A13CE63D3D9EFF3B8823C418045FA30E33D7F.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.malide.tpms",
+                "version_code": 72,
+                "version_name": "1.0.72",
+                "package_path": "AndroZoo/apks/c7/com.malide.tpms_C74137B5C9806EC747E9F9447CA644D59E989C7A2AE0BEF033D4438A64C65D5E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            },
+            {
+                "package_id": "org.nexleaf.coldtrace.trek",
+                "version_code": 57,
+                "version_name": "1.0",
+                "package_path": "AndroZoo/apks/e3/org.nexleaf.coldtrace.trek_E3176A6507F185EF48341C470AA9BFF4EE7F1505A898F2609C8AA7904584DC6C.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ]
     },
@@ -88758,6 +89679,10 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (China; Navihood / MEILAN GPS bike computer + sensors — BLE 4.0 / ANT+ dual-wireless)"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.dashr.dashrsprint. In this app, the characteristic belongs to service a000.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -88774,6 +89699,13 @@
                 "version_name": "1.127",
                 "package_path": "BLUUID_APKS/0952/27397b14ea8af58afb054972296621df7e5323f02f4bf2c3e6880563ac234e40/27397b14ea8af58afb054972296621df7e5323f02f4bf2c3e6880563ac234e40.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f15176t`."
+            },
+            {
+                "package_id": "com.dashr.dashrsprint",
+                "version_code": 237,
+                "version_name": "6.2.2",
+                "package_path": "AndroZoo/apks/f7/com.dashr.dashrsprint_F7F30FDC351840710D6AE322E8467309F504BCF33A8E6EF923483CBB83C2BA63.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "a000"
@@ -99953,6 +100885,10 @@
             {
                 "description": "Found in decompiled DEX of com.coveiot.android.lefit v1.0.2 (versionCode 3), in Java field `FAST_DFU_SERVICE_UUID`, declared in Java package `com.goodix.ble.gr.toolbox.app.libfastdfu.task` (third-party SDK). Classification source: field-name:FAST_DFU_SERVICE_UUID.",
                 "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt service in com.brain.vibmatex.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -100067,6 +101003,13 @@
                 "version_name": "1.0.2",
                 "package_path": "AndroZoo/apks/00/com.coveiot.android.lefit_009DDC5BA3B0895F398DA1748FDA6DC14CAAE4C6815A27C7CE0DF8E7F98FCAEE.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `FAST_DFU_SERVICE_UUID`."
+            },
+            {
+                "package_id": "com.brain.vibmatex",
+                "version_code": 33,
+                "version_name": "1.2.9",
+                "package_path": "AndroZoo/apks/dd/com.brain.vibmatex_DD2C28DD124D481527483E1E5CAD52369B9FF26861C6C47B2B08237D5ACA37F1.apk",
+                "description": "Source review identified a gatt service in this app."
             }
         ]
     },
@@ -103405,12 +104348,17 @@
         "UUID_name": "OTA2",
         "UUID_purpose": "GATT Service observed in Android app com.ncs.phoenixproject but declared in third-party SDK package `com.variable.therma.controllers` as Java field `OTA2`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Service",
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
                 "description": "Found in decompiled DEX of com.ncs.phoenixproject v1.6.19 (versionCode 431), in Java field `OTA2`, declared in Java package `com.variable.therma.controllers` (third-party SDK). Classification source: file-level-default.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.risklimiter.inspector.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -103420,6 +104368,13 @@
                 "version_name": "1.6.19",
                 "package_path": "BLUUID_APKS/0214/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `OTA2`."
+            },
+            {
+                "package_id": "com.risklimiter.inspector",
+                "version_code": 30050102,
+                "version_name": "3.5.1.2",
+                "package_path": "AndroZoo/apks/e3/com.risklimiter.inspector_E35C5037930FB7F9679E5B391CDF8D274273CCD49A817E3EEB69941EBA7C4D9E.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ]
     },
@@ -109847,6 +110802,34 @@
         ]
     },
     {
+        "UUID": "a5630201-5d20-465f-b493-6a0031b9fcf3",
+        "company": "Unknown",
+        "UUID_name": "UNLOCK_SAS",
+        "UUID_purpose": "Accepts an authenticated unlock command for a supported SAS lock.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in io.lattis.lattis; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "io.lattis.lattis",
+                "version_code": 554,
+                "version_name": "2.1.99",
+                "package_path": "AndroZoo/apks/dd/io.lattis.lattis_DDA4D7D1154E3E955B9DA8C2373E4D9263FD2B1A68F47E61E9F7AC63E1142011.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
         "UUID": "a42dfac5-2086-493b-b992-b7965bf9c15f",
         "company": "Unknown",
         "UUID_name": "Unknown",
@@ -109876,6 +110859,179 @@
                 "version_name": "1.4",
                 "package_path": "BLUUID_APKS/0551/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f/945ab50d207b236a933c372294f8365eb8d94469f4bdc5be4678ba0b8e67ea5f.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "aacc",
+        "company": "Unknown",
+        "UUID_name": "LED_TREK",
+        "UUID_purpose": "Configures the Trek temperature logger hot and cold temperature thresholds used by its LED indicators.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in org.nexleaf.coldtrace.trek; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "org.nexleaf.coldtrace.trek",
+                "version_code": 57,
+                "version_name": "1.0",
+                "package_path": "AndroZoo/apks/e3/org.nexleaf.coldtrace.trek_E3176A6507F185EF48341C470AA9BFF4EE7F1505A898F2609C8AA7904584DC6C.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aeac4a03-dff5-498f-843a-34487cf133eb",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Controls Nothing and CMF earphone noise-cancellation or ambient modes and reports earbud and charging-case battery status.",
+        "UUID_usage_array": [
+            "SDP Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review confirmed a Classic Bluetooth RFCOMM service in this app.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "description": "APK and GitHub source review support this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/lung595/orbitBluetooth/blob/dbbda495270fd6311adbe996be57e51e86cfb7d3/anc/protocols/nothing.py",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.nothing.smartcenter",
+                "version_code": 3080004,
+                "version_name": "3.8.0",
+                "package_path": "AndroZoo/apks/e3/com.nothing.smartcenter_E3008CC4873844CB3FB9E382020AF3C5E7EA3854A40ED5A9A711BBA9F353694A.apk",
+                "description": "Source review confirmed a Classic Bluetooth RFCOMM service in this app."
+            }
+        ]
+    },
+    {
+        "UUID": "a026e037-0a7d-4ab3-97fa-f1500f9feb8b",
+        "company": "Unknown",
+        "UUID_name": "UUID",
+        "UUID_purpose": "Controls Wahoo trainer tilt and height settings and requests tilt mode, target tilt and tilt limits.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.bikevo; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bikevo",
+                "version_code": 268,
+                "version_name": "8.1.4",
+                "package_path": "AndroZoo/apks/f7/com.bikevo_F7120F64FD4AB10B87923DF4C26DE03580329A8D273648290B0A56340730932E.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "abe2",
+        "company": "Unknown",
+        "UUID_name": "CARD_ALERT_CHARACTERISTIC",
+        "UUID_purpose": "Controls the AirBolt Card’s locator alarm, including starting an alert and stopping it.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theairbolt.airbolt",
+                "version_code": 14009,
+                "version_name": "1.4.9",
+                "package_path": "AndroZoo/apks/96/com.theairbolt.airbolt_96F0C0CD86DC11AAA3C57059944E6732F9D4838D27A584E754DBF59F68ECD5C2.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "aad6293e-f7dc-443b-a6c0-51165c904a0a",
+        "company": "Unknown",
+        "UUID_name": "GATT_SERVICE",
+        "UUID_purpose": "Provides peer-to-peer command messages, peer-name exchange and disconnection signaling for SonarDistance detection sessions.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "description": "Source review confirmed this gatt service in the app.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.copsonic.apps.sonardistance",
+                "version_code": 10502,
+                "version_name": "1.5.2",
+                "package_path": "AndroZoo/apks/f7/com.copsonic.apps.sonardistance_F7503D44311D55E1044270AB3F33F3E35BB280ECA222CFE66766D7449FBB0319.apk",
+                "description": "Source review confirmed the gatt service in this app."
+            }
+        ]
+    },
+    {
+        "UUID": "a0a1a2a3-a4a5-a6a7-a8a9-aaabacadaeaf",
+        "company": "Unknown",
+        "UUID_name": "uuidService",
+        "UUID_purpose": "Exchanges device-control commands and responses and transfers firmware updates with compatible devices supported by the Hiboy app.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.jyd.hiboy; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.jyd.hiboy",
+                "version_code": 2603219,
+                "version_name": "2603219",
+                "package_path": "AndroZoo/apks/f7/com.jyd.hiboy_F77D9FC014AE29A5572F78C6ED8F22F8DF8C0897B4D9827BCA81454F4611575F.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
             }
         ]
     },
@@ -110064,6 +111220,10 @@
             {
                 "description": "Source review identified a gatt characteristic in com.lifefitness.connect.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in es.antplus.xproject.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -110073,6 +111233,13 @@
                 "version_name": "1.16.0",
                 "package_path": "AndroZoo/apks/42/com.lifefitness.connect_4280EB8EBAFA1EC66F9F0C4018741348F024209871A0228442F64B195F2008C4.apk",
                 "description": "Source review identified a gatt characteristic in com.lifefitness.connect."
+            },
+            {
+                "package_id": "es.antplus.xproject",
+                "version_code": 2026091601,
+                "version_name": "2.965",
+                "package_path": "AndroZoo/apks/dd/es.antplus.xproject_DD34AE1F27B7AC2B73EAF16F7DD4378DD9E559DB41FB950595CF9EA5338F8B83.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ],
         "parent_UUID": "a026ee07-0a7d-4ab3-97fa-f1500f9feb8b"
@@ -110657,6 +111824,62 @@
         "parent_UUID": "a0090101-0605-0403-0201-f0e0d0c0b0a0"
     },
     {
+        "UUID": "a5630207-5d20-465f-b493-6a0031b9fcf3",
+        "company": "Unknown",
+        "UUID_name": "STATE_NOTIFY_SAS",
+        "UUID_purpose": "Notifies the application of the supported SAS lock state.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in io.lattis.lattis; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "io.lattis.lattis",
+                "version_code": 554,
+                "version_name": "2.1.99",
+                "package_path": "AndroZoo/apks/dd/io.lattis.lattis_DDA4D7D1154E3E955B9DA8C2373E4D9263FD2B1A68F47E61E9F7AC63E1142011.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "abe1",
+        "company": "Unknown",
+        "UUID_name": "CARD_FUNCTION_SERVICE",
+        "UUID_purpose": "Notifies the phone to start or stop its locator ringtone when requested by the AirBolt Card.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theairbolt.airbolt",
+                "version_code": 14009,
+                "version_name": "1.4.9",
+                "package_path": "AndroZoo/apks/96/com.theairbolt.airbolt_96F0C0CD86DC11AAA3C57059944E6732F9D4838D27A584E754DBF59F68ECD5C2.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
         "UUID": "a798bfe3-41ff-4c55-b455-6773ec14ddb2",
         "company": "Unknown",
         "UUID_name": "APP_CONNECT_ISSUER_ID",
@@ -110821,6 +112044,1330 @@
                 "version_name": "2.6",
                 "package_path": "AndroZoo/apks/95/com.beyerdynamic.app_9544ACBC44556C9F3AA1328AD5012265C35D02C58F1B82CDD42A4CB532C48FE6.apk",
                 "description": "The extractor suggests a gatt service in com.beyerdynamic.app; the role is unverified."
+            }
+        ]
+    },
+    {
+        "UUID": "a5618b06-0c20-a040-8102-040810204220",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a5618b06-0c20-a040-8102-04081020424c",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a5619306-0c20-a040-8102-040810204220",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a5619306-0c20-a040-8102-04081020424c",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a5619b06-0c20-a040-8102-040810204220",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a5619b06-0c20-a040-8102-04081020424c",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a561ab06-0c20-a040-8102-040810204220",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a561ab06-0c20-a040-8102-04081020424c",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a9065c56-4810-2040-8102-040810202020",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "af620ad6-ec20-a040-8102-040810204220",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "af620ad6-ec20-a040-8102-04081020424c",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "af620ad6-ec20-a040-8102-040810205320",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "af620ad6-ec20-a040-8102-040810205349",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "af621ad6-ec20-a040-8102-040810204220",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "af621ad6-ec20-a040-8102-04081020424c",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "af621ad6-ec20-a040-8102-040810205320",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "af621ad6-ec20-a040-8102-040810205349",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Bluetooth discovery and setup communication for compatible Yamaha MusicCast audio devices, including Wi-Fi provisioning.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.yamaha.av.musiccastcontroller; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.av.musiccastcontroller",
+                "version_code": 6269,
+                "version_name": "7.01",
+                "package_path": "AndroZoo/apks/dd/com.yamaha.av.musiccastcontroller_DD152C1D56E4DFE543029B3CF5658695ACEA3C7D6AD7578C25DA43FDEABA179B.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aeed3e24-b0e6-41ef-b19b-095a0f804c67",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Provides Neutrino vehicle electrical-controller commands and status, including circuit names, voltage, temperature controls and programmable relays.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in arborealsystems.com.neutrinoelementplusx; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "arborealsystems.com.neutrinoelementplusx",
+                "version_code": 417,
+                "version_name": "4.17",
+                "package_path": "AndroZoo/apks/e3/arborealsystems.com.neutrinoelementplusx_E3C19F1C76AC36E0B527AAFC18BC1A942FA3D90798A885AB61E1D70F1C1731EC.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a026ee0b-0a7d-4ab3-97fa-f1500f9feb8b",
+        "company": "Unknown",
+        "UUID_name": "UUID",
+        "UUID_purpose": "Provides Wahoo advanced indoor-trainer control for tilt, height and tilt-limit settings.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.bikevo; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.bikevo",
+                "version_code": 268,
+                "version_name": "8.1.4",
+                "package_path": "AndroZoo/apks/f7/com.bikevo_F7120F64FD4AB10B87923DF4C26DE03580329A8D273648290B0A56340730932E.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "ab12",
+        "company": "Unknown",
+        "UUID_name": "BLE_READ",
+        "UUID_purpose": "Provides an initial read of refrigerator operating data, including compartment temperatures and settings, before live notifications are enabled.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.acopower.refrigerator; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.acopower.refrigerator",
+                "version_code": 204,
+                "version_name": "2.0.4",
+                "package_path": "AndroZoo/apks/c7/com.acopower.refrigerator_C72E44B5EE931A6FFF9076982457C09679FCFBB8B8C1D4FA45302D6C2A13B907.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a5630100-5d20-465f-b493-6a0031b9fcf3",
+        "company": "Unknown",
+        "UUID_name": "UUID_SERVICE_SAS",
+        "UUID_purpose": "Provides authenticated unlocking and lock-state notifications for supported SAS locks.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in io.lattis.lattis; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "io.lattis.lattis",
+                "version_code": 554,
+                "version_name": "2.1.99",
+                "package_path": "AndroZoo/apks/dd/io.lattis.lattis_DDA4D7D1154E3E955B9DA8C2373E4D9263FD2B1A68F47E61E9F7AC63E1142011.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a1b0",
+        "company": "Unknown",
+        "UUID_name": "PAYLOAD_SERVICE",
+        "UUID_purpose": "Provides collection and acknowledgement of measurement payloads from Adrich tagged products for application upload.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in io.adrich.mobile2; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "io.adrich.mobile2",
+                "version_code": 26,
+                "version_name": "2.1.2",
+                "package_path": "AndroZoo/apks/c7/io.adrich.mobile2_C79BCDC5BDC1E1604E35FEC3F684E9E0C1F1EFCB03318B1D8D96BDFF4D4B2806.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aaae",
+        "company": "Unknown",
+        "UUID_name": "RECORD_MODE_service",
+        "UUID_purpose": "Reads and controls the HorseCare sensor recording mode, including live recording and archived-data retrieval.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aaaf",
+        "company": "Unknown",
+        "UUID_name": "RECORD_MODE_char",
+        "UUID_purpose": "Reads and sets the HorseCare sensor recording mode.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a408d308-b92b-4f90-b634-71b3067cea19",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Reads the gateway Bluetooth stack and application versions, used to determine which Bluetooth software updates are required.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in ch.belimo.vavap.app; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "ch.belimo.vavap.app",
+                "version_code": 2009892,
+                "version_name": "1.7.3-0-g6089c9493",
+                "package_path": "AndroZoo/apks/a5/ch.belimo.vavap.app_A5BD14AEDB95A9BE23949A444206C49B2DB9A3C870C819317EEC1FB3B3339111.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "aa22",
+        "company": "Unknown",
+        "UUID_name": "SSP_SERVICE_DATA_OUT_CHARACTERISTIC",
+        "UUID_purpose": "Receives SMART Analysis instrument command responses, including spectrum-acquisition and configuration results.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dnaphone.smart_analysis",
+                "version_code": 211,
+                "version_name": "1.9.4",
+                "package_path": "AndroZoo/apks/96/com.dnaphone.smart_analysis_96B7C81B2EA24E7DB3CEE2F35ADCB049FB8AF260E54A08D991E20172CA60EAA1.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "aab6",
+        "company": "Unknown",
+        "UUID_name": "VOLTAGE_service",
+        "UUID_purpose": "Reports HorseCare sensor battery voltage and balancing status.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aab7",
+        "company": "Unknown",
+        "UUID_name": "VOLTAGE_char",
+        "UUID_purpose": "Reports HorseCare sensor battery voltage and balancing status.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aabc",
+        "company": "Unknown",
+        "UUID_name": "REVISION_service",
+        "UUID_purpose": "Reports HorseCare sensor firmware revision and cradle-support capability.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aabd",
+        "company": "Unknown",
+        "UUID_name": "REVISION_char",
+        "UUID_purpose": "Reports HorseCare sensor firmware revision and cradle-support capability.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aa243908-e288-4981-9afc-70d4364b6304",
+        "company": "Unknown",
+        "UUID_name": "INFORMATION",
+        "UUID_purpose": "Reports Sylyca reader-state updates to the app.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.intellio_next_mobile; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.intellio_next_mobile",
+                "version_code": 33,
+                "version_name": "2.1.4",
+                "package_path": "AndroZoo/apks/dd/com.intellio_next_mobile_DDB6830380B1786ADD500B50F2A2FDE93BF6C0A2B9BAB012FFBCBC5B75B948E9.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a43f9f2c-a26f-4c64-88cf-2b1e90006844",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Reports changes to the NFC tag type detected by the Bluetooth-to-NFC gateway.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in ch.belimo.vavap.app; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "ch.belimo.vavap.app",
+                "version_code": 2009892,
+                "version_name": "1.7.3-0-g6089c9493",
+                "package_path": "AndroZoo/apks/a5/ch.belimo.vavap.app_A5BD14AEDB95A9BE23949A444206C49B2DB9A3C870C819317EEC1FB3B3339111.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "a0547dec-3b67-4d22-980d-48b700801dc5",
+        "company": "Unknown",
+        "UUID_name": "UUID_SERVICE_BUTTON_CHARATERISTIC_STATE",
+        "UUID_purpose": "Reports press, release, and click events from the CodaWheel Bluetooth button to TASSTA.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.tassta.flex.progility; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "Automated extraction found this UUID in com.tassta.sa; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.tassta.flex.progility",
+                "version_code": 329353,
+                "version_name": "5.6.58.1",
+                "package_path": "AndroZoo/apks/c7/com.tassta.flex.progility_C71962B70DF5968027877E7B9267A8690079F5D04885E2B10DE7BDF0D0F5E157.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            },
+            {
+                "package_id": "com.tassta.sa",
+                "version_code": 655997,
+                "version_name": "10.3.11.3",
+                "package_path": "AndroZoo/apks/dd/com.tassta.sa_DD6DFAEF8F70B04722B7F81A0949B658AB5C6600C3A00127BD8F9290D511B638.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "adffd248-9588-427e-a226-aeb96c340be7",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Reports the OOLER high-temperature calibration limit used in device diagnostics.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified this as a gatt characteristic in com.kryoinc.ooler_android.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "In the Ooler Android app, this characteristic belongs to service 28dfbeff-61e0-4aa2-9eea-ede0b86f3f65.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/PostLogical/ooler_ble_client/blob/5f2d7f6c6b1663f387ed2c5514f8ada064edc4f3/ooler_ble_client/const.py#L538-L549",
+                "description": "Another Ooler implementation associates this characteristic with service dc5e0473-d2ec-4f23-9b61-cd7bae046f76.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/PostLogical/ooler_ble_client/blob/5f2d7f6c6b1663f387ed2c5514f8ada064edc4f3/ooler_ble_client/const.py",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.kryoinc.ooler_android",
+                "version_code": 848,
+                "version_name": "1.6.26",
+                "package_path": "AndroZoo/apks/c7/com.kryoinc.ooler_android_C785D483A76B20601B36CCB4CA538E159B470972E0184B9E495770683D5B6A8B.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            }
+        ]
+    },
+    {
+        "UUID": "aa13",
+        "company": "Unknown",
+        "UUID_name": "FIRMWARE_SERVICE_DATA_OUT_FW_BLE_CHARACTERISTIC",
+        "UUID_purpose": "Reports the SMART Analysis instrument Bluetooth firmware version.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dnaphone.smart_analysis",
+                "version_code": 211,
+                "version_name": "1.9.4",
+                "package_path": "AndroZoo/apks/96/com.dnaphone.smart_analysis_96B7C81B2EA24E7DB3CEE2F35ADCB049FB8AF260E54A08D991E20172CA60EAA1.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "aa12",
+        "company": "Unknown",
+        "UUID_name": "FIRMWARE_SERVICE_DATA_OUT_FW_WIFI_CHARACTERISTIC",
+        "UUID_purpose": "Reports the SMART Analysis instrument Wi-Fi firmware version.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dnaphone.smart_analysis",
+                "version_code": 211,
+                "version_name": "1.9.4",
+                "package_path": "AndroZoo/apks/96/com.dnaphone.smart_analysis_96B7C81B2EA24E7DB3CEE2F35ADCB049FB8AF260E54A08D991E20172CA60EAA1.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "aa10",
+        "company": "Unknown",
+        "UUID_name": "FIRMWARE_SERVICE_MAC_WIFI_BLE_CHARACTERISTIC",
+        "UUID_purpose": "Reports the SMART Analysis instrument Wi-Fi/Bluetooth MAC-address information.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dnaphone.smart_analysis",
+                "version_code": 211,
+                "version_name": "1.9.4",
+                "package_path": "AndroZoo/apks/96/com.dnaphone.smart_analysis_96B7C81B2EA24E7DB3CEE2F35ADCB049FB8AF260E54A08D991E20172CA60EAA1.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "abf5",
+        "company": "Unknown",
+        "UUID_name": "BATTERY_LEVEL_READ",
+        "UUID_purpose": "Reports the SensCup device battery level as a text value.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.sensCup.myapplication; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.sensCup.myapplication",
+                "version_code": 250305001,
+                "version_name": "2.0.19",
+                "package_path": "AndroZoo/apks/c7/com.sensCup.myapplication_C7990CC4B1EE86B9FCCB5D054C476C54089FD45627101C0F0C43DB0EAA35576D.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aabe",
+        "company": "Unknown",
+        "UUID_name": "NEED_BALANCE_service",
+        "UUID_purpose": "Reports whether balancing should run in the app or in the HorseCare sensor.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aabf",
+        "company": "Unknown",
+        "UUID_name": "NEED_BALANCE_char",
+        "UUID_purpose": "Reports whether balancing should run in the app or in the HorseCare sensor.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aab3",
+        "company": "Unknown",
+        "UUID_name": "MEASUREMENT_char",
+        "UUID_purpose": "Retrieves sequenced HorseCare sensor measurement packets with a checksum.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aab0",
+        "company": "Unknown",
+        "UUID_name": "STORAGE_RP_service",
+        "UUID_purpose": "Selects the HorseCare sensor storage read position to resume measurement retrieval.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aa21",
+        "company": "Unknown",
+        "UUID_name": "SSP_SERVICE_DATA_IN_CHARACTERISTIC",
+        "UUID_purpose": "Sends SMART Analysis instrument commands for spectrum acquisition, thermostat control, LED illumination, parameters and Wi-Fi configuration.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.dnaphone.smart_analysis",
+                "version_code": 211,
+                "version_name": "1.9.4",
+                "package_path": "AndroZoo/apks/96/com.dnaphone.smart_analysis_96B7C81B2EA24E7DB3CEE2F35ADCB049FB8AF260E54A08D991E20172CA60EAA1.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "aabb",
+        "company": "Unknown",
+        "UUID_name": "FLASH_BASE_char",
+        "UUID_purpose": "Sets the name of a Nexleaf Trek device; its function in the HorseCare app remains unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "Automated extraction found this UUID in org.nexleaf.coldtrace.trek; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "The Nexleaf Trek app writes the device name using this characteristic. The HorseCare use remains unresolved.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            },
+            {
+                "package_id": "org.nexleaf.coldtrace.trek",
+                "version_code": 57,
+                "version_name": "1.0",
+                "package_path": "AndroZoo/apks/e3/org.nexleaf.coldtrace.trek_E3176A6507F185EF48341C470AA9BFF4EE7F1505A898F2609C8AA7904584DC6C.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "a563020c-5d20-465f-b493-6a0031b9fcf3",
+        "company": "Unknown",
+        "UUID_name": "NONCE_SAS",
+        "UUID_purpose": "Supplies the SAS lock nonce used in the authenticated unlocking exchange.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in io.lattis.lattis; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "io.lattis.lattis",
+                "version_code": 554,
+                "version_name": "2.1.99",
+                "package_path": "AndroZoo/apks/dd/io.lattis.lattis_DDA4D7D1154E3E955B9DA8C2373E4D9263FD2B1A68F47E61E9F7AC63E1142011.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "abe0",
+        "company": "Unknown",
+        "UUID_name": "CARD_ALERT_SERVICE",
+        "UUID_purpose": "Supports two-way locator alarms: ringing the AirBolt Card from the phone and requesting the phone to ring from the Card.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.theairbolt.airbolt",
+                "version_code": 14009,
+                "version_name": "1.4.9",
+                "package_path": "AndroZoo/apks/96/com.theairbolt.airbolt_96F0C0CD86DC11AAA3C57059944E6732F9D4838D27A584E754DBF59F68ECD5C2.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
             }
         ]
     },
@@ -111041,62 +113588,6 @@
         ]
     },
     {
-        "UUID": "a408d308-b92b-4f90-b634-71b3067cea19",
-        "company": "Unknown",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Reads the gateway Bluetooth stack and application versions, used to determine which Bluetooth software updates are required.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in ch.belimo.vavap.app; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "ch.belimo.vavap.app",
-                "version_code": 2009892,
-                "version_name": "1.7.3-0-g6089c9493",
-                "package_path": "AndroZoo/apks/a5/ch.belimo.vavap.app_A5BD14AEDB95A9BE23949A444206C49B2DB9A3C870C819317EEC1FB3B3339111.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
-        "UUID": "a43f9f2c-a26f-4c64-88cf-2b1e90006844",
-        "company": "Unknown",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Reports changes to the NFC tag type detected by the Bluetooth-to-NFC gateway.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in ch.belimo.vavap.app; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "ch.belimo.vavap.app",
-                "version_code": 2009892,
-                "version_name": "1.7.3-0-g6089c9493",
-                "package_path": "AndroZoo/apks/a5/ch.belimo.vavap.app_A5BD14AEDB95A9BE23949A444206C49B2DB9A3C870C819317EEC1FB3B3339111.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
         "UUID": "a487e4be-9f1d-4f25-b587-429ebb30a2d8",
         "company": "Unknown",
         "UUID_name": "Unknown",
@@ -111165,6 +113656,30 @@
                 "version_name": "7.236.1",
                 "package_path": "AndroZoo/apks/99/com.cedarfair.carowinds_99C88940D2D08CA3F3032930CD44F9120EC3C079BF52FEFA55EEE124772547A4.apk",
                 "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "a70e0d22-6d88-4dcb-b54a-e5776eb09b24",
+        "company": "Unknown",
+        "UUID_name": "gatewayDeviceTemplateId",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in au.com.gsminnovations.zimi; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "au.com.gsminnovations.zimi",
+                "version_code": 140,
+                "version_name": "2.11",
+                "package_path": "AndroZoo/apks/e3/au.com.gsminnovations.zimi_E398E7B13BC1629D54AED9EAF435519F047E080BECA4120B5A76956D878D35BC.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
             }
         ]
     },
@@ -111313,6 +113828,30 @@
         ]
     },
     {
+        "UUID": "a8535474-0b45-49c9-af71-b7117b903180",
+        "company": "Unknown",
+        "UUID_name": "garageControllerTemplateId",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in au.com.gsminnovations.zimi; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "au.com.gsminnovations.zimi",
+                "version_code": 140,
+                "version_name": "2.11",
+                "package_path": "AndroZoo/apks/e3/au.com.gsminnovations.zimi_E398E7B13BC1629D54AED9EAF435519F047E080BECA4120B5A76956D878D35BC.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
         "UUID": "a8b8ed5a-4ff1-4254-b176-f92f5d39faf8",
         "company": "Unknown",
         "UUID_name": "kUnenrollEnabledPayload",
@@ -111361,62 +113900,6 @@
         ]
     },
     {
-        "UUID": "aa10",
-        "company": "Unknown",
-        "UUID_name": "FIRMWARE_SERVICE_MAC_WIFI_BLE_CHARACTERISTIC",
-        "UUID_purpose": "Reports the SMART Analysis instrument Wi-Fi/Bluetooth MAC-address information.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.dnaphone.smart_analysis",
-                "version_code": 211,
-                "version_name": "1.9.4",
-                "package_path": "AndroZoo/apks/96/com.dnaphone.smart_analysis_96B7C81B2EA24E7DB3CEE2F35ADCB049FB8AF260E54A08D991E20172CA60EAA1.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
-        "UUID": "aa12",
-        "company": "Unknown",
-        "UUID_name": "FIRMWARE_SERVICE_DATA_OUT_FW_WIFI_CHARACTERISTIC",
-        "UUID_purpose": "Reports the SMART Analysis instrument Wi-Fi firmware version.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.dnaphone.smart_analysis",
-                "version_code": 211,
-                "version_name": "1.9.4",
-                "package_path": "AndroZoo/apks/96/com.dnaphone.smart_analysis_96B7C81B2EA24E7DB3CEE2F35ADCB049FB8AF260E54A08D991E20172CA60EAA1.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
         "UUID": "aa127580-9e0f-457e-88f1-8d3b9dcb7567",
         "company": "Unknown",
         "UUID_name": "DEFAULT_UNIQUE_ID",
@@ -111452,34 +113935,6 @@
         ]
     },
     {
-        "UUID": "aa13",
-        "company": "Unknown",
-        "UUID_name": "FIRMWARE_SERVICE_DATA_OUT_FW_BLE_CHARACTERISTIC",
-        "UUID_purpose": "Reports the SMART Analysis instrument Bluetooth firmware version.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.dnaphone.smart_analysis",
-                "version_code": 211,
-                "version_name": "1.9.4",
-                "package_path": "AndroZoo/apks/96/com.dnaphone.smart_analysis_96B7C81B2EA24E7DB3CEE2F35ADCB049FB8AF260E54A08D991E20172CA60EAA1.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
         "UUID": "aa14",
         "company": "Unknown",
         "UUID_name": "FIRMWARE_SERVICE_UPDATE_PACK_BLE_CHARACTERISTIC",
@@ -111504,58 +113959,26 @@
         ]
     },
     {
-        "UUID": "aa21",
+        "UUID": "aa5c",
         "company": "Unknown",
-        "UUID_name": "SSP_SERVICE_DATA_IN_CHARACTERISTIC",
-        "UUID_purpose": "Sends SMART Analysis instrument commands for spectrum acquisition, thermostat control, LED illumination, parameters and Wi-Fi configuration.",
+        "UUID_name": "UUID_SERVICE2",
+        "UUID_purpose": "The purpose is unknown.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
-                "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
+                "description": "Automated extraction found this UUID in com.ykd.indy; its Bluetooth role needs review.",
                 "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }
         ],
         "android_info_array": [
             {
-                "package_id": "com.dnaphone.smart_analysis",
-                "version_code": 211,
-                "version_name": "1.9.4",
-                "package_path": "AndroZoo/apks/96/com.dnaphone.smart_analysis_96B7C81B2EA24E7DB3CEE2F35ADCB049FB8AF260E54A08D991E20172CA60EAA1.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
-        "UUID": "aa22",
-        "company": "Unknown",
-        "UUID_name": "SSP_SERVICE_DATA_OUT_CHARACTERISTIC",
-        "UUID_purpose": "Receives SMART Analysis instrument command responses, including spectrum-acquisition and configuration results.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in com.dnaphone.smart_analysis; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.dnaphone.smart_analysis",
-                "version_code": 211,
-                "version_name": "1.9.4",
-                "package_path": "AndroZoo/apks/96/com.dnaphone.smart_analysis_96B7C81B2EA24E7DB3CEE2F35ADCB049FB8AF260E54A08D991E20172CA60EAA1.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
+                "package_id": "com.ykd.indy",
+                "version_code": 2,
+                "version_name": "1.3.1",
+                "package_path": "AndroZoo/apks/dd/com.ykd.indy_DDE388D06500D243673BA4B80B3C3C384217F67A0F678EFED291B231AAB05B04.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
             }
         ]
     },
@@ -111571,6 +113994,10 @@
             {
                 "description": "Automated extraction found this UUID in com.bestway.smartspa; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.deyesolar. In this app, the characteristic belongs to service 0922.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -111580,6 +114007,13 @@
                 "version_name": "1.3.50",
                 "package_path": "AndroZoo/apks/39/com.bestway.smartspa_394FF8FD9C37D9B7D278DEA6A11CA7923C617E45AB44527ABF102431270B68D0.apk",
                 "description": "Found by automated APK extraction; the GATT role needs source review."
+            },
+            {
+                "package_id": "com.deyesolar",
+                "version_code": 115,
+                "version_name": "4.8.1",
+                "package_path": "AndroZoo/apks/e3/com.deyesolar_E30E67B1AAF591B644C425BC7DC991DF2A8D2FC635DA0E0F96C5D5B8BC231101.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ]
     },
@@ -111589,12 +114023,21 @@
         "UUID_name": "GATT_QINGKE_CHARACTERISTIC_FOR_NOTIFY",
         "UUID_purpose": "The purpose is unknown.",
         "UUID_usage_array": [
-            "GATT Characteristic"
+            "GATT Characteristic",
+            "GATT Service"
         ],
         "evidence_array": [
             {
                 "description": "Automated extraction found this UUID in com.bestway.smartspa; its GATT role and company need source review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "Source review identified this as a gatt service in com.horsehealthdatareceiver.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt characteristic in com.deyesolar. In this app, the characteristic belongs to service 0922.",
+                "submitter": "GPT-6 Luna"
             }
         ],
         "android_info_array": [
@@ -111604,6 +114047,152 @@
                 "version_name": "1.3.50",
                 "package_path": "AndroZoo/apks/39/com.bestway.smartspa_394FF8FD9C37D9B7D278DEA6A11CA7923C617E45AB44527ABF102431270B68D0.apk",
                 "description": "Found by automated APK extraction; the GATT role needs source review."
+            },
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Source review identified a gatt service in this app."
+            },
+            {
+                "package_id": "com.deyesolar",
+                "version_code": 115,
+                "version_name": "4.8.1",
+                "package_path": "AndroZoo/apks/e3/com.deyesolar_E30E67B1AAF591B644C425BC7DC991DF2A8D2FC635DA0E0F96C5D5B8BC231101.apk",
+                "description": "Source review identified a gatt characteristic in this app."
+            }
+        ]
+    },
+    {
+        "UUID": "aab8",
+        "company": "Unknown",
+        "UUID_name": "FLASH_BLOCK_service",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review and GitHub search did not establish this UUID’s purpose.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aab9",
+        "company": "Unknown",
+        "UUID_name": "FLASH_BLOCK_char",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review and GitHub search did not establish this UUID’s purpose.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aaba",
+        "company": "Unknown",
+        "UUID_name": "FLASH_BASE_service",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.horsehealthdatareceiver; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "APK source review and GitHub search did not establish this UUID’s purpose.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.horsehealthdatareceiver",
+                "version_code": 324,
+                "version_name": "2.92",
+                "package_path": "AndroZoo/apks/e3/com.horsehealthdatareceiver_E3145041511AEA7B9E54B5EE3BFCD77C269A6A31B341E1D3354FFF888D6BD957.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aadd",
+        "company": "Unknown",
+        "UUID_name": "PACKET_ACK",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in org.nexleaf.coldtrace.trek; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "org.nexleaf.coldtrace.trek",
+                "version_code": 57,
+                "version_name": "1.0",
+                "package_path": "AndroZoo/apks/e3/org.nexleaf.coldtrace.trek_E3176A6507F185EF48341C470AA9BFF4EE7F1505A898F2609C8AA7904584DC6C.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+            }
+        ]
+    },
+    {
+        "UUID": "aaee",
+        "company": "Unknown",
+        "UUID_name": "CONFIGURE_ACK",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in org.nexleaf.coldtrace.trek; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "org.nexleaf.coldtrace.trek",
+                "version_code": 57,
+                "version_name": "1.0",
+                "package_path": "AndroZoo/apks/e3/org.nexleaf.coldtrace.trek_E3176A6507F185EF48341C470AA9BFF4EE7F1505A898F2609C8AA7904584DC6C.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
             }
         ]
     },
@@ -111752,90 +114341,6 @@
         ]
     },
     {
-        "UUID": "abe0",
-        "company": "Unknown",
-        "UUID_name": "CARD_ALERT_SERVICE",
-        "UUID_purpose": "Supports two-way locator alarms: ringing the AirBolt Card from the phone and requesting the phone to ring from the Card.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.theairbolt.airbolt",
-                "version_code": 14009,
-                "version_name": "1.4.9",
-                "package_path": "AndroZoo/apks/96/com.theairbolt.airbolt_96F0C0CD86DC11AAA3C57059944E6732F9D4838D27A584E754DBF59F68ECD5C2.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
-        "UUID": "abe1",
-        "company": "Unknown",
-        "UUID_name": "CARD_FUNCTION_SERVICE",
-        "UUID_purpose": "Notifies the phone to start or stop its locator ringtone when requested by the AirBolt Card.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.theairbolt.airbolt",
-                "version_code": 14009,
-                "version_name": "1.4.9",
-                "package_path": "AndroZoo/apks/96/com.theairbolt.airbolt_96F0C0CD86DC11AAA3C57059944E6732F9D4838D27A584E754DBF59F68ECD5C2.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
-        "UUID": "abe2",
-        "company": "Unknown",
-        "UUID_name": "CARD_ALERT_CHARACTERISTIC",
-        "UUID_purpose": "Controls the AirBolt Card’s locator alarm, including starting an alert and stopping it.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in com.theairbolt.airbolt; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.theairbolt.airbolt",
-                "version_code": 14009,
-                "version_name": "1.4.9",
-                "package_path": "AndroZoo/apks/96/com.theairbolt.airbolt_96F0C0CD86DC11AAA3C57059944E6732F9D4838D27A584E754DBF59F68ECD5C2.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
         "UUID": "abf7",
         "company": "Unknown",
         "UUID_name": "GATT_V2_CHARACTERISTIC",
@@ -111856,6 +114361,54 @@
                 "version_name": "1.3.50",
                 "package_path": "AndroZoo/apks/39/com.bestway.smartspa_394FF8FD9C37D9B7D278DEA6A11CA7923C617E45AB44527ABF102431270B68D0.apk",
                 "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "acab07ec-fc95-451d-88e5-4565a364a806",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Source review identified this as a gatt characteristic in com.kryoinc.ooler_android.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "In the Ooler Android app, this characteristic belongs to service 5c293993-d039-4225-92f6-31fa62101e96.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://github.com/PostLogical/ooler_ble_client/blob/5f2d7f6c6b1663f387ed2c5514f8ada064edc4f3/ooler_ble_client/const.py",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/turmoni/ooler-mqtt-bridge/blob/1c19faad51f50f46859f52b2f122fd6f2d259148/ooler/constants.py",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/coreycwgriffin/ooler/blob/b65e878e718a4b06182ac47153c8ffcd1d684761/custom_components/ooler/const.py",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/wesjdj/ooler/blob/aa81f136cfbedf7c5fefff61cf266efb03a952f0/custom_components/ooler/const.py",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.kryoinc.ooler_android",
+                "version_code": 848,
+                "version_name": "1.6.26",
+                "package_path": "AndroZoo/apks/c7/com.kryoinc.ooler_android_C785D483A76B20601B36CCB4CA538E159B470972E0184B9E495770683D5B6A8B.apk",
+                "description": "Source review identified a gatt characteristic in this app."
             }
         ]
     },
@@ -112480,6 +115033,30 @@
                 "version_name": "2.2.41",
                 "package_path": "AndroZoo/apks/96/com.nowatt.NowattLighting.app_96CA938DD96CFC0595F3EC81D73B5C2200A74280D65EFE900E06E71DC972A0EF.apk",
                 "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "afdcc00b-5cfb-494d-b674-8b9f95f3cc26",
+        "company": "Unknown",
+        "UUID_name": "fixedDeviceTemplateId",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in au.com.gsminnovations.zimi; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "au.com.gsminnovations.zimi",
+                "version_code": 140,
+                "version_name": "2.11",
+                "package_path": "AndroZoo/apks/e3/au.com.gsminnovations.zimi_E398E7B13BC1629D54AED9EAF435519F047E080BECA4120B5A76956D878D35BC.apk",
+                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
             }
         ]
     },

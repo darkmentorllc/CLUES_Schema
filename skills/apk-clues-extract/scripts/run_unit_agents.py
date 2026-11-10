@@ -329,7 +329,7 @@ OUTPUT_CONTRACT = {
   "notes": "<anything a curator must check>"
 }
 Rules: `company` is a BARE company name (no parentheses, no product names) — all
-commentary belongs in `note`/`UUID_purpose`. Use null rather than guessing. Do NOT
+attribution commentary belongs in `note`; UUID_purpose describes function. Use null rather than guessing. Do NOT
 invent a UUID_name when the evidence does not support one; leave it out instead.""",
     "cluster": """Return ONLY a JSON object:
 {
@@ -362,6 +362,18 @@ public dataset of vendor-specific Bluetooth LE GATT UUIDs (CLUES).
 Your job: identify the real owner of these UUIDs and what they do, from the evidence
 below plus web search. Be conservative — an honest "unknown" is far more useful than a
 confident guess, because these records are published.
+
+For UUID_purpose describe the concrete function of this UUID, using the APK's
+callers, notifications, parsers and device context: for example, "Reports tire
+pressure from the sensor" or "Writes the lighting schedule to the controller."
+Connect it to the device's overall function when evidence supports that connection,
+but do not replace the UUID's own function with generic device marketing text.
+A GATT role, inferred role, code location, field name, and generic data/TX/RX
+label are not purposes. Do not guess. If source code does not establish the
+function, search GitHub in Chrome and supply a supporting page URL when used; if
+neither establishes it, return exactly "The purpose is unknown." Explain source
+and any uncertainty in note, not UUID_purpose.
+Generate search strings using /Users/user/Blue2thprinting/Analysis/CLUES_Schema/scripts/UUID_Search_Permutations.py. In Chrome search canonical dashed and undashed, fully byte-reversed undashed, and fully byte-reversed C arrays with and without spaces; also search a Bluetooth-base UUID16 short form with product context. Record actual attempted forms and any blocked or incomplete search. Fully reversed bytes are not mixed-endian GUID layout.
 
 Judge whether each UUID is even a Bluetooth UUID. Large tables of random v4 UUIDs in a
 class with no android.bluetooth.* import are usually product catalogs, analytics ids or

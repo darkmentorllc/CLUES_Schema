@@ -152,7 +152,7 @@ Always check for these structural signals **before** any network call (free wins
 - **Hex vanity prefixes**: `c0ffee` (TopBrewer), `cafe`, `feed`, `dead`, `beef`, `1337`, `decaf`, `abcd`, `fade`. Often the rest of the UUID is meaningful.
 - **`xxxx0001` patterns**: numbered service families; sibling characteristics usually share base.
 
-Use `scripts/UUID_Search_Permutations.py` to generate alternate forms (no-dashes, byte-reversed, C-array literal) when web searching — vendor SDKs/decompiled apps may store UUIDs in any of these forms.
+Use `scripts/UUID_Search_Permutations.py` to generate alternate forms (no-dashes, byte-reversed, C-array literal) when web searching — vendor SDKs/decompiled apps may store UUIDs in any of these forms. For each unresolved UUID128, search in Chrome all forms emitted by the script: dashed, undashed, fully byte-reversed undashed, and fully byte-reversed C arrays both spaced and unspaced. Search the short form too for a Bluetooth-base UUID16, with vendor/product context. Record each attempted form and report blocked or incomplete searches; do not claim a negative for an unsearched form. Full-byte reversal differs from mixed-endian GUID storage.
 
 ## Research workflow
 

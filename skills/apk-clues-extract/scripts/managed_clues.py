@@ -248,10 +248,7 @@ def _record(value: str, field: str, role: str, assembly: str, source: str,
         "UUID": value.lower(),
         "company": meta.get("inferred_company", "Unknown"),
         "UUID_name": clean_name or "Unknown",
-        "UUID_purpose": (
-            f"{role} observed in .NET managed assembly {assembly} of Android app {pkg}; "
-            f"C# field `{field}`. Classification source: {classification_source}."
-        ),
+        "UUID_purpose": "The purpose is unknown.",
         "UUID_usage_array": [role],
         "evidence_array": [{
             "description": (

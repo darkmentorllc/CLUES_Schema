@@ -15,7 +15,7 @@ Mapping file format:
         "note":    "Kubi SDK / Zoom Android SDK bundle for the Kubi telepresence robot",
                                                                    # optional context; copied into
                                                                    # KNOWN_SDK_UUIDS and folded into
-                                                                   # each record's UUID_purpose
+                                                                   # each record's evidence_array
         "uuid_names": {                                            # optional
           "9145": "SERVO_HORIZONTAL",
           ...
@@ -27,8 +27,8 @@ Mapping file format:
 
 The `company` field MUST be the bare company name. Anything descriptive
 (product names, geographic origin, what BLE is used for, acquisition
-history) belongs in `note` instead — it gets folded into UUID_purpose and
-into KNOWN_SDK_UUIDS for future runs. If commentary slips into `company`
+history) belongs in `note` instead — it is recorded in evidence_array and
+in KNOWN_SDK_UUIDS for future runs. If commentary slips into `company`
 anyway, `company_sanitizer.sanitize_for_write` strips it transparently
 and appends an evidence entry, but you'll get a stderr warning telling
 you to put it in `note` next time.
@@ -46,7 +46,7 @@ import sys
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, _HERE)
-from extract_clues import KNOWN_SDK_UUIDS  # noqa: E402
+from extract_clues import DEFAULT_SUBMITTER, KNOWN_SDK_UUIDS  # noqa: E402
 
 
 def main(argv: list[str]) -> int:
@@ -115,12 +115,12 @@ def main(argv: list[str]) -> int:
         # multi-word existing name.
         if info["name"] and (rec.get("UUID_name") in (None, "Unknown")):
             rec["UUID_name"] = info["name"]
-        # Append a one-liner to UUID_purpose explaining the cross-app pattern.
-        if info["note"] and info["note"] not in (rec.get("UUID_purpose") or ""):
-            rec["UUID_purpose"] = (
-                (rec.get("UUID_purpose") or "").rstrip()
-                + f" Phase-4 SDK identification: {info['note']}."
-            ).strip()
+        # SDK attribution is evidence, not the UUID's functional purpose.
+        if info["note"]:
+            description = f"SDK identification: {info['note'].rstrip('.')}."
+            evidence = rec.setdefault("evidence_array", [])
+            if not any(ev.get("description") == description for ev in evidence):
+                evidence.append({"description": description, "submitter": DEFAULT_SUBMITTER})
         patched += 1
 
     data.sort(key=lambda r: (len(r.get("UUID", "")), r.get("UUID", "")))

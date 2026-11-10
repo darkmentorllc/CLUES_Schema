@@ -44,6 +44,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
@@ -70,6 +71,17 @@ def _company_is_replaceable(current: str) -> bool:
     return False
 
 
+def _is_role_or_provenance_placeholder(purpose: str) -> bool:
+    """Reject common extractor filler while allowing functional descriptions."""
+    text = " ".join(purpose.split())
+    role = r"(?:GATT (?:Service|Characteristic))(?: and (?:GATT )?(?:Service|Characteristic))?"
+    return bool(
+        re.fullmatch(rf"(?:Possible )?{role}(?:; the role (?:remains|is) an? (?:extractor )?inference)?[.]?", text, re.I)
+        or re.match(rf"^(?:Custom )?{role} (?:observed|identified) (?:in|from) (?:Android app|Android application|app code)", text, re.I)
+        or re.fullmatch(rf"{role} identified in Android app code[.]?", text, re.I)
+    )
+
+
 def main(argv: list[str]) -> int:
     if len(argv) != 2:
         sys.stderr.write(f"usage: {sys.argv[0]} CLUES.json mapping.json\n")
@@ -80,6 +92,15 @@ def main(argv: list[str]) -> int:
         mapping_raw = json.load(f)
     if not isinstance(mapping_raw, dict):
         sys.stderr.write("mapping file must be a JSON object keyed by UUID\n")
+        return 2
+    # Reject the mapping before writing anything; do not silently replace an
+    # unresearched UUID's purpose with an unsupported "unknown" claim.
+    bad_purposes = [k for k, v in mapping_raw.items()
+                    if isinstance(v, dict) and isinstance(v.get("UUID_purpose"), str)
+                    and _is_role_or_provenance_placeholder(v["UUID_purpose"])]
+    if bad_purposes:
+        sys.stderr.write("refusing role/provenance-only UUID purposes for: "
+                         + ", ".join(sorted(bad_purposes)) + "\n")
         return 2
     mapping: dict[str, dict] = {}
     for k, v in mapping_raw.items():
