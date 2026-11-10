@@ -9739,42 +9739,6 @@
         ]
     },
     {
-        "UUID": "76e137ac-b15f-49d7-9c4c-e278e6492ad9",
-        "company": "Silicon Laboratories",
-        "UUID_name": "Light",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `Light`. Classification source: cross-file usage:getCharacteristic(Light).",
-                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
-            },
-            {
-                "description": "Found in decompiled DEX of com.gensuite.onthego v5.77 (versionCode 126). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.siliconlabs.bledemo",
-                "version_code": 46,
-                "version_name": "2.8.0",
-                "package_path": "BLUUID_APKS/0440/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.gensuite.onthego",
-                "version_code": 126,
-                "version_name": "5.77",
-                "package_path": "BLUUID_APKS/0813/4c00924b2e9e7224046b0309bcf4c9d35e6848b91cf358cdc7a5b739d00b9820/4c00924b2e9e7224046b0309bcf4c9d35e6848b91cf358cdc7a5b739d00b9820.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            }
-        ],
-        "parent_UUID": "0000003e-0000-1000-8000-0026bb765291"
-    },
-    {
         "UUID": "7378a60d-680c-43bb-9a71-7c19f8b234f3",
         "company": "Third-party SDK code (declared in Java package `com.newrelic.agent.android` — distinct from host branded.training.youcandoit; Phase-4 identification needed)",
         "UUID_name": "BUILD_ID",
@@ -48272,6 +48236,45 @@
                 "version_name": "2.0.1-b11022",
                 "package_path": "BLUUID_APKS/0007/e7b844815e6207b13eb17cfc6afa0a1a7798d7bdba9872070ded6d988b55cf48/e7b844815e6207b13eb17cfc6afa0a1a7798d7bdba9872070ded6d988b55cf48.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `uuidFromString3`."
+            }
+        ]
+    },
+    {
+        "UUID": "76e137ac-b15f-49d7-9c4c-e278e6492ad9",
+        "company": "Silicon Laboratories",
+        "UUID_name": "Light",
+        "UUID_purpose": "Switches connected lights on or off in the Silicon Labs lighting demos.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `Light`. Classification source: cross-file usage:getCharacteristic(Light).",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.gensuite.onthego v5.77 (versionCode 126). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The lighting demo can bind this characteristic to multiple services, so no single parent applies.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.siliconlabs.bledemo",
+                "version_code": 46,
+                "version_name": "2.8.0",
+                "package_path": "BLUUID_APKS/0440/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.gensuite.onthego",
+                "version_code": 126,
+                "version_name": "5.77",
+                "package_path": "BLUUID_APKS/0813/4c00924b2e9e7224046b0309bcf4c9d35e6848b91cf358cdc7a5b739d00b9820/4c00924b2e9e7224046b0309bcf4c9d35e6848b91cf358cdc7a5b739d00b9820.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
             }
         ]
     },

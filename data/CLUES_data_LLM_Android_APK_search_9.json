@@ -204132,30 +204132,6 @@
         ]
     },
     {
-        "UUID": "97fe6561-0004-4f62-86e9-b71ee2da3d22",
-        "company": "Third-party SDK code (declared in Java package `fj` — distinct from host hueledlight.remotecontrol.smartapp; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app hueledlight.remotecontrol.smartapp but declared in third-party SDK package `fj` as Java field `f62836e`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of hueledlight.remotecontrol.smartapp v2.0.4 (versionCode 43), in Java field `f62836e`, declared in Java package `fj` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "hueledlight.remotecontrol.smartapp",
-                "version_code": 43,
-                "version_name": "2.0.4",
-                "package_path": "BLUUID_APKS/0896/96ac90abb8296419ebe5e926f93a9f30a371f5eef84d03212a11d414339a99ae/96ac90abb8296419ebe5e926f93a9f30a371f5eef84d03212a11d414339a99ae.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f62836e`."
-            }
-        ]
-    },
-    {
         "UUID": "97fe6561-0003-4f62-86e9-b71ee2da3d22",
         "company": "Third-party SDK code (declared in Java package `fj` — distinct from host hueledlight.remotecontrol.smartapp; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -204200,6 +204176,34 @@
                 "version_name": "2.0.4",
                 "package_path": "BLUUID_APKS/0896/96ac90abb8296419ebe5e926f93a9f30a371f5eef84d03212a11d414339a99ae/96ac90abb8296419ebe5e926f93a9f30a371f5eef84d03212a11d414339a99ae.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'."
+            }
+        ]
+    },
+    {
+        "UUID": "97fe6561-0004-4f62-86e9-b71ee2da3d22",
+        "company": "Third-party SDK code (declared in Java package `fj` — distinct from host hueledlight.remotecontrol.smartapp; Phase-4 identification needed)",
+        "UUID_name": "Hue light reset",
+        "UUID_purpose": "Resets a Philips Hue light by writing the one-byte reset command.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of hueledlight.remotecontrol.smartapp v2.0.4 (versionCode 43), in Java field `f62836e`, declared in Java package `fj` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Philips Hue app writes a light-reset command to this characteristic; the previous service role was an extractor inference and no parent is established.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "hueledlight.remotecontrol.smartapp",
+                "version_code": 43,
+                "version_name": "2.0.4",
+                "package_path": "BLUUID_APKS/0896/96ac90abb8296419ebe5e926f93a9f30a371f5eef84d03212a11d414339a99ae/96ac90abb8296419ebe5e926f93a9f30a371f5eef84d03212a11d414339a99ae.apk",
+                "description": "The Hue app writes a reset command to this characteristic."
             }
         ]
     },

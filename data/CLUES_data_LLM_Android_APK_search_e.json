@@ -290851,10 +290851,267 @@
         ]
     },
     {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70abb",
+        "company": "Firewalla",
+        "UUID_name": "WLAN_SERVICE_UUID2",
+        "UUID_purpose": "Provides available Wi-Fi networks with SSID and signal strength, and accepts Wi-Fi connection settings.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `WLAN_SERVICE_UUID2`. Classification source: field-name:WLAN_SERVICE_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this service and its function.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `WLAN_SERVICE_UUID2`."
+            }
+        ]
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70abc",
+        "company": "Firewalla",
+        "UUID_name": "WLAN_AVAILABLE_CHAR_UUID2",
+        "UUID_purpose": "Reports available Wi-Fi networks with SSID and signal strength.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `WLAN_AVAILABLE_CHAR_UUID2`. Classification source: field-name:WLAN_AVAILABLE_CHAR_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this function and its service binding.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WLAN_AVAILABLE_CHAR_UUID2`."
+            }
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70abb"
+    },
+    {
+        "UUID": "ed5cc6a8-3fcf-4b2b-a15a-157fa8a70abd",
+        "company": "Firewalla",
+        "UUID_name": "WLAN_SWITCH_CHAR_UUID2",
+        "UUID_purpose": "Applies or tests Wi-Fi connection settings, including SSID and supplicant parameters.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `WLAN_SWITCH_CHAR_UUID2`. Classification source: field-name:WLAN_SWITCH_CHAR_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this function and its service binding.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WLAN_SWITCH_CHAR_UUID2`."
+            }
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70abb"
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a8b",
+        "company": "Firewalla",
+        "UUID_name": "NETWORK_SERVICE_UUID2",
+        "UUID_purpose": "Reads and applies Firewalla network configuration and reports whether applying is in progress, succeeded, or failed.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `NETWORK_SERVICE_UUID2`. Classification source: field-name:NETWORK_SERVICE_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this service and its function.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `NETWORK_SERVICE_UUID2`."
+            }
+        ]
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a8c",
+        "company": "Firewalla",
+        "UUID_name": "NETWORK_CHAR_UUID2",
+        "UUID_purpose": "Reads and applies Firewalla network configuration and reports whether applying is in progress, succeeded, or failed.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `NETWORK_CHAR_UUID2`. Classification source: field-name:NETWORK_CHAR_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this function and its service binding.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `NETWORK_CHAR_UUID2`."
+            }
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a8b"
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a2b",
+        "company": "Firewalla",
+        "UUID_name": "MODE_SERVICE_UUID2",
+        "UUID_purpose": "Reads and changes the Firewalla network operating mode, including router mode.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `MODE_SERVICE_UUID2`. Classification source: field-name:MODE_SERVICE_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this service and its function.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `MODE_SERVICE_UUID2`."
+            }
+        ]
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a2c",
+        "company": "Firewalla",
+        "UUID_name": "MODE_CHAR_UUID2",
+        "UUID_purpose": "Reads and changes the Firewalla network operating mode, including router mode.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `MODE_CHAR_UUID2`. Classification source: field-name:MODE_CHAR_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this function and its service binding.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `MODE_CHAR_UUID2`."
+            }
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a2b"
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70adb",
+        "company": "Firewalla",
+        "UUID_name": "EXTENDED_WAN_SERVICE_UUID2",
+        "UUID_purpose": "Reports Firewalla physical Ethernet-port presence and connection status.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `EXTENDED_WAN_SERVICE_UUID2`. Classification source: field-name:EXTENDED_WAN_SERVICE_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this service and its function.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `EXTENDED_WAN_SERVICE_UUID2`."
+            }
+        ]
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70aec",
+        "company": "Firewalla",
+        "UUID_name": "EXTENDED_WAN_PHY_INTERFACE_CHAR_UUID2",
+        "UUID_purpose": "Reports Firewalla physical Ethernet-port presence and connection status.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `EXTENDED_WAN_PHY_INTERFACE_CHAR_UUID2`. Classification source: field-name:EXTENDED_WAN_PHY_INTERFACE_CHAR_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this function and its service binding.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `EXTENDED_WAN_PHY_INTERFACE_CHAR_UUID2`."
+            }
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70adb"
+    },
+    {
         "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b",
-        "company": "Firewalla Inc.",
+        "company": "Firewalla",
         "UUID_name": "WAN_SERVICE_UUID2",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.firewalla.chancellor, declared as Java field `WAN_SERVICE_UUID2`. Classification determined by field-name:WAN_SERVICE_UUID2.",
+        "UUID_purpose": "Reports whether the Firewalla WAN connection is up.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -290862,6 +291119,10 @@
             {
                 "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `WAN_SERVICE_UUID2`. Classification source: field-name:WAN_SERVICE_UUID2.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this service and its function.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -290876,9 +291137,9 @@
     },
     {
         "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0c",
-        "company": "Firewalla Inc.",
+        "company": "Firewalla",
         "UUID_name": "WAN_CHAR_UUID2",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.firewalla.chancellor, declared as Java field `WAN_CHAR_UUID2`. Classification determined by field-name:WAN_CHAR_UUID2.",
+        "UUID_purpose": "Reports whether the Firewalla WAN connection is up.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -290886,6 +291147,10 @@
             {
                 "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `WAN_CHAR_UUID2`. Classification source: field-name:WAN_CHAR_UUID2.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this function and its service binding.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -290895,56 +291160,6 @@
                 "version_name": "1.56.81",
                 "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WAN_CHAR_UUID2`."
-            }
-        ],
-        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
-    },
-    {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a2c",
-        "company": "Firewalla Inc.",
-        "UUID_name": "MODE_CHAR_UUID2",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.firewalla.chancellor, declared as Java field `MODE_CHAR_UUID2`. Classification determined by field-name:MODE_CHAR_UUID2.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `MODE_CHAR_UUID2`. Classification source: field-name:MODE_CHAR_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `MODE_CHAR_UUID2`."
-            }
-        ],
-        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
-    },
-    {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a5c",
-        "company": "Firewalla Inc.",
-        "UUID_name": "RESET_CHAR_UUID2",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.firewalla.chancellor, declared as Java field `RESET_CHAR_UUID2`. Classification determined by field-name:RESET_CHAR_UUID2.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `RESET_CHAR_UUID2`. Classification source: field-name:RESET_CHAR_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `RESET_CHAR_UUID2`."
             }
         ],
         "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
@@ -290970,131 +291185,6 @@
                 "version_name": "1.56.81",
                 "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PAIRING_CHAR_UUID2`."
-            }
-        ],
-        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
-    },
-    {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a7c",
-        "company": "Firewalla Inc.",
-        "UUID_name": "CREDENTIAL_CHAR_UUID2",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.firewalla.chancellor, declared as Java field `CREDENTIAL_CHAR_UUID2`. Classification determined by field-name:CREDENTIAL_CHAR_UUID2.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `CREDENTIAL_CHAR_UUID2`. Classification source: field-name:CREDENTIAL_CHAR_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CREDENTIAL_CHAR_UUID2`."
-            }
-        ],
-        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
-    },
-    {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a8c",
-        "company": "Firewalla Inc.",
-        "UUID_name": "NETWORK_CHAR_UUID2",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.firewalla.chancellor, declared as Java field `NETWORK_CHAR_UUID2`. Classification determined by field-name:NETWORK_CHAR_UUID2.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `NETWORK_CHAR_UUID2`. Classification source: field-name:NETWORK_CHAR_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `NETWORK_CHAR_UUID2`."
-            }
-        ],
-        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
-    },
-    {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a9c",
-        "company": "Firewalla Inc.",
-        "UUID_name": "REBOOT_CHAR_UUID2",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.firewalla.chancellor, declared as Java field `REBOOT_CHAR_UUID2`. Classification determined by field-name:REBOOT_CHAR_UUID2.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `REBOOT_CHAR_UUID2`. Classification source: field-name:REBOOT_CHAR_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REBOOT_CHAR_UUID2`."
-            }
-        ],
-        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
-    },
-    {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70aac",
-        "company": "Firewalla Inc.",
-        "UUID_name": "DEBUG_CHAR_UUID2",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.firewalla.chancellor, declared as Java field `DEBUG_CHAR_UUID2`. Classification determined by field-name:DEBUG_CHAR_UUID2.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `DEBUG_CHAR_UUID2`. Classification source: field-name:DEBUG_CHAR_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEBUG_CHAR_UUID2`."
-            }
-        ],
-        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
-    },
-    {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70abc",
-        "company": "Firewalla Inc.",
-        "UUID_name": "WLAN_AVAILABLE_CHAR_UUID2",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.firewalla.chancellor, declared as Java field `WLAN_AVAILABLE_CHAR_UUID2`. Classification determined by field-name:WLAN_AVAILABLE_CHAR_UUID2.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `WLAN_AVAILABLE_CHAR_UUID2`. Classification source: field-name:WLAN_AVAILABLE_CHAR_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WLAN_AVAILABLE_CHAR_UUID2`."
             }
         ],
         "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
@@ -291150,84 +291240,10 @@
         "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
     },
     {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70aec",
-        "company": "Firewalla Inc.",
-        "UUID_name": "EXTENDED_WAN_PHY_INTERFACE_CHAR_UUID2",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.firewalla.chancellor, declared as Java field `EXTENDED_WAN_PHY_INTERFACE_CHAR_UUID2`. Classification determined by field-name:EXTENDED_WAN_PHY_INTERFACE_CHAR_UUID2.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `EXTENDED_WAN_PHY_INTERFACE_CHAR_UUID2`. Classification source: field-name:EXTENDED_WAN_PHY_INTERFACE_CHAR_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `EXTENDED_WAN_PHY_INTERFACE_CHAR_UUID2`."
-            }
-        ],
-        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
-    },
-    {
-        "UUID": "ed5cc6a8-3fcf-4b2b-a15a-157fa8a70abd",
-        "company": "Firewalla Inc.",
-        "UUID_name": "WLAN_SWITCH_CHAR_UUID2",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.firewalla.chancellor, declared as Java field `WLAN_SWITCH_CHAR_UUID2`. Classification determined by field-name:WLAN_SWITCH_CHAR_UUID2.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `WLAN_SWITCH_CHAR_UUID2`. Classification source: field-name:WLAN_SWITCH_CHAR_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WLAN_SWITCH_CHAR_UUID2`."
-            }
-        ],
-        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a0b"
-    },
-    {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a7b",
-        "company": "Firewalla Inc.",
-        "UUID_name": "CREDENTIAL_SERVICE_UUID2",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.firewalla.chancellor, declared as Java field `CREDENTIAL_SERVICE_UUID2`. Classification determined by field-name:CREDENTIAL_SERVICE_UUID2.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `CREDENTIAL_SERVICE_UUID2`. Classification source: field-name:CREDENTIAL_SERVICE_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CREDENTIAL_SERVICE_UUID2`."
-            }
-        ]
-    },
-    {
         "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70aab",
-        "company": "Firewalla Inc.",
+        "company": "Firewalla",
         "UUID_name": "DEBUG_SERVICE_UUID2",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.firewalla.chancellor, declared as Java field `DEBUG_SERVICE_UUID2`. Classification determined by field-name:DEBUG_SERVICE_UUID2.",
+        "UUID_purpose": "Requests and retrieves Firewalla diagnostic debug logs.",
         "UUID_usage_array": [
             "GATT Service"
         ],
@@ -291235,6 +291251,10 @@
             {
                 "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `DEBUG_SERVICE_UUID2`. Classification source: field-name:DEBUG_SERVICE_UUID2.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this service and its function.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -291248,17 +291268,21 @@
         ]
     },
     {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70adb",
-        "company": "Firewalla Inc.",
-        "UUID_name": "EXTENDED_WAN_SERVICE_UUID2",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.firewalla.chancellor, declared as Java field `EXTENDED_WAN_SERVICE_UUID2`. Classification determined by field-name:EXTENDED_WAN_SERVICE_UUID2.",
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70aac",
+        "company": "Firewalla",
+        "UUID_name": "DEBUG_CHAR_UUID2",
+        "UUID_purpose": "Requests and retrieves Firewalla diagnostic debug logs.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `EXTENDED_WAN_SERVICE_UUID2`. Classification source: field-name:EXTENDED_WAN_SERVICE_UUID2.",
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `DEBUG_CHAR_UUID2`. Classification source: field-name:DEBUG_CHAR_UUID2.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this function and its service binding.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -291267,22 +291291,55 @@
                 "version_code": 1540,
                 "version_name": "1.56.81",
                 "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `EXTENDED_WAN_SERVICE_UUID2`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEBUG_CHAR_UUID2`."
+            }
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70aab"
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a7b",
+        "company": "Firewalla",
+        "UUID_name": "CREDENTIAL_SERVICE_UUID2",
+        "UUID_purpose": "Resets the Firewalla console password and reads the resulting password.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `CREDENTIAL_SERVICE_UUID2`. Classification source: field-name:CREDENTIAL_SERVICE_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this service and its function.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CREDENTIAL_SERVICE_UUID2`."
             }
         ]
     },
     {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a2b",
-        "company": "Firewalla Inc.",
-        "UUID_name": "MODE_SERVICE_UUID2",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.firewalla.chancellor, declared as Java field `MODE_SERVICE_UUID2`. Classification determined by field-name:MODE_SERVICE_UUID2.",
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a7c",
+        "company": "Firewalla",
+        "UUID_name": "CREDENTIAL_CHAR_UUID2",
+        "UUID_purpose": "Resets the Firewalla console password and reads the resulting password.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `MODE_SERVICE_UUID2`. Classification source: field-name:MODE_SERVICE_UUID2.",
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `CREDENTIAL_CHAR_UUID2`. Classification source: field-name:CREDENTIAL_CHAR_UUID2.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this function and its service binding.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -291291,22 +291348,55 @@
                 "version_code": 1540,
                 "version_name": "1.56.81",
                 "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `MODE_SERVICE_UUID2`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CREDENTIAL_CHAR_UUID2`."
+            }
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a7b"
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a9b",
+        "company": "Firewalla",
+        "UUID_name": "REBOOT_SERVICE_UUID2",
+        "UUID_purpose": "Runs Firewalla maintenance actions including DHCP-lease renewal/query and diagnostic-log cleanup.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `REBOOT_SERVICE_UUID2`. Classification source: field-name:REBOOT_SERVICE_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this service and its function.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `REBOOT_SERVICE_UUID2`."
             }
         ]
     },
     {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a8b",
-        "company": "Firewalla Inc.",
-        "UUID_name": "NETWORK_SERVICE_UUID2",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.firewalla.chancellor, declared as Java field `NETWORK_SERVICE_UUID2`. Classification determined by field-name:NETWORK_SERVICE_UUID2.",
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a9c",
+        "company": "Firewalla",
+        "UUID_name": "REBOOT_CHAR_UUID2",
+        "UUID_purpose": "Runs Firewalla maintenance actions including DHCP-lease renewal/query and diagnostic-log cleanup.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `NETWORK_SERVICE_UUID2`. Classification source: field-name:NETWORK_SERVICE_UUID2.",
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `REBOOT_CHAR_UUID2`. Classification source: field-name:REBOOT_CHAR_UUID2.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this function and its service binding.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -291315,9 +291405,67 @@
                 "version_code": 1540,
                 "version_name": "1.56.81",
                 "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `NETWORK_SERVICE_UUID2`."
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `REBOOT_CHAR_UUID2`."
+            }
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a9b"
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a5b",
+        "company": "Firewalla",
+        "UUID_name": "RESET_SERVICE_UUID2",
+        "UUID_purpose": "Sends the authenticated reset command to the Firewalla box.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `RESET_SERVICE_UUID2`. Classification source: field-name:RESET_SERVICE_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this service and its function.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `RESET_SERVICE_UUID2`."
             }
         ]
+    },
+    {
+        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a5c",
+        "company": "Firewalla",
+        "UUID_name": "RESET_CHAR_UUID2",
+        "UUID_purpose": "Sends the authenticated reset command to the Firewalla box.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `RESET_CHAR_UUID2`. Classification source: field-name:RESET_CHAR_UUID2.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Firewalla app identifies this function and its service binding.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.firewalla.chancellor",
+                "version_code": 1540,
+                "version_name": "1.56.81",
+                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `RESET_CHAR_UUID2`."
+            }
+        ],
+        "parent_UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a5b"
     },
     {
         "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a6b",
@@ -291344,54 +291492,6 @@
         ]
     },
     {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a9b",
-        "company": "Firewalla Inc.",
-        "UUID_name": "REBOOT_SERVICE_UUID2",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.firewalla.chancellor, declared as Java field `REBOOT_SERVICE_UUID2`. Classification determined by field-name:REBOOT_SERVICE_UUID2.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `REBOOT_SERVICE_UUID2`. Classification source: field-name:REBOOT_SERVICE_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `REBOOT_SERVICE_UUID2`."
-            }
-        ]
-    },
-    {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70a5b",
-        "company": "Firewalla Inc.",
-        "UUID_name": "RESET_SERVICE_UUID2",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.firewalla.chancellor, declared as Java field `RESET_SERVICE_UUID2`. Classification determined by field-name:RESET_SERVICE_UUID2.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `RESET_SERVICE_UUID2`. Classification source: field-name:RESET_SERVICE_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `RESET_SERVICE_UUID2`."
-            }
-        ]
-    },
-    {
         "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70ae0",
         "company": "Firewalla Inc.",
         "UUID_name": "SIMPLE_INTERFACE_SERVICE_UUID2",
@@ -291412,30 +291512,6 @@
                 "version_name": "1.56.81",
                 "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SIMPLE_INTERFACE_SERVICE_UUID2`."
-            }
-        ]
-    },
-    {
-        "UUID": "ed4cc6a8-3fcf-4b2b-a15a-157fa8a70abb",
-        "company": "Firewalla Inc.",
-        "UUID_name": "WLAN_SERVICE_UUID2",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.firewalla.chancellor, declared as Java field `WLAN_SERVICE_UUID2`. Classification determined by field-name:WLAN_SERVICE_UUID2.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.firewalla.chancellor v1.56.81 (versionCode 1540), in Java field `WLAN_SERVICE_UUID2`. Classification source: field-name:WLAN_SERVICE_UUID2.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.firewalla.chancellor",
-                "version_code": 1540,
-                "version_name": "1.56.81",
-                "package_path": "BLUUID_APKS/0375/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc/c4081f410cd138e36739e0ffea8fa77f27909aebc890e90f700d4b37922e3fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `WLAN_SERVICE_UUID2`."
             }
         ]
     },

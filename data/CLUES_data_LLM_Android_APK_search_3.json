@@ -5547,6 +5547,46 @@
         "parent_UUID": "530aa649-17e6-4d62-9f20-9e393b177e63"
     },
     {
+        "UUID": "3d28d0e4-2669-4784-a80a-ed8722a563c6",
+        "company": "Silicon Laboratories",
+        "UUID_name": "RangeTestIsRunning",
+        "UUID_purpose": "Starts and stops the Silicon Labs radio range test.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `RangeTestIsRunning`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "Found in decompiled DEX of com.gensuite.onthego v5.77 (versionCode 126). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Silicon Labs demo binds this characteristic to its range-test service.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.siliconlabs.bledemo",
+                "version_code": 46,
+                "version_name": "2.8.0",
+                "package_path": "BLUUID_APKS/0440/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.gensuite.onthego",
+                "version_code": 126,
+                "version_name": "5.77",
+                "package_path": "BLUUID_APKS/0813/4c00924b2e9e7224046b0309bcf4c9d35e6848b91cf358cdc7a5b739d00b9820/4c00924b2e9e7224046b0309bcf4c9d35e6848b91cf358cdc7a5b739d00b9820.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "530aa649-17e6-4d62-9f20-9e393b177e63"
+    },
+    {
         "UUID": "350fb84a-b8e2-425f-b68a-db0f0a4bcfca",
         "company": "光陽工業股份有限公司",
         "UUID_name": "ARUBA_CONSOLE_WRITE_CHARACTERISTIC",
@@ -8110,42 +8150,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SIGN_UP_PHONE`."
             }
         ]
-    },
-    {
-        "UUID": "3d28d0e4-2669-4784-a80a-ed8722a563c6",
-        "company": "Silicon Laboratories",
-        "UUID_name": "RangeTestIsRunning",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `RangeTestIsRunning`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
-            },
-            {
-                "description": "Found in decompiled DEX of com.gensuite.onthego v5.77 (versionCode 126). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.siliconlabs.bledemo",
-                "version_code": 46,
-                "version_name": "2.8.0",
-                "package_path": "BLUUID_APKS/0440/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.gensuite.onthego",
-                "version_code": 126,
-                "version_name": "5.77",
-                "package_path": "BLUUID_APKS/0813/4c00924b2e9e7224046b0309bcf4c9d35e6848b91cf358cdc7a5b739d00b9820/4c00924b2e9e7224046b0309bcf4c9d35e6848b91cf358cdc7a5b739d00b9820.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            }
-        ],
-        "parent_UUID": "0000003e-0000-1000-8000-0026bb765291"
     },
     {
         "UUID": "3da610ae-e21a-415b-a030-d1a21a693805",

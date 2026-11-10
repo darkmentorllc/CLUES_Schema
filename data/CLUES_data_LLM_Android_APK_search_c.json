@@ -8523,31 +8523,6 @@
         ]
     },
     {
-        "UUID": "c6d6dc0d-07f5-47ef-9b59-630622b01fd3",
-        "company": "Logitech",
-        "UUID_name": "POWER_ON",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.logitech.ueboom, declared as Java field `POWER_ON`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.logitech.ueboom v7.14.0.317 (versionCode 317), in Java field `POWER_ON`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.logitech.ueboom",
-                "version_code": 317,
-                "version_name": "7.14.0.317",
-                "package_path": "BLUUID_APKS/0579/58f678efc5d0ed25eb02401470331d2301d874d50728824b7f580f024b3d0fcc/58f678efc5d0ed25eb02401470331d2301d874d50728824b7f580f024b3d0fcc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `POWER_ON`."
-            }
-        ],
-        "parent_UUID": "1b7e8251-2877-41c3-b46e-cf057c562023"
-    },
-    {
         "UUID": "ca7b0002-f785-4c38-b599-c7c5fbadb034",
         "company": "Aqualung Corporate",
         "UUID_name": "PELAGIC_READ_CHAR",
@@ -41386,6 +41361,34 @@
                 "version_name": "1.0.4",
                 "package_path": "BLUUID_APKS/0953/e72fb3de38c69ccec584c1df807a369c1015c6b16ee1aaef0242a428bf71e403/e72fb3de38c69ccec584c1df807a369c1015c6b16ee1aaef0242a428bf71e403.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `DI_INSTRUMENT_SW_VERSION`."
+            }
+        ]
+    },
+    {
+        "UUID": "c6d6dc0d-07f5-47ef-9b59-630622b01fd3",
+        "company": "Logitech",
+        "UUID_name": "POWER_ON",
+        "UUID_purpose": "Powers on a legacy Ultimate Ears speaker and requests its Bluetooth connection to the supplied host address.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.logitech.ueboom v7.14.0.317 (versionCode 317), in Java field `POWER_ON`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Ultimate Ears app writes the speaker power-on and host-connection command to this characteristic; no service parent is established.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.logitech.ueboom",
+                "version_code": 317,
+                "version_name": "7.14.0.317",
+                "package_path": "BLUUID_APKS/0579/58f678efc5d0ed25eb02401470331d2301d874d50728824b7f580f024b3d0fcc/58f678efc5d0ed25eb02401470331d2301d874d50728824b7f580f024b3d0fcc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `POWER_ON`."
             }
         ]
     },

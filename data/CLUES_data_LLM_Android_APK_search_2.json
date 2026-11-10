@@ -6299,7 +6299,7 @@
         "UUID": "2f16ee52-0bfd-4597-85d4-a5141fdbae15",
         "company": "Benchmark Digital Partners LLC",
         "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.gensuite.onthego. No Java field-name hint available (likely an obfuscated identifier).",
+        "UUID_purpose": "Reports the source of light-state changes in the Silicon Labs connected-lighting demos.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -6312,6 +6312,10 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (formerly Gensuite)"
+            },
+            {
+                "description": "The lighting demo can bind this characteristic to multiple services, so no single parent applies.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -6322,8 +6326,7 @@
                 "package_path": "BLUUID_APKS/0813/4c00924b2e9e7224046b0309bcf4c9d35e6848b91cf358cdc7a5b739d00b9820/4c00924b2e9e7224046b0309bcf4c9d35e6848b91cf358cdc7a5b739d00b9820.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
             }
-        ],
-        "parent_UUID": "530aa649-17e6-4d62-9f20-9e393b177e63"
+        ]
     },
     {
         "UUID": "21e8378c-9265-43be-827f-3a07aa04ec0e",

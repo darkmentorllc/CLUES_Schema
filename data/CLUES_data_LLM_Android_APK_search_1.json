@@ -10760,7 +10760,7 @@
         "UUID": "16be0ebf-5b8d-45d8-8128-d1abb4b71788",
         "company": "Benchmark Digital Partners LLC",
         "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.gensuite.onthego. No Java field-name hint available (likely an obfuscated identifier).",
+        "UUID_purpose": "Reads and sets the radio transmit-power setting for the Silicon Labs range test.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -10773,6 +10773,10 @@
                 "URL": "None",
                 "submitter": "Claude (Opus 4.7)",
                 "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (formerly Gensuite)"
+            },
+            {
+                "description": "The Silicon Labs demo binds this characteristic to its range-test service.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
