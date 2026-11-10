@@ -3286,31 +3286,6 @@
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
     },
     {
-        "UUID": "9231",
-        "company": "Third-party SDK code (declared in Java package `welink_a.welink_a.welink_a.welink_a.welink_c` — distinct from host com.transsion.healthlife; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.transsion.healthlife but declared in third-party SDK package `welink_a.welink_a.welink_a.welink_a.welink_c` as Java field `f27335u`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(f27335u).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.transsion.healthlife v4.4.1.12 (versionCode 4004012), in Java field `f27335u`, declared in Java package `welink_a.welink_a.welink_a.welink_a.welink_c` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f27335u).",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.transsion.healthlife",
-                "version_code": 4004012,
-                "version_name": "4.4.1.12",
-                "package_path": "BLUUID_APKS/0541/4194cf59655a640727da2026b6fe6039692c443a0e471355783745d6a21a0518/4194cf59655a640727da2026b6fe6039692c443a0e471355783745d6a21a0518.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f27335u`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
-    },
-    {
         "UUID": "9c5e38c1-7a36-4a70-9196-a92b1dbc409a",
         "company": "Alarm (inferred from package id)",
         "UUID_name": "PAKE_1_UUID",
@@ -6100,6 +6075,31 @@
             }
         ],
         "parent_UUID": "4362f634-04e8-4f03-b07f-434f0d7551e0"
+    },
+    {
+        "UUID": "9231",
+        "company": "Third-party SDK code (declared in Java package `welink_a.welink_a.welink_a.welink_a.welink_c` — distinct from host com.transsion.healthlife; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.transsion.healthlife but declared in third-party SDK package `welink_a.welink_a.welink_a.welink_a.welink_c` as Java field `f27335u`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(f27335u).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.transsion.healthlife v4.4.1.12 (versionCode 4004012), in Java field `f27335u`, declared in Java package `welink_a.welink_a.welink_a.welink_a.welink_c` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f27335u).",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.transsion.healthlife",
+                "version_code": 4004012,
+                "version_name": "4.4.1.12",
+                "package_path": "BLUUID_APKS/0541/4194cf59655a640727da2026b6fe6039692c443a0e471355783745d6a21a0518/4194cf59655a640727da2026b6fe6039692c443a0e471355783745d6a21a0518.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f27335u`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
     },
     {
         "UUID": "9993f233-ac1e-4139-84c2-62db29ea081c",
@@ -177637,6 +177637,81 @@
         ]
     },
     {
+        "UUID": "90befa28-ebb2-43d2-ac1e-a0b328efd857",
+        "company": "Third-party SDK code (declared in Java package `com.securesmart.util` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
+        "UUID_name": "DEMO_MASTER_USER_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart.util` as Java field `DEMO_MASTER_USER_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DEMO_MASTER_USER_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `DEMO_MASTER_USER_ID`, declared in Java package `com.securesmart.util` (third-party SDK). Classification source: field-name:DEMO_MASTER_USER_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.emcsecurity.android",
+                "version_code": 258,
+                "version_name": "4.2.258",
+                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEMO_MASTER_USER_ID`."
+            }
+        ],
+        "parent_UUID": "ff01"
+    },
+    {
+        "UUID": "94fc6609-edb5-4051-96d7-4560eb38c1ee",
+        "company": "Third-party SDK code (declared in Java package `com.securesmart.util` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
+        "UUID_name": "DEMO_CAMERA_3_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart.util` as Java field `DEMO_CAMERA_3_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DEMO_CAMERA_3_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `DEMO_CAMERA_3_ID`, declared in Java package `com.securesmart.util` (third-party SDK). Classification source: field-name:DEMO_CAMERA_3_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.emcsecurity.android",
+                "version_code": 258,
+                "version_name": "4.2.258",
+                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEMO_CAMERA_3_ID`."
+            }
+        ],
+        "parent_UUID": "ff01"
+    },
+    {
+        "UUID": "9fbaad13-6497-495f-bfc9-a947390cc749",
+        "company": "Third-party SDK code (declared in Java package `com.securesmart.util` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
+        "UUID_name": "DEMO_DEVICE_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart.util` as Java field `DEMO_DEVICE_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DEMO_DEVICE_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `DEMO_DEVICE_ID`, declared in Java package `com.securesmart.util` (third-party SDK). Classification source: field-name:DEMO_DEVICE_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.emcsecurity.android",
+                "version_code": 258,
+                "version_name": "4.2.258",
+                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEMO_DEVICE_ID`."
+            }
+        ],
+        "parent_UUID": "ff01"
+    },
+    {
         "UUID": "98ff0101-770d-4a83-9e9b-ce6bbd75e472",
         "company": "Third-party SDK code (declared in Java package `de.fau.sensorlib.sensors` — distinct from host de.portabiles.homemonitoring; Phase-4 identification needed)",
         "UUID_name": "NILS_POD_SYNC_CONFIG",
@@ -202424,81 +202499,6 @@
         "parent_UUID": "00001010-d102-11e1-9b23-00025b00a5a5"
     },
     {
-        "UUID": "90befa28-ebb2-43d2-ac1e-a0b328efd857",
-        "company": "Third-party SDK code (declared in Java package `com.securesmart.util` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
-        "UUID_name": "DEMO_MASTER_USER_ID",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart.util` as Java field `DEMO_MASTER_USER_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DEMO_MASTER_USER_ID.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `DEMO_MASTER_USER_ID`, declared in Java package `com.securesmart.util` (third-party SDK). Classification source: field-name:DEMO_MASTER_USER_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.emcsecurity.android",
-                "version_code": 258,
-                "version_name": "4.2.258",
-                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEMO_MASTER_USER_ID`."
-            }
-        ],
-        "parent_UUID": "ff01"
-    },
-    {
-        "UUID": "94fc6609-edb5-4051-96d7-4560eb38c1ee",
-        "company": "Third-party SDK code (declared in Java package `com.securesmart.util` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
-        "UUID_name": "DEMO_CAMERA_3_ID",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart.util` as Java field `DEMO_CAMERA_3_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DEMO_CAMERA_3_ID.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `DEMO_CAMERA_3_ID`, declared in Java package `com.securesmart.util` (third-party SDK). Classification source: field-name:DEMO_CAMERA_3_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.emcsecurity.android",
-                "version_code": 258,
-                "version_name": "4.2.258",
-                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEMO_CAMERA_3_ID`."
-            }
-        ],
-        "parent_UUID": "ff01"
-    },
-    {
-        "UUID": "9fbaad13-6497-495f-bfc9-a947390cc749",
-        "company": "Third-party SDK code (declared in Java package `com.securesmart.util` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
-        "UUID_name": "DEMO_DEVICE_ID",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart.util` as Java field `DEMO_DEVICE_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DEMO_DEVICE_ID.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `DEMO_DEVICE_ID`, declared in Java package `com.securesmart.util` (third-party SDK). Classification source: field-name:DEMO_DEVICE_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.emcsecurity.android",
-                "version_code": 258,
-                "version_name": "4.2.258",
-                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEMO_DEVICE_ID`."
-            }
-        ],
-        "parent_UUID": "ff01"
-    },
-    {
         "UUID": "9f0f4273-7a60-4b14-815c-1b331a6291d4",
         "company": "Third-party SDK code (declared in Java package `com.shhotels` — distinct from host com.shgroup.baccarat; Phase-4 identification needed)",
         "UUID_name": "ONE_HOTELS_BRAND_ID",
@@ -206656,30 +206656,6 @@
                 "version_name": "4.1.0",
                 "package_path": "BLUUID_APKS/0857/c364416de926721fd6483740fdc9cb5d4896d8f3f156826d495e87f4e0766ed1/c364416de926721fd6483740fdc9cb5d4896d8f3f156826d495e87f4e0766ed1.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `can2bleServiceUUID`."
-            }
-        ]
-    },
-    {
-        "UUID": "945ca2b0-852c-4ab8-b654-354df41c2795",
-        "company": "Third-party SDK code (declared in Java package `w6` — distinct from host com.yamaha.ac.SBRemote; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.yamaha.ac.SBRemote but declared in third-party SDK package `w6` as Java field `f14733l`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.yamaha.ac.SBRemote v2.20 (versionCode 220), in Java field `f14733l`, declared in Java package `w6` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.yamaha.ac.SBRemote",
-                "version_code": 220,
-                "version_name": "2.20",
-                "package_path": "BLUUID_APKS/0454/f1c6c61bd1cc13b2cb6ea2329803f0ae0626f8632122bcf81a9de399ef54be09/f1c6c61bd1cc13b2cb6ea2329803f0ae0626f8632122bcf81a9de399ef54be09.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f14733l`."
             }
         ]
     },
@@ -212059,6 +212035,34 @@
                 "version_name": "5.0.7",
                 "package_path": "BLUUID_APKS/0876/52fb053dacffbc0c30543cafddc4d7ef6698cc55c0ce0163bac6d421cad6521a/52fb053dacffbc0c30543cafddc4d7ef6698cc55c0ce0163bac6d421cad6521a.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `DRK_OPENKEY_UUID_DEV`."
+            }
+        ]
+    },
+    {
+        "UUID": "945ca2b0-852c-4ab8-b654-354df41c2795",
+        "company": "Yamaha",
+        "UUID_name": "Yamaha soundbar remote-control service",
+        "UUID_purpose": "Provides the Yamaha soundbar remote-control channel for power, input, mute, volume and sound-mode commands.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.yamaha.ac.SBRemote v2.20 (versionCode 220), in Java field `f14733l`, declared in Java package `w6` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Source review traced the UUID to a typed service lookup; the earlier role was an extractor inference.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.yamaha.ac.SBRemote",
+                "version_code": 220,
+                "version_name": "2.20",
+                "package_path": "BLUUID_APKS/0454/f1c6c61bd1cc13b2cb6ea2329803f0ae0626f8632122bcf81a9de399ef54be09/f1c6c61bd1cc13b2cb6ea2329803f0ae0626f8632122bcf81a9de399ef54be09.apk",
+                "description": "The companion app uses this service for soundbar control."
             }
         ]
     },

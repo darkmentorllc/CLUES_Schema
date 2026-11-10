@@ -7577,102 +7577,6 @@
         ]
     },
     {
-        "UUID": "780a",
-        "company": "Third-party SDK code (declared in Java package `com.lifesense.ble.b` — distinct from host com.honbow.fitdock; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.honbow.fitdock but declared in third-party SDK package `com.lifesense.ble.b` as Java field `KITCHEN_SCALE_SERVICE_UUID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:KITCHEN_SCALE_SERVICE_UUID.",
-        "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.honbow.fitdock v3.6.18 (versionCode 3618), in Java field `KITCHEN_SCALE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:KITCHEN_SCALE_SERVICE_UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.deltecs.ihealth v1.0.3 (versionCode 10003), in Java field `KITCHEN_SCALE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:KITCHEN_SCALE_SERVICE_UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mobvoi.companion.ai v9.0.3-1845.852 (versionCode 90031845), in Java field `f0`, declared in Java package `mms` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f0).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/honbow/com.honbow.fitdock/download/3.6.18",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/deltecs/com.deltecs.ihealth/download/1.0.3",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/mobvoi/com.mobvoi.companion.ai/download/9.0.3-1845.852",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of healthcare.sentinel.mobile v3.7.0 (versionCode 225), in Java field `KITCHEN_SCALE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `KITCHEN_SCALE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Source review identified this as a gatt service in com.polaris.iot.",
-                "submitter": "GPT-6 Luna"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.honbow.fitdock",
-                "version_code": 3618,
-                "version_name": "3.6.18",
-                "package_path": "BLUUID_APKS/0368/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `KITCHEN_SCALE_SERVICE_UUID`."
-            },
-            {
-                "package_id": "com.deltecs.ihealth",
-                "version_code": 10003,
-                "version_name": "1.0.3",
-                "package_path": "BLUUID_APKS/0449/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `KITCHEN_SCALE_SERVICE_UUID`."
-            },
-            {
-                "package_id": "com.mobvoi.companion.ai",
-                "version_code": 90031845,
-                "version_name": "9.0.3-1845.852",
-                "package_path": "BLUUID_APKS/0974/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f0`."
-            },
-            {
-                "package_id": "healthcare.sentinel.mobile",
-                "version_code": 225,
-                "version_name": "3.7.0",
-                "package_path": "AndroZoo/apks/c1/healthcare.sentinel.mobile_C1716376392C07F2E68F4EA5696D942609C4F53DD2FF531FFC39411A1726C6A3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `KITCHEN_SCALE_SERVICE_UUID`."
-            },
-            {
-                "package_id": "chief.health",
-                "version_code": 402,
-                "version_name": "1.3.48",
-                "package_path": "AndroZoo/apks/00/chief.health_0048A5B4549791DA7CFF23BFA9091C37194B281442A461B69793B17D0E73FA06.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `KITCHEN_SCALE_SERVICE_UUID`."
-            },
-            {
-                "package_id": "com.polaris.iot",
-                "version_code": 310,
-                "version_name": "3.4.1",
-                "package_path": "AndroZoo/apks/e3/com.polaris.iot_E37985352E28406CD342CD221993535FC9CD1476167B9AD2CB3C31534D031CA8.apk",
-                "description": "Source review identified a gatt service in this app."
-            }
-        ],
-        "parent_UUID": "00000000-deca-fade-deca-deafdecacafe"
-    },
-    {
         "UUID": "7777",
         "company": "Anker Innovations Limited",
         "UUID_name": "ROAV_BLE_UUID_7777",
@@ -8424,293 +8328,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `POLICY_ID`."
             }
         ]
-    },
-    {
-        "UUID": "7809",
-        "company": "OPPO",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.watch.life but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE. Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
-        "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.watch.life v2.8.0 (versionCode 264), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.honbow.fitdock v3.6.18 (versionCode 3618), in Java field `BLOOD_PRESSURE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:BLOOD_PRESSURE_SERVICE_UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.deltecs.ihealth v1.0.3 (versionCode 10003), in Java field `BLOOD_PRESSURE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:BLOOD_PRESSURE_SERVICE_UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.vsee.clinic.release v1.27.2-2150682-25ba45e (versionCode 2150682), in Java field `Transtek Blood Pressure Service`. Classification source: field-name:TRANSTEK_BP_SERVICE.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.biofourmis.biovitalshfcare v1.1.5 (versionCode 12), in Java field `k`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getService(k).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mobvoi.companion.ai v9.0.3-1845.852 (versionCode 90031845), in Java field `n`, declared in Java package `mms` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.biofourmis.ipmpatient v1.7.3.17 (versionCode 1139), in Java field `q`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getCharacteristic(q).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/watch/com.watch.life/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/honbow/com.honbow.fitdock/download/3.6.18",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/deltecs/com.deltecs.ihealth/download/1.0.3",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/mobvoi/com.mobvoi.companion.ai/download/9.0.3-1845.852",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/biofourmis/com.biofourmis.ipmpatient/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "None",
-                "submitter": "Claude (Opus 4.7)",
-                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Guangdong Oppo Mobile Telecommunications; Bluetooth audio / wearable AT-command service)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.adctoday.bp v1.0.6 (versionCode 26), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.cctinstavisit.chroniccare.release v1.3.1-2150458-121a2d2 (versionCode 2150458), in Java field `Transtek Blood Pressure Service`, declared in Java package `com.vsee.clinicapp.services` (third-party SDK). Classification source: field-name:TRANSTEK_BP_SERVICE.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.careinnovations.healthharmony v3.7.2 (versionCode 525). Classification source: naming-convention.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.lifesense.health v2.0.5 (versionCode 6), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`. Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.biofourmis.ipmpatient v25.13.0 (versionCode 14468), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: cross-file usage:getCharacteristic(k).",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.hansjin.drdiary_android v2.77.3 (versionCode 2077003), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.lstllc.apps.android.mcare v2.114 (versionCode 291), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.beebirdhome.home v110.1.13 (versionCode 110), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of healthcare.sentinel.mobile v3.7.0 (versionCode 225), in Java field `BLOOD_PRESSURE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of org.seadvocacy.docsrchout v3.21.5 (versionCode 200), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.adctoday.bp",
-                "description": "Verified current Google Play listing for com.adctoday.bp. This listing does not establish that archived APK version 1.0.6 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.cctinstavisit.chroniccare.release",
-                "description": "Verified current Google Play listing for com.cctinstavisit.chroniccare.release. This listing does not establish that archived APK version 1.3.1-2150458-121a2d2 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.lifesense.health",
-                "description": "Verified current Google Play listing for com.lifesense.health. This listing does not establish that archived APK version 2.0.5 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.biofourmis.ipmpatient",
-                "description": "Verified current Google Play listing for com.biofourmis.ipmpatient. This listing does not establish that archived APK version 25.13.0 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.hansjin.drdiary_android",
-                "description": "Verified current Google Play listing for com.hansjin.drdiary_android. This listing does not establish that archived APK version 2.77.3 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.lstllc.apps.android.mcare",
-                "description": "Verified current Google Play listing for com.lstllc.apps.android.mcare. This listing does not establish that archived APK version 2.114 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.beebirdhome.home",
-                "description": "Verified current Google Play listing for com.beebirdhome.home. This listing does not establish that archived APK version 110.1.13 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=org.seadvocacy.docsrchout",
-                "description": "Verified current Google Play listing for org.seadvocacy.docsrchout. This listing does not establish that archived APK version 3.21.5 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `BLOOD_PRESSURE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Source review identified this as a gatt service in org.seadvocacy.docsrchout.",
-                "submitter": "GPT-6 Luna"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.watch.life",
-                "version_code": 264,
-                "version_name": "2.8.0",
-                "package_path": "BLUUID_APKS/0325/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`."
-            },
-            {
-                "package_id": "com.honbow.fitdock",
-                "version_code": 3618,
-                "version_name": "3.6.18",
-                "package_path": "BLUUID_APKS/0368/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BLOOD_PRESSURE_SERVICE_UUID`."
-            },
-            {
-                "package_id": "com.deltecs.ihealth",
-                "version_code": 10003,
-                "version_name": "1.0.3",
-                "package_path": "BLUUID_APKS/0449/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BLOOD_PRESSURE_SERVICE_UUID`."
-            },
-            {
-                "package_id": "com.vsee.clinic.release",
-                "version_code": 2150682,
-                "version_name": "1.27.2-2150682-25ba45e",
-                "package_path": "BLUUID_APKS/0736/19f94ca7b0d87a8faf20e06e17b17443ff747db4794ec5c615a6d29b65b84c96/19f94ca7b0d87a8faf20e06e17b17443ff747db4794ec5c615a6d29b65b84c96.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `Transtek Blood Pressure Service`."
-            },
-            {
-                "package_id": "com.biofourmis.biovitalshfcare",
-                "version_code": 12,
-                "version_name": "1.1.5",
-                "package_path": "BLUUID_APKS/0970/06108cf6c8bc37bd3f44041ba7fba57ef9f0bbef79745e352cad7fef78639792/06108cf6c8bc37bd3f44041ba7fba57ef9f0bbef79745e352cad7fef78639792.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `k`."
-            },
-            {
-                "package_id": "com.mobvoi.companion.ai",
-                "version_code": 90031845,
-                "version_name": "9.0.3-1845.852",
-                "package_path": "BLUUID_APKS/0974/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `n`."
-            },
-            {
-                "package_id": "com.biofourmis.ipmpatient",
-                "version_code": 1139,
-                "version_name": "1.7.3.17",
-                "package_path": "BLUUID_APKS/0983/66551d2f9ad19e314a4230409e25505a98055339a2beb1b53e69d44b00d884b6/66551d2f9ad19e314a4230409e25505a98055339a2beb1b53e69d44b00d884b6.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `q`."
-            },
-            {
-                "package_id": "com.adctoday.bp",
-                "version_code": 26,
-                "version_name": "1.0.6",
-                "package_path": "AndroZoo/apks/d0/com.adctoday.bp_D019C8CE05CB37D4FB845B6FA268977F985ED97A76FABA227BD722BA94E89ADB.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`."
-            },
-            {
-                "package_id": "com.cctinstavisit.chroniccare.release",
-                "version_code": 2150458,
-                "version_name": "1.3.1-2150458-121a2d2",
-                "package_path": "AndroZoo/apks/6d/com.cctinstavisit.chroniccare.release_6D430EF106026DF7365C2141A7617ED9AD0D207B9B2CAE8D687176A6578CD7AA.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `Transtek Blood Pressure Service`."
-            },
-            {
-                "package_id": "com.careinnovations.healthharmony",
-                "version_code": 525,
-                "version_name": "3.7.2",
-                "package_path": "AndroZoo/apks/5b/com.careinnovations.healthharmony_5BAFE8C28E9EEAF07B13FA683AF3C49B6EA5898DCD636DDA77F53CC75BD1A82D.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.lifesense.health",
-                "version_code": 6,
-                "version_name": "2.0.5",
-                "package_path": "AndroZoo/apks/75/com.lifesense.health_753B2DD5DC68B816146CD136FDEACF1ED1D80ED851D4E562E66EAEF8B21CC99A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`."
-            },
-            {
-                "package_id": "com.biofourmis.ipmpatient",
-                "version_code": 14468,
-                "version_name": "25.13.0",
-                "package_path": "AndroZoo/apks/b5/com.biofourmis.ipmpatient_B54ABAA7E1CA93D025B91B40DBC3959042AA3BCCFC090E9BA4BF20DAD8237C98.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`."
-            },
-            {
-                "package_id": "com.hansjin.drdiary_android",
-                "version_code": 2077003,
-                "version_name": "2.77.3",
-                "package_path": "AndroZoo/apks/5f/com.hansjin.drdiary_android_5FA3621A7797D52EADC1FE47A51E01C85102849B57DFDF92EC2F2D6255A883AB.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`."
-            },
-            {
-                "package_id": "com.lstllc.apps.android.mcare",
-                "version_code": 291,
-                "version_name": "2.114",
-                "package_path": "AndroZoo/apks/bd/com.lstllc.apps.android.mcare_BDFCBF3FB5FEF815D5A5C7A98C54EA87F390FB7994BFA653FCCCF09351A9D59A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`."
-            },
-            {
-                "package_id": "com.beebirdhome.home",
-                "version_code": 110,
-                "version_name": "110.1.13",
-                "package_path": "AndroZoo/apks/7c/com.beebirdhome.home_7CC8AE4A3E3CBE43F81D7BC4AEEB361135484C62AD0C9575F3F1B1614502DC14.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`."
-            },
-            {
-                "package_id": "healthcare.sentinel.mobile",
-                "version_code": 225,
-                "version_name": "3.7.0",
-                "package_path": "AndroZoo/apks/c1/healthcare.sentinel.mobile_C1716376392C07F2E68F4EA5696D942609C4F53DD2FF531FFC39411A1726C6A3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BLOOD_PRESSURE_SERVICE_UUID`."
-            },
-            {
-                "package_id": "org.seadvocacy.docsrchout",
-                "version_code": 200,
-                "version_name": "3.21.5",
-                "package_path": "AndroZoo/apks/f7/org.seadvocacy.docsrchout_F77ACAB12416A466DE5813AE18DFFD8E620C51272E56EDF05D0E87EEF5D7EDDF.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`."
-            },
-            {
-                "package_id": "chief.health",
-                "version_code": 402,
-                "version_name": "1.3.48",
-                "package_path": "AndroZoo/apks/00/chief.health_0048A5B4549791DA7CFF23BFA9091C37194B281442A461B69793B17D0E73FA06.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `BLOOD_PRESSURE_SERVICE_UUID`."
-            }
-        ],
-        "parent_UUID": "00001523-1212-efde-1523-785feabcd123"
     },
     {
         "UUID": "798ee0c9-d63e-4c93-82f4-c298561d4d20",
@@ -10017,6 +9634,31 @@
             }
         ],
         "parent_UUID": "cb9fee4d-c6ed-48c1-ab46-c3f2da38eedd"
+    },
+    {
+        "UUID": "76db4c23-81cf-47de-9265-5c5f4c92f323",
+        "company": "Third-party SDK code (declared in Java package `com.securesmart.util` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
+        "UUID_name": "DEMO_CAMERA_2_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart.util` as Java field `DEMO_CAMERA_2_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DEMO_CAMERA_2_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `DEMO_CAMERA_2_ID`, declared in Java package `com.securesmart.util` (third-party SDK). Classification source: field-name:DEMO_CAMERA_2_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.emcsecurity.android",
+                "version_code": 258,
+                "version_name": "4.2.258",
+                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEMO_CAMERA_2_ID`."
+            }
+        ],
+        "parent_UUID": "ff01"
     },
     {
         "UUID": "75ab2788-87f6-4f61-ba9c-6f85a12600d1",
@@ -42485,6 +42127,295 @@
         ]
     },
     {
+        "UUID": "7809",
+        "company": "OPPO",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.watch.life v2.8.0 (versionCode 264), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.honbow.fitdock v3.6.18 (versionCode 3618), in Java field `BLOOD_PRESSURE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:BLOOD_PRESSURE_SERVICE_UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.deltecs.ihealth v1.0.3 (versionCode 10003), in Java field `BLOOD_PRESSURE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:BLOOD_PRESSURE_SERVICE_UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.vsee.clinic.release v1.27.2-2150682-25ba45e (versionCode 2150682), in Java field `Transtek Blood Pressure Service`. Classification source: field-name:TRANSTEK_BP_SERVICE.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.biofourmis.biovitalshfcare v1.1.5 (versionCode 12), in Java field `k`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getService(k).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mobvoi.companion.ai v9.0.3-1845.852 (versionCode 90031845), in Java field `n`, declared in Java package `mms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.biofourmis.ipmpatient v1.7.3.17 (versionCode 1139), in Java field `q`, declared in Java package `defpackage` (third-party SDK). Classification source: cross-file usage:getCharacteristic(q).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/watch/com.watch.life/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/honbow/com.honbow.fitdock/download/3.6.18",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/deltecs/com.deltecs.ihealth/download/1.0.3",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/mobvoi/com.mobvoi.companion.ai/download/9.0.3-1845.852",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/biofourmis/com.biofourmis.ipmpatient/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "None",
+                "submitter": "Claude (Opus 4.7)",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Guangdong Oppo Mobile Telecommunications; Bluetooth audio / wearable AT-command service)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.adctoday.bp v1.0.6 (versionCode 26), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cctinstavisit.chroniccare.release v1.3.1-2150458-121a2d2 (versionCode 2150458), in Java field `Transtek Blood Pressure Service`, declared in Java package `com.vsee.clinicapp.services` (third-party SDK). Classification source: field-name:TRANSTEK_BP_SERVICE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.careinnovations.healthharmony v3.7.2 (versionCode 525). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lifesense.health v2.0.5 (versionCode 6), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`. Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.biofourmis.ipmpatient v25.13.0 (versionCode 14468), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: cross-file usage:getCharacteristic(k).",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hansjin.drdiary_android v2.77.3 (versionCode 2077003), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lstllc.apps.android.mcare v2.114 (versionCode 291), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.beebirdhome.home v110.1.13 (versionCode 110), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of healthcare.sentinel.mobile v3.7.0 (versionCode 225), in Java field `BLOOD_PRESSURE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of org.seadvocacy.docsrchout v3.21.5 (versionCode 200), in Java field `SERVICE_UUID_A2_BLOOD_PRESSURE`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:SERVICE_UUID_A2_BLOOD_PRESSURE.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.adctoday.bp",
+                "description": "Verified current Google Play listing for com.adctoday.bp. This listing does not establish that archived APK version 1.0.6 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.cctinstavisit.chroniccare.release",
+                "description": "Verified current Google Play listing for com.cctinstavisit.chroniccare.release. This listing does not establish that archived APK version 1.3.1-2150458-121a2d2 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.lifesense.health",
+                "description": "Verified current Google Play listing for com.lifesense.health. This listing does not establish that archived APK version 2.0.5 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.biofourmis.ipmpatient",
+                "description": "Verified current Google Play listing for com.biofourmis.ipmpatient. This listing does not establish that archived APK version 25.13.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.hansjin.drdiary_android",
+                "description": "Verified current Google Play listing for com.hansjin.drdiary_android. This listing does not establish that archived APK version 2.77.3 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.lstllc.apps.android.mcare",
+                "description": "Verified current Google Play listing for com.lstllc.apps.android.mcare. This listing does not establish that archived APK version 2.114 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.beebirdhome.home",
+                "description": "Verified current Google Play listing for com.beebirdhome.home. This listing does not establish that archived APK version 110.1.13 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=org.seadvocacy.docsrchout",
+                "description": "Verified current Google Play listing for org.seadvocacy.docsrchout. This listing does not establish that archived APK version 3.21.5 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `BLOOD_PRESSURE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt service in org.seadvocacy.docsrchout.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Typed source identifies this UUID as a service. The prior opposite-role labels were inferred or could not be bound to the defining field; they do not independently establish dual use. Its function remains unknown in the reviewed app contexts.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.watch.life",
+                "version_code": 264,
+                "version_name": "2.8.0",
+                "package_path": "BLUUID_APKS/0325/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.honbow.fitdock",
+                "version_code": 3618,
+                "version_name": "3.6.18",
+                "package_path": "BLUUID_APKS/0368/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.deltecs.ihealth",
+                "version_code": 10003,
+                "version_name": "1.0.3",
+                "package_path": "BLUUID_APKS/0449/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.vsee.clinic.release",
+                "version_code": 2150682,
+                "version_name": "1.27.2-2150682-25ba45e",
+                "package_path": "BLUUID_APKS/0736/19f94ca7b0d87a8faf20e06e17b17443ff747db4794ec5c615a6d29b65b84c96/19f94ca7b0d87a8faf20e06e17b17443ff747db4794ec5c615a6d29b65b84c96.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.biofourmis.biovitalshfcare",
+                "version_code": 12,
+                "version_name": "1.1.5",
+                "package_path": "BLUUID_APKS/0970/06108cf6c8bc37bd3f44041ba7fba57ef9f0bbef79745e352cad7fef78639792/06108cf6c8bc37bd3f44041ba7fba57ef9f0bbef79745e352cad7fef78639792.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.mobvoi.companion.ai",
+                "version_code": 90031845,
+                "version_name": "9.0.3-1845.852",
+                "package_path": "BLUUID_APKS/0974/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.biofourmis.ipmpatient",
+                "version_code": 1139,
+                "version_name": "1.7.3.17",
+                "package_path": "BLUUID_APKS/0983/66551d2f9ad19e314a4230409e25505a98055339a2beb1b53e69d44b00d884b6/66551d2f9ad19e314a4230409e25505a98055339a2beb1b53e69d44b00d884b6.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.adctoday.bp",
+                "version_code": 26,
+                "version_name": "1.0.6",
+                "package_path": "AndroZoo/apks/d0/com.adctoday.bp_D019C8CE05CB37D4FB845B6FA268977F985ED97A76FABA227BD722BA94E89ADB.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.cctinstavisit.chroniccare.release",
+                "version_code": 2150458,
+                "version_name": "1.3.1-2150458-121a2d2",
+                "package_path": "AndroZoo/apks/6d/com.cctinstavisit.chroniccare.release_6D430EF106026DF7365C2141A7617ED9AD0D207B9B2CAE8D687176A6578CD7AA.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.careinnovations.healthharmony",
+                "version_code": 525,
+                "version_name": "3.7.2",
+                "package_path": "AndroZoo/apks/5b/com.careinnovations.healthharmony_5BAFE8C28E9EEAF07B13FA683AF3C49B6EA5898DCD636DDA77F53CC75BD1A82D.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.lifesense.health",
+                "version_code": 6,
+                "version_name": "2.0.5",
+                "package_path": "AndroZoo/apks/75/com.lifesense.health_753B2DD5DC68B816146CD136FDEACF1ED1D80ED851D4E562E66EAEF8B21CC99A.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.biofourmis.ipmpatient",
+                "version_code": 14468,
+                "version_name": "25.13.0",
+                "package_path": "AndroZoo/apks/b5/com.biofourmis.ipmpatient_B54ABAA7E1CA93D025B91B40DBC3959042AA3BCCFC090E9BA4BF20DAD8237C98.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.hansjin.drdiary_android",
+                "version_code": 2077003,
+                "version_name": "2.77.3",
+                "package_path": "AndroZoo/apks/5f/com.hansjin.drdiary_android_5FA3621A7797D52EADC1FE47A51E01C85102849B57DFDF92EC2F2D6255A883AB.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.lstllc.apps.android.mcare",
+                "version_code": 291,
+                "version_name": "2.114",
+                "package_path": "AndroZoo/apks/bd/com.lstllc.apps.android.mcare_BDFCBF3FB5FEF815D5A5C7A98C54EA87F390FB7994BFA653FCCCF09351A9D59A.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "com.beebirdhome.home",
+                "version_code": 110,
+                "version_name": "110.1.13",
+                "package_path": "AndroZoo/apks/7c/com.beebirdhome.home_7CC8AE4A3E3CBE43F81D7BC4AEEB361135484C62AD0C9575F3F1B1614502DC14.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "healthcare.sentinel.mobile",
+                "version_code": 225,
+                "version_name": "3.7.0",
+                "package_path": "AndroZoo/apks/c1/healthcare.sentinel.mobile_C1716376392C07F2E68F4EA5696D942609C4F53DD2FF531FFC39411A1726C6A3.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "org.seadvocacy.docsrchout",
+                "version_code": 200,
+                "version_name": "3.21.5",
+                "package_path": "AndroZoo/apks/f7/org.seadvocacy.docsrchout_F77ACAB12416A466DE5813AE18DFFD8E620C51272E56EDF05D0E87EEF5D7EDDF.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            },
+            {
+                "package_id": "chief.health",
+                "version_code": 402,
+                "version_name": "1.3.48",
+                "package_path": "AndroZoo/apks/00/chief.health_0048A5B4549791DA7CFF23BFA9091C37194B281442A461B69793B17D0E73FA06.apk",
+                "description": "The UUID appears in this app; its earlier role classification was an extractor inference."
+            }
+        ]
+    },
+    {
         "UUID": "74700053-38ba-11e4-bca3-0002a5d5c51b",
         "company": "OPT7",
         "UUID_name": "CUSTOM_CHARACTERISTIC_V1",
@@ -60207,6 +60138,104 @@
         ]
     },
     {
+        "UUID": "780a",
+        "company": "Third-party SDK code (declared in Java package `com.lifesense.ble.b` — distinct from host com.honbow.fitdock; Phase-4 identification needed)",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.honbow.fitdock v3.6.18 (versionCode 3618), in Java field `KITCHEN_SCALE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:KITCHEN_SCALE_SERVICE_UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.deltecs.ihealth v1.0.3 (versionCode 10003), in Java field `KITCHEN_SCALE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:KITCHEN_SCALE_SERVICE_UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mobvoi.companion.ai v9.0.3-1845.852 (versionCode 90031845), in Java field `f0`, declared in Java package `mms` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f0).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/honbow/com.honbow.fitdock/download/3.6.18",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/deltecs/com.deltecs.ihealth/download/1.0.3",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/mobvoi/com.mobvoi.companion.ai/download/9.0.3-1845.852",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of healthcare.sentinel.mobile v3.7.0 (versionCode 225), in Java field `KITCHEN_SCALE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `KITCHEN_SCALE_SERVICE_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt service in com.polaris.iot.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The Lifesense SDK inserts 780A into its device-service map and checks BluetoothGattService.getUuid against that map during service discovery. The historical characteristic claim matched an unqualified short field in a protocol list; no independent characteristic use is established.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.honbow.fitdock",
+                "version_code": 3618,
+                "version_name": "3.6.18",
+                "package_path": "BLUUID_APKS/0368/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c.apk",
+                "description": "The UUID appears in this app; its earlier characteristic classification was an extractor inference."
+            },
+            {
+                "package_id": "com.deltecs.ihealth",
+                "version_code": 10003,
+                "version_name": "1.0.3",
+                "package_path": "BLUUID_APKS/0449/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434.apk",
+                "description": "The UUID appears in this app; its earlier characteristic classification was an extractor inference."
+            },
+            {
+                "package_id": "com.mobvoi.companion.ai",
+                "version_code": 90031845,
+                "version_name": "9.0.3-1845.852",
+                "package_path": "BLUUID_APKS/0974/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc.apk",
+                "description": "The UUID appears in this app; its earlier characteristic classification was an extractor inference."
+            },
+            {
+                "package_id": "healthcare.sentinel.mobile",
+                "version_code": 225,
+                "version_name": "3.7.0",
+                "package_path": "AndroZoo/apks/c1/healthcare.sentinel.mobile_C1716376392C07F2E68F4EA5696D942609C4F53DD2FF531FFC39411A1726C6A3.apk",
+                "description": "The UUID appears in this app; its earlier characteristic classification was an extractor inference."
+            },
+            {
+                "package_id": "chief.health",
+                "version_code": 402,
+                "version_name": "1.3.48",
+                "package_path": "AndroZoo/apks/00/chief.health_0048A5B4549791DA7CFF23BFA9091C37194B281442A461B69793B17D0E73FA06.apk",
+                "description": "The UUID appears in this app; its earlier characteristic classification was an extractor inference."
+            },
+            {
+                "package_id": "com.polaris.iot",
+                "version_code": 310,
+                "version_name": "3.4.1",
+                "package_path": "AndroZoo/apks/e3/com.polaris.iot_E37985352E28406CD342CD221993535FC9CD1476167B9AD2CB3C31534D031CA8.apk",
+                "description": "Source review identified a gatt service in this app."
+            }
+        ]
+    },
+    {
         "UUID": "7e7a5c8f-12a6-4e98-a171-09050a3a058e",
         "company": "Third-party SDK code (declared in Java package `com.lifesense.plugin.ble.data.scale` — distinct from host com.rpmhealthcare.ghgc; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -61539,31 +61568,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `serviceApplicationOtauUuid`."
             }
         ]
-    },
-    {
-        "UUID": "76db4c23-81cf-47de-9265-5c5f4c92f323",
-        "company": "Third-party SDK code (declared in Java package `com.securesmart.util` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
-        "UUID_name": "DEMO_CAMERA_2_ID",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart.util` as Java field `DEMO_CAMERA_2_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DEMO_CAMERA_2_ID.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `DEMO_CAMERA_2_ID`, declared in Java package `com.securesmart.util` (third-party SDK). Classification source: field-name:DEMO_CAMERA_2_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.emcsecurity.android",
-                "version_code": 258,
-                "version_name": "4.2.258",
-                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEMO_CAMERA_2_ID`."
-            }
-        ],
-        "parent_UUID": "ff01"
     },
     {
         "UUID": "70de11e0-8504-4108-b387-6ceb6ea8886e",
@@ -69472,6 +69476,62 @@
         ]
     },
     {
+        "UUID": "71387651-eb78-11e6-b006-92361f002671",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Reports an electrode NFC tag that has not yet been validated by a Nerivio device, including its status, identifier, usage-time delta, and raw tag data.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in app.theranica.neriviomigra; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "Source and bytecode review established the described function and Bluetooth role.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "app.theranica.neriviomigra",
+                "version_code": 7280011,
+                "version_name": "7.28.0.11",
+                "package_path": "AndroZoo/apks/dd/app.theranica.neriviomigra_DD4E6EDFF67549375838DAC1D0C7CB564885BD14D05F5F4BFC37CD1D727370F4.apk",
+                "description": "The app reads an NFC-tag response from this characteristic."
+            }
+        ]
+    },
+    {
+        "UUID": "71387653-eb78-11e6-b006-92361f002671",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Reports an electrode NFC tag's validation status, identifier, and cumulative and incremental usage times for a Nerivio device.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in app.theranica.neriviomigra; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "Source and bytecode review established the described function and Bluetooth role.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "app.theranica.neriviomigra",
+                "version_code": 7280011,
+                "version_name": "7.28.0.11",
+                "package_path": "AndroZoo/apks/dd/app.theranica.neriviomigra_DD4E6EDFF67549375838DAC1D0C7CB564885BD14D05F5F4BFC37CD1D727370F4.apk",
+                "description": "The app reads an NFC-tag response from this characteristic."
+            }
+        ]
+    },
+    {
         "UUID": "71387654-eb78-11e6-b006-92361f002671",
         "company": "Unknown",
         "UUID_name": "Unknown",
@@ -69580,6 +69640,34 @@
                 "version_name": "7.28.0.11",
                 "package_path": "AndroZoo/apks/dd/app.theranica.neriviomigra_DD4E6EDFF67549375838DAC1D0C7CB564885BD14D05F5F4BFC37CD1D727370F4.apk",
                 "description": "Source review confirmed gatt characteristic use in this app."
+            }
+        ]
+    },
+    {
+        "UUID": "71387652-eb78-11e6-b006-92361f002671",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Reports the result of an electrode NFC-tag blacklist check on a Nerivio device, including the validity flag, reason code, and tag identifier.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in app.theranica.neriviomigra; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "Source and bytecode review established the described function and Bluetooth role.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "app.theranica.neriviomigra",
+                "version_code": 7280011,
+                "version_name": "7.28.0.11",
+                "package_path": "AndroZoo/apks/dd/app.theranica.neriviomigra_DD4E6EDFF67549375838DAC1D0C7CB564885BD14D05F5F4BFC37CD1D727370F4.apk",
+                "description": "The app reads an NFC-tag response from this characteristic."
             }
         ]
     },
@@ -69740,78 +69828,6 @@
                 "version_name": "3.9.4",
                 "package_path": "AndroZoo/apks/39/com.life.android.app.medical_39860CF03628203C04E1F063EECD76B70D8A9691A4DBA18ECF3E07103FA8ACD0.apk",
                 "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
-        "UUID": "71387651-eb78-11e6-b006-92361f002671",
-        "company": "Unknown",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in app.theranica.neriviomigra; its Bluetooth role needs review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "app.theranica.neriviomigra",
-                "version_code": 7280011,
-                "version_name": "7.28.0.11",
-                "package_path": "AndroZoo/apks/dd/app.theranica.neriviomigra_DD4E6EDFF67549375838DAC1D0C7CB564885BD14D05F5F4BFC37CD1D727370F4.apk",
-                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
-            }
-        ]
-    },
-    {
-        "UUID": "71387652-eb78-11e6-b006-92361f002671",
-        "company": "Unknown",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in app.theranica.neriviomigra; its Bluetooth role needs review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "app.theranica.neriviomigra",
-                "version_code": 7280011,
-                "version_name": "7.28.0.11",
-                "package_path": "AndroZoo/apks/dd/app.theranica.neriviomigra_DD4E6EDFF67549375838DAC1D0C7CB564885BD14D05F5F4BFC37CD1D727370F4.apk",
-                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
-            }
-        ]
-    },
-    {
-        "UUID": "71387653-eb78-11e6-b006-92361f002671",
-        "company": "Unknown",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "The purpose is unknown.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in app.theranica.neriviomigra; its Bluetooth role needs review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "app.theranica.neriviomigra",
-                "version_code": 7280011,
-                "version_name": "7.28.0.11",
-                "package_path": "AndroZoo/apks/dd/app.theranica.neriviomigra_DD4E6EDFF67549375838DAC1D0C7CB564885BD14D05F5F4BFC37CD1D727370F4.apk",
-                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
             }
         ]
     },
@@ -70213,12 +70229,16 @@
         "UUID_name": "Unknown",
         "UUID_purpose": "The purpose is unknown.",
         "UUID_usage_array": [
-            "GATT Service"
+            "GATT Characteristic"
         ],
         "evidence_array": [
             {
                 "description": "Automated extraction found this UUID in com.bluetooth.lock_vanderbilt; its Bluetooth role needs review.",
                 "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "Source review identifies this UUID as a characteristic; its decoded integer has no confirmed meaning.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -70227,7 +70247,7 @@
                 "version_code": 17,
                 "version_name": "1.2.3.1",
                 "package_path": "AndroZoo/apks/f7/com.bluetooth.lock_vanderbilt_F779A8EE37D17E5F2CB61A2A1CA2C3406497CE60856B1C6FC5C49DA697301BE6.apk",
-                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
+                "description": "The app reads this characteristic; the meaning of its value is unknown."
             }
         ]
     },
@@ -70684,30 +70704,6 @@
                 "version_name": "26.1.0.20",
                 "package_path": "AndroZoo/apks/39/com.silverbackmdm.epic.companion.ss_39896189FE9F1EC124DE2E52695F348B605688FBFAA8C2331491C79A3C5011A3.apk",
                 "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
-        "UUID": "7f4b6df1-9c70-4c6d-a642-82ebd31604ae",
-        "company": "Unknown",
-        "UUID_name": "dimmerDeviceTemplateId",
-        "UUID_purpose": "The purpose is unknown.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in au.com.gsminnovations.zimi; its Bluetooth role needs review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "au.com.gsminnovations.zimi",
-                "version_code": 140,
-                "version_name": "2.11",
-                "package_path": "AndroZoo/apks/e3/au.com.gsminnovations.zimi_E398E7B13BC1629D54AED9EAF435519F047E080BECA4120B5A76956D878D35BC.apk",
-                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
             }
         ]
     },

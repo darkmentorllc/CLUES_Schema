@@ -207,6 +207,9 @@ NON_GATT_FIELD_HINT_RE = re.compile(
 # sink use of the same field still wins. These are source-backed shard-01
 # findings, not UUID-value exclusions.
 NON_GATT_CLASS_FIELD_HINTS: dict[tuple[str, str], frozenset[str]] = {
+    # Smartrent SDK API credentials and enrollment integration IDs are not
+    # Bluetooth attributes, even when stored as UUID-shaped strings.
+    ("com.smartrent.bledevices", "BuildConfig"): frozenset({"API_KEY", "AL_INTEGRATION_ID"}),
     ("com.banno.android.network", "ApiServiceVariables"): frozenset({"CLIENT_ID"}),
     ("com.microsoft.identity.common.adal.internal", "Broker"): frozenset({"WEBCP_CLIENT_ID"}),
     ("com.ce.android.brand.havajava", "HavaJavaProperties"): frozenset({"CLIENT_ID"}),
@@ -1973,6 +1976,33 @@ def _field_usage_role(field: str, source: str) -> str | None:
 def _field_has_gatt_sink(field: str, source: str) -> bool:
     """Whether a field has direct or typed-getter GATT use."""
     return bool(_field_usage_roles(field, source))
+
+
+def _zimi_device_template_uuid_sources(
+    file_texts: dict[str, str],
+) -> dict[str, tuple[str, set[str]]]:
+    """Find Zimi domain device-template IDs, not the nearby BLE constants.
+
+    Limit this to the verified package, class and semantic field suffix; do
+    not blacklist UUID values or suppress IDs with separate source uses.
+    """
+    result: dict[str, tuple[str, set[str]]] = {}
+    pattern = re.compile(
+        r'\bstatic\s+final\s+String\s+([A-Za-z_$][A-Za-z0-9_$]*TemplateId)'
+        r'\s*=\s*"([0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12})"\s*;'
+    )
+    for path, text in file_texts.items():
+        if (os.path.basename(path) != 'DomainConstants.java'
+                or _java_package_of(text) != 'life.zimi.domain.util'
+                or not re.search(r'\bclass\s+DomainConstants\b', text)):
+            continue
+        for field, raw in pattern.findall(text):
+            uuid = normalize_uuid(raw)
+            if uuid not in result:
+                result[uuid] = (path, set())
+            if result[uuid][0] == path:
+                result[uuid][1].add(field)
+    return result
 
 
 def _mobilytics_owner_uuid_sources(file_texts: dict[str, str]) -> dict[str, set[str]]:
@@ -7403,6 +7433,43 @@ def scan_jadx_output(jadx_out_dir: str) -> dict[str, dict]:
                 parent for parent in entry.get("parent_candidates", [])
                 if parent != uuid
             ]
+
+    # Zimi's DomainConstants mixes BLE-related byte constants and device
+    # template IDs. Drop only the latter when no separate use or literal
+    # occurrence exists. A real GATT use or a second context must survive.
+    for uuid, (path, fields) in _zimi_device_template_uuid_sources(file_texts).items():
+        entry = all_uuids.get(uuid)
+        if entry is None or classification_source_strength(entry.get('classification_source', '')) >= 75:
+            continue
+        if indexed_roles_by_uuid.get(uuid):
+            continue
+        text = file_texts[path]
+        if len(re.findall(re.escape(uuid), text, re.IGNORECASE)) != len(fields):
+            continue
+        if any(_field_usage_roles(field, text) for field in fields):
+            continue
+        # Keep even a non-GATT same-file reference: it may reveal another
+        # semantic use that needs review. Kotlin metadata repeats field names
+        # in a one-line annotation but is not an executable reference.
+        if any(
+            '@Metadata' not in line
+            and re.search(rf'\b{re.escape(field)}\b', line)
+            and not (re.search(r'\bstatic\s+final\s+String\b', line)
+                     and re.search(re.escape(uuid), line, re.IGNORECASE))
+            for field in fields for line in text.splitlines()
+        ):
+            continue
+        if any(
+            other_path != path and (
+                re.search(re.escape(uuid), other_text, re.IGNORECASE)
+                or any(re.search(rf'\b{re.escape(field)}\b', other_text) for field in fields)
+            )
+            for other_path, other_text in file_texts.items()
+        ):
+            continue
+        all_uuids.pop(uuid, None)
+        for other in all_uuids.values():
+            other['parent_candidates'] = [p for p in other.get('parent_candidates', []) if p != uuid]
 
     # Mobilytics OwnerIdentifier values identify analytics feature owners,
     # including fields whose names happen to contain SERVICE or PLATFORM.

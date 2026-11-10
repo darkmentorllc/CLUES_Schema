@@ -952,11 +952,10 @@
     {
         "UUID": "19b10010-e8f2-537e-4f6c-d104768a1214",
         "company": "Arduino",
-        "UUID_name": "Arduino BLE example custom service base",
-        "UUID_purpose": "Custom 128-bit UUID base used in ArduinoBLE library example sketches (LED.ino and others). The base UUID 19b10000-e8f2-537e-4f6c-d104768a1214 is the LED service in Arduino's official BLE peripheral examples, with characteristics like 19b10001-... The 19b10010 variant is used by downstream Arduino projects derived from these examples (e.g., custom orientation/sensor services in Arduino-style BLE peripherals).",
+        "UUID_name": "LED / Orientation",
+        "UUID_purpose": "Custom BLE service used by Arduino 101 LED-control tutorial sketches and a Raspberry Pi Pico 2 W orientation-sensor demonstration. Its child characteristics carry LED state, orientation readings, or sample-rate configuration, depending on the example.",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
@@ -968,6 +967,16 @@
                 "URL": "https://github.com/Gerriko/pico2w-ble-6dof-sensor",
                 "description": "Raspberry Pi Pico 2 W BLE project that uses 19b10010-e8f2-537e-4f6c-d104768a1214 as a Custom Orientation Service UUID, following the Arduino-style example UUID pattern.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://ai2inventor.blogspot.com/2017/07/app-inventor-iot-lesson-1-arduino-101.html",
+                "description": "Source review: the original linked tutorial defines 19b10010 as BLEService lightService/ControlLED and 19b10011 as its LED characteristic. The exact literal is a service in this example; it is not a wildcard UUID-family record.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "URL": "https://github.com/Gerriko/pico2w-ble-6dof-sensor/blob/main/6dof_sensor.gatt",
+                "description": "Source review: 6dof_sensor.gatt defines 19b10010 as PRIMARY_SERVICE and 19b10012 through 19b10016 as separate sample-rate and orientation characteristics. This independently confirms the exact literal as a service in the cited sensor project.",
+                "submitter": "GPT-6.1 Sol"
             }
         ]
     },
@@ -1668,6 +1677,30 @@
                 "submitter": "Claude (Opus 4.7)"
             }
         ]
+    },
+    {
+        "UUID": "febe",
+        "company": "Bose",
+        "UUID_purpose": "Supports Bose BMAP product-control communication on supported products, including product-information queries and settings such as noise-cancellation level and product name.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "febe is assigned to Bose in BT SIG member_uuids.yaml",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "description": "Bose app source identifies BMAP command and response characteristics. Independent GATT enumeration places those characteristics under FEBE.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "URL": "https://github.com/Jaisalrathi1829/Void-Controller/blob/b8876336831a2798325d8f923fe1d314a127642e/docs/protocol-notes.md#L1135-L1143",
+                "description": "A public Bose headphone GATT enumeration places the BMAP endpoint characteristics under FEBE.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "UUID_name": "Bose product-control service"
     },
     {
         "UUID": "a76eb9e0-f3ac-4990-84cf-3a94d2426b2b",
@@ -5873,23 +5906,6 @@
         "parent_UUID": "8b82105d-0f0c-40bb-b422-3770fa72a864"
     },
     {
-        "UUID": "c8f75466-21b2-45b8-87f8-bd49a13eff49",
-        "company": "Rexton / WS Audiology",
-        "UUID_name": "Rexton Control/FAPI Service",
-        "UUID_purpose": "Rexton hearing aid Control/FAPI (Firmware API) BLE service. Used for command-based device control and data transfer.",
-        "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
-                "description": "sk408/hearing_aid_control SPEC.md: 'Control/FAPI service: c8f75466-21b2-45b8-87f8-bd49a13eff49'. Used as both service and Control request characteristic per SPEC table.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
         "UUID": "c8f70447-21b2-45b8-87f8-bd49a13eff49",
         "company": "Rexton / WS Audiology",
         "UUID_name": "Rexton Control Response Characteristic",
@@ -5902,9 +5918,14 @@
                 "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md: 'Control response | c8f70447-21b2-45b8-87f8-bd49a13eff49 | subscribe | ✅ confirmed'.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control/blob/582d01bcd729c002fd08dacb9a65a1898ed897a1/docs/uuid_rexton_dossier_2026-03-28.md",
+                "description": "The project’s detailed protocol dossier places this characteristic under the Programming Service.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
-        "parent_UUID": "c8f75466-21b2-45b8-87f8-bd49a13eff49"
+        "parent_UUID": "c8f7a831-21b2-45b8-87f8-bd49a13eff49"
     },
     {
         "UUID": "c8f72804-21b2-45b8-87f8-bd49a13eff49",
@@ -5919,9 +5940,41 @@
                 "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
                 "description": "sk408/hearing_aid_control SPEC.md: 'Data request | c8f72804-21b2-45b8-87f8-bd49a13eff49 | chunked | ✅ confirmed'.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control/blob/582d01bcd729c002fd08dacb9a65a1898ed897a1/docs/uuid_rexton_dossier_2026-03-28.md",
+                "description": "The project’s detailed protocol dossier places this characteristic under the Programming Service.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
-        "parent_UUID": "c8f75466-21b2-45b8-87f8-bd49a13eff49"
+        "parent_UUID": "c8f7a831-21b2-45b8-87f8-bd49a13eff49"
+    },
+    {
+        "UUID": "c8f75466-21b2-45b8-87f8-bd49a13eff49",
+        "company": "Rexton / WS Audiology",
+        "UUID_name": "Control Request",
+        "UUID_purpose": "Starts and stops programming sessions, controls high-performance mode and connection settings, and requests protocol version information.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://raw.githubusercontent.com/sk408/hearing_aid_control/main/SPEC.md",
+                "description": "sk408/hearing_aid_control SPEC.md: 'Control/FAPI service: c8f75466-21b2-45b8-87f8-bd49a13eff49'. Used as both service and Control request characteristic per SPEC table.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control/blob/582d01bcd729c002fd08dacb9a65a1898ed897a1/docs/uuid_rexton_dossier_2026-03-28.md",
+                "description": "The project’s detailed protocol dossier identifies this as a Control Request characteristic under the Programming Service; its summary’s conflicting service label lacks independent support.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "URL": "https://github.com/sk408/hearing_aid_control/blob/582d01bcd729c002fd08dacb9a65a1898ed897a1/docs/deep_extraction/rexton_phase2_static.md",
+                "description": "The project describes the programming and connection-control commands sent through this characteristic.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "parent_UUID": "c8f7a831-21b2-45b8-87f8-bd49a13eff49"
     },
     {
         "UUID": "ebee6f69-70b6-4bb9-b13b-9ba84953c233",
@@ -6150,16 +6203,20 @@
         "UUID": "0000fe20-cc7a-482a-984a-7f2ed5b3e58f",
         "company": "STMicroelectronics",
         "UUID_name": "STM32WB DFU UUID (security mechanisms by default)",
-        "UUID_purpose": "STMicroelectronics STM32WB BLE chipset Device Firmware Update (DFU) UUID. Per Sivakumaran et al. 2023, Table 1, this is one of two distinct STM32WB DFU UUID patterns; this entry is categorized as '3' (some security mechanisms by default).",
+        "UUID_purpose": "Supports over-the-air firmware updates for STM32WB devices, with controls to select the firmware storage address, transfer the image, and confirm reboot after upload.",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
                 "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
                 "description": "Sivakumaran et al. 2023, Table 1: 'ST STM32WB[38] 0000FE20-CC7A-482A-984A-7F2ED5B3E58F'. Second STM32WB DFU pattern (0000FEYY-8E22-4541-9D4C-21EDAE82ED19) added separately as regex.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://www.st.com/resource/en/application_note/an5289-building-a-wireless-application-with-stm32wbx5-mcus-stmicroelectronics.pdf",
+                "description": "Source review: ST AN5289 rev.18 section 8.5.3 Table 23 (page 85) assigns this exact UUID to the OTA firmware-update service. Base address, reboot confirmation, and raw-data characteristics have distinct FE22, FE23, and FE24 UUIDs in the 8e22... base.",
+                "submitter": "GPT-6.1 Sol"
             }
         ]
     },
@@ -7132,53 +7189,23 @@
         ]
     },
     {
-        "UUID": "4f4a2368-8cca-451e-bfff-cf0e2ee23e9f",
+        "UUID": "1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0",
         "company": "Silicon Labs",
         "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
-        "UUID_purpose": "One of six UUIDs documented by Sivakumaran et al. (2023) as part of Silicon Labs' Device Firmware Update (DFU) procedure for their BLE chipsets. Categorized as 'D' (developer-dependent security) in the paper's Table 1 — the underlying chipset supports secure firmware update but it's up to the application developer to enable signing/verification.",
+        "UUID_purpose": "Supports over-the-air firmware installation for devices using the Gecko Bootloader, with controls for entering update mode, transferring firmware data, and reading update-component versions.",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "GATT Service"
         ],
         "evidence_array": [
             {
-                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
-                "description": "Sivakumaran et al. 2023, Table 1: BLE DFU UUIDs by chipset vendor. Lists this UUID under 'Silicon Labs[35]' alongside 1D14D6EE-FD63-4FA1-BFA4-8F47B42119F0, F7BF3564-FB6D-4E53-88A4-5E37E0326063, 984227F3-34FC-4045-A5D0-2C581F81A153, 4CC07BCF, and 25F05C0A. UUID literally appears on this page as `4f4a2368-8cca-451e-bfff-cf0e2ee23e9f`.",
+                "URL": "https://raw.githubusercontent.com/ToolChainGang/BLEServer/HEAD/lib/Site/GATTTable.pm",
+                "description": "Literal UUID present in this file (verified via curl+grep, 2026-05-18 audit). UUID literally appears on this page as `1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0`.",
                 "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "984227f3-34fc-4045-a5d0-2c581f81a153",
-        "company": "Silicon Labs",
-        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
-        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023, Table 1. Categorized as 'D' (developer-dependent security).",
-        "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
+            },
             {
-                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
-                "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row. UUID literally appears on this page as `984227F3-34FC-4045-A5D0-2C581F81A153`.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ]
-    },
-    {
-        "UUID": "f7bf3564-fb6d-4e53-88a4-5e37e0326063",
-        "company": "Silicon Labs",
-        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
-        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023, Table 1. Categorized as 'D' (developer-dependent security).",
-        "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
-                "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row. UUID literally appears on this page as `F7BF3564-FB6D-4E53-88A4-5E37E0326063`.",
-                "submitter": "Claude (Opus 4.7)"
+                "URL": "https://www.silabs.com/documents/public/application-notes/an1086-gecko-bootloader-bluetooth.pdf",
+                "description": "Source review: Silicon Labs AN1086 rev.2.4 section 3.5 Table 4 (page 17) defines this exact UUID as OTA service. The same table gives distinct UUIDs for its child characteristics.",
+                "submitter": "GPT-6.1 Sol"
             }
         ]
     },
@@ -7186,9 +7213,8 @@
         "UUID": "25f05c0a-e917-46e9-b2a5-aa2be1245afe",
         "company": "Silicon Labs",
         "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
-        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023. Categorized as 'D' (developer-dependent security).",
+        "UUID_purpose": "Reports the version of the Gecko Bootloader installed on the device.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -7196,16 +7222,21 @@
                 "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
                 "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row. UUID literally appears on this page as `25F05C0A-E917-46E9-B2A5-AA2BE1245AFE`.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://www.silabs.com/documents/public/application-notes/an1086-gecko-bootloader-bluetooth.pdf",
+                "description": "Source review: Silicon Labs AN1086 rev.2.4 section 3.5 Table 4 (page 17) defines this exact UUID as Gecko Bootloader version under OTA service 1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0.",
+                "submitter": "GPT-6.1 Sol"
             }
-        ]
+        ],
+        "parent_UUID": "1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0"
     },
     {
         "UUID": "4cc07bcf-0868-4b32-9dad-ba4cc41e5316",
         "company": "Silicon Labs",
         "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
-        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023. Categorized as 'D' (developer-dependent security).",
+        "UUID_purpose": "Reports the OTA firmware-update version.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -7213,25 +7244,80 @@
                 "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
                 "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row. UUID literally appears on this page as `4CC07BCF-0868-4B32-9DAD-BA4CC41E5316`.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://www.silabs.com/documents/public/application-notes/an1086-gecko-bootloader-bluetooth.pdf",
+                "description": "Source review: Silicon Labs AN1086 rev.2.4 section 3.5 Table 4 (page 17) defines this exact UUID as OTA version under OTA service 1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0.",
+                "submitter": "GPT-6.1 Sol"
             }
-        ]
+        ],
+        "parent_UUID": "1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0"
     },
     {
-        "UUID": "1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0",
+        "UUID": "4f4a2368-8cca-451e-bfff-cf0e2ee23e9f",
         "company": "Silicon Labs",
         "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
-        "UUID_purpose": "Part of Silicon Labs' BLE DFU UUID set per Sivakumaran et al. 2023. First of the six Silicon Labs DFU UUIDs in their Table 1. Categorized as 'D' (developer-dependent security).",
+        "UUID_purpose": "Reports the AppLoader version used for Bluetooth firmware updates.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "URL": "https://raw.githubusercontent.com/ToolChainGang/BLEServer/HEAD/lib/Site/GATTTable.pm",
-                "description": "Literal UUID present in this file (verified via curl+grep, 2026-05-18 audit). UUID literally appears on this page as `1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0`.",
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1: BLE DFU UUIDs by chipset vendor. Lists this UUID under 'Silicon Labs[35]' alongside 1D14D6EE-FD63-4FA1-BFA4-8F47B42119F0, F7BF3564-FB6D-4E53-88A4-5E37E0326063, 984227F3-34FC-4045-A5D0-2C581F81A153, 4CC07BCF, and 25F05C0A. UUID literally appears on this page as `4f4a2368-8cca-451e-bfff-cf0e2ee23e9f`.",
                 "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://www.silabs.com/documents/public/application-notes/an1086-gecko-bootloader-bluetooth.pdf",
+                "description": "Source review: Silicon Labs AN1086 rev.2.4 section 3.5 Table 4 (page 17) defines this exact UUID as AppLoader version under OTA service 1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0.",
+                "submitter": "GPT-6.1 Sol"
             }
-        ]
+        ],
+        "parent_UUID": "1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0"
+    },
+    {
+        "UUID": "984227f3-34fc-4045-a5d0-2c581f81a153",
+        "company": "Silicon Labs",
+        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
+        "UUID_purpose": "Receives blocks of a Gecko Bootloader (GBL) firmware image during an over-the-air update.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row. UUID literally appears on this page as `984227F3-34FC-4045-A5D0-2C581F81A153`.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://www.silabs.com/documents/public/application-notes/an1086-gecko-bootloader-bluetooth.pdf",
+                "description": "Source review: Silicon Labs AN1086 rev.2.4 section 3.5 Table 4 (page 17) defines this exact UUID as OTA Data Attribute under OTA service 1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "parent_UUID": "1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0"
+    },
+    {
+        "UUID": "f7bf3564-fb6d-4e53-88a4-5e37e0326063",
+        "company": "Silicon Labs",
+        "UUID_name": "Silicon Labs DFU UUID (developer-dependent security)",
+        "UUID_purpose": "Controls the firmware-update flow, including entering DFU mode, marking a completed image transfer, and requesting disconnection.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://www.jorgeblascoalis.com/assets/papers/Sivakumaran2023.pdf",
+                "description": "Sivakumaran et al. 2023, Table 1, Silicon Labs row. UUID literally appears on this page as `F7BF3564-FB6D-4E53-88A4-5E37E0326063`.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://www.silabs.com/documents/public/application-notes/an1086-gecko-bootloader-bluetooth.pdf",
+                "description": "Source review: Silicon Labs AN1086 rev.2.4 section 3.5 Tables 4–5 (pages 17–18) defines this as OTA Control under service 1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0, and specifies control values for starting the update, completing the transfer, and disconnecting.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "parent_UUID": "1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0"
     },
     {
         "UUID": "6834636b-6d33-4c30-634b-38454163304e",

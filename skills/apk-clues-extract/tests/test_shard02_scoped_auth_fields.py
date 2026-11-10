@@ -10,6 +10,8 @@ import extract_clues as extractor
 class ScopedAuthFieldsTests(unittest.TestCase):
     def test_source_specific_auth_fields_do_not_suppress_independent_gatt(self):
         cases = [
+            ("com.smartrent.bledevices", "BuildConfig", "API_KEY"),
+            ("com.smartrent.bledevices", "BuildConfig", "AL_INTEGRATION_ID"),
             ("com.ce.android.brand.auberginekitchen", "AubergineKitchenProperties", "CLIENT_ID"),
             ("com.ce.android.brand.wingiton", "WingItOnProperties", "CLIENT_ID"),
             ("com.ce.android.brand.thehungrycowgirlcocina", "TheHungryCowgirlCocinaProperties", "CLIENT_ID"),
@@ -53,6 +55,20 @@ import java.util.UUID;
 class Other {{ BluetoothGatt g; void run() {{ g.getService(UUID.fromString("{uuid}")); }} }}
 ''')
                 self.assertIn(uuid, extractor.scan_one_file(str(other)))
+
+    def test_smartrent_field_used_by_typed_gatt_is_retained(self):
+        uuid = "11223344-1234-4567-89ab-abcdef123456"
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp) / "BuildConfig.java"
+            source.write_text(f'''package com.smartrent.bledevices;
+import android.bluetooth.BluetoothGatt;
+import java.util.UUID;
+class BuildConfig {{
+    static final String API_KEY = "{uuid}";
+    void use(BluetoothGatt gatt) {{ gatt.getService(UUID.fromString(API_KEY)); }}
+}}
+''')
+            self.assertIn(uuid, extractor.scan_one_file(str(source)))
 
     def test_htc_static_block_oauth_ids_are_filtered_but_same_values_can_be_gatt(self):
         vrs = "63167f50-0e63-4086-9cf8-69449133e521"

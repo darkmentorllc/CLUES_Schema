@@ -5838,6 +5838,433 @@
         ]
     },
     {
+        "UUID": "bd4ac615-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August",
+        "UUID_name": "otaCommandCharacteristic",
+        "UUID_purpose": "Controls August lock firmware updates, including prepare/download, verify, finish, abort, pause/resume and progress requests.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), in Java field `otaCommandCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaCommandCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706), in Java field `otaCommandCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: cross-file usage:getCharacteristic(otaCommandCharacteristic).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), in Java field `otaCommandCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaCommandCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), in Java field `otaCommandCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaCommandCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The August SDK uses this characteristic under multiple smart-lock services, so no single parent applies.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.smartrent.resident",
+                "version_code": 9957,
+                "version_name": "3.11.3",
+                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaCommandCharacteristic`."
+            },
+            {
+                "package_id": "com.august.bennu",
+                "version_code": 240105706,
+                "version_name": "23.25.0",
+                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaCommandCharacteristic`."
+            },
+            {
+                "package_id": "com.alloyhome.pass",
+                "version_code": 1447,
+                "version_name": "1.11.0",
+                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaCommandCharacteristic`."
+            },
+            {
+                "package_id": "com.smartrent.propertymanagement",
+                "version_code": 2000001085,
+                "version_name": "1.13.0",
+                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaCommandCharacteristic`."
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac610-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August",
+        "UUID_name": "August smart-lock control service",
+        "UUID_purpose": "Provides the August smart-lock control service used for lock/unlock actions and lock/door-state queries on the V1 lock protocol.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), in Java field `V1_SUMMER_2014`, declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706), in Java field `V1_SUMMER_2014`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), in Java field `V1_SUMMER_2014`, declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), in Java field `V1_SUMMER_2014`, declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The August SDK identifies this as a smart-lock service; the earlier characteristic role and unrelated parent were extractor inferences.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.smartrent.resident",
+                "version_code": 9957,
+                "version_name": "3.11.3",
+                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
+                "description": "August smart-lock control service identified in this app."
+            },
+            {
+                "package_id": "com.august.bennu",
+                "version_code": 240105706,
+                "version_name": "23.25.0",
+                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
+                "description": "August smart-lock control service identified in this app."
+            },
+            {
+                "package_id": "com.alloyhome.pass",
+                "version_code": 1447,
+                "version_name": "1.11.0",
+                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
+                "description": "August smart-lock control service identified in this app."
+            },
+            {
+                "package_id": "com.smartrent.propertymanagement",
+                "version_code": 2000001085,
+                "version_name": "1.13.0",
+                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
+                "description": "August smart-lock control service identified in this app."
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac616-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August",
+        "UUID_name": "otaDataCharacteristic",
+        "UUID_purpose": "Receives August lock firmware-image data blocks during over-the-air firmware update.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), in Java field `otaDataCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaDataCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706), in Java field `otaDataCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: cross-file usage:getCharacteristic(otaDataCharacteristic).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), in Java field `otaDataCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaDataCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), in Java field `otaDataCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaDataCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The August SDK uses this characteristic under multiple smart-lock services, so no single parent applies.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.smartrent.resident",
+                "version_code": 9957,
+                "version_name": "3.11.3",
+                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaDataCharacteristic`."
+            },
+            {
+                "package_id": "com.august.bennu",
+                "version_code": 240105706,
+                "version_name": "23.25.0",
+                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaDataCharacteristic`."
+            },
+            {
+                "package_id": "com.alloyhome.pass",
+                "version_code": 1447,
+                "version_name": "1.11.0",
+                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaDataCharacteristic`."
+            },
+            {
+                "package_id": "com.smartrent.propertymanagement",
+                "version_code": 2000001085,
+                "version_name": "1.13.0",
+                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaDataCharacteristic`."
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac613-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Receives August security-session and handshake-key management commands, including writing, committing and deleting authorization handshake keys.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The August SDK uses this characteristic under multiple smart-lock services, so no single parent applies.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.smartrent.resident",
+                "version_code": 9957,
+                "version_name": "3.11.3",
+                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.august.bennu",
+                "version_code": 240105706,
+                "version_name": "23.25.0",
+                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.alloyhome.pass",
+                "version_code": 1447,
+                "version_name": "1.11.0",
+                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.smartrent.propertymanagement",
+                "version_code": 2000001085,
+                "version_name": "1.13.0",
+                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac611-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Receives August smart-lock commands, including lock, unlock, unlatch and lock/door-state queries, on the regular data channel.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The August SDK uses this characteristic under multiple smart-lock services, so no single parent applies.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.smartrent.resident",
+                "version_code": 9957,
+                "version_name": "3.11.3",
+                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.august.bennu",
+                "version_code": 240105706,
+                "version_name": "23.25.0",
+                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.alloyhome.pass",
+                "version_code": 1447,
+                "version_name": "1.11.0",
+                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.smartrent.propertymanagement",
+                "version_code": 2000001085,
+                "version_name": "1.13.0",
+                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac614-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Returns August security-session and handshake-key management responses used to establish or terminate authorized communication.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The August SDK uses this characteristic under multiple smart-lock services, so no single parent applies.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.smartrent.resident",
+                "version_code": 9957,
+                "version_name": "3.11.3",
+                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.august.bennu",
+                "version_code": 240105706,
+                "version_name": "23.25.0",
+                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.alloyhome.pass",
+                "version_code": 1447,
+                "version_name": "1.11.0",
+                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.smartrent.propertymanagement",
+                "version_code": 2000001085,
+                "version_name": "1.13.0",
+                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
+        "UUID": "bd4ac612-0b45-11e3-8ffd-0800200c9a66",
+        "company": "August",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "Returns August smart-lock command results and lock/door-state query responses on the regular data channel.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The August SDK uses this characteristic under multiple smart-lock services, so no single parent applies.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.smartrent.resident",
+                "version_code": 9957,
+                "version_name": "3.11.3",
+                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.august.bennu",
+                "version_code": 240105706,
+                "version_name": "23.25.0",
+                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.alloyhome.pass",
+                "version_code": 1447,
+                "version_name": "1.11.0",
+                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.smartrent.propertymanagement",
+                "version_code": 2000001085,
+                "version_name": "1.13.0",
+                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ]
+    },
+    {
         "UUID": "bd3b092d-d5a3-4eeb-82fe-fde4371465fe",
         "company": "Third-party SDK code (declared in Java package `com.avion.app.ota.custom` — distinct from host com.cooperlighting.halohome; Phase-4 identification needed)",
         "UUID_name": "COMMAND_REQUEST_CHARACTERISTIC",
@@ -111376,6 +111803,31 @@
         ]
     },
     {
+        "UUID": "b41f3dc8-3fdf-411c-8e8a-b2a8607f7199",
+        "company": "Third-party SDK code (declared in Java package `com.securesmart.util` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
+        "UUID_name": "DEMO_CAMERA_1_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart.util` as Java field `DEMO_CAMERA_1_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DEMO_CAMERA_1_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `DEMO_CAMERA_1_ID`, declared in Java package `com.securesmart.util` (third-party SDK). Classification source: field-name:DEMO_CAMERA_1_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.emcsecurity.android",
+                "version_code": 258,
+                "version_name": "4.2.258",
+                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEMO_CAMERA_1_ID`."
+            }
+        ],
+        "parent_UUID": "ff01"
+    },
+    {
         "UUID": "b1651550-9379-cf1b-b299-58593a6a721d",
         "company": "Cosmoconnected (inferred from package id)",
         "UUID_name": "Unknown",
@@ -191079,6 +191531,34 @@
         "parent_UUID": "016e11b1-6c8a-4074-9e5a-076053f93784"
     },
     {
+        "UUID": "b31e89de-aa01-4784-b19c-61b7baa5f8b4",
+        "company": "Hilton",
+        "UUID_name": "Connected Room guest authentication",
+        "UUID_purpose": "Authenticates a guest stay to a Hilton Connected Room device by reading a nonce and writing an authentication token derived from the stay ID and room number.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.hilton.android.hhonors v2024.1.16 (versionCode 349), in Java field `f21343c`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "The Hilton app reads an authentication nonce and writes a guest token using this characteristic; the previous service role was an extractor inference.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.hilton.android.hhonors",
+                "version_code": 349,
+                "version_name": "2024.1.16",
+                "package_path": "BLUUID_APKS/0569/3daaeb584474fab9d74caa5108a9b69dbc4c9e403646b91edde8dbf035333fc8/3daaeb584474fab9d74caa5108a9b69dbc4c9e403646b91edde8dbf035333fc8.apk",
+                "description": "Guest authentication characteristic for Connected Room devices."
+            }
+        ]
+    },
+    {
         "UUID": "b31e89de-ca00-4784-b19c-61b7baa5f8b4",
         "company": "Hilton",
         "UUID_name": "HILTON_IBEACON_NOTIFY_CHARACTERISTIC",
@@ -191155,30 +191635,6 @@
                 "version_name": "2024.1.16",
                 "package_path": "BLUUID_APKS/0569/3daaeb584474fab9d74caa5108a9b69dbc4c9e403646b91edde8dbf035333fc8/3daaeb584474fab9d74caa5108a9b69dbc4c9e403646b91edde8dbf035333fc8.apk",
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f21342b`."
-            }
-        ]
-    },
-    {
-        "UUID": "b31e89de-aa01-4784-b19c-61b7baa5f8b4",
-        "company": "Hilton",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.hilton.android.hhonors, declared as Java field `f21343c`. Classification determined by file-level-default.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.hilton.android.hhonors v2024.1.16 (versionCode 349), in Java field `f21343c`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.hilton.android.hhonors",
-                "version_code": 349,
-                "version_name": "2024.1.16",
-                "package_path": "BLUUID_APKS/0569/3daaeb584474fab9d74caa5108a9b69dbc4c9e403646b91edde8dbf035333fc8/3daaeb584474fab9d74caa5108a9b69dbc4c9e403646b91edde8dbf035333fc8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `f21343c`."
             }
         ]
     },
@@ -194523,6 +194979,10 @@
             {
                 "description": "Source review identified this as a gatt service in com.tassta.sa.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Midland code uses this UUID as a service identifier and also compares it with a descriptor’s characteristic UUID. Both code roles are explicit; successful live lookups are unverified.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -240102,6 +240562,72 @@
         ]
     },
     {
+        "UUID": "ba1e0e9f-4d81-bae3-f748-3ad55da38b46",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "In the Silicon Labs throughput-test protocol, reports the current connection PHY, interval, latency, supervision timeout, and PDU and MTU sizes.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/throughput_peripheral/throughput_peripheral.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.xkglow.alphapro",
+                "version_code": 156,
+                "version_name": "1.5.6",
+                "package_path": "AndroZoo/apks/96/com.xkglow.alphapro_96A23F0E1F08333E244914D4C927D6046BEB92F8A60D3941A53E2D9449F46977.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
+        "UUID": "bbb99e70-fff7-46cf-abc7-2d32c71820f2",
+        "company": "Unknown",
+        "UUID_name": "Unknown",
+        "UUID_purpose": "In the Silicon Labs throughput-test protocol, exchanges test data, controls starting and stopping transmission, and reports the measured throughput.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "GitHub source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/throughput_peripheral/throughput_peripheral.xml",
+                "description": "GitHub source supports the described UUID function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.xkglow.alphapro",
+                "version_code": 156,
+                "version_name": "1.5.6",
+                "package_path": "AndroZoo/apks/96/com.xkglow.alphapro_96A23F0E1F08333E244914D4C927D6046BEB92F8A60D3941A53E2D9449F46977.apk",
+                "description": "Found by automated APK extraction; the GATT role needs source review."
+            }
+        ]
+    },
+    {
         "UUID": "b0890000-04e1-4e65-a906-4c83325c6e01",
         "company": "Smart Start, Inc.",
         "UUID_name": "Breath Check Configuration Service",
@@ -242220,412 +242746,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SETTINGS_SERVICE_UUID_STRING`."
             }
         ]
-    },
-    {
-        "UUID": "bd4ac610-0b45-11e3-8ffd-0800200c9a66",
-        "company": "Third-party SDK code (declared in Java package `com.august.ble2.proto` — distinct from host com.smartrent.resident; Phase-4 identification needed)",
-        "UUID_name": "V1_SUMMER_2014",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.smartrent.resident but declared in third-party SDK package `com.august.ble2.proto` as Java field `V1_SUMMER_2014`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), in Java field `V1_SUMMER_2014`, declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706), in Java field `V1_SUMMER_2014`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), in Java field `V1_SUMMER_2014`, declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), in Java field `V1_SUMMER_2014`, declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.smartrent.resident",
-                "version_code": 9957,
-                "version_name": "3.11.3",
-                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `V1_SUMMER_2014`."
-            },
-            {
-                "package_id": "com.august.bennu",
-                "version_code": 240105706,
-                "version_name": "23.25.0",
-                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `V1_SUMMER_2014`."
-            },
-            {
-                "package_id": "com.alloyhome.pass",
-                "version_code": 1447,
-                "version_name": "1.11.0",
-                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `V1_SUMMER_2014`."
-            },
-            {
-                "package_id": "com.smartrent.propertymanagement",
-                "version_code": 2000001085,
-                "version_name": "1.13.0",
-                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `V1_SUMMER_2014`."
-            }
-        ],
-        "parent_UUID": "3420d81a-af2c-11e5-bf7f-feff819cdc9f"
-    },
-    {
-        "UUID": "bd4ac611-0b45-11e3-8ffd-0800200c9a66",
-        "company": "Third-party SDK code (declared in Java package `com.august.ble2.proto` — distinct from host com.smartrent.resident; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.smartrent.resident but declared in third-party SDK package `com.august.ble2.proto`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.smartrent.resident",
-                "version_code": 9957,
-                "version_name": "3.11.3",
-                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.august.bennu",
-                "version_code": 240105706,
-                "version_name": "23.25.0",
-                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.alloyhome.pass",
-                "version_code": 1447,
-                "version_name": "1.11.0",
-                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.smartrent.propertymanagement",
-                "version_code": 2000001085,
-                "version_name": "1.13.0",
-                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            }
-        ],
-        "parent_UUID": "3420d81a-af2c-11e5-bf7f-feff819cdc9f"
-    },
-    {
-        "UUID": "bd4ac612-0b45-11e3-8ffd-0800200c9a66",
-        "company": "Third-party SDK code (declared in Java package `com.august.ble2.proto` — distinct from host com.smartrent.resident; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.smartrent.resident but declared in third-party SDK package `com.august.ble2.proto`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.smartrent.resident",
-                "version_code": 9957,
-                "version_name": "3.11.3",
-                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.august.bennu",
-                "version_code": 240105706,
-                "version_name": "23.25.0",
-                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.alloyhome.pass",
-                "version_code": 1447,
-                "version_name": "1.11.0",
-                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.smartrent.propertymanagement",
-                "version_code": 2000001085,
-                "version_name": "1.13.0",
-                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            }
-        ],
-        "parent_UUID": "3420d81a-af2c-11e5-bf7f-feff819cdc9f"
-    },
-    {
-        "UUID": "bd4ac613-0b45-11e3-8ffd-0800200c9a66",
-        "company": "Third-party SDK code (declared in Java package `com.august.ble2.proto` — distinct from host com.smartrent.resident; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.smartrent.resident but declared in third-party SDK package `com.august.ble2.proto`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.smartrent.resident",
-                "version_code": 9957,
-                "version_name": "3.11.3",
-                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.august.bennu",
-                "version_code": 240105706,
-                "version_name": "23.25.0",
-                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.alloyhome.pass",
-                "version_code": 1447,
-                "version_name": "1.11.0",
-                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.smartrent.propertymanagement",
-                "version_code": 2000001085,
-                "version_name": "1.13.0",
-                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            }
-        ],
-        "parent_UUID": "3420d81a-af2c-11e5-bf7f-feff819cdc9f"
-    },
-    {
-        "UUID": "bd4ac614-0b45-11e3-8ffd-0800200c9a66",
-        "company": "Third-party SDK code (declared in Java package `com.august.ble2.proto` — distinct from host com.smartrent.resident; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.smartrent.resident but declared in third-party SDK package `com.august.ble2.proto`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), declared in Java package `com.august.ble2.proto` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.smartrent.resident",
-                "version_code": 9957,
-                "version_name": "3.11.3",
-                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.august.bennu",
-                "version_code": 240105706,
-                "version_name": "23.25.0",
-                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.alloyhome.pass",
-                "version_code": 1447,
-                "version_name": "1.11.0",
-                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.smartrent.propertymanagement",
-                "version_code": 2000001085,
-                "version_name": "1.13.0",
-                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            }
-        ],
-        "parent_UUID": "3420d81a-af2c-11e5-bf7f-feff819cdc9f"
-    },
-    {
-        "UUID": "bd4ac615-0b45-11e3-8ffd-0800200c9a66",
-        "company": "Third-party SDK code (declared in Java package `com.augustsdk.proto` — distinct from host com.smartrent.resident; Phase-4 identification needed)",
-        "UUID_name": "otaCommandCharacteristic",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.smartrent.resident but declared in third-party SDK package `com.augustsdk.proto` as Java field `otaCommandCharacteristic`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:otaCommandCharacteristic.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), in Java field `otaCommandCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaCommandCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706), in Java field `otaCommandCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: cross-file usage:getCharacteristic(otaCommandCharacteristic).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), in Java field `otaCommandCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaCommandCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), in Java field `otaCommandCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaCommandCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.smartrent.resident",
-                "version_code": 9957,
-                "version_name": "3.11.3",
-                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaCommandCharacteristic`."
-            },
-            {
-                "package_id": "com.august.bennu",
-                "version_code": 240105706,
-                "version_name": "23.25.0",
-                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaCommandCharacteristic`."
-            },
-            {
-                "package_id": "com.alloyhome.pass",
-                "version_code": 1447,
-                "version_name": "1.11.0",
-                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaCommandCharacteristic`."
-            },
-            {
-                "package_id": "com.smartrent.propertymanagement",
-                "version_code": 2000001085,
-                "version_name": "1.13.0",
-                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaCommandCharacteristic`."
-            }
-        ],
-        "parent_UUID": "3420d81a-af2c-11e5-bf7f-feff819cdc9f"
-    },
-    {
-        "UUID": "bd4ac616-0b45-11e3-8ffd-0800200c9a66",
-        "company": "Third-party SDK code (declared in Java package `com.augustsdk.proto` — distinct from host com.smartrent.resident; Phase-4 identification needed)",
-        "UUID_name": "otaDataCharacteristic",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.smartrent.resident but declared in third-party SDK package `com.augustsdk.proto` as Java field `otaDataCharacteristic`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:otaDataCharacteristic.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.smartrent.resident v3.11.3 (versionCode 9957), in Java field `otaDataCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaDataCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.august.bennu v23.25.0 (versionCode 240105706), in Java field `otaDataCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: cross-file usage:getCharacteristic(otaDataCharacteristic).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.alloyhome.pass v1.11.0 (versionCode 1447), in Java field `otaDataCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaDataCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.smartrent.propertymanagement v1.13.0 (versionCode 2000001085), in Java field `otaDataCharacteristic`, declared in Java package `com.augustsdk.proto` (third-party SDK). Classification source: field-name:otaDataCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.smartrent.resident",
-                "version_code": 9957,
-                "version_name": "3.11.3",
-                "package_path": "BLUUID_APKS/0487/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777/edb143e6bf3c743d539bb27663d3640f76208a9c8b992b4e585e51a621c21777.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaDataCharacteristic`."
-            },
-            {
-                "package_id": "com.august.bennu",
-                "version_code": 240105706,
-                "version_name": "23.25.0",
-                "package_path": "BLUUID_APKS/0525/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64/8bb153943adb7c24a90e6e9ef46e94e93a4fd4cfc3773c81e94980f6200f0a64.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaDataCharacteristic`."
-            },
-            {
-                "package_id": "com.alloyhome.pass",
-                "version_code": 1447,
-                "version_name": "1.11.0",
-                "package_path": "BLUUID_APKS/0724/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38/919ce63bb25d1f8e9fff56fd5de3dfae3e27ed0772d6a78aa77d0396eec23d38.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaDataCharacteristic`."
-            },
-            {
-                "package_id": "com.smartrent.propertymanagement",
-                "version_code": 2000001085,
-                "version_name": "1.13.0",
-                "package_path": "BLUUID_APKS/0741/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f/b85e8f19d83077fbf23b1f58e515f4f68cd5e6d5e086ca5b99f1ee412e27412f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `otaDataCharacteristic`."
-            }
-        ],
-        "parent_UUID": "3420d81a-af2c-11e5-bf7f-feff819cdc9f"
     },
     {
         "UUID": "b65d50ef-db0a-4f24-9e32-189bf1d5f6d5",
@@ -246023,31 +246143,6 @@
         "parent_UUID": "00000000-cb73-437d-8fad-842c16c7aa6f"
     },
     {
-        "UUID": "b41f3dc8-3fdf-411c-8e8a-b2a8607f7199",
-        "company": "Third-party SDK code (declared in Java package `com.securesmart.util` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
-        "UUID_name": "DEMO_CAMERA_1_ID",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart.util` as Java field `DEMO_CAMERA_1_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:DEMO_CAMERA_1_ID.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `DEMO_CAMERA_1_ID`, declared in Java package `com.securesmart.util` (third-party SDK). Classification source: field-name:DEMO_CAMERA_1_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.emcsecurity.android",
-                "version_code": 258,
-                "version_name": "4.2.258",
-                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEMO_CAMERA_1_ID`."
-            }
-        ],
-        "parent_UUID": "ff01"
-    },
-    {
         "UUID": "be26bb70-06fb-4b1a-a4e6-2c3d3d27ea84",
         "company": "Third-party SDK code (declared in Java package `com.slacorp.eptt.android.common` — distinct from host com.symbol.wfc.pttpro; Phase-4 identification needed)",
         "UUID_name": "SYMBOL_PROXY_OUTPUT_NOTIFY_CHARACTERISTIC",
@@ -247768,10 +247863,9 @@
     {
         "UUID": "bd984507-f885-4645-befa-d89d032242e4",
         "company": "Third-party SDK code (declared in Java package `defpackage` — distinct from host com.pushd.client; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Service observed in Android app com.pushd.client but declared in third-party SDK package `defpackage` as Java field `h`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getService(h).",
+        "UUID_name": "Frame Portrait Orientation",
+        "UUID_purpose": "Reports whether an Aura digital photo frame is in portrait orientation.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -247782,6 +247876,10 @@
             {
                 "description": "Source review identified this as a gatt characteristic in com.pushd.client.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Both listed Aura/Pushd app versions bind this UUID to the portrait-orientation characteristic. The older app compares it with BluetoothGattCharacteristic.getUuid and parses its value as a Boolean; the newer app places it in FrameCharacteristic.IsPortrait.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -247790,7 +247888,7 @@
                 "version_code": 1163,
                 "version_name": "4.7.1163",
                 "package_path": "BLUUID_APKS/0149/d82fac6e9322706e37f5ccfada50713f7df98a1d1f1ecd1299475b47b2dc84b8/d82fac6e9322706e37f5ccfada50713f7df98a1d1f1ecd1299475b47b2dc84b8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `h`."
+                "description": "The extractor initially inferred a service; source review identifies a frame-orientation characteristic."
             },
             {
                 "package_id": "com.pushd.client",
@@ -253066,72 +253164,6 @@
             },
             {
                 "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/gatt_service_imu/sl_gatt_service_imu.c",
-                "description": "GitHub source supports the described UUID function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.xkglow.alphapro",
-                "version_code": 156,
-                "version_name": "1.5.6",
-                "package_path": "AndroZoo/apks/96/com.xkglow.alphapro_96A23F0E1F08333E244914D4C927D6046BEB92F8A60D3941A53E2D9449F46977.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
-        "UUID": "bbb99e70-fff7-46cf-abc7-2d32c71820f2",
-        "company": "Unknown",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "In the Silicon Labs throughput-test protocol, exchanges test data, controls starting and stopping transmission, and reports the measured throughput.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "GitHub source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            },
-            {
-                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/throughput_peripheral/throughput_peripheral.xml",
-                "description": "GitHub source supports the described UUID function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.xkglow.alphapro",
-                "version_code": 156,
-                "version_name": "1.5.6",
-                "package_path": "AndroZoo/apks/96/com.xkglow.alphapro_96A23F0E1F08333E244914D4C927D6046BEB92F8A60D3941A53E2D9449F46977.apk",
-                "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
-        "UUID": "ba1e0e9f-4d81-bae3-f748-3ad55da38b46",
-        "company": "Unknown",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "In the Silicon Labs throughput-test protocol, reports the current connection PHY, interval, latency, supervision timeout, and PDU and MTU sizes.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in com.xkglow.alphapro; its GATT role and company need source review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            },
-            {
-                "description": "GitHub source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            },
-            {
-                "URL": "https://github.com/SiliconLabs/gecko_sdk/blob/8a2efd2cb191cb250fd4c1e655b16b8a80be1997/app/bluetooth/common/throughput_peripheral/throughput_peripheral.xml",
                 "description": "GitHub source supports the described UUID function.",
                 "submitter": "OpenAI Codex (GPT-6.1 Sol)"
             }

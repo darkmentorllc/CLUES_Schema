@@ -895,65 +895,6 @@
         "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
     },
     {
-        "UUID": "278b67fe-266b-406c-bd40-25379402b58d",
-        "company": "Third-party SDK code (declared in Java package `com.biointellisense` — distinct from host com.noteworth.wl3.android; Phase-4 identification needed)",
-        "UUID_name": "Unknown",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.noteworth.wl3.android but declared in third-party SDK package `com.biointellisense`. The host APK's vendor is NOT the UUID owner; the SDK author is. No Java field-name hint (obfuscated).",
-        "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.noteworth.wl3.android v1.0.4 (versionCode 20403), declared in Java package `com.biointellisense` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.noteworth.android2 v1.0.61 (versionCode 20403), declared in Java package `com.biointellisense` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.noteworth.wl1.android v1.0.16 (versionCode 20404), declared in Java package `com.biointellisense` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Source review identified this as a gatt service in com.fortify.uhcmotion.app.",
-                "submitter": "GPT-6 Luna"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.noteworth.wl3.android",
-                "version_code": 20403,
-                "version_name": "1.0.4",
-                "package_path": "AndroZoo/apks/a9/com.noteworth.wl3.android_A922B7DA53B7C52DC88F6DB6CE35A9D5AE0411DC86D50881F336E141A55DE34A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.noteworth.android2",
-                "version_code": 20403,
-                "version_name": "1.0.61",
-                "package_path": "AndroZoo/apks/94/com.noteworth.android2_9472CCA794EBD10AFEFE6CE5B81D9E0DBF3BBA88BB5B0617A0A45A2FC05A132E.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.noteworth.wl1.android",
-                "version_code": 20404,
-                "version_name": "1.0.16",
-                "package_path": "AndroZoo/apks/56/com.noteworth.wl1.android_5675C786A32D1677333E45C12AED39D6860D64EFA9D0B213E02E5ECDAC6DDD1F.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.fortify.uhcmotion.app",
-                "version_code": 339,
-                "version_name": "4.9.16.5",
-                "package_path": "AndroZoo/apks/e3/com.fortify.uhcmotion.app_E3A5FE8C4CE7A4B55130D8EE6C5E2751679B5E78F5C67EF0E8039B30E385E90D.apk",
-                "description": "Source review identified a gatt service in this app."
-            }
-        ],
-        "parent_UUID": "00001530-1212-efde-1523-785feabcd123"
-    },
-    {
         "UUID": "27f0",
         "company": "Third-party SDK code (declared in Java package `gm` — distinct from host com.titan.fastrack.reflex; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -3442,313 +3383,6 @@
             }
         ],
         "parent_UUID": "000001ff-3c17-d293-8e48-14fe2e4da212"
-    },
-    {
-        "UUID": "2610fc04-494d-494c-4544-55544954414c",
-        "company": "Third-party SDK code (declared in Java package `com.longitude.bluetooth` — distinct from host com.aldi_project; Phase-4 identification needed)",
-        "UUID_name": "WRISTBAND_STATUS_CURRENT_NORDIC",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.aldi_project but declared in third-party SDK package `com.longitude.bluetooth` as Java field `WRISTBAND_STATUS_CURRENT_NORDIC`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(WRISTBAND_STATUS_CURRENT_NORDIC).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.aldi_project v1.0.77 (versionCode 79), in Java field `WRISTBAND_STATUS_CURRENT_NORDIC`, declared in Java package `com.longitude.bluetooth` (third-party SDK). Classification source: cross-file usage:getCharacteristic(WRISTBAND_STATUS_CURRENT_NORDIC).",
-                "submitter": "GPT-6 Sol"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.aldi_project",
-                "version_code": 79,
-                "version_name": "1.0.77",
-                "package_path": "AndroZoo/apks/45/com.aldi_project_4536038C856F7290F4D1B71C10B8234CFCDC69C8832AA93D458E90BF1493B343.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WRISTBAND_STATUS_CURRENT_NORDIC`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
-    },
-    {
-        "UUID": "2c03",
-        "company": "Blue Jay Transit Inc.",
-        "UUID_name": "BIRD_FLEX_STATUS_NOTIFY_UUID / UUID_PPG_READ",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app co.bird.android, declared as Java field `uuidFromString7`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of co.bird.android v4.276.0.5 (versionCode 905660), in Java field `uuidFromString7`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
-            },
-            {
-                "URL": "https://apkpure.net/bird-scooter/co.bird.android/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.noisefit v4.3.5 (versionCode 520), in Java field `f36608i`, declared in Java package `com.zhapp.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f36608i).",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.thinkrace.oplay_watch vV2.1.0 (versionCode 23071009), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.oplayer.xwatch4 vV2.1.0 (versionCode 23071009), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.honbow.fitdock v3.6.18 (versionCode 3618), in Java field `f15665i`, declared in Java package `com.zhapp.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f15665i).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.zjw.apps3pluspro v1.0.79 (versionCode 79), in Java field `UUID_PPG_READ`, declared in Java package `com.zhapp.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.zhapp.infowear v8.2.0 (versionCode 82), in Java field `UUID_PPG_READ`. Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tier.app v4.0.128 (versionCode 40005403), in Java field `r`. Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.noisefit.luna v1.1.5 (versionCode 71), in Java field `f25716i`, declared in Java package `com.zhapp.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f25716i).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.intersales.denversw450 vV2.2.1 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.zjw.xwfit v1.0.67 (versionCode 67), in Java field `UUID_PPG_READ`. Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.tozostore.health v2.0.3 (versionCode 2024020401), in Java field `f15798h`, declared in Java package `k8` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f15798h).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.zhapp.zerolifestyle v5.0.0 (versionCode 50), in Java field `UUID_PPG_READ`. Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.oplayer.osportplus vV2.2.2 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.zjw.noisefitsync v3.9.0 (versionCode 39), in Java field `UUID_PPG_READ`, declared in Java package `com.zhapp.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.oplayer.silvercrest vV1.1.1 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.oplayer.orunningsw vV2.1.1 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.intersales.denversmartlife vV2.1.2 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.zjw.ffit v1.0.53 (versionCode 53), in Java field `UUID_PPG_READ`. Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.intersales.denversw500 vV2.2.1 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.oplayer.dofit vV2.2.1 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.cyber.scooter v1.1.6 (versionCode 32), declared in Java package `a.a.a.a` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.zjw.cloetime v1.0.68 (versionCode 68), in Java field `e3`. Classification source: usage:getCharacteristic.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
-            },
-            {
-                "URL": "https://apkpure.net/honbow/com.honbow.fitdock/download/3.6.18",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "co.bird.android",
-                "version_code": 905660,
-                "version_name": "4.276.0.5",
-                "package_path": "BLUUID_APKS/0023/680ba4ab4038c92dace877cdab32299677673a0fca323d16419cc36e97ef19c2/680ba4ab4038c92dace877cdab32299677673a0fca323d16419cc36e97ef19c2.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidFromString7`."
-            },
-            {
-                "package_id": "com.noisefit",
-                "version_code": 520,
-                "version_name": "4.3.5",
-                "package_path": "BLUUID_APKS/0216/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f36608i`."
-            },
-            {
-                "package_id": "com.thinkrace.oplay_watch",
-                "version_code": 23071009,
-                "version_name": "V2.1.0",
-                "package_path": "BLUUID_APKS/0322/4677baab22e3205d3548927de4d0021acf7633f5b757aa805a7a1cff3203a54a/4677baab22e3205d3548927de4d0021acf7633f5b757aa805a7a1cff3203a54a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
-            },
-            {
-                "package_id": "com.oplayer.xwatch4",
-                "version_code": 23071009,
-                "version_name": "V2.1.0",
-                "package_path": "BLUUID_APKS/0324/02d56f2ba116ecaa7a8ba5ec070d89395669e58f784d50d06b7445e98bafe221/02d56f2ba116ecaa7a8ba5ec070d89395669e58f784d50d06b7445e98bafe221.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
-            },
-            {
-                "package_id": "com.honbow.fitdock",
-                "version_code": 3618,
-                "version_name": "3.6.18",
-                "package_path": "BLUUID_APKS/0368/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f15665i`."
-            },
-            {
-                "package_id": "com.zjw.apps3pluspro",
-                "version_code": 79,
-                "version_name": "1.0.79",
-                "package_path": "BLUUID_APKS/0415/5daef66a1727c8451e2d3ed27858708a1a479591ad3cc4110921c6f4a3b36529/5daef66a1727c8451e2d3ed27858708a1a479591ad3cc4110921c6f4a3b36529.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
-            },
-            {
-                "package_id": "com.zhapp.infowear",
-                "version_code": 82,
-                "version_name": "8.2.0",
-                "package_path": "BLUUID_APKS/0474/4212815dc835fed455856a92715042501f0bfcbf0290d6235ee81119989519fa/4212815dc835fed455856a92715042501f0bfcbf0290d6235ee81119989519fa.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
-            },
-            {
-                "package_id": "com.tier.app",
-                "version_code": 40005403,
-                "version_name": "4.0.128",
-                "package_path": "BLUUID_APKS/0490/270ca08146d7b01d4b20c2af5d2031eff5193226e0f5cf8316c4a22b9d9aa11c/270ca08146d7b01d4b20c2af5d2031eff5193226e0f5cf8316c4a22b9d9aa11c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `r`."
-            },
-            {
-                "package_id": "com.noisefit.luna",
-                "version_code": 71,
-                "version_name": "1.1.5",
-                "package_path": "BLUUID_APKS/0536/5fff309c10907c430c71f38eb95b20fc5affc8b00430016c97112554ecc3d560/5fff309c10907c430c71f38eb95b20fc5affc8b00430016c97112554ecc3d560.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f25716i`."
-            },
-            {
-                "package_id": "com.intersales.denversw450",
-                "version_code": 24010409,
-                "version_name": "V2.2.1",
-                "package_path": "BLUUID_APKS/0571/cfe787b259c2d7a8a673fecc78904d1b87a36b802810faebfabeda56d13cb373/cfe787b259c2d7a8a673fecc78904d1b87a36b802810faebfabeda56d13cb373.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
-            },
-            {
-                "package_id": "com.zjw.xwfit",
-                "version_code": 67,
-                "version_name": "1.0.67",
-                "package_path": "BLUUID_APKS/0590/8d82c06c16baddefa5a890c0c15bda73dd2b52c4003fe2c9f932953d08e6062f/8d82c06c16baddefa5a890c0c15bda73dd2b52c4003fe2c9f932953d08e6062f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
-            },
-            {
-                "package_id": "com.tozostore.health",
-                "version_code": 2024020401,
-                "version_name": "2.0.3",
-                "package_path": "BLUUID_APKS/0647/aac34acb7522c3e034f0b09f1fd2bbd3162cd0f6cb0aecb82d2e4e12ee60f8eb/aac34acb7522c3e034f0b09f1fd2bbd3162cd0f6cb0aecb82d2e4e12ee60f8eb.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f15798h`."
-            },
-            {
-                "package_id": "com.zhapp.zerolifestyle",
-                "version_code": 50,
-                "version_name": "5.0.0",
-                "package_path": "BLUUID_APKS/0713/ff12c6ab00c769a1ba5fac552971ff4525d8701aa8ab4d7908128f00388613e9/ff12c6ab00c769a1ba5fac552971ff4525d8701aa8ab4d7908128f00388613e9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
-            },
-            {
-                "package_id": "com.oplayer.osportplus",
-                "version_code": 24010409,
-                "version_name": "V2.2.2",
-                "package_path": "BLUUID_APKS/0725/c912d8bf6797f6167e899193ce0a83284c2075cfe9c68a41204cb7b726fea87a/c912d8bf6797f6167e899193ce0a83284c2075cfe9c68a41204cb7b726fea87a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
-            },
-            {
-                "package_id": "com.zjw.noisefitsync",
-                "version_code": 39,
-                "version_name": "3.9.0",
-                "package_path": "BLUUID_APKS/0742/af5380d61fdff6f041676265068beb8d575d376e8a3c27878074faeae0199fbd/af5380d61fdff6f041676265068beb8d575d376e8a3c27878074faeae0199fbd.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
-            },
-            {
-                "package_id": "com.oplayer.silvercrest",
-                "version_code": 24010409,
-                "version_name": "V1.1.1",
-                "package_path": "BLUUID_APKS/0744/d3cd02f620b9d7a76a373251b49686b739c60eab99dd242ce7c3e2fd8707e01e/d3cd02f620b9d7a76a373251b49686b739c60eab99dd242ce7c3e2fd8707e01e.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
-            },
-            {
-                "package_id": "com.oplayer.orunningsw",
-                "version_code": 24010409,
-                "version_name": "V2.1.1",
-                "package_path": "BLUUID_APKS/0791/ef4f37f7312cac88cde3f1f2171e9a3177ad572a1dd26434d3ee9627cf317c9b/ef4f37f7312cac88cde3f1f2171e9a3177ad572a1dd26434d3ee9627cf317c9b.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
-            },
-            {
-                "package_id": "com.intersales.denversmartlife",
-                "version_code": 24010409,
-                "version_name": "V2.1.2",
-                "package_path": "BLUUID_APKS/0802/5e6db4990533af0b55215456e75c4f71472f9e7688f98f233fb957975fffe6fd/5e6db4990533af0b55215456e75c4f71472f9e7688f98f233fb957975fffe6fd.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
-            },
-            {
-                "package_id": "com.zjw.ffit",
-                "version_code": 53,
-                "version_name": "1.0.53",
-                "package_path": "BLUUID_APKS/0817/3a75ffcc6d7d4e806da4a67da10f5de7c5eef525f2d5f0c4a44b4a6fb80fa1c6/3a75ffcc6d7d4e806da4a67da10f5de7c5eef525f2d5f0c4a44b4a6fb80fa1c6.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
-            },
-            {
-                "package_id": "com.intersales.denversw500",
-                "version_code": 24010409,
-                "version_name": "V2.2.1",
-                "package_path": "BLUUID_APKS/0881/71c72d54f45257b31c14f515bc1692671809d9fffc66b79a7b6a4b44ccc8155a/71c72d54f45257b31c14f515bc1692671809d9fffc66b79a7b6a4b44ccc8155a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
-            },
-            {
-                "package_id": "com.oplayer.dofit",
-                "version_code": 24010409,
-                "version_name": "V2.2.1",
-                "package_path": "BLUUID_APKS/0935/fb789ecd1253d24ec868505db08a32bac26cb8b3339760a91c00b41feade9940/fb789ecd1253d24ec868505db08a32bac26cb8b3339760a91c00b41feade9940.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
-            },
-            {
-                "package_id": "com.cyber.scooter",
-                "version_code": 32,
-                "version_name": "1.1.6",
-                "package_path": "BLUUID_APKS/0943/af15eea7a134c0ee57048d80a72f25f9c6b780c42ca02c571a6fe076b41a499e/af15eea7a134c0ee57048d80a72f25f9c6b780c42ca02c571a6fe076b41a499e.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.zjw.cloetime",
-                "version_code": 68,
-                "version_name": "1.0.68",
-                "package_path": "BLUUID_APKS/0954/d747e8be7b5090f1a3cc573ff2b2cc7e345f77bf3fac2f1b5a15b816789b00fa/d747e8be7b5090f1a3cc573ff2b2cc7e345f77bf3fac2f1b5a15b816789b00fa.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `e3`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
     },
     {
         "UUID": "2503",
@@ -7319,6 +6953,313 @@
             }
         ],
         "parent_UUID": "60000003-0000-1000-8000-00805f9b34fb"
+    },
+    {
+        "UUID": "2610fc04-494d-494c-4544-55544954414c",
+        "company": "Third-party SDK code (declared in Java package `com.longitude.bluetooth` — distinct from host com.aldi_project; Phase-4 identification needed)",
+        "UUID_name": "WRISTBAND_STATUS_CURRENT_NORDIC",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.aldi_project but declared in third-party SDK package `com.longitude.bluetooth` as Java field `WRISTBAND_STATUS_CURRENT_NORDIC`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(WRISTBAND_STATUS_CURRENT_NORDIC).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.aldi_project v1.0.77 (versionCode 79), in Java field `WRISTBAND_STATUS_CURRENT_NORDIC`, declared in Java package `com.longitude.bluetooth` (third-party SDK). Classification source: cross-file usage:getCharacteristic(WRISTBAND_STATUS_CURRENT_NORDIC).",
+                "submitter": "GPT-6 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.aldi_project",
+                "version_code": 79,
+                "version_name": "1.0.77",
+                "package_path": "AndroZoo/apks/45/com.aldi_project_4536038C856F7290F4D1B71C10B8234CFCDC69C8832AA93D458E90BF1493B343.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WRISTBAND_STATUS_CURRENT_NORDIC`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
+    },
+    {
+        "UUID": "2c03",
+        "company": "Blue Jay Transit Inc.",
+        "UUID_name": "BIRD_FLEX_STATUS_NOTIFY_UUID / UUID_PPG_READ",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app co.bird.android, declared as Java field `uuidFromString7`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of co.bird.android v4.276.0.5 (versionCode 905660), in Java field `uuidFromString7`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+            },
+            {
+                "URL": "https://apkpure.net/bird-scooter/co.bird.android/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.noisefit v4.3.5 (versionCode 520), in Java field `f36608i`, declared in Java package `com.zhapp.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f36608i).",
+                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.thinkrace.oplay_watch vV2.1.0 (versionCode 23071009), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oplayer.xwatch4 vV2.1.0 (versionCode 23071009), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.honbow.fitdock v3.6.18 (versionCode 3618), in Java field `f15665i`, declared in Java package `com.zhapp.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f15665i).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zjw.apps3pluspro v1.0.79 (versionCode 79), in Java field `UUID_PPG_READ`, declared in Java package `com.zhapp.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zhapp.infowear v8.2.0 (versionCode 82), in Java field `UUID_PPG_READ`. Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tier.app v4.0.128 (versionCode 40005403), in Java field `r`. Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.noisefit.luna v1.1.5 (versionCode 71), in Java field `f25716i`, declared in Java package `com.zhapp.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f25716i).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.intersales.denversw450 vV2.2.1 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zjw.xwfit v1.0.67 (versionCode 67), in Java field `UUID_PPG_READ`. Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.tozostore.health v2.0.3 (versionCode 2024020401), in Java field `f15798h`, declared in Java package `k8` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f15798h).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zhapp.zerolifestyle v5.0.0 (versionCode 50), in Java field `UUID_PPG_READ`. Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oplayer.osportplus vV2.2.2 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zjw.noisefitsync v3.9.0 (versionCode 39), in Java field `UUID_PPG_READ`, declared in Java package `com.zhapp.ble` (third-party SDK). Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oplayer.silvercrest vV1.1.1 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oplayer.orunningsw vV2.1.1 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.intersales.denversmartlife vV2.1.2 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zjw.ffit v1.0.53 (versionCode 53), in Java field `UUID_PPG_READ`. Classification source: cross-file usage:getCharacteristic(UUID_PPG_READ).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.intersales.denversw500 vV2.2.1 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.oplayer.dofit vV2.2.1 (versionCode 24010409), in Java field `h`, declared in Java package `com.zjw.zhbraceletsdk.service` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.cyber.scooter v1.1.6 (versionCode 32), declared in Java package `a.a.a.a` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.zjw.cloetime v1.0.68 (versionCode 68), in Java field `e3`. Classification source: usage:getCharacteristic.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+            },
+            {
+                "URL": "https://apkpure.net/honbow/com.honbow.fitdock/download/3.6.18",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7), with UUID_Name found by GPT 5.5 (Extra High)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "co.bird.android",
+                "version_code": 905660,
+                "version_name": "4.276.0.5",
+                "package_path": "BLUUID_APKS/0023/680ba4ab4038c92dace877cdab32299677673a0fca323d16419cc36e97ef19c2/680ba4ab4038c92dace877cdab32299677673a0fca323d16419cc36e97ef19c2.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidFromString7`."
+            },
+            {
+                "package_id": "com.noisefit",
+                "version_code": 520,
+                "version_name": "4.3.5",
+                "package_path": "BLUUID_APKS/0216/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f36608i`."
+            },
+            {
+                "package_id": "com.thinkrace.oplay_watch",
+                "version_code": 23071009,
+                "version_name": "V2.1.0",
+                "package_path": "BLUUID_APKS/0322/4677baab22e3205d3548927de4d0021acf7633f5b757aa805a7a1cff3203a54a/4677baab22e3205d3548927de4d0021acf7633f5b757aa805a7a1cff3203a54a.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.oplayer.xwatch4",
+                "version_code": 23071009,
+                "version_name": "V2.1.0",
+                "package_path": "BLUUID_APKS/0324/02d56f2ba116ecaa7a8ba5ec070d89395669e58f784d50d06b7445e98bafe221/02d56f2ba116ecaa7a8ba5ec070d89395669e58f784d50d06b7445e98bafe221.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.honbow.fitdock",
+                "version_code": 3618,
+                "version_name": "3.6.18",
+                "package_path": "BLUUID_APKS/0368/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f15665i`."
+            },
+            {
+                "package_id": "com.zjw.apps3pluspro",
+                "version_code": 79,
+                "version_name": "1.0.79",
+                "package_path": "BLUUID_APKS/0415/5daef66a1727c8451e2d3ed27858708a1a479591ad3cc4110921c6f4a3b36529/5daef66a1727c8451e2d3ed27858708a1a479591ad3cc4110921c6f4a3b36529.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
+            },
+            {
+                "package_id": "com.zhapp.infowear",
+                "version_code": 82,
+                "version_name": "8.2.0",
+                "package_path": "BLUUID_APKS/0474/4212815dc835fed455856a92715042501f0bfcbf0290d6235ee81119989519fa/4212815dc835fed455856a92715042501f0bfcbf0290d6235ee81119989519fa.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
+            },
+            {
+                "package_id": "com.tier.app",
+                "version_code": 40005403,
+                "version_name": "4.0.128",
+                "package_path": "BLUUID_APKS/0490/270ca08146d7b01d4b20c2af5d2031eff5193226e0f5cf8316c4a22b9d9aa11c/270ca08146d7b01d4b20c2af5d2031eff5193226e0f5cf8316c4a22b9d9aa11c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `r`."
+            },
+            {
+                "package_id": "com.noisefit.luna",
+                "version_code": 71,
+                "version_name": "1.1.5",
+                "package_path": "BLUUID_APKS/0536/5fff309c10907c430c71f38eb95b20fc5affc8b00430016c97112554ecc3d560/5fff309c10907c430c71f38eb95b20fc5affc8b00430016c97112554ecc3d560.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f25716i`."
+            },
+            {
+                "package_id": "com.intersales.denversw450",
+                "version_code": 24010409,
+                "version_name": "V2.2.1",
+                "package_path": "BLUUID_APKS/0571/cfe787b259c2d7a8a673fecc78904d1b87a36b802810faebfabeda56d13cb373/cfe787b259c2d7a8a673fecc78904d1b87a36b802810faebfabeda56d13cb373.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.zjw.xwfit",
+                "version_code": 67,
+                "version_name": "1.0.67",
+                "package_path": "BLUUID_APKS/0590/8d82c06c16baddefa5a890c0c15bda73dd2b52c4003fe2c9f932953d08e6062f/8d82c06c16baddefa5a890c0c15bda73dd2b52c4003fe2c9f932953d08e6062f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
+            },
+            {
+                "package_id": "com.tozostore.health",
+                "version_code": 2024020401,
+                "version_name": "2.0.3",
+                "package_path": "BLUUID_APKS/0647/aac34acb7522c3e034f0b09f1fd2bbd3162cd0f6cb0aecb82d2e4e12ee60f8eb/aac34acb7522c3e034f0b09f1fd2bbd3162cd0f6cb0aecb82d2e4e12ee60f8eb.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f15798h`."
+            },
+            {
+                "package_id": "com.zhapp.zerolifestyle",
+                "version_code": 50,
+                "version_name": "5.0.0",
+                "package_path": "BLUUID_APKS/0713/ff12c6ab00c769a1ba5fac552971ff4525d8701aa8ab4d7908128f00388613e9/ff12c6ab00c769a1ba5fac552971ff4525d8701aa8ab4d7908128f00388613e9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
+            },
+            {
+                "package_id": "com.oplayer.osportplus",
+                "version_code": 24010409,
+                "version_name": "V2.2.2",
+                "package_path": "BLUUID_APKS/0725/c912d8bf6797f6167e899193ce0a83284c2075cfe9c68a41204cb7b726fea87a/c912d8bf6797f6167e899193ce0a83284c2075cfe9c68a41204cb7b726fea87a.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.zjw.noisefitsync",
+                "version_code": 39,
+                "version_name": "3.9.0",
+                "package_path": "BLUUID_APKS/0742/af5380d61fdff6f041676265068beb8d575d376e8a3c27878074faeae0199fbd/af5380d61fdff6f041676265068beb8d575d376e8a3c27878074faeae0199fbd.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
+            },
+            {
+                "package_id": "com.oplayer.silvercrest",
+                "version_code": 24010409,
+                "version_name": "V1.1.1",
+                "package_path": "BLUUID_APKS/0744/d3cd02f620b9d7a76a373251b49686b739c60eab99dd242ce7c3e2fd8707e01e/d3cd02f620b9d7a76a373251b49686b739c60eab99dd242ce7c3e2fd8707e01e.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.oplayer.orunningsw",
+                "version_code": 24010409,
+                "version_name": "V2.1.1",
+                "package_path": "BLUUID_APKS/0791/ef4f37f7312cac88cde3f1f2171e9a3177ad572a1dd26434d3ee9627cf317c9b/ef4f37f7312cac88cde3f1f2171e9a3177ad572a1dd26434d3ee9627cf317c9b.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.intersales.denversmartlife",
+                "version_code": 24010409,
+                "version_name": "V2.1.2",
+                "package_path": "BLUUID_APKS/0802/5e6db4990533af0b55215456e75c4f71472f9e7688f98f233fb957975fffe6fd/5e6db4990533af0b55215456e75c4f71472f9e7688f98f233fb957975fffe6fd.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.zjw.ffit",
+                "version_code": 53,
+                "version_name": "1.0.53",
+                "package_path": "BLUUID_APKS/0817/3a75ffcc6d7d4e806da4a67da10f5de7c5eef525f2d5f0c4a44b4a6fb80fa1c6/3a75ffcc6d7d4e806da4a67da10f5de7c5eef525f2d5f0c4a44b4a6fb80fa1c6.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `UUID_PPG_READ`."
+            },
+            {
+                "package_id": "com.intersales.denversw500",
+                "version_code": 24010409,
+                "version_name": "V2.2.1",
+                "package_path": "BLUUID_APKS/0881/71c72d54f45257b31c14f515bc1692671809d9fffc66b79a7b6a4b44ccc8155a/71c72d54f45257b31c14f515bc1692671809d9fffc66b79a7b6a4b44ccc8155a.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.oplayer.dofit",
+                "version_code": 24010409,
+                "version_name": "V2.2.1",
+                "package_path": "BLUUID_APKS/0935/fb789ecd1253d24ec868505db08a32bac26cb8b3339760a91c00b41feade9940/fb789ecd1253d24ec868505db08a32bac26cb8b3339760a91c00b41feade9940.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `h`."
+            },
+            {
+                "package_id": "com.cyber.scooter",
+                "version_code": 32,
+                "version_name": "1.1.6",
+                "package_path": "BLUUID_APKS/0943/af15eea7a134c0ee57048d80a72f25f9c6b780c42ca02c571a6fe076b41a499e/af15eea7a134c0ee57048d80a72f25f9c6b780c42ca02c571a6fe076b41a499e.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            },
+            {
+                "package_id": "com.zjw.cloetime",
+                "version_code": 68,
+                "version_name": "1.0.68",
+                "package_path": "BLUUID_APKS/0954/d747e8be7b5090f1a3cc573ff2b2cc7e345f77bf3fac2f1b5a15b816789b00fa/d747e8be7b5090f1a3cc573ff2b2cc7e345f77bf3fac2f1b5a15b816789b00fa.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `e3`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
     },
     {
         "UUID": "2c00",
@@ -52297,6 +52238,31 @@
         "parent_UUID": "8b3da2c6-b586-490f-9012-132af6d2202b"
     },
     {
+        "UUID": "207957a0-04ac-11e9-a47b-c31865ac7b50",
+        "company": "Third-party SDK code (declared in Java package `com.securesmart` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
+        "UUID_name": "CLIENT_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart` as Java field `CLIENT_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:CLIENT_ID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `CLIENT_ID`, declared in Java package `com.securesmart` (third-party SDK). Classification source: field-name:CLIENT_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.emcsecurity.android",
+                "version_code": 258,
+                "version_name": "4.2.258",
+                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CLIENT_ID`."
+            }
+        ],
+        "parent_UUID": "ff01"
+    },
+    {
         "UUID": "2787300a-35a1-448a-bd8f-e0630e5432ea",
         "company": "D-heart",
         "UUID_name": "D-Heart custom ECG Characteristic / DHEART_BT_NOTIFY_CHARACTERISTIC",
@@ -68258,6 +68224,67 @@
         ]
     },
     {
+        "UUID": "278b67fe-266b-406c-bd40-25379402b58d",
+        "company": "Third-party SDK code (declared in Java package `com.biointellisense` — distinct from host com.noteworth.wl3.android; Phase-4 identification needed)",
+        "UUID_name": "BioIntelliSense Device Service",
+        "UUID_purpose": "Transfers device configuration and files.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.noteworth.wl3.android v1.0.4 (versionCode 20403), declared in Java package `com.biointellisense` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.noteworth.android2 v1.0.61 (versionCode 20403), declared in Java package `com.biointellisense` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.noteworth.wl1.android v1.0.16 (versionCode 20404), declared in Java package `com.biointellisense` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Source review identified this as a gatt service in com.fortify.uhcmotion.app.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "BioIntelliSense stores this UUID in a service list and passes its element to BluetoothGatt.getService. The list helpers preserve the UUID; characteristic UUIDs are stored separately.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.noteworth.wl3.android",
+                "version_code": 20403,
+                "version_name": "1.0.4",
+                "package_path": "AndroZoo/apks/a9/com.noteworth.wl3.android_A922B7DA53B7C52DC88F6DB6CE35A9D5AE0411DC86D50881F336E141A55DE34A.apk",
+                "description": "The extractor initially inferred a characteristic; source review identifies a service."
+            },
+            {
+                "package_id": "com.noteworth.android2",
+                "version_code": 20403,
+                "version_name": "1.0.61",
+                "package_path": "AndroZoo/apks/94/com.noteworth.android2_9472CCA794EBD10AFEFE6CE5B81D9E0DBF3BBA88BB5B0617A0A45A2FC05A132E.apk",
+                "description": "The extractor initially inferred a characteristic; source review identifies a service."
+            },
+            {
+                "package_id": "com.noteworth.wl1.android",
+                "version_code": 20404,
+                "version_name": "1.0.16",
+                "package_path": "AndroZoo/apks/56/com.noteworth.wl1.android_5675C786A32D1677333E45C12AED39D6860D64EFA9D0B213E02E5ECDAC6DDD1F.apk",
+                "description": "The extractor initially inferred a characteristic; source review identifies a service."
+            },
+            {
+                "package_id": "com.fortify.uhcmotion.app",
+                "version_code": 339,
+                "version_name": "4.9.16.5",
+                "package_path": "AndroZoo/apks/e3/com.fortify.uhcmotion.app_E3A5FE8C4CE7A4B55130D8EE6C5E2751679B5E78F5C67EF0E8039B30E385E90D.apk",
+                "description": "Source review identified a gatt service in this app."
+            }
+        ]
+    },
+    {
         "UUID": "2019fd62-4094-4534-b69a-373214f5693a",
         "company": "Third-party SDK code (declared in Java package `com.bisner.android` — distinct from host com.kadans.android; Phase-4 identification needed)",
         "UUID_name": "WHITELABEL_PLATFORM_ID",
@@ -72846,31 +72873,6 @@
         "parent_UUID": "28fa0200-a1e2-4dd9-8f1e-68b50f63cdef"
     },
     {
-        "UUID": "207957a0-04ac-11e9-a47b-c31865ac7b50",
-        "company": "Third-party SDK code (declared in Java package `com.securesmart` — distinct from host com.emcsecurity.android; Phase-4 identification needed)",
-        "UUID_name": "CLIENT_ID",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.emcsecurity.android but declared in third-party SDK package `com.securesmart` as Java field `CLIENT_ID`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:CLIENT_ID.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.emcsecurity.android v4.2.258 (versionCode 258), in Java field `CLIENT_ID`, declared in Java package `com.securesmart` (third-party SDK). Classification source: field-name:CLIENT_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.emcsecurity.android",
-                "version_code": 258,
-                "version_name": "4.2.258",
-                "package_path": "BLUUID_APKS/0975/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d/ab819984f080513b0ce5b81c76722308ae20359ed041b667d61446e6a595184d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CLIENT_ID`."
-            }
-        ],
-        "parent_UUID": "ff01"
-    },
-    {
         "UUID": "273e5100-6b90-4779-83b8-b8bf1dadac35",
         "company": "Third-party SDK code (declared in Java package `com.swissmedmobile.bluetoothle` — distinct from host com.huma.humavirtual; Phase-4 identification needed)",
         "UUID_name": "Unknown",
@@ -73624,9 +73626,8 @@
         "UUID": "2857946e-162b-4e95-a332-2a3995cbc829",
         "company": "Third-party SDK code (declared in Java package `com.variable.therma.controllers` — distinct from host com.ncs.phoenixproject; Phase-4 identification needed)",
         "UUID_name": "UV_SCAN",
-        "UUID_purpose": "GATT Service observed in Android app com.ncs.phoenixproject but declared in third-party SDK package `com.variable.therma.controllers` as Java field `UV_SCAN`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_purpose": "Requests and returns ultraviolet spectral-scan measurements.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -73637,6 +73638,10 @@
             {
                 "description": "Source review identified this as a gatt characteristic in com.risklimiter.inspector.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The listed Variable SDK app contexts use this UUID as a characteristic. Requests and returns ultraviolet spectral-scan measurements. The historical service label came from a file-level default rather than a service lookup.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -73645,7 +73650,7 @@
                 "version_code": 431,
                 "version_name": "1.6.19",
                 "package_path": "BLUUID_APKS/0214/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UV_SCAN`."
+                "description": "The extractor initially inferred a service; source review identifies a characteristic."
             },
             {
                 "package_id": "com.risklimiter.inspector",

@@ -7776,6 +7776,59 @@
         "parent_UUID": "13094283-3bb4-12ee-9f21-f5cb37b3472a"
     },
     {
+        "UUID": "d417c028-9818-4354-99d1-2ac09d074591",
+        "company": "Bose",
+        "UUID_purpose": "Fallback BMAP command and response endpoint for Bose product information and settings, including noise-cancellation level and product name, when the companion app uses its unsecure characteristic.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Previously observed under Bose service FEBE.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "description": "Bose app source identifies this BMAP endpoint and uses it for product-information and settings commands.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "URL": "https://github.com/Jaisalrathi1829/Void-Controller/blob/b8876336831a2798325d8f923fe1d314a127642e/docs/protocol-notes.md#L1135-L1143",
+                "description": "A public Bose headphone GATT enumeration places this characteristic under FEBE.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "parent_UUID": "febe",
+        "UUID_name": "BMAP unsecure command and response",
+        "android_info_array": [
+            {
+                "package_id": "com.bose.monet",
+                "version_code": 230,
+                "version_name": "27.0",
+                "package_path": "AndroZoo/apks/55/com.bose.monet_5552B65DA7EFA732F06E9F72631A369C9C3C3E4C08A4B6FF14D36799AAD58CB1.apk",
+                "description": "Bose BMAP product-control endpoint identified in the companion app."
+            },
+            {
+                "package_id": "com.bose.bosemusic",
+                "version_code": 30993,
+                "version_name": "11.2.8",
+                "package_path": "AndroZoo/apks/0e/com.bose.bosemusic_0EF1A76634CC1179C0019830184A85FFD3D0CCBB5403537950362E051D7E5714.apk",
+                "description": "Bose BMAP product-control endpoint identified in the companion app."
+            },
+            {
+                "package_id": "com.bose.bosemusic",
+                "version_code": 35844,
+                "version_name": "13.4.2",
+                "description": "Bose BMAP product-control endpoint identified in the companion app."
+            },
+            {
+                "package_id": "com.bose.monet",
+                "version_code": 240,
+                "version_name": "28.0",
+                "description": "Bose BMAP product-control endpoint identified in the companion app."
+            }
+        ]
+    },
+    {
         "UUID": "d24b6ec0-d55a-11e5-8476-0002a5d5c51b",
         "company": "GN Audio",
         "UUID_name": "BLUEPARROTT_PARTNER_APP_KEY",
@@ -32015,10 +32068,9 @@
     {
         "UUID": "d39db8f2-c3e2-4c0d-bc7a-926db5f9c057",
         "company": "Kaz USA, Inc.",
-        "UUID_name": "FiltersList",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app pur.waterfilter.com.purble, declared as Java field `mFiltersList`. Classification determined by file-level-default.",
+        "UUID_name": "PUR Faucet Service",
+        "UUID_purpose": "Provides faucet telemetry, stored reading records, notifications, device-time control, and update-mode requests.",
         "UUID_usage_array": [
-            "GATT Characteristic",
             "GATT Service"
         ],
         "evidence_array": [
@@ -32034,6 +32086,10 @@
             {
                 "description": "Source review identified this as a gatt service in pur.waterfilter.com.purble.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Both PUR APK versions use this UUID as the service argument for faucet read/write queues and update requests. The historical mFiltersList label refers to a service-UUID scan filter.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -32042,7 +32098,7 @@
                 "version_code": 24,
                 "version_name": "1.0.9",
                 "package_path": "BLUUID_APKS/0710/6b7a58fd06b5673b9a67a2cb493c205a5a51128dea0b97e5984e549144b78d42/6b7a58fd06b5673b9a67a2cb493c205a5a51128dea0b97e5984e549144b78d42.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `mFiltersList`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a service."
             },
             {
                 "package_id": "pur.waterfilter.com.purble",
@@ -34699,6 +34755,35 @@
         "parent_UUID": "fff0"
     },
     {
+        "UUID": "dddd",
+        "company": "Unknown",
+        "UUID_name": "ACK",
+        "UUID_purpose": "Acknowledges completion of a recorded-data transfer from a Nexleaf Trek logger.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in org.nexleaf.coldtrace.trek; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "description": "Source and bytecode review established the described function and Bluetooth role.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "org.nexleaf.coldtrace.trek",
+                "version_code": 57,
+                "version_name": "1.0",
+                "package_path": "AndroZoo/apks/e3/org.nexleaf.coldtrace.trek_E3176A6507F185EF48341C470AA9BFF4EE7F1505A898F2609C8AA7904584DC6C.apk",
+                "description": "The app acknowledges the end of a Trek logger data transfer."
+            }
+        ],
+        "parent_UUID": "fff0"
+    },
+    {
         "UUID": "d95b0011-0738-11e4-8595-00175300beef",
         "company": "Nforetek (inferred from package id)",
         "UUID_name": "Service_UUID",
@@ -36670,6 +36755,10 @@
             {
                 "description": "APK source review established this UUID’s function.",
                 "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            },
+            {
+                "description": "Starkey code passes this exact UUID to separate typed service and characteristic lookups. These prove both lookup intentions; live success is unverified.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -36763,10 +36852,9 @@
     {
         "UUID": "d44bc439-abfd-45a2-b575-92541612960a",
         "company": "TIRO INNOVATION TECHNOLOGY",
-        "UUID_name": "UUID_WRITE2_CHA",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.pinkysinyeeho.istrippro, declared as Java field `UUID_WRITE2_CHA`. Classification determined by naming-convention.",
+        "UUID_name": "LED Command Write Channel 2",
+        "UUID_purpose": "Writes LED-strip control commands through the secondary write channel.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -36786,6 +36874,10 @@
             {
                 "description": "Source review identified this as a gatt characteristic in com.pinkysinyeeho.magicalled. In this app, the characteristic belongs to service fff0.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "All three listed lighting APKs pass UUID_WRITE2_CHA through writeByUuid to BluetoothGattService.getCharacteristic. The service UUID comes from separate BLE options.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -36794,14 +36886,14 @@
                 "version_code": 126,
                 "version_name": "1.2.6",
                 "package_path": "BLUUID_APKS/0324/80e6cf00f8a89e1a024886f728e7e442afbd2e87857c45e23a1cdb189cbf692a/80e6cf00f8a89e1a024886f728e7e442afbd2e87857c45e23a1cdb189cbf692a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_WRITE2_CHA`."
+                "description": "The extractor initially inferred a service; source review identifies a characteristic."
             },
             {
                 "package_id": "com.pinkysinyeeho.magicalled",
                 "version_code": 117,
                 "version_name": "1.1.7",
                 "package_path": "BLUUID_APKS/0799/c33f979f55690a928c40be44d91dcd463903f46cc30192ccd9395ea1ce2b6a2e/c33f979f55690a928c40be44d91dcd463903f46cc30192ccd9395ea1ce2b6a2e.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_WRITE2_CHA`."
+                "description": "The extractor initially inferred a service; source review identifies a characteristic."
             },
             {
                 "package_id": "com.pinkysinyeeho.magicalled",
@@ -36815,10 +36907,9 @@
     {
         "UUID": "d44bc439-abfd-45a2-b575-92541612960b",
         "company": "TIRO INNOVATION TECHNOLOGY",
-        "UUID_name": "UUID_WRITE3_CHA",
-        "UUID_purpose": "Custom GATT Service observed in Android app com.pinkysinyeeho.istrippro, declared as Java field `UUID_WRITE3_CHA`. Classification determined by naming-convention.",
+        "UUID_name": "LED Command Write Channel 3",
+        "UUID_purpose": "Writes LED-strip control commands through the third write channel.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -36838,6 +36929,10 @@
             {
                 "description": "Source review identified this as a gatt characteristic in com.pinkysinyeeho.magicalled. In this app, the characteristic belongs to service fff0.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "All three listed lighting APKs pass UUID_WRITE3_CHA through writeByUuid to BluetoothGattService.getCharacteristic. The service UUID comes from separate BLE options.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -36846,14 +36941,14 @@
                 "version_code": 126,
                 "version_name": "1.2.6",
                 "package_path": "BLUUID_APKS/0324/80e6cf00f8a89e1a024886f728e7e442afbd2e87857c45e23a1cdb189cbf692a/80e6cf00f8a89e1a024886f728e7e442afbd2e87857c45e23a1cdb189cbf692a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_WRITE3_CHA`."
+                "description": "The extractor initially inferred a service; source review identifies a characteristic."
             },
             {
                 "package_id": "com.pinkysinyeeho.magicalled",
                 "version_code": 117,
                 "version_name": "1.1.7",
                 "package_path": "BLUUID_APKS/0799/c33f979f55690a928c40be44d91dcd463903f46cc30192ccd9395ea1ce2b6a2e/c33f979f55690a928c40be44d91dcd463903f46cc30192ccd9395ea1ce2b6a2e.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `UUID_WRITE3_CHA`."
+                "description": "The extractor initially inferred a service; source review identifies a characteristic."
             },
             {
                 "package_id": "com.pinkysinyeeho.magicalled",
@@ -47012,9 +47107,8 @@
         "UUID": "d48193b1-911e-4b27-90d4-395b28244fdf",
         "company": "Third-party SDK code (declared in Java package `com.variable.therma.controllers` — distinct from host com.ncs.phoenixproject; Phase-4 identification needed)",
         "UUID_name": "OLED_CONTROL",
-        "UUID_purpose": "GATT Service observed in Android app com.ncs.phoenixproject but declared in third-party SDK package `com.variable.therma.controllers` as Java field `OLED_CONTROL`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_purpose": "Reports whether the Variable thermometer OLED display is enabled.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -47025,6 +47119,10 @@
             {
                 "description": "Source review identified this as a gatt characteristic in com.risklimiter.inspector.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The listed Variable SDK app contexts use this UUID as a characteristic. Reports whether the Variable thermometer OLED display is enabled. The historical service label came from a file-level default rather than a service lookup.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -47033,7 +47131,7 @@
                 "version_code": 431,
                 "version_name": "1.6.19",
                 "package_path": "BLUUID_APKS/0214/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `OLED_CONTROL`."
+                "description": "The extractor initially inferred a service; source review identifies a characteristic."
             },
             {
                 "package_id": "com.risklimiter.inspector",
@@ -47048,9 +47146,8 @@
         "UUID": "d11e1160-6b54-4e92-ae41-d5686dff1514",
         "company": "Third-party SDK code (declared in Java package `com.variable.therma.controllers` — distinct from host com.ncs.phoenixproject; Phase-4 identification needed)",
         "UUID_name": "STREAM_REQUEST",
-        "UUID_purpose": "GATT Service observed in Android app com.ncs.phoenixproject but declared in third-party SDK package `com.variable.therma.controllers` as Java field `STREAM_REQUEST`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_purpose": "Starts and stops infrared and thermocouple temperature-measurement streams.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -47061,6 +47158,10 @@
             {
                 "description": "Source review identified this as a gatt characteristic in com.risklimiter.inspector.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The listed Variable SDK app contexts use this UUID as a characteristic. Starts and stops infrared and thermocouple temperature-measurement streams. The historical service label came from a file-level default rather than a service lookup.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -47069,7 +47170,7 @@
                 "version_code": 431,
                 "version_name": "1.6.19",
                 "package_path": "BLUUID_APKS/0214/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `STREAM_REQUEST`."
+                "description": "The extractor initially inferred a service; source review identifies a characteristic."
             },
             {
                 "package_id": "com.risklimiter.inspector",
@@ -54866,30 +54967,6 @@
                 "version_name": "2026.9.0",
                 "package_path": "AndroZoo/apks/99/com.carrs.shop_9952871E6428DBCDEBC6CDE1696638B4E9F9C464265B36E7A5DD8F242B6D13B6.apk",
                 "description": "Found by automated APK extraction; the GATT role needs source review."
-            }
-        ]
-    },
-    {
-        "UUID": "dddd",
-        "company": "Unknown",
-        "UUID_name": "ACK",
-        "UUID_purpose": "The purpose is unknown.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in org.nexleaf.coldtrace.trek; its Bluetooth role needs review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "org.nexleaf.coldtrace.trek",
-                "version_code": 57,
-                "version_name": "1.0",
-                "package_path": "AndroZoo/apks/e3/org.nexleaf.coldtrace.trek_E3176A6507F185EF48341C470AA9BFF4EE7F1505A898F2609C8AA7904584DC6C.apk",
-                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
             }
         ]
     },

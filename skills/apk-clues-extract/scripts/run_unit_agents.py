@@ -434,10 +434,17 @@ by regex and naming heuristics, and are often wrong. Re-derive each from the sou
    parameter you traced), "naming_only" (only the identifier name or surrounding constants
    suggest the role), or "none". Follow the field through aliases, constructors and helper
    methods, across files, before settling on naming_only.
+   Match every constructor/helper argument to the corresponding callee parameter and trace
+   that parameter to its field or typed GATT operation; cite call site and callee. Resolve
+   fully qualified owners, not just bare names. In nested calls, the inner getService
+   argument is a service, not the outer getCharacteristic argument. Require independent
+   evidence for each role before claiming a UUID is both service and characteristic;
+   if overload or binding is ambiguous, do not confirm that role.
 3. `parent_UUID` (characteristics only): the service UUID that the source binds this
    characteristic to (for example getService(S).getCharacteristic(C), or S and C passed together
    to one profile/config object). Use null when no binding is shown; do not infer a parent from
-   UUID numbering or from co-location in one constants file.
+   UUID numbering or from co-location in one constants file. If the same UUID is bound to
+   different parent services in this APK, use null and describe the separate bindings in evidence.
 4. `UUID_name`: the most meaningful source identifier (field, enum or constant name, or a string
    label), with no `_UUID` suffix; null when the only names are obfuscated (`f12345a`, `a`, `b`).
 5. `sdk_or_company`: bare name of the SDK vendor or company whose code declares or uses it, based

@@ -48436,31 +48436,6 @@
         ]
     },
     {
-        "UUID": "5b026510-4088-c297-46d8-be6c736a087a",
-        "company": "Silicon Laboratories",
-        "UUID_name": "LedControl",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.siliconlabs.bledemo. No Java field-name hint available (likely an obfuscated identifier).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `LedControl`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.siliconlabs.bledemo",
-                "version_code": 46,
-                "version_name": "2.8.0",
-                "package_path": "BLUUID_APKS/0440/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            }
-        ],
-        "parent_UUID": "0000003e-0000-1000-8000-0026bb765291"
-    },
-    {
         "UUID": "54193902-74b8-4cb5-91e8-d1be6b664c4e",
         "company": "Third-party SDK code (declared in Java package `com.newrelic.agent.android` — distinct from host branded.m8aba2f9913fa41f2b6f8a70ee8443690.hireshomes; Phase-4 identification needed)",
         "UUID_name": "BUILD_ID",
@@ -72053,6 +72028,35 @@
         ]
     },
     {
+        "UUID": "5b026510-4088-c297-46d8-be6c736a087a",
+        "company": "Silicon Laboratories",
+        "UUID_name": "LedControl",
+        "UUID_purpose": "Switches the Silicon Labs Blinky example device LED on or off.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.siliconlabs.bledemo v2.8.0 (versionCode 46), in Java field `LedControl`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7), reprocessed by GPT 5.5 via --search-unknown"
+            },
+            {
+                "description": "The Blinky app binds this LED control characteristic to its Blinky service.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.siliconlabs.bledemo",
+                "version_code": 46,
+                "version_name": "2.8.0",
+                "package_path": "BLUUID_APKS/0440/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f/794823c390ca20e3152118a98b81596ba715e4d563c801d77f72b7366a5b470f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "de8a5aac-a99b-c315-0c80-60d4cbb51224"
+    },
+    {
         "UUID": "5f06f5c9-02d9-4d66-87fe-edbed67fb014",
         "company": "SimpliSafe Home Security Systems",
         "UUID_name": "CLIENT",
@@ -81753,10 +81757,9 @@
     {
         "UUID": "5c3a1523-897e-45e1-b016-007107c96df6",
         "company": "Third-party SDK code (declared in Java package `a` — distinct from host ipio.eyespyfx.com.csc; Phase-4 identification needed)",
-        "UUID_name": "YARDI_PROXY_OUTPUT_NOTIFY_CHARACTERISTIC",
-        "UUID_purpose": "GATT Characteristic observed in Android app ipio.eyespyfx.com.csc but declared in third-party SDK package `a` as Java field `f29a`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getService(f29a).",
+        "UUID_name": "igloohome Lock Service",
+        "UUID_purpose": "Unlocks igloohome locks and reads lock status and battery level.",
         "UUID_usage_array": [
-            "GATT Characteristic",
             "GATT Service"
         ],
         "evidence_array": [
@@ -81775,6 +81778,14 @@
             {
                 "description": "Source review identified this as a gatt service in com.showingtime.mobile.android.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "All listed lock implementations pass this UUID to BluetoothGatt.getService, directly or through the lock service accessor. Characteristic UUIDs are selected separately.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "Source review establishes the described device-specific function.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -81783,14 +81794,14 @@
                 "version_code": 75,
                 "version_name": "4.0.7",
                 "package_path": "BLUUID_APKS/0063/d54fc50896c2c2b295d0ca956ec9dca425af4ed09c0d5270da43c4f07bc13f0a/d54fc50896c2c2b295d0ca956ec9dca425af4ed09c0d5270da43c4f07bc13f0a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f29a`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a service."
             },
             {
                 "package_id": "com.yardi.systems.iotinstaller",
                 "version_code": 113,
                 "version_name": "1.16.1",
                 "package_path": "BLUUID_APKS/0957/b51de582d15ab78b9d21000bb2fda4ab7d48a9355cb9bbbd3c99be03a56e09f3/b51de582d15ab78b9d21000bb2fda4ab7d48a9355cb9bbbd3c99be03a56e09f3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `a`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a service."
             },
             {
                 "package_id": "com.showingtime.mobile.android",
@@ -81799,8 +81810,7 @@
                 "package_path": "AndroZoo/apks/e3/com.showingtime.mobile.android_E3C390F75CA08F06428EBB73C75906C545F5F30DA892E8D9213960CDB98BE58E.apk",
                 "description": "Source review identified a gatt service in this app."
             }
-        ],
-        "parent_UUID": "5c3a65a0-897e-45e1-b016-007107c96df6"
+        ]
     },
     {
         "UUID": "5c3a659e-897e-45e1-b016-007107c96df6",
@@ -86614,9 +86624,8 @@
         "UUID": "5357adb6-c11c-4c19-8bc0-a7c146003e5a",
         "company": "Third-party SDK code (declared in Java package `com.variable.therma.controllers` — distinct from host com.ncs.phoenixproject; Phase-4 identification needed)",
         "UUID_name": "CALIBRATION_CORRECTION_FACTOR",
-        "UUID_purpose": "GATT Service observed in Android app com.ncs.phoenixproject but declared in third-party SDK package `com.variable.therma.controllers` as Java field `CALIBRATION_CORRECTION_FACTOR`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_purpose": "Reads spectral-sensor calibration sense values.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -86627,6 +86636,10 @@
             {
                 "description": "Source review identified this as a gatt characteristic in com.risklimiter.inspector.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The listed Variable SDK app contexts use this UUID as a characteristic. Reads spectral-sensor calibration sense values. The historical service label came from a file-level default rather than a service lookup.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -86635,7 +86648,7 @@
                 "version_code": 431,
                 "version_name": "1.6.19",
                 "package_path": "BLUUID_APKS/0214/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `CALIBRATION_CORRECTION_FACTOR`."
+                "description": "The extractor initially inferred a service; source review identifies a characteristic."
             },
             {
                 "package_id": "com.risklimiter.inspector",
@@ -87414,10 +87427,9 @@
     {
         "UUID": "58d79b40-bc2e-11e4-b205-0002a5d5c51b",
         "company": "Third-party SDK code (declared in Java package `d.b.a.a` — distinct from host com.modusgo.selectiveapp.uat; Phase-4 identification needed)",
-        "UUID_name": "MODUSGO_CONSOLE_NOTIFY_CHARACTERISTIC",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.modusgo.selectiveapp.uat but declared in third-party SDK package `d.b.a.a` as Java field `z`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_name": "Bosch PHYD Firmware and Device Management",
+        "UUID_purpose": "Transfers firmware updates to Bosch PHYD devices.",
         "UUID_usage_array": [
-            "GATT Characteristic",
             "GATT Service"
         ],
         "evidence_array": [
@@ -87476,6 +87488,10 @@
             {
                 "description": "Source review identified this as a gatt service in com.radiuspaymentsolutions.kinesislite.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identifies a firmware-update service with separate read and write characteristics.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -87484,84 +87500,84 @@
                 "version_code": 247,
                 "version_name": "2.6.0",
                 "package_path": "BLUUID_APKS/0032/959cc449c7c68ab7e7c824581515379601091b211b310322c9204c62786dd36e/959cc449c7c68ab7e7c824581515379601091b211b310322c9204c62786dd36e.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `z`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "global.vast.vastfleet",
                 "version_code": 380,
                 "version_name": "5.4.1",
                 "package_path": "BLUUID_APKS/0195/e244a3e9c33392e0114602336c4939727c539775a21b77d9a61468623ffede03/e244a3e9c33392e0114602336c4939727c539775a21b77d9a61468623ffede03.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6287y`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.modusgo.readyfleet",
                 "version_code": 380,
                 "version_name": "5.4.1",
                 "package_path": "BLUUID_APKS/0304/7f41d28b4ba9726368df60cc33df7b8539e380621c698cb1293cd7d3bcb3838d/7f41d28b4ba9726368df60cc33df7b8539e380621c698cb1293cd7d3bcb3838d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6287y`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.modusgo.selectiveapp2.uat",
                 "version_code": 2,
                 "version_name": "1.0.0",
                 "package_path": "BLUUID_APKS/0319/2e8c32b32aa3f33b8a33cd35a0b2524916c6ced472380dc2884289ce4f17dd96/2e8c32b32aa3f33b8a33cd35a0b2524916c6ced472380dc2884289ce4f17dd96.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `z`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.modusgo.zephyr",
                 "version_code": 379,
                 "version_name": "5.4.0",
                 "package_path": "BLUUID_APKS/0343/9b1b4c98d13a70aa4bafb25f2411b9edf933bdd537860df79e1a874eadfd42d0/9b1b4c98d13a70aa4bafb25f2411b9edf933bdd537860df79e1a874eadfd42d0.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6287y`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.radiustelematics.ddsdrive",
                 "version_code": 380,
                 "version_name": "5.4.1",
                 "package_path": "BLUUID_APKS/0588/e409ac8aecb5e5ded957016b3c9fcdcbcf727ed8529732d691bd0d4d7d40fbb5/e409ac8aecb5e5ded957016b3c9fcdcbcf727ed8529732d691bd0d4d7d40fbb5.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6287y`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.modusgo.alj.uat",
                 "version_code": 187,
                 "version_name": "2.3.0",
                 "package_path": "BLUUID_APKS/0775/6a83d8572e3d7ae4dc599cabb5113a3490a3bb65867a2cd363302630c8f6f7f6/6a83d8572e3d7ae4dc599cabb5113a3490a3bb65867a2cd363302630c8f6f7f6.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f1849c`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.modusgo.uscc",
                 "version_code": 380,
                 "version_name": "5.4.1",
                 "package_path": "BLUUID_APKS/0842/1d2cd89a367c31ac874b5192e485169711b13fd1c099422724088900744bea67/1d2cd89a367c31ac874b5192e485169711b13fd1c099422724088900744bea67.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6287y`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.modusgo.readywireless.uat",
                 "version_code": 129,
                 "version_name": "1.7.0",
                 "package_path": "BLUUID_APKS/0847/cd0aa7a16ab50dba30d32ae73f8ad63091829ba0190581bf85ec0cf2663ce228/cd0aa7a16ab50dba30d32ae73f8ad63091829ba0190581bf85ec0cf2663ce228.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `z`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.modusgo.modusgo",
                 "version_code": 380,
                 "version_name": "5.4.1",
                 "package_path": "BLUUID_APKS/0879/364b07668b8019684369efdb024431694407b42fcfea582e46a8dc0730e260af/364b07668b8019684369efdb024431694407b42fcfea582e46a8dc0730e260af.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6287y`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.warren.wimatics",
                 "version_code": 357,
                 "version_name": "5.3.4",
                 "package_path": "BLUUID_APKS/0885/e60c04cd3cbe197beafd10522fa5691c95343b29d64f091db927640cadbc5e4b/e60c04cd3cbe197beafd10522fa5691c95343b29d64f091db927640cadbc5e4b.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6179y`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.modusgo.odotrack",
                 "version_code": 380,
                 "version_name": "5.4.1",
                 "package_path": "BLUUID_APKS/0932/71afd5f7c1668b96771cfe8f909f44b4176edc6b2b57238b55d75334912b587b/71afd5f7c1668b96771cfe8f909f44b4176edc6b2b57238b55d75334912b587b.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6287y`."
+                "description": "The extractor initially inferred a characteristic; source review identifies a Bosch PHYD service."
             },
             {
                 "package_id": "com.radiuspaymentsolutions.kinesislite",
@@ -99803,6 +99819,45 @@
         ]
     },
     {
+        "UUID": "5a55",
+        "company": "Unknown",
+        "UUID_name": "UUID_CHAR_WRITE2",
+        "UUID_purpose": "Receives Star2-compatible adjustable-bed motor commands to raise or lower the head and foot sections, individually or together.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Automated extraction found this UUID in com.ykd.indy; its Bluetooth role needs review.",
+                "submitter": "OpenAI Codex (GPT-6)"
+            },
+            {
+                "URL": "https://github.com/kristofferR/ha-adjustable-bed/blob/d9bd39af238354d360e99077e225839141b7f69a/docs/beds/octo.md#L155-L161",
+                "description": "Public Star2 bed implementation documents exact AA5C/5A55 pair and 15-byte movement frames matching the source APK.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "The app declares this write characteristic; matching the published Star2 profile links it to bed movement commands.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "URL": "https://github.com/kristofferR/ha-adjustable-bed/blob/d9bd39af238354d360e99077e225839141b7f69a/docs/beds/octo.md#L293-L302",
+                "description": "Star2 head and foot movement command frames.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.ykd.indy",
+                "version_code": 2,
+                "version_name": "1.3.1",
+                "package_path": "AndroZoo/apks/dd/com.ykd.indy_DDE388D06500D243673BA4B80B3C3C384217F67A0F678EFED291B231AAB05B04.apk",
+                "description": "The app uses the Star2-compatible adjustable-bed control protocol."
+            }
+        ],
+        "parent_UUID": "aa5c"
+    },
+    {
         "UUID": "5eb0e9b0-e533-66f3-8b94-e78af97cf247",
         "company": "Unknown",
         "UUID_name": "WATCH_PLUS_SERVICE",
@@ -100790,54 +100845,6 @@
                 "version_code": 2,
                 "version_name": "1.3.1",
                 "package_path": "AndroZoo/apks/dd/com.ykd.indy_DDE388D06500D243673BA4B80B3C3C384217F67A0F678EFED291B231AAB05B04.apk",
-                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
-            }
-        ]
-    },
-    {
-        "UUID": "5a55",
-        "company": "Unknown",
-        "UUID_name": "UUID_CHAR_WRITE2",
-        "UUID_purpose": "The purpose is unknown.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in com.ykd.indy; its Bluetooth role needs review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.ykd.indy",
-                "version_code": 2,
-                "version_name": "1.3.1",
-                "package_path": "AndroZoo/apks/dd/com.ykd.indy_DDE388D06500D243673BA4B80B3C3C384217F67A0F678EFED291B231AAB05B04.apk",
-                "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
-            }
-        ]
-    },
-    {
-        "UUID": "5b3b98a1-4381-48d9-a2f1-cd43aea57385",
-        "company": "Unknown",
-        "UUID_name": "claytonDeviceTemplateId",
-        "UUID_purpose": "The purpose is unknown.",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Automated extraction found this UUID in au.com.gsminnovations.zimi; its Bluetooth role needs review.",
-                "submitter": "OpenAI Codex (GPT-6)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "au.com.gsminnovations.zimi",
-                "version_code": 140,
-                "version_name": "2.11",
-                "package_path": "AndroZoo/apks/e3/au.com.gsminnovations.zimi_E398E7B13BC1629D54AED9EAF435519F047E080BECA4120B5A76956D878D35BC.apk",
                 "description": "Automated extraction found this UUID in the app; its Bluetooth role needs review."
             }
         ]

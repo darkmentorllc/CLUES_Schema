@@ -18996,817 +18996,6 @@
         "parent_UUID": "000001ff-3c17-d293-8e48-14fe2e4da212"
     },
     {
-        "UUID": "8001",
-        "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
-        "UUID_name": "EC_NETWORKING_DATA_IOM_IPV4_CHARACTERISTIC_UUID / BLECharacteristic / DATA1_WRITE_CH_ID",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.noisefit but declared in third-party SDK package `cn.appscomm.bluetooth` as Java field `f6183b`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(f6183b).",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.noisefit v4.3.5 (versionCode 520), in Java field `f6183b`, declared in Java package `cn.appscomm.bluetooth` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f6183b).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.huawo.ufit v1.1.6 (versionCode 77), in Java field `DATA1_WRITE_CH_ID`. Classification source: field-name:DATA1_WRITE_CH_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_NETWORKING_DATA_IOM_IPV4_CHARACTERISTIC_UUID / BLECharacteristicUUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.bullitt.wave v2.8.29 (versionCode 108), in Java field `CHARACTERISTICS_UUID_FOR_LOG_NOTIFY`. Classification source: usage:getCharacteristic.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.hmdglobal.mobile.offgrid v2.6.30 (versionCode 105), in Java field `CHARACTERISTICS_UUID_FOR_LOG_NOTIFY`, declared in Java package `com.bullitt.sdk.platform.device.ble` (third-party SDK). Classification source: usage:getCharacteristic.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.bullitt.wave",
-                "description": "Verified current Google Play listing for com.bullitt.wave. This listing does not establish that archived APK version 2.8.29 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.hmdglobal.mobile.offgrid",
-                "description": "Verified current Google Play listing for com.hmdglobal.mobile.offgrid. This listing does not establish that archived APK version 2.6.30 is available to download.",
-                "submitter": "GPT-6 Luna"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.noisefit",
-                "version_code": 520,
-                "version_name": "4.3.5",
-                "package_path": "BLUUID_APKS/0216/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6183b`."
-            },
-            {
-                "package_id": "com.huawo.ufit",
-                "version_code": 77,
-                "version_name": "1.1.6",
-                "package_path": "BLUUID_APKS/0218/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DATA1_WRITE_CH_ID`."
-            },
-            {
-                "package_id": "com.dell.omm",
-                "version_code": 44124,
-                "version_name": "4.4.1",
-                "package_path": "BLUUID_APKS/0977/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `EC_NETWORKING_DATA_IOM_IPV4_CHARACTERISTIC_UUID / BLECharacteristicUUID`."
-            },
-            {
-                "package_id": "com.bullitt.wave",
-                "version_code": 108,
-                "version_name": "2.8.29",
-                "package_path": "AndroZoo/apks/c0/com.bullitt.wave_C0441A9C19369537B85BD5906BB1886054C85EED018ED5A783DF0A36F732DFFB.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTICS_UUID_FOR_LOG_NOTIFY`."
-            },
-            {
-                "package_id": "com.hmdglobal.mobile.offgrid",
-                "version_code": 105,
-                "version_name": "2.6.30",
-                "package_path": "AndroZoo/apks/10/com.hmdglobal.mobile.offgrid_1054BD7BE9A320D9A772CC73EEDB53454A60D83E6436DEE5949999A8AD1F8E0D.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTICS_UUID_FOR_LOG_NOTIFY`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
-    },
-    {
-        "UUID": "8002",
-        "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
-        "UUID_name": "EC_NETWORKING_DATA_IOM_IPV6_CHARACTERISTIC / DATA1_READ_CH_ID",
-        "UUID_purpose": "Reused by service: Dell reads server boot options, temperatures, IPv6 networking and configuration status, among other management data; NoiseFit and Huawo use it for replies to wearable data and configuration requests.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.noisefit v4.3.5 (versionCode 520), in Java field `f6184c`, declared in Java package `cn.appscomm.bluetooth` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.huawo.ufit v1.1.6 (versionCode 77), in Java field `DATA1_READ_CH_ID`. Classification source: field-name:DATA1_READ_CH_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_NETWORKING_DATA_IOM_IPV6_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.noisefit",
-                "version_code": 520,
-                "version_name": "4.3.5",
-                "package_path": "BLUUID_APKS/0216/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6184c`."
-            },
-            {
-                "package_id": "com.huawo.ufit",
-                "version_code": 77,
-                "version_name": "1.1.6",
-                "package_path": "BLUUID_APKS/0218/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DATA1_READ_CH_ID`."
-            },
-            {
-                "package_id": "com.dell.omm",
-                "version_code": 44124,
-                "version_name": "4.4.1",
-                "package_path": "BLUUID_APKS/0977/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `EC_NETWORKING_DATA_IOM_IPV6_CHARACTERISTIC_UUID`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
-    },
-    {
-        "UUID": "8003",
-        "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
-        "UUID_name": "EC_APPLY_GROUP_CONFIG_CHAR / DATA2_READ_CH_ID",
-        "UUID_purpose": "Reused by service: Dell exchanges networking, health, configuration and Redfish/proxy results; NoiseFit and Huawo write wearable commands and event acknowledgements through this UUID.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.noisefit v4.3.5 (versionCode 520), in Java field `f6187f`, declared in Java package `cn.appscomm.bluetooth` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f6187f).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.huawo.ufit v1.1.6 (versionCode 77), in Java field `DATA2_READ_CH_ID`. Classification source: field-name:DATA2_READ_CH_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_APPLY_GROUP_CONFIG_CHAR_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.noisefit",
-                "version_code": 520,
-                "version_name": "4.3.5",
-                "package_path": "BLUUID_APKS/0216/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6187f`."
-            },
-            {
-                "package_id": "com.huawo.ufit",
-                "version_code": 77,
-                "version_name": "1.1.6",
-                "package_path": "BLUUID_APKS/0218/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DATA2_READ_CH_ID`."
-            },
-            {
-                "package_id": "com.dell.omm",
-                "version_code": 44124,
-                "version_name": "4.4.1",
-                "package_path": "BLUUID_APKS/0977/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `EC_APPLY_GROUP_CONFIG_CHAR_UUID`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
-    },
-    {
-        "UUID": "8004",
-        "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
-        "UUID_name": "EC_GROUP_CONFIG_JOB_STATUS / DATA2_WRITE_CH_ID",
-        "UUID_purpose": "Reused by service: Dell exchanges location, log sequence, controller inventory and configuration/proxy results; NoiseFit and Huawo receive wearable remote-control events, including music and call-related controls.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.noisefit v4.3.5 (versionCode 520), in Java field `f6188g`, declared in Java package `cn.appscomm.bluetooth` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.huawo.ufit v1.1.6 (versionCode 77), in Java field `DATA2_WRITE_CH_ID`. Classification source: field-name:DATA2_WRITE_CH_ID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_GROUP_CONFIG_JOB_STATUS_UUID`. Classification source: field-name:BLECharacteristicUUID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "APK source review established this UUID’s function.",
-                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.noisefit",
-                "version_code": 520,
-                "version_name": "4.3.5",
-                "package_path": "BLUUID_APKS/0216/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6188g`."
-            },
-            {
-                "package_id": "com.huawo.ufit",
-                "version_code": 77,
-                "version_name": "1.1.6",
-                "package_path": "BLUUID_APKS/0218/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DATA2_WRITE_CH_ID`."
-            },
-            {
-                "package_id": "com.dell.omm",
-                "version_code": 44124,
-                "version_name": "4.4.1",
-                "package_path": "BLUUID_APKS/0977/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `EC_GROUP_CONFIG_JOB_STATUS_UUID`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
-    },
-    {
-        "UUID": "81eea002-e735-49ec-8a11-7e32cae1e14e",
-        "company": "Tunze Aquarientechnik GmbH",
-        "UUID_name": "CHARACTERISTIC_NOTIFY",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.lhzl.maswearpro, declared as Java field `CHARACTERISTIC_NOTIFY_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.lhzl.maswearpro v2.1.4 (versionCode 35), in Java field `CHARACTERISTIC_NOTIFY_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.lianhezhuli.dasfit v1.1 (versionCode 4), in Java field `CHARACTERISTIC_NOTIFY_UUID`. Classification source: field-name:CHARACTERISTIC_NOTIFY_UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "None",
-                "submitter": "Claude (Opus 4.7)",
-                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (German aquarium-equipment vendor; 7097 Bluetooth Multicontroller for Turbelle pumps and LEDs; com.lhzl.tunzefit Android app)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.viatom.vihealth v2.75.66 (versionCode 334), declared in Java package `com.lhzl.blelib.bluetooth` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.viatom.vihealth",
-                "description": "Verified current Google Play listing for com.viatom.vihealth. This listing does not establish that archived APK version 2.75.66 is available to download.",
-                "submitter": "GPT-6 Luna"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.lhzl.maswearpro",
-                "version_code": 35,
-                "version_name": "2.1.4",
-                "package_path": "BLUUID_APKS/0101/45d4fc94ad7807c53a2bb954b4a72c86d7a76ee8f80dfbe988ad4b107e02c9c9/45d4fc94ad7807c53a2bb954b4a72c86d7a76ee8f80dfbe988ad4b107e02c9c9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_NOTIFY_UUID`."
-            },
-            {
-                "package_id": "com.lianhezhuli.dasfit",
-                "version_code": 4,
-                "version_name": "1.1",
-                "package_path": "BLUUID_APKS/0749/42e148b486bfa8d9b05287586520a4e4f80ab8db393a18a70b8c492c16a46b60/42e148b486bfa8d9b05287586520a4e4f80ab8db393a18a70b8c492c16a46b60.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_NOTIFY_UUID`."
-            },
-            {
-                "package_id": "com.viatom.vihealth",
-                "version_code": 334,
-                "version_name": "2.75.66",
-                "package_path": "AndroZoo/apks/f8/com.viatom.vihealth_F87F0B9E9C2AAFF011214DACEF495E65FCA89549FEB7FFBD28ED1D2A9EE8A2F3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
-    },
-    {
-        "UUID": "81eea003-e735-49ec-8a11-7e32cae1e14e",
-        "company": "Tunze Aquarientechnik GmbH",
-        "UUID_name": "CHARACTERISTIC_WRITE",
-        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.lhzl.maswearpro, declared as Java field `CHARACTERISTIC_WRITE_UUID`. Classification determined by naming-convention.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.lhzl.maswearpro v2.1.4 (versionCode 35), in Java field `CHARACTERISTIC_WRITE_UUID`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.lianhezhuli.dasfit v1.1 (versionCode 4), in Java field `CHARACTERISTIC_WRITE_UUID`. Classification source: field-name:CHARACTERISTIC_WRITE_UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "None",
-                "submitter": "Claude (Opus 4.7)",
-                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (German aquarium-equipment vendor; 7097 Bluetooth Multicontroller for Turbelle pumps and LEDs; com.lhzl.tunzefit Android app)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.viatom.vihealth v2.75.66 (versionCode 334), declared in Java package `com.lhzl.blelib.bluetooth` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.viatom.vihealth",
-                "description": "Verified current Google Play listing for com.viatom.vihealth. This listing does not establish that archived APK version 2.75.66 is available to download.",
-                "submitter": "GPT-6 Luna"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.lhzl.maswearpro",
-                "version_code": 35,
-                "version_name": "2.1.4",
-                "package_path": "BLUUID_APKS/0101/45d4fc94ad7807c53a2bb954b4a72c86d7a76ee8f80dfbe988ad4b107e02c9c9/45d4fc94ad7807c53a2bb954b4a72c86d7a76ee8f80dfbe988ad4b107e02c9c9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_WRITE_UUID`."
-            },
-            {
-                "package_id": "com.lianhezhuli.dasfit",
-                "version_code": 4,
-                "version_name": "1.1",
-                "package_path": "BLUUID_APKS/0749/42e148b486bfa8d9b05287586520a4e4f80ab8db393a18a70b8c492c16a46b60/42e148b486bfa8d9b05287586520a4e4f80ab8db393a18a70b8c492c16a46b60.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_WRITE_UUID`."
-            },
-            {
-                "package_id": "com.viatom.vihealth",
-                "version_code": 334,
-                "version_name": "2.75.66",
-                "package_path": "AndroZoo/apks/f8/com.viatom.vihealth_F87F0B9E9C2AAFF011214DACEF495E65FCA89549FEB7FFBD28ED1D2A9EE8A2F3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
-    },
-    {
-        "UUID": "8a11",
-        "company": "OPPO",
-        "UUID_name": "CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT / PEDOMETER_MEASUREMENT_CHARACTERISTIC",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.watch.life but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT. Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.watch.life v2.8.0 (versionCode 264), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.honbow.fitdock v3.6.18 (versionCode 3618), in Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.deltecs.ihealth v1.0.3 (versionCode 10003), in Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.nahdi.main v2.22.1 (versionCode 251), in Java field `f2255c`, declared in Java package `bk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f2255c).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mobvoi.companion.ai v9.0.3-1845.852 (versionCode 90031845), in Java field `o0`, declared in Java package `mms` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/watch/com.watch.life/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/honbow/com.honbow.fitdock/download/3.6.18",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/deltecs/com.deltecs.ihealth/download/1.0.3",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/mobvoi/com.mobvoi.companion.ai/download/9.0.3-1845.852",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "None",
-                "submitter": "Claude (Opus 4.7)",
-                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Guangdong Oppo Mobile Telecommunications; Bluetooth audio / wearable AT-command service)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.adctoday.bp v1.0.6 (versionCode 26), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.lifesense.health v2.0.5 (versionCode 6), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`. Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.biofourmis.ipmpatient v25.13.0 (versionCode 14468), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.hansjin.drdiary_android v2.77.3 (versionCode 2077003), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.lstllc.apps.android.mcare v2.114 (versionCode 291), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.beebirdhome.home v110.1.13 (versionCode 110), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of healthcare.sentinel.mobile v3.7.0 (versionCode 225), in Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of org.seadvocacy.docsrchout v3.21.5 (versionCode 200), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.adctoday.bp",
-                "description": "Verified current Google Play listing for com.adctoday.bp. This listing does not establish that archived APK version 1.0.6 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.lifesense.health",
-                "description": "Verified current Google Play listing for com.lifesense.health. This listing does not establish that archived APK version 2.0.5 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.biofourmis.ipmpatient",
-                "description": "Verified current Google Play listing for com.biofourmis.ipmpatient. This listing does not establish that archived APK version 25.13.0 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.hansjin.drdiary_android",
-                "description": "Verified current Google Play listing for com.hansjin.drdiary_android. This listing does not establish that archived APK version 2.77.3 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.lstllc.apps.android.mcare",
-                "description": "Verified current Google Play listing for com.lstllc.apps.android.mcare. This listing does not establish that archived APK version 2.114 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.beebirdhome.home",
-                "description": "Verified current Google Play listing for com.beebirdhome.home. This listing does not establish that archived APK version 110.1.13 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=org.seadvocacy.docsrchout",
-                "description": "Verified current Google Play listing for org.seadvocacy.docsrchout. This listing does not establish that archived APK version 3.21.5 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.watch.life",
-                "version_code": 264,
-                "version_name": "2.8.0",
-                "package_path": "BLUUID_APKS/0325/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.honbow.fitdock",
-                "version_code": 3618,
-                "version_name": "3.6.18",
-                "package_path": "BLUUID_APKS/0368/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`."
-            },
-            {
-                "package_id": "com.deltecs.ihealth",
-                "version_code": 10003,
-                "version_name": "1.0.3",
-                "package_path": "BLUUID_APKS/0449/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`."
-            },
-            {
-                "package_id": "com.nahdi.main",
-                "version_code": 251,
-                "version_name": "2.22.1",
-                "package_path": "BLUUID_APKS/0634/2a5c5dc835e920b1804eb23ff83df43cb4d6091b112904721f963323a9ed2146/2a5c5dc835e920b1804eb23ff83df43cb4d6091b112904721f963323a9ed2146.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f2255c`."
-            },
-            {
-                "package_id": "com.mobvoi.companion.ai",
-                "version_code": 90031845,
-                "version_name": "9.0.3-1845.852",
-                "package_path": "BLUUID_APKS/0974/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `o0`."
-            },
-            {
-                "package_id": "com.adctoday.bp",
-                "version_code": 26,
-                "version_name": "1.0.6",
-                "package_path": "AndroZoo/apks/d0/com.adctoday.bp_D019C8CE05CB37D4FB845B6FA268977F985ED97A76FABA227BD722BA94E89ADB.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.lifesense.health",
-                "version_code": 6,
-                "version_name": "2.0.5",
-                "package_path": "AndroZoo/apks/75/com.lifesense.health_753B2DD5DC68B816146CD136FDEACF1ED1D80ED851D4E562E66EAEF8B21CC99A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.biofourmis.ipmpatient",
-                "version_code": 14468,
-                "version_name": "25.13.0",
-                "package_path": "AndroZoo/apks/b5/com.biofourmis.ipmpatient_B54ABAA7E1CA93D025B91B40DBC3959042AA3BCCFC090E9BA4BF20DAD8237C98.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.hansjin.drdiary_android",
-                "version_code": 2077003,
-                "version_name": "2.77.3",
-                "package_path": "AndroZoo/apks/5f/com.hansjin.drdiary_android_5FA3621A7797D52EADC1FE47A51E01C85102849B57DFDF92EC2F2D6255A883AB.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.lstllc.apps.android.mcare",
-                "version_code": 291,
-                "version_name": "2.114",
-                "package_path": "AndroZoo/apks/bd/com.lstllc.apps.android.mcare_BDFCBF3FB5FEF815D5A5C7A98C54EA87F390FB7994BFA653FCCCF09351A9D59A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.beebirdhome.home",
-                "version_code": 110,
-                "version_name": "110.1.13",
-                "package_path": "AndroZoo/apks/7c/com.beebirdhome.home_7CC8AE4A3E3CBE43F81D7BC4AEEB361135484C62AD0C9575F3F1B1614502DC14.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
-            },
-            {
-                "package_id": "healthcare.sentinel.mobile",
-                "version_code": 225,
-                "version_name": "3.7.0",
-                "package_path": "AndroZoo/apks/c1/healthcare.sentinel.mobile_C1716376392C07F2E68F4EA5696D942609C4F53DD2FF531FFC39411A1726C6A3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`."
-            },
-            {
-                "package_id": "org.seadvocacy.docsrchout",
-                "version_code": 200,
-                "version_name": "3.21.5",
-                "package_path": "AndroZoo/apks/f7/org.seadvocacy.docsrchout_F77ACAB12416A466DE5813AE18DFFD8E620C51272E56EDF05D0E87EEF5D7EDDF.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
-            },
-            {
-                "package_id": "chief.health",
-                "version_code": 402,
-                "version_name": "1.3.48",
-                "package_path": "AndroZoo/apks/00/chief.health_0048A5B4549791DA7CFF23BFA9091C37194B281442A461B69793B17D0E73FA06.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
-    },
-    {
-        "UUID": "8a24",
-        "company": "OPPO",
-        "UUID_name": "CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT / WEIGHT_SCALE_MEASUREMENT",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.watch.life but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT. Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.watch.life v2.8.0 (versionCode 264), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.honbow.fitdock v3.6.18 (versionCode 3618), in Java field `WEIGHT_SCALE_MEASUREMENT_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.deltecs.ihealth v1.0.3 (versionCode 10003), in Java field `WEIGHT_SCALE_MEASUREMENT_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.mobvoi.companion.ai v9.0.3-1845.852 (versionCode 90031845), in Java field `C0`, declared in Java package `mms` (third-party SDK). Classification source: cross-file usage:getCharacteristic(C0).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/watch/com.watch.life/versions",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/honbow/com.honbow.fitdock/download/3.6.18",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/deltecs/com.deltecs.ihealth/download/1.0.3",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "https://apkpure.net/mobvoi/com.mobvoi.companion.ai/download/9.0.3-1845.852",
-                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "URL": "None",
-                "submitter": "Claude (Opus 4.7)",
-                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Guangdong Oppo Mobile Telecommunications; Bluetooth audio / wearable AT-command service)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.adctoday.bp v1.0.6 (versionCode 26), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.lifesense.health v2.0.5 (versionCode 6), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`. Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.biofourmis.ipmpatient v25.13.0 (versionCode 14468), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.hansjin.drdiary_android v2.77.3 (versionCode 2077003), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.lstllc.apps.android.mcare v2.114 (versionCode 291), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of com.beebirdhome.home v110.1.13 (versionCode 110), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of healthcare.sentinel.mobile v3.7.0 (versionCode 225), in Java field `WEIGHT_SCALE_MEASUREMENT_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "description": "Found in decompiled DEX of org.seadvocacy.docsrchout v3.21.5 (versionCode 200), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
-                "submitter": "GPT-6 Sol"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.adctoday.bp",
-                "description": "Verified current Google Play listing for com.adctoday.bp. This listing does not establish that archived APK version 1.0.6 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.lifesense.health",
-                "description": "Verified current Google Play listing for com.lifesense.health. This listing does not establish that archived APK version 2.0.5 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.biofourmis.ipmpatient",
-                "description": "Verified current Google Play listing for com.biofourmis.ipmpatient. This listing does not establish that archived APK version 25.13.0 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.hansjin.drdiary_android",
-                "description": "Verified current Google Play listing for com.hansjin.drdiary_android. This listing does not establish that archived APK version 2.77.3 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.lstllc.apps.android.mcare",
-                "description": "Verified current Google Play listing for com.lstllc.apps.android.mcare. This listing does not establish that archived APK version 2.114 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=com.beebirdhome.home",
-                "description": "Verified current Google Play listing for com.beebirdhome.home. This listing does not establish that archived APK version 110.1.13 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "URL": "https://play.google.com/store/apps/details?id=org.seadvocacy.docsrchout",
-                "description": "Verified current Google Play listing for org.seadvocacy.docsrchout. This listing does not establish that archived APK version 3.21.5 is available to download.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `WEIGHT_SCALE_MEASUREMENT_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "GPT-6.1 Terra"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.watch.life",
-                "version_code": 264,
-                "version_name": "2.8.0",
-                "package_path": "BLUUID_APKS/0325/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.honbow.fitdock",
-                "version_code": 3618,
-                "version_name": "3.6.18",
-                "package_path": "BLUUID_APKS/0368/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WEIGHT_SCALE_MEASUREMENT_UUID`."
-            },
-            {
-                "package_id": "com.deltecs.ihealth",
-                "version_code": 10003,
-                "version_name": "1.0.3",
-                "package_path": "BLUUID_APKS/0449/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WEIGHT_SCALE_MEASUREMENT_UUID`."
-            },
-            {
-                "package_id": "com.mobvoi.companion.ai",
-                "version_code": 90031845,
-                "version_name": "9.0.3-1845.852",
-                "package_path": "BLUUID_APKS/0974/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `C0`."
-            },
-            {
-                "package_id": "com.adctoday.bp",
-                "version_code": 26,
-                "version_name": "1.0.6",
-                "package_path": "AndroZoo/apks/d0/com.adctoday.bp_D019C8CE05CB37D4FB845B6FA268977F985ED97A76FABA227BD722BA94E89ADB.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.lifesense.health",
-                "version_code": 6,
-                "version_name": "2.0.5",
-                "package_path": "AndroZoo/apks/75/com.lifesense.health_753B2DD5DC68B816146CD136FDEACF1ED1D80ED851D4E562E66EAEF8B21CC99A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.biofourmis.ipmpatient",
-                "version_code": 14468,
-                "version_name": "25.13.0",
-                "package_path": "AndroZoo/apks/b5/com.biofourmis.ipmpatient_B54ABAA7E1CA93D025B91B40DBC3959042AA3BCCFC090E9BA4BF20DAD8237C98.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.hansjin.drdiary_android",
-                "version_code": 2077003,
-                "version_name": "2.77.3",
-                "package_path": "AndroZoo/apks/5f/com.hansjin.drdiary_android_5FA3621A7797D52EADC1FE47A51E01C85102849B57DFDF92EC2F2D6255A883AB.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.lstllc.apps.android.mcare",
-                "version_code": 291,
-                "version_name": "2.114",
-                "package_path": "AndroZoo/apks/bd/com.lstllc.apps.android.mcare_BDFCBF3FB5FEF815D5A5C7A98C54EA87F390FB7994BFA653FCCCF09351A9D59A.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
-            },
-            {
-                "package_id": "com.beebirdhome.home",
-                "version_code": 110,
-                "version_name": "110.1.13",
-                "package_path": "AndroZoo/apks/7c/com.beebirdhome.home_7CC8AE4A3E3CBE43F81D7BC4AEEB361135484C62AD0C9575F3F1B1614502DC14.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
-            },
-            {
-                "package_id": "healthcare.sentinel.mobile",
-                "version_code": 225,
-                "version_name": "3.7.0",
-                "package_path": "AndroZoo/apks/c1/healthcare.sentinel.mobile_C1716376392C07F2E68F4EA5696D942609C4F53DD2FF531FFC39411A1726C6A3.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WEIGHT_SCALE_MEASUREMENT_UUID`."
-            },
-            {
-                "package_id": "org.seadvocacy.docsrchout",
-                "version_code": 200,
-                "version_name": "3.21.5",
-                "package_path": "AndroZoo/apks/f7/org.seadvocacy.docsrchout_F77ACAB12416A466DE5813AE18DFFD8E620C51272E56EDF05D0E87EEF5D7EDDF.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
-            },
-            {
-                "package_id": "chief.health",
-                "version_code": 402,
-                "version_name": "1.3.48",
-                "package_path": "AndroZoo/apks/00/chief.health_0048A5B4549791DA7CFF23BFA9091C37194B281442A461B69793B17D0E73FA06.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WEIGHT_SCALE_MEASUREMENT_UUID`."
-            }
-        ],
-        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
-    },
-    {
         "UUID": "8bfb8be3-86a9-4242-9abe-51802ee54fef",
         "company": "Akommobile (inferred from package id)",
         "UUID_name": "EAS_PROJECT_ID",
@@ -23585,6 +22774,817 @@
             }
         ],
         "parent_UUID": "4362f634-04e8-4f03-b07f-434f0d7551e0"
+    },
+    {
+        "UUID": "8001",
+        "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
+        "UUID_name": "EC_NETWORKING_DATA_IOM_IPV4_CHARACTERISTIC_UUID / BLECharacteristic / DATA1_WRITE_CH_ID",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.noisefit but declared in third-party SDK package `cn.appscomm.bluetooth` as Java field `f6183b`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: cross-file usage:getCharacteristic(f6183b).",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.noisefit v4.3.5 (versionCode 520), in Java field `f6183b`, declared in Java package `cn.appscomm.bluetooth` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f6183b).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.huawo.ufit v1.1.6 (versionCode 77), in Java field `DATA1_WRITE_CH_ID`. Classification source: field-name:DATA1_WRITE_CH_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_NETWORKING_DATA_IOM_IPV4_CHARACTERISTIC_UUID / BLECharacteristicUUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.bullitt.wave v2.8.29 (versionCode 108), in Java field `CHARACTERISTICS_UUID_FOR_LOG_NOTIFY`. Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hmdglobal.mobile.offgrid v2.6.30 (versionCode 105), in Java field `CHARACTERISTICS_UUID_FOR_LOG_NOTIFY`, declared in Java package `com.bullitt.sdk.platform.device.ble` (third-party SDK). Classification source: usage:getCharacteristic.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.bullitt.wave",
+                "description": "Verified current Google Play listing for com.bullitt.wave. This listing does not establish that archived APK version 2.8.29 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.hmdglobal.mobile.offgrid",
+                "description": "Verified current Google Play listing for com.hmdglobal.mobile.offgrid. This listing does not establish that archived APK version 2.6.30 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.noisefit",
+                "version_code": 520,
+                "version_name": "4.3.5",
+                "package_path": "BLUUID_APKS/0216/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6183b`."
+            },
+            {
+                "package_id": "com.huawo.ufit",
+                "version_code": 77,
+                "version_name": "1.1.6",
+                "package_path": "BLUUID_APKS/0218/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DATA1_WRITE_CH_ID`."
+            },
+            {
+                "package_id": "com.dell.omm",
+                "version_code": 44124,
+                "version_name": "4.4.1",
+                "package_path": "BLUUID_APKS/0977/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `EC_NETWORKING_DATA_IOM_IPV4_CHARACTERISTIC_UUID / BLECharacteristicUUID`."
+            },
+            {
+                "package_id": "com.bullitt.wave",
+                "version_code": 108,
+                "version_name": "2.8.29",
+                "package_path": "AndroZoo/apks/c0/com.bullitt.wave_C0441A9C19369537B85BD5906BB1886054C85EED018ED5A783DF0A36F732DFFB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTICS_UUID_FOR_LOG_NOTIFY`."
+            },
+            {
+                "package_id": "com.hmdglobal.mobile.offgrid",
+                "version_code": 105,
+                "version_name": "2.6.30",
+                "package_path": "AndroZoo/apks/10/com.hmdglobal.mobile.offgrid_1054BD7BE9A320D9A772CC73EEDB53454A60D83E6436DEE5949999A8AD1F8E0D.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTICS_UUID_FOR_LOG_NOTIFY`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
+    },
+    {
+        "UUID": "8002",
+        "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
+        "UUID_name": "EC_NETWORKING_DATA_IOM_IPV6_CHARACTERISTIC / DATA1_READ_CH_ID",
+        "UUID_purpose": "Reused by service: Dell reads server boot options, temperatures, IPv6 networking and configuration status, among other management data; NoiseFit and Huawo use it for replies to wearable data and configuration requests.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.noisefit v4.3.5 (versionCode 520), in Java field `f6184c`, declared in Java package `cn.appscomm.bluetooth` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.huawo.ufit v1.1.6 (versionCode 77), in Java field `DATA1_READ_CH_ID`. Classification source: field-name:DATA1_READ_CH_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_NETWORKING_DATA_IOM_IPV6_CHARACTERISTIC_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.noisefit",
+                "version_code": 520,
+                "version_name": "4.3.5",
+                "package_path": "BLUUID_APKS/0216/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6184c`."
+            },
+            {
+                "package_id": "com.huawo.ufit",
+                "version_code": 77,
+                "version_name": "1.1.6",
+                "package_path": "BLUUID_APKS/0218/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DATA1_READ_CH_ID`."
+            },
+            {
+                "package_id": "com.dell.omm",
+                "version_code": 44124,
+                "version_name": "4.4.1",
+                "package_path": "BLUUID_APKS/0977/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `EC_NETWORKING_DATA_IOM_IPV6_CHARACTERISTIC_UUID`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
+    },
+    {
+        "UUID": "8003",
+        "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
+        "UUID_name": "EC_APPLY_GROUP_CONFIG_CHAR / DATA2_READ_CH_ID",
+        "UUID_purpose": "Reused by service: Dell exchanges networking, health, configuration and Redfish/proxy results; NoiseFit and Huawo write wearable commands and event acknowledgements through this UUID.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.noisefit v4.3.5 (versionCode 520), in Java field `f6187f`, declared in Java package `cn.appscomm.bluetooth` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f6187f).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.huawo.ufit v1.1.6 (versionCode 77), in Java field `DATA2_READ_CH_ID`. Classification source: field-name:DATA2_READ_CH_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_APPLY_GROUP_CONFIG_CHAR_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.noisefit",
+                "version_code": 520,
+                "version_name": "4.3.5",
+                "package_path": "BLUUID_APKS/0216/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6187f`."
+            },
+            {
+                "package_id": "com.huawo.ufit",
+                "version_code": 77,
+                "version_name": "1.1.6",
+                "package_path": "BLUUID_APKS/0218/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DATA2_READ_CH_ID`."
+            },
+            {
+                "package_id": "com.dell.omm",
+                "version_code": 44124,
+                "version_name": "4.4.1",
+                "package_path": "BLUUID_APKS/0977/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `EC_APPLY_GROUP_CONFIG_CHAR_UUID`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
+    },
+    {
+        "UUID": "8004",
+        "company": "Third-party SDK code (declared in Java package `cn.appscomm.bluetooth` — distinct from host com.noisefit; Phase-4 identification needed)",
+        "UUID_name": "EC_GROUP_CONFIG_JOB_STATUS / DATA2_WRITE_CH_ID",
+        "UUID_purpose": "Reused by service: Dell exchanges location, log sequence, controller inventory and configuration/proxy results; NoiseFit and Huawo receive wearable remote-control events, including music and call-related controls.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.noisefit v4.3.5 (versionCode 520), in Java field `f6188g`, declared in Java package `cn.appscomm.bluetooth` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.huawo.ufit v1.1.6 (versionCode 77), in Java field `DATA2_WRITE_CH_ID`. Classification source: field-name:DATA2_WRITE_CH_ID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.dell.omm v4.4.1 (versionCode 44124), in Java field `EC_GROUP_CONFIG_JOB_STATUS_UUID`. Classification source: field-name:BLECharacteristicUUID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/noisefit/com.noisefit/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "APK source review established this UUID’s function.",
+                "submitter": "OpenAI Codex (GPT-6.1 Sol)"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.noisefit",
+                "version_code": 520,
+                "version_name": "4.3.5",
+                "package_path": "BLUUID_APKS/0216/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764/c950f22a09cef621279f74d6733f2b845b028243d6e1fbd9405358646a8c6764.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f6188g`."
+            },
+            {
+                "package_id": "com.huawo.ufit",
+                "version_code": 77,
+                "version_name": "1.1.6",
+                "package_path": "BLUUID_APKS/0218/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f/27637d45c65ba80804714df0b41dfa006e170495af74fa387313f00395e0be2f.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DATA2_WRITE_CH_ID`."
+            },
+            {
+                "package_id": "com.dell.omm",
+                "version_code": 44124,
+                "version_name": "4.4.1",
+                "package_path": "BLUUID_APKS/0977/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8/2bd74669232e06bb97c42b00ecd1722c6a13e0a3c3587cdb212c743c81fe6fc8.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `EC_GROUP_CONFIG_JOB_STATUS_UUID`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
+    },
+    {
+        "UUID": "81eea002-e735-49ec-8a11-7e32cae1e14e",
+        "company": "Tunze Aquarientechnik GmbH",
+        "UUID_name": "CHARACTERISTIC_NOTIFY",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.lhzl.maswearpro, declared as Java field `CHARACTERISTIC_NOTIFY_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.lhzl.maswearpro v2.1.4 (versionCode 35), in Java field `CHARACTERISTIC_NOTIFY_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lianhezhuli.dasfit v1.1 (versionCode 4), in Java field `CHARACTERISTIC_NOTIFY_UUID`. Classification source: field-name:CHARACTERISTIC_NOTIFY_UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "None",
+                "submitter": "Claude (Opus 4.7)",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (German aquarium-equipment vendor; 7097 Bluetooth Multicontroller for Turbelle pumps and LEDs; com.lhzl.tunzefit Android app)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.viatom.vihealth v2.75.66 (versionCode 334), declared in Java package `com.lhzl.blelib.bluetooth` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.viatom.vihealth",
+                "description": "Verified current Google Play listing for com.viatom.vihealth. This listing does not establish that archived APK version 2.75.66 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.lhzl.maswearpro",
+                "version_code": 35,
+                "version_name": "2.1.4",
+                "package_path": "BLUUID_APKS/0101/45d4fc94ad7807c53a2bb954b4a72c86d7a76ee8f80dfbe988ad4b107e02c9c9/45d4fc94ad7807c53a2bb954b4a72c86d7a76ee8f80dfbe988ad4b107e02c9c9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_NOTIFY_UUID`."
+            },
+            {
+                "package_id": "com.lianhezhuli.dasfit",
+                "version_code": 4,
+                "version_name": "1.1",
+                "package_path": "BLUUID_APKS/0749/42e148b486bfa8d9b05287586520a4e4f80ab8db393a18a70b8c492c16a46b60/42e148b486bfa8d9b05287586520a4e4f80ab8db393a18a70b8c492c16a46b60.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_NOTIFY_UUID`."
+            },
+            {
+                "package_id": "com.viatom.vihealth",
+                "version_code": 334,
+                "version_name": "2.75.66",
+                "package_path": "AndroZoo/apks/f8/com.viatom.vihealth_F87F0B9E9C2AAFF011214DACEF495E65FCA89549FEB7FFBD28ED1D2A9EE8A2F3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
+    },
+    {
+        "UUID": "81eea003-e735-49ec-8a11-7e32cae1e14e",
+        "company": "Tunze Aquarientechnik GmbH",
+        "UUID_name": "CHARACTERISTIC_WRITE",
+        "UUID_purpose": "Custom GATT Characteristic observed in Android app com.lhzl.maswearpro, declared as Java field `CHARACTERISTIC_WRITE_UUID`. Classification determined by naming-convention.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.lhzl.maswearpro v2.1.4 (versionCode 35), in Java field `CHARACTERISTIC_WRITE_UUID`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lianhezhuli.dasfit v1.1 (versionCode 4), in Java field `CHARACTERISTIC_WRITE_UUID`. Classification source: field-name:CHARACTERISTIC_WRITE_UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "None",
+                "submitter": "Claude (Opus 4.7)",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (German aquarium-equipment vendor; 7097 Bluetooth Multicontroller for Turbelle pumps and LEDs; com.lhzl.tunzefit Android app)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.viatom.vihealth v2.75.66 (versionCode 334), declared in Java package `com.lhzl.blelib.bluetooth` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.viatom.vihealth",
+                "description": "Verified current Google Play listing for com.viatom.vihealth. This listing does not establish that archived APK version 2.75.66 is available to download.",
+                "submitter": "GPT-6 Luna"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.lhzl.maswearpro",
+                "version_code": 35,
+                "version_name": "2.1.4",
+                "package_path": "BLUUID_APKS/0101/45d4fc94ad7807c53a2bb954b4a72c86d7a76ee8f80dfbe988ad4b107e02c9c9/45d4fc94ad7807c53a2bb954b4a72c86d7a76ee8f80dfbe988ad4b107e02c9c9.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_WRITE_UUID`."
+            },
+            {
+                "package_id": "com.lianhezhuli.dasfit",
+                "version_code": 4,
+                "version_name": "1.1",
+                "package_path": "BLUUID_APKS/0749/42e148b486bfa8d9b05287586520a4e4f80ab8db393a18a70b8c492c16a46b60/42e148b486bfa8d9b05287586520a4e4f80ab8db393a18a70b8c492c16a46b60.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_WRITE_UUID`."
+            },
+            {
+                "package_id": "com.viatom.vihealth",
+                "version_code": 334,
+                "version_name": "2.75.66",
+                "package_path": "AndroZoo/apks/f8/com.viatom.vihealth_F87F0B9E9C2AAFF011214DACEF495E65FCA89549FEB7FFBD28ED1D2A9EE8A2F3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
+    },
+    {
+        "UUID": "8a11",
+        "company": "OPPO",
+        "UUID_name": "CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT / PEDOMETER_MEASUREMENT_CHARACTERISTIC",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.watch.life but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT. Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.watch.life v2.8.0 (versionCode 264), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.honbow.fitdock v3.6.18 (versionCode 3618), in Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.deltecs.ihealth v1.0.3 (versionCode 10003), in Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.nahdi.main v2.22.1 (versionCode 251), in Java field `f2255c`, declared in Java package `bk` (third-party SDK). Classification source: cross-file usage:getCharacteristic(f2255c).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mobvoi.companion.ai v9.0.3-1845.852 (versionCode 90031845), in Java field `o0`, declared in Java package `mms` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/watch/com.watch.life/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/honbow/com.honbow.fitdock/download/3.6.18",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/deltecs/com.deltecs.ihealth/download/1.0.3",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/mobvoi/com.mobvoi.companion.ai/download/9.0.3-1845.852",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "None",
+                "submitter": "Claude (Opus 4.7)",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Guangdong Oppo Mobile Telecommunications; Bluetooth audio / wearable AT-command service)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.adctoday.bp v1.0.6 (versionCode 26), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lifesense.health v2.0.5 (versionCode 6), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`. Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.biofourmis.ipmpatient v25.13.0 (versionCode 14468), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hansjin.drdiary_android v2.77.3 (versionCode 2077003), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lstllc.apps.android.mcare v2.114 (versionCode 291), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.beebirdhome.home v110.1.13 (versionCode 110), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of healthcare.sentinel.mobile v3.7.0 (versionCode 225), in Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of org.seadvocacy.docsrchout v3.21.5 (versionCode 200), in Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.adctoday.bp",
+                "description": "Verified current Google Play listing for com.adctoday.bp. This listing does not establish that archived APK version 1.0.6 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.lifesense.health",
+                "description": "Verified current Google Play listing for com.lifesense.health. This listing does not establish that archived APK version 2.0.5 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.biofourmis.ipmpatient",
+                "description": "Verified current Google Play listing for com.biofourmis.ipmpatient. This listing does not establish that archived APK version 25.13.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.hansjin.drdiary_android",
+                "description": "Verified current Google Play listing for com.hansjin.drdiary_android. This listing does not establish that archived APK version 2.77.3 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.lstllc.apps.android.mcare",
+                "description": "Verified current Google Play listing for com.lstllc.apps.android.mcare. This listing does not establish that archived APK version 2.114 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.beebirdhome.home",
+                "description": "Verified current Google Play listing for com.beebirdhome.home. This listing does not establish that archived APK version 110.1.13 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=org.seadvocacy.docsrchout",
+                "description": "Verified current Google Play listing for org.seadvocacy.docsrchout. This listing does not establish that archived APK version 3.21.5 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: field-name:PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.watch.life",
+                "version_code": 264,
+                "version_name": "2.8.0",
+                "package_path": "BLUUID_APKS/0325/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.honbow.fitdock",
+                "version_code": 3618,
+                "version_name": "3.6.18",
+                "package_path": "BLUUID_APKS/0368/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`."
+            },
+            {
+                "package_id": "com.deltecs.ihealth",
+                "version_code": 10003,
+                "version_name": "1.0.3",
+                "package_path": "BLUUID_APKS/0449/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`."
+            },
+            {
+                "package_id": "com.nahdi.main",
+                "version_code": 251,
+                "version_name": "2.22.1",
+                "package_path": "BLUUID_APKS/0634/2a5c5dc835e920b1804eb23ff83df43cb4d6091b112904721f963323a9ed2146/2a5c5dc835e920b1804eb23ff83df43cb4d6091b112904721f963323a9ed2146.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f2255c`."
+            },
+            {
+                "package_id": "com.mobvoi.companion.ai",
+                "version_code": 90031845,
+                "version_name": "9.0.3-1845.852",
+                "package_path": "BLUUID_APKS/0974/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `o0`."
+            },
+            {
+                "package_id": "com.adctoday.bp",
+                "version_code": 26,
+                "version_name": "1.0.6",
+                "package_path": "AndroZoo/apks/d0/com.adctoday.bp_D019C8CE05CB37D4FB845B6FA268977F985ED97A76FABA227BD722BA94E89ADB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.lifesense.health",
+                "version_code": 6,
+                "version_name": "2.0.5",
+                "package_path": "AndroZoo/apks/75/com.lifesense.health_753B2DD5DC68B816146CD136FDEACF1ED1D80ED851D4E562E66EAEF8B21CC99A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.biofourmis.ipmpatient",
+                "version_code": 14468,
+                "version_name": "25.13.0",
+                "package_path": "AndroZoo/apks/b5/com.biofourmis.ipmpatient_B54ABAA7E1CA93D025B91B40DBC3959042AA3BCCFC090E9BA4BF20DAD8237C98.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.hansjin.drdiary_android",
+                "version_code": 2077003,
+                "version_name": "2.77.3",
+                "package_path": "AndroZoo/apks/5f/com.hansjin.drdiary_android_5FA3621A7797D52EADC1FE47A51E01C85102849B57DFDF92EC2F2D6255A883AB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.lstllc.apps.android.mcare",
+                "version_code": 291,
+                "version_name": "2.114",
+                "package_path": "AndroZoo/apks/bd/com.lstllc.apps.android.mcare_BDFCBF3FB5FEF815D5A5C7A98C54EA87F390FB7994BFA653FCCCF09351A9D59A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.beebirdhome.home",
+                "version_code": 110,
+                "version_name": "110.1.13",
+                "package_path": "AndroZoo/apks/7c/com.beebirdhome.home_7CC8AE4A3E3CBE43F81D7BC4AEEB361135484C62AD0C9575F3F1B1614502DC14.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
+            },
+            {
+                "package_id": "healthcare.sentinel.mobile",
+                "version_code": 225,
+                "version_name": "3.7.0",
+                "package_path": "AndroZoo/apks/c1/healthcare.sentinel.mobile_C1716376392C07F2E68F4EA5696D942609C4F53DD2FF531FFC39411A1726C6A3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`."
+            },
+            {
+                "package_id": "org.seadvocacy.docsrchout",
+                "version_code": 200,
+                "version_name": "3.21.5",
+                "package_path": "AndroZoo/apks/f7/org.seadvocacy.docsrchout_F77ACAB12416A466DE5813AE18DFFD8E620C51272E56EDF05D0E87EEF5D7EDDF.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A2_PEDOMETER_MEASUREMENT`."
+            },
+            {
+                "package_id": "chief.health",
+                "version_code": 402,
+                "version_name": "1.3.48",
+                "package_path": "AndroZoo/apks/00/chief.health_0048A5B4549791DA7CFF23BFA9091C37194B281442A461B69793B17D0E73FA06.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `PEDOMETER_MEASUREMENT_CHARACTERISTIC_UUID`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
+    },
+    {
+        "UUID": "8a24",
+        "company": "OPPO",
+        "UUID_name": "CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT / WEIGHT_SCALE_MEASUREMENT",
+        "UUID_purpose": "GATT Characteristic observed in Android app com.watch.life but declared in third-party SDK package `com.lifesense.plugin.ble.device.proto` as Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT. Phase-4 SDK identification: OPPO Bluetooth AT-command BLE service.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.watch.life v2.8.0 (versionCode 264), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.honbow.fitdock v3.6.18 (versionCode 3618), in Java field `WEIGHT_SCALE_MEASUREMENT_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.deltecs.ihealth v1.0.3 (versionCode 10003), in Java field `WEIGHT_SCALE_MEASUREMENT_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.mobvoi.companion.ai v9.0.3-1845.852 (versionCode 90031845), in Java field `C0`, declared in Java package `mms` (third-party SDK). Classification source: cross-file usage:getCharacteristic(C0).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/watch/com.watch.life/versions",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/honbow/com.honbow.fitdock/download/3.6.18",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/deltecs/com.deltecs.ihealth/download/1.0.3",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "https://apkpure.net/mobvoi/com.mobvoi.companion.ai/download/9.0.3-1845.852",
+                "description": "APK at this package + version is downloadable from apkpure.net; URL verified (status=ok, direct_download=False).",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "URL": "None",
+                "submitter": "Claude (Opus 4.7)",
+                "description": "Original 'company'-field commentary moved here (company field is now the bare company name): (Guangdong Oppo Mobile Telecommunications; Bluetooth audio / wearable AT-command service)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.adctoday.bp v1.0.6 (versionCode 26), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lifesense.health v2.0.5 (versionCode 6), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`. Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.biofourmis.ipmpatient v25.13.0 (versionCode 14468), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.hansjin.drdiary_android v2.77.3 (versionCode 2077003), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.lstllc.apps.android.mcare v2.114 (versionCode 291), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of com.beebirdhome.home v110.1.13 (versionCode 110), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of healthcare.sentinel.mobile v3.7.0 (versionCode 225), in Java field `WEIGHT_SCALE_MEASUREMENT_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "description": "Found in decompiled DEX of org.seadvocacy.docsrchout v3.21.5 (versionCode 200), in Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`, declared in Java package `com.lifesense.plugin.ble.device.proto` (third-party SDK). Classification source: field-name:CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT.",
+                "submitter": "GPT-6 Sol"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.adctoday.bp",
+                "description": "Verified current Google Play listing for com.adctoday.bp. This listing does not establish that archived APK version 1.0.6 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.lifesense.health",
+                "description": "Verified current Google Play listing for com.lifesense.health. This listing does not establish that archived APK version 2.0.5 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.biofourmis.ipmpatient",
+                "description": "Verified current Google Play listing for com.biofourmis.ipmpatient. This listing does not establish that archived APK version 25.13.0 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.hansjin.drdiary_android",
+                "description": "Verified current Google Play listing for com.hansjin.drdiary_android. This listing does not establish that archived APK version 2.77.3 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.lstllc.apps.android.mcare",
+                "description": "Verified current Google Play listing for com.lstllc.apps.android.mcare. This listing does not establish that archived APK version 2.114 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=com.beebirdhome.home",
+                "description": "Verified current Google Play listing for com.beebirdhome.home. This listing does not establish that archived APK version 110.1.13 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "URL": "https://play.google.com/store/apps/details?id=org.seadvocacy.docsrchout",
+                "description": "Verified current Google Play listing for org.seadvocacy.docsrchout. This listing does not establish that archived APK version 3.21.5 is available to download.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Found in decompiled DEX of chief.health v1.3.48 (versionCode 402), in Java field `WEIGHT_SCALE_MEASUREMENT_UUID`, declared in Java package `com.lifesense.ble.b` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "GPT-6.1 Terra"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.watch.life",
+                "version_code": 264,
+                "version_name": "2.8.0",
+                "package_path": "BLUUID_APKS/0325/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd/60aa41186068805c0259a0adf7bc7e9cb0217087810e570c21bb9b6e0361d6dd.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.honbow.fitdock",
+                "version_code": 3618,
+                "version_name": "3.6.18",
+                "package_path": "BLUUID_APKS/0368/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c/93859e0f673a05c2a4516ac4f4d8d536ec9700531d346a016368e564e347065c.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WEIGHT_SCALE_MEASUREMENT_UUID`."
+            },
+            {
+                "package_id": "com.deltecs.ihealth",
+                "version_code": 10003,
+                "version_name": "1.0.3",
+                "package_path": "BLUUID_APKS/0449/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434/e57da8e97ca6afdec5a83818058ff1b859c2cd4a30c83d26c5a90f5256559434.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WEIGHT_SCALE_MEASUREMENT_UUID`."
+            },
+            {
+                "package_id": "com.mobvoi.companion.ai",
+                "version_code": 90031845,
+                "version_name": "9.0.3-1845.852",
+                "package_path": "BLUUID_APKS/0974/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc/2d05c8b9981dd1eb0eed52e813c18f6836c4ec5310ac8039c7b00552b1e26ffc.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `C0`."
+            },
+            {
+                "package_id": "com.adctoday.bp",
+                "version_code": 26,
+                "version_name": "1.0.6",
+                "package_path": "AndroZoo/apks/d0/com.adctoday.bp_D019C8CE05CB37D4FB845B6FA268977F985ED97A76FABA227BD722BA94E89ADB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.lifesense.health",
+                "version_code": 6,
+                "version_name": "2.0.5",
+                "package_path": "AndroZoo/apks/75/com.lifesense.health_753B2DD5DC68B816146CD136FDEACF1ED1D80ED851D4E562E66EAEF8B21CC99A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.biofourmis.ipmpatient",
+                "version_code": 14468,
+                "version_name": "25.13.0",
+                "package_path": "AndroZoo/apks/b5/com.biofourmis.ipmpatient_B54ABAA7E1CA93D025B91B40DBC3959042AA3BCCFC090E9BA4BF20DAD8237C98.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.hansjin.drdiary_android",
+                "version_code": 2077003,
+                "version_name": "2.77.3",
+                "package_path": "AndroZoo/apks/5f/com.hansjin.drdiary_android_5FA3621A7797D52EADC1FE47A51E01C85102849B57DFDF92EC2F2D6255A883AB.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.lstllc.apps.android.mcare",
+                "version_code": 291,
+                "version_name": "2.114",
+                "package_path": "AndroZoo/apks/bd/com.lstllc.apps.android.mcare_BDFCBF3FB5FEF815D5A5C7A98C54EA87F390FB7994BFA653FCCCF09351A9D59A.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
+            },
+            {
+                "package_id": "com.beebirdhome.home",
+                "version_code": 110,
+                "version_name": "110.1.13",
+                "package_path": "AndroZoo/apks/7c/com.beebirdhome.home_7CC8AE4A3E3CBE43F81D7BC4AEEB361135484C62AD0C9575F3F1B1614502DC14.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
+            },
+            {
+                "package_id": "healthcare.sentinel.mobile",
+                "version_code": 225,
+                "version_name": "3.7.0",
+                "package_path": "AndroZoo/apks/c1/healthcare.sentinel.mobile_C1716376392C07F2E68F4EA5696D942609C4F53DD2FF531FFC39411A1726C6A3.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WEIGHT_SCALE_MEASUREMENT_UUID`."
+            },
+            {
+                "package_id": "org.seadvocacy.docsrchout",
+                "version_code": 200,
+                "version_name": "3.21.5",
+                "package_path": "AndroZoo/apks/f7/org.seadvocacy.docsrchout_F77ACAB12416A466DE5813AE18DFFD8E620C51272E56EDF05D0E87EEF5D7EDDF.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `CHARACTERISTIC_UUID_A3_SCALE_MEASUREMENT`."
+            },
+            {
+                "package_id": "chief.health",
+                "version_code": 402,
+                "version_name": "1.3.48",
+                "package_path": "AndroZoo/apks/00/chief.health_0048A5B4549791DA7CFF23BFA9091C37194B281442A461B69793B17D0E73FA06.apk",
+                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `WEIGHT_SCALE_MEASUREMENT_UUID`."
+            }
+        ],
+        "parent_UUID": "00000000-0000-0000-6473-5f696c666973"
     },
     {
         "UUID": "88e91401-80ed-4943-9bcb-39c532a76023",
@@ -70871,6 +70871,155 @@
         ]
     },
     {
+        "UUID": "89a8591d-bb19-485b-9f59-58492bc33e24",
+        "company": "Push-to-talk accessory SDK (vendor unknown)",
+        "UUID_name": "Push-to-talk button service",
+        "UUID_purpose": "Provides push-to-talk button press and release events to companion applications.",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "description": "Found in decompiled DEX of com.slide2talk.android.app v1.14.14 (versionCode 114014), in Java field `arrayList`, declared in Java package `t5` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.imptt.proptt v9.0.1 (versionCode 450), in Java field `f9675h`, declared in Java package `d5` (third-party SDK). Classification source: usage:getService.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.onbeep.obiwan v7.22.1 (versionCode 25269), in Java field `uuidFromString`. Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.motorolasolutions.waveoncloudptt v12.3.1.25 (versionCode 3508), declared in Java package `com.kodiak.ble` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.symbol.wfc.pttpro v3.3.10247 (versionCode 10247), in Java field `g`, declared in Java package `defpackage` (third-party SDK). Classification source: naming-convention.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.jvckenwood.eptt.android v31.0 (versionCode 5252), in Java field `f11284i`, declared in Java package `d` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.att.eptt v11.3.0.38 (versionCode 2017), declared in Java package `com.kodiak.ble` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.slacorp.eptt.android v32.0 (versionCode 5380), in Java field `f11047i`, declared in Java package `d` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.verizon.pushtotalkplus v11.3.0.46 (versionCode 2019), declared in Java package `com.kodiak.ble` (third-party SDK). Classification source: file-level-default.",
+                "submitter": "Claude (Opus 4.7)"
+            },
+            {
+                "description": "Found in decompiled DEX of com.easytalk v6.3.2 (versionCode 632022), in Java field `SERVICE_UUID_R16`, declared in Java package `com.cellls.awesome.android.ble` (third-party SDK). Classification source: field-name:SERVICE_UUID_R16.",
+                "submitter": "GPT-6.1 Terra"
+            },
+            {
+                "description": "Source review identified this as a gatt service in com.tassta.flex.progility.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "Source review identified this as a gatt service in com.tassta.sa.",
+                "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The listed active Blu-PTT profiles identify this UUID through service lookups or comparisons with BluetoothGattService.getUuid; their button-event characteristic has a different UUID. Received event bits trigger push-to-talk press and release callbacks. Historical characteristic labels were file-level defaults; EasyTalk contains an unused service-UUID alias.",
+                "submitter": "GPT-6.1 Sol"
+            }
+        ],
+        "android_info_array": [
+            {
+                "package_id": "com.slide2talk.android.app",
+                "version_code": 114014,
+                "version_name": "1.14.14",
+                "package_path": "BLUUID_APKS/0105/3a9c0468579a281cf295a6eee5f8d6c0dc1378f46cf0673fbad78fd82d35f6ae/3a9c0468579a281cf295a6eee5f8d6c0dc1378f46cf0673fbad78fd82d35f6ae.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            },
+            {
+                "package_id": "com.imptt.proptt",
+                "version_code": 450,
+                "version_name": "9.0.1",
+                "package_path": "BLUUID_APKS/0289/d7e8ff75bab1928489558263759f8a0eabcb4d3c08d570380942e055dd7fa72a/d7e8ff75bab1928489558263759f8a0eabcb4d3c08d570380942e055dd7fa72a.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            },
+            {
+                "package_id": "com.onbeep.obiwan",
+                "version_code": 25269,
+                "version_name": "7.22.1",
+                "package_path": "BLUUID_APKS/0336/925290ce2874b44062ff8d06ac36661d0e13d1351312f71090d09246ee259453/925290ce2874b44062ff8d06ac36661d0e13d1351312f71090d09246ee259453.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            },
+            {
+                "package_id": "com.motorolasolutions.waveoncloudptt",
+                "version_code": 3508,
+                "version_name": "12.3.1.25",
+                "package_path": "BLUUID_APKS/0441/5f90e14fc7155ed92f6e2c4fb940e0442b2cf1bd05b0306b1811bd03c599108d/5f90e14fc7155ed92f6e2c4fb940e0442b2cf1bd05b0306b1811bd03c599108d.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            },
+            {
+                "package_id": "com.symbol.wfc.pttpro",
+                "version_code": 10247,
+                "version_name": "3.3.10247",
+                "package_path": "BLUUID_APKS/0449/cf4006bb09ddcd5076bff7b89b8c873ca5a7d2c1ef441055f332b20154486e9d/cf4006bb09ddcd5076bff7b89b8c873ca5a7d2c1ef441055f332b20154486e9d.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            },
+            {
+                "package_id": "com.jvckenwood.eptt.android",
+                "version_code": 5252,
+                "version_name": "31.0",
+                "package_path": "BLUUID_APKS/0493/7a0f7d0c007dc1b40479f22660a8c2753f2e58e9194710c28cef022d476f58e9/7a0f7d0c007dc1b40479f22660a8c2753f2e58e9194710c28cef022d476f58e9.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            },
+            {
+                "package_id": "com.att.eptt",
+                "version_code": 2017,
+                "version_name": "11.3.0.38",
+                "package_path": "BLUUID_APKS/0569/ec540f5c908c5a33d4cdf7f0bf6998e20c255f1e422b83f8ce9c8a142c65a497/ec540f5c908c5a33d4cdf7f0bf6998e20c255f1e422b83f8ce9c8a142c65a497.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            },
+            {
+                "package_id": "com.slacorp.eptt.android",
+                "version_code": 5380,
+                "version_name": "32.0",
+                "package_path": "BLUUID_APKS/0734/a926139c90363bd5411e420d9ca8f6ecb3e817012f9ddeef59ad87fb1cfb4950/a926139c90363bd5411e420d9ca8f6ecb3e817012f9ddeef59ad87fb1cfb4950.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            },
+            {
+                "package_id": "com.verizon.pushtotalkplus",
+                "version_code": 2019,
+                "version_name": "11.3.0.46",
+                "package_path": "BLUUID_APKS/0879/74cd8ba6680365ce5622cc00173bc4a2fd2fd8494ba05c6f93750990f9cd1049/74cd8ba6680365ce5622cc00173bc4a2fd2fd8494ba05c6f93750990f9cd1049.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            },
+            {
+                "package_id": "com.easytalk",
+                "version_code": 632022,
+                "version_name": "6.3.2",
+                "package_path": "AndroZoo/apks/01/com.easytalk_01C7F36C5706D386448133EC4EA8B36C634C6B2435D55B1717CBF8CDCA982E06.apk",
+                "description": "Contains an unused copy of the push-to-talk service UUID."
+            },
+            {
+                "package_id": "com.tassta.flex.progility",
+                "version_code": 329353,
+                "version_name": "5.6.58.1",
+                "package_path": "AndroZoo/apks/c7/com.tassta.flex.progility_C71962B70DF5968027877E7B9267A8690079F5D04885E2B10DE7BDF0D0F5E157.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            },
+            {
+                "package_id": "com.tassta.sa",
+                "version_code": 655997,
+                "version_name": "10.3.11.3",
+                "package_path": "AndroZoo/apks/dd/com.tassta.sa_DD6DFAEF8F70B04722B7F81A0949B658AB5C6600C3A00127BD8F9290D511B638.apk",
+                "description": "Push-to-talk accessory service identified in this app."
+            }
+        ]
+    },
+    {
         "UUID": "8ebd4f76-da9d-4b5a-a96e-8ebfbeb622e7",
         "company": "Qingdao Richmat Intelligence Technology Inc.",
         "UUID_name": "UUID_SERVICE_DATA_LP1",
@@ -88424,9 +88573,8 @@
         "UUID": "8d6bfa01-c14e-4079-96f5-57a5b136fbdc",
         "company": "Third-party SDK code (declared in Java package `com.variable.therma.controllers.callbacks` — distinct from host com.ncs.phoenixproject; Phase-4 identification needed)",
         "UUID_name": "ERROR_NOTIFICATION",
-        "UUID_purpose": "GATT Service observed in Android app com.ncs.phoenixproject but declared in third-party SDK package `com.variable.therma.controllers.callbacks` as Java field `ERROR_NOTIFICATION`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
+        "UUID_purpose": "Reports device error codes.",
         "UUID_usage_array": [
-            "GATT Service",
             "GATT Characteristic"
         ],
         "evidence_array": [
@@ -88437,6 +88585,10 @@
             {
                 "description": "Source review identified this as a gatt characteristic in com.risklimiter.inspector.",
                 "submitter": "GPT-6 Luna"
+            },
+            {
+                "description": "The listed Variable SDK app contexts use this UUID as a characteristic. Reports device error codes. The historical service label came from a file-level default rather than a service lookup.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "android_info_array": [
@@ -88445,7 +88597,7 @@
                 "version_code": 431,
                 "version_name": "1.6.19",
                 "package_path": "BLUUID_APKS/0214/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696/27e197c4f62840d576758c673ad49a02f1e26d1b14260ffd9ab691f3060a4696.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `ERROR_NOTIFICATION`."
+                "description": "The extractor initially inferred a service; source review identifies a characteristic."
             },
             {
                 "package_id": "com.risklimiter.inspector",
@@ -89716,153 +89868,6 @@
                 "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `DEVICE_NAME_CHARACTERISTIC`."
             }
         ]
-    },
-    {
-        "UUID": "89a8591d-bb19-485b-9f59-58492bc33e24",
-        "company": "Third-party SDK code (declared in Java package `t5` — distinct from host com.slide2talk.android.app; Phase-4 identification needed)",
-        "UUID_name": "arrayList",
-        "UUID_purpose": "GATT Characteristic observed in Android app com.slide2talk.android.app but declared in third-party SDK package `t5` as Java field `arrayList`. The host APK's vendor is NOT the UUID owner; the SDK author is. Classification source: file-level-default.",
-        "UUID_usage_array": [
-            "GATT Characteristic",
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "Found in decompiled DEX of com.slide2talk.android.app v1.14.14 (versionCode 114014), in Java field `arrayList`, declared in Java package `t5` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.imptt.proptt v9.0.1 (versionCode 450), in Java field `f9675h`, declared in Java package `d5` (third-party SDK). Classification source: usage:getService.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.onbeep.obiwan v7.22.1 (versionCode 25269), in Java field `uuidFromString`. Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.motorolasolutions.waveoncloudptt v12.3.1.25 (versionCode 3508), declared in Java package `com.kodiak.ble` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.symbol.wfc.pttpro v3.3.10247 (versionCode 10247), in Java field `g`, declared in Java package `defpackage` (third-party SDK). Classification source: naming-convention.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.jvckenwood.eptt.android v31.0 (versionCode 5252), in Java field `f11284i`, declared in Java package `d` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.att.eptt v11.3.0.38 (versionCode 2017), declared in Java package `com.kodiak.ble` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.slacorp.eptt.android v32.0 (versionCode 5380), in Java field `f11047i`, declared in Java package `d` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.verizon.pushtotalkplus v11.3.0.46 (versionCode 2019), declared in Java package `com.kodiak.ble` (third-party SDK). Classification source: file-level-default.",
-                "submitter": "Claude (Opus 4.7)"
-            },
-            {
-                "description": "Found in decompiled DEX of com.easytalk v6.3.2 (versionCode 632022), in Java field `SERVICE_UUID_R16`, declared in Java package `com.cellls.awesome.android.ble` (third-party SDK). Classification source: field-name:SERVICE_UUID_R16.",
-                "submitter": "GPT-6.1 Terra"
-            },
-            {
-                "description": "Source review identified this as a gatt service in com.tassta.flex.progility.",
-                "submitter": "GPT-6 Luna"
-            },
-            {
-                "description": "Source review identified this as a gatt service in com.tassta.sa.",
-                "submitter": "GPT-6 Luna"
-            }
-        ],
-        "android_info_array": [
-            {
-                "package_id": "com.slide2talk.android.app",
-                "version_code": 114014,
-                "version_name": "1.14.14",
-                "package_path": "BLUUID_APKS/0105/3a9c0468579a281cf295a6eee5f8d6c0dc1378f46cf0673fbad78fd82d35f6ae/3a9c0468579a281cf295a6eee5f8d6c0dc1378f46cf0673fbad78fd82d35f6ae.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `arrayList`."
-            },
-            {
-                "package_id": "com.imptt.proptt",
-                "version_code": 450,
-                "version_name": "9.0.1",
-                "package_path": "BLUUID_APKS/0289/d7e8ff75bab1928489558263759f8a0eabcb4d3c08d570380942e055dd7fa72a/d7e8ff75bab1928489558263759f8a0eabcb4d3c08d570380942e055dd7fa72a.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f9675h`."
-            },
-            {
-                "package_id": "com.onbeep.obiwan",
-                "version_code": 25269,
-                "version_name": "7.22.1",
-                "package_path": "BLUUID_APKS/0336/925290ce2874b44062ff8d06ac36661d0e13d1351312f71090d09246ee259453/925290ce2874b44062ff8d06ac36661d0e13d1351312f71090d09246ee259453.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `uuidFromString`."
-            },
-            {
-                "package_id": "com.motorolasolutions.waveoncloudptt",
-                "version_code": 3508,
-                "version_name": "12.3.1.25",
-                "package_path": "BLUUID_APKS/0441/5f90e14fc7155ed92f6e2c4fb940e0442b2cf1bd05b0306b1811bd03c599108d/5f90e14fc7155ed92f6e2c4fb940e0442b2cf1bd05b0306b1811bd03c599108d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.symbol.wfc.pttpro",
-                "version_code": 10247,
-                "version_name": "3.3.10247",
-                "package_path": "BLUUID_APKS/0449/cf4006bb09ddcd5076bff7b89b8c873ca5a7d2c1ef441055f332b20154486e9d/cf4006bb09ddcd5076bff7b89b8c873ca5a7d2c1ef441055f332b20154486e9d.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `g`."
-            },
-            {
-                "package_id": "com.jvckenwood.eptt.android",
-                "version_code": 5252,
-                "version_name": "31.0",
-                "package_path": "BLUUID_APKS/0493/7a0f7d0c007dc1b40479f22660a8c2753f2e58e9194710c28cef022d476f58e9/7a0f7d0c007dc1b40479f22660a8c2753f2e58e9194710c28cef022d476f58e9.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f11284i`."
-            },
-            {
-                "package_id": "com.att.eptt",
-                "version_code": 2017,
-                "version_name": "11.3.0.38",
-                "package_path": "BLUUID_APKS/0569/ec540f5c908c5a33d4cdf7f0bf6998e20c255f1e422b83f8ce9c8a142c65a497/ec540f5c908c5a33d4cdf7f0bf6998e20c255f1e422b83f8ce9c8a142c65a497.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.slacorp.eptt.android",
-                "version_code": 5380,
-                "version_name": "32.0",
-                "package_path": "BLUUID_APKS/0734/a926139c90363bd5411e420d9ca8f6ecb3e817012f9ddeef59ad87fb1cfb4950/a926139c90363bd5411e420d9ca8f6ecb3e817012f9ddeef59ad87fb1cfb4950.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'; Java field `f11047i`."
-            },
-            {
-                "package_id": "com.verizon.pushtotalkplus",
-                "version_code": 2019,
-                "version_name": "11.3.0.46",
-                "package_path": "BLUUID_APKS/0879/74cd8ba6680365ce5622cc00173bc4a2fd2fd8494ba05c6f93750990f9cd1049/74cd8ba6680365ce5622cc00173bc4a2fd2fd8494ba05c6f93750990f9cd1049.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Characteristic'."
-            },
-            {
-                "package_id": "com.easytalk",
-                "version_code": 632022,
-                "version_name": "6.3.2",
-                "package_path": "AndroZoo/apks/01/com.easytalk_01C7F36C5706D386448133EC4EA8B36C634C6B2435D55B1717CBF8CDCA982E06.apk",
-                "description": "Detected by apk-clues-extract scan; usage 'GATT Service'; Java field `SERVICE_UUID_R16`."
-            },
-            {
-                "package_id": "com.tassta.flex.progility",
-                "version_code": 329353,
-                "version_name": "5.6.58.1",
-                "package_path": "AndroZoo/apks/c7/com.tassta.flex.progility_C71962B70DF5968027877E7B9267A8690079F5D04885E2B10DE7BDF0D0F5E157.apk",
-                "description": "Source review identified a gatt service in this app."
-            },
-            {
-                "package_id": "com.tassta.sa",
-                "version_code": 655997,
-                "version_name": "10.3.11.3",
-                "package_path": "AndroZoo/apks/dd/com.tassta.sa_DD6DFAEF8F70B04722B7F81A0949B658AB5C6600C3A00127BD8F9290D511B638.apk",
-                "description": "Source review identified a gatt service in this app."
-            }
-        ],
-        "parent_UUID": "894c8042-e841-461c-a5c9-5a73d25db08e"
     },
     {
         "UUID": "88bb1d56-87d2-4151-b3a7-cffcd283b3ff",

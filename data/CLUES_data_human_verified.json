@@ -1637,23 +1637,9 @@
         ]
     },
     {
-        "UUID": "febe",
-        "company": "Bose",
-        "UUID_purpose": "Unknown",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "description": "febe is assigned to Bose in BT SIG member_uuids.yaml",
-                "submitter": "Xeno Kovah"
-            }
-        ]
-    },
-    {
         "UUID": "234bfbd5-e3b3-4536-a3fe-723620d4b78d",
         "company": "Bose",
-        "UUID_purpose": "Unknown",
+        "UUID_purpose": "The purpose is unknown.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -1661,6 +1647,15 @@
             {
                 "description": "Seen under febe, 4th most common! TODO: Citation/documentation needed!",
                 "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://github.com/Jaisalrathi1829/Void-Controller/blob/b8876336831a2798325d8f923fe1d314a127642e/docs/protocol-notes.md#L1135-L1143",
+                "description": "A public Bose headphone GATT enumeration observes this characteristic under FEBE; its function remains unknown.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "description": "A user-provided GATT scan observed this writable characteristic on Bose QuietComfort headphones.",
+                "submitter": "User-provided GATT scan"
             }
         ],
         "parent_UUID": "febe"
@@ -1668,7 +1663,7 @@
     {
         "UUID": "9ec813b4-256b-4090-93a8-a4f0e9107733",
         "company": "Bose",
-        "UUID_purpose": "Unknown",
+        "UUID_purpose": "The purpose is unknown.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -1676,36 +1671,51 @@
             {
                 "description": "Seen under febe, 4th most common! TODO: Citation/documentation needed!",
                 "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://github.com/Jaisalrathi1829/Void-Controller/blob/b8876336831a2798325d8f923fe1d314a127642e/docs/protocol-notes.md#L1135-L1143",
+                "description": "A public Bose headphone GATT enumeration observes this characteristic under FEBE; its function remains unknown.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "parent_UUID": "febe"
     },
     {
-        "UUID": "c65b8f2f-aee2-4c89-b758-bc4892d6f2d8",
+        "UUID": "b8ec1fa5-f56b-4aad-8961-856b84fed4f8",
         "company": "Bose",
-        "UUID_purpose": "Unknown",
+        "UUID_purpose": "The purpose is unknown.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Seen under febe, 4th most common! TODO: Citation/documentation needed!",
-                "submitter": "Xeno Kovah"
+                "description": "A user-provided GATT scan observed this writable characteristic on Bose QuietComfort headphones.",
+                "submitter": "User-provided GATT scan"
+            },
+            {
+                "URL": "https://github.com/Jaisalrathi1829/Void-Controller/blob/b8876336831a2798325d8f923fe1d314a127642e/docs/protocol-notes.md#L1135-L1143",
+                "description": "A public Bose headphone GATT enumeration observes this characteristic under FEBE; its function remains unknown.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "parent_UUID": "febe"
     },
     {
-        "UUID": "d417c028-9818-4354-99d1-2ac09d074591",
+        "UUID": "c1c449f8-34d7-4c61-ad8a-4fb364f10b27",
         "company": "Bose",
-        "UUID_purpose": "Unknown",
+        "UUID_purpose": "The purpose is unknown.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
         "evidence_array": [
             {
-                "description": "Seen under febe, 4th most common! TODO: Citation/documentation needed!",
-                "submitter": "Xeno Kovah"
+                "description": "A user-provided GATT scan observed this writable characteristic on Bose QuietComfort headphones.",
+                "submitter": "User-provided GATT scan"
+            },
+            {
+                "URL": "https://github.com/Jaisalrathi1829/Void-Controller/blob/b8876336831a2798325d8f923fe1d314a127642e/docs/protocol-notes.md#L1135-L1143",
+                "description": "A public Bose headphone GATT enumeration observes this characteristic under FEBE; its function remains unknown.",
+                "submitter": "GPT-6.1 Sol"
             }
         ],
         "parent_UUID": "febe"
@@ -1713,7 +1723,7 @@
     {
         "UUID": "eecb95dd-befe-40d6-98c7-0651d2d09ba9",
         "company": "Bose",
-        "UUID_purpose": "Unknown",
+        "UUID_purpose": "The purpose is unknown.",
         "UUID_usage_array": [
             "GATT Characteristic"
         ],
@@ -3797,6 +3807,21 @@
         "parent_UUID": "feb8"
     },
     {
+        "UUID": "c53673dd-69e0-4a65-b530-6ffb330bff85",
+        "company": "Meta Platforms Technologies, LLC",
+        "UUID_purpose": "The purpose is unknown.",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "parent_UUID": "fd5f",
+        "evidence_array": [
+            {
+                "description": "A user-provided GATT scan observed this readable characteristic under service FD5F.",
+                "submitter": "User-provided GATT scan"
+            }
+        ]
+    },
+    {
         "UUID": "bf3fbd80-063f-11e5-9e69-0002a5d5c50x",
         "company": "Microchip Technology Inc.",
         "UUID_purpose": "Firmware update",
@@ -4020,6 +4045,71 @@
                 "description": "Polish Home Quarantine (Kwarantanna domowa), not automated extraction."
             }
         ]
+    },
+    {
+        "UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
+        "company": "NXP Semiconductors",
+        "UUID_purpose": "Bluetooth LE Over-the-Air Programming (OTAP) service for firmware updates. Contains the OTAP Control Point and OTAP Data characteristics.",
+        "UUID_name": "Bluetooth LE OTAP",
+        "UUID_usage_array": [
+            "GATT Service"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
+                "description": "NXP MCUXpresso SDK OTAP guide, Implemented profile and services: identifies this UUID as the Bluetooth LE OTAP Service and lists its two characteristics.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20261027124304/https://raw.githubusercontent.com/nxp-mcuxpresso/mcuxsdk-middleware-bluetooth-host/768bc6adab7811af2dc217da3dbcd70cd74b20fd/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/implemented_profile_and_services_009.md",
+                "description": "NXP SDK source at an immutable commit identifies the OTAP service and characteristics.",
+                "submitter": "Xeno Kovah"
+            }
+        ]
+    },
+    {
+        "UUID": "01ff5551-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
+        "company": "NXP Semiconductors",
+        "UUID_purpose": "OTAP Control Point: exchanges firmware-update commands between the OTAP Server and Client via writes and indications; image data chunks are not transferred through this characteristic.",
+        "UUID_name": "OTAP Control Point",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
+                "description": "NXP MCUXpresso SDK OTAP guide explicitly identifies this UUID as the OTAP Control Point Characteristic of the Bluetooth LE OTAP Service.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20261027124304/https://raw.githubusercontent.com/nxp-mcuxpresso/mcuxsdk-middleware-bluetooth-host/768bc6adab7811af2dc217da3dbcd70cd74b20fd/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/implemented_profile_and_services_009.md",
+                "description": "NXP SDK source at an immutable commit identifies the OTAP Control Point within the OTAP service.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0"
+    },
+    {
+        "UUID": "01ff5552-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
+        "company": "NXP Semiconductors",
+        "UUID_purpose": "OTAP Data: transfers firmware image chunks through writes without response when the OTAP Client requests ATT transfer; L2CAP credit-based channels are an alternate transfer method.",
+        "UUID_name": "OTAP Data",
+        "UUID_usage_array": [
+            "GATT Characteristic"
+        ],
+        "evidence_array": [
+            {
+                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
+                "description": "NXP MCUXpresso SDK OTAP guide explicitly identifies this UUID as the OTAP Data Characteristic of the Bluetooth LE OTAP Service.",
+                "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://web.archive.org/web/20261027124304/https://raw.githubusercontent.com/nxp-mcuxpresso/mcuxsdk-middleware-bluetooth-host/768bc6adab7811af2dc217da3dbcd70cd74b20fd/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/implemented_profile_and_services_009.md",
+                "description": "NXP SDK source at an immutable commit identifies the OTAP Data characteristic within the OTAP service.",
+                "submitter": "Xeno Kovah"
+            }
+        ],
+        "parent_UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0"
     },
     {
         "UUID": "d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c",
@@ -4494,71 +4584,6 @@
                 "submitter": "Xeno Kovah"
             }
         ]
-    },
-    {
-        "UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
-        "company": "NXP Semiconductors",
-        "UUID_purpose": "Bluetooth LE Over-the-Air Programming (OTAP) service for firmware updates. Contains the OTAP Control Point and OTAP Data characteristics.",
-        "UUID_name": "Bluetooth LE OTAP",
-        "UUID_usage_array": [
-            "GATT Service"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
-                "description": "NXP MCUXpresso SDK OTAP guide, Implemented profile and services: identifies this UUID as the Bluetooth LE OTAP Service and lists its two characteristics.",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20261027124304/https://raw.githubusercontent.com/nxp-mcuxpresso/mcuxsdk-middleware-bluetooth-host/768bc6adab7811af2dc217da3dbcd70cd74b20fd/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/implemented_profile_and_services_009.md",
-                "description": "NXP SDK source at an immutable commit identifies the OTAP service and characteristics.",
-                "submitter": "Xeno Kovah"
-            }
-        ]
-    },
-    {
-        "UUID": "01ff5551-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
-        "company": "NXP Semiconductors",
-        "UUID_purpose": "OTAP Control Point: exchanges firmware-update commands between the OTAP Server and Client via writes and indications; image data chunks are not transferred through this characteristic.",
-        "UUID_name": "OTAP Control Point",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
-                "description": "NXP MCUXpresso SDK OTAP guide explicitly identifies this UUID as the OTAP Control Point Characteristic of the Bluetooth LE OTAP Service.",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20261027124304/https://raw.githubusercontent.com/nxp-mcuxpresso/mcuxsdk-middleware-bluetooth-host/768bc6adab7811af2dc217da3dbcd70cd74b20fd/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/implemented_profile_and_services_009.md",
-                "description": "NXP SDK source at an immutable commit identifies the OTAP Control Point within the OTAP service.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0"
-    },
-    {
-        "UUID": "01ff5552-ba5e-f4ee-5ca1-eb1e5e4b1ce0",
-        "company": "NXP Semiconductors",
-        "UUID_purpose": "OTAP Data: transfers firmware image chunks through writes without response when the OTAP Client requests ATT transfer; L2CAP credit-based channels are an alternate transfer method.",
-        "UUID_name": "OTAP Data",
-        "UUID_usage_array": [
-            "GATT Characteristic"
-        ],
-        "evidence_array": [
-            {
-                "URL": "https://web.archive.org/web/20261027124141/https://docs.mcuxpresso.nxp.com/mcuxsdk/latest/middleware/wireless/bluetooth/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/over_the_air_programming_otap.html",
-                "description": "NXP MCUXpresso SDK OTAP guide explicitly identifies this UUID as the OTAP Data Characteristic of the Bluetooth LE OTAP Service.",
-                "submitter": "Xeno Kovah"
-            },
-            {
-                "URL": "https://web.archive.org/web/20261027124304/https://raw.githubusercontent.com/nxp-mcuxpresso/mcuxsdk-middleware-bluetooth-host/768bc6adab7811af2dc217da3dbcd70cd74b20fd/doc/Bluetooth%20Low%20Energy%20Demo%20Applications%20Users%20Guide/topics/implemented_profile_and_services_009.md",
-                "description": "NXP SDK source at an immutable commit identifies the OTAP Data characteristic within the OTAP service.",
-                "submitter": "Xeno Kovah"
-            }
-        ],
-        "parent_UUID": "01ff5550-ba5e-f4ee-5ca1-eb1e5e4b1ce0"
     },
     {
         "UUID": "ab5e0001-5a21-4f05-bc7d-af01f617b664",
@@ -6121,11 +6146,10 @@
     {
         "UUID": "fd69",
         "company": "Samsung",
-        "UUID_purpose": "Find My Everything/Electronics (FME). 'Service UUID FD59 is used for device onboarding/registration activities. During the registration process, the owner device and the tag exchanges configuration and cryptographic data over various characteristics under this service.'",
-        "UUID_name": "FME",
+        "UUID_purpose": "Identifies Offline Finding advertisements from lost Samsung phones and tablets. Nearby helper devices detect the advertised privacy identifier and relay location reports so the owner can locate the offline device.",
+        "UUID_name": "Find My Mobile Offline Finding",
         "UUID_usage_array": [
-            "GATT Service",
-            "GATT Characteristic"
+            "Advertisement"
         ],
         "evidence_array": [
             {
@@ -6137,6 +6161,16 @@
                 "URL": "https://web.archive.org/web/20240830172748/https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
                 "description": "From talk 'Security and Privacy Analysis of Samsung's Crowd-Sourced Bluetooth Location Tracking System', by Tingfeng Yu et al., 2024",
                 "submitter": "Xeno Kovah"
+            },
+            {
+                "URL": "https://arxiv.org/pdf/2210.14702v1",
+                "description": "Source review: sections 3.2.2 and 3.2.3 use FD69 for FMM lost-device advertisements and helper scan filters. Section 4.2.4 assigns the onboarding/registration GATT service to FD59, which the previous FD69 purpose quoted by mistake.",
+                "submitter": "GPT-6.1 Sol"
+            },
+            {
+                "URL": "https://www.usenix.org/system/files/usenixsecurity24-yu-tingfeng.pdf",
+                "description": "Source review: Appendix B.2 uses FD69 for Offline Finding advertisements; Table 5 lists the actual FMM GATT services under separate 128-bit UUIDs. The cited paper does not assign FD69 to a GATT characteristic. Original curator evidence was retained.",
+                "submitter": "GPT-6.1 Sol"
             }
         ]
     },
